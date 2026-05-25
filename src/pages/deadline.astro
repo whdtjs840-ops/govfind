@@ -3,10 +3,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import PolicyCard from "../components/PolicyCard.astro";
 import { policies } from "../data/policies";
 
-const urgent = policies.filter((policy) => policy.status === "모집중");
+const urgent = policies.filter((policy) => policy.status === "마감임박" || policy.status === "모집중");
 ---
 
-<BaseLayout title="마감임박 정부지원금 - GovFind" description="접수 중이거나 예산 소진 가능성이 있는 정부지원금을 먼저 확인하세요.">
+<BaseLayout title="마감임박 정부지원금 - GovFind" description="접수 중이거나 마감이 가까운 정부지원금을 먼저 확인하세요.">
   <section class="page-head">
     <div class="wrap">
       <p class="eyebrow">마감임박</p>

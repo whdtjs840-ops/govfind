@@ -1,58 +1,126 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PolicyCard from "../../components/PolicyCard.astro";
-import { Search } from "@lucide/astro";
-import { policies, categories } from "../../data/policies";
-
-const q = "";
-const category = "";
-const filtered = policies;
+import { Search, SlidersHorizontal } from "@lucide/astro";
+import { categories, lifeStages, policies, regions } from "../../data/policies";
 ---
 
-<BaseLayout title="정부지원금 찾기 - GovFind" description="청년, 소상공인, 주거, 복지, 창업 지원금을 조건별로 검색하고 비교하세요.">
+<BaseLayout title="정부지원금 찾기 - GovFind" description="정부지원금을 키워드, 카테고리, 지역, 모집 상태, 온라인 신청 가능 여부로 검색하고 비교하세요.">
   <section class="page-head">
     <div class="wrap">
       <p class="eyebrow">지원금 찾기</p>
-      <h1>조건에 맞는 지원금을 검색하세요</h1>
-      <form class="toolbar" action="/support/" method="get">
-        <input class="input" name="q" value={q} type="search" placeholder="검색어를 입력하세요" style="max-width: 420px;" />
+      <h1>조건에 맞는 지원금을 필터로 좁혀보세요</h1>
+      <form class="toolbar search-toolbar" action="/support/" method="get">
+        <input class="input" name="q" type="search" placeholder="청년 월세, 소상공인 자금, 육아 지원금" />
+        <select class="input" name="category" aria-label="카테고리">
+          <option value="">전체 카테고리</option>
+          {categories.map((item) => <option value={item}>{item}</option>)}
+        </select>
+        <select class="input" name="region" aria-label="지역">
+          <option value="">전체 지역</option>
+          {regions.map((item) => <option value={item}>{item}</option>)}
+        </select>
         <button class="button" type="submit"><Search size={18} />검색</button>
       </form>
-      <div class="toolbar">
-        <a class="chip" href="/support/">전체</a>
-        {categories.map((item) => <a class="chip" href={`/support/?category=${encodeURIComponent(item)}`}>{item}</a>)}
-      </div>
     </div>
   </section>
+
   <section class="section">
-    <div class="wrap">
-      <p class="eyebrow"><span id="result-count">{filtered.length}</span>개 결과</p>
-      <div class="grid cols-3">
-        {filtered.map((policy) => <PolicyCard policy={policy} />)}
+    <div class="wrap results-layout">
+      <aside class="filter-card card" aria-label="상세 필터">
+        <h2><SlidersHorizontal size={18} />필터</h2>
+        <label>생애주기
+          <select class="input" data-filter="lifeStage">
+            <option value="">전체</option>
+            {lifeStages.map((item) => <option value={item}>{item}</option>)}
+          </select>
+        </label>
+        <label>모집 상태
+          <select class="input" data-filter="status">
+            <option value="">전체</option>
+            <option>모집중</option>
+            <option>마감임박</option>
+            <option>상시</option>
+            <option>예정</option>
+          </select>
+        </label>
+        <label class="check-row">
+          <input type="checkbox" data-filter="online" />
+          온라인 신청 가능
+        </label>
+        <div class="quick-tags">
+          <a class="chip" href="/support/?q=청년">청년</a>
+          <a class="chip" href="/support/?q=소상공인">소상공인</a>
+          <a class="chip" href="/support/?q=마감">마감</a>
+        </div>
+      </aside>
+
+      <div>
+        <div class="result-head">
+          <div>
+            <p class="eyebrow"><span id="result-count">{policies.length}</span>개 결과</p>
+            <h2>적합 이유와 공식 신청처를 함께 확인하세요</h2>
+          </div>
+          <select class="input small" data-sort aria-label="정렬">
+            <option value="recommended">추천순</option>
+            <option value="deadline">마감임박순</option>
+            <option value="online">온라인 신청 우선</option>
+          </select>
+        </div>
+        <div class="grid cols-2 result-grid">
+          {policies.map((policy) => <PolicyCard policy={policy} />)}
+        </div>
       </div>
     </div>
   </section>
+
   <script>
     const params = new URLSearchParams(window.location.search);
     const keyword = params.get("q")?.trim() ?? "";
     const selectedCategory = params.get("category")?.trim() ?? "";
+    const selectedRegion = params.get("region")?.trim() ?? "";
     const input = document.querySelector<HTMLInputElement>('input[name="q"]');
+    const category = document.querySelector<HTMLSelectElement>('select[name="category"]');
+    const region = document.querySelector<HTMLSelectElement>('select[name="region"]');
     const count = document.querySelector("#result-count");
     const cards = Array.from(document.querySelectorAll<HTMLElement>(".support-card"));
+    const lifeStage = document.querySelector<HTMLSelectElement>('[data-filter="lifeStage"]');
+    const status = document.querySelector<HTMLSelectElement>('[data-filter="status"]');
+    const online = document.querySelector<HTMLInputElement>('[data-filter="online"]');
 
     if (input) input.value = keyword;
+    if (category) category.value = selectedCategory;
+    if (region) region.value = selectedRegion;
 
-    let visible = 0;
-    for (const card of cards) {
-      const text = card.dataset.search ?? "";
-      const cardCategory = card.dataset.category ?? "";
-      const matchKeyword = !keyword || text.includes(keyword);
-      const matchCategory = !selectedCategory || cardCategory === selectedCategory;
-      const isVisible = matchKeyword && matchCategory;
-      card.style.display = isVisible ? "" : "none";
-      if (isVisible) visible += 1;
+    function applyFilters() {
+      const lifeValue = lifeStage?.value ?? "";
+      const statusValue = status?.value ?? "";
+      const onlineOnly = online?.checked ?? false;
+      let visible = 0;
+
+      for (const card of cards) {
+        const text = card.dataset.search ?? "";
+        const cardCategory = card.dataset.category ?? "";
+        const cardRegion = card.dataset.region ?? "";
+        const cardStatus = card.dataset.status ?? "";
+        const cardOnline = card.dataset.online === "true";
+        const matchKeyword = !keyword || text.includes(keyword);
+        const matchCategory = !selectedCategory || cardCategory === selectedCategory;
+        const matchRegion = !selectedRegion || cardRegion === selectedRegion || cardRegion === "전국" || cardRegion === "지역별";
+        const matchLife = !lifeValue || text.includes(lifeValue);
+        const matchStatus = !statusValue || cardStatus === statusValue;
+        const matchOnline = !onlineOnly || cardOnline;
+        const isVisible = matchKeyword && matchCategory && matchRegion && matchLife && matchStatus && matchOnline;
+        card.style.display = isVisible ? "" : "none";
+        if (isVisible) visible += 1;
+      }
+
+      if (count) count.textContent = String(visible);
     }
 
-    if (count) count.textContent = String(visible);
+    lifeStage?.addEventListener("change", applyFilters);
+    status?.addEventListener("change", applyFilters);
+    online?.addEventListener("change", applyFilters);
+    applyFilters();
   </script>
 </BaseLayout>
