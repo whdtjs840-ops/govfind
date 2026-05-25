@@ -46,12 +46,13 @@ function slugify(value, fallback) {
 }
 
 function categoryFrom(text) {
-  if (/청년|청소년|대학생/.test(text)) return "청년";
+  if (/장애|저소득|취약|기초|돌봄|다문화|한부모|보훈|노인|어르신/.test(text)) return "복지";
   if (/주거|월세|임대|전세|주택/.test(text)) return "주거";
   if (/취업|고용|일자리|구직|훈련/.test(text)) return "고용";
   if (/창업|사업|소상공인|기업/.test(text)) return "소상공인";
   if (/교육|학습|학교|장학/.test(text)) return "교육";
   if (/의료|건강|진료|임신|출산/.test(text)) return "보건의료";
+  if (/청년|청소년|대학생/.test(text)) return "청년";
   return "복지";
 }
 
@@ -130,6 +131,9 @@ const url = new URL(`${endpoint}/NationalWelfarelistV001`);
 url.searchParams.set("serviceKey", key);
 url.searchParams.set("pageNo", "1");
 url.searchParams.set("numOfRows", process.env.GOVFIND_WELFARE_API_ROWS || "30");
+url.searchParams.set("callTp", "L");
+url.searchParams.set("srchKeyCode", "001");
+url.searchParams.set("searchWrd", "");
 
 try {
   const response = await fetch(url);
