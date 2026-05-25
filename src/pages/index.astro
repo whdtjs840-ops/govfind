@@ -3,185 +3,137 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { ArrowRight, CalendarClock, Search } from "@lucide/astro";
 import { policies, categoryGroups, popularKeywords } from "../data/policies";
 import { guides } from "../data/guides";
-import { sourceLabel } from "../utils/sourceNames";
 
 const totalCountLabel = policies.length.toLocaleString("ko-KR");
-const gov24Policies = policies.filter((policy) => policy.source.includes("정부24"));
-const kstartupPolicies = policies.filter((policy) => policy.source.includes("K-Startup"));
-const welfarePolicies = policies.filter((policy) => policy.source.includes("복지로"));
+const openPolicies = policies.filter((policy) => policy.status === "모집중" || policy.status === "마감임박" || policy.status === "상시");
+const openCountLabel = openPolicies.length.toLocaleString("ko-KR");
 const urgent = policies
   .filter((policy) => policy.status === "모집중" || policy.status === "마감임박" || /^D-/.test(policy.dday))
   .sort((a, b) => {
     const rank = (value: string) => (value.startsWith("D-") ? Number(value.replace("D-", "")) || 999 : value === "D-Day" ? 0 : 500);
     return rank(a.dday) - rank(b.dday);
   });
-const popular = [...policies].sort((a, b) => b.views - a.views).slice(0, 8);
-const latest = [...policies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 24);
+const latest = [...policies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 18);
 const recommendedGuides = guides.slice(0, 4);
-const sourceStats = [
-  { label: "전체", value: policies.length, href: "/support/" },
-  { label: "정부24", value: gov24Policies.length, href: "/support/?source=정부24" },
-  { label: "복지로", value: welfarePolicies.length, href: "/support/?source=복지로" },
-  { label: "K-Startup", value: kstartupPolicies.length, href: "/support/?source=K-Startup" }
-];
 const categoryCounts = categoryGroups.map((category) => ({
   ...category,
   count: policies.filter(
     (policy) => policy.category === category.label || category.keywords.some((keyword) => `${policy.title} ${policy.tags.join(" ")}`.includes(keyword))
   ).length
 }));
-const mainCategories = categoryCounts.slice(0, 10);
+const mainCategories = categoryCounts.slice(0, 9);
 ---
 
 <BaseLayout
-  title="GovFind - 정부지원금 찾기"
-  description="정부지원금, 복지 혜택, 창업지원사업을 검색하고 지원 대상, 신청 기간, 필요 서류, 공식 신청처를 확인하세요."
+  title="GovFind - 정부지원금 맞춤 검색"
+  description="청년, 복지, 주거, 고용, 창업 등 정부지원금과 지원사업을 검색하고 마감일, 지원내용, 공식 신청처를 확인하세요."
 >
-  <section class="home-plain-hero">
+  <section class="home-plain-hero hero-compact">
     <div class="wrap">
-      <p class="eyebrow">govfind.kr</p>
-      <h1>나에게 맞는 정부지원금 찾기</h1>
-      <p class="home-count-line"><strong>{totalCountLabel}건</strong>의 지원사업을 확인할 수 있습니다.</p>
+      <h1>나에게 맞는 <strong>정부지원금</strong> 찾기</h1>
+      <p class="home-count-line">{openCountLabel}건의 지원사업을 확인할 수 있습니다</p>
 
-      <form class="home-search-box home-search-box-plain" action="/support/" method="get" aria-label="정부지원금 검색">
-        <div class="home-search-main">
-          <Search size={22} aria-hidden="true" />
-          <input name="q" type="search" placeholder="지원금, 청년, 창업, 복지, 소상공인 검색" />
-          <button class="button" type="submit">검색</button>
-        </div>
-        <div class="home-filter-row">
-          <select class="input" name="category" aria-label="카테고리">
-            <option value="">전체 카테고리</option>
-            {categoryGroups.map((category) => <option value={category.label}>{category.label}</option>)}
-          </select>
-          <select class="input" name="region" aria-label="지역">
-            <option value="">전체 지역</option>
-            <option>전국</option>
-            <option>서울</option>
-            <option>경기</option>
-            <option>부산</option>
-            <option>대구</option>
-            <option>지역별</option>
-          </select>
-          <select class="input" name="source" aria-label="출처">
-            <option value="">전체 출처</option>
-            <option value="정부24">정부24</option>
-            <option value="복지로">복지로</option>
-            <option value="K-Startup">K-Startup</option>
-          </select>
+      <form class="hero-search" action="/support/" method="get" aria-label="정부지원금 검색">
+        <div class="search-input-group">
+          <Search class="search-icon" size={21} aria-hidden="true" />
+          <input name="q" type="search" placeholder="예: 청년 월세, 육아 수당, 소상공인 대출" autocomplete="off" />
+          <button type="submit">검색</button>
         </div>
       </form>
 
-      <div class="home-popular-line" aria-label="인기 검색어">
-        <span>인기</span>
-        {popularKeywords.slice(0, 8).map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
+      <div class="hero-trending" aria-label="인기 검색어">
+        <span class="trending-label">인기</span>
+        {popularKeywords.slice(0, 8).map((keyword) => <a class="trending-pill" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
       </div>
+    </div>
+  </section>
 
-      <div class="home-source-pills" aria-label="출처별 지원사업 수">
-        {sourceStats.map((item) => (
-          <a href={item.href}>
-            <strong>{item.value.toLocaleString("ko-KR")}</strong>
-            <span>{item.label}</span>
+  <section class="category-strip">
+    <div class="wrap">
+      <div class="category-chips" aria-label="카테고리 바로가기">
+        <a href="/support/" class="cat-chip cat-chip-all">
+          <span>전체</span>
+          <span class="cat-chip-count">{totalCountLabel}</span>
+        </a>
+        {mainCategories.map((category) => (
+          <a href={`/category/${category.slug}/`} class="cat-chip">
+            <span>{category.label}</span>
+            <span class="cat-chip-count">{category.count.toLocaleString("ko-KR")}</span>
           </a>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="section tight home-category-band">
-    <div class="wrap category-count-grid">
-      {mainCategories.map((category) => (
-        <a href={`/category/${category.slug}/`}>
-          <span>{category.label}</span>
-          <strong>{category.count.toLocaleString("ko-KR")}</strong>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <section class="section tight">
-    <div class="wrap home-two-column">
-      <section>
-        <div class="home-section-head compact">
-          <div>
-            <p class="eyebrow">마감 임박</p>
-            <h2>지금 확인해야 할 지원사업</h2>
-          </div>
-          <a class="text-link" href="/deadline/">더보기 <ArrowRight size={16} /></a>
-        </div>
-        <div class="home-list deadline-list">
-          {urgent.slice(0, 9).map((policy) => (
-            <a href={`/support/${policy.slug}/`}>
-              <span>{policy.dday}</span>
-              <strong>{policy.title}</strong>
-              <small>{policy.category} · {policy.agency}</small>
-            </a>
-          ))}
-        </div>
-      </section>
-
-      <section>
-        <div class="home-section-head compact">
-          <div>
-            <p class="eyebrow">많이 보는 정책</p>
-            <h2>많이 찾는 지원사업</h2>
-          </div>
-          <a class="text-link" href="/support/">전체 보기 <ArrowRight size={16} /></a>
-        </div>
-        <div class="home-list popular-list">
-          {popular.map((policy, index) => (
-            <a href={`/support/${policy.slug}/`}>
-              <span>{index + 1}</span>
-              <strong>{policy.title}</strong>
-              <small>{policy.category} · {sourceLabel(policy.source)}</small>
-            </a>
-          ))}
-        </div>
-      </section>
+  <section class="section section-tight">
+    <div class="wrap">
+      <div class="section-header">
+        <h2 class="section-heading">마감 임박</h2>
+        <a href="/deadline/" class="section-more">더보기 <ArrowRight size={16} /></a>
+      </div>
+      <div class="deadline-scroll">
+        {urgent.slice(0, 9).map((policy) => (
+          <a href={`/support/${policy.slug}/`} class="deadline-card" data-event="deadline_click" data-policy={policy.slug}>
+            <span class="deadline-dday">{policy.dday}</span>
+            <span class="deadline-title">{policy.title}</span>
+            <span class="deadline-cat">{policy.category}</span>
+          </a>
+        ))}
+      </div>
     </div>
   </section>
 
   <section class="section home-latest-section">
-    <div class="wrap home-section-head">
-      <div>
-        <p class="eyebrow">최신 지원사업</p>
-        <h2>새로 확인할 수 있는 정책</h2>
+    <div class="wrap">
+      <div class="section-header">
+        <h2 class="section-heading">최신 지원사업</h2>
+        <a href="/support/" class="section-more">전체 보기 <ArrowRight size={16} /></a>
       </div>
-      <a class="text-link" href="/support/">전체 지원사업 보기 <ArrowRight size={16} /></a>
-    </div>
-    <div class="wrap latest-policy-list">
-      {latest.map((policy) => (
-        <article>
-          <div class="latest-policy-meta">
-            <span class="badge warn">{policy.status}</span>
-            <span class="badge">{policy.category}</span>
-            <span class="badge soft">{policy.dday}</span>
-          </div>
-          <h3><a href={`/support/${policy.slug}/`}>{policy.title}</a></h3>
-          <p>{policy.summary}</p>
-          <small>{policy.agency} · {policy.deadline}</small>
-        </article>
-      ))}
+
+      <div class="policy-grid">
+        {latest.map((policy) => (
+          <article class="policy-card-home">
+            <div class="card-accent"></div>
+            <div class="card-body">
+              <div class="card-badges">
+                <span class="badge warn">{policy.status}</span>
+                <span class="badge">{policy.category}</span>
+                <span class="badge soft">{policy.dday}</span>
+              </div>
+              <h3><a class="card-title" href={`/support/${policy.slug}/`}>{policy.title}</a></h3>
+              <p class="card-summary">{policy.summary}</p>
+              <div class="card-meta">
+                <span>{policy.agency}</span>
+                <span class="meta-divider">·</span>
+                <span>{policy.deadline}</span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <div class="section-cta">
+        <a href="/support/" class="button secondary">전체 지원사업 보기</a>
+      </div>
     </div>
   </section>
 
   <section class="section tight band">
-    <div class="wrap home-section-head">
-      <div>
-        <p class="eyebrow">신청 전 가이드</p>
-        <h2>지원금 신청 전에 읽어볼 글</h2>
+    <div class="wrap">
+      <div class="section-header">
+        <h2 class="section-heading">신청 전 가이드</h2>
+        <a class="section-more" href="/guide/">가이드 전체 보기 <ArrowRight size={16} /></a>
       </div>
-      <a class="text-link" href="/guide/">가이드 전체 보기 <ArrowRight size={16} /></a>
-    </div>
-    <div class="wrap guide-card-grid">
-      {recommendedGuides.map((guide) => (
-        <article class="card">
-          <span class="badge soft">{guide.category}</span>
-          <h3><a href={`/guide/${guide.slug}/`}>{guide.title}</a></h3>
-          <p>{guide.description}</p>
-          <a class="text-link" href={`/guide/${guide.slug}/`}>자세히 보기 <ArrowRight size={16} /></a>
-        </article>
-      ))}
+      <div class="guide-card-grid">
+        {recommendedGuides.map((guide) => (
+          <article class="card">
+            <span class="badge soft">{guide.category}</span>
+            <h3><a href={`/guide/${guide.slug}/`}>{guide.title}</a></h3>
+            <p>{guide.description}</p>
+            <a class="text-link" href={`/guide/${guide.slug}/`}>자세히 보기 <ArrowRight size={16} /></a>
+          </article>
+        ))}
+      </div>
     </div>
   </section>
 
@@ -190,7 +142,7 @@ const mainCategories = categoryCounts.slice(0, 10);
       <CalendarClock size={24} />
       <div>
         <p class="eyebrow">공식 신청처 확인</p>
-        <h2>GovFind는 신청을 대신하지 않고 공식 신청처로 안내합니다</h2>
+        <h2>GovFind는 지원사업을 정리해 보여주고, 최종 신청은 공식 신청처로 안내합니다.</h2>
         <p class="lead">지원 대상과 신청 가능 여부는 각 기관의 공식 안내에서 최종 확인하세요.</p>
       </div>
       <a class="button secondary" href="/sources/">출처 확인</a>
