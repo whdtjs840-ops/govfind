@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PolicyCard from "../../components/PolicyCard.astro";
+import { categoryGroups, policies } from "../../data/policies";
+
+export function getStaticPaths() {
+  return categoryGroups.map((category) => ({ params: { slug: category.slug }, props: { category } }));
+}
+
+const { category } = Astro.props;
+const categoryPolicies = policies.filter((policy) => policy.category === category.label || category.keywords.some((keyword) => [...policy.tags, policy.title, policy.summary].join(" ").includes(keyword)));
+const urgent = categoryPolicies.filter((policy) => policy.status === "마감임박" || policy.status === "모집중");
+---
+
+<BaseLayout title={`${category.label} 정부지원금 - GovFind`} description={`${category.label} 분야 정부지원금, 지원사업, 신청 조건, 공식 신청처를 정리했습니다.`} canonical={`/category/${category.slug}/`}>
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">카테고리</p>
+      <h1>{category.label} 정부지원금</h1>
+      <p class="lead">{category.label} 분야의 대표 지원사업 {categoryPolicies.length}개를 공식 출처 기준으로 정리했습니다.</p>
+      <div class="quick-tags">
+        {category.keywords.map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight benchmark-dashboard">
+    <div class="wrap metric-grid">
+      <div><strong>{categoryPolicies.length}</strong><span>대표 정책</span></div>
+      <div><strong>{urgent.length}</strong><span>모집·마감 확인</span></div>
+      <div><strong>{categoryPolicies.filter((policy) => policy.applyOnline).length}</strong><span>온라인 신청 가능</span></div>
+      <div><strong>공식</strong><span>원문 확인 필요</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="result-head">
+        <div>
+          <p class="eyebrow">{category.label} 목록</p>
+          <h2>신청 조건과 공식 신청처를 함께 확인하세요</h2>
+        </div>
+        <a class="button secondary" href="/support/">전체 목록</a>
+      </div>
+      <div class="grid cols-2">
+        {categoryPolicies.map((policy) => <PolicyCard policy={policy} />)}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

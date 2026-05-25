@@ -5,11 +5,12 @@ import { Search, SlidersHorizontal } from "@lucide/astro";
 import { categories, lifeStages, policies, popularKeywords, regions, sources } from "../../data/policies";
 ---
 
-<BaseLayout title="정부지원금 찾기 - GovFind" description="정부지원금을 키워드, 카테고리, 지역, 모집 상태, 온라인 신청 가능 여부로 검색하고 비교하세요.">
+<BaseLayout title="전체 정부지원금 목록 - GovFind" description="정부지원금을 키워드, 카테고리, 지역, 모집 상태, 온라인 신청 가능 여부로 검색하고 비교하세요.">
   <section class="page-head">
     <div class="wrap">
-      <p class="eyebrow">지원금 찾기</p>
-      <h1>조건에 맞는 지원금을 필터로 좁혀보세요</h1>
+      <p class="eyebrow">전체 지원사업</p>
+      <h1>정부지원금 전체 목록</h1>
+      <p class="lead">대표 지원사업을 카테고리, 지역, 모집 상태, 공식 출처 기준으로 좁혀볼 수 있습니다.</p>
       <form class="toolbar search-toolbar" action="/support/" method="get">
         <input class="input" name="q" type="search" placeholder="청년 월세, 소상공인 자금, 육아 지원금" />
         <select class="input" name="category" aria-label="카테고리">

@@ -1,8 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import PolicyCard from "../components/PolicyCard.astro";
 import { CheckCircle2, FileText, Search, ShieldCheck, TrendingUp } from "@lucide/astro";
-import { policies, categories, popularKeywords } from "../data/policies";
+import { policies, categories, categoryGroups, popularKeywords } from "../data/policies";
 import { guides } from "../data/guides";
 import heroImage from "../assets/hero-govfind.png";
 
@@ -12,6 +11,7 @@ const popular = [...policies].sort((a, b) => b.views - a.views).slice(0, 4);
 const latest = [...policies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 4);
 const latestGuides = guides.slice(0, 3);
 const totalViews = policies.reduce((sum, policy) => sum + policy.views, 0);
+const totalCountLabel = policies.length.toLocaleString("ko-KR");
 ---
 
 <BaseLayout
@@ -22,15 +22,15 @@ const totalViews = policies.reduce((sum, policy) => sum + policy.views, 0);
     <div class="wrap hero-inner">
       <div>
         <p class="eyebrow">govfind.kr</p>
-        <h1>내 조건에 맞는 정부지원금을 빠르게 찾으세요</h1>
-        <p class="lead">청년, 소상공인, 주거, 복지, 창업 지원금을 조건별로 정리하고 공식 신청처로 연결하는 비로그인 정보 포털입니다.</p>
+        <h1>나에게 맞는 정부지원금 찾기</h1>
+        <p class="lead">청년, 복지, 주거, 고용, 창업 지원사업을 공식 출처 기준으로 정리합니다. 현재 {totalCountLabel}개의 대표 정책을 확인할 수 있습니다.</p>
         <div class="intent-tabs" aria-label="탐색 유형">
           <a href="/support/?q=지원금" class="active">지원금 정보</a>
           <a href="/support/?q=환급금">환급금 정보</a>
           <a href="/support/?q=대출">대출 정보</a>
         </div>
         <form class="search-panel hero-checker" action="/support/" method="get" aria-label="빠른 자격 확인">
-          <label class="eyebrow" for="q">빠른 자격 확인</label>
+          <label class="eyebrow" for="q">지원사업 검색</label>
           <div class="checker-grid">
             <input class="input" id="q" name="q" type="search" placeholder="예: 청년 월세, 소상공인 자금" />
             <select class="input" name="lifeStage" aria-label="생애주기">
@@ -47,7 +47,7 @@ const totalViews = policies.reduce((sum, policy) => sum + policy.views, 0);
               <option>경기</option>
               <option>지역별</option>
             </select>
-            <button class="button" type="submit"><Search size={18} />추천 결과 보기</button>
+            <button class="button" type="submit"><Search size={18} />검색</button>
           </div>
           <div class="quick-tags" aria-label="추천 검색어">
             {popularKeywords.slice(0, 6).map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
@@ -73,16 +73,16 @@ const totalViews = policies.reduce((sum, policy) => sum + policy.views, 0);
   <section class="section tight benchmark-dashboard">
     <div class="wrap">
       <div class="metric-grid" aria-label="서비스 지표">
-        <div><strong>{policies.length}</strong><span>MVP 정책</span></div>
-        <div><strong>{categories.length}</strong><span>핵심 카테고리</span></div>
+        <div><strong>{totalCountLabel}</strong><span>대표 지원사업</span></div>
+        <div><strong>{categories.length}</strong><span>카테고리</span></div>
         <div><strong>{totalViews.toLocaleString("ko-KR")}</strong><span>관심도 샘플</span></div>
         <div><strong>공식</strong><span>신청처 handoff</span></div>
       </div>
       <div class="category-rail" aria-label="카테고리 바로가기">
-        {categories.map((category) => (
-          <a href={`/support/?category=${encodeURIComponent(category)}`}>
-            <span>{category}</span>
-            <strong>{policies.filter((policy) => policy.category === category).length}</strong>
+        {categoryGroups.map((category) => (
+          <a href={`/category/${category.slug}/`}>
+            <span>{category.label}</span>
+            <strong>{policies.filter((policy) => policy.category === category.label || category.keywords.some((keyword) => policy.tags.join(" ").includes(keyword))).length}</strong>
           </a>
         ))}
       </div>
@@ -91,8 +91,8 @@ const totalViews = policies.reduce((sum, policy) => sum + policy.views, 0);
 
   <section class="section product-flow">
     <div class="wrap">
-      <p class="eyebrow">비로그인 탐색 흐름</p>
-      <h2>검색부터 공식 신청처 이동까지 불필요한 가입 없이 확인합니다</h2>
+      <p class="eyebrow">이용 흐름</p>
+      <h2>검색부터 공식 신청처 이동까지 가입 없이 확인합니다</h2>
       <div class="flow-grid">
         <div><span>1</span><strong>빠른 자격 확인</strong><p>나이·지역·가구상황을 가볍게 입력</p></div>
         <div><span>2</span><strong>정렬된 추천 결과</strong><p>마감, 온라인 신청, 적합 이유로 비교</p></div>
@@ -104,8 +104,8 @@ const totalViews = policies.reduce((sum, policy) => sum + policy.views, 0);
 
   <section class="section tight band">
     <div class="wrap">
-      <p class="eyebrow">정책 카탈로그</p>
-      <h2>마감임박과 최신 정책을 바로 확인하세요</h2>
+      <p class="eyebrow">마감 임박</p>
+      <h2>신청 기한이 가까운 지원사업</h2>
       <div class="two-lists">
         <section class="list-panel">
           <h3>마감 임박</h3>
@@ -152,11 +152,11 @@ const totalViews = policies.reduce((sum, policy) => sum + policy.views, 0);
   <section class="section">
     <div class="wrap split wide">
       <div>
-        <p class="eyebrow">검색·필터 구조</p>
-        <h2>카테고리, 상태, 출처, 지역으로 좁히는 탐색 경험</h2>
+        <p class="eyebrow">전체 목록</p>
+        <h2>카테고리, 상태, 출처, 지역으로 좁혀보세요</h2>
         <p class="lead">출처, 모집 상태, 생애주기, 지역, 온라인 신청 가능 여부를 기준으로 공식 정보를 빠르게 좁혀봅니다.</p>
         <div class="toolbar">
-          {categories.map((category) => <a class="chip" href={`/support/?category=${encodeURIComponent(category)}`}>{category}</a>)}
+          {categoryGroups.map((category) => <a class="chip" href={`/category/${category.slug}/`}>{category.label}</a>)}
         </div>
       </div>
       <div class="mini-board">
