@@ -44,10 +44,8 @@ export const publicApiSources = [
 ];
 
 export const infrastructureIntegrations = [
-  { name: "주소 검색", role: "지역·행정구역 매칭", provider: "도로명주소 API, 카카오 로컬 API" },
-  { name: "소셜 로그인", role: "저장·알림 상태 유지", provider: "카카오, 네이버, Google, Apple" },
-  { name: "SMS·알림톡", role: "마감·서류 보완 알림", provider: "NAVER Cloud SENS" },
-  { name: "문서 OCR", role: "서류 자동 분류", provider: "CLOVA OCR" },
-  { name: "푸시 알림", role: "웹·앱 재방문", provider: "Firebase Cloud Messaging" },
-  { name: "분석", role: "검색→상세→공식신청 퍼널 측정", provider: "Google Analytics 4" }
+  { name: "공식 링크 검증", role: "깨진 신청 링크와 원문 링크를 주기적으로 점검", provider: "정적 데이터 관리 + 수동 검수" },
+  { name: "데이터 최신성 관리", role: "정책별 마지막 확인일과 출처를 화면에 표시", provider: "공공 원문 확인" },
+  { name: "검색 행동 분석", role: "인기 키워드와 공식 신청 클릭 흐름만 익명 집계", provider: "GA4 또는 Cloudflare Web Analytics" },
+  { name: "주소 검색", role: "향후 지역 정밀 검색이 필요할 때만 선택", provider: "도로명주소 API" }
 ];

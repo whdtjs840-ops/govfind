@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PolicyCard from "../components/PolicyCard.astro";
-import { Bell, CheckCircle2, FileText, Search, ShieldCheck, TrendingUp } from "@lucide/astro";
+import { CheckCircle2, FileText, Search, ShieldCheck, TrendingUp } from "@lucide/astro";
 import { policies, categories, popularKeywords } from "../data/policies";
 import { guides } from "../data/guides";
 import heroImage from "../assets/hero-govfind.png";
@@ -23,7 +23,7 @@ const totalViews = policies.reduce((sum, policy) => sum + policy.views, 0);
       <div>
         <p class="eyebrow">govfind.kr</p>
         <h1>내 조건에 맞는 정부지원금을 빠르게 찾으세요</h1>
-        <p class="lead">검색 퍼널은 촘촘하게, 자격 확인은 간단하게, 최종 신청은 공식 기관으로 안전하게 연결합니다.</p>
+        <p class="lead">청년, 소상공인, 주거, 복지, 창업 지원금을 조건별로 정리하고 공식 신청처로 연결하는 비로그인 정보 포털입니다.</p>
         <div class="intent-tabs" aria-label="탐색 유형">
           <a href="/support/?q=지원금" class="active">지원금 정보</a>
           <a href="/support/?q=환급금">환급금 정보</a>
@@ -65,7 +65,7 @@ const totalViews = policies.reduce((sum, policy) => sum + policy.views, 0);
       <aside class="trust-panel" aria-label="서비스 원칙">
         <div><ShieldCheck size={20} /><strong>공식 출처 우선</strong><span>정부24·복지로·K-Startup 등 원문 연결</span></div>
         <div><CheckCircle2 size={20} /><strong>적합 이유 표시</strong><span>왜 추천됐는지 결과 카드에서 바로 확인</span></div>
-        <div><Bell size={20} /><strong>마감 알림 구조</strong><span>검토 후 저장·알림으로 재방문 퍼널 확장</span></div>
+        <div><FileText size={20} /><strong>신청 전 체크</strong><span>대상·서류·마감·문의처를 한 화면에 정리</span></div>
       </aside>
     </div>
   </section>
@@ -91,20 +91,20 @@ const totalViews = policies.reduce((sum, policy) => sum + policy.views, 0);
 
   <section class="section product-flow">
     <div class="wrap">
-      <p class="eyebrow">권장 사용자 흐름</p>
-      <h2>비회원 탐색부터 공식 신청 이동까지 한 화면 흐름으로 설계했습니다</h2>
+      <p class="eyebrow">비로그인 탐색 흐름</p>
+      <h2>검색부터 공식 신청처 이동까지 불필요한 가입 없이 확인합니다</h2>
       <div class="flow-grid">
         <div><span>1</span><strong>빠른 자격 확인</strong><p>나이·지역·가구상황을 가볍게 입력</p></div>
         <div><span>2</span><strong>정렬된 추천 결과</strong><p>마감, 온라인 신청, 적합 이유로 비교</p></div>
         <div><span>3</span><strong>상세 체크리스트</strong><p>지원대상·서류·FAQ를 구조화</p></div>
-        <div><span>4</span><strong>공식 신청 handoff</strong><p>최종 판단과 신청은 공식 기관으로 이동</p></div>
+        <div><span>4</span><strong>공식 신청처 이동</strong><p>최종 판단과 신청은 공식 기관에서 진행</p></div>
       </div>
     </div>
   </section>
 
   <section class="section tight band">
     <div class="wrap">
-      <p class="eyebrow">govhelp식 카탈로그</p>
+      <p class="eyebrow">정책 카탈로그</p>
       <h2>마감임박과 최신 정책을 바로 확인하세요</h2>
       <div class="two-lists">
         <section class="list-panel">
@@ -133,7 +133,7 @@ const totalViews = policies.reduce((sum, policy) => sum + policy.views, 0);
 
   <section class="section">
     <div class="wrap">
-      <p class="eyebrow">gg24식 관심도 랭킹</p>
+      <p class="eyebrow">관심도 높은 정책</p>
       <h2>현재 주목 받는 지원금</h2>
       <div class="ranking-grid">
         {popular.map((policy, index) => (
@@ -154,7 +154,7 @@ const totalViews = policies.reduce((sum, policy) => sum + policy.views, 0);
       <div>
         <p class="eyebrow">검색·필터 구조</p>
         <h2>카테고리, 상태, 출처, 지역으로 좁히는 탐색 경험</h2>
-        <p class="lead">보고서의 govhelp형 카탈로그, gg24형 매칭·알림, mtail형 고의도 랜딩 구조를 합쳐 MVP 화면에 반영했습니다.</p>
+        <p class="lead">출처, 모집 상태, 생애주기, 지역, 온라인 신청 가능 여부를 기준으로 공식 정보를 빠르게 좁혀봅니다.</p>
         <div class="toolbar">
           {categories.map((category) => <a class="chip" href={`/support/?category=${encodeURIComponent(category)}`}>{category}</a>)}
         </div>
@@ -174,7 +174,7 @@ const totalViews = policies.reduce((sum, policy) => sum + policy.views, 0);
   <section class="section tight band">
     <div class="wrap split wide">
       <div>
-        <p class="eyebrow">mtail식 고의도 랜딩</p>
+        <p class="eyebrow">고의도 검색 진입</p>
         <h2>몰라서 놓치는 지원금, 짧은 링크로 바로 진입</h2>
         <p class="lead">광고·검색 유입 사용자가 긴 설명 없이 바로 눌러볼 수 있도록 키워드형 진입점을 분리했습니다.</p>
       </div>
