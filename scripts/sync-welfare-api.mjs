@@ -9,12 +9,17 @@ function decodeXml(value = "") {
   return value
     .replaceAll("<![CDATA[", "")
     .replaceAll("]]>", "")
+    .replaceAll("<br />", "\n")
+    .replaceAll("<br/>", "\n")
+    .replaceAll("<br>", "\n")
     .replaceAll("&lt;", "<")
     .replaceAll("&gt;", ">")
     .replaceAll("&amp;", "&")
     .replaceAll("&quot;", '"')
     .replaceAll("&#39;", "'")
-    .replace(/\s+/g, " ")
+    .replace(/\r/g, "")
+    .replace(/[ \t]+/g, " ")
+    .replace(/\n{3,}/g, "\n\n")
     .trim();
 }
 
@@ -34,6 +39,41 @@ function parseItems(xml) {
     }
     return record;
   });
+}
+
+function parseDetail(xml) {
+  const records = parseItems(xml);
+  if (records[0]) return records[0];
+
+  const detail = {};
+  const body = xml
+    .replace(/^<\?xml[^>]*>/, "")
+    .replace(/<\/?(?:response|body|items|item|wantedDtl|servDtl)[^>]*>/g, "");
+
+  for (const match of body.matchAll(/<([A-Za-z0-9_]+)>([\s\S]*?)<\/\1>/g)) {
+    detail[match[1]] = decodeXml(match[2]);
+  }
+  return detail;
+}
+
+function shortLines(value = "", max = 4) {
+  return value
+    .split(/\n|(?:\s{2,})/)
+    .map((line) => line.replace(/^[\-•ㆍ\s]+/, "").trim())
+    .filter(Boolean)
+    .slice(0, max);
+}
+
+async function fetchDetail(serviceId) {
+  if (!serviceId) return {};
+  const url = new URL(`${endpoint}/NationalWelfaredetailedV001`);
+  url.searchParams.set("serviceKey", key);
+  url.searchParams.set("servId", serviceId);
+
+  const response = await fetch(url);
+  const body = await response.text();
+  if (!response.ok || /NO DATA FOUND|SERVICE_KEY|INVALID_REQUEST/i.test(body)) return {};
+  return parseDetail(body);
 }
 
 function slugify(value, fallback) {
@@ -56,15 +96,22 @@ function categoryFrom(text) {
   return "복지";
 }
 
-function policyFromApi(item, index) {
+function policyFromApi(item, detail, index) {
   const title = pick(item, ["servNm", "servName", "serviceName", "wlfareInfoNm", "title"]) || `복지서비스 ${index + 1}`;
   const summary = pick(item, ["servDgst", "servDesc", "svcfrstRegTs", "summary", "intrcn"]) || "공공데이터포털 복지서비스 API에서 제공하는 중앙부처 복지서비스 정보입니다.";
   const agency = pick(item, ["jurMnofNm", "servSeDetailNm", "inqNum", "agency", "deptNm"]) || "중앙부처";
-  const target = pick(item, ["lifeArray", "trgterIndvdlArray", "sprtTrgetCn", "target"]) || "공식 상세 기준 확인";
+  const target = pick(detail, ["tgtrDtlCn", "sprtTrgetCn", "trgterIndvdlArray"]) || pick(item, ["lifeArray", "trgterIndvdlArray", "sprtTrgetCn", "target"]) || "공식 상세 기준 확인";
   const link = pick(item, ["servDtlLink", "svcUrl", "url"]) || "https://www.bokjiro.go.kr";
   const id = pick(item, ["servId", "svcId", "id"]) || String(index + 1);
   const text = `${title} ${summary} ${target}`;
   const category = categoryFrom(text);
+  const criteria = pick(detail, ["slctCritCn", "slctCrit", "slctCndCn", "selStdCn"]);
+  const benefit = pick(detail, ["alwServCn", "servDtlCn", "sportCn", "sprtCn", "benefitCn"]);
+  const application = pick(detail, ["aplyMtdCn", "aplyMtd", "reqstMthdCn", "reqstMthd", "applyMthdCn"]);
+  const documents = pick(detail, ["stdrDocCn", "reqstDcCn", "sbmsnDocCn", "inqplCtadrList"]);
+  const contact = pick(detail, ["rprsCtadr", "inqplCtadrList"]) || pick(item, ["rprsCtadr"]) || "복지로 또는 소관 기관 문의처";
+  const benefitLines = shortLines(benefit, 4);
+  const documentLines = shortLines(documents, 4);
 
   return {
     slug: `api-${slugify(title, id)}`,
@@ -78,18 +125,18 @@ function policyFromApi(item, index) {
     dday: "상시",
     status: "상시",
     lifeStage: /청년/.test(text) ? "청년" : /아동|청소년/.test(text) ? "아동·청소년" : "취약계층",
-    targetGroup: target,
+    targetGroup: shortLines(target, 1)[0] || target.slice(0, 90) || "공식 상세 기준 확인",
     income: "사업별 소득·가구 기준 확인",
     applyOnline: true,
     tags: [...new Set([category, "복지로", "공공데이터", ...title.split(/\s+/).slice(0, 3)])],
     summary,
-    audience: "API 요약 정보는 탐색용이며 최종 대상 여부는 복지로 또는 소관 기관의 공식 상세 안내에서 확인해야 합니다.",
-    benefits: ["복지서비스 정보 확인", "지원대상 확인", "신청방법 확인", "공식 출처 연결"],
-    documents: ["신분 확인 서류", "소득·가구 관련 자료", "사업별 추가 서류"],
-    apply: "복지로 또는 소관 기관의 공식 신청 안내를 확인합니다.",
+    audience: shortLines(target, 2).join(" ") || "API 요약 정보는 탐색용이며 최종 대상 여부는 복지로 또는 소관 기관의 공식 상세 안내에서 확인해야 합니다.",
+    benefits: benefitLines.length ? benefitLines : ["복지서비스 정보 확인", "지원대상 확인", "신청방법 확인", "공식 출처 연결"],
+    documents: documentLines.length ? documentLines : ["신분 확인 서류", "소득·가구 관련 자료", "사업별 추가 서류"],
+    apply: shortLines(application, 2).join(" ") || "복지로 또는 소관 기관의 공식 신청 안내를 확인합니다.",
     officialUrl: link,
     officialSourceUrl: "https://www.bokjiro.go.kr",
-    contact: "복지로 또는 소관 기관 문의처",
+    contact,
     views: 5000 - index * 20,
     updatedAt: new Date().toISOString().slice(0, 10).replaceAll("-", "."),
     matchReasons: ["공공데이터포털 API 연동 정보", "중앙부처 복지서비스 기준", "공식 상세 확인 필요"],
@@ -102,7 +149,15 @@ function policyFromApi(item, index) {
         q: "신청은 어디에서 하나요?",
         a: "복지로 또는 소관 기관의 공식 신청 페이지에서 진행합니다."
       }
-    ]
+    ],
+    apiDetails: {
+      target,
+      criteria,
+      benefit,
+      application,
+      documents,
+      contact
+    }
   };
 }
 
@@ -149,7 +204,13 @@ try {
     process.exit(0);
   }
 
-  const policies = items.slice(0, 30).map(policyFromApi);
+  const selectedItems = items.slice(0, 30);
+  const policies = [];
+  for (let index = 0; index < selectedItems.length; index += 1) {
+    const item = selectedItems[index];
+    const detail = await fetchDetail(pick(item, ["servId", "svcId", "id"]));
+    policies.push(policyFromApi(item, detail, index));
+  }
   await writeGenerated(policies);
   console.log(`[welfare-api] Generated ${policies.length} API policies.`);
 } catch (error) {

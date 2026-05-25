@@ -30,6 +30,14 @@ export type Policy = {
   updatedAt: string;
   matchReasons: string[];
   faq: { q: string; a: string }[];
+  apiDetails?: {
+    target?: string;
+    criteria?: string;
+    benefit?: string;
+    application?: string;
+    documents?: string;
+    contact?: string;
+  };
 };
 
 export const policies: Policy[] = [
