@@ -33,10 +33,10 @@ const matchScore = Math.min(96, 72 + policy.matchReasons.length * 4 + (policy.ap
           <div><dt>신청 기간</dt><dd>{policy.deadline}</dd></div>
           <div><dt>대상</dt><dd>{policy.targetGroup}</dd></div>
         </dl>
-        <a class="button" href={policy.officialUrl} target="_blank" rel="noopener noreferrer"><ExternalLink size={18} />공식 신청처 이동</a>
+        <a class="button" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}><ExternalLink size={18} />공식 신청처 이동</a>
         <div class="detail-actions">
-          <button class="button secondary" type="button"><Bookmark size={17} />서류 준비 저장</button>
-          <button class="button secondary" type="button"><Bell size={17} />마감 알림 받기</button>
+          <button class="button secondary" type="button" data-event="save_policy" data-policy={policy.slug}><Bookmark size={17} />서류 준비 저장</button>
+          <button class="button secondary" type="button" data-event="subscribe_alert" data-policy={policy.slug}><Bell size={17} />마감 알림 받기</button>
         </div>
         <p class="notice">GovFind는 자격을 단정하지 않습니다. 최종 신청과 판정은 공식 기관에서 확인하세요.</p>
       </aside>
@@ -110,7 +110,7 @@ const matchScore = Math.min(96, 72 + policy.matchReasons.length * 4 + (policy.ap
             <li>마감: {policy.deadline}</li>
           </ul>
           <div class="toolbar">
-            <a class="button" href={policy.officialUrl} target="_blank" rel="noopener noreferrer"><ExternalLink size={18} />공식 신청</a>
+            <a class="button" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}><ExternalLink size={18} />공식 신청</a>
             <a class="button secondary" href="/dashboard/">대시보드</a>
             <a class="button secondary" href="/support/">목록으로</a>
           </div>
@@ -125,7 +125,7 @@ const matchScore = Math.min(96, 72 + policy.matchReasons.length * 4 + (policy.ap
 
   <div class="sticky-detail-cta" aria-label="상세 페이지 빠른 실행">
     <span>{policy.title}</span>
-    <a class="button" href={policy.officialUrl} target="_blank" rel="noopener noreferrer"><ExternalLink size={17} />공식 신청하기</a>
-    <button class="button secondary" type="button"><Bell size={17} />알림</button>
+    <a class="button" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}><ExternalLink size={17} />공식 신청하기</a>
+    <button class="button secondary" type="button" data-event="subscribe_alert" data-policy={policy.slug}><Bell size={17} />알림</button>
   </div>
 </BaseLayout>

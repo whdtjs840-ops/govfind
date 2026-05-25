@@ -24,6 +24,9 @@ const matchScore = Math.min(96, 72 + policy.matchReasons.length * 4 + (policy.ap
   data-status={policy.status}
   data-source={policy.source}
   data-online={String(policy.applyOnline)}
+  data-score={String(matchScore)}
+  data-dday={policy.dday}
+  data-views={String(policy.views)}
   data-search={searchText}
 >
   <div class="meta">
@@ -50,9 +53,9 @@ const matchScore = Math.min(96, 72 + policy.matchReasons.length * 4 + (policy.ap
     </ul>
   )}
   <div class="card-actions">
-    <a class="button secondary" href={`/support/${policy.slug}/`}>상세 비교</a>
-    <button class="icon-action" type="button" data-action="save"><Bookmark size={16} />저장</button>
-    <button class="icon-action" type="button" data-action="alert"><Bell size={16} />알림</button>
-    <a class="text-link" href={policy.officialUrl} target="_blank" rel="noopener noreferrer"><ExternalLink size={15} />공식 신청처</a>
+    <a class="button secondary" href={`/support/${policy.slug}/`} data-event="policy_click" data-policy={policy.slug}>상세 비교</a>
+    <button class="icon-action" type="button" data-action="save" data-event="save_policy" data-policy={policy.slug}><Bookmark size={16} />저장</button>
+    <button class="icon-action" type="button" data-action="alert" data-event="subscribe_alert" data-policy={policy.slug}><Bell size={16} />알림</button>
+    <a class="text-link" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}><ExternalLink size={15} />공식 신청처</a>
   </div>
 </article>

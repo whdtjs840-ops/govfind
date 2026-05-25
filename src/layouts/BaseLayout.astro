@@ -100,5 +100,26 @@ const canonicalUrl = new URL(canonical, siteUrl).toString();
       <a href="/dashboard/">저장·알림</a>
       <a href="/guide/">가이드</a>
     </nav>
+    <script is:inline>
+      window.govfindEvents = window.govfindEvents || [];
+      document.addEventListener("click", (event) => {
+        const target = event.target instanceof Element ? event.target.closest("[data-event]") : null;
+        if (!target) return;
+        const payload = {
+          event: target.getAttribute("data-event"),
+          policy: target.getAttribute("data-policy"),
+          path: window.location.pathname,
+          at: new Date().toISOString()
+        };
+        window.govfindEvents.push(payload);
+        document.documentElement.dataset.lastEvent = payload.event || "";
+        try {
+          window.localStorage.setItem("govfind:lastEvent", JSON.stringify(payload));
+        } catch {
+          // Analytics hooks must never block user navigation.
+        }
+        window.dispatchEvent(new CustomEvent("govfind:event", { detail: payload }));
+      });
+    </script>
   </body>
 </html>

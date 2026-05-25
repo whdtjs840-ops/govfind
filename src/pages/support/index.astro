@@ -20,7 +20,7 @@ import { categories, lifeStages, policies, popularKeywords, regions, sources } f
           <option value="">전체 지역</option>
           {regions.map((item) => <option value={item}>{item}</option>)}
         </select>
-        <button class="button" type="submit"><Search size={18} />검색</button>
+        <button class="button" type="submit" data-event="search_submit">검색</button>
       </form>
       <div class="quick-tags" aria-label="인기 검색어">
         {popularKeywords.map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
@@ -98,6 +98,7 @@ import { categories, lifeStages, policies, popularKeywords, regions, sources } f
           <select class="input small" data-sort aria-label="정렬">
             <option value="recommended">추천순</option>
             <option value="deadline">마감임박순</option>
+            <option value="popular">인기순</option>
             <option value="online">온라인 신청 우선</option>
           </select>
         </div>
@@ -130,6 +131,11 @@ import { categories, lifeStages, policies, popularKeywords, regions, sources } f
     const keyword = params.get("q")?.trim() ?? "";
     const selectedCategory = params.get("category")?.trim() ?? "";
     const selectedRegion = params.get("region")?.trim() ?? "";
+    const selectedLife = params.get("lifeStage")?.trim() ?? "";
+    const selectedStatus = params.get("status")?.trim() ?? "";
+    const selectedSource = params.get("source")?.trim() ?? "";
+    const selectedOnline = params.get("online") === "true";
+    const selectedSort = params.get("sort")?.trim() ?? "recommended";
     const input = document.querySelector<HTMLInputElement>('input[name="q"]');
     const category = document.querySelector<HTMLSelectElement>('select[name="category"]');
     const region = document.querySelector<HTMLSelectElement>('select[name="region"]');
@@ -139,10 +145,49 @@ import { categories, lifeStages, policies, popularKeywords, regions, sources } f
     const status = document.querySelector<HTMLSelectElement>('[data-filter="status"]');
     const source = document.querySelector<HTMLSelectElement>('[data-filter="source"]');
     const online = document.querySelector<HTMLInputElement>('[data-filter="online"]');
+    const sort = document.querySelector<HTMLSelectElement>("[data-sort]");
+    const resultGrid = document.querySelector<HTMLElement>(".result-grid");
 
     if (input) input.value = keyword;
     if (category) category.value = selectedCategory;
     if (region) region.value = selectedRegion;
+    if (lifeStage) lifeStage.value = selectedLife;
+    if (status) status.value = selectedStatus;
+    if (source) source.value = selectedSource;
+    if (online) online.checked = selectedOnline;
+    if (sort) sort.value = selectedSort;
+
+    function ddayRank(value: string) {
+      if (value.startsWith("D-")) return Number(value.replace("D-", "")) || 999;
+      if (value === "상시") return 500;
+      if (value === "예정") return 700;
+      return 999;
+    }
+
+    function syncUrl() {
+      const next = new URLSearchParams();
+      if (keyword) next.set("q", keyword);
+      if (selectedCategory) next.set("category", selectedCategory);
+      if (selectedRegion) next.set("region", selectedRegion);
+      if (lifeStage?.value) next.set("lifeStage", lifeStage.value);
+      if (status?.value) next.set("status", status.value);
+      if (source?.value) next.set("source", source.value);
+      if (online?.checked) next.set("online", "true");
+      if (sort?.value && sort.value !== "recommended") next.set("sort", sort.value);
+      const query = next.toString();
+      window.history.replaceState(null, "", query ? `/support/?${query}` : "/support/");
+    }
+
+    function sortCards() {
+      if (!resultGrid || !sort) return;
+      const sorted = [...cards].sort((a, b) => {
+        if (sort.value === "deadline") return ddayRank(a.dataset.dday ?? "") - ddayRank(b.dataset.dday ?? "");
+        if (sort.value === "popular") return Number(b.dataset.views ?? 0) - Number(a.dataset.views ?? 0);
+        if (sort.value === "online") return Number(b.dataset.online === "true") - Number(a.dataset.online === "true");
+        return Number(b.dataset.score ?? 0) - Number(a.dataset.score ?? 0);
+      });
+      for (const card of sorted) resultGrid.appendChild(card);
+    }
 
     function applyFilters() {
       const lifeValue = lifeStage?.value ?? "";
@@ -171,12 +216,15 @@ import { categories, lifeStages, policies, popularKeywords, regions, sources } f
       }
 
       if (count) count.textContent = String(visible);
+      sortCards();
+      syncUrl();
     }
 
     lifeStage?.addEventListener("change", applyFilters);
     status?.addEventListener("change", applyFilters);
     source?.addEventListener("change", applyFilters);
     online?.addEventListener("change", applyFilters);
+    sort?.addEventListener("change", applyFilters);
     applyFilters();
   </script>
 </BaseLayout>

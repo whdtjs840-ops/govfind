@@ -5,6 +5,7 @@ import { policies } from "../data/policies";
 
 const savedPolicies = policies.slice(0, 3);
 const urgentPolicies = policies.filter((policy) => policy.status === "마감임박" || policy.status === "모집중").slice(0, 3);
+const recentPolicies = policies.slice(3, 6);
 ---
 
 <BaseLayout title="나의 지원금 대시보드 - GovFind" description="저장한 정책, 신청 진행 현황, 알림 설정, 문서 보관함을 한곳에서 확인하는 GovFind 대시보드입니다." canonical="/dashboard/">
@@ -58,6 +59,18 @@ const urgentPolicies = policies.filter((policy) => policy.status === "마감임�
             <a href={`/support/${policy.slug}/`}>
               <strong>{policy.title}</strong>
               <span>{policy.agency} · {policy.dday}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section class="card dashboard-panel">
+        <h2>최근 본 정책</h2>
+        <div class="dashboard-list">
+          {recentPolicies.map((policy) => (
+            <a href={`/support/${policy.slug}/`}>
+              <strong>{policy.title}</strong>
+              <span>{policy.source} · {policy.updatedAt}</span>
             </a>
           ))}
         </div>
