@@ -1,41 +1,28 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import {
-  ArrowRight,
-  Building2,
-  CalendarClock,
-  CheckCircle2,
-  FileText,
-  Search,
-  ShieldCheck,
-  Sparkles,
-  TrendingUp
-} from "@lucide/astro";
+import { ArrowRight, CalendarClock, Search } from "@lucide/astro";
 import { policies, categoryGroups, popularKeywords } from "../data/policies";
 import { guides } from "../data/guides";
 import { sourceLabel } from "../utils/sourceNames";
-import heroImage from "../assets/hero-govfind.png";
 
-const today = new Date().toISOString().slice(0, 10).replaceAll("-", ".");
 const totalCountLabel = policies.length.toLocaleString("ko-KR");
 const gov24Policies = policies.filter((policy) => policy.source.includes("정부24"));
 const kstartupPolicies = policies.filter((policy) => policy.source.includes("K-Startup"));
+const welfarePolicies = policies.filter((policy) => policy.source.includes("복지로"));
 const urgent = policies
   .filter((policy) => policy.status === "모집중" || policy.status === "마감임박" || /^D-/.test(policy.dday))
   .sort((a, b) => {
     const rank = (value: string) => (value.startsWith("D-") ? Number(value.replace("D-", "")) || 999 : value === "D-Day" ? 0 : 500);
     return rank(a.dday) - rank(b.dday);
-  })
-  .slice(0, 6);
-const popular = [...policies].sort((a, b) => b.views - a.views).slice(0, 6);
-const latest = [...policies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 6);
-const startupFeatured = kstartupPolicies.slice(0, 4);
+  });
+const popular = [...policies].sort((a, b) => b.views - a.views).slice(0, 8);
+const latest = [...policies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 24);
 const recommendedGuides = guides.slice(0, 4);
 const sourceStats = [
-  { label: "정부24 혜택", value: gov24Policies.length, href: "/support/?source=정부24" },
-  { label: "복지로", value: policies.filter((policy) => policy.source.includes("복지로")).length, href: "/support/?source=복지로" },
-  { label: "K-Startup", value: kstartupPolicies.length, href: "/support/?source=K-Startup" },
-  { label: "전체 정책", value: policies.length, href: "/support/" }
+  { label: "전체", value: policies.length, href: "/support/" },
+  { label: "정부24", value: gov24Policies.length, href: "/support/?source=정부24" },
+  { label: "복지로", value: welfarePolicies.length, href: "/support/?source=복지로" },
+  { label: "K-Startup", value: kstartupPolicies.length, href: "/support/?source=K-Startup" }
 ];
 const categoryCounts = categoryGroups.map((category) => ({
   ...category,
@@ -43,77 +30,54 @@ const categoryCounts = categoryGroups.map((category) => ({
     (policy) => policy.category === category.label || category.keywords.some((keyword) => `${policy.title} ${policy.tags.join(" ")}`.includes(keyword))
   ).length
 }));
+const mainCategories = categoryCounts.slice(0, 10);
 ---
 
 <BaseLayout
   title="GovFind - 정부지원금 찾기"
-  description="정부24, 복지로, K-Startup 등 공식 출처 기반 정부지원금과 창업지원사업을 검색하고 신청 조건, 필요 서류, 공식 신청처를 확인하세요."
+  description="정부지원금, 복지 혜택, 창업지원사업을 검색하고 지원 대상, 신청 기간, 필요 서류, 공식 신청처를 확인하세요."
 >
-  <section class="hero home-search-hero" style={`--hero-image: url(${heroImage.src})`}>
-    <div class="wrap home-hero-grid">
-      <div class="home-hero-copy">
-        <p class="eyebrow">govfind.kr</p>
-        <h1>정부지원금, 먼저 검색하고 공식 신청처로 이동하세요</h1>
-        <p class="lead">
-          정부24 혜택, 복지로 복지서비스, K-Startup 창업공고를 모아 지원대상, 신청기한, 필요서류, 공식 링크를 한 번에 정리합니다.
-        </p>
+  <section class="home-plain-hero">
+    <div class="wrap">
+      <p class="eyebrow">govfind.kr</p>
+      <h1>나에게 맞는 정부지원금 찾기</h1>
+      <p class="home-count-line"><strong>{totalCountLabel}건</strong>의 지원사업을 확인할 수 있습니다.</p>
 
-        <form class="home-search-box" action="/support/" method="get" aria-label="정부지원금 검색">
-          <div class="home-search-main">
-            <Search size={22} aria-hidden="true" />
-            <input name="q" type="search" placeholder="근로장려금, 청년월세, 소상공인, 창업지원금 검색" />
-            <button class="button" type="submit">검색</button>
-          </div>
-          <div class="home-filter-row">
-            <select class="input" name="category" aria-label="카테고리">
-              <option value="">전체 카테고리</option>
-              {categoryGroups.map((category) => <option value={category.label}>{category.label}</option>)}
-            </select>
-            <select class="input" name="region" aria-label="지역">
-              <option value="">전체 지역</option>
-              <option>전국</option>
-              <option>서울</option>
-              <option>경기</option>
-              <option>부산</option>
-              <option>대구</option>
-              <option>지역별</option>
-            </select>
-            <select class="input" name="source" aria-label="출처">
-              <option value="">전체 출처</option>
-              <option value="정부24">정부24</option>
-              <option value="복지로">복지로</option>
-              <option value="K-Startup">K-Startup</option>
-            </select>
-          </div>
-          <div class="quick-tags" aria-label="추천 검색어">
-            {popularKeywords.slice(0, 8).map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
-          </div>
-        </form>
+      <form class="home-search-box home-search-box-plain" action="/support/" method="get" aria-label="정부지원금 검색">
+        <div class="home-search-main">
+          <Search size={22} aria-hidden="true" />
+          <input name="q" type="search" placeholder="지원금, 청년, 창업, 복지, 소상공인 검색" />
+          <button class="button" type="submit">검색</button>
+        </div>
+        <div class="home-filter-row">
+          <select class="input" name="category" aria-label="카테고리">
+            <option value="">전체 카테고리</option>
+            {categoryGroups.map((category) => <option value={category.label}>{category.label}</option>)}
+          </select>
+          <select class="input" name="region" aria-label="지역">
+            <option value="">전체 지역</option>
+            <option>전국</option>
+            <option>서울</option>
+            <option>경기</option>
+            <option>부산</option>
+            <option>대구</option>
+            <option>지역별</option>
+          </select>
+          <select class="input" name="source" aria-label="출처">
+            <option value="">전체 출처</option>
+            <option value="정부24">정부24</option>
+            <option value="복지로">복지로</option>
+            <option value="K-Startup">K-Startup</option>
+          </select>
+        </div>
+      </form>
+
+      <div class="home-popular-line" aria-label="인기 검색어">
+        <span>인기</span>
+        {popularKeywords.slice(0, 8).map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
       </div>
 
-      <aside class="home-signal-panel" aria-label="GovFind 핵심 기능">
-        <div>
-          <ShieldCheck size={20} />
-          <strong>공식 출처 우선</strong>
-          <span>최종 신청은 정부24, 복지로, K-Startup 등 공식 페이지로 연결합니다.</span>
-        </div>
-        <div>
-          <CheckCircle2 size={20} />
-          <strong>조건 중심 정리</strong>
-          <span>지원대상, 선정기준, 신청방법, 필요서류를 상세 페이지에서 바로 확인합니다.</span>
-        </div>
-        <div>
-          <Sparkles size={20} />
-          <strong>광고 승인용 정보 구조</strong>
-          <span>단순 링크 모음이 아니라 정책별 해설, FAQ, 가이드 허브로 구성했습니다.</span>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <section class="section tight home-stats-band">
-    <div class="wrap">
-      <div class="home-stat-grid">
+      <div class="home-source-pills" aria-label="출처별 지원사업 수">
         {sourceStats.map((item) => (
           <a href={item.href}>
             <strong>{item.value.toLocaleString("ko-KR")}</strong>
@@ -124,36 +88,29 @@ const categoryCounts = categoryGroups.map((category) => ({
     </div>
   </section>
 
-  <section class="section">
-    <div class="wrap home-section-head">
-      <div>
-        <p class="eyebrow">카테고리</p>
-        <h2>많이 찾는 분야부터 바로 들어가세요</h2>
-      </div>
-      <a class="text-link" href="/support/">전체 목록 보기 <ArrowRight size={16} /></a>
-    </div>
-    <div class="wrap category-tile-grid">
-      {categoryCounts.map((category) => (
+  <section class="section tight home-category-band">
+    <div class="wrap category-count-grid">
+      {mainCategories.map((category) => (
         <a href={`/category/${category.slug}/`}>
           <span>{category.label}</span>
-          <strong>{category.count.toLocaleString("ko-KR")}개</strong>
+          <strong>{category.count.toLocaleString("ko-KR")}</strong>
         </a>
       ))}
     </div>
   </section>
 
-  <section class="section tight band">
+  <section class="section tight">
     <div class="wrap home-two-column">
       <section>
         <div class="home-section-head compact">
           <div>
-            <p class="eyebrow">마감 체크</p>
-            <h2>지금 확인할 정책</h2>
+            <p class="eyebrow">마감 임박</p>
+            <h2>지금 확인해야 할 지원사업</h2>
           </div>
-          <CalendarClock size={24} />
+          <a class="text-link" href="/deadline/">더보기 <ArrowRight size={16} /></a>
         </div>
-        <div class="home-list">
-          {urgent.map((policy) => (
+        <div class="home-list deadline-list">
+          {urgent.slice(0, 9).map((policy) => (
             <a href={`/support/${policy.slug}/`}>
               <span>{policy.dday}</span>
               <strong>{policy.title}</strong>
@@ -166,17 +123,17 @@ const categoryCounts = categoryGroups.map((category) => ({
       <section>
         <div class="home-section-head compact">
           <div>
-            <p class="eyebrow">인기 정책</p>
-            <h2>조회가 많은 지원금</h2>
+            <p class="eyebrow">많이 보는 정책</p>
+            <h2>많이 찾는 지원사업</h2>
           </div>
-          <TrendingUp size={24} />
+          <a class="text-link" href="/support/">전체 보기 <ArrowRight size={16} /></a>
         </div>
-        <div class="home-list">
+        <div class="home-list popular-list">
           {popular.map((policy, index) => (
             <a href={`/support/${policy.slug}/`}>
               <span>{index + 1}</span>
               <strong>{policy.title}</strong>
-              <small>{policy.views.toLocaleString("ko-KR")} 조회 · {sourceLabel(policy.source)}</small>
+              <small>{policy.category} · {sourceLabel(policy.source)}</small>
             </a>
           ))}
         </div>
@@ -184,18 +141,22 @@ const categoryCounts = categoryGroups.map((category) => ({
     </div>
   </section>
 
-  <section class="section">
+  <section class="section home-latest-section">
     <div class="wrap home-section-head">
       <div>
-        <p class="eyebrow">정부24 공공서비스</p>
-        <h2>실제 혜택 데이터가 들어온 최신 정책</h2>
+        <p class="eyebrow">최신 지원사업</p>
+        <h2>새로 확인할 수 있는 정책</h2>
       </div>
-      <a class="text-link" href="/support/?source=정부24">정부24 혜택 보기 <ArrowRight size={16} /></a>
+      <a class="text-link" href="/support/">전체 지원사업 보기 <ArrowRight size={16} /></a>
     </div>
-    <div class="wrap policy-strip-grid">
-      {gov24Policies.slice(0, 6).map((policy) => (
+    <div class="wrap latest-policy-list">
+      {latest.map((policy) => (
         <article>
-          <span class="badge">{policy.category}</span>
+          <div class="latest-policy-meta">
+            <span class="badge warn">{policy.status}</span>
+            <span class="badge">{policy.category}</span>
+            <span class="badge soft">{policy.dday}</span>
+          </div>
           <h3><a href={`/support/${policy.slug}/`}>{policy.title}</a></h3>
           <p>{policy.summary}</p>
           <small>{policy.agency} · {policy.deadline}</small>
@@ -205,35 +166,10 @@ const categoryCounts = categoryGroups.map((category) => ({
   </section>
 
   <section class="section tight band">
-    <div class="wrap split wide">
-      <div>
-        <p class="eyebrow">창업지원사업</p>
-        <h2>K-Startup 모집공고도 같이 보여줍니다</h2>
-        <p class="lead">
-          예비창업자, 초기창업기업, 청년 창업가가 찾는 공고를 모집기간과 신청 링크 중심으로 정리했습니다.
-        </p>
-        <div class="toolbar">
-          <a class="button" href="/category/startup/">창업지원 보기</a>
-          <a class="button secondary" href="/support/?source=K-Startup">창업공고 목록</a>
-        </div>
-      </div>
-      <div class="home-list startup-list">
-        {startupFeatured.map((policy) => (
-          <a href={`/support/${policy.slug}/`}>
-            <span>{policy.dday}</span>
-            <strong>{policy.title}</strong>
-            <small>{policy.region} · {policy.deadline}</small>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
     <div class="wrap home-section-head">
       <div>
-        <p class="eyebrow">검색 유입 가이드</p>
-        <h2>신청 전에 읽는 정보성 콘텐츠</h2>
+        <p class="eyebrow">신청 전 가이드</p>
+        <h2>지원금 신청 전에 읽어볼 글</h2>
       </div>
       <a class="text-link" href="/guide/">가이드 전체 보기 <ArrowRight size={16} /></a>
     </div>
@@ -243,7 +179,7 @@ const categoryCounts = categoryGroups.map((category) => ({
           <span class="badge soft">{guide.category}</span>
           <h3><a href={`/guide/${guide.slug}/`}>{guide.title}</a></h3>
           <p>{guide.description}</p>
-          <a class="text-link" href={`/guide/${guide.slug}/`}><FileText size={16} /> 자세히 보기</a>
+          <a class="text-link" href={`/guide/${guide.slug}/`}>자세히 보기 <ArrowRight size={16} /></a>
         </article>
       ))}
     </div>
@@ -251,13 +187,11 @@ const categoryCounts = categoryGroups.map((category) => ({
 
   <section class="section tight home-source-note">
     <div class="wrap">
-      <Building2 size={24} />
+      <CalendarClock size={24} />
       <div>
-        <p class="eyebrow">업데이트 기준 {today}</p>
+        <p class="eyebrow">공식 신청처 확인</p>
         <h2>GovFind는 신청을 대신하지 않고 공식 신청처로 안내합니다</h2>
-        <p class="lead">
-          민간 사이트에서 자격을 확정하지 않습니다. GovFind는 조건 확인과 비교를 돕고, 최종 접수와 판정은 각 기관 공식 페이지에서 진행합니다.
-        </p>
+        <p class="lead">지원 대상과 신청 가능 여부는 각 기관의 공식 안내에서 최종 확인하세요.</p>
       </div>
       <a class="button secondary" href="/sources/">출처 확인</a>
     </div>

@@ -17,7 +17,6 @@ const detailCriteria = apiDetails?.criteria || "";
 const relatedPolicies = policies
   .filter((item) => item.slug !== policy.slug && (item.category === policy.category || item.region === policy.region || item.tags.some((tag) => policy.tags.includes(tag))))
   .slice(0, 4);
-const reviewSearchUrl = `https://search.naver.com/search.naver?query=${encodeURIComponent(`${policy.title} 후기 신청`)}`;
 
 function lines(value?: string, max = 12) {
   return (value ?? "")
@@ -52,9 +51,9 @@ const criteriaLines = lines(detailCriteria, 8);
           <span class="badge soft">{sourceLabel(policy.source)}</span>
         </div>
         <h1>{policy.title}</h1>
-        <p class="doc-meta">등록 {policy.updatedAt} · 수정 {policy.updatedAt} · 조회 {policy.views.toLocaleString("ko-KR")}</p>
+        <p class="doc-meta">업데이트 {policy.updatedAt} · {policy.agency}</p>
         <a class="button doc-primary" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
-          <ExternalLink size={18} />바로 신청하기
+          <ExternalLink size={18} />공식 신청처 보기
         </a>
       </div>
     </div>
@@ -137,11 +136,11 @@ const criteriaLines = lines(detailCriteria, 8);
         </section>
 
         <section class="doc-block">
-          <h3>관련 후기와 참고 검색</h3>
-          <p>실제 신청 경험담은 개인 상황에 따라 다를 수 있습니다. 후기성 글은 참고용으로만 보고, 최종 조건은 공식 기관 안내를 기준으로 확인하세요.</p>
-          <ul class="related-links">
-            <li><a href={reviewSearchUrl} target="_blank" rel="noopener noreferrer">네이버에서 관련 후기 검색</a></li>
-            <li><a href={policy.officialSourceUrl} target="_blank" rel="noopener noreferrer">공식 출처 확인</a></li>
+          <h3>신청 전 확인사항</h3>
+          <ul class="doc-list">
+            <li>지원 대상, 소득 기준, 거주지 기준은 공식 신청처에서 다시 확인하세요.</li>
+            <li>신청 기간과 제출 서류는 기관 사정에 따라 달라질 수 있습니다.</li>
+            <li>GovFind는 정보를 정리해 안내하며, 최종 접수와 자격 판정은 공식 기관에서 진행합니다.</li>
           </ul>
         </section>
       </article>
@@ -155,7 +154,7 @@ const criteriaLines = lines(detailCriteria, 8);
             <div><dt>마감</dt><dd>{policy.deadline}</dd></div>
           </dl>
           <a class="button" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
-            <ExternalLink size={18} />공식 신청하기
+            <ExternalLink size={18} />공식 신청처 보기
           </a>
         </div>
 
@@ -181,7 +180,7 @@ const criteriaLines = lines(detailCriteria, 8);
   <div class="sticky-detail-cta" aria-label="상세 페이지 빠른 실행">
     <span>{policy.title}</span>
     <a class="button" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
-      <ExternalLink size={17} />공식 신청하기
+      <ExternalLink size={17} />공식 신청처
     </a>
     <a class="button secondary" href="/support/">목록으로</a>
   </div>
