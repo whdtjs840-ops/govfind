@@ -1,100 +1,151 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PolicyCard from "../../components/PolicyCard.astro";
-import { Search, SlidersHorizontal } from "@lucide/astro";
-import { categories, lifeStages, policies, popularKeywords, regions, sources } from "../../data/policies";
+import { CheckCircle2, Search, SlidersHorizontal } from "@lucide/astro";
+import { categories, categoryGroups, lifeStages, policies, popularKeywords, regions, sources } from "../../data/policies";
+
+const params = Astro.url.searchParams;
+const selectedQ = params.get("q") ?? "";
+const selectedCategory = params.get("category") ?? "";
+const selectedRegion = params.get("region") ?? "";
+const selectedSource = params.get("source") ?? "";
+const selectedStatus = params.get("status") ?? "";
+
+const counts = {
+  all: policies.length,
+  deadline: policies.filter((policy) => policy.status === "마감임박" || /^D-/.test(policy.dday)).length,
+  gov24: policies.filter((policy) => policy.source === "정부24 공공서비스 API").length,
+  welfare: policies.filter((policy) => policy.source.includes("복지로")).length,
+  kstartup: policies.filter((policy) => policy.source === "K-Startup API").length,
+  youth: policies.filter((policy) => `${policy.title} ${policy.tags.join(" ")}`.includes("청년")).length,
+  smallBusiness: policies.filter((policy) => `${policy.title} ${policy.tags.join(" ")}`.includes("소상공인")).length
+};
+
+function supportHref(next: Record<string, string>) {
+  const query = new URLSearchParams();
+  for (const [key, value] of Object.entries(next)) {
+    if (value) query.set(key, value);
+  }
+  const value = query.toString();
+  return value ? `/support/?${value}` : "/support/";
+}
+
+const quickTabs = [
+  { label: "전체", count: counts.all, href: supportHref({}), active: !selectedQ && !selectedCategory && !selectedSource && !selectedStatus },
+  { label: "마감임박", count: counts.deadline, href: supportHref({ status: "마감임박" }), active: selectedStatus === "마감임박" },
+  { label: "정부24", count: counts.gov24, href: supportHref({ source: "정부24 공공서비스 API" }), active: selectedSource === "정부24 공공서비스 API" },
+  { label: "복지로", count: counts.welfare, href: supportHref({ source: "복지로 API" }), active: selectedSource === "복지로 API" },
+  { label: "K-Startup", count: counts.kstartup, href: supportHref({ source: "K-Startup API" }), active: selectedSource === "K-Startup API" },
+  { label: "청년", count: counts.youth, href: supportHref({ q: "청년" }), active: selectedQ === "청년" },
+  { label: "소상공인", count: counts.smallBusiness, href: supportHref({ q: "소상공인" }), active: selectedQ === "소상공인" }
+];
+
+const topCategories = categoryGroups.slice(0, 7);
 ---
 
-<BaseLayout title="전체 정부지원금 목록 - GovFind" description="정부지원금을 키워드, 카테고리, 지역, 모집 상태, 온라인 신청 가능 여부로 검색하고 비교하세요.">
-  <section class="page-head">
+<BaseLayout
+  title="정부지원금 검색 결과 - GovFind"
+  description="정부지원금을 키워드, 카테고리, 지역, 모집 상태, 공식 출처별로 검색하고 지원 대상, 필요 서류, 신청처를 비교하세요."
+>
+  <section class="support-search-head">
     <div class="wrap">
-      <p class="eyebrow">전체 지원사업</p>
-      <h1>정부지원금 전체 목록</h1>
-      <p class="lead">대표 지원사업을 카테고리, 지역, 모집 상태, 공식 출처 기준으로 좁혀볼 수 있습니다.</p>
-      <form class="toolbar search-toolbar" action="/support/" method="get">
-        <input class="input" name="q" type="search" placeholder="청년 월세, 소상공인 자금, 육아 지원금" />
-        <select class="input" name="category" aria-label="카테고리">
-          <option value="">전체 카테고리</option>
-          {categories.map((item) => <option value={item}>{item}</option>)}
-        </select>
-        <select class="input" name="region" aria-label="지역">
-          <option value="">전체 지역</option>
-          {regions.map((item) => <option value={item}>{item}</option>)}
-        </select>
-        <button class="button" type="submit" data-event="search_submit">검색</button>
+      <p class="eyebrow">정부지원금 검색</p>
+      <h1>지원금, 혜택, 창업공고를 한 번에 찾기</h1>
+      <p class="lead">정부24·복지로·K-Startup 데이터를 공식 출처 기준으로 정리했습니다. 조건을 확인한 뒤 최종 신청은 공식 신청처에서 진행하세요.</p>
+
+      <form class="support-search-form" action="/support/" method="get">
+        <div class="support-search-main">
+          <Search size={21} aria-hidden="true" />
+          <input name="q" type="search" value={selectedQ} placeholder="근로장려금, 청년월세, 소상공인, 창업지원금" />
+          <button class="button" type="submit">검색</button>
+        </div>
+        <div class="support-search-selects">
+          <select class="input" name="category" aria-label="카테고리">
+            <option value="">전체 카테고리</option>
+            {categories.map((item) => <option value={item} selected={selectedCategory === item}>{item}</option>)}
+          </select>
+          <select class="input" name="region" aria-label="지역">
+            <option value="">전체 지역</option>
+            {regions.map((item) => <option value={item} selected={selectedRegion === item}>{item}</option>)}
+          </select>
+          <select class="input" name="source" aria-label="출처">
+            <option value="">전체 출처</option>
+            {sources.map((item) => <option value={item} selected={selectedSource === item}>{item}</option>)}
+          </select>
+        </div>
       </form>
-      <div class="quick-tags" aria-label="인기 검색어">
-        {popularKeywords.map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
-      </div>
+
+      <nav class="support-tabs" aria-label="빠른 결과 필터">
+        {quickTabs.map((tab) => (
+          <a class={tab.active ? "active" : ""} href={tab.href}>
+            <span>{tab.label}</span>
+            <strong>{tab.count.toLocaleString("ko-KR")}</strong>
+          </a>
+        ))}
+      </nav>
     </div>
   </section>
 
-  <section class="section tight profile-lite-band">
-    <div class="wrap profile-lite">
-      <div>
-        <p class="eyebrow">비회원 라이트 프로필</p>
-        <h2>나이·지역·가구상황만으로 먼저 좁혀보세요</h2>
-      </div>
-      <form class="profile-lite-form" action="/support/" method="get">
-        <input class="input" name="age" inputmode="numeric" placeholder="나이" aria-label="나이" />
-        <select class="input" name="region" aria-label="지역">
-          <option value="">지역</option>
-          {regions.map((item) => <option value={item}>{item}</option>)}
-        </select>
-        <select class="input" name="household" aria-label="가구상황">
-          <option value="">가구상황</option>
-          <option>1인가구</option>
-          <option>출산가구</option>
-          <option>저소득</option>
-          <option>사업자</option>
-        </select>
-        <button class="button" type="submit">간단 자격 확인</button>
-      </form>
+  <section class="section tight support-summary-band">
+    <div class="wrap support-summary-grid">
+      <div><strong>{counts.gov24.toLocaleString("ko-KR")}</strong><span>정부24 혜택</span></div>
+      <div><strong>{counts.welfare.toLocaleString("ko-KR")}</strong><span>복지로 정책</span></div>
+      <div><strong>{counts.kstartup.toLocaleString("ko-KR")}</strong><span>창업공고</span></div>
+      <div><strong>공식</strong><span>신청처 이동</span></div>
     </div>
   </section>
 
   <section class="section">
-    <div class="wrap results-layout">
-      <details class="filter-card card" aria-label="상세 필터" open>
-        <summary><SlidersHorizontal size={18} />필터</summary>
-        <label>생애주기
-          <select class="input" data-filter="lifeStage">
-            <option value="">전체</option>
-            {lifeStages.map((item) => <option value={item}>{item}</option>)}
-          </select>
-        </label>
-        <label>모집 상태
-          <select class="input" data-filter="status">
-            <option value="">전체</option>
-            <option>모집중</option>
-            <option>마감임박</option>
-            <option>상시</option>
-            <option>예정</option>
-          </select>
-        </label>
-        <label>출처
-          <select class="input" data-filter="source">
-            <option value="">전체</option>
-            {sources.map((item) => <option value={item}>{item}</option>)}
-          </select>
-        </label>
-        <label class="check-row">
-          <input type="checkbox" data-filter="online" />
-          온라인 신청 가능
-        </label>
-        <div class="quick-tags">
-          <a class="chip" href="/support/?q=청년">청년</a>
-          <a class="chip" href="/support/?q=소상공인">소상공인</a>
-          <a class="chip" href="/support/?q=마감">마감</a>
-        </div>
-      </details>
+    <div class="wrap results-layout support-results-layout">
+      <aside class="support-sidebar" aria-label="검색 필터">
+        <details class="filter-card card" open>
+          <summary><SlidersHorizontal size={18} />상세 필터</summary>
+          <label>생애주기
+            <select class="input" data-filter="lifeStage">
+              <option value="">전체</option>
+              {lifeStages.map((item) => <option value={item}>{item}</option>)}
+            </select>
+          </label>
+          <label>모집 상태
+            <select class="input" data-filter="status">
+              <option value="">전체</option>
+              <option selected={selectedStatus === "모집중"}>모집중</option>
+              <option selected={selectedStatus === "마감임박"}>마감임박</option>
+              <option selected={selectedStatus === "상시"}>상시</option>
+              <option selected={selectedStatus === "예정"}>예정</option>
+            </select>
+          </label>
+          <label>출처
+            <select class="input" data-filter="source">
+              <option value="">전체</option>
+              {sources.map((item) => <option value={item}>{item}</option>)}
+            </select>
+          </label>
+          <label class="check-row">
+            <input type="checkbox" data-filter="online" />
+            온라인 신청 가능
+          </label>
+        </details>
 
-      <div>
-        <div class="result-head">
+        <div class="card support-category-card">
+          <h2>분야별 보기</h2>
+          <div class="quick-tags">
+            {topCategories.map((category) => <a class="chip" href={`/category/${category.slug}/`}>{category.label}</a>)}
+          </div>
+        </div>
+
+        <div class="card support-source-card">
+          <h2><CheckCircle2 size={18} /> 확인 기준</h2>
+          <p>GovFind는 조건을 정리해 보여주며, 자격 판정과 접수는 각 기관 공식 페이지에서 진행됩니다.</p>
+        </div>
+      </aside>
+
+      <div class="support-result-main">
+        <div class="result-head support-result-head">
           <div>
             <p class="eyebrow"><span id="result-count">{policies.length}</span>개 결과</p>
-            <h2>적합 이유와 공식 신청처를 함께 확인하세요</h2>
-            <p class="notice">카드에는 기관명, 마감일, 출처, 적합 이유를 함께 표시합니다.</p>
+            <h2>조건, 기한, 신청처를 빠르게 비교하세요</h2>
+            <p class="notice">카드를 열면 지원 대상, 선정 기준, 필요 서류, FAQ와 공식 신청 링크를 확인할 수 있습니다.</p>
           </div>
           <select class="input small" data-sort aria-label="정렬">
             <option value="recommended">추천순</option>
@@ -103,7 +154,12 @@ import { categories, lifeStages, policies, popularKeywords, regions, sources } f
             <option value="online">온라인 신청 우선</option>
           </select>
         </div>
-        <div class="grid cols-2 result-grid">
+
+        <div class="support-keyword-row" aria-label="인기 검색어">
+          {popularKeywords.slice(0, 12).map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
+        </div>
+
+        <div class="result-grid support-result-list">
           {policies.map((policy) => <PolicyCard policy={policy} />)}
         </div>
       </div>
@@ -137,9 +193,6 @@ import { categories, lifeStages, policies, popularKeywords, regions, sources } f
     const selectedSource = params.get("source")?.trim() ?? "";
     const selectedOnline = params.get("online") === "true";
     const selectedSort = params.get("sort")?.trim() ?? "recommended";
-    const input = document.querySelector<HTMLInputElement>('input[name="q"]');
-    const category = document.querySelector<HTMLSelectElement>('select[name="category"]');
-    const region = document.querySelector<HTMLSelectElement>('select[name="region"]');
     const count = document.querySelector("#result-count");
     const cards = Array.from(document.querySelectorAll<HTMLElement>(".support-card"));
     const lifeStage = document.querySelector<HTMLSelectElement>('[data-filter="lifeStage"]');
@@ -148,17 +201,36 @@ import { categories, lifeStages, policies, popularKeywords, regions, sources } f
     const online = document.querySelector<HTMLInputElement>('[data-filter="online"]');
     const sort = document.querySelector<HTMLSelectElement>("[data-sort]");
     const resultGrid = document.querySelector<HTMLElement>(".result-grid");
+    const topCategory = document.querySelector<HTMLSelectElement>('.support-search-selects select[name="category"]');
+    const topRegion = document.querySelector<HTMLSelectElement>('.support-search-selects select[name="region"]');
+    const topSource = document.querySelector<HTMLSelectElement>('.support-search-selects select[name="source"]');
+    const tabs = Array.from(document.querySelectorAll<HTMLAnchorElement>(".support-tabs a"));
 
-    if (input) input.value = keyword;
-    if (category) category.value = selectedCategory;
-    if (region) region.value = selectedRegion;
     if (lifeStage) lifeStage.value = selectedLife;
     if (status) status.value = selectedStatus;
     if (source) source.value = selectedSource;
     if (online) online.checked = selectedOnline;
     if (sort) sort.value = selectedSort;
+    if (topCategory) topCategory.value = selectedCategory;
+    if (topRegion) topRegion.value = selectedRegion;
+    if (topSource) topSource.value = selectedSource;
+
+    function querySignature(search: string) {
+      const values = new URLSearchParams(search);
+      const entries = Array.from(values.entries()).filter(([key]) => ["q", "category", "region", "source", "status"].includes(key));
+      return entries.sort(([a], [b]) => a.localeCompare(b)).map(([key, value]) => `${key}=${value}`).join("&");
+    }
+
+    function syncActiveTabs() {
+      const current = querySignature(window.location.search);
+      for (const tab of tabs) {
+        const tabUrl = new URL(tab.href);
+        tab.classList.toggle("active", querySignature(tabUrl.search) === current);
+      }
+    }
 
     function ddayRank(value: string) {
+      if (value === "D-Day") return 0;
       if (value.startsWith("D-")) return Number(value.replace("D-", "")) || 999;
       if (value === "상시") return 500;
       if (value === "예정") return 700;
@@ -219,6 +291,7 @@ import { categories, lifeStages, policies, popularKeywords, regions, sources } f
       if (count) count.textContent = String(visible);
       sortCards();
       syncUrl();
+      syncActiveTabs();
     }
 
     lifeStage?.addEventListener("change", applyFilters);
