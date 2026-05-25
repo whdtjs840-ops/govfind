@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { ExternalLink } from "@lucide/astro";
 import { policies } from "../../data/policies";
+import { sourceLabel } from "../../utils/sourceNames";
 
 export function getStaticPaths() {
   return policies.map((policy) => ({ params: { slug: policy.slug }, props: { policy } }));
@@ -48,7 +49,7 @@ const criteriaLines = lines(detailCriteria, 8);
           <span class={policy.status === "마감임박" ? "badge deadline" : "badge warn"}>{policy.status}</span>
           <span class="badge">{policy.category}</span>
           <span class="badge soft">{policy.dday}</span>
-          <span class="badge soft">{policy.source}</span>
+          <span class="badge soft">{sourceLabel(policy.source)}</span>
         </div>
         <h1>{policy.title}</h1>
         <p class="doc-meta">등록 {policy.updatedAt} · 수정 {policy.updatedAt} · 조회 {policy.views.toLocaleString("ko-KR")}</p>
@@ -78,7 +79,7 @@ const criteriaLines = lines(detailCriteria, 8);
             <div><dt>지역</dt><dd>{policy.region}</dd></div>
             <div><dt>신청기간</dt><dd>{policy.deadline} <strong>{policy.dday}</strong></dd></div>
             <div><dt>지원규모</dt><dd>{policy.amount}</dd></div>
-            <div><dt>출처</dt><dd>{policy.source}</dd></div>
+            <div><dt>안내처</dt><dd>{sourceLabel(policy.source)}</dd></div>
           </dl>
         </section>
 

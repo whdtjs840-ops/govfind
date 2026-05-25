@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { CheckCircle2, FileArchive, ListChecks, MapPin, Search } from "@lucide/astro";
 import { policies } from "../data/policies";
+import { sourceLabel } from "../utils/sourceNames";
 
 const urgentPolicies = policies.filter((policy) => policy.status === "마감임박" || policy.status === "모집중").slice(0, 3);
 const recentPolicies = policies.slice(3, 6);
@@ -70,7 +71,7 @@ const recentPolicies = policies.slice(3, 6);
           {recentPolicies.map((policy) => (
             <a href={`/support/${policy.slug}/`}>
               <strong>{policy.title}</strong>
-              <span>{policy.source} · {policy.updatedAt}</span>
+              <span>{sourceLabel(policy.source)} · {policy.updatedAt}</span>
             </a>
           ))}
         </div>

@@ -2,21 +2,22 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PolicyCard from "../../components/PolicyCard.astro";
 import { CheckCircle2, Search, SlidersHorizontal } from "@lucide/astro";
-import { categories, categoryGroups, lifeStages, policies, popularKeywords, regions, sources } from "../../data/policies";
+import { categories, categoryGroups, lifeStages, policies, popularKeywords, regions } from "../../data/policies";
+import { publicSourceOptions, sourceLabel } from "../../utils/sourceNames";
 
 const params = Astro.url.searchParams;
 const selectedQ = params.get("q") ?? "";
 const selectedCategory = params.get("category") ?? "";
 const selectedRegion = params.get("region") ?? "";
-const selectedSource = params.get("source") ?? "";
+const selectedSource = sourceLabel(params.get("source") ?? "");
 const selectedStatus = params.get("status") ?? "";
 
 const counts = {
   all: policies.length,
   deadline: policies.filter((policy) => policy.status === "마감임박" || /^D-/.test(policy.dday)).length,
-  gov24: policies.filter((policy) => policy.source === "정부24 공공서비스 API").length,
+  gov24: policies.filter((policy) => policy.source.includes("정부24")).length,
   welfare: policies.filter((policy) => policy.source.includes("복지로")).length,
-  kstartup: policies.filter((policy) => policy.source === "K-Startup API").length,
+  kstartup: policies.filter((policy) => policy.source.includes("K-Startup")).length,
   youth: policies.filter((policy) => `${policy.title} ${policy.tags.join(" ")}`.includes("청년")).length,
   smallBusiness: policies.filter((policy) => `${policy.title} ${policy.tags.join(" ")}`.includes("소상공인")).length
 };
@@ -33,9 +34,9 @@ function supportHref(next: Record<string, string>) {
 const quickTabs = [
   { label: "전체", count: counts.all, href: supportHref({}), active: !selectedQ && !selectedCategory && !selectedSource && !selectedStatus },
   { label: "마감임박", count: counts.deadline, href: supportHref({ status: "마감임박" }), active: selectedStatus === "마감임박" },
-  { label: "정부24", count: counts.gov24, href: supportHref({ source: "정부24 공공서비스 API" }), active: selectedSource === "정부24 공공서비스 API" },
-  { label: "복지로", count: counts.welfare, href: supportHref({ source: "복지로 API" }), active: selectedSource === "복지로 API" },
-  { label: "K-Startup", count: counts.kstartup, href: supportHref({ source: "K-Startup API" }), active: selectedSource === "K-Startup API" },
+  { label: "정부24", count: counts.gov24, href: supportHref({ source: "정부24" }), active: selectedSource === "정부24" },
+  { label: "복지로", count: counts.welfare, href: supportHref({ source: "복지로" }), active: selectedSource === "복지로" },
+  { label: "K-Startup", count: counts.kstartup, href: supportHref({ source: "K-Startup" }), active: selectedSource === "K-Startup" },
   { label: "청년", count: counts.youth, href: supportHref({ q: "청년" }), active: selectedQ === "청년" },
   { label: "소상공인", count: counts.smallBusiness, href: supportHref({ q: "소상공인" }), active: selectedQ === "소상공인" }
 ];
@@ -70,7 +71,7 @@ const topCategories = categoryGroups.slice(0, 7);
           </select>
           <select class="input" name="source" aria-label="출처">
             <option value="">전체 출처</option>
-            {sources.map((item) => <option value={item} selected={selectedSource === item}>{item}</option>)}
+            {publicSourceOptions.map((item) => <option value={item.value} selected={selectedSource === item.value}>{item.label}</option>)}
           </select>
         </div>
       </form>
@@ -118,7 +119,7 @@ const topCategories = categoryGroups.slice(0, 7);
           <label>출처
             <select class="input" data-filter="source">
               <option value="">전체</option>
-              {sources.map((item) => <option value={item}>{item}</option>)}
+              {publicSourceOptions.map((item) => <option value={item.value}>{item.label}</option>)}
             </select>
           </label>
           <label class="check-row">
@@ -190,7 +191,7 @@ const topCategories = categoryGroups.slice(0, 7);
     const selectedRegion = params.get("region")?.trim() ?? "";
     const selectedLife = params.get("lifeStage")?.trim() ?? "";
     const selectedStatus = params.get("status")?.trim() ?? "";
-    const selectedSource = params.get("source")?.trim() ?? "";
+    const selectedSource = normalizeSource(params.get("source")?.trim() ?? "");
     const selectedOnline = params.get("online") === "true";
     const selectedSort = params.get("sort")?.trim() ?? "recommended";
     const count = document.querySelector("#result-count");
@@ -205,6 +206,13 @@ const topCategories = categoryGroups.slice(0, 7);
     const topRegion = document.querySelector<HTMLSelectElement>('.support-search-selects select[name="region"]');
     const topSource = document.querySelector<HTMLSelectElement>('.support-search-selects select[name="source"]');
     const tabs = Array.from(document.querySelectorAll<HTMLAnchorElement>(".support-tabs a"));
+
+    function normalizeSource(value: string) {
+      if (value.includes("정부24")) return "정부24";
+      if (value.includes("복지로")) return "복지로";
+      if (value.includes("K-Startup")) return "K-Startup";
+      return value.replace(/\s*API\b/g, "").replace("공공서비스", "").trim();
+    }
 
     if (lifeStage) lifeStage.value = selectedLife;
     if (status) status.value = selectedStatus;
@@ -275,13 +283,14 @@ const topCategories = categoryGroups.slice(0, 7);
         const cardRegion = card.dataset.region ?? "";
         const cardStatus = card.dataset.status ?? "";
         const cardSource = card.dataset.source ?? "";
+        const cardSourceLabel = card.dataset.sourceLabel ?? "";
         const cardOnline = card.dataset.online === "true";
         const matchKeyword = !keyword || text.includes(keyword);
         const matchCategory = !selectedCategory || cardCategory === selectedCategory;
         const matchRegion = !selectedRegion || cardRegion === selectedRegion || cardRegion === "전국" || cardRegion === "지역별";
         const matchLife = !lifeValue || text.includes(lifeValue);
         const matchStatus = !statusValue || cardStatus === statusValue;
-        const matchSource = !sourceValue || cardSource === sourceValue;
+        const matchSource = !sourceValue || cardSource === sourceValue || cardSourceLabel === sourceValue;
         const matchOnline = !onlineOnly || cardOnline;
         const isVisible = matchKeyword && matchCategory && matchRegion && matchLife && matchStatus && matchSource && matchOnline;
         card.style.display = isVisible ? "" : "none";

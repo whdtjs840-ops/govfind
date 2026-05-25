@@ -4,7 +4,7 @@ import { Database, ExternalLink, ShieldCheck } from "@lucide/astro";
 import { infrastructureIntegrations, normalizedPolicyFields, publicApiSources } from "../data/integrations";
 ---
 
-<BaseLayout title="공식 데이터 출처와 연동 설계 - GovFind" description="GovFind가 정부지원금 정보를 공공 API 중심으로 정규화하고 공식 신청처로 연결하는 방식입니다." canonical="/sources/">
+<BaseLayout title="공식 데이터 출처 - GovFind" description="GovFind가 정부지원금 정보를 공식 자료 중심으로 정리하고 공식 신청처로 연결하는 방식입니다." canonical="/sources/">
   <section class="page-head">
     <div class="wrap">
       <p class="eyebrow">데이터 출처</p>
@@ -45,7 +45,7 @@ import { infrastructureIntegrations, normalizedPolicyFields, publicApiSources } 
 
       <section class="card">
         <h2><ShieldCheck size={20} />내부 표준 스키마</h2>
-        <p class="notice">원천 API의 필드명을 그대로 노출하지 않고, 아래 축으로 정규화해 검색·필터·상세 화면에서 공통 사용합니다.</p>
+        <p class="notice">원천 자료의 내부 필드명을 그대로 노출하지 않고, 아래 축으로 정리해 검색·필터·상세 화면에서 공통 사용합니다.</p>
         <div class="schema-grid">
           {normalizedPolicyFields.map((field) => (
             <div>

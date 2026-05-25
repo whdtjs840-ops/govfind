@@ -13,13 +13,13 @@ import {
 } from "@lucide/astro";
 import { policies, categoryGroups, popularKeywords } from "../data/policies";
 import { guides } from "../data/guides";
+import { sourceLabel } from "../utils/sourceNames";
 import heroImage from "../assets/hero-govfind.png";
 
 const today = new Date().toISOString().slice(0, 10).replaceAll("-", ".");
 const totalCountLabel = policies.length.toLocaleString("ko-KR");
-const apiPolicies = policies.filter((policy) => /API/.test(policy.source));
-const gov24Policies = policies.filter((policy) => policy.source === "정부24 공공서비스 API");
-const kstartupPolicies = policies.filter((policy) => policy.source === "K-Startup API");
+const gov24Policies = policies.filter((policy) => policy.source.includes("정부24"));
+const kstartupPolicies = policies.filter((policy) => policy.source.includes("K-Startup"));
 const urgent = policies
   .filter((policy) => policy.status === "모집중" || policy.status === "마감임박" || /^D-/.test(policy.dday))
   .sort((a, b) => {
@@ -32,9 +32,9 @@ const latest = [...policies].sort((a, b) => b.updatedAt.localeCompare(a.updatedA
 const startupFeatured = kstartupPolicies.slice(0, 4);
 const recommendedGuides = guides.slice(0, 4);
 const sourceStats = [
-  { label: "정부24 혜택", value: gov24Policies.length, href: "/support/?source=정부24%20공공서비스%20API" },
-  { label: "복지로", value: policies.filter((policy) => policy.source.includes("복지로")).length, href: "/support/?source=복지로%20API" },
-  { label: "K-Startup", value: kstartupPolicies.length, href: "/support/?source=K-Startup%20API" },
+  { label: "정부24 혜택", value: gov24Policies.length, href: "/support/?source=정부24" },
+  { label: "복지로", value: policies.filter((policy) => policy.source.includes("복지로")).length, href: "/support/?source=복지로" },
+  { label: "K-Startup", value: kstartupPolicies.length, href: "/support/?source=K-Startup" },
   { label: "전체 정책", value: policies.length, href: "/support/" }
 ];
 const categoryCounts = categoryGroups.map((category) => ({
@@ -80,9 +80,9 @@ const categoryCounts = categoryGroups.map((category) => ({
             </select>
             <select class="input" name="source" aria-label="출처">
               <option value="">전체 출처</option>
-              <option>정부24 공공서비스 API</option>
-              <option>복지로 API</option>
-              <option>K-Startup API</option>
+              <option value="정부24">정부24</option>
+              <option value="복지로">복지로</option>
+              <option value="K-Startup">K-Startup</option>
             </select>
           </div>
           <div class="quick-tags" aria-label="추천 검색어">
@@ -176,7 +176,7 @@ const categoryCounts = categoryGroups.map((category) => ({
             <a href={`/support/${policy.slug}/`}>
               <span>{index + 1}</span>
               <strong>{policy.title}</strong>
-              <small>{policy.views.toLocaleString("ko-KR")} 조회 · {policy.source}</small>
+              <small>{policy.views.toLocaleString("ko-KR")} 조회 · {sourceLabel(policy.source)}</small>
             </a>
           ))}
         </div>
@@ -190,7 +190,7 @@ const categoryCounts = categoryGroups.map((category) => ({
         <p class="eyebrow">정부24 공공서비스</p>
         <h2>실제 혜택 데이터가 들어온 최신 정책</h2>
       </div>
-      <a class="text-link" href="/support/?source=정부24%20공공서비스%20API">정부24 데이터 보기 <ArrowRight size={16} /></a>
+      <a class="text-link" href="/support/?source=정부24">정부24 혜택 보기 <ArrowRight size={16} /></a>
     </div>
     <div class="wrap policy-strip-grid">
       {gov24Policies.slice(0, 6).map((policy) => (
@@ -214,7 +214,7 @@ const categoryCounts = categoryGroups.map((category) => ({
         </p>
         <div class="toolbar">
           <a class="button" href="/category/startup/">창업지원 보기</a>
-          <a class="button secondary" href="/support/?source=K-Startup%20API">K-Startup API 목록</a>
+          <a class="button secondary" href="/support/?source=K-Startup">창업공고 목록</a>
         </div>
       </div>
       <div class="home-list startup-list">
