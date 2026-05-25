@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { CheckCircle2, ExternalLink, FileCheck2 } from "@lucide/astro";
+import { ExternalLink } from "@lucide/astro";
 import { policies } from "../../data/policies";
 
 export function getStaticPaths() {
@@ -8,124 +8,124 @@ export function getStaticPaths() {
 }
 
 const { policy } = Astro.props;
-const matchScore = Math.min(96, 72 + policy.matchReasons.length * 4 + (policy.applyOnline ? 8 : 0) + (policy.status === "마감임박" ? 5 : 0));
 const apiDetails = policy.apiDetails;
-const hasApiDetails = Boolean(apiDetails?.target || apiDetails?.criteria || apiDetails?.benefit || apiDetails?.application);
+const detailTarget = apiDetails?.target || policy.audience || policy.targetGroup;
+const detailBenefit = apiDetails?.benefit || policy.benefits.join("\n");
+const detailApply = apiDetails?.application || policy.apply;
+const detailCriteria = apiDetails?.criteria || "";
+const relatedPolicies = policies
+  .filter((item) => item.slug !== policy.slug && (item.category === policy.category || item.region === policy.region || item.tags.some((tag) => policy.tags.includes(tag))))
+  .slice(0, 4);
+const reviewSearchUrl = `https://search.naver.com/search.naver?query=${encodeURIComponent(`${policy.title} 후기 신청`)}`;
 
-function paragraphs(value?: string) {
+function lines(value?: string, max = 12) {
   return (value ?? "")
-    .split(/\n{2,}|\n/)
+    .split(/\n{2,}|\n|(?<=다\.)\s+|(?<=요\.)\s+/)
     .map((item) => item.trim())
     .filter(Boolean)
-    .slice(0, 5);
+    .slice(0, max);
 }
+
+const targetLines = lines(detailTarget, 10);
+const benefitLines = lines(detailBenefit, 10);
+const applyLines = lines(detailApply, 10);
+const criteriaLines = lines(detailCriteria, 8);
 ---
 
-<BaseLayout title={`${policy.title} - 자격조건과 공식 신청처 | GovFind`} description={policy.summary} canonical={`/support/${policy.slug}/`}>
-  <section class="detail-hero">
-    <div class="wrap detail-grid">
-      <div>
-        <p class="eyebrow">{policy.category}</p>
-        <h1>{policy.title}</h1>
-        <p class="lead">{policy.summary}</p>
-        <div class="toolbar">
-          <span class="badge score">예상 적합도 {matchScore}%</span>
-          <span class="badge">{policy.source}</span>
-          <span class="badge warn">{policy.region}</span>
-          <span class="badge deadline">{policy.dday}</span>
+<BaseLayout title={`${policy.title} - 지원 대상과 신청 방법 | GovFind`} description={policy.summary} canonical={`/support/${policy.slug}/`}>
+  <section class="policy-doc-head">
+    <div class="wrap doc-wrap">
+      <nav class="breadcrumb" aria-label="현재 위치">
+        <a href="/">홈</a>
+        <span>/</span>
+        <a href="/support/">정책 목록</a>
+        <span>/</span>
+        <a href={`/category/${policy.category === "복지" ? "welfare" : policy.category === "주거" ? "housing" : policy.category === "고용" ? "job" : policy.category === "청년" ? "youth" : "startup"}/`}>{policy.category}</a>
+      </nav>
+
+      <div class="policy-doc-title">
+        <div class="policy-status-row">
+          <span class={policy.status === "마감임박" ? "badge deadline" : "badge warn"}>{policy.status}</span>
+          <span class="badge">{policy.category}</span>
+          <span class="badge soft">{policy.dday}</span>
+          <span class="badge soft">{policy.source}</span>
         </div>
+        <h1>{policy.title}</h1>
+        <p class="doc-meta">등록 {policy.updatedAt} · 수정 {policy.updatedAt} · 조회 {policy.views.toLocaleString("ko-KR")}</p>
+        <a class="button doc-primary" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
+          <ExternalLink size={18} />바로 신청하기
+        </a>
       </div>
-      <aside class="card cta-card">
-        <p class="eyebrow">첫 화면 핵심 정보</p>
-        <dl class="summary-dl">
-          <div><dt>예상 적합도</dt><dd>{matchScore}%</dd></div>
-          <div><dt>예상 지원</dt><dd>{policy.amount}</dd></div>
-          <div><dt>신청 기간</dt><dd>{policy.deadline}</dd></div>
-          <div><dt>대상</dt><dd>{policy.targetGroup}</dd></div>
-        </dl>
-        <a class="button" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}><ExternalLink size={18} />공식 신청처 이동</a>
-        <p class="notice">GovFind는 자격을 단정하지 않습니다. 최종 신청과 판정은 공식 기관에서 확인하세요.</p>
-      </aside>
     </div>
   </section>
 
-  <section class="section">
-    <div class="wrap split">
-      <article class="grid">
-        <section class="card">
-          <h2><CheckCircle2 size={20} />왜 추천되었나요?</h2>
-          <ul class="list-clean">
-            {policy.matchReasons.map((item) => <li>{item}</li>)}
-          </ul>
+  <section class="section policy-doc-section">
+    <div class="wrap doc-wrap">
+      <article class="policy-doc">
+        <section class="doc-block">
+          <h2>핵심 요약</h2>
+          <p>
+            이 정책은 {policy.targetGroup} 대상자가 {policy.amount} 지원을 검토할 때 확인할 수 있는 {policy.category} 지원 정보입니다.
+            {policy.agency}에서 운영하며, 신청 기간은 {policy.deadline}입니다. 최종 자격과 접수 가능 여부는 공식 신청처에서 다시 확인해야 합니다.
+          </p>
         </section>
-        <section class="card">
-          <h2>자격 체크</h2>
-          <dl class="summary-dl">
-            <div><dt>생애주기</dt><dd>{policy.lifeStage}</dd></div>
-            <div><dt>소득 기준</dt><dd>{policy.income}</dd></div>
-            <div><dt>온라인 신청</dt><dd>{policy.applyOnline ? "가능성 높음" : "공고 확인 필요"}</dd></div>
-            <div><dt>대상 설명</dt><dd>{policy.audience}</dd></div>
+
+        <section class="doc-block">
+          <h3>기본 정보</h3>
+          <dl class="doc-info-table">
+            <div><dt>분류</dt><dd>{policy.category}</dd></div>
+            <div><dt>담당부처</dt><dd>{policy.agency}</dd></div>
+            <div><dt>지역</dt><dd>{policy.region}</dd></div>
+            <div><dt>신청기간</dt><dd>{policy.deadline} <strong>{policy.dday}</strong></dd></div>
+            <div><dt>지원규모</dt><dd>{policy.amount}</dd></div>
+            <div><dt>출처</dt><dd>{policy.source}</dd></div>
           </dl>
         </section>
 
-        {hasApiDetails && (
-          <section class="card">
-            <h2>공공데이터 상세 기준</h2>
-            {apiDetails?.target && (
-              <div class="detail-copy">
-                <h3>지원 대상</h3>
-                {paragraphs(apiDetails.target).map((item) => <p>{item}</p>)}
-              </div>
-            )}
-            {apiDetails?.criteria && (
-              <div class="detail-copy">
-                <h3>선정 기준</h3>
-                {paragraphs(apiDetails.criteria).map((item) => <p>{item}</p>)}
-              </div>
-            )}
+        <section class="doc-block">
+          <h3>정책 요약</h3>
+          <p>{policy.summary}</p>
+        </section>
+
+        <section class="doc-block">
+          <h3>지원 대상</h3>
+          {targetLines.length ? targetLines.map((item) => <p>{item}</p>) : <p>공식 상세 페이지에서 지원 대상을 확인해야 합니다.</p>}
+        </section>
+
+        {criteriaLines.length > 0 && (
+          <section class="doc-block">
+            <h3>선정 기준</h3>
+            {criteriaLines.map((item) => <p>{item}</p>)}
           </section>
         )}
 
-        <section class="card">
-          <h2>지원 내용</h2>
-          <ul class="list-clean">
-            {policy.benefits.map((item) => <li>{item}</li>)}
-          </ul>
-          {apiDetails?.benefit && (
-            <div class="detail-copy">
-              {paragraphs(apiDetails.benefit).map((item) => <p>{item}</p>)}
-            </div>
+        <section class="doc-block">
+          <h3>지원 내용</h3>
+          {benefitLines.length ? (
+            <ul class="doc-list">
+              {benefitLines.map((item) => <li>{item}</li>)}
+            </ul>
+          ) : (
+            <p>지원 내용은 공식 공고를 기준으로 확인해야 합니다.</p>
           )}
         </section>
-        <section class="card">
-          <h2><FileCheck2 size={20} />필요 서류</h2>
-          <ul class="list-clean">
+
+        <section class="doc-block">
+          <h3>신청 방법</h3>
+          {applyLines.length ? applyLines.map((item) => <p>{item}</p>) : <p>복지로 또는 소관 기관의 공식 신청 안내를 확인합니다.</p>}
+          <p class="notice">GovFind는 자격을 단정하지 않습니다. 신청 전 기관명, 제출 서류, 접수 기간을 공식 페이지에서 다시 확인하세요.</p>
+        </section>
+
+        <section class="doc-block">
+          <h3>필요 서류</h3>
+          <ul class="doc-list">
             {policy.documents.map((item) => <li>{item}</li>)}
           </ul>
         </section>
-        <section class="card">
-          <h2>신청 방법</h2>
-          <p>{policy.apply}</p>
-          {apiDetails?.application && (
-            <div class="detail-copy">
-              {paragraphs(apiDetails.application).map((item) => <p>{item}</p>)}
-            </div>
-          )}
-          <p class="notice">원문 출처: <a class="text-link" href={policy.officialSourceUrl} target="_blank" rel="noopener noreferrer">{policy.source}</a></p>
-        </section>
-        <section class="card">
-          <h2>신청 전 확인 순서</h2>
-          <div class="progress-steps" aria-label="신청 전 확인 순서">
-            <span class="active">대상 확인</span>
-            <span class="active">서류 확인</span>
-            <span>마감 확인</span>
-            <span>공식 이동</span>
-            <span>기관 제출</span>
-          </div>
-        </section>
-        <section class="card">
-          <h2>FAQ</h2>
-          <div class="faq-list">
+
+        <section class="doc-block">
+          <h3>자주 묻는 질문</h3>
+          <div class="faq-list doc-faq">
             {policy.faq.map((item) => (
               <details>
                 <summary>{item.q}</summary>
@@ -134,32 +134,54 @@ function paragraphs(value?: string) {
             ))}
           </div>
         </section>
-      </article>
-      <aside class="aside">
-        <div class="card">
-          <h2>공식 확인</h2>
-          <p>신청 전 기관명, 문의처, 마감일, 필요서류를 공식 페이지에서 다시 확인하세요.</p>
-          <ul class="list-clean">
-            <li>기관: {policy.agency}</li>
-            <li>문의: {policy.contact}</li>
-            <li>마감: {policy.deadline}</li>
+
+        <section class="doc-block">
+          <h3>관련 후기와 참고 검색</h3>
+          <p>실제 신청 경험담은 개인 상황에 따라 다를 수 있습니다. 후기성 글은 참고용으로만 보고, 최종 조건은 공식 기관 안내를 기준으로 확인하세요.</p>
+          <ul class="related-links">
+            <li><a href={reviewSearchUrl} target="_blank" rel="noopener noreferrer">네이버에서 관련 후기 검색</a></li>
+            <li><a href={policy.officialSourceUrl} target="_blank" rel="noopener noreferrer">공식 출처 확인</a></li>
           </ul>
-          <div class="toolbar">
-            <a class="button" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}><ExternalLink size={18} />공식 신청</a>
-            <a class="button secondary" href="/support/">목록으로</a>
+        </section>
+      </article>
+
+      <aside class="doc-side">
+        <div class="card doc-side-card">
+          <h2>공식 확인</h2>
+          <dl class="summary-dl">
+            <div><dt>기관</dt><dd>{policy.agency}</dd></div>
+            <div><dt>문의</dt><dd>{policy.contact}</dd></div>
+            <div><dt>마감</dt><dd>{policy.deadline}</dd></div>
+          </dl>
+          <a class="button" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
+            <ExternalLink size={18} />공식 신청하기
+          </a>
+        </div>
+
+        {relatedPolicies.length > 0 && (
+          <div class="card doc-side-card">
+            <h2>함께 볼 정책</h2>
+            <ul class="side-policy-list">
+              {relatedPolicies.map((item) => (
+                <li>
+                  <a href={`/support/${item.slug}/`}>
+                    <strong>{item.title}</strong>
+                    <span>{item.category} · {item.dday}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
-        </div>
-        <div class="card">
-          <h2>정보 확인 원칙</h2>
-          <p>민간 사이트 설명은 탐색용입니다. 신청 가능 여부, 접수 기간, 제출 서류는 공식 기관 안내를 기준으로 확인하세요.</p>
-        </div>
+        )}
       </aside>
     </div>
   </section>
 
   <div class="sticky-detail-cta" aria-label="상세 페이지 빠른 실행">
     <span>{policy.title}</span>
-    <a class="button" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}><ExternalLink size={17} />공식 신청하기</a>
+    <a class="button" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
+      <ExternalLink size={17} />공식 신청하기
+    </a>
     <a class="button secondary" href="/support/">목록으로</a>
   </div>
 </BaseLayout>
