@@ -1,208 +1,265 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { CheckCircle2, FileText, Search, ShieldCheck, TrendingUp } from "@lucide/astro";
-import { policies, categories, categoryGroups, popularKeywords } from "../data/policies";
+import {
+  ArrowRight,
+  Building2,
+  CalendarClock,
+  CheckCircle2,
+  FileText,
+  Search,
+  ShieldCheck,
+  Sparkles,
+  TrendingUp
+} from "@lucide/astro";
+import { policies, categoryGroups, popularKeywords } from "../data/policies";
 import { guides } from "../data/guides";
 import heroImage from "../assets/hero-govfind.png";
 
-const featured = policies.slice(0, 3);
-const urgent = policies.filter((policy) => policy.status === "마감임박" || policy.status === "모집중").slice(0, 4);
-const popular = [...policies].sort((a, b) => b.views - a.views).slice(0, 4);
-const latest = [...policies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 4);
-const latestGuides = guides.slice(0, 3);
-const totalViews = policies.reduce((sum, policy) => sum + policy.views, 0);
+const today = new Date().toISOString().slice(0, 10).replaceAll("-", ".");
 const totalCountLabel = policies.length.toLocaleString("ko-KR");
+const apiPolicies = policies.filter((policy) => /API/.test(policy.source));
+const gov24Policies = policies.filter((policy) => policy.source === "정부24 공공서비스 API");
+const kstartupPolicies = policies.filter((policy) => policy.source === "K-Startup API");
+const urgent = policies
+  .filter((policy) => policy.status === "모집중" || policy.status === "마감임박" || /^D-/.test(policy.dday))
+  .sort((a, b) => {
+    const rank = (value: string) => (value.startsWith("D-") ? Number(value.replace("D-", "")) || 999 : value === "D-Day" ? 0 : 500);
+    return rank(a.dday) - rank(b.dday);
+  })
+  .slice(0, 6);
+const popular = [...policies].sort((a, b) => b.views - a.views).slice(0, 6);
+const latest = [...policies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 6);
+const startupFeatured = kstartupPolicies.slice(0, 4);
+const recommendedGuides = guides.slice(0, 4);
+const sourceStats = [
+  { label: "정부24 혜택", value: gov24Policies.length, href: "/support/?source=정부24%20공공서비스%20API" },
+  { label: "복지로", value: policies.filter((policy) => policy.source.includes("복지로")).length, href: "/support/?source=복지로%20API" },
+  { label: "K-Startup", value: kstartupPolicies.length, href: "/support/?source=K-Startup%20API" },
+  { label: "전체 정책", value: policies.length, href: "/support/" }
+];
+const categoryCounts = categoryGroups.map((category) => ({
+  ...category,
+  count: policies.filter(
+    (policy) => policy.category === category.label || category.keywords.some((keyword) => `${policy.title} ${policy.tags.join(" ")}`.includes(keyword))
+  ).length
+}));
 ---
 
 <BaseLayout
-  title="GovFind - 내 조건에 맞는 정부지원금 찾기"
-  description="나이, 지역, 가구상황, 관심 분야를 기준으로 정부지원금을 빠르게 좁히고 공식 신청처로 이동하세요."
+  title="GovFind - 정부지원금 찾기"
+  description="정부24, 복지로, K-Startup 등 공식 출처 기반 정부지원금과 창업지원사업을 검색하고 신청 조건, 필요 서류, 공식 신청처를 확인하세요."
 >
-  <section class="hero" style={`--hero-image: url(${heroImage.src})`}>
-    <div class="wrap hero-inner">
-      <div>
+  <section class="hero home-search-hero" style={`--hero-image: url(${heroImage.src})`}>
+    <div class="wrap home-hero-grid">
+      <div class="home-hero-copy">
         <p class="eyebrow">govfind.kr</p>
-        <h1>나에게 맞는 정부지원금 찾기</h1>
-        <p class="lead">청년, 복지, 주거, 고용, 창업 지원사업을 공식 출처 기준으로 정리합니다. 현재 {totalCountLabel}개의 대표 정책을 확인할 수 있습니다.</p>
-        <div class="intent-tabs" aria-label="탐색 유형">
-          <a href="/support/?q=지원금" class="active">지원금 정보</a>
-          <a href="/support/?q=환급금">환급금 정보</a>
-          <a href="/support/?q=대출">대출 정보</a>
-        </div>
-        <form class="search-panel hero-checker" action="/support/" method="get" aria-label="빠른 자격 확인">
-          <label class="eyebrow" for="q">지원사업 검색</label>
-          <div class="checker-grid">
-            <input class="input" id="q" name="q" type="search" placeholder="예: 청년 월세, 소상공인 자금" />
-            <select class="input" name="lifeStage" aria-label="생애주기">
-              <option value="">생애주기</option>
-              <option>청년</option>
-              <option>사업자</option>
-              <option>임신·출산·육아</option>
-              <option>취약계층</option>
+        <h1>정부지원금, 먼저 검색하고 공식 신청처로 이동하세요</h1>
+        <p class="lead">
+          정부24 혜택, 복지로 복지서비스, K-Startup 창업공고를 모아 지원대상, 신청기한, 필요서류, 공식 링크를 한 번에 정리합니다.
+        </p>
+
+        <form class="home-search-box" action="/support/" method="get" aria-label="정부지원금 검색">
+          <div class="home-search-main">
+            <Search size={22} aria-hidden="true" />
+            <input name="q" type="search" placeholder="근로장려금, 청년월세, 소상공인, 창업지원금 검색" />
+            <button class="button" type="submit">검색</button>
+          </div>
+          <div class="home-filter-row">
+            <select class="input" name="category" aria-label="카테고리">
+              <option value="">전체 카테고리</option>
+              {categoryGroups.map((category) => <option value={category.label}>{category.label}</option>)}
             </select>
             <select class="input" name="region" aria-label="지역">
-              <option value="">지역</option>
+              <option value="">전체 지역</option>
               <option>전국</option>
               <option>서울</option>
               <option>경기</option>
+              <option>부산</option>
+              <option>대구</option>
               <option>지역별</option>
             </select>
-            <button class="button" type="submit"><Search size={18} />검색</button>
+            <select class="input" name="source" aria-label="출처">
+              <option value="">전체 출처</option>
+              <option>정부24 공공서비스 API</option>
+              <option>복지로 API</option>
+              <option>K-Startup API</option>
+            </select>
           </div>
           <div class="quick-tags" aria-label="추천 검색어">
-            {popularKeywords.slice(0, 6).map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
+            {popularKeywords.slice(0, 8).map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
           </div>
         </form>
-        <div class="source-strip" aria-label="데이터 출처">
-          <span>공식 출처</span>
-          <b>정부24</b>
-          <b>복지로</b>
-          <b>고용24</b>
-          <b>K-Startup</b>
-          <b>소상공인 정책자금</b>
-        </div>
       </div>
-      <aside class="trust-panel" aria-label="서비스 원칙">
-        <div><ShieldCheck size={20} /><strong>공식 출처 우선</strong><span>정부24·복지로·K-Startup 등 원문 연결</span></div>
-        <div><CheckCircle2 size={20} /><strong>적합 이유 표시</strong><span>왜 추천됐는지 결과 카드에서 바로 확인</span></div>
-        <div><FileText size={20} /><strong>신청 전 체크</strong><span>대상·서류·마감·문의처를 한 화면에 정리</span></div>
+
+      <aside class="home-signal-panel" aria-label="GovFind 핵심 기능">
+        <div>
+          <ShieldCheck size={20} />
+          <strong>공식 출처 우선</strong>
+          <span>최종 신청은 정부24, 복지로, K-Startup 등 공식 페이지로 연결합니다.</span>
+        </div>
+        <div>
+          <CheckCircle2 size={20} />
+          <strong>조건 중심 정리</strong>
+          <span>지원대상, 선정기준, 신청방법, 필요서류를 상세 페이지에서 바로 확인합니다.</span>
+        </div>
+        <div>
+          <Sparkles size={20} />
+          <strong>광고 승인용 정보 구조</strong>
+          <span>단순 링크 모음이 아니라 정책별 해설, FAQ, 가이드 허브로 구성했습니다.</span>
+        </div>
       </aside>
     </div>
   </section>
 
-  <section class="section tight benchmark-dashboard">
+  <section class="section tight home-stats-band">
     <div class="wrap">
-      <div class="metric-grid" aria-label="서비스 지표">
-        <div><strong>{totalCountLabel}</strong><span>대표 지원사업</span></div>
-        <div><strong>{categories.length}</strong><span>카테고리</span></div>
-        <div><strong>{totalViews.toLocaleString("ko-KR")}</strong><span>관심도 샘플</span></div>
-        <div><strong>공식</strong><span>신청처 handoff</span></div>
-      </div>
-      <div class="category-rail" aria-label="카테고리 바로가기">
-        {categoryGroups.map((category) => (
-          <a href={`/category/${category.slug}/`}>
-            <span>{category.label}</span>
-            <strong>{policies.filter((policy) => policy.category === category.label || category.keywords.some((keyword) => policy.tags.join(" ").includes(keyword))).length}</strong>
+      <div class="home-stat-grid">
+        {sourceStats.map((item) => (
+          <a href={item.href}>
+            <strong>{item.value.toLocaleString("ko-KR")}</strong>
+            <span>{item.label}</span>
           </a>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="section product-flow">
-    <div class="wrap">
-      <p class="eyebrow">이용 흐름</p>
-      <h2>검색부터 공식 신청처 이동까지 가입 없이 확인합니다</h2>
-      <div class="flow-grid">
-        <div><span>1</span><strong>빠른 자격 확인</strong><p>나이·지역·가구상황을 가볍게 입력</p></div>
-        <div><span>2</span><strong>정렬된 추천 결과</strong><p>마감, 온라인 신청, 적합 이유로 비교</p></div>
-        <div><span>3</span><strong>상세 체크리스트</strong><p>지원대상·서류·FAQ를 구조화</p></div>
-        <div><span>4</span><strong>공식 신청처 이동</strong><p>최종 판단과 신청은 공식 기관에서 진행</p></div>
+  <section class="section">
+    <div class="wrap home-section-head">
+      <div>
+        <p class="eyebrow">카테고리</p>
+        <h2>많이 찾는 분야부터 바로 들어가세요</h2>
       </div>
+      <a class="text-link" href="/support/">전체 목록 보기 <ArrowRight size={16} /></a>
+    </div>
+    <div class="wrap category-tile-grid">
+      {categoryCounts.map((category) => (
+        <a href={`/category/${category.slug}/`}>
+          <span>{category.label}</span>
+          <strong>{category.count.toLocaleString("ko-KR")}개</strong>
+        </a>
+      ))}
     </div>
   </section>
 
   <section class="section tight band">
-    <div class="wrap">
-      <p class="eyebrow">마감 임박</p>
-      <h2>신청 기한이 가까운 지원사업</h2>
-      <div class="two-lists">
-        <section class="list-panel">
-          <h3>마감 임박</h3>
+    <div class="wrap home-two-column">
+      <section>
+        <div class="home-section-head compact">
+          <div>
+            <p class="eyebrow">마감 체크</p>
+            <h2>지금 확인할 정책</h2>
+          </div>
+          <CalendarClock size={24} />
+        </div>
+        <div class="home-list">
           {urgent.map((policy) => (
             <a href={`/support/${policy.slug}/`}>
               <span>{policy.dday}</span>
               <strong>{policy.title}</strong>
-              <small>{policy.agency} · {policy.source}</small>
+              <small>{policy.category} · {policy.agency}</small>
             </a>
           ))}
-        </section>
-        <section class="list-panel">
-          <h3>최근 업데이트</h3>
-          {latest.map((policy) => (
-            <a href={`/support/${policy.slug}/`}>
-              <span>{policy.updatedAt}</span>
-              <strong>{policy.title}</strong>
-              <small>{policy.category} · {policy.region}</small>
-            </a>
-          ))}
-        </section>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <p class="eyebrow">관심도 높은 정책</p>
-      <h2>현재 주목 받는 지원금</h2>
-      <div class="ranking-grid">
-        {popular.map((policy, index) => (
-          <a class="ranking-card" href={`/support/${policy.slug}/`}>
-            <span class="rank">{index + 1}</span>
-            <div>
-              <strong>{policy.title}</strong>
-              <small><TrendingUp size={14} /> {policy.views.toLocaleString("ko-KR")} 관심 · {policy.dday}</small>
-            </div>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap split wide">
-      <div>
-        <p class="eyebrow">전체 목록</p>
-        <h2>카테고리, 상태, 출처, 지역으로 좁혀보세요</h2>
-        <p class="lead">출처, 모집 상태, 생애주기, 지역, 온라인 신청 가능 여부를 기준으로 공식 정보를 빠르게 좁혀봅니다.</p>
-        <div class="toolbar">
-          {categoryGroups.map((category) => <a class="chip" href={`/category/${category.slug}/`}>{category.label}</a>)}
         </div>
+      </section>
+
+      <section>
+        <div class="home-section-head compact">
+          <div>
+            <p class="eyebrow">인기 정책</p>
+            <h2>조회가 많은 지원금</h2>
+          </div>
+          <TrendingUp size={24} />
+        </div>
+        <div class="home-list">
+          {popular.map((policy, index) => (
+            <a href={`/support/${policy.slug}/`}>
+              <span>{index + 1}</span>
+              <strong>{policy.title}</strong>
+              <small>{policy.views.toLocaleString("ko-KR")} 조회 · {policy.source}</small>
+            </a>
+          ))}
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap home-section-head">
+      <div>
+        <p class="eyebrow">정부24 공공서비스</p>
+        <h2>실제 혜택 데이터가 들어온 최신 정책</h2>
       </div>
-      <div class="mini-board">
-        {urgent.map((policy) => (
-          <a href={`/support/${policy.slug}/`}>
-            <span>{policy.dday}</span>
-            <strong>{policy.title}</strong>
-            <small>{policy.agency}</small>
-          </a>
-        ))}
-      </div>
+      <a class="text-link" href="/support/?source=정부24%20공공서비스%20API">정부24 데이터 보기 <ArrowRight size={16} /></a>
+    </div>
+    <div class="wrap policy-strip-grid">
+      {gov24Policies.slice(0, 6).map((policy) => (
+        <article>
+          <span class="badge">{policy.category}</span>
+          <h3><a href={`/support/${policy.slug}/`}>{policy.title}</a></h3>
+          <p>{policy.summary}</p>
+          <small>{policy.agency} · {policy.deadline}</small>
+        </article>
+      ))}
     </div>
   </section>
 
   <section class="section tight band">
     <div class="wrap split wide">
       <div>
-        <p class="eyebrow">고의도 검색 진입</p>
-        <h2>몰라서 놓치는 지원금, 짧은 링크로 바로 진입</h2>
-        <p class="lead">광고·검색 유입 사용자가 긴 설명 없이 바로 눌러볼 수 있도록 키워드형 진입점을 분리했습니다.</p>
+        <p class="eyebrow">창업지원사업</p>
+        <h2>K-Startup 모집공고도 같이 보여줍니다</h2>
+        <p class="lead">
+          예비창업자, 초기창업기업, 청년 창업가가 찾는 공고를 모집기간과 신청 링크 중심으로 정리했습니다.
+        </p>
+        <div class="toolbar">
+          <a class="button" href="/category/startup/">창업지원 보기</a>
+          <a class="button secondary" href="/support/?source=K-Startup%20API">K-Startup API 목록</a>
+        </div>
       </div>
-      <div class="landing-link-grid">
-        <a href="/support/?q=근로장려금"><strong>근로장려금</strong><span>신청방법 · 조건확인 · 지급일</span></a>
-        <a href="/support/?q=환급금"><strong>환급금 받기</strong><span>건강보험 · 국민연금 · 통신비</span></a>
-        <a href="/support/?q=청년월세"><strong>청년월세</strong><span>대상조회 · 필요서류 · 공식 신청</span></a>
-        <a href="/support/?q=소상공인"><strong>소상공인 자금</strong><span>운영자금 · 창업 · 예산 소진</span></a>
+      <div class="home-list startup-list">
+        {startupFeatured.map((policy) => (
+          <a href={`/support/${policy.slug}/`}>
+            <span>{policy.dday}</span>
+            <strong>{policy.title}</strong>
+            <small>{policy.region} · {policy.deadline}</small>
+          </a>
+        ))}
       </div>
     </div>
   </section>
 
-  <section class="section tight">
-    <div class="wrap split wide">
+  <section class="section">
+    <div class="wrap home-section-head">
       <div>
-        <p class="eyebrow">가이드 허브</p>
-        <h2>신청 전에 확인해야 할 조건과 서류</h2>
+        <p class="eyebrow">검색 유입 가이드</p>
+        <h2>신청 전에 읽는 정보성 콘텐츠</h2>
       </div>
-      <div class="grid">
-        {latestGuides.map((guide) => (
-          <article class="card">
-            <span class="badge">{guide.category}</span>
-            <h3><a href={`/guide/${guide.slug}/`}>{guide.title}</a></h3>
-            <p>{guide.description}</p>
-            <a class="text-link" href={`/guide/${guide.slug}/`}><FileText size={16} />가이드 보기</a>
-          </article>
-        ))}
+      <a class="text-link" href="/guide/">가이드 전체 보기 <ArrowRight size={16} /></a>
+    </div>
+    <div class="wrap guide-card-grid">
+      {recommendedGuides.map((guide) => (
+        <article class="card">
+          <span class="badge soft">{guide.category}</span>
+          <h3><a href={`/guide/${guide.slug}/`}>{guide.title}</a></h3>
+          <p>{guide.description}</p>
+          <a class="text-link" href={`/guide/${guide.slug}/`}><FileText size={16} /> 자세히 보기</a>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section tight home-source-note">
+    <div class="wrap">
+      <Building2 size={24} />
+      <div>
+        <p class="eyebrow">업데이트 기준 {today}</p>
+        <h2>GovFind는 신청을 대신하지 않고 공식 신청처로 안내합니다</h2>
+        <p class="lead">
+          민간 사이트에서 자격을 확정하지 않습니다. GovFind는 조건 확인과 비교를 돕고, 최종 접수와 판정은 각 기관 공식 페이지에서 진행합니다.
+        </p>
       </div>
+      <a class="button secondary" href="/sources/">출처 확인</a>
     </div>
   </section>
 </BaseLayout>
