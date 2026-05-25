@@ -1,0 +1,27 @@
+---
+import type { Policy } from "../data/policies";
+
+const { policy, compact = false } = Astro.props as { policy: Policy; compact?: boolean };
+---
+
+<article class="card policy-card support-card" data-category={policy.category} data-search={`${policy.title} ${policy.category} ${policy.summary} ${policy.tags.join(" ")}`}>
+  <div class="meta">
+    <span class="badge">{policy.category}</span>
+    <span class={policy.status === "모집중" ? "badge deadline" : "badge warn"}>{policy.status}</span>
+  </div>
+  <div>
+    <h3><a href={`/support/${policy.slug}/`}>{policy.title}</a></h3>
+    <p>{policy.summary}</p>
+  </div>
+  <div class="meta">
+    <span>{policy.agency}</span>
+    <span>{policy.region}</span>
+    <span>{policy.deadline}</span>
+  </div>
+  {!compact && (
+    <div class="quick-tags">
+      {policy.tags.slice(0, 4).map((tag) => <span class="chip">{tag}</span>)}
+    </div>
+  )}
+  <a class="button secondary" href={`/support/${policy.slug}/`}>자세히 보기</a>
+</article>

@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { ExternalLink } from "@lucide/astro";
+import { policies } from "../../data/policies";
+
+export function getStaticPaths() {
+  return policies.map((policy) => ({ params: { slug: policy.slug }, props: { policy } }));
+}
+
+const { policy } = Astro.props;
+---
+
+<BaseLayout title={`${policy.title} - 지원대상과 신청방법 | GovFind`} description={policy.summary} canonical={`/support/${policy.slug}/`}>
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">{policy.category}</p>
+      <h1>{policy.title}</h1>
+      <p class="lead">{policy.summary}</p>
+      <div class="toolbar">
+        <span class="badge">{policy.agency}</span>
+        <span class="badge warn">{policy.region}</span>
+        <span class="badge deadline">{policy.deadline}</span>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap split">
+      <article class="grid">
+        <section class="card">
+          <h2>핵심 요약</h2>
+          <ul class="list-clean">
+            <li>지원 규모: {policy.amount}</li>
+            <li>대상 확인: {policy.audience}</li>
+            <li>신청 안내: {policy.apply}</li>
+          </ul>
+        </section>
+        <section class="card">
+          <h2>지원 내용</h2>
+          <ul class="list-clean">
+            {policy.benefits.map((item) => <li>{item}</li>)}
+          </ul>
+        </section>
+        <section class="card">
+          <h2>필요 서류</h2>
+          <ul class="list-clean">
+            {policy.documents.map((item) => <li>{item}</li>)}
+          </ul>
+        </section>
+        <section class="card">
+          <h2>왜 추천되나요?</h2>
+          <ul class="list-clean">
+            {policy.matchReasons.map((item) => <li>{item}</li>)}
+          </ul>
+        </section>
+      </article>
+      <aside class="aside">
+        <div class="card">
+          <h2>공식 신청 확인</h2>
+          <p>GovFind는 정보를 정리해 안내하며, 최종 자격 판정과 신청은 공식 기관에서 진행됩니다.</p>
+          <div class="toolbar">
+            <a class="button" href={policy.officialUrl} target="_blank" rel="noopener noreferrer"><ExternalLink size={18} />공식 사이트 이동</a>
+            <a class="button secondary" href="/support/">목록으로</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>

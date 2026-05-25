@@ -1,0 +1,93 @@
+---
+import "../styles/global.css";
+import { Search } from "@lucide/astro";
+
+type Props = {
+  title?: string;
+  description?: string;
+  canonical?: string;
+};
+
+const {
+  title = "GovFind - 정부지원금 찾기",
+  description = "청년, 소상공인, 주거, 복지, 창업 지원금을 한 곳에서 비교하고 공식 신청처로 이동하세요.",
+  canonical = Astro.url.pathname
+} = Astro.props;
+
+const siteUrl = "https://govfind.kr";
+const canonicalUrl = new URL(canonical, siteUrl).toString();
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GovFind" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "GovFind",
+      url: siteUrl,
+      potentialAction: {
+        "@type": "SearchAction",
+        target: `${siteUrl}/support/?q={search_term_string}`,
+        "query-input": "required name=search_term_string"
+      }
+    })} />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">본문 바로가기</a>
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="주요 메뉴">
+        <a class="brand" href="/" aria-label="GovFind 홈">
+          <span class="brand-mark">G</span>
+          <span>GovFind</span>
+        </a>
+        <div class="nav-links">
+          <a href="/support/">지원금 찾기</a>
+          <a href="/deadline/">마감임박</a>
+          <a href="/compare/">비교</a>
+          <a href="/guide/">가이드</a>
+        </div>
+        <a class="nav-cta" href="/support/"><Search size={17} />검색하기</a>
+      </nav>
+    </header>
+    <main id="content">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <a class="brand footer-brand" href="/">
+            <span class="brand-mark">G</span>
+            <span>GovFind</span>
+          </a>
+          <p>정부지원금 정보를 쉽게 찾고, 최종 신청은 공식 기관으로 안전하게 연결하는 민간 정보 서비스입니다.</p>
+        </div>
+        <div>
+          <h2>서비스</h2>
+          <a href="/support/">지원금 목록</a>
+          <a href="/deadline/">마감임박</a>
+          <a href="/guide/">신청 가이드</a>
+        </div>
+        <div>
+          <h2>신뢰 정책</h2>
+          <a href="/about/">사이트 소개</a>
+          <a href="/privacy/">개인정보처리방침</a>
+          <a href="/terms/">이용약관</a>
+          <a href="/contact/">문의</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

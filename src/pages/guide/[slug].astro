@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { guides } from "../../data/guides";
+
+export function getStaticPaths() {
+  return guides.map((guide) => ({ params: { slug: guide.slug }, props: { guide } }));
+}
+
+const { guide } = Astro.props;
+---
+
+<BaseLayout title={`${guide.title} | GovFind`} description={guide.description} canonical={`/guide/${guide.slug}/`}>
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">{guide.category}</p>
+      <h1>{guide.title}</h1>
+      <p class="lead">{guide.description}</p>
+      <div class="toolbar"><span class="badge">{guide.readingTime}</span></div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap split">
+      <article class="grid">
+        {guide.sections.map((section) => (
+          <section class="card">
+            <h2>{section.heading}</h2>
+            <p>{section.body}</p>
+          </section>
+        ))}
+      </article>
+      <aside class="aside">
+        <div class="card">
+          <h2>다음 단계</h2>
+          <p>조건을 입력하기 전, 먼저 카테고리별 지원금을 비교해 보세요.</p>
+          <div class="toolbar">
+            <a class="button" href="/support/">지원금 찾기</a>
+            <a class="button secondary" href="/deadline/">마감임박 보기</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>

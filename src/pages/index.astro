@@ -1,0 +1,83 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PolicyCard from "../components/PolicyCard.astro";
+import { Search } from "@lucide/astro";
+import { policies, categories } from "../data/policies";
+import { guides } from "../data/guides";
+import heroImage from "../assets/hero-govfind.png";
+
+const featured = policies.slice(0, 3);
+const latestGuides = guides.slice(0, 3);
+---
+
+<BaseLayout
+  title="GovFind - 정부지원금 찾기와 신청 가이드"
+  description="청년, 소상공인, 주거, 복지, 창업 지원금을 검색하고 비교한 뒤 공식 신청처로 이동하세요."
+>
+  <section class="hero" style={`--hero-image: url(${heroImage.src})`}>
+    <div class="wrap hero-inner">
+      <div>
+        <p class="eyebrow">govfind.kr</p>
+        <h1>내 조건에 맞는 정부지원금을 빠르게 찾으세요</h1>
+        <p class="lead">GovFind는 공공 지원금 정보를 카테고리, 지역, 마감일, 신청 조건 중심으로 정리하고 최종 신청은 공식 기관으로 연결합니다.</p>
+        <div class="stats" aria-label="서비스 핵심 지표">
+          <div class="stat"><strong>6</strong><span>핵심 카테고리</span></div>
+          <div class="stat"><strong>공식</strong><span>신청처 연결</span></div>
+          <div class="stat"><strong>SEO</strong><span>가이드 허브</span></div>
+        </div>
+      </div>
+      <form class="search-panel" action="/support/" method="get" aria-label="지원금 검색">
+        <label class="eyebrow" for="q">지원금 검색</label>
+        <div class="search-row">
+          <input class="input" id="q" name="q" type="search" placeholder="예: 청년 월세, 소상공인 자금" />
+          <button class="button" type="submit"><Search size={18} />검색</button>
+        </div>
+        <div class="quick-tags" aria-label="추천 검색어">
+          <a class="chip" href="/support/?q=청년">청년</a>
+          <a class="chip" href="/support/?q=소상공인">소상공인</a>
+          <a class="chip" href="/support/?q=주거">주거</a>
+          <a class="chip" href="/deadline/">마감임박</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">탐색 구조</p>
+      <h2>카테고리로 먼저 좁히고, 상세에서 공식 신청처를 확인합니다</h2>
+      <div class="toolbar">
+        {categories.map((category) => <a class="chip" href={`/support/?category=${encodeURIComponent(category)}`}>{category}</a>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight band">
+    <div class="wrap">
+      <p class="eyebrow">추천 지원금</p>
+      <h2>많이 찾는 지원금</h2>
+      <div class="grid cols-3" style="margin-top: 24px;">
+        {featured.map((policy) => <PolicyCard policy={policy} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">승인용 콘텐츠 허브</p>
+        <h2>애드센스 승인에 필요한 신뢰형 정보 페이지</h2>
+        <p class="lead">단순 링크 모음이 아니라 신청 전 체크리스트, 필요서류, 공식 출처 확인법을 독립 콘텐츠로 제공합니다.</p>
+      </div>
+      <div class="grid">
+        {latestGuides.map((guide) => (
+          <article class="card">
+            <span class="badge">{guide.category}</span>
+            <h3><a href={`/guide/${guide.slug}/`}>{guide.title}</a></h3>
+            <p>{guide.description}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
