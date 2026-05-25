@@ -1,3 +1,4 @@
+import { publicServiceApiPolicies } from "./public-service-api.generated";
 import { welfareApiPolicies } from "./welfare-api.generated";
 
 export type PolicyStatus = "모집중" | "상시" | "예정" | "마감임박";
@@ -1071,6 +1072,7 @@ policies.push(
 );
 
 policies.push(...welfareApiPolicies);
+policies.push(...publicServiceApiPolicies);
 
 export const categoryGroups = [
   { slug: "youth", label: "청년", keywords: ["청년", "청년도약", "청년농"] },
@@ -1087,5 +1089,5 @@ export const categoryGroups = [
 export const categories = categoryGroups.map((category) => category.label);
 export const regions = ["전국", "서울", "경기", "인천", "부산", "대구", "광주", "대전", "지역별"];
 export const lifeStages = ["청년", "사업자", "청년·중장년", "취약계층", "예비창업·초기창업", "임신·출산·육아", "아동·청소년", "근로자·사업자", "청년·농업인", "어르신", "신혼부부", "농업인", "어업인", "구직자", "청년·근로자"];
-export const sources = ["복지로", "복지로 API", "정부24·지자체", "고용24", "K-Startup", "소상공인 정책자금", "국세청", "서민금융진흥원", "국민건강보험", "농림축산식품부", "문화누리", "스포츠강좌이용권", "노인일자리여기", "주택도시기금", "근로복지공단", "해양수산부"];
+export const sources = ["복지로", "복지로 API", "정부24 공공서비스 API", "정부24·지자체", "고용24", "K-Startup", "소상공인 정책자금", "국세청", "서민금융진흥원", "국민건강보험", "농림축산식품부", "문화누리", "스포츠강좌이용권", "노인일자리여기", "주택도시기금", "근로복지공단", "해양수산부"];
 export const popularKeywords = ["근로장려금", "청년월세", "국민취업지원제도", "소상공인 정책자금", "자녀장려금", "청년도약계좌", "주거급여", "에너지바우처", "내일배움카드", "기초연금", "문화누리카드", "실업급여", "전세자금"];
