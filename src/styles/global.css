@@ -1657,8 +1657,7 @@ dd {
 }
 
 .support-result-list .support-card > .meta,
-.support-result-list .support-card > div:first-of-type,
-.support-result-list .support-card > .reason-list {
+.support-result-list .support-card > div:first-of-type {
   grid-column: 1;
 }
 
@@ -1698,10 +1697,6 @@ dd {
   font-size: 0.88rem;
 }
 
-.support-result-list .reason-list {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 @media (max-width: 840px) {
   body { padding-bottom: 62px; }
   .wrap { width: min(100% - 28px, 1120px); }
@@ -1713,14 +1708,13 @@ dd {
   .hero::before { display: none; }
   .hero-inner, .home-hero-grid, .split, .split.wide, .footer-grid, .detail-grid, .policy-doc-section .doc-wrap, .doc-info-table, .results-layout, .search-toolbar, .checker-grid, .profile-lite, .profile-lite-form { grid-template-columns: 1fr; }
   .search-row { grid-template-columns: 1fr; }
-  .support-search-selects, .support-summary-grid, .support-results-layout, .support-result-list .support-card, .support-result-list .card-facts, .support-result-list .reason-list, .home-filter-row, .home-stat-grid, .category-tile-grid, .home-two-column, .policy-strip-grid, .guide-card-grid, .home-source-note .wrap, .stats, .grid.cols-2, .grid.cols-3, .flow-grid, .metric-grid, .category-rail, .two-lists, .ranking-grid, .landing-link-grid, .notification-grid, .detail-actions, .progress-steps, .dashboard-grid, .dashboard-summary, .schema-grid, .integration-grid { grid-template-columns: 1fr; }
+  .support-search-selects, .support-summary-grid, .support-results-layout, .support-result-list .support-card, .support-result-list .card-facts, .home-filter-row, .home-stat-grid, .category-tile-grid, .home-two-column, .policy-strip-grid, .guide-card-grid, .home-source-note .wrap, .stats, .grid.cols-2, .grid.cols-3, .flow-grid, .metric-grid, .category-rail, .two-lists, .ranking-grid, .landing-link-grid, .notification-grid, .detail-actions, .progress-steps, .dashboard-grid, .dashboard-summary, .schema-grid, .integration-grid { grid-template-columns: 1fr; }
   .section { padding: 48px 0; }
   .support-search-main { grid-template-columns: auto minmax(0, 1fr); }
   .support-search-main .button { grid-column: 1 / -1; }
   .support-sidebar { position: static; }
   .support-result-list .support-card > .meta,
   .support-result-list .support-card > div:first-of-type,
-  .support-result-list .support-card > .reason-list,
   .support-result-list .support-card > .card-facts,
   .support-result-list .support-card > .card-actions {
     grid-column: 1;
