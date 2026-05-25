@@ -72,6 +72,9 @@ async function fetchDetail(serviceId) {
 
   const response = await fetch(url);
   const body = await response.text();
+  if (response.status === 429 || /quota exceeded/i.test(body)) {
+    throw new Error("API quota exceeded while fetching welfare details");
+  }
   if (!response.ok || /NO DATA FOUND|SERVICE_KEY|INVALID_REQUEST/i.test(body)) return {};
   return parseDetail(body);
 }
@@ -193,7 +196,7 @@ url.searchParams.set("searchWrd", "");
 try {
   const response = await fetch(url);
   const body = await response.text();
-  if (!response.ok || /Unauthorized|SERVICE_KEY_IS_NOT_REGISTERED_ERROR|INVALID_REQUEST_PARAMETER_ERROR/i.test(body)) {
+  if (!response.ok || /Unauthorized|SERVICE_KEY_IS_NOT_REGISTERED_ERROR|INVALID_REQUEST_PARAMETER_ERROR|quota exceeded/i.test(body)) {
     await keepExisting(`API request failed with ${response.status}: ${body.slice(0, 120)}`);
     process.exit(0);
   }
