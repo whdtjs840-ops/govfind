@@ -1,0 +1,97 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Bell, Bookmark, FileArchive, ListChecks, MapPin, Search } from "@lucide/astro";
+import { policies } from "../data/policies";
+
+const savedPolicies = policies.slice(0, 3);
+const urgentPolicies = policies.filter((policy) => policy.status === "마감임박" || policy.status === "모집중").slice(0, 3);
+---
+
+<BaseLayout title="나의 지원금 대시보드 - GovFind" description="저장한 정책, 신청 진행 현황, 알림 설정, 문서 보관함을 한곳에서 확인하는 GovFind 대시보드입니다." canonical="/dashboard/">
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">나의 대시보드</p>
+      <h1>저장한 정책과 신청 흐름을 한곳에서 관리하세요</h1>
+      <p class="lead">보고서의 권장 흐름처럼 비회원 탐색에서 시작해, 관심 정책 저장·마감 알림·서류 준비·공식 신청 이동까지 이어지는 화면입니다.</p>
+      <div class="toolbar">
+        <a class="button" href="/support/"><Search size={18} />새 지원금 찾기</a>
+        <a class="button secondary" href="/deadline/">마감임박 보기</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap dashboard-grid">
+      <section class="dashboard-summary" aria-label="대시보드 요약">
+        <div>
+          <strong>{policies.length}</strong>
+          <span>현재 비교 가능한 정책</span>
+        </div>
+        <div>
+          <strong>{savedPolicies.length}</strong>
+          <span>저장한 관심 정책</span>
+        </div>
+        <div>
+          <strong>{urgentPolicies.length}</strong>
+          <span>마감·모집 추적</span>
+        </div>
+        <div>
+          <strong>4</strong>
+          <span>알림 시나리오</span>
+        </div>
+      </section>
+
+      <section class="card dashboard-panel">
+        <h2><MapPin size={20} />나의 매칭</h2>
+        <p class="notice">나이·지역·가구상황을 먼저 받고, 로그인 후 소득·고용상태·사업자 여부로 추천 정확도를 높입니다.</p>
+        <div class="match-stack">
+          <span>청년·주거 우선</span>
+          <span>전국 온라인 신청</span>
+          <span>마감 알림 필요</span>
+        </div>
+      </section>
+
+      <section class="card dashboard-panel">
+        <h2><Bookmark size={20} />저장한 정책</h2>
+        <div class="dashboard-list">
+          {savedPolicies.map((policy) => (
+            <a href={`/support/${policy.slug}/`}>
+              <strong>{policy.title}</strong>
+              <span>{policy.agency} · {policy.dday}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section class="card dashboard-panel">
+        <h2><ListChecks size={20} />신청 진행 현황</h2>
+        <div class="progress-steps dashboard-progress" aria-label="신청 진행 단계">
+          <span class="active">관심 저장</span>
+          <span class="active">서류 확인</span>
+          <span>공식 신청</span>
+          <span>심사 추적</span>
+          <span>결과 확인</span>
+        </div>
+      </section>
+
+      <section class="card dashboard-panel">
+        <h2><Bell size={20} />알림 설정</h2>
+        <div class="setting-list">
+          <div><strong>새 정책 열림</strong><span>켜짐</span></div>
+          <div><strong>내 조건 일치</strong><span>켜짐</span></div>
+          <div><strong>마감 7일 전</strong><span>켜짐</span></div>
+          <div><strong>서류 미완료</strong><span>대기</span></div>
+        </div>
+      </section>
+
+      <section class="card dashboard-panel">
+        <h2><FileArchive size={20} />문서 보관함</h2>
+        <ul class="doc-list">
+          <li>신분 확인 서류 <span>준비 필요</span></li>
+          <li>소득·가구 자료 <span>정책별 확인</span></li>
+          <li>계약서·사업자 서류 <span>해당자만</span></li>
+        </ul>
+      </section>
+    </div>
+  </section>
+</BaseLayout>

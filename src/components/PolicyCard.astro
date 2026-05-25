@@ -1,4 +1,5 @@
 ---
+import { Bell, Bookmark, ExternalLink } from "@lucide/astro";
 import type { Policy } from "../data/policies";
 
 const { policy, compact = false } = Astro.props as { policy: Policy; compact?: boolean };
@@ -13,6 +14,7 @@ const searchText = [
   policy.summary,
   ...policy.tags
 ].join(" ");
+const matchScore = Math.min(96, 72 + policy.matchReasons.length * 4 + (policy.applyOnline ? 8 : 0) + (policy.status === "마감임박" ? 5 : 0));
 ---
 
 <article
@@ -20,6 +22,7 @@ const searchText = [
   data-category={policy.category}
   data-region={policy.region}
   data-status={policy.status}
+  data-source={policy.source}
   data-online={String(policy.applyOnline)}
   data-search={searchText}
 >
@@ -33,10 +36,13 @@ const searchText = [
     <p>{policy.summary}</p>
   </div>
   <dl class="card-facts">
+    <div><dt>예상 적합도</dt><dd>{matchScore}%</dd></div>
     <div><dt>기관</dt><dd>{policy.agency}</dd></div>
     <div><dt>지역</dt><dd>{policy.region}</dd></div>
     <div><dt>지원</dt><dd>{policy.amount}</dd></div>
     <div><dt>마감</dt><dd>{policy.dday}</dd></div>
+    <div><dt>관심</dt><dd>{policy.views.toLocaleString("ko-KR")}</dd></div>
+    <div><dt>수정</dt><dd>{policy.updatedAt}</dd></div>
   </dl>
   {!compact && (
     <ul class="reason-list" aria-label="적합 이유">
@@ -45,6 +51,8 @@ const searchText = [
   )}
   <div class="card-actions">
     <a class="button secondary" href={`/support/${policy.slug}/`}>상세 비교</a>
-    <a class="text-link" href={policy.officialUrl} target="_blank" rel="noopener noreferrer">공식 신청처</a>
+    <button class="icon-action" type="button" data-action="save"><Bookmark size={16} />저장</button>
+    <button class="icon-action" type="button" data-action="alert"><Bell size={16} />알림</button>
+    <a class="text-link" href={policy.officialUrl} target="_blank" rel="noopener noreferrer"><ExternalLink size={15} />공식 신청처</a>
   </div>
 </article>

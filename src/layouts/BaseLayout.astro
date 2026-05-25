@@ -59,6 +59,7 @@ const canonicalUrl = new URL(canonical, siteUrl).toString();
           <a href="/support/">지원금 찾기</a>
           <a href="/deadline/">마감임박</a>
           <a href="/compare/">비교</a>
+          <a href="/dashboard/">대시보드</a>
           <a href="/guide/">가이드</a>
         </div>
         <a class="nav-cta" href="/support/"><Search size={17} />검색하기</a>
@@ -80,7 +81,9 @@ const canonicalUrl = new URL(canonical, siteUrl).toString();
           <h2>서비스</h2>
           <a href="/support/">지원금 목록</a>
           <a href="/deadline/">마감임박</a>
+          <a href="/dashboard/">나의 대시보드</a>
           <a href="/guide/">신청 가이드</a>
+          <a href="/sources/">공식 데이터 출처</a>
         </div>
         <div>
           <h2>운영 정책</h2>
@@ -91,5 +94,11 @@ const canonicalUrl = new URL(canonical, siteUrl).toString();
         </div>
       </div>
     </footer>
+    <nav class="mobile-tabbar" aria-label="모바일 빠른 메뉴">
+      <a href="/">홈</a>
+      <a href="/support/">맞춤 정책</a>
+      <a href="/dashboard/">저장·알림</a>
+      <a href="/guide/">가이드</a>
+    </nav>
   </body>
 </html>

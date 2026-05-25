@@ -24,6 +24,8 @@ export type Policy = {
   officialUrl: string;
   officialSourceUrl: string;
   contact: string;
+  views: number;
+  updatedAt: string;
   matchReasons: string[];
   faq: { q: string; a: string }[];
 };
@@ -53,6 +55,8 @@ export const policies: Policy[] = [
     officialUrl: "https://www.bokjiro.go.kr",
     officialSourceUrl: "https://www.bokjiro.go.kr",
     contact: "주소지 관할 주민센터 또는 복지로 상담센터",
+    views: 3217,
+    updatedAt: "2026.05.25",
     matchReasons: ["청년·주거 키워드와 직접 일치", "온라인 신청 가능성이 높음", "월 단위 현금성 지원이라 전환 의도가 높음"],
     faq: [
       { q: "월세 계약자가 본인이어야 하나요?", a: "대부분 본인 명의 계약과 실제 거주 여부를 확인합니다. 예외는 공식 공고에서 확인해야 합니다." },
@@ -83,6 +87,8 @@ export const policies: Policy[] = [
     officialUrl: "https://ols.semas.or.kr",
     officialSourceUrl: "https://www.semas.or.kr",
     contact: "소상공인시장진흥공단 또는 지역 센터",
+    views: 2874,
+    updatedAt: "2026.05.24",
     matchReasons: ["사업자 여부만으로 1차 분류 가능", "마감·예산 소진 정보가 중요", "서류 준비 가이드와 연결성이 높음"],
     faq: [
       { q: "사업자등록 전에도 볼 수 있나요?", a: "예비창업자 대상 사업도 있으므로 창업 단계 필터로 확인하는 것이 좋습니다." },
@@ -113,6 +119,8 @@ export const policies: Policy[] = [
     officialUrl: "https://www.work24.go.kr",
     officialSourceUrl: "https://www.kua.go.kr",
     contact: "고용노동부 고객상담센터 또는 관할 고용센터",
+    views: 39176,
+    updatedAt: "2026.05.23",
     matchReasons: ["상시 유입 가능한 대표 고용정책", "연령·소득·상태 매칭에 적합", "공식 신청처 handoff 필요성이 높음"],
     faq: [
       { q: "실업급여와 같은 제도인가요?", a: "다릅니다. 취업지원서비스와 구직촉진수당 중심의 별도 제도입니다." },
@@ -143,6 +151,8 @@ export const policies: Policy[] = [
     officialUrl: "https://www.bokjiro.go.kr",
     officialSourceUrl: "https://www.energyv.or.kr",
     contact: "행정복지센터 또는 에너지바우처 상담센터",
+    views: 11820,
+    updatedAt: "2026.05.22",
     matchReasons: ["생활비 절감 의도가 명확", "계절성 SEO 수요가 큼", "마감 알림 전환에 적합"],
     faq: [
       { q: "매년 자동으로 받을 수 있나요?", a: "대상·신청 방식은 연도별 공고에 따라 달라질 수 있습니다." },
@@ -173,6 +183,8 @@ export const policies: Policy[] = [
     officialUrl: "https://www.k-startup.go.kr",
     officialSourceUrl: "https://www.k-startup.go.kr",
     contact: "K-Startup 공고별 담당 기관",
+    views: 18240,
+    updatedAt: "2026.05.25",
     matchReasons: ["고의도 검색어와 잘 맞음", "마감 D-day 노출 효과가 큼", "사업계획서 가이드 콘텐츠로 확장 가능"],
     faq: [
       { q: "법인이 없어도 신청할 수 있나요?", a: "예비창업자 대상 사업은 가능할 수 있습니다. 공고별 요건을 확인해야 합니다." },
@@ -203,6 +215,8 @@ export const policies: Policy[] = [
     officialUrl: "https://www.gov.kr",
     officialSourceUrl: "https://www.gov.kr",
     contact: "주소지 관할 지자체 또는 정부24",
+    views: 9770,
+    updatedAt: "2026.05.21",
     matchReasons: ["지역 필터와 강하게 결합", "생애주기 기반 추천에 적합", "재방문·알림 수요가 높음"],
     faq: [
       { q: "이사하면 어느 지역 기준인가요?", a: "지원금마다 거주 기간과 주민등록 기준일이 다릅니다." },
@@ -214,3 +228,5 @@ export const policies: Policy[] = [
 export const categories = ["청년·주거", "소상공인·창업", "고용·취업", "복지·생활", "창업·사업화", "육아·가족"];
 export const regions = ["전국", "서울", "경기", "인천", "부산", "대구", "광주", "대전", "지역별"];
 export const lifeStages = ["청년", "사업자", "청년·중장년", "취약계층", "예비창업·초기창업", "임신·출산·육아"];
+export const sources = ["복지로", "정부24·지자체", "고용24", "K-Startup", "소상공인 정책자금"];
+export const popularKeywords = ["근로장려금", "청년월세", "국민취업지원제도", "소상공인 정책자금", "출산지원금", "에너지바우처", "창업지원"];

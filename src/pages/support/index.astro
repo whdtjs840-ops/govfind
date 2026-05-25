@@ -2,7 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PolicyCard from "../../components/PolicyCard.astro";
 import { Search, SlidersHorizontal } from "@lucide/astro";
-import { categories, lifeStages, policies, regions } from "../../data/policies";
+import { categories, lifeStages, policies, popularKeywords, regions, sources } from "../../data/policies";
 ---
 
 <BaseLayout title="정부지원금 찾기 - GovFind" description="정부지원금을 키워드, 카테고리, 지역, 모집 상태, 온라인 신청 가능 여부로 검색하고 비교하세요.">
@@ -22,13 +22,40 @@ import { categories, lifeStages, policies, regions } from "../../data/policies";
         </select>
         <button class="button" type="submit"><Search size={18} />검색</button>
       </form>
+      <div class="quick-tags" aria-label="인기 검색어">
+        {popularKeywords.map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight profile-lite-band">
+    <div class="wrap profile-lite">
+      <div>
+        <p class="eyebrow">비회원 라이트 프로필</p>
+        <h2>나이·지역·가구상황만으로 먼저 좁혀보세요</h2>
+      </div>
+      <form class="profile-lite-form" action="/support/" method="get">
+        <input class="input" name="age" inputmode="numeric" placeholder="나이" aria-label="나이" />
+        <select class="input" name="region" aria-label="지역">
+          <option value="">지역</option>
+          {regions.map((item) => <option value={item}>{item}</option>)}
+        </select>
+        <select class="input" name="household" aria-label="가구상황">
+          <option value="">가구상황</option>
+          <option>1인가구</option>
+          <option>출산가구</option>
+          <option>저소득</option>
+          <option>사업자</option>
+        </select>
+        <button class="button" type="submit">간단 자격 확인</button>
+      </form>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap results-layout">
-      <aside class="filter-card card" aria-label="상세 필터">
-        <h2><SlidersHorizontal size={18} />필터</h2>
+      <details class="filter-card card" aria-label="상세 필터" open>
+        <summary><SlidersHorizontal size={18} />필터</summary>
         <label>생애주기
           <select class="input" data-filter="lifeStage">
             <option value="">전체</option>
@@ -44,6 +71,12 @@ import { categories, lifeStages, policies, regions } from "../../data/policies";
             <option>예정</option>
           </select>
         </label>
+        <label>출처
+          <select class="input" data-filter="source">
+            <option value="">전체</option>
+            {sources.map((item) => <option value={item}>{item}</option>)}
+          </select>
+        </label>
         <label class="check-row">
           <input type="checkbox" data-filter="online" />
           온라인 신청 가능
@@ -53,13 +86,14 @@ import { categories, lifeStages, policies, regions } from "../../data/policies";
           <a class="chip" href="/support/?q=소상공인">소상공인</a>
           <a class="chip" href="/support/?q=마감">마감</a>
         </div>
-      </aside>
+      </details>
 
       <div>
         <div class="result-head">
           <div>
             <p class="eyebrow"><span id="result-count">{policies.length}</span>개 결과</p>
             <h2>적합 이유와 공식 신청처를 함께 확인하세요</h2>
+            <p class="notice">카드에는 기관명, 마감일, 출처, 적합 이유를 함께 표시합니다.</p>
           </div>
           <select class="input small" data-sort aria-label="정렬">
             <option value="recommended">추천순</option>
@@ -70,6 +104,23 @@ import { categories, lifeStages, policies, regions } from "../../data/policies";
         <div class="grid cols-2 result-grid">
           {policies.map((policy) => <PolicyCard policy={policy} />)}
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight dashboard-teaser">
+    <div class="wrap split wide">
+      <div>
+        <p class="eyebrow">저장·알림 전환</p>
+        <h2>저장한 정책은 이후 대시보드와 알림으로 이어집니다</h2>
+        <p class="lead">MVP에서는 비회원 탐색을 우선하고, 다음 단계에서 로그인 후 영속 저장·마감 7일 전 알림·서류 미완료 알림으로 확장합니다.</p>
+        <div class="toolbar"><a class="button secondary" href="/dashboard/">대시보드 흐름 보기</a></div>
+      </div>
+      <div class="notification-grid">
+        <div><strong>새 정책 열림</strong><span>내 관심 주제 신규 공고</span></div>
+        <div><strong>내 조건 일치</strong><span>지역·가구상황 매칭</span></div>
+        <div><strong>마감 7일 전</strong><span>놓치기 전 리마인드</span></div>
+        <div><strong>서류 미완료</strong><span>신청 전 체크리스트</span></div>
       </div>
     </div>
   </section>
@@ -86,6 +137,7 @@ import { categories, lifeStages, policies, regions } from "../../data/policies";
     const cards = Array.from(document.querySelectorAll<HTMLElement>(".support-card"));
     const lifeStage = document.querySelector<HTMLSelectElement>('[data-filter="lifeStage"]');
     const status = document.querySelector<HTMLSelectElement>('[data-filter="status"]');
+    const source = document.querySelector<HTMLSelectElement>('[data-filter="source"]');
     const online = document.querySelector<HTMLInputElement>('[data-filter="online"]');
 
     if (input) input.value = keyword;
@@ -95,6 +147,7 @@ import { categories, lifeStages, policies, regions } from "../../data/policies";
     function applyFilters() {
       const lifeValue = lifeStage?.value ?? "";
       const statusValue = status?.value ?? "";
+      const sourceValue = source?.value ?? "";
       const onlineOnly = online?.checked ?? false;
       let visible = 0;
 
@@ -103,14 +156,16 @@ import { categories, lifeStages, policies, regions } from "../../data/policies";
         const cardCategory = card.dataset.category ?? "";
         const cardRegion = card.dataset.region ?? "";
         const cardStatus = card.dataset.status ?? "";
+        const cardSource = card.dataset.source ?? "";
         const cardOnline = card.dataset.online === "true";
         const matchKeyword = !keyword || text.includes(keyword);
         const matchCategory = !selectedCategory || cardCategory === selectedCategory;
         const matchRegion = !selectedRegion || cardRegion === selectedRegion || cardRegion === "전국" || cardRegion === "지역별";
         const matchLife = !lifeValue || text.includes(lifeValue);
         const matchStatus = !statusValue || cardStatus === statusValue;
+        const matchSource = !sourceValue || cardSource === sourceValue;
         const matchOnline = !onlineOnly || cardOnline;
-        const isVisible = matchKeyword && matchCategory && matchRegion && matchLife && matchStatus && matchOnline;
+        const isVisible = matchKeyword && matchCategory && matchRegion && matchLife && matchStatus && matchSource && matchOnline;
         card.style.display = isVisible ? "" : "none";
         if (isVisible) visible += 1;
       }
@@ -120,6 +175,7 @@ import { categories, lifeStages, policies, regions } from "../../data/policies";
 
     lifeStage?.addEventListener("change", applyFilters);
     status?.addEventListener("change", applyFilters);
+    source?.addEventListener("change", applyFilters);
     online?.addEventListener("change", applyFilters);
     applyFilters();
   </script>

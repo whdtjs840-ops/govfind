@@ -1,14 +1,17 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PolicyCard from "../components/PolicyCard.astro";
-import { Bell, CheckCircle2, FileText, Search, ShieldCheck } from "@lucide/astro";
-import { policies, categories } from "../data/policies";
+import { Bell, CheckCircle2, FileText, Search, ShieldCheck, TrendingUp } from "@lucide/astro";
+import { policies, categories, popularKeywords } from "../data/policies";
 import { guides } from "../data/guides";
 import heroImage from "../assets/hero-govfind.png";
 
 const featured = policies.slice(0, 3);
 const urgent = policies.filter((policy) => policy.status === "마감임박" || policy.status === "모집중").slice(0, 4);
+const popular = [...policies].sort((a, b) => b.views - a.views).slice(0, 4);
+const latest = [...policies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 4);
 const latestGuides = guides.slice(0, 3);
+const totalViews = policies.reduce((sum, policy) => sum + policy.views, 0);
 ---
 
 <BaseLayout
@@ -21,6 +24,11 @@ const latestGuides = guides.slice(0, 3);
         <p class="eyebrow">govfind.kr</p>
         <h1>내 조건에 맞는 정부지원금을 빠르게 찾으세요</h1>
         <p class="lead">검색 퍼널은 촘촘하게, 자격 확인은 간단하게, 최종 신청은 공식 기관으로 안전하게 연결합니다.</p>
+        <div class="intent-tabs" aria-label="탐색 유형">
+          <a href="/support/?q=지원금" class="active">지원금 정보</a>
+          <a href="/support/?q=환급금">환급금 정보</a>
+          <a href="/support/?q=대출">대출 정보</a>
+        </div>
         <form class="search-panel hero-checker" action="/support/" method="get" aria-label="빠른 자격 확인">
           <label class="eyebrow" for="q">빠른 자격 확인</label>
           <div class="checker-grid">
@@ -42,18 +50,42 @@ const latestGuides = guides.slice(0, 3);
             <button class="button" type="submit"><Search size={18} />추천 결과 보기</button>
           </div>
           <div class="quick-tags" aria-label="추천 검색어">
-            <a class="chip" href="/support/?q=청년">청년</a>
-            <a class="chip" href="/support/?q=소상공인">소상공인</a>
-            <a class="chip" href="/support/?q=육아">육아</a>
-            <a class="chip" href="/deadline/">마감임박</a>
+            {popularKeywords.slice(0, 6).map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
           </div>
         </form>
+        <div class="source-strip" aria-label="데이터 출처">
+          <span>공식 출처</span>
+          <b>정부24</b>
+          <b>복지로</b>
+          <b>고용24</b>
+          <b>K-Startup</b>
+          <b>소상공인 정책자금</b>
+        </div>
       </div>
       <aside class="trust-panel" aria-label="서비스 원칙">
         <div><ShieldCheck size={20} /><strong>공식 출처 우선</strong><span>정부24·복지로·K-Startup 등 원문 연결</span></div>
         <div><CheckCircle2 size={20} /><strong>적합 이유 표시</strong><span>왜 추천됐는지 결과 카드에서 바로 확인</span></div>
         <div><Bell size={20} /><strong>마감 알림 구조</strong><span>검토 후 저장·알림으로 재방문 퍼널 확장</span></div>
       </aside>
+    </div>
+  </section>
+
+  <section class="section tight benchmark-dashboard">
+    <div class="wrap">
+      <div class="metric-grid" aria-label="서비스 지표">
+        <div><strong>{policies.length}</strong><span>MVP 정책</span></div>
+        <div><strong>{categories.length}</strong><span>핵심 카테고리</span></div>
+        <div><strong>{totalViews.toLocaleString("ko-KR")}</strong><span>관심도 샘플</span></div>
+        <div><strong>공식</strong><span>신청처 handoff</span></div>
+      </div>
+      <div class="category-rail" aria-label="카테고리 바로가기">
+        {categories.map((category) => (
+          <a href={`/support/?category=${encodeURIComponent(category)}`}>
+            <span>{category}</span>
+            <strong>{policies.filter((policy) => policy.category === category).length}</strong>
+          </a>
+        ))}
+      </div>
     </div>
   </section>
 
@@ -72,10 +104,47 @@ const latestGuides = guides.slice(0, 3);
 
   <section class="section tight band">
     <div class="wrap">
-      <p class="eyebrow">마감과 전환 중심</p>
-      <h2>지금 확인할 지원금</h2>
-      <div class="grid cols-3" style="margin-top: 24px;">
-        {featured.map((policy) => <PolicyCard policy={policy} />)}
+      <p class="eyebrow">govhelp식 카탈로그</p>
+      <h2>마감임박과 최신 정책을 바로 확인하세요</h2>
+      <div class="two-lists">
+        <section class="list-panel">
+          <h3>마감 임박</h3>
+          {urgent.map((policy) => (
+            <a href={`/support/${policy.slug}/`}>
+              <span>{policy.dday}</span>
+              <strong>{policy.title}</strong>
+              <small>{policy.agency} · {policy.source}</small>
+            </a>
+          ))}
+        </section>
+        <section class="list-panel">
+          <h3>최근 업데이트</h3>
+          {latest.map((policy) => (
+            <a href={`/support/${policy.slug}/`}>
+              <span>{policy.updatedAt}</span>
+              <strong>{policy.title}</strong>
+              <small>{policy.category} · {policy.region}</small>
+            </a>
+          ))}
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">gg24식 관심도 랭킹</p>
+      <h2>현재 주목 받는 지원금</h2>
+      <div class="ranking-grid">
+        {popular.map((policy, index) => (
+          <a class="ranking-card" href={`/support/${policy.slug}/`}>
+            <span class="rank">{index + 1}</span>
+            <div>
+              <strong>{policy.title}</strong>
+              <small><TrendingUp size={14} /> {policy.views.toLocaleString("ko-KR")} 관심 · {policy.dday}</small>
+            </div>
+          </a>
+        ))}
       </div>
     </div>
   </section>
@@ -98,6 +167,22 @@ const latestGuides = guides.slice(0, 3);
             <small>{policy.agency}</small>
           </a>
         ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight band">
+    <div class="wrap split wide">
+      <div>
+        <p class="eyebrow">mtail식 고의도 랜딩</p>
+        <h2>몰라서 놓치는 지원금, 짧은 링크로 바로 진입</h2>
+        <p class="lead">광고·검색 유입 사용자가 긴 설명 없이 바로 눌러볼 수 있도록 키워드형 진입점을 분리했습니다.</p>
+      </div>
+      <div class="landing-link-grid">
+        <a href="/support/?q=근로장려금"><strong>근로장려금</strong><span>신청방법 · 조건확인 · 지급일</span></a>
+        <a href="/support/?q=환급금"><strong>환급금 받기</strong><span>건강보험 · 국민연금 · 통신비</span></a>
+        <a href="/support/?q=청년월세"><strong>청년월세</strong><span>대상조회 · 필요서류 · 공식 신청</span></a>
+        <a href="/support/?q=소상공인"><strong>소상공인 자금</strong><span>운영자금 · 창업 · 예산 소진</span></a>
       </div>
     </div>
   </section>
