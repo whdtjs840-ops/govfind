@@ -2,13 +2,15 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PolicyCard from "../../components/PolicyCard.astro";
 import { categoryGroups, policies } from "../../data/policies";
+import { dedupePolicies } from "../../utils/policyUtils";
 
 export function getStaticPaths() {
   return categoryGroups.map((category) => ({ params: { slug: category.slug }, props: { category } }));
 }
 
 const { category } = Astro.props;
-const categoryPolicies = policies.filter((policy) => policy.category === category.label || category.keywords.some((keyword) => [...policy.tags, policy.title, policy.summary].join(" ").includes(keyword)));
+const { canonical: displayPolicies } = dedupePolicies(policies);
+const categoryPolicies = displayPolicies.filter((policy) => policy.category === category.label || category.keywords.some((keyword) => [...policy.tags, policy.title, policy.summary].join(" ").includes(keyword)));
 const urgent = categoryPolicies.filter((policy) => policy.status === "마감임박" || policy.status === "모집중");
 ---
 

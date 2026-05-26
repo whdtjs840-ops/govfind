@@ -2291,6 +2291,77 @@ dd {
   padding: 15px;
 }
 
+.quick-condition-search {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+  padding: 18px;
+  border: 1px solid rgba(15, 118, 110, 0.2);
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 12px 36px rgba(16, 32, 38, 0.08);
+}
+
+.quick-condition-head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.quick-condition-head h2 {
+  margin: 0;
+  font-size: 1.28rem;
+}
+
+.condition-row {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+
+.condition-row > strong {
+  padding-top: 6px;
+}
+
+.condition-row > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.condition-chip {
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fbfdfc;
+  color: #334448;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.condition-chip.active {
+  border-color: var(--brand);
+  background: var(--brand);
+  color: white;
+}
+
+.condition-submit {
+  width: fit-content;
+  margin-top: 2px;
+}
+
+.no-results {
+  margin-top: 18px;
+}
+
+.no-results[hidden] {
+  display: none;
+}
+
 .quick-check-box {
   display: grid;
   gap: 14px;
@@ -2394,6 +2465,7 @@ dd {
   .home-trust-grid,
   .quick-entry-grid,
   .support-intent-grid,
+  .condition-row,
   .quick-check-box dl {
     grid-template-columns: 1fr;
   }
@@ -2418,6 +2490,18 @@ dd {
   .quick-check-head {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .quick-condition-head {
+    flex-direction: column;
+  }
+
+  .condition-submit {
+    width: 100%;
+  }
+
+  .doc-primary {
+    display: none;
   }
 
   .sticky-detail-cta {

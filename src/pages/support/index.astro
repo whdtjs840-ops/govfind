@@ -1,9 +1,13 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PolicyCard from "../../components/PolicyCard.astro";
+import QuickConditionSearch from "../../components/QuickConditionSearch.astro";
 import { CheckCircle2, Search, SlidersHorizontal } from "@lucide/astro";
 import { categories, categoryGroups, lifeStages, policies, regions } from "../../data/policies";
 import { publicSourceOptions, sourceLabel } from "../../utils/sourceNames";
+import { dedupePolicies } from "../../utils/policyUtils";
+
+const { canonical: displayPolicies } = dedupePolicies(policies);
 
 const params = Astro.url.searchParams;
 const selectedQ = params.get("q") ?? "";
@@ -13,13 +17,13 @@ const selectedSource = sourceLabel(params.get("source") ?? "");
 const selectedStatus = params.get("status") ?? "";
 
 const counts = {
-  all: policies.length,
-  deadline: policies.filter((policy) => policy.status === "마감임박" || /^D-/.test(policy.dday)).length,
-  gov24: policies.filter((policy) => policy.source.includes("정부24")).length,
-  welfare: policies.filter((policy) => policy.source.includes("복지로")).length,
-  kstartup: policies.filter((policy) => policy.source.includes("K-Startup")).length,
-  youth: policies.filter((policy) => `${policy.title} ${policy.tags.join(" ")}`.includes("청년")).length,
-  smallBusiness: policies.filter((policy) => `${policy.title} ${policy.tags.join(" ")}`.includes("소상공인")).length
+  all: displayPolicies.length,
+  deadline: displayPolicies.filter((policy) => policy.status === "마감임박" || /^D-/.test(policy.dday)).length,
+  gov24: displayPolicies.filter((policy) => policy.source.includes("정부24")).length,
+  welfare: displayPolicies.filter((policy) => policy.source.includes("복지로")).length,
+  kstartup: displayPolicies.filter((policy) => policy.source.includes("K-Startup")).length,
+  youth: displayPolicies.filter((policy) => `${policy.title} ${policy.tags.join(" ")}`.includes("청년")).length,
+  smallBusiness: displayPolicies.filter((policy) => `${policy.title} ${policy.tags.join(" ")}`.includes("소상공인")).length
 };
 
 function supportHref(next: Record<string, string>) {
@@ -75,6 +79,8 @@ const intentCards = [
           </a>
         ))}
       </div>
+
+      <QuickConditionSearch />
 
       <form class="support-search-form" action="/support/" method="get">
         <div class="support-search-main">
@@ -166,7 +172,7 @@ const intentCards = [
       <div class="support-result-main">
         <div class="result-head support-result-head">
           <div>
-            <p class="eyebrow"><span id="result-count">{policies.length}</span>개 결과</p>
+            <p class="eyebrow"><span id="result-count">{displayPolicies.length}</span>개 결과</p>
             <h2>조건, 기한, 신청처를 빠르게 비교하세요</h2>
             <p class="notice">카드를 열면 지원 대상, 신청 방법, 필요 서류와 공식 신청 링크를 확인할 수 있습니다.</p>
           </div>
@@ -183,7 +189,14 @@ const intentCards = [
         </div>
 
         <div class="result-grid support-result-list">
-          {policies.map((policy) => <PolicyCard policy={policy} />)}
+          {displayPolicies.map((policy) => <PolicyCard policy={policy} />)}
+        </div>
+        <div class="card no-results" id="noResults" hidden>
+          <h2>검색 결과 없음</h2>
+          <p>표현을 조금 바꾸거나 아래 추천 키워드로 다시 찾아보세요.</p>
+          <div class="quick-tags">
+            {actionKeywords.map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
+          </div>
         </div>
       </div>
     </div>
@@ -214,7 +227,10 @@ const intentCards = [
     const selectedLife = params.get("lifeStage")?.trim() ?? "";
     const selectedStatus = params.get("status")?.trim() ?? "";
     const selectedSource = normalizeSource(params.get("source")?.trim() ?? "");
+    const selectedTarget = params.get("target")?.trim() ?? "";
+    const selectedPurpose = params.get("purpose")?.trim() ?? "";
     const selectedOnline = params.get("online") === "true";
+    const selectedApplyOnline = params.get("applyOnline") === "true";
     const selectedSort = params.get("sort")?.trim() ?? "recommended";
     const count = document.querySelector("#result-count");
     const cards = Array.from(document.querySelectorAll<HTMLElement>(".support-card"));
@@ -224,16 +240,81 @@ const intentCards = [
     const online = document.querySelector<HTMLInputElement>('[data-filter="online"]');
     const sort = document.querySelector<HTMLSelectElement>("[data-sort]");
     const resultGrid = document.querySelector<HTMLElement>(".result-grid");
+    const noResults = document.querySelector<HTMLElement>("#noResults");
     const topCategory = document.querySelector<HTMLSelectElement>('.support-search-selects select[name="category"]');
     const topRegion = document.querySelector<HTMLSelectElement>('.support-search-selects select[name="region"]');
     const topSource = document.querySelector<HTMLSelectElement>('.support-search-selects select[name="source"]');
+    const searchInput = document.querySelector<HTMLInputElement>('.support-search-main input[name="q"]');
     const tabs = Array.from(document.querySelectorAll<HTMLAnchorElement>(".support-tabs a"));
+    const conditionChips = Array.from(document.querySelectorAll<HTMLButtonElement>(".condition-chip"));
+    const conditionSubmit = document.querySelector<HTMLButtonElement>("#conditionSubmit");
+    const stopWords = new Set(["신청", "신청방법", "방법", "대상", "대상조회", "조회", "지원", "조건", "서류", "신청서류", "확인", "보기", "정보"]);
 
     function normalizeSource(value: string) {
       if (value.includes("정부24")) return "정부24";
       if (value.includes("복지로")) return "복지로";
       if (value.includes("K-Startup")) return "K-Startup";
       return value.replace(/\s*API\b/g, "").replace("공공서비스", "").trim();
+    }
+
+    function normalizeSearch(value: string) {
+      return value.toLowerCase().replace(/[·ㆍ・]/g, "").replace(/[^\p{L}\p{N}]+/gu, "");
+    }
+
+    function queryTokens(value: string) {
+      return value
+        .split(/\s+/)
+        .map((item) => item.trim())
+        .filter((item) => item.length > 1);
+    }
+
+    function meaningfulTokens(value: string) {
+      return queryTokens(value).filter((item) => !stopWords.has(item));
+    }
+
+    function cardQueryScore(card: HTMLElement) {
+      if (!keyword) return Number(card.dataset.score ?? 0);
+      const title = normalizeSearch(card.dataset.title ?? "");
+      const tags = normalizeSearch(card.dataset.tags ?? "");
+      const docs = normalizeSearch(card.dataset.documents ?? "");
+      const text = normalizeSearch(card.dataset.search ?? "");
+      const query = normalizeSearch(keyword);
+      const tokens = meaningfulTokens(keyword);
+      const hasMeaningfulMatch = tokens.length === 0 || tokens.some((token) => text.includes(normalizeSearch(token)));
+      if (!hasMeaningfulMatch) return 0;
+
+      let score = 0;
+      if (title.includes(query)) score += 120;
+      if (tags.includes(query)) score += 80;
+      if (text.includes(query)) score += 60;
+      for (const token of tokens) {
+        const normalized = normalizeSearch(token);
+        if (title.includes(normalized)) score += 45;
+        else if (tags.includes(normalized)) score += 32;
+        else if (text.includes(normalized)) score += 14;
+      }
+      if (keyword.includes("서류") && docs) score += 10;
+      if (keyword.includes("신청") && text.includes("신청")) score += 8;
+      if (keyword.includes("조회") && text.includes("조회")) score += 12;
+      if (keyword.includes("환급") && text.includes("환급")) score += 18;
+      return score;
+    }
+
+    function conditionText(value: string) {
+      if (value === "부모/육아") return "부모 육아 출산 보육 아동";
+      if (value === "농어업인") return "농업인 어업인 농림어업 영농 어촌";
+      if (value === "현금지원") return "장려금 지원금 수당 급여 현금";
+      if (value === "주거·월세") return "주거 월세 전세 임차";
+      if (value === "취업·교육") return "취업 구직 교육 훈련";
+      if (value === "창업·사업자금") return "창업 사업화 사업자금";
+      if (value === "대출·정책자금") return "대출 정책자금 융자 자금";
+      return value;
+    }
+
+    function conditionMatches(card: HTMLElement, value: string) {
+      if (!value) return true;
+      const text = normalizeSearch(card.dataset.search ?? "");
+      return conditionText(value).split(/\s+/).some((token) => text.includes(normalizeSearch(token)));
     }
 
     if (lifeStage) lifeStage.value = selectedLife;
@@ -244,6 +325,17 @@ const intentCards = [
     if (topCategory) topCategory.value = selectedCategory;
     if (topRegion) topRegion.value = selectedRegion;
     if (topSource) topSource.value = selectedSource;
+    if (searchInput) searchInput.value = keyword;
+    for (const chip of conditionChips) {
+      const key = chip.dataset.conditionKey;
+      const value = chip.dataset.conditionValue;
+      const active =
+        (key === "target" && value === selectedTarget) ||
+        (key === "purpose" && value === selectedPurpose) ||
+        (key === "region" && value === selectedRegion) ||
+        (key === "apply" && ((value === "온라인 가능" && selectedApplyOnline) || (value === "마감임박" && selectedStatus === "마감임박") || (value === "상시신청" && selectedStatus === "상시")));
+      chip.classList.toggle("active", active);
+    }
 
     function querySignature(search: string) {
       const values = new URLSearchParams(search);
@@ -272,10 +364,13 @@ const intentCards = [
       if (keyword) next.set("q", keyword);
       if (selectedCategory) next.set("category", selectedCategory);
       if (selectedRegion) next.set("region", selectedRegion);
+      if (selectedTarget) next.set("target", selectedTarget);
+      if (selectedPurpose) next.set("purpose", selectedPurpose);
       if (lifeStage?.value) next.set("lifeStage", lifeStage.value);
       if (status?.value) next.set("status", status.value);
       if (source?.value) next.set("source", source.value);
       if (online?.checked) next.set("online", "true");
+      if (selectedApplyOnline) next.set("applyOnline", "true");
       if (sort?.value && sort.value !== "recommended") next.set("sort", sort.value);
       const query = next.toString();
       window.history.replaceState(null, "", query ? `/support/?${query}` : "/support/");
@@ -284,6 +379,8 @@ const intentCards = [
     function sortCards() {
       if (!resultGrid || !sort) return;
       const sorted = [...cards].sort((a, b) => {
+        const scoreDiff = cardQueryScore(b) - cardQueryScore(a);
+        if (keyword && scoreDiff !== 0) return scoreDiff;
         if (sort.value === "deadline") return ddayRank(a.dataset.dday ?? "") - ddayRank(b.dataset.dday ?? "");
         if (sort.value === "popular") return Number(b.dataset.views ?? 0) - Number(a.dataset.views ?? 0);
         if (sort.value === "online") return Number(b.dataset.online === "true") - Number(a.dataset.online === "true");
@@ -307,23 +404,55 @@ const intentCards = [
         const cardSource = card.dataset.source ?? "";
         const cardSourceLabel = card.dataset.sourceLabel ?? "";
         const cardOnline = card.dataset.online === "true";
-        const matchKeyword = !keyword || text.includes(keyword);
+        const searchOnly = card.dataset.searchOnly === "true";
+        const queryScore = cardQueryScore(card);
+        card.dataset.queryScore = String(queryScore);
+        const matchKeyword = !keyword || queryScore > 0;
         const matchCategory = !selectedCategory || cardCategory === selectedCategory;
         const matchRegion = !selectedRegion || cardRegion === selectedRegion || cardRegion === "전국" || cardRegion === "지역별";
         const matchLife = !lifeValue || text.includes(lifeValue);
         const matchStatus = !statusValue || cardStatus === statusValue;
         const matchSource = !sourceValue || cardSource === sourceValue || cardSourceLabel === sourceValue;
-        const matchOnline = !onlineOnly || cardOnline;
-        const isVisible = matchKeyword && matchCategory && matchRegion && matchLife && matchStatus && matchSource && matchOnline;
+        const matchOnline = (!onlineOnly && !selectedApplyOnline) || cardOnline;
+        const matchTarget = conditionMatches(card, selectedTarget);
+        const matchPurpose = conditionMatches(card, selectedPurpose);
+        const matchSearchOnly = !searchOnly || Boolean(keyword);
+        const isVisible = matchSearchOnly && matchKeyword && matchCategory && matchRegion && matchLife && matchStatus && matchSource && matchOnline && matchTarget && matchPurpose;
+        card.hidden = !isVisible;
         card.style.display = isVisible ? "" : "none";
         if (isVisible) visible += 1;
       }
 
       if (count) count.textContent = String(visible);
+      if (noResults) noResults.hidden = visible > 0;
       sortCards();
       syncUrl();
       syncActiveTabs();
     }
+
+    conditionChips.forEach((chip) => {
+      chip.addEventListener("click", () => {
+        const key = chip.dataset.conditionKey;
+        const group = chip.closest("[data-condition-group]");
+        const wasActive = chip.classList.contains("active");
+        group?.querySelectorAll(".condition-chip").forEach((item) => item.classList.remove("active"));
+        if (!wasActive) chip.classList.add("active");
+        if (key === "region" && topRegion) topRegion.value = chip.classList.contains("active") ? chip.dataset.conditionValue ?? "" : "";
+      });
+    });
+
+    conditionSubmit?.addEventListener("click", () => {
+      const next = new URLSearchParams();
+      for (const chip of conditionChips.filter((item) => item.classList.contains("active"))) {
+        const key = chip.dataset.conditionKey;
+        const value = chip.dataset.conditionValue ?? "";
+        if (key === "apply" && value === "온라인 가능") next.set("applyOnline", "true");
+        else if (key === "apply" && value === "마감임박") next.set("status", "마감임박");
+        else if (key === "apply" && value === "상시신청") next.set("status", "상시");
+        else if (key && value) next.set(key, value);
+      }
+      window.location.href = `/support/${next.toString() ? `?${next.toString()}` : ""}`;
+    });
 
     lifeStage?.addEventListener("change", applyFilters);
     status?.addEventListener("change", applyFilters);

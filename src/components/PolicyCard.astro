@@ -2,21 +2,24 @@
 import { ArrowRight, ExternalLink } from "@lucide/astro";
 import type { Policy } from "../data/policies";
 import { sourceLabel } from "../utils/sourceNames";
+import { cleanSummary, policySearchText } from "../utils/policyUtils";
 
 const { policy, compact = false } = Astro.props as { policy: Policy; compact?: boolean };
+const searchOnlySlugs = new Set([
+  "earned-income-tax-credit-application",
+  "youth-rent-eligibility-check",
+  "local-youth-rent-support",
+  "health-insurance-out-of-pocket-refund",
+  "health-insurance-overpayment-refund",
+  "small-business-direct-loan",
+  "small-business-emergency-fund"
+]);
 const publicSourceLabel = sourceLabel(policy.source);
-const searchText = [
-  policy.title,
-  policy.category,
-  publicSourceLabel,
-  policy.agency,
-  policy.region,
-  policy.lifeStage,
-  policy.targetGroup,
-  policy.summary,
-  ...policy.tags
-].join(" ");
+const searchText = policySearchText({ ...policy, source: publicSourceLabel });
+const summary = cleanSummary(policy.summary);
+const amount = cleanSummary(policy.amount);
 const matchScore = Math.min(96, 72 + policy.matchReasons.length * 4 + (policy.applyOnline ? 8 : 0) + (policy.status === "마감임박" ? 5 : 0));
+const searchOnly = searchOnlySlugs.has(policy.slug);
 ---
 
 <article
@@ -30,7 +33,13 @@ const matchScore = Math.min(96, 72 + policy.matchReasons.length * 4 + (policy.ap
   data-score={String(matchScore)}
   data-dday={policy.dday}
   data-views={String(policy.views)}
+  data-search-only={String(searchOnly)}
+  data-title={policy.title}
+  data-tags={policy.tags.join(" ")}
+  data-purpose={`${policy.category} ${policy.amount} ${policy.benefits.join(" ")}`}
+  data-documents={policy.documents.join(" ")}
   data-search={searchText}
+  hidden={searchOnly}
 >
   <div class="meta">
     <span class="badge">{policy.category}</span>
@@ -39,12 +48,12 @@ const matchScore = Math.min(96, 72 + policy.matchReasons.length * 4 + (policy.ap
   </div>
   <div>
     <h3><a href={`/support/${policy.slug}/`}>{policy.title}</a></h3>
-    <p>{policy.summary}</p>
+    <p>{summary}</p>
   </div>
   <dl class="card-facts">
     <div><dt>기관</dt><dd>{policy.agency}</dd></div>
     <div><dt>지역</dt><dd>{policy.region}</dd></div>
-    <div><dt>지원내용</dt><dd>{policy.amount}</dd></div>
+    <div><dt>지원내용</dt><dd>{amount}</dd></div>
     <div><dt>마감</dt><dd>{policy.dday}</dd></div>
     <div><dt>신청방식</dt><dd>{policy.applyOnline ? "온라인 가능" : "기관 확인"}</dd></div>
   </dl>

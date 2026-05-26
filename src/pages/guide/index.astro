@@ -1,19 +1,21 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { guides } from "../../data/guides";
+
+const publicGuides = guides.filter((guide) => guide.category !== "SEO");
 ---
 
-<BaseLayout title="정부지원금 신청 가이드 - GovFind" description="정부지원금 신청 방법, 자격 체크리스트, 필요서류, SEO형 정보 콘텐츠를 정리했습니다.">
+<BaseLayout title="정부지원금 신청 가이드 - GovFind" description="정부지원금 신청 방법, 자격 체크리스트, 필요서류, 공식 링크 확인 방법을 정리했습니다.">
   <section class="page-head">
     <div class="wrap">
       <p class="eyebrow">가이드 허브</p>
       <h1>신청 전에 읽어야 할 정부지원금 가이드</h1>
-      <p class="lead">검색 유입 사용자가 바로 이해할 수 있도록 자격, 서류, 신청 경로를 주제별로 정리했습니다.</p>
+      <p class="lead">지원금을 찾는 사용자가 바로 이해할 수 있도록 자격, 서류, 신청 경로를 주제별로 정리했습니다.</p>
     </div>
   </section>
   <section class="section">
     <div class="wrap grid cols-2">
-      {guides.map((guide) => (
+      {publicGuides.map((guide) => (
         <article class="card">
           <div class="meta">
             <span class="badge">{guide.category}</span>

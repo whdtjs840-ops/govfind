@@ -1,0 +1,29 @@
+---
+const conditionGroups = [
+  { key: "target", label: "대상", options: ["청년", "구직자", "소상공인", "신혼부부", "부모/육아", "어르신", "장애인", "농어업인"] },
+  { key: "purpose", label: "목적", options: ["현금지원", "환급금", "주거·월세", "취업·교육", "창업·사업자금", "대출·정책자금", "복지"] },
+  { key: "region", label: "지역", options: ["전국", "서울", "경기", "인천", "부산", "대구", "광주", "대전", "지역별"] },
+  { key: "apply", label: "신청 방식", options: ["온라인 가능", "마감임박", "상시신청"] }
+];
+---
+
+<section class="quick-condition-search" id="condition-search" aria-label="조건 검색">
+  <div class="quick-condition-head">
+    <div>
+      <p class="eyebrow">조건검색</p>
+      <h2>내 상황에 가까운 조건을 골라보세요</h2>
+    </div>
+    <a class="text-link" href="/support/">선택 초기화</a>
+  </div>
+  {conditionGroups.map((group) => (
+    <div class="condition-row" data-condition-group={group.key}>
+      <strong>{group.label}</strong>
+      <div>
+        {group.options.map((option) => (
+          <button type="button" class="condition-chip" data-condition-key={group.key} data-condition-value={option}>{option}</button>
+        ))}
+      </div>
+    </div>
+  ))}
+  <button type="button" class="button condition-submit" id="conditionSubmit">조건에 맞는 지원금 보기</button>
+</section>
