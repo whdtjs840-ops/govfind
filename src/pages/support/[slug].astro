@@ -27,6 +27,8 @@ const sourceAdapter =
   policy.source.includes("복지로") || policy.source.includes("복지") ? "NationalWelfare V001" :
   policy.source.includes("K-Startup") ? "K-Startup 공공데이터" :
   "공식 원문/기관 안내";
+const sourceName = sourceLabel(policy.source);
+const sourceWithAgency = sourceName === policy.agency ? `${sourceName} 안내` : `${sourceName}와 ${policy.agency} 안내`;
 const relatedPolicies = policies
   .filter((item) => !isSearchOnlyPolicy(item) && item.slug !== policy.slug && (item.category === policy.category || item.region === policy.region || item.tags.some((tag) => policy.tags.includes(tag))))
   .slice(0, 4);
@@ -159,7 +161,7 @@ const quickCheckItems = [
         <section class="doc-block">
           <h3>근거 요약</h3>
           <p>
-            이 페이지는 {sourceLabel(policy.source)}와 {policy.agency} 안내를 기준으로 {policy.title}의 대상, 지원내용, 신청기간, 필요서류를 같은 순서로 정리했습니다.
+            이 페이지는 {sourceWithAgency}를 기준으로 {policy.title}의 대상, 지원내용, 신청기간, 필요서류를 같은 순서로 정리했습니다.
             GovFind는 신청 가능성을 단정하지 않으며, 최종 접수 가능 여부와 자격 판정은 공식 신청처에서 확인해야 합니다.
           </p>
           <p class="notice">{deadlineBasis}</p>
