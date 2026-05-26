@@ -120,7 +120,7 @@ function policyFromPublicService(record, detail, index) {
     agency,
     region: /시청|도청|군청|구청|지자체|특별시|광역시|특별자치|도 /.test(`${agency} ${merged["소관기관유형"] || ""}`) ? "지역별" : "전국",
     amount: firstLine(benefit, text(merged["지원유형"]) || "서비스별 상이"),
-    deadline: text(merged["신청기한"]) || "상시 또는 공식 공고 확인",
+    deadline: sanitizeDisplay(text(merged["신청기한"]), 120) || "상시 또는 공식 공고 확인",
     dday,
     status,
     lifeStage: lifeStageFrom(merged),
