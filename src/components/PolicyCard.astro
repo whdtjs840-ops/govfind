@@ -4,10 +4,11 @@ import type { Policy } from "../data/policies";
 import { sourceLabel } from "../utils/sourceNames";
 
 const { policy, compact = false } = Astro.props as { policy: Policy; compact?: boolean };
+const publicSourceLabel = sourceLabel(policy.source);
 const searchText = [
   policy.title,
   policy.category,
-  policy.source,
+  publicSourceLabel,
   policy.agency,
   policy.region,
   policy.lifeStage,
@@ -23,8 +24,8 @@ const matchScore = Math.min(96, 72 + policy.matchReasons.length * 4 + (policy.ap
   data-category={policy.category}
   data-region={policy.region}
   data-status={policy.status}
-  data-source={policy.source}
-  data-source-label={sourceLabel(policy.source)}
+  data-source={publicSourceLabel}
+  data-source-label={publicSourceLabel}
   data-online={String(policy.applyOnline)}
   data-score={String(matchScore)}
   data-dday={policy.dday}
@@ -34,7 +35,7 @@ const matchScore = Math.min(96, 72 + policy.matchReasons.length * 4 + (policy.ap
   <div class="meta">
     <span class="badge">{policy.category}</span>
     <span class={policy.status === "마감임박" ? "badge deadline" : "badge warn"}>{policy.status}</span>
-    <span class="badge soft">{sourceLabel(policy.source)}</span>
+    <span class="badge soft">{publicSourceLabel}</span>
   </div>
   <div>
     <h3><a href={`/support/${policy.slug}/`}>{policy.title}</a></h3>

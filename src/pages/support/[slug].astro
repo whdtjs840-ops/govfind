@@ -30,6 +30,24 @@ const targetLines = lines(detailTarget, 10);
 const benefitLines = lines(detailBenefit, 10);
 const applyLines = lines(detailApply, 10);
 const criteriaLines = lines(detailCriteria, 8);
+const categorySlug =
+  policy.category === "복지" ? "welfare" :
+  policy.category === "주거" ? "housing" :
+  policy.category === "고용" ? "job" :
+  policy.category === "청년" ? "youth" :
+  policy.category === "교육" ? "education" :
+  policy.category === "보건의료" ? "health" :
+  policy.category === "농림어업" ? "farming" :
+  policy.category === "소상공인" ? "small-business" :
+  "startup";
+const quickCheckItems = [
+  { label: "대상", value: policy.targetGroup || targetLines[0] || "공식 공고 확인" },
+  { label: "지역", value: policy.region },
+  { label: "신청기간", value: `${policy.deadline} · ${policy.dday}` },
+  { label: "신청방식", value: policy.applyOnline ? "온라인 신청 가능 여부 확인" : "공식 안내 확인" },
+  { label: "필요서류", value: policy.documents.slice(0, 2).join(", ") || "공식 공고 확인" },
+  { label: "공식 신청처", value: sourceLabel(policy.source) }
+];
 ---
 
 <BaseLayout title={`${policy.title} - 지원 대상과 신청 방법 | GovFind`} description={policy.summary} canonical={`/support/${policy.slug}/`}>
@@ -40,7 +58,7 @@ const criteriaLines = lines(detailCriteria, 8);
         <span>/</span>
         <a href="/support/">정책 목록</a>
         <span>/</span>
-        <a href={`/category/${policy.category === "복지" ? "welfare" : policy.category === "주거" ? "housing" : policy.category === "고용" ? "job" : policy.category === "청년" ? "youth" : "startup"}/`}>{policy.category}</a>
+        <a href={`/category/${categorySlug}/`}>{policy.category}</a>
       </nav>
 
       <div class="policy-doc-title">
@@ -56,13 +74,40 @@ const criteriaLines = lines(detailCriteria, 8);
           <ExternalLink size={18} />공식 신청처 보기
         </a>
       </div>
+
+      <section class="quick-check-box" aria-label="신청 전 빠른 확인">
+        <div class="quick-check-head">
+          <h2>신청 전 빠른 확인</h2>
+          <a href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
+            공식 신청처 보기 <ExternalLink size={15} />
+          </a>
+        </div>
+        <dl>
+          {quickCheckItems.map((item) => (
+            <div>
+              <dt>{item.label}</dt>
+              <dd>{item.value}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      <nav class="doc-anchor-nav" aria-label="상세 섹션 이동">
+        <a href="#summary">요약</a>
+        <a href="#target">지원대상</a>
+        <a href="#benefit">지원내용</a>
+        <a href="#apply">신청방법</a>
+        <a href="#documents">필요서류</a>
+        <a href="#faq">FAQ</a>
+        <a href="#official-check">공식확인</a>
+      </nav>
     </div>
   </section>
 
   <section class="section policy-doc-section">
     <div class="wrap doc-wrap">
       <article class="policy-doc">
-        <section class="doc-block">
+        <section class="doc-block" id="summary">
           <h2>핵심 요약</h2>
           <p>
             이 정책은 {policy.targetGroup} 대상자가 {policy.amount} 지원을 검토할 때 확인할 수 있는 {policy.category} 지원 정보입니다.
@@ -87,7 +132,7 @@ const criteriaLines = lines(detailCriteria, 8);
           <p>{policy.summary}</p>
         </section>
 
-        <section class="doc-block">
+        <section class="doc-block" id="target">
           <h3>지원 대상</h3>
           {targetLines.length ? targetLines.map((item) => <p>{item}</p>) : <p>공식 상세 페이지에서 지원 대상을 확인해야 합니다.</p>}
         </section>
@@ -99,7 +144,7 @@ const criteriaLines = lines(detailCriteria, 8);
           </section>
         )}
 
-        <section class="doc-block">
+        <section class="doc-block" id="benefit">
           <h3>지원 내용</h3>
           {benefitLines.length ? (
             <ul class="doc-list">
@@ -110,20 +155,20 @@ const criteriaLines = lines(detailCriteria, 8);
           )}
         </section>
 
-        <section class="doc-block">
+        <section class="doc-block" id="apply">
           <h3>신청 방법</h3>
           {applyLines.length ? applyLines.map((item) => <p>{item}</p>) : <p>복지로 또는 소관 기관의 공식 신청 안내를 확인합니다.</p>}
           <p class="notice">GovFind는 자격을 단정하지 않습니다. 신청 전 기관명, 제출 서류, 접수 기간을 공식 페이지에서 다시 확인하세요.</p>
         </section>
 
-        <section class="doc-block">
+        <section class="doc-block" id="documents">
           <h3>필요 서류</h3>
           <ul class="doc-list">
             {policy.documents.map((item) => <li>{item}</li>)}
           </ul>
         </section>
 
-        <section class="doc-block">
+        <section class="doc-block" id="faq">
           <h3>자주 묻는 질문</h3>
           <div class="faq-list doc-faq">
             {policy.faq.map((item) => (
@@ -135,7 +180,7 @@ const criteriaLines = lines(detailCriteria, 8);
           </div>
         </section>
 
-        <section class="doc-block">
+        <section class="doc-block" id="official-check">
           <h3>신청 전 확인사항</h3>
           <ul class="doc-list">
             <li>지원 대상, 소득 기준, 거주지 기준은 공식 신청처에서 다시 확인하세요.</li>
@@ -180,7 +225,7 @@ const criteriaLines = lines(detailCriteria, 8);
   <div class="sticky-detail-cta" aria-label="상세 페이지 빠른 실행">
     <span>{policy.title}</span>
     <a class="button" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
-      <ExternalLink size={17} />공식 신청처
+      <ExternalLink size={17} />공식 신청처 보기
     </a>
     <a class="button secondary" href="/support/">목록으로</a>
   </div>

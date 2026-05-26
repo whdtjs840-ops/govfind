@@ -2,7 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PolicyCard from "../../components/PolicyCard.astro";
 import { CheckCircle2, Search, SlidersHorizontal } from "@lucide/astro";
-import { categories, categoryGroups, lifeStages, policies, popularKeywords, regions } from "../../data/policies";
+import { categories, categoryGroups, lifeStages, policies, regions } from "../../data/policies";
 import { publicSourceOptions, sourceLabel } from "../../utils/sourceNames";
 
 const params = Astro.url.searchParams;
@@ -42,6 +42,19 @@ const quickTabs = [
 ];
 
 const topCategories = categoryGroups.slice(0, 7);
+const actionKeywords = [
+  "근로장려금 신청방법",
+  "근로장려금 대상조회",
+  "청년월세 지원 대상",
+  "국민취업지원제도 신청조건",
+  "건강보험 환급금 조회",
+  "소상공인 정책자금 신청서류"
+];
+const intentCards = [
+  { title: "지원금 정보", desc: "생활비·복지·청년 지원을 확인", href: supportHref({ q: "지원금" }) },
+  { title: "환급금 정보", desc: "환급·장려금처럼 조회가 필요한 정보", href: supportHref({ q: "환급금" }) },
+  { title: "대출·정책자금", desc: "소상공인·주거·창업 자금 지원", href: supportHref({ q: "정책자금" }) }
+];
 ---
 
 <BaseLayout
@@ -50,14 +63,23 @@ const topCategories = categoryGroups.slice(0, 7);
 >
   <section class="support-search-head">
     <div class="wrap">
-      <p class="eyebrow">정부지원금 검색</p>
-      <h1>지원금, 혜택, 창업공고를 한 번에 찾기</h1>
-      <p class="lead">정부24·복지로·K-Startup 데이터를 공식 출처 기준으로 정리했습니다. 조건을 확인한 뒤 최종 신청은 공식 신청처에서 진행하세요.</p>
+      <p class="eyebrow">내 조건으로 찾기</p>
+      <h1>지원금, 환급금, 정책자금을 조건별로 빠르게 비교하세요</h1>
+      <p class="lead">대상, 지역, 신청 기간, 필요 서류를 먼저 확인하고 최종 신청은 공식 신청처에서 진행하세요.</p>
+
+      <div class="support-intent-grid" aria-label="빠른 검색 유형">
+        {intentCards.map((item) => (
+          <a href={item.href}>
+            <strong>{item.title}</strong>
+            <span>{item.desc}</span>
+          </a>
+        ))}
+      </div>
 
       <form class="support-search-form" action="/support/" method="get">
         <div class="support-search-main">
           <Search size={21} aria-hidden="true" />
-          <input name="q" type="search" value={selectedQ} placeholder="근로장려금, 청년월세, 소상공인, 창업지원금" />
+          <input name="q" type="search" value={selectedQ} placeholder="근로장려금, 청년월세, 환급금, 소상공인 정책자금 검색" />
           <button class="button" type="submit">검색</button>
         </div>
         <div class="support-search-selects">
@@ -157,7 +179,7 @@ const topCategories = categoryGroups.slice(0, 7);
         </div>
 
         <div class="support-keyword-row" aria-label="인기 검색어">
-          {popularKeywords.slice(0, 12).map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
+          {actionKeywords.map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
         </div>
 
         <div class="result-grid support-result-list">
