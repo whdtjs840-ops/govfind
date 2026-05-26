@@ -1,9 +1,23 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 
+async function loadLocalEnv() {
+  try {
+    const env = await readFile(resolve(".env"), "utf8");
+    for (const line of env.split(/\r?\n/)) {
+      const match = line.match(/^([A-Z0-9_]+)=(.*)$/);
+      if (match && !process.env[match[1]]) process.env[match[1]] = match[2];
+    }
+  } catch {
+    // Local .env is optional. Production should provide real environment variables.
+  }
+}
+
+await loadLocalEnv();
+
 const key = process.env.GOVFIND_YOUTH_API_KEY;
 const outputPath = resolve("src/data/youth-api.generated.ts");
-const endpoint = "https://www.youthcenter.go.kr/opi/youthPlcyList.do";
+const endpoint = "https://www.youthcenter.go.kr/go/ythip/getPlcy";
 
 function decodeXml(value = "") {
   return String(value ?? "")
@@ -30,6 +44,16 @@ function parseItems(xml) {
     }
     return record;
   });
+}
+
+function parseResponse(body) {
+  try {
+    const json = JSON.parse(body);
+    const items = json?.result?.youthPolicyList ?? json?.youthPolicyList ?? json?.data ?? json?.items ?? [];
+    return Array.isArray(items) ? items : [items].filter(Boolean);
+  } catch {
+    return parseItems(body);
+  }
 }
 
 function pick(source, keys) {
@@ -81,12 +105,16 @@ function policyFromYouth(item, index) {
   const title = pick(item, ["plcyNm", "polyBizSjnm", "policyName", "title"]) || `청년정책 ${index + 1}`;
   const summary = pick(item, ["plcyExplnCn", "polyItcnCn", "policyCn", "summary"]) || "온통청년에서 제공하는 청년정책입니다.";
   const agency = pick(item, ["sprvsnInstCdNm", "operInstCdNm", "cnsgNmor", "agency"]) || "온통청년";
-  const region = pick(item, ["zipCd", "lclsfNm", "mclsfNm", "region"]) || "전국";
+  const region = pick(item, ["rgtrHghrkInstCdNm", "rgtrUpInstCdNm", "rgtrInstCdNm", "region"]) || "전국";
   const id = pick(item, ["plcyNo", "bizId", "policyId", "id"]) || String(index + 1);
-  const target = pick(item, ["sprtTrgtMinAge", "sprtTrgtMaxAge", "ageInfo", "target"]) || "청년 대상";
+  const minAge = pick(item, ["sprtTrgtMinAge"]);
+  const maxAge = pick(item, ["sprtTrgtMaxAge"]);
+  const ageRange = minAge && maxAge && !(minAge === "0" && maxAge === "0") ? `${minAge}세~${maxAge}세` : "";
+  const target = [ageRange, pick(item, ["addAplyQlfcCndCn", "ageInfo", "target"])].filter(Boolean).join("\n") || "청년 대상";
   const benefit = pick(item, ["sprtCn", "rqutPrdCn", "supportCn", "benefit"]) || summary;
-  const application = pick(item, ["aplyYmd", "aplyMthdCn", "rqutProcCn", "apply"]) || "온통청년 공식 안내 확인";
-  const link = pick(item, ["aplyUrlAddr", "rfcSiteUrlAddr", "url"]) || "https://www.youthcenter.go.kr";
+  const application = pick(item, ["plcyAplyMthdCn", "aplyYmd", "aplyMthdCn", "rqutProcCn", "apply"]) || "온통청년 공식 안내 확인";
+  const link = pick(item, ["aplyUrlAddr", "refUrlAddr1", "refUrlAddr2", "rfcSiteUrlAddr", "url"]) || "https://www.youthcenter.go.kr";
+  const deadline = pick(item, ["aplyYmd", "bizPrdEtcCn", "bizPrdEndYmd", "rqutPrdCn"]) || "공식 공고 확인";
   const text = `${title} ${summary} ${benefit}`;
   const category = categoryFrom(text);
 
@@ -98,7 +126,7 @@ function policyFromYouth(item, index) {
     agency,
     region,
     amount: "정책별 상이",
-    deadline: "공식 공고 확인",
+    deadline,
     dday: "확인필요",
     status: "모집중",
     lifeStage: "청년",
@@ -159,9 +187,10 @@ if (!key) {
 
 try {
   const url = new URL(endpoint);
-  url.searchParams.set("openApiVlak", key);
-  url.searchParams.set("pageIndex", "1");
-  url.searchParams.set("display", process.env.GOVFIND_YOUTH_API_ROWS || "30");
+  url.searchParams.set("apiKeyNm", key);
+  url.searchParams.set("pageNum", "1");
+  url.searchParams.set("pageSize", process.env.GOVFIND_YOUTH_API_ROWS || "30");
+  url.searchParams.set("rtnType", "json");
 
   const response = await fetch(url);
   const body = await response.text();
@@ -170,7 +199,7 @@ try {
     process.exit(0);
   }
 
-  const items = parseItems(body);
+  const items = parseResponse(body);
   if (!items.length) {
     await keepExisting("API response did not contain youth policy list items");
     process.exit(0);
