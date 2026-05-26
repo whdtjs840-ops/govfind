@@ -21,6 +21,26 @@ function cleanLines(value = "", max = 5) {
     .slice(0, max);
 }
 
+function sanitizeDisplay(value = "", maxLength = 160) {
+  const cleaned = text(value)
+    .replace(/<[^>]+>/g, " ")
+    .replace(/[○●■□▶※❍ㆍ•·]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (!cleaned) return "";
+  return cleaned.length > maxLength ? `${cleaned.slice(0, maxLength - 1)}…` : cleaned;
+}
+
+function displayLines(value = "", max = 4, maxLength = 120) {
+  return text(value)
+    .replace(/<[^>]+>/g, "\n")
+    .split(/\n|[○●■□▶※❍ㆍ•·]+|(?:\s{2,})/)
+    .map((line) => sanitizeDisplay(line, maxLength))
+    .filter(Boolean)
+    .slice(0, max);
+}
+
 function slugify(value, fallback) {
   const slug = text(value)
     .toLowerCase()
@@ -71,7 +91,7 @@ function applicationUrl(record) {
 
 function policyFromKstartup(record, index) {
   const title = text(record.biz_pbanc_nm) || `K-Startup 창업지원사업 ${index + 1}`;
-  const summary = cleanLines(record.pbanc_ctnt, 1)[0] || "K-Startup 창업지원포털에서 제공하는 창업지원사업 공고입니다.";
+  const summary = displayLines(record.pbanc_ctnt, 1, 130)[0] || "K-Startup 창업지원포털에서 제공하는 창업지원사업 공고입니다.";
   const start = formatDate(record.pbanc_rcpt_bgng_dt);
   const end = formatDate(record.pbanc_rcpt_end_dt);
   const deadline = start && end ? `${start} ~ ${end}` : end || "공고별 확인";
@@ -95,14 +115,14 @@ function policyFromKstartup(record, index) {
     dday: dday(record.pbanc_rcpt_end_dt),
     status,
     lifeStage: /청년|만 39세|대학생/.test(`${target} ${age}`) ? "청년" : "예비창업·초기창업",
-    targetGroup: cleanLines(target, 1)[0] || "공고별 지원 대상 확인",
+    targetGroup: displayLines(target, 1, 100)[0] || "공고별 지원 대상 확인",
     income: "업력·연령·창업단계 등 공고별 기준 확인",
     applyOnline: Boolean(applyUrl),
     tags: [...new Set(["창업", "K-Startup", text(record.supt_biz_clsfc), region, ...title.split(/\s+/).slice(0, 3)].filter(Boolean))],
-    summary,
-    audience: [target, stage, age].filter(Boolean).join(" / "),
-    benefits: cleanLines(record.pbanc_ctnt, 4).length ? cleanLines(record.pbanc_ctnt, 4) : ["창업지원사업 공고 확인", "모집기간 확인", "온라인 신청처 이동", "주관기관 문의"],
-    documents: cleanLines(record.prfn_matr, 4).length ? cleanLines(record.prfn_matr, 4) : ["사업계획서", "사업자등록 관련 서류", "대표자 신분 확인 자료", "공고별 추가 제출서류"],
+    summary: sanitizeDisplay(summary, 130),
+    audience: [sanitizeDisplay(target, 140), sanitizeDisplay(stage, 80), sanitizeDisplay(age, 80)].filter(Boolean).join(" / "),
+    benefits: displayLines(record.pbanc_ctnt, 4, 110).length ? displayLines(record.pbanc_ctnt, 4, 110) : ["창업지원사업 공고 확인", "모집기간 확인", "온라인 신청처 이동", "주관기관 문의"],
+    documents: displayLines(record.prfn_matr, 4, 80).length ? displayLines(record.prfn_matr, 4, 80) : ["사업계획서", "사업자등록 관련 서류", "대표자 신분 확인 자료", "공고별 추가 제출서류"],
     apply: `K-Startup 공고 상세 또는 주관기관 신청 페이지에서 접수합니다. ${applyUrl}`,
     officialUrl: applyUrl,
     officialSourceUrl: text(record.detl_pg_url) || "https://www.k-startup.go.kr",

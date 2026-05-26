@@ -8,13 +8,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "교육부",
     "region": "전국",
-    "amount": "○ 3~5세에 대해 교육비를 지급합니다.",
+    "amount": "3~5세에 대해 교육비를 지급합니다.",
     "deadline": "상시신청",
     "dday": "상시",
     "status": "상시",
     "lifeStage": "임신·출산·육아",
-    "targetGroup": "○ 지원대상 : 국공립 및 사립유치원에 다니는 3~5세 유아",
-    "income": "※ 2026. 3. 1~2027.2.28. 까지 적용",
+    "targetGroup": "지원대상 : 국공립 및 사립유치원에 다니는 3~5세 유아",
+    "income": "2026. 3. 1~2027.2.28. 까지 적용",
     "applyOnline": true,
     "tags": [
       "교육",
@@ -26,24 +26,24 @@ export const publicServiceApiPolicies: Policy[] = [
       "지원"
     ],
     "summary": "3~5세 누리과정 도입으로 유치원",
-    "audience": "○ 지원대상 : 국공립 및 사립유치원에 다니는 3~5세 유아 '23년 1~2월생으로 유치원 입학을 희망하여 3세반에 취원한 유아도 지원 대상",
+    "audience": "지원대상 : 국공립 및 사립유치원에 다니는 3~5세 유아 - '23년 1~2월생으로 유치원 입학을 희망하여 3세반에 취원한 유아도 지원 대상",
     "benefits": [
-      "○ 3~5세에 대해 교육비를 지급합니다.",
-      "국공립 100,000원, 사립 280,000원",
-      "○ 3~5세에 대해 방과후과정비를 지급합니다.",
-      "국공립 50,000원, 사립 70,000원"
+      "3~5세에 대해 교육비를 지급합니다.",
+      "- 국공립 100,000원, 사립 280,000원",
+      "3~5세에 대해 방과후과정비를 지급합니다.",
+      "- 국공립 50,000원, 사립 70,000원"
     ],
     "documents": [
-      "사회복지서비스 및 급여제공(변경) 신청서",
-      "사회복지서비스 이용권(바우처) 제공(변경) 신청서",
-      "아이사랑 카드발급 신청 및 개인신용정보의 조회",
+      "- 사회복지서비스 및 급여제공(변경) 신청서",
+      "- 사회복지서비스 이용권(바우처) 제공(변경) 신청서",
+      "- 아이사랑 카드발급 신청 및 개인신용정보의 조회",
       "제공"
     ],
-    "apply": "○ 유아의 보호자가 가까운 읍면동 주민센터 방문 또는 인터넷을 이용하여 온라인 신청 (복지로 http://www.bokjiro.go.kr) 이 가능합니다. 주의: 온라인 신청은 부모만 가능",
+    "apply": "유아의 보호자가 가까운 읍면동 주민센터 방문 또는 인터넷을 이용하여 온라인 신청 (복지로 http://www.bokjiro.go.kr) 이 가능합니다. - 주의: 온라인 신청은 부모만 가능",
     "officialUrl": "https://www.bokjiro.go.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/000000465790",
     "contact": "교육부/02-6222-6060||0079에듀콜/1544-0079-5-1",
-    "views": 352404,
+    "views": 352417,
     "updatedAt": "2026.01.29",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -76,13 +76,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "국세청",
     "region": "전국",
-    "amount": "○ 전년도 연간 부부합산 총 급여액 등(근로소득, 사업소득 또는 종교인소득의 합계)에 따라",
+    "amount": "전년도 연간 부부합산 총 급여액 등(근로소득, 사업소득 또는 종교인소득의 합계)에 따라",
     "deadline": "○ 정기신청 : 5.1.~5.31.○ 반기신청 - 상반기분 신청 : 9.1.~9.15. - 하반기분 신청 : 3.1.~3.15.",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "임신·출산·육아",
-    "targetGroup": "○ 신청요건을 모두 충족하는 근로소득, 사업소득 또는 종교인소득이 있는 가구로써 신청기간 내 신청하는 경우 근로소득, 사업소득 또는 종교인소득에 따라 산정한 근로장려금과 부양자녀수에 따라 산정한 자녀장려금을 지급",
-    "income": "○ 아래 요건을 모두 충족하는 근로소득, 사업소득 또는 종교인소득이 있는 가구",
+    "targetGroup": "신청요건을 모두 충족하는 근로소득, 사업소득 또는 종교인소득이 있는 가구로써 신청기간 내 신청하는 경우 근로소득, 사업소득 또는 종교인소득에 따라 산정한 근로장려금과 부양자녀수에 따라 산정한 자녀장려금을 지급",
+    "income": "아래 요건을 모두 충족하는 근로소득, 사업소득 또는 종교인소득이 있는 가구",
     "applyOnline": true,
     "tags": [
       "복지",
@@ -91,23 +91,23 @@ export const publicServiceApiPolicies: Policy[] = [
       "주거·자립",
       "근로·자녀장려금"
     ],
-    "summary": "○ 근로장려세제",
-    "audience": "○ 신청요건을 모두 충족하는 근로소득, 사업소득 또는 종교인소득이 있는 가구로써 신청기간 내 신청하는 경우 근로소득, 사업소득 또는 종교인소득에 따라 산정한 근로장려금과 부양자녀수에 따라 산정한 자녀장려금을 지급",
+    "summary": "근로장려세제",
+    "audience": "신청요건을 모두 충족하는 근로소득, 사업소득 또는 종교인소득이 있는 가구로써 신청기간 내 신청하는 경우 근로소득, 사업소득 또는 종교인소득에 따라 산정한 근로장려금과 부양자녀수에 따라 산정한 자녀장려금을 지급",
     "benefits": [
-      "○ 전년도 연간 부부합산 총 급여액 등(근로소득, 사업소득 또는 종교인소득의 합계)에 따라",
-      "근로장려금은",
+      "전년도 연간 부부합산 총 급여액 등(근로소득, 사업소득 또는 종교인소득의 합계)에 따라",
+      "- 근로장려금은",
       "단독가구 최대 165만 원",
       "홑벌이 가구 최대 285만 원"
     ],
     "documents": [
-      "○ 소득재산 등 증거자료 제출 불필요한 경우 : 국세청에서 확인한 소득, 재산 등의 자료와 동일한 경우",
-      "○ 소득재산 등 증거자료 제출 필요한 경우 : 국세청에서 확인한 소득, 재산 등의 자료와 다른 경우"
+      "소득재산 등 증거자료 제출 불필요한 경우 : 국세청에서 확인한 소득, 재산 등의 자료와 동일한 경우",
+      "소득재산 등 증거자료 제출 필요한 경우 : 국세청에서 확인한 소득, 재산 등의 자료와 다른 경우"
     ],
-    "apply": "○ 개별 신청 안내받은 경우에는 ARS 1544-9944, 홈택스(모바일,PC), 서면 신청 가능 ○ 개별 신청 안내받지 않은 경우에는 홈택스(모바일,PC), 서면 신청 가능",
+    "apply": "개별 신청 안내받은 경우에는 ARS 1544-9944, 홈택스(모바일,PC), 서면 신청 가능 개별 신청 안내받지 않은 경우에는 홈택스(모바일,PC), 서면 신청 가능",
     "officialUrl": "https://www.hometax.go.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/105100000001",
     "contact": "해당지역 지자체(세무서)/관할 세무서",
-    "views": 2328116,
+    "views": 2329177,
     "updatedAt": "2026.04.30",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -140,12 +140,12 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "한국주택금융공사",
     "region": "전국",
-    "amount": "○ 주택도시기금 주거안정 월세대출 요건을 충족하는 대상자에 대해 월세자금보증 지원",
+    "amount": "주택도시기금 주거안정 월세대출 요건을 충족하는 대상자에 대해 월세자금보증 지원",
     "deadline": "주택도시기금 주거안정 월세대출 규정에 따름",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "임신·출산·육아",
-    "targetGroup": "○ 보증금 1억원 이하 및 월세금 60만원 이하인 월세 계약을 체결한 주택도시 기금 주거안정 월세대출 대상자",
+    "targetGroup": "보증금 1억원 이하 및 월세금 60만원 이하인 월세 계약을 체결한 주택도시 기금 주거안정 월세대출 대상자",
     "income": "서비스별 소득·자격 기준 확인",
     "applyOnline": true,
     "tags": [
@@ -157,19 +157,19 @@ export const publicServiceApiPolicies: Policy[] = [
       "월세자금보증"
     ],
     "summary": "저소득층 등에게 월세자금보증을 하여 저소득층의 주거 안정성 제고",
-    "audience": "○ 보증금 1억원 이하 및 월세금 60만원 이하인 월세 계약을 체결한 주택도시 기금 주거안정 월세대출 대상자 [우대형]",
+    "audience": "보증금 1억원 이하 및 월세금 60만원 이하인 월세 계약을 체결한 주택도시 기금 주거안정 월세대출 대상자 [우대형]",
     "benefits": [
-      "○ 주택도시기금 주거안정 월세대출 요건을 충족하는 대상자에 대해 월세자금보증 지원",
-      "최대 1,152만원 이내에서 월세금을 2년 환산한 금액의 80%까지 대출금액의 80%를 공사가 보증"
+      "주택도시기금 주거안정 월세대출 요건을 충족하는 대상자에 대해 월세자금보증 지원",
+      "- 최대 1,152만원 이내에서 월세금을 2년 환산한 금액의 80%까지 대출금액의 80%를 공사가 보증"
     ],
     "documents": [
-      "주민등록등본, 신분증, 확정일자부 월세 계약서 사본, 계약금 지급 영수증, 등기사항전부증명서, 최종학교 졸업증명서, 희망키움통장 유지확인서 등 대상에 따라 추가서류 필요"
+      "주민등록등본, 신분증, 확정일자부 월세 계약서 사본, 계약금 지급 영수증, 등기사항전부증명서, 최종학교 졸업증명서, 희망키움통장 유지확인서 등…"
     ],
-    "apply": "○ 공사와 업무위탁계약이 체결된 은행에서 상담받으신 후 보증신청 계약체결은행 : 국민, 광주, 기업, 농협, 아이엠뱅크, 수협, 신한, 하나, 우리, 부산, 경남, 전북, 제주은행, 케이뱅크, 카카오뱅크, 토스뱅크 등",
+    "apply": "공사와 업무위탁계약이 체결된 은행에서 상담받으신 후 보증신청 - 계약체결은행 : 국민, 광주, 기업, 농협, 아이엠뱅크, 수협, 신한, 하나, 우리, 부산, 경남, 전북, 제주은행, 케이뱅크, 카카오뱅크, 토스뱅크 등",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/116010000001",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/116010000001",
     "contact": "한국주택금융공사/1688-8114",
-    "views": 41035,
+    "views": 41068,
     "updatedAt": "2026.02.10",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -202,13 +202,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 고효율 등(燈)(LED, 무전극등(燈) 등)",
+    "amount": "고효율 등(燈)(LED, 무전극등(燈) 등)",
     "deadline": "연초 모집공고에 따름",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "농업인",
-    "targetGroup": "○ 어선의 기관, 고효율 등(燈)(집어등, 작업등) 외 에너지 절감 장비의 대체 또는 설치 희망하는 연근해 허가를 가진 어업인",
-    "income": "○ 우선순위",
+    "targetGroup": "어선의 기관, 고효율 등(燈)(집어등, 작업등) 외 에너지 절감 장비의 대체 또는 설치 희망하는 연근해 허가를 가진 어업인",
+    "income": "우선순위",
     "applyOnline": true,
     "tags": [
       "농림어업",
@@ -220,12 +220,12 @@ export const publicServiceApiPolicies: Policy[] = [
       "보급"
     ],
     "summary": "연근해 어업인을 대상으로 노후기관",
-    "audience": "○ 어선의 기관, 고효율 등(燈)(집어등, 작업등) 외 에너지 절감 장비의 대체 또는 설치 희망하는 연근해 허가를 가진 어업인",
+    "audience": "어선의 기관, 고효율 등(燈)(집어등, 작업등) 외 에너지 절감 장비의 대체 또는 설치 희망하는 연근해 허가를 가진 어업인",
     "benefits": [
-      "○ 고효율 등(燈)(LED, 무전극등(燈) 등)",
-      "○ 노후화된 기관(디젤, 가솔린기관 등)",
-      "○ 에너지 절감이 가능한 유류절감장치",
-      "○ 대기오염 방지 및 탄소배출 절감이 가능한 매연저감장치 등"
+      "고효율 등(燈)(LED, 무전극등(燈) 등)",
+      "노후화된 기관(디젤, 가솔린기관 등)",
+      "에너지 절감이 가능한 유류절감장치",
+      "대기오염 방지 및 탄소배출 절감이 가능한 매연저감장치 등"
     ],
     "documents": [
       "사업신청서, 어업허가 일건서류(어업허가증, 어선검사증 등), 어업경영체 등록 확인서 등"
@@ -234,7 +234,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000001",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000001",
     "contact": "해양수산부 수산정책실 어선안전정책과/051-773-5555",
-    "views": 3783,
+    "views": 3784,
     "updatedAt": "2026.04.29",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -267,13 +267,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 해양사고관련자가 심판원에 대하여 하는 신청",
+    "amount": "해양사고관련자가 심판원에 대하여 하는 신청",
     "deadline": "해당사건 접수후",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "취약계층",
-    "targetGroup": "○ 사회적 약자(연령, 장애, 빈곤, 교육정도 등)에 해당하는 해양사고관련자",
-    "income": "○ 다음 각각 호의 어느 하나에 해당하는 경우로서 심판변론인이 없는 때",
+    "targetGroup": "사회적 약자(연령, 장애, 빈곤, 교육정도 등)에 해당하는 해양사고관련자",
+    "income": "다음 각각 호의 어느 하나에 해당하는 경우로서 심판변론인이 없는 때",
     "applyOnline": true,
     "tags": [
       "교육",
@@ -285,22 +285,22 @@ export const publicServiceApiPolicies: Policy[] = [
       "심판변론인"
     ],
     "summary": "해양사고관련자가 사회적 약자에 해당하는 경우 해양사고관련자의 권리보호를 위하여 국선 심판변론인 선정",
-    "audience": "○ 사회적 약자(연령, 장애, 빈곤, 교육정도 등)에 해당하는 해양사고관련자",
+    "audience": "사회적 약자(연령, 장애, 빈곤, 교육정도 등)에 해당하는 해양사고관련자",
     "benefits": [
-      "○ 해양사고관련자가 심판원에 대하여 하는 신청",
+      "해양사고관련자가 심판원에 대하여 하는 신청",
       "청구",
       "진술 등의 대리 또는 대행",
-      "○ 해양사고관련자에 대하여 하는 해양사고와 관련된 기술적 자문"
+      "해양사고관련자에 대하여 하는 해양사고와 관련된 기술적 자문"
     ],
     "documents": [
-      "○ 선정대상임을 증명하는 서류",
-      "「해양사고의 조사 및 심판에 관한 법률 시행규칙」 제17조제1항에 따른 사유"
+      "선정대상임을 증명하는 서류",
+      "- 「해양사고의 조사 및 심판에 관한 법률 시행규칙」 제17조제1항에 따른 사유"
     ],
     "apply": "우편접수 ㅇ 중앙해양안전심판원 : 세종시 가름로232 세종비즈니스센터 A동 521호(30121)",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000007",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000007",
     "contact": "해양수산부 중앙해양안전심판원/044-200-6117",
-    "views": 2465,
+    "views": 2467,
     "updatedAt": "2026.04.27",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -333,13 +333,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 원양어선에 승선하여 활동하는 국제옵서버 승선경비 및 활동 지원",
+    "amount": "원양어선에 승선하여 활동하는 국제옵서버 승선경비 및 활동 지원",
     "deadline": "수시",
     "dday": "상시",
     "status": "상시",
     "lifeStage": "전체",
-    "targetGroup": "○ 국제옵서버를 승선시킨 원양선사",
-    "income": "○ 국제옵서버를 승선시킨 원양선사",
+    "targetGroup": "국제옵서버를 승선시킨 원양선사",
+    "income": "국제옵서버를 승선시킨 원양선사",
     "applyOnline": true,
     "tags": [
       "농림어업",
@@ -351,19 +351,19 @@ export const publicServiceApiPolicies: Policy[] = [
       "지원"
     ],
     "summary": "원양어업 입어수역을 관리하는 지역수산기구의 자원보존관리조치 이행을 위한 국제적 조업기준 준수여부 감시하는 옵서버 운영 지원",
-    "audience": "○ 국제옵서버를 승선시킨 원양선사",
+    "audience": "국제옵서버를 승선시킨 원양선사",
     "benefits": [
-      "○ 원양어선에 승선하여 활동하는 국제옵서버 승선경비 및 활동 지원"
+      "원양어선에 승선하여 활동하는 국제옵서버 승선경비 및 활동 지원"
     ],
     "documents": [
       "ㅇ 신청인 제출서류",
-      "옵서버 승선일수 확인 서류"
+      "- 옵서버 승선일수 확인 서류"
     ],
     "apply": "우편 또는 방문 접수(부산광역시 기장군 일광면 이동길 4 한국수산자원공단)",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000008",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000008",
     "contact": "한국수산자원공단 국제협력팀/051-718-2433",
-    "views": 2057,
+    "views": 2062,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -396,13 +396,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 관세감면",
+    "amount": "관세감면",
     "deadline": "수시",
     "dday": "상시",
     "status": "상시",
     "lifeStage": "전체",
-    "targetGroup": "○ 기획재정부령에서 정한 방법 또는 요건에 적합하게 채포한 수산물을 국내로 수입하는 자",
-    "income": "○ 기획재정부령에 적합하게 수입하는 자",
+    "targetGroup": "기획재정부령에서 정한 방법 또는 요건에 적합하게 채포한 수산물을 국내로 수입하는 자",
+    "income": "기획재정부령에 적합하게 수입하는 자",
     "applyOnline": true,
     "tags": [
       "농림어업",
@@ -414,21 +414,21 @@ export const publicServiceApiPolicies: Policy[] = [
       "감면"
     ],
     "summary": "합작수산물과 공동수산물의 관세감면 추천",
-    "audience": "○ 기획재정부령에서 정한 방법 또는 요건에 적합하게 채포한 수산물을 국내로 수입하는 자",
+    "audience": "기획재정부령에서 정한 방법 또는 요건에 적합하게 채포한 수산물을 국내로 수입하는 자",
     "benefits": [
-      "○ 관세감면"
+      "관세감면"
     ],
     "documents": [
-      "○ 신청인 제출서류",
+      "신청인 제출서류",
       "“관세감면추천신청서\"",
       "1. 본선 인수증(Mate's Receipt)",
       "2. 선하증권(Bill of Lading)"
     ],
-    "apply": "○ 해외합작법인(총지분 49%이상 확보)으로 원양어업을 하기 위하여 해양수산부장관에게 신고를 한 자가 허가받은 어선(생산수단)을 투입하여 해외합작법인이 포획한 수산물(불가피한 경우 해외합작법인의 계산과 책임으로 합작상대국 어업자를 통하여 포획한 경우 포함)을 직접 국내로 수출할 때 우리 부에서 추천한 물량에 한해 신청이 가능함 ○ 관세감면 조건을 충족하여 우리부에서 관세감면 물량을 배정 받은 경우 관세감면 추천 신청 시에는 합작어획물 유무 확인을 위해 “관세감면추천신청서”에 다음의 서류를 첨부하여 민원24사이트를 통해 신청서 제출",
+    "apply": "해외합작법인(총지분 49%이상 확보)으로 원양어업을 하기 위하여 해양수산부장관에게 신고를 한 자가 허가받은 어선(생산수단)을 투입하여 해외합작법인이 포획한 수산물(불가피한 경우 해외합작법인의 계산과 책임으로 합작상대국 어업자를 통하… 관세감면 조건을 충족하여 우리부에서 관세감면 물량을 배정 받은 경우 관세감면 추천 신청 시에는 합작어획물 유무 확인을 위해 “관세감면추천신청서”에 다음의 서류를 첨부하여 민원24사이트를 통해 신청서 제출",
     "officialUrl": "www.minwon.go.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000010",
     "contact": "해양수산부/051-773-5364",
-    "views": 2155,
+    "views": 2157,
     "updatedAt": "2026.04.23",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -461,13 +461,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 지원대상자로 선정된 자가 사업(일부완료 또는 완료) 후 담보(신용, 물건)를 제공하고, 금융기관(수협은행)에서 융자를 받으면, 해양수산부에서 이자 차이(기준금리-대출금리 1.5%)를 지원",
+    "amount": "지원대상자로 선정된 자가 사업(일부완료 또는 완료) 후 담보(신용, 물건)를 제공하고, 금융기관(수협은행)에서 융자를 받으면, 해양수산부에서 이자 차이(기준금리-대출금리 1.5%)를 지원",
     "deadline": "농어촌지역 전입일로부터 만 5년이내 신청 가능",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "어르신",
-    "targetGroup": "○ 귀어업인(희망자 포함) 및 재촌비어업인으로서, 사업신청 연도기준 만 65세 이하인 자",
-    "income": "○ 사업대상자 및 지원자격 요건을 갖춘 자 중에서 시",
+    "targetGroup": "귀어업인(희망자 포함) 및 재촌비어업인으로서, 사업신청 연도기준 만 65세 이하인 자",
+    "income": "사업대상자 및 지원자격 요건을 갖춘 자 중에서 시",
     "applyOnline": true,
     "tags": [
       "주거",
@@ -479,9 +479,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "및"
     ],
     "summary": "귀어업인이 되기를 희망하는 도시민들이 어촌지역에 안정적으로 정착할 수 있도록 창업(수산업, 어촌비즈니스업) 및 주택마련 자금을 지원하여 어촌사회 활력 제고",
-    "audience": "○ 귀어업인(희망자 포함) 및 재촌비어업인으로서, 사업신청 연도기준 만 65세 이하인 자",
+    "audience": "귀어업인(희망자 포함) 및 재촌비어업인으로서, 사업신청 연도기준 만 65세 이하인 자",
     "benefits": [
-      "○ 지원대상자로 선정된 자가 사업(일부완료 또는 완료) 후 담보(신용, 물건)를 제공하고, 금융기관(수협은행)에서 융자를 받으면, 해양수산부에서 이자 차이(기준금리-대출금리 1.5%)를 지원"
+      "지원대상자로 선정된 자가 사업(일부완료 또는 완료) 후 담보(신용, 물건)를 제공하고, 금융기관(수협은행)에서 융자를 받으면, 해양수산부에서 이자 차이(기준금리-대출금리 1.5%)를 지원"
     ],
     "documents": [
       "귀어업인",
@@ -491,7 +491,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000012",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000012",
     "contact": "해당지방자치단체 수산 총괄 부서/1899-9597||귀어귀촌 종합센터/1899-9597",
-    "views": 6666,
+    "views": 6684,
     "updatedAt": "2026.04.29",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -524,7 +524,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 어업경영자금 융자(수협은행)",
+    "amount": "어업경영자금 융자(수협은행)",
     "deadline": "매월 25일까지(단, 공급 규모 소진 시 조기마감 될 수 있음)",
     "dday": "확인필요",
     "status": "마감임박",
@@ -544,7 +544,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "summary": "원양어업인의 금융부담완화 및 지속적인 어업활동 영위를 위한 저리의 어업경영자금 지원",
     "audience": "1.「원양어업발전법」제6조제1항에 따른 원양어업허가를 받은 자 2.「원양어업발전법」제6조제7항에 따른 외국인과 합작하여 설립한 해외현지법인으로 원양어업 신고를 한 자",
     "benefits": [
-      "○ 어업경영자금 융자(수협은행)"
+      "어업경영자금 융자(수협은행)"
     ],
     "documents": [
       "1.원양어업경영자금 신청서",
@@ -552,11 +552,11 @@ export const publicServiceApiPolicies: Policy[] = [
       "개조사항 서식 1부 및 증빙서류 일체",
       "3. (대상선박) 어업허가증 또는 해외합작원양어선 신고확인증 사본"
     ],
-    "apply": "○ 우편접수(서울특별시 서초구 논현로 83 한국원양산업협회) ○ 사업시행지침 시달(해수부) → 세부시행계획 보고 및 통보(원양협회) → 신청서 작성(사업자) → 신청서 접수(원양협회) → 운영위원회 심사(원양협회) → 사업자 통보(원양협회→수협중앙회)→여신심사(수협중앙회)→대출실행(수협중앙회)",
+    "apply": "우편접수(서울특별시 서초구 논현로 83 한국원양산업협회) 사업시행지침 시달(해수부) → 세부시행계획 보고 및 통보(원양협회) → 신청서 작성(사업자) → 신청서 접수(원양협회) → 운영위원회 심사(원양협회) → 사업자 통보(원양협회→수협중앙회)→여신심사(수협중앙회)→대출실행(수협중앙회)",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000016",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000016",
     "contact": "한국원양산업협회/02-589-1605",
-    "views": 2741,
+    "views": 2743,
     "updatedAt": "2026.04.22",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -589,13 +589,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 원양어선의 안전성 확보와 어선원 복지 증진을 위해 안전펀드를 조성하여 노후 원양어선의 대체 및 건조를 지원",
+    "amount": "원양어선의 안전성 확보와 어선원 복지 증진을 위해 안전펀드를 조성하여 노후 원양어선의 대체 및 건조를 지원",
     "deadline": "공고에 따름",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "농업인",
-    "targetGroup": "○ ｢원양산업발전법｣ 제6조에 따른 원양어업허가를 받은 자(원양어업허가의 유예를 받은 자 포함)",
-    "income": "○ 원양어선 노후화 정도, 사업 계획 등 선정기준에 따라 투자심의위원회의 심의로 선정",
+    "targetGroup": "｢원양산업발전법｣ 제6조에 따른 원양어업허가를 받은 자(원양어업허가의 유예를 받은 자 포함)",
+    "income": "원양어선 노후화 정도, 사업 계획 등 선정기준에 따라 투자심의위원회의 심의로 선정",
     "applyOnline": true,
     "tags": [
       "농림어업",
@@ -605,9 +605,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "원양어선안전관리"
     ],
     "summary": "원양어선의 안전성 증대와 어선원 복지증진",
-    "audience": "○ ｢원양산업발전법｣ 제6조에 따른 원양어업허가를 받은 자(원양어업허가의 유예를 받은 자 포함)",
+    "audience": "｢원양산업발전법｣ 제6조에 따른 원양어업허가를 받은 자(원양어업허가의 유예를 받은 자 포함)",
     "benefits": [
-      "○ 원양어선의 안전성 확보와 어선원 복지 증진을 위해 안전펀드를 조성하여 노후 원양어선의 대체 및 건조를 지원"
+      "원양어선의 안전성 확보와 어선원 복지 증진을 위해 안전펀드를 조성하여 노후 원양어선의 대체 및 건조를 지원"
     ],
     "documents": [
       "공고에 명시된 서류(사업계획 등)"
@@ -616,7 +616,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "http://www.globalmarifin.com",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000022",
     "contact": "펀드관리기관(세계로선박금융)/02-3210-2032",
-    "views": 2039,
+    "views": 2042,
     "updatedAt": "2026.04.22",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -649,13 +649,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 산지위판장 및 수산물 도매시장 어대금 결제자금, 직거래 자금 등 융자지원(금리 1.5~3%)",
+    "amount": "산지위판장 및 수산물 도매시장 어대금 결제자금, 직거래 자금 등 융자지원(금리 1.5~3%)",
     "deadline": "공고일로부터 2주",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "전체",
-    "targetGroup": "○ 산지위판장, 도매시장 법인, 중도매인 등",
-    "income": "○ 전년도수매실적, 중도매업 종사경력, 신규사업자, 소액신청자 등을 검토하여 사업자 선정심의회를 거쳐 사업자 선정",
+    "targetGroup": "산지위판장, 도매시장 법인, 중도매인 등",
+    "income": "전년도수매실적, 중도매업 종사경력, 신규사업자, 소액신청자 등을 검토하여 사업자 선정심의회를 거쳐 사업자 선정",
     "applyOnline": true,
     "tags": [
       "농림어업",
@@ -667,9 +667,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "소비지"
     ],
     "summary": "수산물을 원활히 공급하기 위한 유통자금 지원",
-    "audience": "○ 산지위판장, 도매시장 법인, 중도매인 등",
+    "audience": "산지위판장, 도매시장 법인, 중도매인 등",
     "benefits": [
-      "○ 산지위판장 및 수산물 도매시장 어대금 결제자금, 직거래 자금 등 융자지원(금리 1.5~3%)"
+      "산지위판장 및 수산물 도매시장 어대금 결제자금, 직거래 자금 등 융자지원(금리 1.5~3%)"
     ],
     "documents": [
       "신청서, 사업자등록증 등"
@@ -678,7 +678,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000027",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000027",
     "contact": "수협중앙회/02-2240-2466||수협은행/02-6055-8521||수협은행/02-6055-8525||한국농수산식품유통공사/061-931-0586",
-    "views": 2143,
+    "views": 2147,
     "updatedAt": "2026.04.23",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -711,13 +711,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 수산업경영회생자금 지원(5년 거치, 7년 균분 상환/ 융자금리 1%)",
+    "amount": "수산업경영회생자금 지원(5년 거치, 7년 균분 상환/ 융자금리 1%)",
     "deadline": "2025.1.1.~2025.12.10.",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "농업인",
-    "targetGroup": "○ 어업경영체(어업인, 어업법인 등)",
-    "income": "○ 경영평가위원회의 정밀 경영평가 결과 자금 지원이 결정된 어업인",
+    "targetGroup": "어업경영체(어업인, 어업법인 등)",
+    "income": "경영평가위원회의 정밀 경영평가 결과 자금 지원이 결정된 어업인",
     "applyOnline": true,
     "tags": [
       "농림어업",
@@ -727,10 +727,10 @@ export const publicServiceApiPolicies: Policy[] = [
       "수산경영인회생자금"
     ],
     "summary": "건실하게 수산업을 영위하다가 재해, 어",
-    "audience": "○ 어업경영체(어업인, 어업법인 등)",
+    "audience": "어업경영체(어업인, 어업법인 등)",
     "benefits": [
-      "○ 수산업경영회생자금 지원(5년 거치, 7년 균분 상환/ 융자금리 1%)",
-      "지원대상자금: 상환기일이 도래하였거나 향후 도래할 수협은행 대출금의 원리금, 어업시설 개",
+      "수산업경영회생자금 지원(5년 거치, 7년 균분 상환/ 융자금리 1%)",
+      "- 지원대상자금: 상환기일이 도래하였거나 향후 도래할 수협은행 대출금의 원리금, 어업시설 개",
       "보수 자금, 업종별 1회전 운영자금 등"
     ],
     "documents": [
@@ -740,7 +740,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000044",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000044",
     "contact": "수협은행/02-2240-8521",
-    "views": 3828,
+    "views": 3830,
     "updatedAt": "2026.04.29",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -773,13 +773,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 어업경영자금 융자(수협은행 및 단위수협)",
+    "amount": "어업경영자금 융자(수협은행 및 단위수협)",
     "deadline": "연중",
     "dday": "상시",
     "status": "상시",
     "lifeStage": "농업인",
-    "targetGroup": "○ 어업경영체(어업인, 어업법인 등)",
-    "income": "○ 어업경영자금 융자 한도내에서(개인 10억원, 법인 15억원 한도) 지원",
+    "targetGroup": "어업경영체(어업인, 어업법인 등)",
+    "income": "어업경영자금 융자 한도내에서(개인 10억원, 법인 15억원 한도) 지원",
     "applyOnline": true,
     "tags": [
       "농림어업",
@@ -790,9 +790,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "지원"
     ],
     "summary": "어업인 금융부담완화 및 지속적인 어업활동 영위를 위한 저리의 어업경영자금* 지원",
-    "audience": "○ 어업경영체(어업인, 어업법인 등)",
+    "audience": "어업경영체(어업인, 어업법인 등)",
     "benefits": [
-      "○ 어업경영자금 융자(수협은행 및 단위수협)"
+      "어업경영자금 융자(수협은행 및 단위수협)"
     ],
     "documents": [
       "어업인 확인서 등 대출취급기관(수협은행) 요청자료"
@@ -801,7 +801,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000045",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000045",
     "contact": "수협은행/02-2240-8521",
-    "views": 4532,
+    "views": 4535,
     "updatedAt": "2026.04.29",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -834,12 +834,12 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ TAC 참여 어업인 대상 경영개선자금 지원(융자)",
+    "amount": "TAC 참여 어업인 대상 경영개선자금 지원(융자)",
     "deadline": "연중",
     "dday": "상시",
     "status": "상시",
     "lifeStage": "농업인",
-    "targetGroup": "○ TAC 참여 어업인(단, 제주도 소라 채취 어업인은 및 TAC 참여 1단계 어업인은 제외)",
+    "targetGroup": "TAC 참여 어업인(단, 제주도 소라 채취 어업인은 및 TAC 참여 1단계 어업인은 제외)",
     "income": "지원대상과 동일",
     "applyOnline": true,
     "tags": [
@@ -852,11 +852,11 @@ export const publicServiceApiPolicies: Policy[] = [
       "경영개선자금"
     ],
     "summary": "TAC 제도 적용으로 일시적인 경영악화를 겪고 있는 참여 어업인 대상 경영개선자금 지원",
-    "audience": "○ TAC 참여 어업인(단, 제주도 소라 채취 어업인은 및 TAC 참여 1단계 어업인은 제외)",
+    "audience": "TAC 참여 어업인(단, 제주도 소라 채취 어업인은 및 TAC 참여 1단계 어업인은 제외)",
     "benefits": [
-      "○ TAC 참여 어업인 대상 경영개선자금 지원(융자)",
-      "융자 100%",
-      "고정금리 연 2.5%~3.0%, 변동금리(매월 고시)"
+      "TAC 참여 어업인 대상 경영개선자금 지원(융자)",
+      "- 융자 100%",
+      "- 고정금리 연 2.5%~3.0%, 변동금리(매월 고시)"
     ],
     "documents": [
       "신청서"
@@ -865,7 +865,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000053",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000053",
     "contact": "수협은행 수산해양금융부/02-6055-8521",
-    "views": 2764,
+    "views": 2766,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -898,13 +898,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 연안 선박 건조를 위한 금융기관 대출이자를 단순 신조인 경우 2.0, 노후선박 대체 또는 친환경선 도입(개조) 인 경우 2.5% 지원",
+    "amount": "연안 선박 건조를 위한 금융기관 대출이자를 단순 신조인 경우 2.0, 노후선박 대체 또는 친환경선 도입(개조) 인 경우 2.5% 지원",
     "deadline": "사업공모기간중 신청",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "사업자",
-    "targetGroup": "○ 해운법 제4조에 따른 내항여객운송사업자",
-    "income": "○ 연안선박을 신조, 노후선박 대체를 위해 금융 대출하고자 하는 해운법상 내항여객운송사업자, 내항화물운송사업자, 선박대여업자",
+    "targetGroup": "해운법 제4조에 따른 내항여객운송사업자",
+    "income": "연안선박을 신조, 노후선박 대체를 위해 금융 대출하고자 하는 해운법상 내항여객운송사업자, 내항화물운송사업자, 선박대여업자",
     "applyOnline": true,
     "tags": [
       "창업",
@@ -916,21 +916,21 @@ export const publicServiceApiPolicies: Policy[] = [
       "지원"
     ],
     "summary": "노후한 연안 선박의 현대화를 통한 선박의 안전확보와 서비스 품질 제고 및 선사의 경쟁력 제고",
-    "audience": "○ 해운법 제4조에 따른 내항여객운송사업자 ○ 해운법 제24조에 따른 내항 화물 운송사업자",
+    "audience": "해운법 제4조에 따른 내항여객운송사업자 해운법 제24조에 따른 내항 화물 운송사업자",
     "benefits": [
-      "○ 연안 선박 건조를 위한 금융기관 대출이자를 단순 신조인 경우 2.0, 노후선박 대체 또는 친환경선 도입(개조) 인 경우 2.5% 지원"
+      "연안 선박 건조를 위한 금융기관 대출이자를 단순 신조인 경우 2.0, 노후선박 대체 또는 친환경선 도입(개조) 인 경우 2.5% 지원"
     ],
     "documents": [
-      "○ 연안 선박 이차보전사업 지원신청서",
-      "○ 사업계획서",
-      "○ 내항여객운송사업 면허증 또는 내항 화물 운송사업 등록증 또는 선박대여업등록증",
-      "○ 법인 등기부 등본"
+      "연안 선박 이차보전사업 지원신청서",
+      "사업계획서",
+      "내항여객운송사업 면허증 또는 내항 화물 운송사업 등록증 또는 선박대여업등록증",
+      "법인 등기부 등본"
     ],
     "apply": "방문 또는 우편 접수(한국해운조합 해운원팀의 주소 입력) 주소: 서울시 강서구 공항대로 379 한국해운조합 정책지원실 해운정책팀 연안선박 현대화 이차보전사업 담당자",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000055",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000055",
     "contact": "한국해운조합 해운지원팀/02-6096-2034",
-    "views": 1875,
+    "views": 1877,
     "updatedAt": "2026.04.29",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -963,13 +963,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 연근해어업의 허가를 받은 어선 중 선령 15년 이상 노후어선을 어선원 안전복지 및 에너지 절감 등을 고려한 현대화어선으로 대체 건조",
+    "amount": "연근해어업의 허가를 받은 어선 중 선령 15년 이상 노후어선을 어선원 안전복지 및 에너지 절감 등을 고려한 현대화어선으로 대체 건조",
     "deadline": "연초 모집공고에 따름",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "농업인",
-    "targetGroup": "○ (대상)「수산업법」제41조에 따라 연근해어업*의 허가를 받은 어업인",
-    "income": "○ 사업지침의 사업자 선정기준*에 따라 합산점수가 높은 순으로 선정하되, 동점자가 발생하는 경우에는 노후어선 ①선령, ②감톤순으로 사업자 선정",
+    "targetGroup": "(대상)「수산업법」제41조에 따라 연근해어업*의 허가를 받은 어업인",
+    "income": "사업지침의 사업자 선정기준*에 따라 합산점수가 높은 순으로 선정하되, 동점자가 발생하는 경우에는 노후어선 ①선령, ②감톤순으로 사업자 선정",
     "applyOnline": true,
     "tags": [
       "복지",
@@ -981,9 +981,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "기반구축"
     ],
     "summary": "연근해 어선의 노후화에 따른 고비용",
-    "audience": "○ (대상)「수산업법」제41조에 따라 연근해어업*의 허가를 받은 어업인 연안어업과 구획어업은 차세대 안전복지형 어선개발(R&D) 사업으로 개발된 업종(연안어업 : 복합",
+    "audience": "(대상)「수산업법」제41조에 따라 연근해어업*의 허가를 받은 어업인 * 연안어업과 구획어업은 차세대 안전복지형 어선개발(R&D) 사업으로 개발된 업종(연안어업 : 복합",
     "benefits": [
-      "○ 연근해어업의 허가를 받은 어선 중 선령 15년 이상 노후어선을 어선원 안전복지 및 에너지 절감 등을 고려한 현대화어선으로 대체 건조"
+      "연근해어업의 허가를 받은 어선 중 선령 15년 이상 노후어선을 어선원 안전복지 및 에너지 절감 등을 고려한 현대화어선으로 대체 건조"
     ],
     "documents": [
       "사업신청서, 사업계획서, 신용조사서 등"
@@ -992,7 +992,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000056",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000056",
     "contact": "해양수산부 수산정책실 어업자원정책관 어선안전정책과/051-773-5555",
-    "views": 2060,
+    "views": 2062,
     "updatedAt": "2026.04.29",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -1049,14 +1049,14 @@ export const publicServiceApiPolicies: Policy[] = [
     "documents": [
       "어업도우미 이용 신청서",
       "지원 사유를 확인할 수 있는 증빙서류",
-      "진단서(상해진단 시)",
-      "입"
+      "- 진단서(상해진단 시)",
+      "- 입"
     ],
     "apply": "시군구청에 방문하여 신청",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000059",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000059",
     "contact": "부산 수산자원연구소/051-209-0935||인천 수산기술지원센터/032-458-7464||경기 수산자원연구소/031-8008-8363||전북 수산기술연구소/063-290-6961||전남 해양수산과학원/061-550-0656||경북 해양수산과/054-880-7720||경남 수산안전기술원/055-254-3524||제주 수산정책과/064-710-3215",
-    "views": 2636,
+    "views": 2638,
     "updatedAt": "2026.04.24",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -1089,13 +1089,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 어업인 혹은 어업인 단체의 역량강화 교육",
+    "amount": "어업인 혹은 어업인 단체의 역량강화 교육",
     "deadline": "매년초 모집공고에 따름",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "농업인",
-    "targetGroup": "○ 어업인 및 단체의 역량 강화 교육이 가능한 기관 혹은 단체",
-    "income": "○ 사업계획 서류심사 및 대면 발표 평가, 선정위원회 위원의 평가에 따름",
+    "targetGroup": "어업인 및 단체의 역량 강화 교육이 가능한 기관 혹은 단체",
+    "income": "사업계획 서류심사 및 대면 발표 평가, 선정위원회 위원의 평가에 따름",
     "applyOnline": true,
     "tags": [
       "교육",
@@ -1107,12 +1107,12 @@ export const publicServiceApiPolicies: Policy[] = [
       "강화"
     ],
     "summary": "어업별 특성에 따라 조직된 단체에 포함된 어업인의 역량 강화",
-    "audience": "○ 어업인 및 단체의 역량 강화 교육이 가능한 기관 혹은 단체",
+    "audience": "어업인 및 단체의 역량 강화 교육이 가능한 기관 혹은 단체",
     "benefits": [
-      "○ 어업인 혹은 어업인 단체의 역량강화 교육",
-      "○ 여성어업인, 다문화가정 여성어업인 대상 역량 강화",
-      "○ 어업인, 수산업경영인, 해양수산신지식인 대상 역량강화",
-      "○ 어업인 등 국내외 시장개척을 위한 박람회 참가, 벤치마킹, 기술교류 활동, 학술대회 지원"
+      "어업인 혹은 어업인 단체의 역량강화 교육",
+      "여성어업인, 다문화가정 여성어업인 대상 역량 강화",
+      "어업인, 수산업경영인, 해양수산신지식인 대상 역량강화",
+      "어업인 등 국내외 시장개척을 위한 박람회 참가, 벤치마킹, 기술교류 활동, 학술대회 지원"
     ],
     "documents": [
       "모집공고에 명시된 서류(단체소개서, 사업계획서 등)"
@@ -1121,7 +1121,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000066",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000066",
     "contact": "해양수산부 소득복지과/051-773-6013",
-    "views": 1902,
+    "views": 1904,
     "updatedAt": "2026.04.24",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -1154,13 +1154,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ ‘어선안전조업법’의 법정교육으로 연 1회(4시간) 어선의 선주, 선장, 기관장, 통신장 등 직무대행자에게 실시하는 안전조업교육",
+    "amount": "‘어선안전조업법’의 법정교육으로 연 1회(4시간) 어선의 선주, 선장, 기관장, 통신장 등 직무대행자에게 실시하는 안전조업교육",
     "deadline": "연중신청",
     "dday": "상시",
     "status": "상시",
     "lifeStage": "농업인",
-    "targetGroup": "○ 어업인(법정의무교육으로 매년 4시간 교육 이수사항)",
-    "income": "○ 어선의 선주, 선장, 기관장, 통신장 등",
+    "targetGroup": "어업인(법정의무교육으로 매년 4시간 교육 이수사항)",
+    "income": "어선의 선주, 선장, 기관장, 통신장 등",
     "applyOnline": true,
     "tags": [
       "교육",
@@ -1170,19 +1170,19 @@ export const publicServiceApiPolicies: Policy[] = [
       "어업인안전조업교육지원"
     ],
     "summary": "어업인을 대상으로 구명",
-    "audience": "○ 어업인(법정의무교육으로 매년 4시간 교육 이수사항)",
+    "audience": "어업인(법정의무교육으로 매년 4시간 교육 이수사항)",
     "benefits": [
-      "○ ‘어선안전조업법’의 법정교육으로 연 1회(4시간) 어선의 선주, 선장, 기관장, 통신장 등 직무대행자에게 실시하는 안전조업교육",
-      "어업인 안전조업교육지원을 위한 민간위탁보조 지원"
+      "‘어선안전조업법’의 법정교육으로 연 1회(4시간) 어선의 선주, 선장, 기관장, 통신장 등 직무대행자에게 실시하는 안전조업교육",
+      "- 어업인 안전조업교육지원을 위한 민간위탁보조 지원"
     ],
     "documents": [
       "어선원부"
     ],
-    "apply": "○ 전국 수협중앙회 회원 조합 방문 신청 또는 지역별 수협 어선안전조업국",
+    "apply": "전국 수협중앙회 회원 조합 방문 신청 또는 지역별 수협 어선안전조업국",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000067",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000067",
     "contact": "어선안전정책과/044-200-5527||수협중앙회 어선안전조업본부/02-2240-2333",
-    "views": 3297,
+    "views": 3299,
     "updatedAt": "2026.04.29",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -1215,13 +1215,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 후견인이 창업어가에게 기술, 경영 측면 등에 대한 교육 지도 등 제공(창업어가 1인당 월 60만원 한도 지원)",
+    "amount": "후견인이 창업어가에게 기술, 경영 측면 등에 대한 교육 지도 등 제공(창업어가 1인당 월 60만원 한도 지원)",
     "deadline": "매년 초 지자체별 모집공고",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "사업자",
-    "targetGroup": "○ 어업인 후계자로 선정된 지 5년 이내인자 또는 귀어 후 5개년 이내인 자",
-    "income": "○ 가장 최근에 창업한 자",
+    "targetGroup": "어업인 후계자로 선정된 지 5년 이내인자 또는 귀어 후 5개년 이내인 자",
+    "income": "가장 최근에 창업한 자",
     "applyOnline": true,
     "tags": [
       "창업",
@@ -1231,9 +1231,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "창업어가멘토링지원"
     ],
     "summary": "어업 초기 후계자 및 창업어가에 전문지식을 가진 후견인을 지원하여 안정적 어촌 정착 지원",
-    "audience": "○ 어업인 후계자로 선정된 지 5년 이내인자 또는 귀어 후 5개년 이내인 자 ○ 당년(이월사업 포함) 귀어 창업자금 지원(예정) 자",
+    "audience": "어업인 후계자로 선정된 지 5년 이내인자 또는 귀어 후 5개년 이내인 자 당년(이월사업 포함) 귀어 창업자금 지원(예정) 자",
     "benefits": [
-      "○ 후견인이 창업어가에게 기술, 경영 측면 등에 대한 교육 지도 등 제공(창업어가 1인당 월 60만원 한도 지원)"
+      "후견인이 창업어가에게 기술, 경영 측면 등에 대한 교육 지도 등 제공(창업어가 1인당 월 60만원 한도 지원)"
     ],
     "documents": [
       "창업어가후견인제 지원대상 신청서"
@@ -1242,7 +1242,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000070",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000070",
     "contact": "지자체 수산기술보급기관/051-773-5464",
-    "views": 2009,
+    "views": 2010,
     "updatedAt": "2026.04.24",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -1275,13 +1275,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 교육비 : 무상교육",
+    "amount": "교육비 : 무상교육",
     "deadline": "매년 초 지자체별 모집공고",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "농업인",
-    "targetGroup": "○ 어업인 및 어업에 종사하고자 하는 자, 수산업경영인(어업인 후계자) 등",
-    "income": "○ 해당 광역 시도 수산사무소의 교육계획에 따라 선정 및 이수 가능",
+    "targetGroup": "어업인 및 어업에 종사하고자 하는 자, 수산업경영인(어업인 후계자) 등",
+    "income": "해당 광역 시도 수산사무소의 교육계획에 따라 선정 및 이수 가능",
     "applyOnline": true,
     "tags": [
       "교육",
@@ -1291,12 +1291,12 @@ export const publicServiceApiPolicies: Policy[] = [
       "어업인및어업인후계자교육지원(수산업경영인교육)"
     ],
     "summary": "어촌 수산업 발전의 선도적 역할을 수행할 후계어업인력 육성",
-    "audience": "○ 어업인 및 어업에 종사하고자 하는 자, 수산업경영인(어업인 후계자) 등",
+    "audience": "어업인 및 어업에 종사하고자 하는 자, 수산업경영인(어업인 후계자) 등",
     "benefits": [
-      "○ 교육비 : 무상교육",
-      "○ 교육내용 및 방법",
-      "교육일수/방법 : 1회 2일간(14시간)/소집, 집체교육",
-      "교수요목 : 수산시책, 양식, 어선어업 주요기술, 인터넷교육 등"
+      "교육비 : 무상교육",
+      "교육내용 및 방법",
+      "- 교육일수/방법 : 1회 2일간(14시간)/소집, 집체교육",
+      "- 교수요목 : 수산시책, 양식, 어선어업 주요기술, 인터넷교육 등"
     ],
     "documents": [
       "지자체별 지정 서식에 따름"
@@ -1305,7 +1305,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000073",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000073",
     "contact": "지자체 수산기술보급기관/051-773-5464",
-    "views": 3416,
+    "views": 3419,
     "updatedAt": "2026.04.24",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -1338,13 +1338,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 천일염장기저장시설 지원(지원조건 : 국비 30%, 지방비 30%, 자담 40%)",
+    "amount": "천일염장기저장시설 지원(지원조건 : 국비 30%, 지방비 30%, 자담 40%)",
     "deadline": "지자체 사업 공고시",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "사업자",
-    "targetGroup": "○ (지원대상)개인 및 법인(천일염 생산자), 공기업, 천일염 영농(어)조합법인, 농(어)업회사법인, 농업협동조합, 수산업협동조합, 천일염관련 협동조합, 대한염업조합, 지방자치단체",
-    "income": "○ 지원자격 및 요건을 갖춘 자 중에서 시장",
+    "targetGroup": "(지원대상)개인 및 법인(천일염 생산자), 공기업, 천일염 영농(어)조합법인, 농(어)업회사법인, 농업협동조합, 수산업협동조합, 천일염관련 협동조합, 대한염업조합, 지방자치단체",
+    "income": "지원자격 및 요건을 갖춘 자 중에서 시장",
     "applyOnline": true,
     "tags": [
       "창업",
@@ -1356,18 +1356,18 @@ export const publicServiceApiPolicies: Policy[] = [
       "설치지원"
     ],
     "summary": "천일염산업육성을 위하여 장기저장시설 설치 지원",
-    "audience": "○ (지원대상)개인 및 법인(천일염 생산자), 공기업, 천일염 영농(어)조합법인, 농(어)업회사법인, 농업협동조합, 수산업협동조합, 천일염관련 협동조합, 대한염업조합, 지방자치단체 ○ (제외대상)영농(어)조합법인과 농(어)업회사법인 등 농수산업 관련 법인의 경우 설립 후 운영 실적이 1년 이하인 법인은 지원할 수 없음, 염전에서 전년도 및 당해연도에 농약사용이 적발되거나 잔류농약이 검출된 염전 및 염전생산자와 염전근로자의 자유의사에 어긋나는 근로강요행위가 적발된 염전 및 생산자는 지원대상에서 배제",
+    "audience": "(지원대상)개인 및 법인(천일염 생산자), 공기업, 천일염 영농(어)조합법인, 농(어)업회사법인, 농업협동조합, 수산업협동조합, 천일염관련 협동조합, 대한염업조합, 지방자치단체 (제외대상)영농(어)조합법인과 농(어)업회사법인 등 농수산업 관련 법인의 경우 설립 후 운영 실적이 1년 이하인 법인은 지원할 수 없음, 염전에서 전년도 및 당해연도에 농약사용이 적발되거나 잔류농약이 검출된 염전 …",
     "benefits": [
-      "○ 천일염장기저장시설 지원(지원조건 : 국비 30%, 지방비 30%, 자담 40%)"
+      "천일염장기저장시설 지원(지원조건 : 국비 30%, 지방비 30%, 자담 40%)"
     ],
     "documents": [
       "지자체 공고에 따름"
     ],
-    "apply": "○ 해당 지자체에 우편 또는 방문 신청",
+    "apply": "해당 지자체에 우편 또는 방문 신청",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000074",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000074",
     "contact": "해당지역 시군구청/관할 지자체",
-    "views": 2318,
+    "views": 2321,
     "updatedAt": "2026.04.27",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -1400,13 +1400,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 교육비 : 무상교육",
+    "amount": "교육비 : 무상교육",
     "deadline": "접수기관 별 상이",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "전체",
-    "targetGroup": "○ 어촌계장 등 어촌지도자",
-    "income": "○ 해당 광역 시도 수산사무소의 교육계획에 따름",
+    "targetGroup": "어촌계장 등 어촌지도자",
+    "income": "해당 광역 시도 수산사무소의 교육계획에 따름",
     "applyOnline": true,
     "tags": [
       "교육",
@@ -1416,12 +1416,12 @@ export const publicServiceApiPolicies: Policy[] = [
       "어촌지도자교육지원"
     ],
     "summary": "어촌 수산업 발전의 선도적 역할을 수행할 어촌의 지도자 양성 지원",
-    "audience": "○ 어촌계장 등 어촌지도자",
+    "audience": "어촌계장 등 어촌지도자",
     "benefits": [
-      "○ 교육비 : 무상교육",
-      "○ 교육내용 : 어촌 및 수산업발전 자문, 어촌지역간의 갈등 해소, 수산시책 홍보 및 모니터링, 수산기술 보급 사업 평가 및 자문, 기타 지도자협의회장이 필요하다고 판단하여 부의하는 사항",
-      "○ 수당 : 회의 소집에 참석한 지도자에 한하여 소요경비(수당 등) 지급. 1회 소집시 지급 기준액은 18만원 이내",
-      "○ 교육제공방법 : 지자체 수산사무소장이 어촌계장, 어업계장, 어촌지도자에게 교육계획 통보 및 참석 요청"
+      "교육비 : 무상교육",
+      "교육내용 : 어촌 및 수산업발전 자문, 어촌지역간의 갈등 해소, 수산시책 홍보 및 모니터링, 수산기술 보급 사업 평가 및 자문, 기타 지도자협의회장이 필요하다고 판단하여 부의하는 사항",
+      "수당 : 회의 소집에 참석한 지도자에 한하여 소요경비(수당 등) 지급. 1회 소집시 지급 기준액은 18만원 이내",
+      "교육제공방법 : 지자체 수산사무소장이 어촌계장, 어업계장, 어촌지도자에게 교육계획 통보 및 참석 요청"
     ],
     "documents": [
       "해당없음"
@@ -1430,7 +1430,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000076",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000076",
     "contact": "지자체 수산기술보급기관/051-773-6013",
-    "views": 1942,
+    "views": 1943,
     "updatedAt": "2026.04.24",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -1463,13 +1463,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 천일염포장재 지원(지원조건 : 국비 30%, 지방비 30%, 자담 40%)",
+    "amount": "천일염포장재 지원(지원조건 : 국비 30%, 지방비 30%, 자담 40%)",
     "deadline": "지자체 사업 공고시",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "사업자",
-    "targetGroup": "○ (지원대상)지방자치단체, 공기업, 천일염 영농(어)조합법인, 농(어)업회사법인, 농업협동조합, 수산업협동조합, 천일염관련 협동조합, 개인 및 법인(천일염 생산자)",
-    "income": "○ 지원자격 및 요건을 갖춘 자 중에서 시장․군수가 시․군 자체적으로 구성된 심의회를 거쳐 지원대상자로 선정한 자",
+    "targetGroup": "(지원대상)지방자치단체, 공기업, 천일염 영농(어)조합법인, 농(어)업회사법인, 농업협동조합, 수산업협동조합, 천일염관련 협동조합, 개인 및 법인(천일염 생산자)",
+    "income": "지원자격 및 요건을 갖춘 자 중에서 시장․군수가 시․군 자체적으로 구성된 심의회를 거쳐 지원대상자로 선정한 자",
     "applyOnline": true,
     "tags": [
       "창업",
@@ -1479,9 +1479,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "천일염포장재지원"
     ],
     "summary": "천일염의 위생적인 유통을 위하여 천일염포장재 지원",
-    "audience": "○ (지원대상)지방자치단체, 공기업, 천일염 영농(어)조합법인, 농(어)업회사법인, 농업협동조합, 수산업협동조합, 천일염관련 협동조합, 개인 및 법인(천일염 생산자) ○ (제외대상) 영농(어)조합법인과 농(어)업회사법인 등 농수산업 관련 법인의 경우 설립 후 운영 실적이 1년 이하인 법인은 지원할 수 없음, 염전에서 전년도 및 당해연도에 농약사용이 적발되거나 잔류농약이 검출된 염전 및 염전생산자와 염전근로자의 자유의사에 어긋나는 근로강요행위가 적발된 염전 및 생산자는 지원대상에서 배제",
+    "audience": "(지원대상)지방자치단체, 공기업, 천일염 영농(어)조합법인, 농(어)업회사법인, 농업협동조합, 수산업협동조합, 천일염관련 협동조합, 개인 및 법인(천일염 생산자) (제외대상) 영농(어)조합법인과 농(어)업회사법인 등 농수산업 관련 법인의 경우 설립 후 운영 실적이 1년 이하인 법인은 지원할 수 없음, 염전에서 전년도 및 당해연도에 농약사용이 적발되거나 잔류농약이 검출된 염전…",
     "benefits": [
-      "○ 천일염포장재 지원(지원조건 : 국비 30%, 지방비 30%, 자담 40%)"
+      "천일염포장재 지원(지원조건 : 국비 30%, 지방비 30%, 자담 40%)"
     ],
     "documents": [
       "지자체 공고에 따름"
@@ -1490,7 +1490,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000077",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000077",
     "contact": "해당지역 시군구청/관할 지자체",
-    "views": 2318,
+    "views": 2319,
     "updatedAt": "2026.04.27",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -1523,13 +1523,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 염전바닥재 개선 지원(지원조건 : 국비 30%, 지벙바 30%, 자담 40%)",
+    "amount": "염전바닥재 개선 지원(지원조건 : 국비 30%, 지벙바 30%, 자담 40%)",
     "deadline": "지자체 사업 공고시",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "사업자",
-    "targetGroup": "○ (지원대상)지방자치단체, 공기업, 천일염 영농(어)조합법인, 농(어)업회사법인, 농업협동조합, 수산업협동조합, 천일염관련 협동조합, 개인 및 법인(천일염 생산자)",
-    "income": "○ 지원자격 및 요건을 갖춘 자 중에서 시장․군수가 시․군 자체적으로 구성된 심의회를 거쳐 지원대상자로 선정한 자",
+    "targetGroup": "(지원대상)지방자치단체, 공기업, 천일염 영농(어)조합법인, 농(어)업회사법인, 농업협동조합, 수산업협동조합, 천일염관련 협동조합, 개인 및 법인(천일염 생산자)",
+    "income": "지원자격 및 요건을 갖춘 자 중에서 시장․군수가 시․군 자체적으로 구성된 심의회를 거쳐 지원대상자로 선정한 자",
     "applyOnline": true,
     "tags": [
       "창업",
@@ -1541,9 +1541,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "개선"
     ],
     "summary": "천일염산업육성을 위하여 염전바닥재 개선 지원",
-    "audience": "○ (지원대상)지방자치단체, 공기업, 천일염 영농(어)조합법인, 농(어)업회사법인, 농업협동조합, 수산업협동조합, 천일염관련 협동조합, 개인 및 법인(천일염 생산자) ○ (제외대상)영농(어)조합법인과 농(어)업회사법인 등 농수산업 관련 법인의 경우 설립 후 운영 실적이 1년 이하인 법인은 지원할 수 없음, 염전에서 전년도 및 당해연도에 농약사용이 적발되거나 잔류농약이 검출된 염전 및 염전생산자와 염전근로자의 자유의사에 어긋나는 근로강요행위가 적발된 염전 및 생산자는 지원대상에서 배제",
+    "audience": "(지원대상)지방자치단체, 공기업, 천일염 영농(어)조합법인, 농(어)업회사법인, 농업협동조합, 수산업협동조합, 천일염관련 협동조합, 개인 및 법인(천일염 생산자) (제외대상)영농(어)조합법인과 농(어)업회사법인 등 농수산업 관련 법인의 경우 설립 후 운영 실적이 1년 이하인 법인은 지원할 수 없음, 염전에서 전년도 및 당해연도에 농약사용이 적발되거나 잔류농약이 검출된 염전 …",
     "benefits": [
-      "○ 염전바닥재 개선 지원(지원조건 : 국비 30%, 지벙바 30%, 자담 40%)"
+      "염전바닥재 개선 지원(지원조건 : 국비 30%, 지벙바 30%, 자담 40%)"
     ],
     "documents": [
       "지자체 공고에 따름"
@@ -1552,7 +1552,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000078",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000078",
     "contact": "해당지역 시군구청/관할지자체",
-    "views": 2157,
+    "views": 2159,
     "updatedAt": "2026.04.27",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -1585,13 +1585,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 지게차, 파렛트 임차비용, 재순환 어상자 구매비용 25% 지원(국비)",
+    "amount": "지게차, 파렛트 임차비용, 재순환 어상자 구매비용 25% 지원(국비)",
     "deadline": "접수기관 별 상이",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "농업인",
-    "targetGroup": "○ 어업인, 생산자단체 등",
-    "income": "○ 단위수협, 도매시장 등을 대상으로 사업공모 후 수협중앙회의 선정위원회를 통해 사업자 선정",
+    "targetGroup": "어업인, 생산자단체 등",
+    "income": "단위수협, 도매시장 등을 대상으로 사업공모 후 수협중앙회의 선정위원회를 통해 사업자 선정",
     "applyOnline": true,
     "tags": [
       "농림어업",
@@ -1603,9 +1603,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "개선"
     ],
     "summary": "물류기기 임차",
-    "audience": "○ 어업인, 생산자단체 등",
+    "audience": "어업인, 생산자단체 등",
     "benefits": [
-      "○ 지게차, 파렛트 임차비용, 재순환 어상자 구매비용 25% 지원(국비)"
+      "지게차, 파렛트 임차비용, 재순환 어상자 구매비용 25% 지원(국비)"
     ],
     "documents": [
       "신청서, 사업자등록증 등"
@@ -1614,7 +1614,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000082",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000082",
     "contact": "해양수산부 유통정책과/0517735442",
-    "views": 1881,
+    "views": 1884,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -1647,13 +1647,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 항로표지 전문인력의 양성 및 교육",
+    "amount": "항로표지 전문인력의 양성 및 교육",
     "deadline": "연중",
     "dday": "상시",
     "status": "상시",
     "lifeStage": "전체",
-    "targetGroup": "○ 한국항로표지기술원",
-    "income": "○ 항로표지법 시행령 제19조",
+    "targetGroup": "한국항로표지기술원",
+    "income": "항로표지법 시행령 제19조",
     "applyOnline": true,
     "tags": [
       "고용",
@@ -1665,9 +1665,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "지원"
     ],
     "summary": "항로표지 분야의 전문인력의 양성, 교육 지원 및 관리",
-    "audience": "○ 한국항로표지기술원",
+    "audience": "한국항로표지기술원",
     "benefits": [
-      "○ 항로표지 전문인력의 양성 및 교육",
+      "항로표지 전문인력의 양성 및 교육",
       "훈련에 관한 사항, 교육프로그램의 개발 및 보급"
     ],
     "documents": [
@@ -1677,7 +1677,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://katon.or.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000085",
     "contact": "해양수산부 항행정보정책과/051-773-5873",
-    "views": 1657,
+    "views": 1659,
     "updatedAt": "2026.04.24",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -1710,13 +1710,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 자조금 단체의 임의거출금과 1:1 매칭펀드(대응보조)로 지원함을 원칙이나, 사업실적을 평가하여 결과에 따라 예산 범위 내에서 차등지원 (국고보조 50%, 자부담(임의거출금) 50%)",
+    "amount": "자조금 단체의 임의거출금과 1:1 매칭펀드(대응보조)로 지원함을 원칙이나, 사업실적을 평가하여 결과에 따라 예산 범위 내에서 차등지원 (국고보조 50%, 자부담(임의거출금) 50%)",
     "deadline": "연중",
     "dday": "상시",
     "status": "상시",
     "lifeStage": "농업인",
-    "targetGroup": "○ ｢농수산자조금의 조성 및 운영에 관한 법률｣에 따라 수산자조금을 조성‧ 운영하는 단체(해수부 소관 비영리법인)로 ｢민법｣ 제32조에 의해 수산업자*의 전부 또는 일부를 회원으로 하여 해양수산부 장관의 허가를 받아 설립된 비영리법인 단체",
-    "income": "○ 최근년도 기준으로 품목별 전국 생산량(또는 금액)대비 단체 구성원의 전체 생산량(또는 금액) 비율이 10% 이상인 단체",
+    "targetGroup": "｢농수산자조금의 조성 및 운영에 관한 법률｣에 따라 수산자조금을 조성‧ 운영하는 단체(해수부 소관 비영리법인)로 ｢민법｣ 제32조에 의해 수산업자*의 전부 또는 일부를 회원으로 하여 해양수산부 장관의 허가를 받아 …",
+    "income": "최근년도 기준으로 품목별 전국 생산량(또는 금액)대비 단체 구성원의 전체 생산량(또는 금액) 비율이 10% 이상인 단체",
     "applyOnline": true,
     "tags": [
       "농림어업",
@@ -1728,9 +1728,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "자조금"
     ],
     "summary": "생산자단체의 자발적 수산자원 관리, 시장교섭력 강화, 수급조절 및 가격안정 등을 위한 자체적인 기금(자조금) 조성‧운용을 유도",
-    "audience": "○ ｢농수산자조금의 조성 및 운영에 관한 법률｣에 따라 수산자조금을 조성‧ 운영하는 단체(해수부 소관 비영리법인)로 ｢민법｣ 제32조에 의해 수산업자*의 전부 또는 일부를 회원으로 하여 해양수산부 장관의 허가를 받아 설립된 비영리법인 단체",
+    "audience": "｢농수산자조금의 조성 및 운영에 관한 법률｣에 따라 수산자조금을 조성‧ 운영하는 단체(해수부 소관 비영리법인)로 ｢민법｣ 제32조에 의해 수산업자*의 전부 또는 일부를 회원으로 하여 해양수산부 장관의 허가를 받아 …",
     "benefits": [
-      "○ 자조금 단체의 임의거출금과 1:1 매칭펀드(대응보조)로 지원함을 원칙이나, 사업실적을 평가하여 결과에 따라 예산 범위 내에서 차등지원 (국고보조 50%, 자부담(임의거출금) 50%)"
+      "자조금 단체의 임의거출금과 1:1 매칭펀드(대응보조)로 지원함을 원칙이나, 사업실적을 평가하여 결과에 따라 예산 범위 내에서 차등지원 (국고보조 50%, 자부담(임의거출금) 50%)"
     ],
     "documents": [
       "해수부 소관 비영리법인"
@@ -1739,7 +1739,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000097",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000097",
     "contact": "공주대학교 산학협력단/041-330-1148",
-    "views": 1560,
+    "views": 1562,
     "updatedAt": "2026.04.22",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -1790,7 +1790,7 @@ export const publicServiceApiPolicies: Policy[] = [
       "지원"
     ],
     "summary": "인증부표 보급을 통해 연안어장의 발포 폴리스티렌(EPS, 스티로폼) 부표 사용으로 인한 환경오염 방지 및 안전한 수산물 공급 기반 구축 도모",
-    "audience": "ㅇ 양식어업, 어장시설 등에 사용되는 스티로폼 부표를 인증부표로 교체하려는 자 사업대상자: 수산업법 및 양식산업발전법에 따른 면허나 구획어업 및 수산종자산업육성법에 따른 수산종자생산업 허가를 받아 어업을 경영 중이거나 하려는 자",
+    "audience": "ㅇ 양식어업, 어장시설 등에 사용되는 스티로폼 부표를 인증부표로 교체하려는 자 * 사업대상자: 수산업법 및 양식산업발전법에 따른 면허나 구획어업 및 수산종자산업육성법에 따른 수산종자생산업 허가를 받아 어업을 경영 중이거나 하려는 자",
     "benefits": [
       "ㅇ 국비35%, 지방비35%, 자부담 30%",
       "ㅇ 지원방법: 기존 스티로폼 부표를 인증부표로 교체하려는 자"
@@ -1802,7 +1802,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000109",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000109",
     "contact": "해당지역 시군구청/-",
-    "views": 2226,
+    "views": 2229,
     "updatedAt": "2026.04.23",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -1835,13 +1835,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 국비20%, 지방비60%, 자부담 20%",
+    "amount": "국비20%, 지방비60%, 자부담 20%",
     "deadline": "자세한 날짜는 시군구청에 따라 다를 수 있음",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "전체",
-    "targetGroup": "○ 패류 양식과정 중 발생하는 패각을 대상으로 하며, 패각발생이 있는자",
-    "income": "○ 양식 패류 박신 또는 가공하는 사업장을 운영하는자 또는 연안지역에서 방치되고 있는 패각을 자원화하기 위해 사업비 중 자담을 부담하여 처리하고자 하는 자",
+    "targetGroup": "패류 양식과정 중 발생하는 패각을 대상으로 하며, 패각발생이 있는자",
+    "income": "양식 패류 박신 또는 가공하는 사업장을 운영하는자 또는 연안지역에서 방치되고 있는 패각을 자원화하기 위해 사업비 중 자담을 부담하여 처리하고자 하는 자",
     "applyOnline": true,
     "tags": [
       "복지",
@@ -1853,10 +1853,10 @@ export const publicServiceApiPolicies: Policy[] = [
       "처리"
     ],
     "summary": "양식장에서 나오는 폐패각의 효율적인 수거와 지원화 처리 및 해양배출 비용 지원으로 연안 오염방지 및 수산물 안전성 확보",
-    "audience": "○ 패류 양식과정 중 발생하는 패각을 대상으로 하며, 패각발생이 있는자",
+    "audience": "패류 양식과정 중 발생하는 패각을 대상으로 하며, 패각발생이 있는자",
     "benefits": [
-      "○ 국비20%, 지방비60%, 자부담 20%",
-      "○ 지원방법: 폐패각을 친환경 처리하고자 하는 자에 대하여 운반비의 일부를 지원"
+      "국비20%, 지방비60%, 자부담 20%",
+      "지원방법: 폐패각을 친환경 처리하고자 하는 자에 대하여 운반비의 일부를 지원"
     ],
     "documents": [
       "사업대상자 선정신청서 1부, 사업자등록증 1부"
@@ -1865,7 +1865,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000110",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000110",
     "contact": "해양수산부 양식산업과/051-773-5634",
-    "views": 2427,
+    "views": 2428,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -1898,12 +1898,12 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 국립수산물품질관리원 등으로부터 품목허가를 받은 수산동물의약품 백신 및 면역증강제 지원",
+    "amount": "국립수산물품질관리원 등으로부터 품목허가를 받은 수산동물의약품 백신 및 면역증강제 지원",
     "deadline": "사업자 모집 공고 참고",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "전체",
-    "targetGroup": "ㅇ「양식산업발전법」또는「수산종자산업육성법」에 따른 면허 및 허가를 취득한 양식장 또는 수산종자생산시설을 운영 중이며, 「수산생물질병 관리법」에 따른 방역에 관한 교육을 받은 양식업자, 수산종자생산업자, 생산자단체(영어조합법인, 어촌계, 수협 등) 등",
+    "targetGroup": "ㅇ「양식산업발전법」또는「수산종자산업육성법」에 따른 면허 및 허가를 취득한 양식장 또는 수산종자생산시설을 운영 중이며, 「수산생물질병 관리법」에 따른 방역에 관한 교육을 받은 양식업자, 수산종자생산업자, 생산자단체(…",
     "income": "ㅇ 「농어업재해보험」에 따른 양식보험가입어가 및 「농수산물품질관리법」에 따른 HACCP 등록 양식장에 대해 우선순위로 지원함",
     "applyOnline": true,
     "tags": [
@@ -1916,20 +1916,20 @@ export const publicServiceApiPolicies: Policy[] = [
       "공급"
     ],
     "summary": "수산생물의 질병 예방을 위한 백신 및 면역증강제 지원",
-    "audience": "ㅇ「양식산업발전법」또는「수산종자산업육성법」에 따른 면허 및 허가를 취득한 양식장 또는 수산종자생산시설을 운영 중이며, 「수산생물질병 관리법」에 따른 방역에 관한 교육을 받은 양식업자, 수산종자생산업자, 생산자단체(영어조합법인, 어촌계, 수협 등) 등",
+    "audience": "ㅇ「양식산업발전법」또는「수산종자산업육성법」에 따른 면허 및 허가를 취득한 양식장 또는 수산종자생산시설을 운영 중이며, 「수산생물질병 관리법」에 따른 방역에 관한 교육을 받은 양식업자, 수산종자생산업자, 생산자단체(…",
     "benefits": [
-      "○ 국립수산물품질관리원 등으로부터 품목허가를 받은 수산동물의약품 백신 및 면역증강제 지원",
-      "수산동물예방 백신 사업비는 배정된 예산의 범위 내에서 1차~2차 백신 접종까지 우선 지원하되, 지자체 자율로 면역증강제를 지원할 수 있음",
-      "지원조건 : 국고 30%, 지방비 30%, 자부담 40%"
+      "국립수산물품질관리원 등으로부터 품목허가를 받은 수산동물의약품 백신 및 면역증강제 지원",
+      "- 수산동물예방 백신 사업비는 배정된 예산의 범위 내에서 1차~2차 백신 접종까지 우선 지원하되, 지자체 자율로 면역증강제를 지원할 수 있음",
+      "- 지원조건 : 국고 30%, 지방비 30%, 자부담 40%"
     ],
     "documents": [
       "사업자 모집 공고 참고"
     ],
-    "apply": "○ 사업을 희망하는 자는 사업계획을 수립하여 시․군․구 및 지자체 소속 방역 수행기관에 신청(매년 1월 20일까지) ○ 시․군․구 및 지자체 소속 방역 수행기관은 직접 사업을 하고자 하거나 사업을 희망하는 사업자가 있는 경우 사업계획을 수립(지방비․자부담 확보 등)하여 시․도에 제출",
+    "apply": "사업을 희망하는 자는 사업계획을 수립하여 시․군․구 및 지자체 소속 방역 수행기관에 신청(매년 1월 20일까지) 시․군․구 및 지자체 소속 방역 수행기관은 직접 사업을 하고자 하거나 사업을 희망하는 사업자가 있는 경우 사업계획을 수립(지방비․자부담 확보 등)하여 시․도에 제출",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000111",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000111",
     "contact": "경상북도 해양수산과/054-880-7726||전라남도 친환경수산과/061-286-6994||경상남도 수산안전기술원/055-254-3592||충청남도수산자원연구소/041-635-7898",
-    "views": 2613,
+    "views": 2617,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -1962,7 +1962,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 방역교육, 위촉공수산질병관리사 수당 및 경비, 방역사업 및 질병 진단에 드는 경비",
+    "amount": "방역교육, 위촉공수산질병관리사 수당 및 경비, 방역사업 및 질병 진단에 드는 경비",
     "deadline": "사업자 모집 공고 참고",
     "dday": "접수중",
     "status": "모집중",
@@ -1982,19 +1982,19 @@ export const publicServiceApiPolicies: Policy[] = [
     "summary": "방역조치 활동(긴급방역비) 및 방역교육, 위촉공수산질병관리사 수당 및 경비 지원",
     "audience": "「양식산업발전법」에 따른 양식업자 및 양식업종사자, 수산생물관련단체(대한수산질병관리사회 포함), 병성감정실시기관, 방역수행기관",
     "benefits": [
-      "○ 방역교육, 위촉공수산질병관리사 수당 및 경비, 방역사업 및 질병 진단에 드는 경비",
-      "방역교육* 비용(식비 제외), 방역업무 수행을 위한 위촉공수산질병관리사의 수당 및 경비(방역관 및 위촉공수산질병관리사의 방역복 포함), 방역사업 및 질병진단에",
+      "방역교육, 위촉공수산질병관리사 수당 및 경비, 방역사업 및 질병 진단에 드는 경비",
+      "- 방역교육* 비용(식비 제외), 방역업무 수행을 위한 위촉공수산질병관리사의 수당 및 경비(방역관 및 위촉공수산질병관리사의 방역복 포함), 방역사업 및 질병진단에",
       "필요한 제경비(시약 및 재료비**, 홍보물 제작 비용, 단 소독제, 투약",
       "치료제 제외)"
     ],
     "documents": [
       "사업자 모집 공고 참고"
     ],
-    "apply": "○ 사업을 희망하는 자는 사업계획을 수립하여 시․군․구 및 지자체 소속 방역 수행기관에 신청(매년 1월 20일까지) ○ 시․군․구 및 지자체 소속 방역 수행기관은 직접 사업을 하고자 하거나 사업을 희망하는 사업자가 있는 경우 사업계획을 수립(지방비․자부담 확보 등)하여 시․도에 제출",
+    "apply": "사업을 희망하는 자는 사업계획을 수립하여 시․군․구 및 지자체 소속 방역 수행기관에 신청(매년 1월 20일까지) 시․군․구 및 지자체 소속 방역 수행기관은 직접 사업을 하고자 하거나 사업을 희망하는 사업자가 있는 경우 사업계획을 수립(지방비․자부담 확보 등)하여 시․도에 제출",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000113",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000113",
     "contact": "해당지역 시군구청/000-000-0000",
-    "views": 2429,
+    "views": 2432,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -2027,12 +2027,12 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 방역사업비 : 방역사업 및 질병 진단 업무 수행에 필요한 장비 등",
+    "amount": "방역사업비 : 방역사업 및 질병 진단 업무 수행에 필요한 장비 등",
     "deadline": "자세한 날짜는 시군구청에 따라 다를 수 있음",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "농업인",
-    "targetGroup": "○ 법에 따른 양식어업인, 수산생물 관련 단체(대한수산질병관리사회 포함), 병성감정실시기관, 방역 수행기관",
+    "targetGroup": "법에 따른 양식어업인, 수산생물 관련 단체(대한수산질병관리사회 포함), 병성감정실시기관, 방역 수행기관",
     "income": "ㅇ 「농어업재해보험법」에 따른 양식보험가입어가 및 「농수산물 품질관리법」에 따른 HACCP 등록 양식장에 대해 우선순위로 지원함",
     "applyOnline": true,
     "tags": [
@@ -2045,19 +2045,19 @@ export const publicServiceApiPolicies: Policy[] = [
       "지원"
     ],
     "summary": "방역사업 및 질병 진단에 필요한 장비 지원",
-    "audience": "○ 법에 따른 양식어업인, 수산생물 관련 단체(대한수산질병관리사회 포함), 병성감정실시기관, 방역 수행기관",
+    "audience": "법에 따른 양식어업인, 수산생물 관련 단체(대한수산질병관리사회 포함), 병성감정실시기관, 방역 수행기관",
     "benefits": [
-      "○ 방역사업비 : 방역사업 및 질병 진단 업무 수행에 필요한 장비 등",
-      "지원조건 : 국고 50%, 지방비 50%"
+      "방역사업비 : 방역사업 및 질병 진단 업무 수행에 필요한 장비 등",
+      "- 지원조건 : 국고 50%, 지방비 50%"
     ],
     "documents": [
       "사업자 모집 공고 참고"
     ],
-    "apply": "<시 도(시",
+    "apply": "사업을 희망하는 자는 사업계획을 수립하여 시․군․구 및 지자체 소속 방역 수행기관에 신청(매년 1월 20일까지) 시․군․구 및 지자체 소속 방역 수행기관은 직접 사업을 하고자 하거나 사업을 희망하는 사업자가 있는 경우 사업계획을 수립(지방비․자부담 확보 등)하여 시․도에 제출(매년 2월 28일까지)",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000115",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000115",
     "contact": "충청북도 내수면산업연구소/043-220-6523||충청남도수산자원연구소 수산질병센터/041-635-7898||전북특별자치도 수산물안전센터/063-290-6954||전라남도 해양수산과학원/061-550-0662||경상남도 수산안전기술원/055-254-3592",
-    "views": 2442,
+    "views": 2444,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -2090,13 +2090,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 쏙 구제에 필요한 직",
+    "amount": "쏙 구제에 필요한 직",
     "deadline": "사업자 모집 공고 참고",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "농업인",
-    "targetGroup": "○ 쏙이 발생하여 경운 등의 유해생물(쏙) 구제사업을 희망하는 어업인, 생산자단체(영어조합법인, 어촌계 등) 등",
-    "income": "○ 공통요건 : 쏙 구제를 해야 하는 어업 경영체, 수협, 어촌계, 지자체 등",
+    "targetGroup": "쏙이 발생하여 경운 등의 유해생물(쏙) 구제사업을 희망하는 어업인, 생산자단체(영어조합법인, 어촌계 등) 등",
+    "income": "공통요건 : 쏙 구제를 해야 하는 어업 경영체, 수협, 어촌계, 지자체 등",
     "applyOnline": true,
     "tags": [
       "농림어업",
@@ -2107,21 +2107,21 @@ export const publicServiceApiPolicies: Policy[] = [
       "구제(쏙)"
     ],
     "summary": "쏙 구제에 필요한 직",
-    "audience": "○ 쏙이 발생하여 경운 등의 유해생물(쏙) 구제사업을 희망하는 어업인, 생산자단체(영어조합법인, 어촌계 등) 등",
+    "audience": "쏙이 발생하여 경운 등의 유해생물(쏙) 구제사업을 희망하는 어업인, 생산자단체(영어조합법인, 어촌계 등) 등",
     "benefits": [
-      "○ 쏙 구제에 필요한 직",
+      "쏙 구제에 필요한 직",
       "간접 방법(모래살포, 경운 등)이나 기타 장비구매비 및 임대 등 사업 지원",
-      "종묘구매․입식 등에 드는 경비는 제외, 인근 어장에 피해가 없도록 주의",
-      "세부적인 구제방법 등은 국립수산과학원과 협의하여 추진할 수 있음"
+      "- 종묘구매․입식 등에 드는 경비는 제외, 인근 어장에 피해가 없도록 주의",
+      "- 세부적인 구제방법 등은 국립수산과학원과 협의하여 추진할 수 있음"
     ],
     "documents": [
       "사업자 모집 공고 참고"
     ],
-    "apply": "○ 사업을 희망하는 자는 사업계획을 수립하여 시․군․구에 신청(매년 1월 20일까지) ○ 시․군․구는 직접 사업을 희망하는 사업자가 있는 경우 사업계획을 수립(지방비․자부담 확보 등)하여 시․도에 제출(매년 2월 28일까지)",
+    "apply": "사업을 희망하는 자는 사업계획을 수립하여 시․군․구에 신청(매년 1월 20일까지) 시․군․구는 직접 사업을 희망하는 사업자가 있는 경우 사업계획을 수립(지방비․자부담 확보 등)하여 시․도에 제출(매년 2월 28일까지)",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000116",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000116",
     "contact": "충청남도 수산자원과/041-635-4137||전라남도 친환경수산과/061-286-6934",
-    "views": 2227,
+    "views": 2228,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -2154,13 +2154,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 기생충 구제사업 관련 예찰 및 모니터링에 드는 경비, 구제 약품 구입 등",
+    "amount": "기생충 구제사업 관련 예찰 및 모니터링에 드는 경비, 구제 약품 구입 등",
     "deadline": "자세한 날짜는 시군구청에 따라 다를 수 있음",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "농업인",
-    "targetGroup": "○「양식산업발전법」 또는 「수산종자산업육성법」에 따른 면허",
-    "income": "‘영어(농)조합법인 지원요건 및 사후관리기준’에 적합한 사업자에 한 함",
+    "targetGroup": "「양식산업발전법」 또는 「수산종자산업육성법」에 따른 면허",
+    "income": "- ‘영어(농)조합법인 지원요건 및 사후관리기준’에 적합한 사업자에 한 함",
     "applyOnline": true,
     "tags": [
       "교육",
@@ -2171,21 +2171,21 @@ export const publicServiceApiPolicies: Policy[] = [
       "구제(기생충)"
     ],
     "summary": "기생충구제사업 관련 예찰 및 모니터링 소요경비, 구제 약품 구입 등 지원",
-    "audience": "○「양식산업발전법」 또는 「수산종자산업육성법」에 따른 면허 허가 또는 시험양식업 승인을 받고 방역교육을 받은 어업인, ｢수산생물질병 관리법｣에 따른 수산생물관련단체, 병성감정실시기관, 방역수행기관",
+    "audience": "「양식산업발전법」 또는 「수산종자산업육성법」에 따른 면허 허가 또는 시험양식업 승인을 받고 방역교육을 받은 어업인, ｢수산생물질병 관리법｣에 따른 수산생물관련단체, 병성감정실시기관, 방역수행기관",
     "benefits": [
-      "○ 기생충 구제사업 관련 예찰 및 모니터링에 드는 경비, 구제 약품 구입 등",
-      "해당 지자체 등에서 어류 양식장 예찰 및 모니터링 중 기생충 발견 등에 따라 즉각적인 조치가 필요한 구제 약품 구입비* 지원(최대 5회)",
-      "「처방대상 동물용의약품 지정에 관한 규정 」개정",
+      "기생충 구제사업 관련 예찰 및 모니터링에 드는 경비, 구제 약품 구입 등",
+      "- 해당 지자체 등에서 어류 양식장 예찰 및 모니터링 중 기생충 발견 등에 따라 즉각적인 조치가 필요한 구제 약품 구입비* 지원(최대 5회)",
+      "* 「처방대상 동물용의약품 지정에 관한 규정 」개정",
       "시행('24.7.19)에 따라 기생충 구제제 구입 시 처방전 발급 필요"
     ],
     "documents": [
       "사업자 모집 공고 참고"
     ],
-    "apply": "○ 사업을 희망하는 자는 사업계획을 수립하여 시․군․구에 신청(매년 1월 20일까지) ○ 시․군․구는 직접 사업을 희망하는 사업자가 있는 경우 사업계획을 수립(지방비․자부담 확보 등)하여 시․도에 제출(매년 2월 28일까지)",
+    "apply": "사업을 희망하는 자는 사업계획을 수립하여 시․군․구에 신청(매년 1월 20일까지) 시․군․구는 직접 사업을 희망하는 사업자가 있는 경우 사업계획을 수립(지방비․자부담 확보 등)하여 시․도에 제출(매년 2월 28일까지)",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000117",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000117",
     "contact": "부산광역시수산자원연구소/051-209-0938||인천광역시수산기술지원센터/032-458-7457||울산광역시 해양수산과/052-229-2983||경기도해양수산자원연구소/031-8008-8365||강원도청 어업진흥과/033-660-8329||충청북도내수면산업연구소/043-220-6523||충청남도수산자원연구소 수산질병센터/041-635-7898||전북도청 수산물안전센터/063-290-6945||전라남도 해양수산과학원/061-550-0662||경상북도환동해지역본부어업기술원/054-240-0332||경상남도수산안전기술원 /055-254-3592||제주도청 수산정책과/064-710-3232",
-    "views": 2697,
+    "views": 2698,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -2218,13 +2218,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 낚시어선 전문교육",
+    "amount": "낚시어선 전문교육",
     "deadline": "연중",
     "dday": "상시",
     "status": "상시",
     "lifeStage": "전체",
-    "targetGroup": "○ 낚시터업자, 낚시어선업자(선원 포함)",
-    "income": "○ 교육 대상자 선정기준은 교육 유형에 따라 다름",
+    "targetGroup": "낚시터업자, 낚시어선업자(선원 포함)",
+    "income": "교육 대상자 선정기준은 교육 유형에 따라 다름",
     "applyOnline": true,
     "tags": [
       "교육",
@@ -2236,10 +2236,10 @@ export const publicServiceApiPolicies: Policy[] = [
       "제공"
     ],
     "summary": "낚시전문교육 시행을 통해 안전관리 및 수산자원보호 등에 대한 전문지식을 습득하게 함으로써 안전사고 예방 및 수생태계를 보호",
-    "audience": "○ 낚시터업자, 낚시어선업자(선원 포함)",
+    "audience": "낚시터업자, 낚시어선업자(선원 포함)",
     "benefits": [
-      "○ 낚시어선 전문교육",
-      "(교육대상) 낚시어선업자, 낚시어선 선원(선장",
+      "낚시어선 전문교육",
+      "- (교육대상) 낚시어선업자, 낚시어선 선원(선장",
       "사무장",
       "조리사"
     ],
@@ -2250,7 +2250,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "http://www.naksinuri.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000118",
     "contact": "한국어촌어항공단/1833-7139",
-    "views": 2526,
+    "views": 2529,
     "updatedAt": "2026.04.27",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -2283,13 +2283,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 자율관리공동체 활동실적을 평가하여 우수공동체에 육성사업비 지원",
+    "amount": "자율관리공동체 활동실적을 평가하여 우수공동체에 육성사업비 지원",
     "deadline": "접수기관 별 상이",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "농업인",
-    "targetGroup": "○ 자율관리어업공동체",
-    "income": "○ 자율관리어업공동체의 1년간 활동실적을 평가하여 육성사업비 지원 대상 공동체 선정",
+    "targetGroup": "자율관리어업공동체",
+    "income": "자율관리어업공동체의 1년간 활동실적을 평가하여 육성사업비 지원 대상 공동체 선정",
     "applyOnline": true,
     "tags": [
       "농림어업",
@@ -2301,9 +2301,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "공동체"
     ],
     "summary": "자율관리공동체 육성을 통해 지속가능한 어업생산체계 구축",
-    "audience": "○ 자율관리어업공동체",
+    "audience": "자율관리어업공동체",
     "benefits": [
-      "○ 자율관리공동체 활동실적을 평가하여 우수공동체에 육성사업비 지원"
+      "자율관리공동체 활동실적을 평가하여 우수공동체에 육성사업비 지원"
     ],
     "documents": [
       "신청서류, 공동체 규악 등"
@@ -2312,7 +2312,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000120",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000120",
     "contact": "해당 지자체/051-773-5535",
-    "views": 1642,
+    "views": 1644,
     "updatedAt": "2026.04.24",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -2345,13 +2345,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 지원형태 : 국비보조 60%, 지방비 20%, 자담 20%",
+    "amount": "지원형태 : 국비보조 60%, 지방비 20%, 자담 20%",
     "deadline": "자세한 날짜는 시군구청에 따라 다를 수 있음",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "농업인",
-    "targetGroup": "○ 「농어업",
-    "income": "○ 에너지절감시설의 설치를 위한 시설 토지를 확보할 수 있어야 함",
+    "targetGroup": "「농어업",
+    "income": "에너지절감시설의 설치를 위한 시설 토지를 확보할 수 있어야 함",
     "applyOnline": true,
     "tags": [
       "농림어업",
@@ -2363,11 +2363,11 @@ export const publicServiceApiPolicies: Policy[] = [
       "보급"
     ],
     "summary": "신재생에너지 이용기술을 활용한 에너지절감시설을 양식어가에 보급하고, 에너지의 효율적 이용을 통해 친환경 녹색성장을 선도하며, 에너지 이용비용 절감 등으로 어가 경영 안정을 도모",
-    "audience": "○ 「농어업 농어촌 및 식품산업 기본법」 및 「농어업경영체 육성 및 지원에 관한 법률」에서 규정한 어업인, 어업법인 및 수산관련 생산자단체",
+    "audience": "「농어업 농어촌 및 식품산업 기본법」 및 「농어업경영체 육성 및 지원에 관한 법률」에서 규정한 어업인, 어업법인 및 수산관련 생산자단체",
     "benefits": [
-      "○ 지원형태 : 국비보조 60%, 지방비 20%, 자담 20%",
-      "○ 에너지절감시설(히트펌프)",
-      "운영에 필요한 토목공사, 천공, 그라우팅, 열교환기 및 스케일 제거장치, 히트펌프, 배관, 기존 가온․ 냉각 연계 설비, 전기 용량 증설(용량 공사비 포함, 거리공사비 제외), 제어, 시스템 보호를 위한 기계실 등 직접 영향을 미치는 설비에 한 함"
+      "지원형태 : 국비보조 60%, 지방비 20%, 자담 20%",
+      "에너지절감시설(히트펌프)",
+      "- 운영에 필요한 토목공사, 천공, 그라우팅, 열교환기 및 스케일 제거장치, 히트펌프, 배관, 기존 가온․ 냉각 연계 설비, 전기 용량 증설(용량 공사비 포함, 거리공사비 제외), 제어, 시스템 …"
     ],
     "documents": [
       "1. 사업신청 시설부지 및 생산시설이 자가 소유인 경우",
@@ -2375,11 +2375,11 @@ export const publicServiceApiPolicies: Policy[] = [
       "② 부동산 등기부 등본(시설물 또는 건축물) 1통",
       "2. 사업신청 시설부지가 임차인 경우(시설물은 반드시 자가 소유이어야 함)"
     ],
-    "apply": "○ 한국농어촌공사, 수산기술보급기관 등의 검토를 받아 사업신청서 및 사업계획서를 작성하여 시장‧군수․구청장에게 제출(1월) 사업신청서 작성 시 기온 또는 냉각부하를 산출하고 시설용량과 사업비를 결정하여 신청",
+    "apply": "한국농어촌공사, 수산기술보급기관 등의 검토를 받아 사업신청서 및 사업계획서를 작성하여 시장‧군수․구청장에게 제출(1월) - 사업신청서 작성 시 기온 또는 냉각부하를 산출하고 시설용량과 사업비를 결정하여 신청",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000126",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000126",
     "contact": "해양수산부 어촌양식정책과/044-200-5392",
-    "views": 2401,
+    "views": 2403,
     "updatedAt": "2026.04.26",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -2436,15 +2436,15 @@ export const publicServiceApiPolicies: Policy[] = [
     ],
     "documents": [
       "ㅇ 신청인 제출서류",
-      "지원신청서 및 증빙서류 등",
+      "- 지원신청서 및 증빙서류 등",
       "ㅇ 신청인 미제출서류",
-      "해당없음"
+      "- 해당없음"
     ],
     "apply": "온라인 서류제출",
     "officialUrl": "http://biz.k-seafoodtrade.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000128",
     "contact": "한국수산무역협회 수출부/02-6300-8704",
-    "views": 2456,
+    "views": 2459,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -2503,15 +2503,15 @@ export const publicServiceApiPolicies: Policy[] = [
     ],
     "documents": [
       "ㅇ 신청인 제출서류",
-      "지원신청서 및 증빙서류 등",
+      "- 지원신청서 및 증빙서류 등",
       "ㅇ 신청인 미제출서류",
-      "해당없음"
+      "- 해당없음"
     ],
     "apply": "온라인 서류제출",
     "officialUrl": "http://global.at.or.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000129",
     "contact": "한국농수 산식품유통공사 수산임산수출부/061-931-0851",
-    "views": 2285,
+    "views": 2287,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -2550,7 +2550,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "status": "모집중",
     "lifeStage": "전체",
     "targetGroup": "수산물 수출 관련 개인 또는 단체",
-    "income": "○ 수산물 수출 관련 개인 또는 단체 선착순 또는 공모",
+    "income": "수산물 수출 관련 개인 또는 단체 선착순 또는 공모",
     "applyOnline": true,
     "tags": [
       "농림어업",
@@ -2567,15 +2567,15 @@ export const publicServiceApiPolicies: Policy[] = [
     ],
     "documents": [
       "ㅇ 신청인 제출서류",
-      "지원신청서 및 증빙서류 등",
+      "- 지원신청서 및 증빙서류 등",
       "ㅇ 신청인 미제출서류",
-      "해당없음"
+      "- 해당없음"
     ],
     "apply": "온라인 서류제출",
     "officialUrl": "http://biz.k-seafoodtrade.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000130",
     "contact": "한국수산무역협회 수출부/02-6300-8704",
-    "views": 2307,
+    "views": 2309,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -2633,15 +2633,15 @@ export const publicServiceApiPolicies: Policy[] = [
     ],
     "documents": [
       "ㅇ 신청인 제출서류",
-      "지원신청서 및 증빙서류 등",
+      "- 지원신청서 및 증빙서류 등",
       "ㅇ 신청인 미제출서류",
-      "해당없음"
+      "- 해당없음"
     ],
     "apply": "온라인 서류제출",
     "officialUrl": "http://global.at.or.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000133",
     "contact": "한국농수산식품유통공사 수산사업단/061-931-0853",
-    "views": 2382,
+    "views": 2386,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -2702,7 +2702,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "http://biz.k-seafoodtrade.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000135",
     "contact": "수협중앙회 무역사업단/02-2240-5602",
-    "views": 2204,
+    "views": 2205,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -2759,15 +2759,15 @@ export const publicServiceApiPolicies: Policy[] = [
     ],
     "documents": [
       "ㅇ 신청인 제출서류",
-      "지원신청서 및 증빙서류 등",
+      "- 지원신청서 및 증빙서류 등",
       "ㅇ 신청인 미제출서류",
-      "해당없음"
+      "- 해당없음"
     ],
     "apply": "온라인 서류제출",
     "officialUrl": "http://global.at.or.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000136",
     "contact": "한국농수산식품유통공사 수산사업단/061-931-0852",
-    "views": 2499,
+    "views": 2501,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -2829,7 +2829,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "http://biz.k-seafoodtrade.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000137",
     "contact": "한국수산회 수출지원팀/02-589-4624",
-    "views": 2076,
+    "views": 2078,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -2868,7 +2868,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "status": "모집중",
     "lifeStage": "전체",
     "targetGroup": "수산물 수출 관련 개인 또는 단체",
-    "income": "○ 수산식품 수출 지정기관",
+    "income": "수산식품 수출 지정기관",
     "applyOnline": true,
     "tags": [
       "농림어업",
@@ -2885,15 +2885,15 @@ export const publicServiceApiPolicies: Policy[] = [
     ],
     "documents": [
       "ㅇ 신청인 제출서류",
-      "지원신청서 및 증빙서류 등",
+      "- 지원신청서 및 증빙서류 등",
       "ㅇ 신청인 미제출서류",
-      "해당없음"
+      "- 해당없음"
     ],
     "apply": "온라인 신청",
     "officialUrl": "http://biz.k-seafoodtrade.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000138",
     "contact": "수협중앙회 무역사업단/02-2240-5610",
-    "views": 1985,
+    "views": 1988,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -2949,15 +2949,15 @@ export const publicServiceApiPolicies: Policy[] = [
     ],
     "documents": [
       "ㅇ 신청인 제출서류",
-      "지원신청서 및 증빙서류 등",
+      "- 지원신청서 및 증빙서류 등",
       "ㅇ 신청인 미제출서류",
-      "해당없음"
+      "- 해당없음"
     ],
     "apply": "온라인 서류제출",
     "officialUrl": "http://biz.k-seafoodtrade.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000139",
     "contact": "수협중앙회 무역사업단/02-2240-5602",
-    "views": 2045,
+    "views": 2048,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -3019,7 +3019,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000143",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000143",
     "contact": "해당 지자체/051-773-5486",
-    "views": 2480,
+    "views": 2483,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -3052,13 +3052,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 노후 선원묘역․묘비 개보수, 국내 이장 지원, 사업신청 홍보 등",
+    "amount": "노후 선원묘역․묘비 개보수, 국내 이장 지원, 사업신청 홍보 등",
     "deadline": "모집기간 별도공고",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "전체",
-    "targetGroup": "○ 해외선원묘지",
-    "income": "○ 이장대상자의 정보 확인",
+    "targetGroup": "해외선원묘지",
+    "income": "이장대상자의 정보 확인",
     "applyOnline": true,
     "tags": [
       "농림어업",
@@ -3070,19 +3070,19 @@ export const publicServiceApiPolicies: Policy[] = [
       "관리"
     ],
     "summary": "해외에 안장되어 있는 선원묘지의 보수 및 관리로 원양 종사자의 사기",
-    "audience": "○ 해외선원묘지",
+    "audience": "해외선원묘지",
     "benefits": [
-      "○ 노후 선원묘역․묘비 개보수, 국내 이장 지원, 사업신청 홍보 등"
+      "노후 선원묘역․묘비 개보수, 국내 이장 지원, 사업신청 홍보 등"
     ],
     "documents": [
-      "○ 신청인 제출서류",
-      "이장 대상자 확인 서류"
+      "신청인 제출서류",
+      "- 이장 대상자 확인 서류"
     ],
     "apply": "우편접수(서울특별시 서초구 논현로 83 한국원양산업협회)",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000153",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000153",
     "contact": "원양산업협회/02-589-1611",
-    "views": 1680,
+    "views": 1681,
     "updatedAt": "2026.04.23",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -3115,13 +3115,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 한러 어업위원회 합의사항에 따른 러시아 수역 입어 조업선의 안전조업 및 준법조업 등 지원",
+    "amount": "한러 어업위원회 합의사항에 따른 러시아 수역 입어 조업선의 안전조업 및 준법조업 등 지원",
     "deadline": "모집기간 별도공고",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "농업인",
-    "targetGroup": "○ 한",
-    "income": "○ 러시아 수역 입어선",
+    "targetGroup": "한",
+    "income": "러시아 수역 입어선",
     "applyOnline": true,
     "tags": [
       "농림어업",
@@ -3133,19 +3133,19 @@ export const publicServiceApiPolicies: Policy[] = [
       "경비"
     ],
     "summary": "러시아 수역 입어 조업선의 조업감시를 위한 감독관 승선 선박 운항경비 일부 지원",
-    "audience": "○ 한 러 어업협상시 양국 우호협력 관계를 고려하여, 러시아 수역에 입어하는 오징어채낚기 어선 조업감시를 위해 감독관 승선 선박운항 경비 일부를 지원, 어선의 안정적 조업 도모",
+    "audience": "한 러 어업협상시 양국 우호협력 관계를 고려하여, 러시아 수역에 입어하는 오징어채낚기 어선 조업감시를 위해 감독관 승선 선박운항 경비 일부를 지원, 어선의 안정적 조업 도모",
     "benefits": [
-      "○ 한러 어업위원회 합의사항에 따른 러시아 수역 입어 조업선의 안전조업 및 준법조업 등 지원"
+      "한러 어업위원회 합의사항에 따른 러시아 수역 입어 조업선의 안전조업 및 준법조업 등 지원"
     ],
     "documents": [
-      "○ 신청인 제출서류",
-      "사업계획서"
+      "신청인 제출서류",
+      "- 사업계획서"
     ],
     "apply": "우편 접수(서울특별시 송파구 오금로 62 수협중앙회 수산경제연구원)",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000154",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000154",
     "contact": "수협중앙회/02-2240-0405",
-    "views": 1759,
+    "views": 1761,
     "updatedAt": "2026.04.23",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -3178,13 +3178,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 지자체에 크레인 등 고가의 수산장비 구입",
+    "amount": "지자체에 크레인 등 고가의 수산장비 구입",
     "deadline": "자세한 날짜는 시군구청에 따라 다를 수 있음",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "농업인",
-    "targetGroup": "○ 어업경영체 등록을 한 어업생산자(어업인",
-    "income": "○ 사업계획을 수립하고 사업추진에 필요한 지방비를 적기에 확보 및 집행할 수 있어야 함",
+    "targetGroup": "어업경영체 등록을 한 어업생산자(어업인",
+    "income": "사업계획을 수립하고 사업추진에 필요한 지방비를 적기에 확보 및 집행할 수 있어야 함",
     "applyOnline": true,
     "tags": [
       "주거",
@@ -3195,9 +3195,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "임대"
     ],
     "summary": "어업 현장에서 필수적으로 사용하는 고가의 수산장비를 임대함으로써 장비의 활용도를 높이고 고가장비 구입에 따른 어업인의 부담 경감",
-    "audience": "○ 어업경영체 등록을 한 어업생산자(어업인 영어조합법인) 및 수협(수협어업권이 있는 경우) 등",
+    "audience": "어업경영체 등록을 한 어업생산자(어업인 영어조합법인) 및 수협(수협어업권이 있는 경우) 등",
     "benefits": [
-      "○ 지자체에 크레인 등 고가의 수산장비 구입",
+      "지자체에 크레인 등 고가의 수산장비 구입",
       "제작 비용을 50% 지원하고 위탁사업자에 의해 어업인에게 수산장비 임대"
     ],
     "documents": [
@@ -3207,7 +3207,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000157",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000157",
     "contact": "경기도 해양수산과/031-8008-4797||전북특별자치도 수산정책과/063-280-2673||전라남도 친환경수산과/061-268-6992||경상북도 어업기술지원과/054-240-0324||경상남도 수산정책과/055-211-4015||제주특별자치도 수산정책과/064-710-3212||인천광역시 수산기술지원센터/032-458-7462",
-    "views": 2505,
+    "views": 2506,
     "updatedAt": "2026.04.24",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -3240,13 +3240,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 지원대상에 포함되는 복지사업별 수혜자 지원내용",
+    "amount": "지원대상에 포함되는 복지사업별 수혜자 지원내용",
     "deadline": "사업공고에 따름",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "전체",
-    "targetGroup": "○ 아래 복지사업별 지원기준을 충족하는 선원과 그 직계가족",
-    "income": "○ 지원대상에 포함되는 복지사업별 수혜자 선정기준",
+    "targetGroup": "아래 복지사업별 지원기준을 충족하는 선원과 그 직계가족",
+    "income": "지원대상에 포함되는 복지사업별 수혜자 선정기준",
     "applyOnline": true,
     "tags": [
       "복지",
@@ -3257,16 +3257,16 @@ export const publicServiceApiPolicies: Policy[] = [
       "운영"
     ],
     "summary": "선원의 복지 증진과 고용촉진 및 직업안정을 위하여 지속적인 선원 복지증진 사업추진으로 선원의 복지향상과 선원 수급 원활화를 도모",
-    "audience": "○ 아래 복지사업별 지원기준을 충족하는 선원과 그 직계가족 선원 휴양콘도 운영, 선원가족 장학사업, 선원 무료법률구조사업, 장해 선원 재활 지원사업, 원양어선원가족 현지방문사업, 선원 교통편의시설운영사업, 선원회관운영사업",
+    "audience": "아래 복지사업별 지원기준을 충족하는 선원과 그 직계가족 - 선원 휴양콘도 운영, 선원가족 장학사업, 선원 무료법률구조사업, 장해 선원 재활 지원사업, 원양어선원가족 현지방문사업, 선원 교통편의시설운영사업, 선원회관운영사업",
     "benefits": [
-      "○ 지원대상에 포함되는 복지사업별 수혜자 지원내용",
-      "한국 선원복지 고용센터 홈페이지에서 안내"
+      "지원대상에 포함되는 복지사업별 수혜자 지원내용",
+      "- 한국 선원복지 고용센터 홈페이지에서 안내"
     ],
     "documents": [
-      "○ 지원대상에 포함되는 복지사업별 수혜 신청 구비서류",
-      "한국 선원복지 고용센터 홈페이지에서 안내"
+      "지원대상에 포함되는 복지사업별 수혜 신청 구비서류",
+      "- 한국 선원복지 고용센터 홈페이지에서 안내"
     ],
-    "apply": "○ 지원대상에 포함되는 복지사업별 수혜 신청절차 및 방법 한국 선원복지 고용센터 홈페이지에서 안내",
+    "apply": "지원대상에 포함되는 복지사업별 수혜 신청절차 및 방법 - 한국 선원복지 고용센터 홈페이지에서 안내",
     "officialUrl": "http://www.koswec.or.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000162",
     "contact": "한국선원복지고용센터 복지사업부/051-996-3645",
@@ -3326,15 +3326,15 @@ export const publicServiceApiPolicies: Policy[] = [
     ],
     "documents": [
       "ㅇ 신청인 제출서류",
-      "지원신청서 및 증빙서류 등",
+      "- 지원신청서 및 증빙서류 등",
       "ㅇ 신청인 미제출서류",
-      "해당없음"
+      "- 해당없음"
     ],
     "apply": "온라인 서류제출",
     "officialUrl": "http://biz.k-seafoodtrade.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000164",
     "contact": "수협중앙회 무역사업단/02-2240-5604",
-    "views": 2414,
+    "views": 2416,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -3390,15 +3390,15 @@ export const publicServiceApiPolicies: Policy[] = [
     ],
     "documents": [
       "ㅇ 신청인 제출서류",
-      "지원신청서 및 증빙서류 등",
+      "- 지원신청서 및 증빙서류 등",
       "ㅇ 신청인 미제출서류",
-      "해당없음"
+      "- 해당없음"
     ],
     "apply": "온라인 서류제출",
     "officialUrl": "http://biz.k-seafoodtrade.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000165",
     "contact": "한국수산회 수출지원팀/02-589-4645",
-    "views": 2057,
+    "views": 2059,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -3459,7 +3459,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000166",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000166",
     "contact": "부산 수산자원연구소/051)209-0931||인천 수산기술지원센터/032)458-7467||울산 해양수산과/052)229-2985||경기 수산자원연구소/031)8008-8356||강원 어업진흥과/033)660-8329||충남 자원연구소/041)635-7862||전북 기술연구소/063)290-6960||전남 해양수산과학원/061)550-0656||경북 어업기술지원과/054)240-0323||경남 수산안전기술원/055)254-3543||제주 수산정책과/064)710-3217",
-    "views": 1948,
+    "views": 1951,
     "updatedAt": "2026.04.24",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -3492,12 +3492,12 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 전문인력 육성 및 국제수산",
+    "amount": "전문인력 육성 및 국제수산",
     "deadline": "별도 공고기한 내",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "전체",
-    "targetGroup": "○ 한국원양산업협회 산하 해외수산협력센터 국제협상전문관",
+    "targetGroup": "한국원양산업협회 산하 해외수산협력센터 국제협상전문관",
     "income": "지원대상과 동일",
     "applyOnline": true,
     "tags": [
@@ -3510,9 +3510,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "협상전문관"
     ],
     "summary": "해외수산자원 확보를 위한 국제수산기구 협상, 수산통상협상(FTA․WTO 등) 등을 지원하는 국제수산전문가 육성 사업",
-    "audience": "○ 한국원양산업협회 산하 해외수산협력센터 국제협상전문관",
+    "audience": "한국원양산업협회 산하 해외수산협력센터 국제협상전문관",
     "benefits": [
-      "○ 전문인력 육성 및 국제수산",
+      "전문인력 육성 및 국제수산",
       "통상 협상 대응 지원"
     ],
     "documents": [
@@ -3522,7 +3522,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000168",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000168",
     "contact": "해양수산부 국제협력총괄과/044-200-5338",
-    "views": 1487,
+    "views": 1491,
     "updatedAt": "2026.04.24",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -3555,13 +3555,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 원양산업 현황, 경영실태 등을 종합적으로 조사하여 원양산업 정책의 기초자료로 활용",
+    "amount": "원양산업 현황, 경영실태 등을 종합적으로 조사하여 원양산업 정책의 기초자료로 활용",
     "deadline": "접수기관 별 상이",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "전체",
-    "targetGroup": "○ (특)한국원양산업협회 소속 해외수산협력센터",
-    "income": "○ (특)한국원양산업협회 소속 해외수산협력센터",
+    "targetGroup": "(특)한국원양산업협회 소속 해외수산협력센터",
+    "income": "(특)한국원양산업협회 소속 해외수산협력센터",
     "applyOnline": true,
     "tags": [
       "창업",
@@ -3572,9 +3572,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "통계조사"
     ],
     "summary": "원양산업 현황, 경영실태 등을 종합적으로 조사하여 원양산업 정책의 기초자료로 활용",
-    "audience": "○ (특)한국원양산업협회 소속 해외수산협력센터",
+    "audience": "(특)한국원양산업협회 소속 해외수산협력센터",
     "benefits": [
-      "○ 원양산업 현황, 경영실태 등을 종합적으로 조사하여 원양산업 정책의 기초자료로 활용"
+      "원양산업 현황, 경영실태 등을 종합적으로 조사하여 원양산업 정책의 기초자료로 활용"
     ],
     "documents": [
       "해당없음"
@@ -3583,7 +3583,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000173",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000173",
     "contact": "해양수산부 원양산업과/051-773-5367",
-    "views": 1604,
+    "views": 1609,
     "updatedAt": "2026.04.22",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -3616,13 +3616,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ 만 40세 미만 어업경영 3년 이하의 수산업 경영인(예정자 포함)에게 월 최대 110만원 지원",
+    "amount": "만 40세 미만 어업경영 3년 이하의 수산업 경영인(예정자 포함)에게 월 최대 110만원 지원",
     "deadline": "40세 미만 어업경영 3년 이하까지 신청",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "청년",
-    "targetGroup": "○ 연령 : 사업 시행연도 기준 18세 이상 ~ 40세 미만",
-    "income": "○ 40세 미만 어업경영 3년 이하의 수산업 경영인(예정자 포함) 중 시",
+    "targetGroup": "연령 : 사업 시행연도 기준 18세 이상 ~ 40세 미만",
+    "income": "40세 미만 어업경영 3년 이하의 수산업 경영인(예정자 포함) 중 시",
     "applyOnline": true,
     "tags": [
       "청년",
@@ -3632,12 +3632,12 @@ export const publicServiceApiPolicies: Policy[] = [
       "청년어촌정착지원"
     ],
     "summary": "창업 초기 청년어업인의 안정적인 어촌 정착을 지원하여 어촌 이탈을 방지하고 우수한 청년인력의 어촌 유치로 어촌 활성화 도모",
-    "audience": "○ 연령 : 사업 시행연도 기준 18세 이상 ~ 40세 미만 ○ 거주지 : 어업경영기반 해당 시군구에 실제 거주(주민등록 포함)",
+    "audience": "연령 : 사업 시행연도 기준 18세 이상 ~ 40세 미만 거주지 : 어업경영기반 해당 시군구에 실제 거주(주민등록 포함)",
     "benefits": [
-      "○ 만 40세 미만 어업경영 3년 이하의 수산업 경영인(예정자 포함)에게 월 최대 110만원 지원",
-      "1년차 : 110만원",
-      "2년차 : 100만원",
-      "3년차 : 90만원"
+      "만 40세 미만 어업경영 3년 이하의 수산업 경영인(예정자 포함)에게 월 최대 110만원 지원",
+      "- 1년차 : 110만원",
+      "- 2년차 : 100만원",
+      "- 3년차 : 90만원"
     ],
     "documents": [
       "청년어촌정착지원 사업신청서, 사업계획서, 개인정보 동의서, 수산업 관련 서류, 가족관계증명서, 수산업 관련 교육 이수증 등"
@@ -3646,7 +3646,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000174",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000174",
     "contact": "귀어귀촌종합센터/1899-9597||해양수산부 어촌어항과/051-773-5662",
-    "views": 3595,
+    "views": 3601,
     "updatedAt": "2026.04.29",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -3679,13 +3679,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "○ (해양문화체험프로그램) 해양영토(바닷길, 해양관련 시설 등) 방문(공모 선정)",
+    "amount": "(해양문화체험프로그램) 해양영토(바닷길, 해양관련 시설 등) 방문(공모 선정)",
     "deadline": "수시",
     "dday": "상시",
     "status": "상시",
     "lifeStage": "청년",
-    "targetGroup": "○ 초, 중, 고등학생 및 대학생, 일반인",
-    "income": "○ 참가신청서를 제출받아 외부전문가 심사(민간위원 5명 내외)를 통해 사업 수혜자를 선정",
+    "targetGroup": "초, 중, 고등학생 및 대학생, 일반인",
+    "income": "참가신청서를 제출받아 외부전문가 심사(민간위원 5명 내외)를 통해 사업 수혜자를 선정",
     "applyOnline": true,
     "tags": [
       "교육",
@@ -3697,9 +3697,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "해양영토"
     ],
     "summary": "해양문화 사업을 추진하여 국민에게 친숙한 해양문화 이미지 확산, 해양의식 제고 및 해양문화 창달에 기여",
-    "audience": "○ 초, 중, 고등학생 및 대학생, 일반인",
+    "audience": "초, 중, 고등학생 및 대학생, 일반인",
     "benefits": [
-      "○ (해양문화체험프로그램) 해양영토(바닷길, 해양관련 시설 등) 방문(공모 선정)"
+      "(해양문화체험프로그램) 해양영토(바닷길, 해양관련 시설 등) 방문(공모 선정)"
     ],
     "documents": [
       "(해양문화나눔) 기초생활수급증명서 등 사회적 배려층 확인 자료",
@@ -3709,7 +3709,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "http://www.ocean.or.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000176",
     "contact": "한국해양재단/02-741-5278",
-    "views": 4639,
+    "views": 4642,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -3762,8 +3762,8 @@ export const publicServiceApiPolicies: Policy[] = [
     "audience": "조건불리지역(도서 및 접경지역)에 거주하는 어업인(어업경영체 등록)",
     "benefits": [
       "연간 어가당 조건불리직불금 80만원 지급",
-      "80%는 어가에 지급",
-      "20%는 마을공동기금으로 적립"
+      "- 80%는 어가에 지급",
+      "- 20%는 마을공동기금으로 적립"
     ],
     "documents": [
       "조건불리지역 지급약정신청서, 공익의무 관련 교육 수료증 외 지자체에서 수급자격요건을 증빙할 수 있는 서류"
@@ -3772,7 +3772,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000191",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000191",
     "contact": "해양수산과 수산직불제팀/051-773-5454",
-    "views": 3440,
+    "views": 3441,
     "updatedAt": "2026.05.13",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -3825,8 +3825,8 @@ export const publicServiceApiPolicies: Policy[] = [
     "benefits": [
       "ㅇ 수산업경영인으로 선정된 사람에게 최대 5억원 융자지원해주고 이자의 일부를 정부에서 지원",
       "(융자금 2~5억원, 연리 1~1.5%, 상환기간 10~20년)",
-      "(어업인후계자) 최대 5억원, 연리 1.5% 또는 변동, 5년 거치 20년 균분상환",
-      "(우수경영인) 추가 2억원, 연리 1%, 5년 거치 10년 균분상환"
+      "-(어업인후계자) 최대 5억원, 연리 1.5% 또는 변동, 5년 거치 20년 균분상환",
+      "-(우수경영인) 추가 2억원, 연리 1%, 5년 거치 10년 균분상환"
     ],
     "documents": [
       "수산업경영인 신청서 및 사업계획서",
@@ -3838,7 +3838,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000192",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000192",
     "contact": "해양수산부 소득복지과/051-773-5464||부산 수산자원연구소/051-209-0934||인천 수산기술지원센터/032-458-7467||울산시청/051-229-3021||경기 해양수산자원연구소/031-8008-8356||강원도청/033-660-8356||충북 내수면연구소/043-200-6502||충남 수산자원연구소/041-635-7857||전북 수산기술연구소/063-290-6947||전남 해양수산과학원/061-550-0651||경북 어업기술센터/054-240-2131||경남 수산안전기술원/055-254-3523||제주도청/064-710-3215",
-    "views": 2880,
+    "views": 2883,
     "updatedAt": "2026.04.24",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -3901,7 +3901,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000193",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000193",
     "contact": "한국해양교통안전공단/044-330-2331",
-    "views": 2259,
+    "views": 2260,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -3934,13 +3934,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "해양수산부",
     "region": "전국",
-    "amount": "□ (지원대상) 공모 후 평가를 통해 선발된 강화된 자원보호 의무를 준수하는 연근해어업인",
+    "amount": "(지원대상) 공모 후 평가를 통해 선발된 강화된 자원보호 의무를 준수하는 연근해어업인",
     "deadline": "2025.10.~12월 중 신청,접수 기간 공고 참조",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "농업인",
-    "targetGroup": "□ 지원 대상",
-    "income": "□ 지급요건",
+    "targetGroup": "지원 대상",
+    "income": "지급요건",
     "applyOnline": true,
     "tags": [
       "농림어업",
@@ -3951,24 +3951,24 @@ export const publicServiceApiPolicies: Policy[] = [
       "직접지불제"
     ],
     "summary": "TAC 중심의 지속가능한 어업으로 생산 방식 전환을 유도하여 국민 공유재인 수산자원 회복 가속화",
-    "audience": "□ 지원 대상 ㅇ 수산자원의 지속가능한 이용을 위하여 휴어 등 강화된 자원보호 의무를 이행하는 어업인등과 「수산업법」제41조에 따라 허가를 받은 「상법」상 회사",
+    "audience": "지원 대상 ㅇ 수산자원의 지속가능한 이용을 위하여 휴어 등 강화된 자원보호 의무를 이행하는 어업인등과 「수산업법」제41조에 따라 허가를 받은 「상법」상 회사",
     "benefits": [
-      "□ (지원대상) 공모 후 평가를 통해 선발된 강화된 자원보호 의무를 준수하는 연근해어업인",
-      "□ (지급요건 등) 총허용어획량 할당 준수를 기본의무로 하고, 선택의무*를 2개 이상 준수토록 함",
-      "어선감척, 휴어, 생분해성 어구 사용, 해양포유류 혼획 저감장치 부착 등",
-      "□ (지원방식) 준수의무 이행에 따른 어업매출 감소 일부 지원"
+      "(지원대상) 공모 후 평가를 통해 선발된 강화된 자원보호 의무를 준수하는 연근해어업인",
+      "(지급요건 등) 총허용어획량 할당 준수를 기본의무로 하고, 선택의무*를 2개 이상 준수토록 함",
+      "* 어선감척, 휴어, 생분해성 어구 사용, 해양포유류 혼획 저감장치 부착 등",
+      "(지원방식) 준수의무 이행에 따른 어업매출 감소 일부 지원"
     ],
     "documents": [
-      "ㅇ 수산자원보호 직불금을 신청하고자 하는 어업인 등은 본인이 직접 작성하여 서명한 수산자원보호 직접지불금 지급대상자 선정신청서(지침 별지 제1호 서식), 수산자원보호 의무 이행계획서 및 증빙자료(지침 별지 제2호 서식)와 필요 구비서류를 해당 어업허가 처분권 소재 시‧도 또는 시‧군‧구에 제출",
+      "ㅇ 수산자원보호 직불금을 신청하고자 하는 어업인 등은 본인이 직접 작성하여 서명한 수산자원보호 직접지불금 지급대상자 선정신청서(지침 별지 제1…",
       "▸ 선정신청서 제출시 구비서류",
       "① 직접지불금 입금 통장 사본",
       "② 수산물 판매 영수증 사본 등 어업 생산실적 증명자료(위판실적 등 확인되는 경우는 제출 불필요)"
     ],
-    "apply": "□ 사업신청 : : 어업허가 처분권 소재 시‧도 또는 시‧군‧구 ▸ 선정신청서 제출시 구비서류",
+    "apply": "사업신청 : : 어업허가 처분권 소재 시‧도 또는 시‧군‧구 ▸ 선정신청서 제출시 구비서류",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000194",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000194",
     "contact": "해양수산부 수산직불제팀/051-773-5454",
-    "views": 2522,
+    "views": 2526,
     "updatedAt": "2026.04.21",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -4033,7 +4033,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000195",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000195",
     "contact": "해양수산부 양식산업과/051-773-5632",
-    "views": 2239,
+    "views": 2241,
     "updatedAt": "2026.04.27",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -4066,12 +4066,12 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "관세청",
     "region": "전국",
-    "amount": "○ 관세청에서 체약상대국의 사후 원산지검증에 대비하여 중소‧중견기업, 소상공인이 원산지관리 능력을 배양할 수 있도록 컨설팅을 신청한 기업에게 자격을 갖춘 민간 컨설턴트를 배정하여 컨설팅 제공(최대 200만원까지 지원)",
+    "amount": "관세청에서 체약상대국의 사후 원산지검증에 대비하여 중소‧중견기업, 소상공인이 원산지관리 능력을 배양할 수 있도록 컨설팅을 신청한 기업에게 자격을 갖춘 민간 컨설턴트를 배정하여 컨설팅 제공(최대 200만원까지 지원)",
     "deadline": "(1차) '25.2.24.~3.7. (2차) '25.7.10.~7.18.",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "사업자",
-    "targetGroup": "○다음 각 호의 어느 하나에 해당하지 않는 중소‧중견기업, 소상공인을 지원 대상함",
+    "targetGroup": "다음 각 호의 어느 하나에 해당하지 않는 중소‧중견기업, 소상공인을 지원 대상함",
     "income": "(1순위) 미국으로 수출하는 모든 중소기업",
     "applyOnline": true,
     "tags": [
@@ -4084,11 +4084,11 @@ export const publicServiceApiPolicies: Policy[] = [
       "지원"
     ],
     "summary": "FTA 체약상대국의 원산지검증에 따른 불이익을 당하지 않도록 사전에 대비하고자 하는 FTA 활용 기업을 대상으로 전문 컨설팅을 제공하는 정부 예산 지원 사업",
-    "audience": "○다음 각 호의 어느 하나에 해당하지 않는 중소‧중견기업, 소상공인을 지원 대상함 1. 「독점규제 및 공정거래에 관한 법률」에서 규정하고 있는 상호출자제한기업집단에 속한 기업",
+    "audience": "다음 각 호의 어느 하나에 해당하지 않는 중소‧중견기업, 소상공인을 지원 대상함 1. 「독점규제 및 공정거래에 관한 법률」에서 규정하고 있는 상호출자제한기업집단에 속한 기업",
     "benefits": [
-      "○ 관세청에서 체약상대국의 사후 원산지검증에 대비하여 중소‧중견기업, 소상공인이 원산지관리 능력을 배양할 수 있도록 컨설팅을 신청한 기업에게 자격을 갖춘 민간 컨설턴트를 배정하여 컨설팅 제공(최대 200만원까지 지원)",
-      "○ 관세청 FTA 포털 참여기업 모집공고(2025.2.13)",
-      "FTA 포털(customs.go.kr/ftaportalkor/main.do) > FTA 기업지원 > 컨설팅 사업 > 2025년 검증 대응 지원사업"
+      "관세청에서 체약상대국의 사후 원산지검증에 대비하여 중소‧중견기업, 소상공인이 원산지관리 능력을 배양할 수 있도록 컨설팅을 신청한 기업에게 자격을 갖춘 민간 컨설턴트를 배정하여 컨설팅 제공(최대 2…",
+      "관세청 FTA 포털 참여기업 모집공고(2025.2.13)",
+      "- FTA 포털(customs.go.kr/ftaportalkor/main.do) > FTA 기업지원 > 컨설팅 사업 > 2025년 검증 대응 지원사업"
     ],
     "documents": [
       "(ⅰ) 사업자등록증 사본 1부",
@@ -4100,7 +4100,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "http://customs.go.kr/ftaportalkor/main.do",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/122000000003",
     "contact": "서울세관 수출입기업지원센터/02-510-1378||부산세관 수출입기업지원센터/051-620-6957||인천세관 수출입기업지원센터/032-452-3639||대구세관 수출입기업지원센터/053-230-5182||광주세관 수출입기업지원센터/062-975-8196||평택세관 통관총괄과/031-8054-7169",
-    "views": 2266,
+    "views": 2268,
     "updatedAt": "2026.02.13",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -4133,13 +4133,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "통일부",
     "region": "전국",
-    "amount": "○ 소득의 30% 이내(10~50만원, 5만원 단위) 중 본인이 계좌개설 시 설정한 저축금액에 대해 정부에서 1:1 매칭 지원",
+    "amount": "소득의 30% 이내(10~50만원, 5만원 단위) 중 본인이 계좌개설 시 설정한 저축금액에 대해 정부에서 1:1 매칭 지원",
     "deadline": "상시신청",
     "dday": "상시",
     "status": "상시",
     "lifeStage": "전체",
-    "targetGroup": "○ 아래 해당 요건 모두 충족하는 북한이탈주민",
-    "income": "○ 아래 해당 요건 모두 충족하는 북한이탈주민",
+    "targetGroup": "아래 해당 요건 모두 충족하는 북한이탈주민",
+    "income": "아래 해당 요건 모두 충족하는 북한이탈주민",
     "applyOnline": true,
     "tags": [
       "주거",
@@ -4151,21 +4151,21 @@ export const publicServiceApiPolicies: Policy[] = [
       "지원"
     ],
     "summary": "북한이탈주민에게 경제활동 동기를 부여하고 북한이탈주민의 우리 사회 안정적 정착을 위한 자산형성 유도",
-    "audience": "○ 아래 해당 요건 모두 충족하는 북한이탈주민 2014년 11월 29일 이후 입국하여 보호 결정을 받은 자",
+    "audience": "아래 해당 요건 모두 충족하는 북한이탈주민 - 2014년 11월 29일 이후 입국하여 보호 결정을 받은 자",
     "benefits": [
-      "○ 소득의 30% 이내(10~50만원, 5만원 단위) 중 본인이 계좌개설 시 설정한 저축금액에 대해 정부에서 1:1 매칭 지원"
+      "소득의 30% 이내(10~50만원, 5만원 단위) 중 본인이 계좌개설 시 설정한 저축금액에 대해 정부에서 1:1 매칭 지원"
     ],
     "documents": [
-      "○ 다음 각호의 서류를 각 1부씩 제출",
-      "주민등록초본",
-      "미래행복통장 지원신청서",
-      "미래행복통장 약정서"
+      "다음 각호의 서류를 각 1부씩 제출",
+      "- 주민등록초본",
+      "- 미래행복통장 지원신청서",
+      "- 미래행복통장 약정서"
     ],
-    "apply": "○ 방문 신청 : 거주지 관할 지역적응센터(하나센터) ○ 가입절차 : 지원대상자로 선정 시 하나은행 방문하여 미래행복통장 계좌 개설",
+    "apply": "방문 신청 : 거주지 관할 지역적응센터(하나센터) 가입절차 : 지원대상자로 선정 시 하나은행 방문하여 미래행복통장 계좌 개설",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/125000000004",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/125000000004",
     "contact": "북한이탈주민지원재단/02-3215-5792",
-    "views": 4246,
+    "views": 4247,
     "updatedAt": "2026.04.23",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -4198,13 +4198,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "통일부",
     "region": "전국",
-    "amount": "○ 북한이탈주민의 보호 및 정착지원에 관한 법률 시행령 제39조에 근거하여 세대 및 세대 구성원의 수에 따라 아래와 같이 지원",
+    "amount": "북한이탈주민의 보호 및 정착지원에 관한 법률 시행령 제39조에 근거하여 세대 및 세대 구성원의 수에 따라 아래와 같이 지원",
     "deadline": "통일부 보호결정시 지급 결정",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "전체",
-    "targetGroup": "○ 통일부 장관의 보호결정을 받은 북한이탈주민",
-    "income": "○ 북한이탈주민 보호대상자 중 정착지원법에 의거한 보호결정에 따른 세대주, 또는 2인 이상 추가 합류 세대원",
+    "targetGroup": "통일부 장관의 보호결정을 받은 북한이탈주민",
+    "income": "북한이탈주민 보호대상자 중 정착지원법에 의거한 보호결정에 따른 세대주, 또는 2인 이상 추가 합류 세대원",
     "applyOnline": true,
     "tags": [
       "주거",
@@ -4216,10 +4216,10 @@ export const publicServiceApiPolicies: Policy[] = [
       "지원(기본금)"
     ],
     "summary": "북한이탈주민의 안정적인 정착 지원",
-    "audience": "○ 통일부 장관의 보호결정을 받은 북한이탈주민 북한이탈주민의 보호 및 정착지원에 관한 법률 제8조제1항에 근거",
+    "audience": "통일부 장관의 보호결정을 받은 북한이탈주민 * 북한이탈주민의 보호 및 정착지원에 관한 법률 제8조제1항에 근거",
     "benefits": [
-      "○ 북한이탈주민의 보호 및 정착지원에 관한 법률 시행령 제39조에 근거하여 세대 및 세대 구성원의 수에 따라 아래와 같이 지원",
-      "1인 세대 기준 1,500만원, 2인 세대 2,400만원, 3인 세대 3,150만원, 4인 세대 3,900만원을 지원하며 세대 합가 시 차액 지급"
+      "북한이탈주민의 보호 및 정착지원에 관한 법률 시행령 제39조에 근거하여 세대 및 세대 구성원의 수에 따라 아래와 같이 지원",
+      "- 1인 세대 기준 1,500만원, 2인 세대 2,400만원, 3인 세대 3,150만원, 4인 세대 3,900만원을 지원하며 세대 합가 시 차액 지급"
     ],
     "documents": [
       "해당없음"
@@ -4228,7 +4228,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/125000000014",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/125000000014",
     "contact": "하나원 교육기획과/031-670-9323||하나원 교육기획과/031-670-9350",
-    "views": 5016,
+    "views": 5018,
     "updatedAt": "2026.01.29",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -4261,13 +4261,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "통일부",
     "region": "전국",
-    "amount": "○ 고령가산금 : 보호 결정 당시 만 60세 이상인 북한이탈주민에게 지원",
+    "amount": "고령가산금 : 보호 결정 당시 만 60세 이상인 북한이탈주민에게 지원",
     "deadline": "접수기관 별 상이",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "전체",
-    "targetGroup": "○ 북한이탈주민의 보호 및 정착 지원에 관한 법률 제8조 제1항에 따른 통일부 장관의 보호 결정을 받은 북한이탈주민",
-    "income": "○ 보호결정 당시 만 60세 이상인 자",
+    "targetGroup": "북한이탈주민의 보호 및 정착 지원에 관한 법률 제8조 제1항에 따른 통일부 장관의 보호 결정을 받은 북한이탈주민",
+    "income": "보호결정 당시 만 60세 이상인 자",
     "applyOnline": true,
     "tags": [
       "주거",
@@ -4279,12 +4279,12 @@ export const publicServiceApiPolicies: Policy[] = [
       "지원(가산금)"
     ],
     "summary": "취약상황에 놓인 북한이탈주민 보호",
-    "audience": "○ 북한이탈주민의 보호 및 정착 지원에 관한 법률 제8조 제1항에 따른 통일부 장관의 보호 결정을 받은 북한이탈주민",
+    "audience": "북한이탈주민의 보호 및 정착 지원에 관한 법률 제8조 제1항에 따른 통일부 장관의 보호 결정을 받은 북한이탈주민",
     "benefits": [
-      "○ 고령가산금 : 보호 결정 당시 만 60세 이상인 북한이탈주민에게 지원",
-      "분기별 50만원씩, 16회 지급으로 총 800만 원",
-      "○ 한부모가정아동보호가산금 : 보호 결정 당시 만13세 미만 보호 아동을 동반한 한 부모 북한이탈주민에게 지원",
-      "분기별 25만원씩, 16회 지급으로 총 400만 원 지급"
+      "고령가산금 : 보호 결정 당시 만 60세 이상인 북한이탈주민에게 지원",
+      "- 분기별 50만원씩, 16회 지급으로 총 800만 원",
+      "한부모가정아동보호가산금 : 보호 결정 당시 만13세 미만 보호 아동을 동반한 한 부모 북한이탈주민에게 지원",
+      "- 분기별 25만원씩, 16회 지급으로 총 400만 원 지급"
     ],
     "documents": [
       "해당없음"
@@ -4293,7 +4293,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/125000000015",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/125000000015",
     "contact": "북한이탈주민정착지원사무소 교육기획과/031-670-9323||북한이탈주민정착지원사무소 교육기획과/031-670-9350||남북하나재단 교육기획부/02-3215-5853",
-    "views": 2339,
+    "views": 2342,
     "updatedAt": "2026.01.29",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -4326,7 +4326,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "법무부",
     "region": "전국",
-    "amount": "○법무부가 변호사 자격자를 법률홈닥터로 채용, 지방자치단체․사회복지협의회 등에 배치하여 기초생활수급자, 장애인, 범죄피해자 등 취약계층을 대상으로 출장, 방문 상담 등 ‘찾아가는 법률서비스’ 제공",
+    "amount": "법무부가 변호사 자격자를 법률홈닥터로 채용, 지방자치단체․사회복지협의회 등에 배치하여 기초생활수급자, 장애인, 범죄피해자 등 취약계층을 대상으로 출장, 방문 상담 등 ‘찾아가는 법률서비스’ 제공",
     "deadline": "접수기관 별 상이",
     "dday": "접수중",
     "status": "모집중",
@@ -4346,17 +4346,17 @@ export const publicServiceApiPolicies: Policy[] = [
     "summary": "취약계층 대상 1차 무료 법률서비스 제공",
     "audience": "기초생활수급자, 장애인, 범죄피해자 등 사회적, 경제적 취약계층",
     "benefits": [
-      "○법무부가 변호사 자격자를 법률홈닥터로 채용, 지방자치단체․사회복지협의회 등에 배치하여 기초생활수급자, 장애인, 범죄피해자 등 취약계층을 대상으로 출장, 방문 상담 등 ‘찾아가는 법률서비스’ 제공",
-      "○기존 법률구조제도의 사각지대에 놓인 취약계층을 대상으로 수요자 중심의 맞춤형 법률상담, 법률문서 작성 조력, 유관기관 연계, 법교육 등 1차 무료 법률서비스 제공"
+      "법무부가 변호사 자격자를 법률홈닥터로 채용, 지방자치단체․사회복지협의회 등에 배치하여 기초생활수급자, 장애인, 범죄피해자 등 취약계층을 대상으로 출장, 방문 상담 등 ‘찾아가는 법률서비스’ 제공",
+      "기존 법률구조제도의 사각지대에 놓인 취약계층을 대상으로 수요자 중심의 맞춤형 법률상담, 법률문서 작성 조력, 유관기관 연계, 법교육 등 1차 무료 법률서비스 제공"
     ],
     "documents": [
       "수급자 증명서, 장애인 등록증, 취약계층별 확인서 등 지원 대상 취약계층에 해당함을 증명할 수 있는 서류"
     ],
-    "apply": "○ 법률홈닥터 홈페이지에서 지역별 법률홈닥터 상담 전화번호 검색 및 해당 기관 전화 예약 후 전화, 방문 상담 ○ 법률홈닥터 홈페이지에서 지역별 법률홈닥터 상담 예약 후 전화, 방문 상담",
+    "apply": "법률홈닥터 홈페이지에서 지역별 법률홈닥터 상담 전화번호 검색 및 해당 기관 전화 예약 후 전화, 방문 상담 법률홈닥터 홈페이지에서 지역별 법률홈닥터 상담 예약 후 전화, 방문 상담",
     "officialUrl": "http://lawhomedoctor.moj.go.kr",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/127000000002",
     "contact": "법무부 인권국 인권구조과/02-2110-3824",
-    "views": 35741,
+    "views": 35743,
     "updatedAt": "2026.05.06",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -4389,12 +4389,12 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "법무부",
     "region": "전국",
-    "amount": "○ 특별공로자 및 우수인재 특별귀화 허가 신청 수수료 면제",
+    "amount": "특별공로자 및 우수인재 특별귀화 허가 신청 수수료 면제",
     "deadline": "상시신청",
     "dday": "상시",
     "status": "상시",
     "lifeStage": "전체",
-    "targetGroup": "○ 국적법 제7조제1항제2호에 따라 귀화허가를 신청하는 경우",
+    "targetGroup": "국적법 제7조제1항제2호에 따라 귀화허가를 신청하는 경우",
     "income": "지원대상과 동일",
     "applyOnline": true,
     "tags": [
@@ -4407,21 +4407,21 @@ export const publicServiceApiPolicies: Policy[] = [
       "우수인재"
     ],
     "summary": "대한민국에 특별한 공로가 있거나 국익에 기여할 것으로 인정되는 우수인재 등에 대한 특별귀화 허가 신청 수수료 면제 안내",
-    "audience": "○ 국적법 제7조제1항제2호에 따라 귀화허가를 신청하는 경우 ○ 국적법 제7조제1항제3호에 따라 귀화허가를 신청하는 경우",
+    "audience": "국적법 제7조제1항제2호에 따라 귀화허가를 신청하는 경우 국적법 제7조제1항제3호에 따라 귀화허가를 신청하는 경우",
     "benefits": [
-      "○ 특별공로자 및 우수인재 특별귀화 허가 신청 수수료 면제",
-      "국적법 제7조제1항제2호에 따라 귀화허가를 신청하는 경우",
-      "국적법 제7조제1항제3호에 따라 귀화허가를 신청하는 경우"
+      "특별공로자 및 우수인재 특별귀화 허가 신청 수수료 면제",
+      "- 국적법 제7조제1항제2호에 따라 귀화허가를 신청하는 경우",
+      "- 국적법 제7조제1항제3호에 따라 귀화허가를 신청하는 경우"
     ],
     "documents": [
-      "○국적법 제7조제1항제2호에 해당함을 소명하는 서류",
-      "○국적법 제7조제1항제3호에 해당함을 소명하는 서류"
+      "국적법 제7조제1항제2호에 해당함을 소명하는 서류",
+      "국적법 제7조제1항제3호에 해당함을 소명하는 서류"
     ],
     "apply": "주소지를 관할하는 지방출입국 외국인관서에 귀화허가 신청시 국적법 제7조제1항제2호, 제3호에 해당하는 사실을 증명하는 서류를 첨부하여 신청",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/127000000022",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/127000000022",
     "contact": "외국인종합안내센터/1345",
-    "views": 2092,
+    "views": 2093,
     "updatedAt": "2026.04.28",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -4454,12 +4454,12 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "법무부",
     "region": "전국",
-    "amount": "○ 귀화허가, 국적회복 허가 및 국적업무 증명서 발급 신청 수수료 면제",
+    "amount": "귀화허가, 국적회복 허가 및 국적업무 증명서 발급 신청 수수료 면제",
     "deadline": "상시신청",
     "dday": "상시",
     "status": "상시",
     "lifeStage": "취약계층",
-    "targetGroup": "○ 국적법 제7조제1항제2호에 따른 특별공로자 본인 또는 그 배우자나 직계존비속이 법 제9조에 따라 국적회복허가를 신청하는 경우",
+    "targetGroup": "국적법 제7조제1항제2호에 따른 특별공로자 본인 또는 그 배우자나 직계존비속이 법 제9조에 따라 국적회복허가를 신청하는 경우",
     "income": "지원대상과 동일",
     "applyOnline": true,
     "tags": [
@@ -4472,9 +4472,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "신청"
     ],
     "summary": "귀화허가, 국적회복 허가 신청자 및 국적업무 증명서 발급 신청자 중 인도적 사유 등을 고려하여 수수료 면제가 필요하다고 인정되는 경우에 대한 안내",
-    "audience": "○ 국적법 제7조제1항제2호에 따른 특별공로자 본인 또는 그 배우자나 직계존비속이 법 제9조에 따라 국적회복허가를 신청하는 경우 ○ 국적법 제7조제1항제2호에 따른 특별공로자 본인의 직계존비속의 배우자로 법 제6조에 따른 간이귀화나 법 제9조에 따른 국적회복허가를 신청하는 경우",
+    "audience": "국적법 제7조제1항제2호에 따른 특별공로자 본인 또는 그 배우자나 직계존비속이 법 제9조에 따라 국적회복허가를 신청하는 경우 국적법 제7조제1항제2호에 따른 특별공로자 본인의 직계존비속의 배우자로 법 제6조에 따른 간이귀화나 법 제9조에 따른 국적회복허가를 신청하는 경우",
     "benefits": [
-      "○ 귀화허가, 국적회복 허가 및 국적업무 증명서 발급 신청 수수료 면제"
+      "귀화허가, 국적회복 허가 및 국적업무 증명서 발급 신청 수수료 면제"
     ],
     "documents": [
       "수수료 면제 대상임을 소명하는 자료"
@@ -4483,7 +4483,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/127000000023",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/127000000023",
     "contact": "외국인종합안내센터/1345",
-    "views": 14272,
+    "views": 14274,
     "updatedAt": "2026.04.28",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -4516,13 +4516,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "법무부",
     "region": "전국",
-    "amount": "○ 피해자 사전평가 : 진술조력인은 조사 또는 증언 전 피해자와 면담을 거쳐 피해자의 심리상태, 의사소통 능력 등을 파악함.",
+    "amount": "피해자 사전평가 : 진술조력인은 조사 또는 증언 전 피해자와 면담을 거쳐 피해자의 심리상태, 의사소통 능력 등을 파악함.",
     "deadline": "접수기관 별 상이",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "임신·출산·육아",
-    "targetGroup": "○ 지원대상 : 성폭력･아동학대･인신매매등범죄 피해자중 만 19세 미만 아동이거나 범죄 피해자인 장애인(장애 의심이 되는 경우에도 지원)",
-    "income": "○ 성폭력･아동학대･인신매매등범죄 피해자 중 만 19세 미만 아동, 신체적 또는 정신적인 장애로 의사소통에 어려움이 있는 장애인(또는 장애 의심)범죄 피해자",
+    "targetGroup": "지원대상 : 성폭력･아동학대･인신매매등범죄 피해자중 만 19세 미만 아동이거나 범죄 피해자인 장애인(장애 의심이 되는 경우에도 지원)",
+    "income": "성폭력･아동학대･인신매매등범죄 피해자 중 만 19세 미만 아동, 신체적 또는 정신적인 장애로 의사소통에 어려움이 있는 장애인(또는 장애 의심)범죄 피해자",
     "applyOnline": true,
     "tags": [
       "복지",
@@ -4534,21 +4534,21 @@ export const publicServiceApiPolicies: Policy[] = [
       "인신매매등범죄의"
     ],
     "summary": "성폭력･아동학대･인신매매등 범죄 피해자 중 만 19세 미만의 아동 및 범죄 피해자인 장애인의 수사･재판과정에서 의사소통을 중개･보조함으로써 2차 피해 방지 및 권익 보호",
-    "audience": "○ 지원대상 : 성폭력･아동학대･인신매매등범죄 피해자중 만 19세 미만 아동이거나 범죄 피해자인 장애인(장애 의심이 되는 경우에도 지원) ○ 연령기준 : 아동(만19세미만), 장애인 (제한없음)",
+    "audience": "지원대상 : 성폭력･아동학대･인신매매등범죄 피해자중 만 19세 미만 아동이거나 범죄 피해자인 장애인(장애 의심이 되는 경우에도 지원) 연령기준 : 아동(만19세미만), 장애인 (제한없음)",
     "benefits": [
-      "○ 피해자 사전평가 : 진술조력인은 조사 또는 증언 전 피해자와 면담을 거쳐 피해자의 심리상태, 의사소통 능력 등을 파악함.",
-      "○ 조사 또는 증언방법 논의 : 수사기관 또는 법원에 피해자의 심리상태, 의사소통능력 등에 대하여 전달하여 피해자의 현상태와 수준에 맞는 맞춤형 질문이 이루어 질 수 있도록 함.",
-      "○ 의사소통 중개 : 진술 조력인은 조사 또는 증언시 피해자의 옆에서 피해자가 심리적 안정감을 가지고 편안하게 진술할 수 있도록 도움을 주고, 피해자가 질문 내용을 이해하지 못하거나 진술하는데 어려움이 있는 경우 피해자가 쉬운 질문을 이해하고 진술할 수 있도록 진술 조력인이 의사소통을 중개",
+      "피해자 사전평가 : 진술조력인은 조사 또는 증언 전 피해자와 면담을 거쳐 피해자의 심리상태, 의사소통 능력 등을 파악함.",
+      "조사 또는 증언방법 논의 : 수사기관 또는 법원에 피해자의 심리상태, 의사소통능력 등에 대하여 전달하여 피해자의 현상태와 수준에 맞는 맞춤형 질문이 이루어 질 수 있도록 함.",
+      "의사소통 중개 : 진술 조력인은 조사 또는 증언시 피해자의 옆에서 피해자가 심리적 안정감을 가지고 편안하게 진술할 수 있도록 도움을 주고, 피해자가 질문 내용을 이해하지 못하거나 진술하는데 어려움…",
       "보조함."
     ],
     "documents": [
       "해당없음"
     ],
-    "apply": "○ 신청권자 : 피해자 본인, 피해자의 법정대리인 또는 변호사 ○ 신청방법 : 경찰서, 검찰청 등 수사기관이나 법원에 구두 또는 서면 신청",
+    "apply": "신청권자 : 피해자 본인, 피해자의 법정대리인 또는 변호사 신청방법 : 경찰서, 검찰청 등 수사기관이나 법원에 구두 또는 서면 신청",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/127000000025",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/127000000025",
     "contact": "법무부 인권국 여성아동인권과/02-2110-3140",
-    "views": 2205,
+    "views": 2206,
     "updatedAt": "2026.05.04",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -4581,13 +4581,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "법무부",
     "region": "전국",
-    "amount": "○ 성폭력･아동학대･장애인학대･인신매매 및 스토킹범죄 피해자에게 국선변호사를 선정, 사건 초기부터 수사, 재판에 이르는 형사절차 전 과정에서 전문적인 법률조력 제공",
+    "amount": "성폭력･아동학대･장애인학대･인신매매 및 스토킹범죄 피해자에게 국선변호사를 선정, 사건 초기부터 수사, 재판에 이르는 형사절차 전 과정에서 전문적인 법률조력 제공",
     "deadline": "사실심 변론종결 전까지, 다만 범죄행위자가 불기소된 경우 그 불기소 처분에 대한 불복절차가 기각 결정으로 최종 종결되기 전까지",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "임신·출산·육아",
-    "targetGroup": "○ 성폭력･아동학대･장애인학대･인신매매･스토킹범죄 피해자 및 성매매 피해아동･청소년",
-    "income": "○ 성폭력･아동학대･장애인학대･인신매매･스토킹범죄 피해자 및 성매매 피해아동･청소년에게 변호사가 없는 경우",
+    "targetGroup": "성폭력･아동학대･장애인학대･인신매매･스토킹범죄 피해자 및 성매매 피해아동･청소년",
+    "income": "성폭력･아동학대･장애인학대･인신매매･스토킹범죄 피해자 및 성매매 피해아동･청소년에게 변호사가 없는 경우",
     "applyOnline": true,
     "tags": [
       "복지",
@@ -4599,9 +4599,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "장애인학대,인신매매"
     ],
     "summary": "성폭력･아동학대･장애인학대･인신매매 및 스토킹범죄 피해자에게 국선변호사를 선정, 사건 초기부터 수사, 재판에 이르는 형사절차 전 과정에서 전문적인 법률조력 지원",
-    "audience": "○ 성폭력･아동학대･장애인학대･인신매매･스토킹범죄 피해자 및 성매매 피해아동･청소년",
+    "audience": "성폭력･아동학대･장애인학대･인신매매･스토킹범죄 피해자 및 성매매 피해아동･청소년",
     "benefits": [
-      "○ 성폭력･아동학대･장애인학대･인신매매 및 스토킹범죄 피해자에게 국선변호사를 선정, 사건 초기부터 수사, 재판에 이르는 형사절차 전 과정에서 전문적인 법률조력 제공"
+      "성폭력･아동학대･장애인학대･인신매매 및 스토킹범죄 피해자에게 국선변호사를 선정, 사건 초기부터 수사, 재판에 이르는 형사절차 전 과정에서 전문적인 법률조력 제공"
     ],
     "documents": [
       "해당없음"
@@ -4643,12 +4643,12 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "법무부",
     "region": "전국",
-    "amount": "○ 소년원 무의탁 출원생 등 소외계층 청소년에게 그룹홈(Gruoup Home) 형태의 생활공간을 제공하여 무료숙식, 대학진학, 직업교육, 취업알선 등 성공적 사회정착 지원",
+    "amount": "소년원 무의탁 출원생 등 소외계층 청소년에게 그룹홈(Gruoup Home) 형태의 생활공간을 제공하여 무료숙식, 대학진학, 직업교육, 취업알선 등 성공적 사회정착 지원",
     "deadline": "접수기관 별 상이",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "전체",
-    "targetGroup": "○ 소년원 출원생, 보호관찰 대상자 등 소외계층 청소년",
+    "targetGroup": "소년원 출원생, 보호관찰 대상자 등 소외계층 청소년",
     "income": "지원대상과 동일(만 12세 ~ 만 24세)",
     "applyOnline": true,
     "tags": [
@@ -4661,21 +4661,21 @@ export const publicServiceApiPolicies: Policy[] = [
       "등"
     ],
     "summary": "소년원 출원생, 보호관찰 대상자 등 소외계층 청소년을 대상으로 숙식제공, 취업알선, 학업연계 등 사회적응 및 자립지원",
-    "audience": "○ 소년원 출원생, 보호관찰 대상자 등 소외계층 청소년",
+    "audience": "소년원 출원생, 보호관찰 대상자 등 소외계층 청소년",
     "benefits": [
-      "○ 소년원 무의탁 출원생 등 소외계층 청소년에게 그룹홈(Gruoup Home) 형태의 생활공간을 제공하여 무료숙식, 대학진학, 직업교육, 취업알선 등 성공적 사회정착 지원"
+      "소년원 무의탁 출원생 등 소외계층 청소년에게 그룹홈(Gruoup Home) 형태의 생활공간을 제공하여 무료숙식, 대학진학, 직업교육, 취업알선 등 성공적 사회정착 지원"
     ],
     "documents": [
-      "○ 제출서류",
-      "입주(이용)신청서",
-      "주민등록등본",
-      "보건소 건강진단서 1부(소년원 건강검진표 가능)"
+      "제출서류",
+      "- 입주(이용)신청서",
+      "- 주민등록등본",
+      "- 보건소 건강진단서 1부(소년원 건강검진표 가능)"
     ],
     "apply": "방문(강원, 대구, 대전, 의왕, 안양, 광주, 부산, 전북청소년자립생활관 및 화성, 안산청소년창업비전센터), 우편, 전화, FAX, 이메일",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/127000000037",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/127000000037",
     "contact": "(재)한국소년보호협회 보호사업팀/02-323-2770",
-    "views": 2829,
+    "views": 2832,
     "updatedAt": "2026.04.30",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -4708,12 +4708,12 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "대검찰청",
     "region": "전국",
-    "amount": "○ 범죄피해자의 피해정도 및 보호, 지원의 필요성에 등에 따라 상담, 의료제공, 구조금지급, 법률구조, 취업관련 지원, 주거지원 등 구조 방안 마련",
+    "amount": "범죄피해자의 피해정도 및 보호, 지원의 필요성에 등에 따라 상담, 의료제공, 구조금지급, 법률구조, 취업관련 지원, 주거지원 등 구조 방안 마련",
     "deadline": "접수기관 별 상이",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "전체",
-    "targetGroup": "○ 타인의 범죄행위로 피해를 당한 사람과 그 배우자, 직계친족, 형제자매 등",
+    "targetGroup": "타인의 범죄행위로 피해를 당한 사람과 그 배우자, 직계친족, 형제자매 등",
     "income": "대한민국의 영역 안에서 또는 대한민국의 영역 밖에 있는 대한민국의 선박이나 항공기 안에서 행하여진 사람의 생명 또는 신체를 해치는 죄에 해당하는 행위로 인하여 사망하거나 장해 또는 중상해를 입은 자",
     "applyOnline": true,
     "tags": [
@@ -4726,12 +4726,12 @@ export const publicServiceApiPolicies: Policy[] = [
       "구조금"
     ],
     "summary": "범죄피해자 보호 지원",
-    "audience": "○ 타인의 범죄행위로 피해를 당한 사람과 그 배우자, 직계친족, 형제자매 등",
+    "audience": "타인의 범죄행위로 피해를 당한 사람과 그 배우자, 직계친족, 형제자매 등",
     "benefits": [
-      "○ 범죄피해자의 피해정도 및 보호, 지원의 필요성에 등에 따라 상담, 의료제공, 구조금지급, 법률구조, 취업관련 지원, 주거지원 등 구조 방안 마련"
+      "범죄피해자의 피해정도 및 보호, 지원의 필요성에 등에 따라 상담, 의료제공, 구조금지급, 법률구조, 취업관련 지원, 주거지원 등 구조 방안 마련"
     ],
     "documents": [
-      "○ 구조금 유형별 상이(각 신청서 양식 참조)"
+      "구조금 유형별 상이(각 신청서 양식 참조)"
     ],
     "apply": "방문 또는 온라인신청",
     "officialUrl": "http://www.kics.go.kr",
@@ -4770,13 +4770,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "대검찰청",
     "region": "전국",
-    "amount": "○ 보복의 우려로 인한 거주지 이전의 경우 이사비용을 지원",
+    "amount": "보복의 우려로 인한 거주지 이전의 경우 이사비용을 지원",
     "deadline": "접수기관 별 상이",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "전체",
-    "targetGroup": "○ 범죄피해자나 중대범죄 신고자 또는 그 친족 등",
-    "income": "○ 신변보호 조치의 일환으로 범죄피해자 등이 보복을 당할 우려가 있어 이사를 하였거나 이사를 하고자 하는 경우",
+    "targetGroup": "범죄피해자나 중대범죄 신고자 또는 그 친족 등",
+    "income": "신변보호 조치의 일환으로 범죄피해자 등이 보복을 당할 우려가 있어 이사를 하였거나 이사를 하고자 하는 경우",
     "applyOnline": true,
     "tags": [
       "복지",
@@ -4787,9 +4787,9 @@ export const publicServiceApiPolicies: Policy[] = [
       "지원"
     ],
     "summary": "범죄피해자 보호 지원",
-    "audience": "○ 범죄피해자나 중대범죄 신고자 또는 그 친족 등",
+    "audience": "범죄피해자나 중대범죄 신고자 또는 그 친족 등",
     "benefits": [
-      "○ 보복의 우려로 인한 거주지 이전의 경우 이사비용을 지원"
+      "보복의 우려로 인한 거주지 이전의 경우 이사비용을 지원"
     ],
     "documents": [
       "해당없음"
@@ -4798,7 +4798,7 @@ export const publicServiceApiPolicies: Policy[] = [
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/128000000002",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/128000000002",
     "contact": "검찰청 피해자지원실/1577-2584",
-    "views": 2406,
+    "views": 2408,
     "updatedAt": "2026.05.07",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -4831,13 +4831,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "대검찰청",
     "region": "전국",
-    "amount": "○ 범죄로 인해 피해를 당한 피해자에게 치료비, 심리치료비, 생계비, 학자금, 장례비, 긴급생활안정비 등 경제적 지원",
+    "amount": "범죄로 인해 피해를 당한 피해자에게 치료비, 심리치료비, 생계비, 학자금, 장례비, 긴급생활안정비 등 경제적 지원",
     "deadline": "접수기관 별 상이",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "전체",
-    "targetGroup": "○ 범죄행위로 피해를 당한 피해자 본인, 그 배우자, 직계친족 및 4촌 이내의 친족",
-    "income": "○ 범죄피해자에 대한 경제적 지원 업무처리지침 제3조에 해당하는 경우",
+    "targetGroup": "범죄행위로 피해를 당한 피해자 본인, 그 배우자, 직계친족 및 4촌 이내의 친족",
+    "income": "범죄피해자에 대한 경제적 지원 업무처리지침 제3조에 해당하는 경우",
     "applyOnline": true,
     "tags": [
       "복지",
@@ -4849,13 +4849,13 @@ export const publicServiceApiPolicies: Policy[] = [
       "경제적"
     ],
     "summary": "범죄피해자 보호 지원",
-    "audience": "○ 범죄행위로 피해를 당한 피해자 본인, 그 배우자, 직계친족 및 4촌 이내의 친족",
+    "audience": "범죄행위로 피해를 당한 피해자 본인, 그 배우자, 직계친족 및 4촌 이내의 친족",
     "benefits": [
-      "○ 범죄로 인해 피해를 당한 피해자에게 치료비, 심리치료비, 생계비, 학자금, 장례비, 긴급생활안정비 등 경제적 지원"
+      "범죄로 인해 피해를 당한 피해자에게 치료비, 심리치료비, 생계비, 학자금, 장례비, 긴급생활안정비 등 경제적 지원"
     ],
     "documents": [
       "1. 주민등록증 사본 등 신분증명서류",
-      "2. 피해자 본인이 아닌 다른 사람이 신청하는 경우에는 피해자와의 친족관계를 증명할 수 있는 가족관계 증명서 또는 대리인임을 증명할 수 있는 서류(위임장 등)",
+      "2. 피해자 본인이 아닌 다른 사람이 신청하는 경우에는 피해자와의 친족관계를 증명할 수 있는 가족관계 증명서 또는 대리인임을 증명할 수 있는 …",
       "3. 통장사본",
       "4. 그밖에 검찰이 경제적 지원을 위하여 특히 필요하다고 인정하는 서류"
     ],
@@ -4896,13 +4896,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "대검찰청",
     "region": "전국",
-    "amount": "○ 「범죄수익은닉의 규제 및 처벌 등에 관한 법률」 제13조, 「범죄수익은닉의 규제 및 처벌 등에 관한 법률 시행령」에 따른 몰수 대상 재산이 몰수",
+    "amount": "「범죄수익은닉의 규제 및 처벌 등에 관한 법률」 제13조, 「범죄수익은닉의 규제 및 처벌 등에 관한 법률 시행령」에 따른 몰수 대상 재산이 몰수",
     "deadline": "접수기관 별 상이",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "전체",
-    "targetGroup": "○ 「범죄수익은닉의 규제 및 처벌 등에 관한 법률」 제13조, 「범죄수익은닉의 규제 및 처벌 등에 관한 법률 시행령」에 따른 몰수 대상 재산이 몰수",
-    "income": "○「범죄수익은닉의 규제 및 처벌 등에 관한 법률」 제13조, 「범죄수익은닉의 규제 및 처벌 등에 관한 법률 시행령」 제2조에 따라 범죄행위에 대하여 수사의 단서를 제공한 경우, 몰수대상재산이나 은닉재산을 신고하거나 그 재산의 소재를 확인할 수 있는 중요한 정보를 제공한 경우",
+    "targetGroup": "「범죄수익은닉의 규제 및 처벌 등에 관한 법률」 제13조, 「범죄수익은닉의 규제 및 처벌 등에 관한 법률 시행령」에 따른 몰수 대상 재산이 몰수",
+    "income": "「범죄수익은닉의 규제 및 처벌 등에 관한 법률」 제13조, 「범죄수익은닉의 규제 및 처벌 등에 관한 법률 시행령」 제2조에 따라 범죄행위에 대하여 수사의 단서를 제공한 경우, 몰수대상재산이나 은닉재산을 신고하거나 …",
     "applyOnline": true,
     "tags": [
       "복지",
@@ -4914,22 +4914,22 @@ export const publicServiceApiPolicies: Policy[] = [
       "지급"
     ],
     "summary": "「범죄수익은닉의 규제 및 처벌 등에 관한 법률」 제13조, 「범죄수익은닉의 규제 및 처벌 등에 관한 법률 시행령」에 따른 몰수 대상 재산이 몰수",
-    "audience": "○ 「범죄수익은닉의 규제 및 처벌 등에 관한 법률」 제13조, 「범죄수익은닉의 규제 및 처벌 등에 관한 법률 시행령」에 따른 몰수 대상 재산이 몰수 추징되어 국고에 귀속된 경우에 수사기관에 신고한 자 또는 몰수",
+    "audience": "「범죄수익은닉의 규제 및 처벌 등에 관한 법률」 제13조, 「범죄수익은닉의 규제 및 처벌 등에 관한 법률 시행령」에 따른 몰수 대상 재산이 몰수 추징되어 국고에 귀속된 경우에 수사기관에 신고한 자 또는 몰수",
     "benefits": [
-      "○ 「범죄수익은닉의 규제 및 처벌 등에 관한 법률」 제13조, 「범죄수익은닉의 규제 및 처벌 등에 관한 법률 시행령」에 따른 몰수 대상 재산이 몰수",
+      "「범죄수익은닉의 규제 및 처벌 등에 관한 법률」 제13조, 「범죄수익은닉의 규제 및 처벌 등에 관한 법률 시행령」에 따른 몰수 대상 재산이 몰수",
       "추징되어 국고에 귀속된 경우에 수사기관에 신고한 자 또는 몰수",
-      "추징에 공로가 있는 자에 대하여 포상금지급심의위원회의 포상금 지급 결정에 따라 일반인은 500만 원~1억 원의 포상금을 지급하고 범죄수익은닉규제법 제13조제1항 단서에 해당하는 공무원 또는 금융회사 등에 종사하는 사람은 50만 원~1천만 원의 포상금을 지급"
+      "추징에 공로가 있는 자에 대하여 포상금지급심의위원회의 포상금 지급 결정에 따라 일반인은 500만 원~1억 원의 포상금을 지급하고 범죄수익은닉규제법 제13조제1항 단서에 해당하는 공무원 또는 금융회…"
     ],
     "documents": [
-      "○ 신청인 제출서류",
-      "범죄수익환수 포상금 지급 신청서 (범죄수익 환수포상금 지급사무 운영규정[법무부 훈령] 별지1호 서식)",
-      "기타 공로를 증빙할 수 있는 서류 일체"
+      "신청인 제출서류",
+      "- 범죄수익환수 포상금 지급 신청서 (범죄수익 환수포상금 지급사무 운영규정[법무부 훈령] 별지1호 서식)",
+      "- 기타 공로를 증빙할 수 있는 서류 일체"
     ],
-    "apply": "○ 포상금의 지급신청을 하고자 하는 자는 범죄수익 환수포상금 지급사무 운영규정 별지 제1호서식의 포상금 지급신청서를 관할 지방검찰청 검사장(지청장을 포함)에게 제출 ○ 포상금지급결정에 따른 포상금 지급결정서는 검찰총장을 거쳐 해당 지방검찰청 검사장에게 송부하고 지방검찰청 검사장은 신청인에게 지급 결정 사실을 통보, 포상금은 해당 지방검찰청 검사장이 신청인에게 지급, 익명으로 포상금지급결정이 된 경우에는 신청검사가 수령하여 대상자에게 지급",
+    "apply": "포상금의 지급신청을 하고자 하는 자는 범죄수익 환수포상금 지급사무 운영규정 별지 제1호서식의 포상금 지급신청서를 관할 지방검찰청 검사장(지청장을 포함)에게 제출 포상금지급결정에 따른 포상금 지급결정서는 검찰총장을 거쳐 해당 지방검찰청 검사장에게 송부하고 지방검찰청 검사장은 신청인에게 지급 결정 사실을 통보, 포상금은 해당 지방검찰청 검사장이 신청인에게 지급, 익명으로 포상금지급결정이 된 경…",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/128000000004",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/128000000004",
     "contact": "대검찰청 마약·조직범죄부 범죄수익환수과/02-3480-2601",
-    "views": 2587,
+    "views": 2590,
     "updatedAt": "2026.01.27",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -4962,13 +4962,13 @@ export const publicServiceApiPolicies: Policy[] = [
     "source": "정부24 공공서비스 API",
     "agency": "국방부",
     "region": "전국",
-    "amount": "○ 복무기간, 공무상 재해 및 사망 여부 등 자격 및 신청조건에 따라 지급되는 급여 및 지급액 상이",
+    "amount": "복무기간, 공무상 재해 및 사망 여부 등 자격 및 신청조건에 따라 지급되는 급여 및 지급액 상이",
     "deadline": "급여의 사유가 발생한 날로부터 5년 이내(2012. 7. 1. 이후 군인사법 제54조의4 제1항에 따라 전공사상심사위원회의 재심사를 통하여 순직으로 인정된 경우에는 순직 결정일로부터 5년 이내)",
     "dday": "접수중",
     "status": "모집중",
     "lifeStage": "임신·출산·육아",
-    "targetGroup": "○ 부사관 이상의 현역 군인(단, 지원에 의하지 아니하고 임용된 부사관은 제외)의 유족",
-    "income": "○ 군인 또는 군인이었던 사람이 다음의 어느 하나에 해당하는 경우 그 유족에게 지급",
+    "targetGroup": "부사관 이상의 현역 군인(단, 지원에 의하지 아니하고 임용된 부사관은 제외)의 유족",
+    "income": "군인 또는 군인이었던 사람이 다음의 어느 하나에 해당하는 경우 그 유족에게 지급",
     "applyOnline": true,
     "tags": [
       "복지",
@@ -4980,21 +4980,21 @@ export const publicServiceApiPolicies: Policy[] = [
       "유족급여"
     ],
     "summary": "군인의 공무로 인해 사망한 경우에 대하여 적합한 보상을 함으로써 그 유족의 생활 안정과 복리 향상에 이바지하기 위해 군인 재해보상 유족급여를 지급",
-    "audience": "○ 부사관 이상의 현역 군인(단, 지원에 의하지 아니하고 임용된 부사관은 제외)의 유족 유족 : 군인연금법 제3조 제1항 제4호에 해당하는 배우자, 자녀, 부모, 손자녀, 조부모",
+    "audience": "부사관 이상의 현역 군인(단, 지원에 의하지 아니하고 임용된 부사관은 제외)의 유족 - 유족 : 군인연금법 제3조 제1항 제4호에 해당하는 배우자, 자녀, 부모, 손자녀, 조부모",
     "benefits": [
-      "○ 복무기간, 공무상 재해 및 사망 여부 등 자격 및 신청조건에 따라 지급되는 급여 및 지급액 상이",
-      "상이유족연금, 순직유족연금, 순직유족연금일시금 지급"
+      "복무기간, 공무상 재해 및 사망 여부 등 자격 및 신청조건에 따라 지급되는 급여 및 지급액 상이",
+      "- 상이유족연금, 순직유족연금, 순직유족연금일시금 지급"
     ],
     "documents": [
-      "○신청인 제출서류",
-      "상이/순직유족급여 청구서(군인 재해보상법 시행규칙 별지 제2호서식), 기본증명서 또는 사망진단서, 가족관계증명서, 혼인관계증명서, 실명확인통장 사본 등",
-      "세부내용은 청구서의 첨부서류 참조"
+      "신청인 제출서류",
+      "- 상이/순직유족급여 청구서(군인 재해보상법 시행규칙 별지 제2호서식), 기본증명서 또는 사망진단서, 가족관계증명서, 혼인관계증명서, 실명확인…",
+      "* 세부내용은 청구서의 첨부서류 참조"
     ],
-    "apply": "○ 방문 및 우편(군 소속부대 또는 국군재정관리단) 방문 : 서울특별시 용산구 회나무로 4(이태원2동) 국군재정관리단 퇴직연금과",
+    "apply": "방문 및 우편(군 소속부대 또는 국군재정관리단) - 방문 : 서울특별시 용산구 회나무로 4(이태원2동) 국군재정관리단 퇴직연금과",
     "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/129000000007",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/129000000007",
     "contact": "국군재정관리단 순직유족연금담당/02-3146-6487",
-    "views": 3609,
+    "views": 3610,
     "updatedAt": "2026.05.11",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",
@@ -5052,14 +5052,14 @@ export const publicServiceApiPolicies: Policy[] = [
     "documents": [
       "1. 온라인 신청 불가",
       "2. 우편(등기) 및 방문 신청",
-      "신청 서식: 특수임무수행자 보상에 관한 법률",
+      "* 신청 서식: 특수임무수행자 보상에 관한 법률",
       "동법 시행령 별지 참조"
     ],
-    "apply": "ㅇ 보상금 등 지급신청 접수 종료(★) 「특수임무수행자 보상에 관한 법률」제10조 제2항에는 보상신청 기간 (2025. 4. 1. ∼ 2026. 3. 31.)을 법률적으로 명시하고 있으며, 현재는 보상신청 기간이 경과되어 접수가 제한됨을 알려드립니다.",
+    "apply": "ㅇ 보상금 등 지급신청 접수 종료(★) - 「특수임무수행자 보상에 관한 법률」제10조 제2항에는 보상신청 기간 (2025. 4. 1. ∼ 2026. 3. 31.)을 법률적으로 명시하고 있으며, 현재는 보상신청 기간이 경과되어 접수가 제한됨을 알려드립니다.",
     "officialUrl": "https://new.mnd.go.kr/user/indexMain.action?siteId=smc",
     "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/129000000008",
     "contact": "특수임무수행자 보상심의위원회(특수임무수행자 보상지원단)/02-3476-8010||특수임무수행자 보상심의위원회(특수임무수행자 보상지원단)/02-748-7143",
-    "views": 5922,
+    "views": 5924,
     "updatedAt": "2026.04.23",
     "matchReasons": [
       "정부24 공공서비스 API 연동 정보",

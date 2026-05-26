@@ -21,8 +21,28 @@ function cleanLines(value = "", max = 5) {
     .slice(0, max);
 }
 
+function sanitizeDisplay(value = "", maxLength = 160) {
+  const cleaned = text(value)
+    .replace(/<[^>]+>/g, " ")
+    .replace(/[○●■□▶※❍ㆍ•·]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (!cleaned) return "";
+  return cleaned.length > maxLength ? `${cleaned.slice(0, maxLength - 1)}…` : cleaned;
+}
+
+function displayLines(value = "", max = 4, maxLength = 120) {
+  return text(value)
+    .replace(/<[^>]+>/g, "\n")
+    .split(/\n|[○●■□▶※❍ㆍ•·]+|(?:\s{2,})/)
+    .map((line) => sanitizeDisplay(line, maxLength))
+    .filter(Boolean)
+    .slice(0, max);
+}
+
 function firstLine(value = "", fallback = "") {
-  return cleanLines(value, 1)[0] || fallback;
+  return displayLines(value, 1, 120)[0] || fallback;
 }
 
 function slugify(value, fallback) {
@@ -108,11 +128,11 @@ function policyFromPublicService(record, detail, index) {
     income: criteria ? firstLine(criteria, "서비스별 선정기준 확인") : "서비스별 소득·자격 기준 확인",
     applyOnline: Boolean(text(merged["온라인신청사이트URL"] || merged["상세조회URL"])),
     tags: [...new Set([category, "정부24", text(merged["지원유형"]), text(merged["서비스분야"]), ...title.split(/\s+/).slice(0, 3)].filter(Boolean))],
-    summary,
-    audience: cleanLines(support, 2).join(" ") || "공식 상세 페이지의 지원 대상과 선정 기준을 함께 확인해야 합니다.",
-    benefits: cleanLines(benefit, 4).length ? cleanLines(benefit, 4) : ["지원내용 확인", "신청기한 확인", "공식 신청처 이동", "소관기관 문의처 확인"],
-    documents: cleanLines(documents, 4).length ? cleanLines(documents, 4) : ["신분 확인 서류", "자격 확인 자료", "서비스별 추가 구비서류"],
-    apply: cleanLines(application, 2).join(" ") || "정부24 또는 소관기관 공식 페이지에서 신청 방법을 확인합니다.",
+    summary: sanitizeDisplay(summary, 130),
+    audience: displayLines(support, 2, 120).join(" ") || "공식 상세 페이지의 지원 대상과 선정 기준을 함께 확인해야 합니다.",
+    benefits: displayLines(benefit, 4, 110).length ? displayLines(benefit, 4, 110) : ["지원내용 확인", "신청기한 확인", "공식 신청처 이동", "소관기관 문의처 확인"],
+    documents: displayLines(documents, 4, 80).length ? displayLines(documents, 4, 80) : ["신분 확인 서류", "자격 확인 자료", "서비스별 추가 구비서류"],
+    apply: displayLines(application, 2, 130).join(" ") || "정부24 또는 소관기관 공식 페이지에서 신청 방법을 확인합니다.",
     officialUrl: officialUrl(merged, detail),
     officialSourceUrl: text(record["상세조회URL"]) || "https://www.gov.kr",
     contact,

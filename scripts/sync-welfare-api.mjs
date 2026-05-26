@@ -64,6 +64,26 @@ function shortLines(value = "", max = 4) {
     .slice(0, max);
 }
 
+function sanitizeDisplay(value = "", maxLength = 160) {
+  const cleaned = decodeXml(String(value ?? ""))
+    .replace(/<[^>]+>/g, " ")
+    .replace(/[○●■□▶※❍ㆍ•·]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (!cleaned) return "";
+  return cleaned.length > maxLength ? `${cleaned.slice(0, maxLength - 1)}…` : cleaned;
+}
+
+function displayLines(value = "", max = 4, maxLength = 120) {
+  return decodeXml(String(value ?? ""))
+    .replace(/<[^>]+>/g, "\n")
+    .split(/\n|[○●■□▶※❍ㆍ•·]+|(?:\s{2,})/)
+    .map((line) => sanitizeDisplay(line, maxLength))
+    .filter((line) => line && !/^serv[A-Z]/.test(line) && !/^\/?serv/.test(line))
+    .slice(0, max);
+}
+
 async function fetchDetail(serviceId) {
   if (!serviceId) return {};
   const url = new URL(`${endpoint}/NationalWelfaredetailedV001`);
@@ -113,8 +133,8 @@ function policyFromApi(item, detail, index) {
   const application = pick(detail, ["aplyMtdCn", "aplyMtd", "reqstMthdCn", "reqstMthd", "applyMthdCn"]);
   const documents = pick(detail, ["stdrDocCn", "reqstDcCn", "sbmsnDocCn", "inqplCtadrList"]);
   const contact = pick(detail, ["rprsCtadr", "inqplCtadrList"]) || pick(item, ["rprsCtadr"]) || "복지로 또는 소관 기관 문의처";
-  const benefitLines = shortLines(benefit, 4);
-  const documentLines = shortLines(documents, 4);
+  const benefitLines = displayLines(benefit, 4, 110);
+  const documentLines = displayLines(documents, 4, 80);
 
   return {
     slug: `api-${slugify(title, id)}`,
@@ -128,12 +148,12 @@ function policyFromApi(item, detail, index) {
     dday: "상시",
     status: "상시",
     lifeStage: /청년/.test(text) ? "청년" : /아동|청소년/.test(text) ? "아동·청소년" : "취약계층",
-    targetGroup: shortLines(target, 1)[0] || target.slice(0, 90) || "공식 상세 기준 확인",
+    targetGroup: displayLines(target, 1, 100)[0] || sanitizeDisplay(target, 90) || "?? ?? ?? ??",
     income: "사업별 소득·가구 기준 확인",
     applyOnline: true,
     tags: [...new Set([category, "복지로", "공공데이터", ...title.split(/\s+/).slice(0, 3)])],
-    summary,
-    audience: shortLines(target, 2).join(" ") || "API 요약 정보는 탐색용이며 최종 대상 여부는 복지로 또는 소관 기관의 공식 상세 안내에서 확인해야 합니다.",
+    summary: sanitizeDisplay(summary, 130),
+    audience: displayLines(target, 2, 120).join(" ") || "API ?? ??? ????? ?? ?? ??? ??? ?? ?? ??? ?? ?? ???? ???? ???.",
     benefits: benefitLines.length ? benefitLines : ["복지서비스 정보 확인", "지원대상 확인", "신청방법 확인", "공식 출처 연결"],
     documents: documentLines.length ? documentLines : ["신분 확인 서류", "소득·가구 관련 자료", "사업별 추가 서류"],
     apply: shortLines(application, 2).join(" ") || "복지로 또는 소관 기관의 공식 신청 안내를 확인합니다.",
