@@ -1,6 +1,7 @@
 import { publicServiceApiPolicies } from "./public-service-api.generated";
 import { kstartupApiPolicies } from "./kstartup-api.generated";
 import { welfareApiPolicies } from "./welfare-api.generated";
+import { localWelfareApiPolicies } from "./local-welfare-api.generated";
 
 export type PolicyStatus = "모집중" | "상시" | "예정" | "마감임박";
 
@@ -1332,6 +1333,7 @@ policies.push(
 );
 
 policies.push(...welfareApiPolicies);
+policies.push(...localWelfareApiPolicies);
 policies.push(...publicServiceApiPolicies);
 policies.push(...kstartupApiPolicies);
 
