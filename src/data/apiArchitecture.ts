@@ -428,3 +428,128 @@ app.post("/corrections", async (request, reply) => {
 });
 
 app.listen({ port: Number(process.env.PORT || 4000), host: "0.0.0.0" });`;
+
+export const syncJobTemplate = `import { PrismaClient } from "@prisma/client";
+const prisma = new PrismaClient();
+
+type RawPolicy = Record<string, unknown>;
+
+type NormalizedPolicy = {
+  slug: string;
+  title: string;
+  summary: string;
+  sourceSystem: string;
+  sourceExternalId: string;
+  sourceUrl?: string | null;
+  officialUrl?: string | null;
+  agencyName: string;
+  category: string;
+  lifeStages: string[];
+  targetGroups: string[];
+  regionScope: string;
+  regions: string[];
+  applyType: string;
+  applyStatus: string;
+  applyStartAt?: Date | null;
+  applyEndAt?: Date | null;
+  supportSummary: string;
+  eligibilitySummary: string;
+  requiredDocs: string[];
+  faqJson?: unknown;
+  rawJson: RawPolicy;
+  lastCheckedAt?: Date | null;
+};
+
+async function fetchGov24(): Promise<NormalizedPolicy[]> {
+  // TODO: 공식 serviceList/serviceDetail/supportConditions 어댑터 구현
+  return [];
+}
+
+async function fetchBokjiroCentral(): Promise<NormalizedPolicy[]> {
+  // TODO: NationalWelfarelistV001 + detailed V001 어댑터 구현
+  return [];
+}
+
+async function fetchBokjiroLocal(): Promise<NormalizedPolicy[]> {
+  // TODO: 지자체 복지 목록/상세 어댑터 구현
+  return [];
+}
+
+async function fetchKStartup(): Promise<NormalizedPolicy[]> {
+  // TODO: 창업 공고 + 사업소개 어댑터 구현
+  return [];
+}
+
+async function fetchYouth(): Promise<NormalizedPolicy[]> {
+  // TODO: 청년정책 API 어댑터 구현
+  return [];
+}
+
+function dedupe(items: NormalizedPolicy[]): NormalizedPolicy[] {
+  const map = new Map<string, NormalizedPolicy>();
+
+  for (const item of items) {
+    const key = \`\${item.title}::\${item.agencyName}::\${item.category}\`;
+    const prev = map.get(key);
+    if (!prev) {
+      map.set(key, item);
+      continue;
+    }
+    // 우선순위: 공식 URL 존재 > applyEndAt 존재 > 더 긴 eligibilitySummary
+    const prevScore =
+      Number(Boolean(prev.officialUrl)) +
+      Number(Boolean(prev.applyEndAt)) +
+      prev.eligibilitySummary.length / 1000;
+
+    const nextScore =
+      Number(Boolean(item.officialUrl)) +
+      Number(Boolean(item.applyEndAt)) +
+      item.eligibilitySummary.length / 1000;
+
+    if (nextScore > prevScore) map.set(key, item);
+  }
+
+  return [...map.values()];
+}
+
+async function upsert(items: NormalizedPolicy[]) {
+  for (const item of items) {
+    await prisma.policy.upsert({
+      where: {
+        sourceSystem_sourceExternalId: {
+          sourceSystem: item.sourceSystem,
+          sourceExternalId: item.sourceExternalId,
+        },
+      },
+      create: item,
+      update: {
+        ...item,
+        lastSyncedAt: new Date(),
+      },
+    });
+  }
+}
+
+async function main() {
+  const all = await Promise.all([
+    fetchGov24(),
+    fetchBokjiroCentral(),
+    fetchBokjiroLocal(),
+    fetchKStartup(),
+    fetchYouth(),
+  ]);
+
+  const merged = dedupe(all.flat());
+  await upsert(merged);
+
+  console.log(\`Synced \${merged.length} policies\`);
+}
+
+main()
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  })
+  .finally(async () => {
+    await prisma.$disconnect();
+  });`;

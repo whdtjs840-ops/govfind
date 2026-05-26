@@ -11,7 +11,8 @@ import {
   prismaSchemaTemplate,
   recommendedStack,
   sharedPolicyTypeTemplate,
-  fastifyApiTemplate
+  fastifyApiTemplate,
+  syncJobTemplate
 } from "../data/apiArchitecture";
 ---
 
@@ -192,6 +193,12 @@ import {
         <h2>Fastify API 템플릿</h2>
         <p class="notice">초기 API는 `/health`, `/policies`, `/policies/:slug`, `/corrections`만 두고 시작합니다. 검색 품질이 올라가면 `/policies`의 단순 DB contains 검색을 Meilisearch 쿼리로 교체합니다.</p>
         <pre class="code-block api-template">{fastifyApiTemplate}</pre>
+      </section>
+
+      <section class="card">
+        <h2>수집 작업 템플릿</h2>
+        <p class="notice">정기 수집 작업은 원천별 어댑터가 표준 정책 배열을 반환하고, 중복 병합 후 `sourceSystem + sourceExternalId` 기준으로 upsert합니다. 실제 운영에서는 각 TODO 위치에 공식 API별 어댑터와 실패 재시도, 링크 검증, 수집 로그 저장을 추가합니다.</p>
+        <pre class="code-block api-template">{syncJobTemplate}</pre>
       </section>
     </div>
   </section>
