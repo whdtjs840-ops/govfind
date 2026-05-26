@@ -8,6 +8,7 @@ export const normalizedPolicyFields = [
   { key: "apply_online", label: "온라인 신청", description: "온라인 신청 가능 여부와 공식 신청처 연결" },
   { key: "apply_window", label: "신청 기간", description: "상시, 예정, 마감임박, 접수기간" },
   { key: "official_url", label: "공식 URL", description: "최종 신청과 자격 판정을 확인할 공식 기관 링크" },
+  { key: "link_status", label: "링크 검증", description: "공식 신청처 연결 여부와 마지막 확인일을 함께 표시" },
   { key: "required_docs", label: "필요 서류", description: "신청 전 준비해야 할 문서 체크리스트" },
   { key: "status_badge", label: "상태 배지", description: "모집중, 마감임박, 예정, 상시" }
 ];

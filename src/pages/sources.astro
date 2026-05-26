@@ -19,6 +19,7 @@ import { infrastructureIntegrations, normalizedPolicyFields, publicApiSources } 
         <h2><Database size={20} />공식 출처 확인 기준</h2>
         <p class="notice">아래 자료는 GovFind가 정책 정보를 정리할 때 참고하는 공식 출처입니다. 정부24 계열은 serviceList·serviceDetail 체계, 복지서비스는 NationalWelfarelistV001·NationalWelfaredetailedV001 체계를 기준으로 확인합니다.</p>
         <p class="notice">사용자가 페이지를 열 때마다 공공 API를 직접 호출하기보다, 수집한 데이터를 내부 표준 스키마로 정리해 검색·필터·상세 화면에 사용합니다.</p>
+        <p class="notice">상세 페이지에는 마지막 출처 확인일과 링크 검증 상태를 함께 표시합니다. 자동 링크 점검은 운영 백로그로 두고, 현재는 공식 URL과 원문 URL을 기준으로 수동 검수한 항목을 우선 노출합니다.</p>
         <div class="source-table-wrap">
           <table class="source-table">
             <thead>
@@ -48,6 +49,7 @@ import { infrastructureIntegrations, normalizedPolicyFields, publicApiSources } 
       <section class="card">
         <h2><ShieldCheck size={20} />화면 정리 기준</h2>
         <p class="notice">원천 자료의 내부 필드명을 그대로 노출하지 않고, 사용자가 이해하기 쉬운 항목으로 바꿔 검색·필터·상세 화면에서 사용합니다.</p>
+        <p class="notice">source adapter는 `gov24/v3`, `NationalWelfare V001`, `K-Startup` 기준으로 나누어 관리하고, 공개 화면에는 API 세부값보다 출처명·기관명·신청처·확인일을 먼저 보여줍니다.</p>
         <div class="schema-grid">
           {normalizedPolicyFields.map((field) => (
             <div>

@@ -182,6 +182,7 @@ const intentCards = [
             <option value="deadline">마감임박순</option>
             <option value="popular">인기순</option>
             <option value="online">온라인 신청 우선</option>
+            <option value="updated">최근 업데이트순</option>
           </select>
         </div>
 
@@ -228,6 +229,7 @@ const intentCards = [
     const selectedLife = params.get("lifeStage")?.trim() ?? "";
     const selectedStatus = params.get("status")?.trim() ?? "";
     const selectedSource = normalizeSource(params.get("source")?.trim() ?? "");
+    const selectedProfile = params.get("profile")?.trim() ?? "";
     const selectedTarget = params.get("target")?.trim() ?? "";
     const selectedPurpose = params.get("purpose")?.trim() ?? "";
     const selectedOnline = params.get("online") === "true";
@@ -309,6 +311,12 @@ const intentCards = [
       if (value === "취업·교육") return "취업 구직 교육 훈련";
       if (value === "창업·사업자금") return "창업 사업화 사업자금";
       if (value === "대출·정책자금") return "대출 정책자금 융자 자금";
+      if (value === "개인") return "개인 청년 구직 취업 주거 복지";
+      if (value === "가구") return "가구 부모 육아 출산 보육 주거 복지";
+      if (value === "사업자") return "사업자 소상공인 창업 사업자금 농어업";
+      if (value === "구직") return "구직 취업 국민취업지원 고용";
+      if (value === "창업") return "창업 스타트업 K-Startup 사업자금";
+      if (value === "육아") return "육아 출산 보육 부모 아동";
       return value;
     }
 
@@ -332,9 +340,12 @@ const intentCards = [
       const value = chip.dataset.conditionValue;
       const active =
         (key === "target" && value === selectedTarget) ||
+        (key === "age" && value === selectedTarget) ||
+        (key === "profile" && value === selectedProfile) ||
         (key === "purpose" && value === selectedPurpose) ||
+        (key === "lifeStage" && value === selectedPurpose) ||
         (key === "region" && value === selectedRegion) ||
-        (key === "apply" && ((value === "온라인 가능" && selectedApplyOnline) || (value === "마감임박" && selectedStatus === "마감임박") || (value === "상시신청" && selectedStatus === "상시")));
+        (key === "status" && ((value === "온라인 가능" && selectedApplyOnline) || (value === "마감임박" && selectedStatus === "마감임박") || (value === "상시신청" && selectedStatus === "상시") || (value === "최근 업데이트" && selectedSort === "updated")));
       chip.classList.toggle("active", active);
     }
 
@@ -365,6 +376,7 @@ const intentCards = [
       if (keyword) next.set("q", keyword);
       if (selectedCategory) next.set("category", selectedCategory);
       if (selectedRegion) next.set("region", selectedRegion);
+      if (selectedProfile) next.set("profile", selectedProfile);
       if (selectedTarget) next.set("target", selectedTarget);
       if (selectedPurpose) next.set("purpose", selectedPurpose);
       if (lifeStage?.value) next.set("lifeStage", lifeStage.value);
@@ -385,6 +397,7 @@ const intentCards = [
         if (sort.value === "deadline") return ddayRank(a.dataset.dday ?? "") - ddayRank(b.dataset.dday ?? "");
         if (sort.value === "popular") return Number(b.dataset.views ?? 0) - Number(a.dataset.views ?? 0);
         if (sort.value === "online") return Number(b.dataset.online === "true") - Number(a.dataset.online === "true");
+        if (sort.value === "updated") return (b.dataset.updated ?? "").localeCompare(a.dataset.updated ?? "");
         return Number(b.dataset.score ?? 0) - Number(a.dataset.score ?? 0);
       });
       for (const card of sorted) resultGrid.appendChild(card);
@@ -415,10 +428,11 @@ const intentCards = [
         const matchStatus = !statusValue || cardStatus === statusValue;
         const matchSource = !sourceValue || cardSource === sourceValue || cardSourceLabel === sourceValue;
         const matchOnline = (!onlineOnly && !selectedApplyOnline) || cardOnline;
+        const matchProfile = conditionMatches(card, selectedProfile);
         const matchTarget = conditionMatches(card, selectedTarget);
         const matchPurpose = conditionMatches(card, selectedPurpose);
         const matchSearchOnly = !searchOnly || Boolean(keyword);
-        const isVisible = matchSearchOnly && matchKeyword && matchCategory && matchRegion && matchLife && matchStatus && matchSource && matchOnline && matchTarget && matchPurpose;
+        const isVisible = matchSearchOnly && matchKeyword && matchCategory && matchRegion && matchLife && matchStatus && matchSource && matchOnline && matchProfile && matchTarget && matchPurpose;
         card.hidden = !isVisible;
         card.style.display = isVisible ? "" : "none";
         if (isVisible) visible += 1;
@@ -447,9 +461,12 @@ const intentCards = [
       for (const chip of conditionChips.filter((item) => item.classList.contains("active"))) {
         const key = chip.dataset.conditionKey;
         const value = chip.dataset.conditionValue ?? "";
-        if (key === "apply" && value === "온라인 가능") next.set("applyOnline", "true");
-        else if (key === "apply" && value === "마감임박") next.set("status", "마감임박");
-        else if (key === "apply" && value === "상시신청") next.set("status", "상시");
+        if (key === "status" && value === "온라인 가능") next.set("applyOnline", "true");
+        else if (key === "status" && value === "마감임박") next.set("status", "마감임박");
+        else if (key === "status" && value === "상시신청") next.set("status", "상시");
+        else if (key === "status" && value === "최근 업데이트") next.set("sort", "updated");
+        else if (key === "age") next.set("target", value);
+        else if (key === "lifeStage") next.set("purpose", value);
         else if (key && value) next.set(key, value);
       }
       window.location.href = `/support/${next.toString() ? `?${next.toString()}` : ""}`;

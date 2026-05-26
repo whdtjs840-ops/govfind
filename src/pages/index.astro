@@ -3,7 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { ArrowRight, CalendarClock, Search } from "@lucide/astro";
 import { policies, categoryGroups } from "../data/policies";
 import { guides } from "../data/guides";
-import { dedupePolicies, isSearchOnlyPolicy, urgentPolicies } from "../utils/policyUtils";
+import { deadlineDisplay, dedupePolicies, isSearchOnlyPolicy, urgentPolicies } from "../utils/policyUtils";
 import QuickConditionSearch from "../components/QuickConditionSearch.astro";
 
 const { canonical: displayPolicies } = dedupePolicies(policies);
@@ -124,7 +124,7 @@ const quickEntryCards = [
           <a href={`/support/${policy.slug}/`} class="featured-policy-card" data-event="featured_policy_click" data-policy={policy.slug}>
             <span>{policy.category}</span>
             <strong>{policy.title}</strong>
-            <small>{policy.agency} · {policy.dday}</small>
+            <small>{policy.agency} · {deadlineDisplay(policy)}</small>
           </a>
         ))}
       </div>
@@ -140,7 +140,7 @@ const quickEntryCards = [
       <div class="deadline-scroll">
         {urgent.slice(0, 9).map((policy) => (
           <a href={`/support/${policy.slug}/`} class="deadline-card" data-event="deadline_click" data-policy={policy.slug}>
-            <span class="deadline-dday">{policy.dday}</span>
+            <span class="deadline-dday">{deadlineDisplay(policy)}</span>
             <span class="deadline-title">{policy.title}</span>
             <span class="deadline-cat">{policy.category}</span>
           </a>
@@ -164,7 +164,7 @@ const quickEntryCards = [
               <div class="card-badges">
                 <span class="badge warn">{policy.status}</span>
                 <span class="badge">{policy.category}</span>
-                <span class="badge soft">{policy.dday}</span>
+                <span class="badge soft">{deadlineDisplay(policy)}</span>
               </div>
               <h3><a class="card-title" href={`/support/${policy.slug}/`}>{policy.title}</a></h3>
               <p class="card-summary">{policy.summary}</p>

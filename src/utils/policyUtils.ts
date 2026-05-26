@@ -60,6 +60,28 @@ export function ddayNumber(policy: Pick<Policy, "dday">) {
   return match ? Number(match[1]) : null;
 }
 
+export function hasVariableDeadline(policy: Pick<Policy, "deadline" | "dday">) {
+  const text = `${policy.deadline} ${policy.dday}`;
+  return /지자체|지역별|기관별|별도|확인|상시|예정|접수중|모집중/.test(text) && ddayNumber(policy) === null;
+}
+
+export function deadlineDisplay(policy: Pick<Policy, "deadline" | "dday">) {
+  if (/지자체|지역별|기관별/.test(policy.deadline)) return "지역별 상이";
+  if (/확인|별도/.test(policy.deadline) && ddayNumber(policy) === null) return "공식 확인 필요";
+  return policy.dday;
+}
+
+export function deadlineBasisText(policy: Pick<Policy, "deadline" | "dday">) {
+  if (/지자체|지역별|기관별/.test(policy.deadline)) {
+    return `신청기간이 "${policy.deadline}"로 표시되어 단일 D-day를 쓰지 않습니다. 지역 또는 기관별 공고에서 실제 접수일을 확인해야 합니다.`;
+  }
+  const days = ddayNumber(policy);
+  if (days !== null) {
+    return `D-day는 현재 등록된 신청기간 문구 "${policy.deadline}"과 정책 상태값을 기준으로 산정했습니다. 지역별 접수일이 다를 수 있으므로 공식 신청처에서 최종 확인해야 합니다.`;
+  }
+  return `신청기간이 "${policy.deadline}"로 표시되어 있어 단일 D-day를 확정하지 않았습니다. 상시·기관별 접수는 공식 신청처의 최신 공고를 기준으로 확인해야 합니다.`;
+}
+
 export function urgentPolicies(items: Policy[], limit = 14) {
   return items
     .filter((policy) => {
