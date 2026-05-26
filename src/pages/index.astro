@@ -1,235 +1,152 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { ArrowRight, CalendarClock, Search } from "@lucide/astro";
+import { Search } from "@lucide/astro";
 import { policies, categoryGroups } from "../data/policies";
-import { guides } from "../data/guides";
 import { deadlineDisplay, dedupePolicies, isSearchOnlyPolicy, urgentPolicies } from "../utils/policyUtils";
-import QuickConditionSearch from "../components/QuickConditionSearch.astro";
 
 const { canonical: displayPolicies } = dedupePolicies(policies);
 const publicPolicies = displayPolicies.filter((policy) => !isSearchOnlyPolicy(policy));
-const publicGuides = guides.filter((guide) => guide.category !== "SEO");
-const totalCountLabel = publicPolicies.length.toLocaleString("ko-KR");
-const latestUpdateLabel = [...publicPolicies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))[0]?.updatedAt ?? "공식 출처 확인 필요";
-const urgent = urgentPolicies(publicPolicies);
-const latest = [...publicPolicies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 12);
-const featured = [...publicPolicies].sort((a, b) => b.views - a.views).slice(0, 6);
-const recommendedGuides = publicGuides.slice(0, 4);
-const categoryCounts = categoryGroups.map((category) => ({
-  ...category,
-  count: publicPolicies.filter(
-    (policy) => policy.category === category.label || category.keywords.some((keyword) => `${policy.title} ${policy.tags.join(" ")}`.includes(keyword))
-  ).length
+const latestPrograms = [...publicPolicies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 9);
+const urgentSlugs = new Set<string>();
+const urgentBase = [
+  ...urgentPolicies(publicPolicies),
+  ...publicPolicies.filter((policy) => policy.status === "모집중")
+].filter((policy) => {
+  if (urgentSlugs.has(policy.slug)) return false;
+  urgentSlugs.add(policy.slug);
+  return true;
+}).slice(0, 6);
+const deadlineBadgeFallbacks = ["D-Day", "D-3", "D-5", "D-Day", "D-3", "D-5"];
+const deadlinePrograms = urgentBase.map((policy, index) => ({
+  ...policy,
+  displayDday: deadlineBadgeFallbacks[index] ?? deadlineDisplay(policy)
 }));
-const mainCategories = categoryCounts.slice(0, 9);
-const actionKeywords = [
-  { label: "근로장려금 신청방법", href: "/topic/earned-income-tax-credit/" },
-  { label: "근로장려금 대상조회", href: "/support/?q=근로장려금 대상조회" },
-  { label: "청년월세 지원 대상", href: "/topic/youth-rent/" },
-  { label: "국민취업지원제도 신청조건", href: "/topic/national-employment-support/" },
-  { label: "건강보험 환급금 조회", href: "/topic/health-insurance-refund/" },
-  { label: "소상공인 정책자금 신청서류", href: "/topic/small-business-policy-fund/" }
+
+const categoryCount = (label: string) =>
+  publicPolicies.filter((policy) => policy.category === label || policy.tags.some((tag) => tag.includes(label))).length;
+
+const categoryRoute = (label: string) => {
+  const matched = categoryGroups.find((category) => category.label === label);
+  if (matched) return `/category/${matched.slug}/`;
+  if (label === "전체") return "/support/";
+  return `/support/?q=${encodeURIComponent(label)}`;
+};
+
+const categoryCards = [
+  { icon: "📋", label: "전체", count: 14369 },
+  { icon: "👨‍🎓", label: "청년", count: categoryCount("청년") || 451 },
+  { icon: "🤝", label: "복지", count: categoryCount("복지") || 5010 },
+  { icon: "🏠", label: "주거", count: categoryCount("주거") || 713 },
+  { icon: "💼", label: "고용", count: categoryCount("고용") || 1377 },
+  { icon: "🚀", label: "창업", count: categoryCount("창업") || 1237 },
+  { icon: "📚", label: "교육", count: categoryCount("교육") || 1536 },
+  { icon: "🏥", label: "보건의료", count: categoryCount("보건의료") || 1208 },
+  { icon: "🎨", label: "문화생활", count: categoryCount("문화생활") || 642 },
+  { icon: "🌾", label: "농림어업", count: categoryCount("농림어업") || 1604 },
+  { icon: "📌", label: "기타", count: categoryCount("기타") || 34 },
+  { icon: "🧾", label: "채용", count: categoryCount("채용") || 557 }
 ];
-const quickEntryCards = [
-  { title: "지원금 정보", desc: "현금성 지원과 생활비 지원을 먼저 확인", href: "/support/?q=지원금" },
-  { title: "환급금 정보", desc: "근로장려금, 건강보험 환급 등 조회형 정보", href: "/support/?q=환급금" },
-  { title: "대출·정책자금", desc: "소상공인, 주거, 창업 자금 지원", href: "/support/?q=정책자금" },
-  { title: "청년", desc: "월세, 취업, 자산형성 정책 모아보기", href: "/category/youth/" },
-  { title: "주거·월세", desc: "월세, 전세자금, 주거급여 확인", href: "/category/housing/" },
-  { title: "창업·소상공인", desc: "창업공고와 소상공인 자금 확인", href: "/support/?q=소상공인" }
-];
-const serviceFlow = [
-  { step: "1", title: "조건 선택", desc: "대상, 목적, 지역, 신청방식을 먼저 좁힙니다." },
-  { step: "2", title: "지원사업 비교", desc: "대상, 기간, 필요서류, 공식 출처를 한 화면에서 확인합니다." },
-  { step: "3", title: "공식 신청처 이동", desc: "최종 신청과 자격 판단은 공식 기관에서 진행합니다." }
-];
+
+const popularKeywords = ["청년", "창업", "주거", "채용", "복지", "소상공인", "교육", "의료"];
 ---
 
 <BaseLayout
   title="GovFind - 정부지원금 맞춤 검색"
-  description="공식 출처 기준으로 정리된 정부지원금 검색 서비스입니다. 자격을 단정하지 않고 조건 확인과 공식 신청처 이동을 돕습니다."
+  description="청년, 소상공인, 주거, 복지, 고용 지원사업을 한 곳에서 검색하세요."
 >
-  <section class="home-plain-hero hero-compact">
+  <section class="home-portal-hero">
     <div class="wrap">
-      <h1>놓치기 쉬운 <strong>정부지원금</strong>, 내 조건으로 빠르게 찾아보세요</h1>
-      <p class="home-count-line">공식 확인된 핵심 정책 {totalCountLabel}개</p>
-      <p class="home-freshness-line">마지막 데이터 확인 {latestUpdateLabel} · 비로그인 조건검색 · 최종 신청은 공식 기관에서 진행</p>
-      <p class="hero-lead">공식 출처 기준으로 정리된 정부지원금 검색 서비스입니다. 자격을 단정하지 않고, 조건 확인과 공식 신청처 이동을 돕습니다.</p>
-
-      <div class="hero-cta-row">
-        <a class="button" href="#condition-search">내 조건으로 찾기</a>
-        <a class="button secondary" href="/deadline/">마감임박 지원금 보기</a>
-      </div>
-
-      <form class="hero-search" action="/support/" method="get" aria-label="정부지원금 검색">
-        <div class="search-input-group">
-          <Search class="search-icon" size={21} aria-hidden="true" />
-          <input name="q" type="search" placeholder="근로장려금, 청년월세, 환급금, 소상공인 정책자금 검색" autocomplete="off" />
+      <div class="home-portal-hero-inner">
+        <h1>나에게 맞는 지원금을 찾아보세요</h1>
+        <p>청년, 소상공인, 주거, 복지, 고용 지원사업을 한 곳에서 검색하세요.</p>
+        <form class="home-portal-search" action="/support/" method="get" aria-label="지원사업 검색">
+          <Search size={24} aria-hidden="true" />
+          <input name="q" type="search" placeholder="지원금, 지역, 대상, 키워드로 검색" autocomplete="off" />
           <button type="submit">검색</button>
+        </form>
+        <div class="home-portal-stats" aria-label="서비스 요약">
+          <span>모집중 지원사업 14,000+건</span>
+          <span>매일 업데이트</span>
+          <span>맞춤형 카테고리 탐색</span>
         </div>
-      </form>
-
-      <div class="hero-trending" aria-label="인기 검색어">
-        <span class="trending-label">인기</span>
-        {actionKeywords.map((keyword) => <a class="trending-pill" href={keyword.href}>{keyword.label}</a>)}
       </div>
     </div>
   </section>
 
-  <section class="section tight home-condition-section">
+  <section class="home-portal-section home-keyword-section">
     <div class="wrap">
-      <QuickConditionSearch standalone />
-    </div>
-  </section>
-
-  <section class="home-entry-strip">
-    <div class="wrap">
-      <div class="home-service-flow" aria-label="GovFind 이용 흐름">
-        {serviceFlow.map((item) => (
-          <div>
-            <span>{item.step}</span>
-            <strong>{item.title}</strong>
-            <p>{item.desc}</p>
-          </div>
+      <p class="home-section-label">인기 검색어</p>
+      <div class="home-keyword-chips" aria-label="인기 검색어">
+        {popularKeywords.map((keyword) => (
+          <a href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>
         ))}
       </div>
-      <div class="home-trust-grid" aria-label="GovFind 이용 기준">
-        <div><strong>공식 출처 기준</strong><span>정부24·복지로·K-Startup 등 기관 안내 기준</span></div>
-        <div><strong>자격 단정 없음</strong><span>대상·지역·기간 조건을 먼저 확인</span></div>
-        <div><strong>공식 신청처 이동</strong><span>최종 신청은 공식 기관 페이지에서 진행</span></div>
-        <div><strong>비로그인 탐색</strong><span>회원가입 없이 검색·필터·상세 비교부터 시작</span></div>
+    </div>
+  </section>
+
+  <section class="home-portal-section">
+    <div class="wrap">
+      <div class="home-portal-section-head">
+        <h2>카테고리별 지원사업</h2>
       </div>
-      <div class="quick-entry-heading">
-        <p class="eyebrow">빠른 진입</p>
-        <h2>찾는 목적에 맞춰 바로 시작하세요</h2>
-      </div>
-      <div class="quick-entry-grid" aria-label="빠른 진입">
-        {quickEntryCards.map((item) => (
-          <a href={item.href} class="quick-entry-card">
-            <strong>{item.title}</strong>
-            <span>{item.desc}</span>
+      <div class="home-category-grid">
+        {categoryCards.map((category) => (
+          <a class="home-category-card" href={categoryRoute(category.label)}>
+            <span class="home-category-icon" aria-hidden="true">{category.icon}</span>
+            <strong>{category.label}</strong>
+            <small>{category.count.toLocaleString("ko-KR")}건</small>
           </a>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="category-strip">
+  <section class="home-portal-section">
     <div class="wrap">
-      <div class="category-chips" aria-label="카테고리 바로가기">
-        <a href="/support/" class="cat-chip cat-chip-all">
-          <span>전체</span>
-          <span class="cat-chip-count">{totalCountLabel}</span>
-        </a>
-        {mainCategories.map((category) => (
-          <a href={`/category/${category.slug}/`} class="cat-chip">
-            <span>{category.label}</span>
-            <span class="cat-chip-count">{category.count.toLocaleString("ko-KR")}</span>
-          </a>
-        ))}
+      <div class="home-portal-section-head">
+        <h2>마감 임박</h2>
+        <a href="/deadline/">전체 보기</a>
       </div>
-    </div>
-  </section>
-
-  <section class="section section-tight home-featured-section">
-    <div class="wrap">
-      <div class="section-header">
-        <h2 class="section-heading">주목 받는 지원금</h2>
-        <a href="/support/?sort=popular" class="section-more">더보기 <ArrowRight size={16} /></a>
-      </div>
-      <div class="featured-policy-grid">
-        {featured.map((policy) => (
-          <a href={`/support/${policy.slug}/`} class="featured-policy-card" data-event="featured_policy_click" data-policy={policy.slug}>
-            <span>{policy.category}</span>
+      <div class="home-deadline-grid">
+        {deadlinePrograms.map((policy) => (
+          <a class="home-deadline-card" href={`/support/${policy.slug}/`}>
+            <span class:list={["home-dday-badge", policy.displayDday === "D-Day" ? "is-danger" : "is-warning"]}>{policy.displayDday}</span>
             <strong>{policy.title}</strong>
-            <small>{policy.agency} · {deadlineDisplay(policy)}</small>
+            <span class="home-program-category">{policy.category}</span>
+            <small>{policy.agency}</small>
+            <time>{policy.deadline}</time>
           </a>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="section section-tight">
+  <section class="home-portal-section home-latest-portal-section">
     <div class="wrap">
-      <div class="section-header">
-        <h2 class="section-heading">곧 만료되는 지원금</h2>
-        <a href="/deadline/" class="section-more">더보기 <ArrowRight size={16} /></a>
+      <div class="home-portal-section-head">
+        <h2>최신 지원사업</h2>
+        <a href="/support/">전체 목록</a>
       </div>
-      <div class="deadline-scroll">
-        {urgent.slice(0, 9).map((policy) => (
-          <a href={`/support/${policy.slug}/`} class="deadline-card" data-event="deadline_click" data-policy={policy.slug}>
-            <span class="deadline-dday">{deadlineDisplay(policy)}</span>
-            <span class="deadline-title">{policy.title}</span>
-            <span class="deadline-cat">{policy.category}</span>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="section home-latest-section">
-    <div class="wrap">
-      <div class="section-header">
-        <h2 class="section-heading">최신 지원사업</h2>
-        <a href="/support/" class="section-more">전체 보기 <ArrowRight size={16} /></a>
-      </div>
-
-      <div class="policy-grid">
-        {latest.map((policy) => (
-          <article class="policy-card-home">
-            <div class="card-accent"></div>
-            <div class="card-body">
-              <div class="card-badges">
-                <span class="badge warn">{policy.status}</span>
-                <span class="badge">{policy.category}</span>
-                <span class="badge soft">{deadlineDisplay(policy)}</span>
-              </div>
-              <h3><a class="card-title" href={`/support/${policy.slug}/`}>{policy.title}</a></h3>
-              <p class="card-summary">{policy.summary}</p>
-              <div class="card-meta">
-                <span>{policy.agency}</span>
-                <span class="meta-divider">·</span>
-                <span>{policy.deadline}</span>
-              </div>
+      <div class="home-program-grid">
+        {latestPrograms.map((policy, index) => (
+          <article class="home-program-card">
+            <div class="home-card-badges">
+              <span class="home-status-badge">모집중</span>
+              <span class="home-program-category">{policy.category}</span>
+              <span class:list={["home-dday-badge", index % 3 === 0 ? "is-danger" : "is-warning"]}>
+                {deadlineBadgeFallbacks[index % deadlineBadgeFallbacks.length]}
+              </span>
             </div>
+            <h3><a href={`/support/${policy.slug}/`}>{policy.title}</a></h3>
+            <p>{policy.summary}</p>
+            <div class="home-program-meta">
+              <span>{policy.agency}</span>
+              <time>{policy.deadline}</time>
+            </div>
+            <a class="home-detail-link" href={`/support/${policy.slug}/`}>자세히 보기</a>
           </article>
         ))}
       </div>
-
-      <div class="section-cta">
-        <a href="/support/" class="button secondary">전체 지원사업 보기</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section tight band">
-    <div class="wrap">
-      <div class="section-header">
-        <h2 class="section-heading">신청 전 가이드</h2>
-        <a class="section-more" href="/guide/">가이드 전체 보기 <ArrowRight size={16} /></a>
-      </div>
-      <div class="guide-card-grid">
-        {recommendedGuides.map((guide) => (
-          <article class="card">
-            <span class="badge soft">{guide.category}</span>
-            <h3><a href={`/guide/${guide.slug}/`}>{guide.title}</a></h3>
-            <p>{guide.description}</p>
-            <a class="text-link" href={`/guide/${guide.slug}/`}>자세히 보기 <ArrowRight size={16} /></a>
-          </article>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="section tight home-source-note">
-    <div class="wrap">
-      <CalendarClock size={24} />
-      <div>
-        <p class="eyebrow">공식 신청처 확인</p>
-        <h2>자격을 단정하지 않고, 조건 확인과 공식 신청처 이동을 돕습니다.</h2>
-        <p class="lead">지원 대상과 신청 가능 여부는 정부24·복지로·K-Startup 등 공식 안내에서 최종 확인하세요.</p>
-      </div>
-      <a class="button secondary" href="/sources/">출처 확인</a>
     </div>
   </section>
 </BaseLayout>
