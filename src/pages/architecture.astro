@@ -12,7 +12,8 @@ import {
   recommendedStack,
   sharedPolicyTypeTemplate,
   fastifyApiTemplate,
-  syncJobTemplate
+  syncJobTemplate,
+  webHomeTemplate
 } from "../data/apiArchitecture";
 ---
 
@@ -199,6 +200,12 @@ import {
         <h2>수집 작업 템플릿</h2>
         <p class="notice">정기 수집 작업은 원천별 어댑터가 표준 정책 배열을 반환하고, 중복 병합 후 `sourceSystem + sourceExternalId` 기준으로 upsert합니다. 실제 운영에서는 각 TODO 위치에 공식 API별 어댑터와 실패 재시도, 링크 검증, 수집 로그 저장을 추가합니다.</p>
         <pre class="code-block api-template">{syncJobTemplate}</pre>
+      </section>
+
+      <section class="card">
+        <h2>Next.js 홈 템플릿</h2>
+        <p class="notice">Next.js 전환 시 첫 화면은 비로그인 퀵파인더, 행동형 인기 키워드, 마감·온라인·지역 진입 카드로 시작합니다. 현재 GovFind의 공식 출처 기반 톤을 유지하면서 더 가볍게 이식할 수 있는 홈 초안입니다.</p>
+        <pre class="code-block api-template">{webHomeTemplate}</pre>
       </section>
     </div>
   </section>

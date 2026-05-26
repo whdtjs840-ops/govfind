@@ -553,3 +553,76 @@ main()
   .finally(async () => {
     await prisma.$disconnect();
   });`;
+
+export const webHomeTemplate = `import Link from "next/link";
+
+const quickOptions = {
+  audience: ["개인", "가구", "사업자"],
+  lifeStage: ["청년", "신혼부부", "임신·출산", "구직자", "소상공인", "어르신"],
+  region: ["전국", "서울", "경기", "인천", "부산", "대구", "광주", "대전"],
+  applyType: ["온라인 우선", "오프라인 포함"],
+};
+
+export default function HomePage() {
+  return (
+    <main className="mx-auto max-w-6xl px-4 py-10">
+      <section className="rounded-2xl border p-6">
+        <p className="text-sm text-neutral-600">공식 출처 우선 · 신청은 공식 기관에서</p>
+        <h1 className="mt-2 text-3xl font-bold">내 조건으로 정부지원금을 빠르게 좁혀보세요</h1>
+        <p className="mt-3 text-neutral-700">
+          GovFind는 지원사업을 정리해 보여주고, 최종 신청은 정부24·복지로·고용24·K-Startup 등
+          공식 신청처로 연결합니다.
+        </p>
+
+        <form action="/support" className="mt-6 grid gap-4 md:grid-cols-4">
+          <select name="audience" className="rounded-lg border p-3">
+            {quickOptions.audience.map((v) => <option key={v}>{v}</option>)}
+          </select>
+          <select name="lifeStage" className="rounded-lg border p-3">
+            <option value="">생애주기 선택</option>
+            {quickOptions.lifeStage.map((v) => <option key={v}>{v}</option>)}
+          </select>
+          <select name="region" className="rounded-lg border p-3">
+            {quickOptions.region.map((v) => <option key={v}>{v}</option>)}
+          </select>
+          <select name="applyType" className="rounded-lg border p-3">
+            {quickOptions.applyType.map((v) => <option key={v}>{v}</option>)}
+          </select>
+
+          <input
+            type="text"
+            name="q"
+            placeholder="근로장려금, 청년월세, 창업지원 등"
+            className="rounded-lg border p-3 md:col-span-3"
+          />
+          <button className="rounded-lg border px-4 py-3 font-medium">조건으로 찾기</button>
+        </form>
+
+        <div className="mt-6 flex flex-wrap gap-2 text-sm">
+          {["근로장려금", "청년월세", "국민취업지원제도", "소상공인 정책자금", "청년도약계좌"].map((tag) => (
+            <Link
+              key={tag}
+              href={\`/support?q=\${encodeURIComponent(tag)}\`}
+              className="rounded-full border px-3 py-1.5"
+            >
+              {tag}
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-10 grid gap-4 md:grid-cols-3">
+        {[
+          ["마감 임박", "지금 신청해야 놓치지 않는 정책 모음"],
+          ["온라인 신청 우선", "공식 온라인 접수로 바로 이동 가능한 정책"],
+          ["지역별 지원금", "서울·경기·인천 등 지역 조건 기반 모음"],
+        ].map(([title, desc]) => (
+          <div key={title} className="rounded-2xl border p-5">
+            <h2 className="text-xl font-semibold">{title}</h2>
+            <p className="mt-2 text-neutral-700">{desc}</p>
+          </div>
+        ))}
+      </section>
+    </main>
+  );
+}`;
