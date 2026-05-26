@@ -1,6 +1,7 @@
 import type { FastifyInstance } from "fastify";
 import { z } from "zod";
 import { prisma } from "../db";
+import { getClientMeta } from "../security";
 
 const correctionSchema = z.object({
   policySlug: z.string().optional(),
@@ -16,6 +17,18 @@ export async function correctionRoutes(app: FastifyInstance) {
 
     try {
       const created = await prisma.policyCorrectionRequest.create({ data: body.data });
+      const meta = getClientMeta(request);
+      await prisma.auditLog.create({
+        data: {
+          actorType: "public",
+          action: "correction.create",
+          entityType: "PolicyCorrectionRequest",
+          entityId: created.id,
+          ipAddress: meta.ipAddress,
+          userAgent: String(meta.userAgent ?? ""),
+          metadata: { type: body.data.type, policySlug: body.data.policySlug ?? null }
+        }
+      });
       return reply.code(201).send({ id: created.id, status: created.status });
     } catch {
       return reply.code(201).send({ id: "sample-correction", status: "open" });

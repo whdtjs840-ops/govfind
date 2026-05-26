@@ -71,3 +71,21 @@ model AdminIssue {
   message   String
   createdAt DateTime @default(now())
 }
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  actorType  String
+  actorId    String?
+  action     String
+  entityType String
+  entityId   String?
+  ipAddress  String?
+  userAgent  String?
+  metadata   Json?
+  createdAt  DateTime @default(now())
+
+  @@index([actorType])
+  @@index([action])
+  @@index([entityType])
+  @@index([createdAt])
+}

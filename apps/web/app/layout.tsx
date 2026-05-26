@@ -18,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko">
       <body>
+        <a className="skip-link" href="#main">본문 바로가기</a>
         <header className="site-header">
           <div className="container header-inner">
             <a className="logo" href="/">GovFind</a>
@@ -30,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </nav>
           </div>
         </header>
-        {children}
+        <div id="main">{children}</div>
         <footer className="footer">
           <div className="container">
             <strong>GovFind</strong>
