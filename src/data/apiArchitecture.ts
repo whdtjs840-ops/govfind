@@ -264,3 +264,167 @@ model PolicyCorrectionRequest {
   status     String   @default("open")
   createdAt  DateTime @default(now())
 }`;
+
+export const sharedPolicyTypeTemplate = `export type PolicySummary = {
+  slug: string;
+  title: string;
+  summary: string;
+  category: string;
+  agencyName: string;
+  regionScope: string;
+  regions: string[];
+  applyType: "online" | "offline" | "mixed" | "check";
+  applyStatus: "open" | "closing" | "scheduled" | "always" | "closed";
+  applyEndAt?: string | null;
+  supportSummary: string;
+  officialUrl?: string | null;
+  sourceSystem: "gov24" | "bokjiro-central" | "bokjiro-local" | "kstartup" | "youth";
+  lifeStages: string[];
+  targetGroups: string[];
+  lastCheckedAt?: string | null;
+};
+
+export type PolicyDetail = PolicySummary & {
+  eligibilitySummary: string;
+  requiredDocs: string[];
+  faq: Array<{ question: string; answer: string }>;
+  sourceUrl?: string | null;
+};
+
+export type SearchQuery = {
+  q?: string;
+  category?: string;
+  region?: string;
+  sourceSystem?: string;
+  lifeStage?: string;
+  applyStatus?: string;
+  applyType?: string;
+  page?: number;
+  limit?: number;
+};`;
+
+export const fastifyApiTemplate = `import Fastify from "fastify";
+import cors from "@fastify/cors";
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
+const app = Fastify({ logger: true });
+
+await app.register(cors, { origin: true });
+
+app.get("/health", async () => ({ ok: true }));
+
+app.get("/policies", async (request) => {
+  const q = request.query as {
+    q?: string;
+    category?: string;
+    region?: string;
+    sourceSystem?: string;
+    lifeStage?: string;
+    applyStatus?: string;
+    applyType?: string;
+    page?: string;
+    limit?: string;
+  };
+
+  const page = Math.max(parseInt(q.page || "1", 10), 1);
+  const limit = Math.min(Math.max(parseInt(q.limit || "20", 10), 1), 50);
+
+  const where = {
+    isPublished: true,
+    ...(q.category ? { category: q.category } : {}),
+    ...(q.sourceSystem ? { sourceSystem: q.sourceSystem } : {}),
+    ...(q.applyStatus ? { applyStatus: q.applyStatus } : {}),
+    ...(q.applyType ? { applyType: q.applyType } : {}),
+    ...(q.lifeStage ? { lifeStages: { has: q.lifeStage } } : {}),
+    ...(q.region ? { regions: { has: q.region } } : {}),
+    ...(q.q
+      ? {
+          OR: [
+            { title: { contains: q.q, mode: "insensitive" as const } },
+            { summary: { contains: q.q, mode: "insensitive" as const } },
+            { supportSummary: { contains: q.q, mode: "insensitive" as const } },
+            { eligibilitySummary: { contains: q.q, mode: "insensitive" as const } },
+          ],
+        }
+      : {}),
+  };
+
+  const [items, total] = await Promise.all([
+    prisma.policy.findMany({
+      where,
+      orderBy: [{ applyEndAt: "asc" }, { updatedAt: "desc" }],
+      skip: (page - 1) * limit,
+      take: limit,
+      select: {
+        slug: true,
+        title: true,
+        summary: true,
+        category: true,
+        agencyName: true,
+        regionScope: true,
+        regions: true,
+        applyType: true,
+        applyStatus: true,
+        applyEndAt: true,
+        supportSummary: true,
+        officialUrl: true,
+        sourceSystem: true,
+        lifeStages: true,
+        targetGroups: true,
+        lastCheckedAt: true,
+      },
+    }),
+    prisma.policy.count({ where }),
+  ]);
+
+  return { page, limit, total, items };
+});
+
+app.get("/policies/:slug", async (request, reply) => {
+  const { slug } = request.params as { slug: string };
+
+  const item = await prisma.policy.findUnique({ where: { slug } });
+  if (!item) return reply.code(404).send({ message: "Not found" });
+
+  return {
+    slug: item.slug,
+    title: item.title,
+    summary: item.summary,
+    category: item.category,
+    agencyName: item.agencyName,
+    regionScope: item.regionScope,
+    regions: item.regions,
+    applyType: item.applyType,
+    applyStatus: item.applyStatus,
+    applyEndAt: item.applyEndAt?.toISOString() ?? null,
+    supportSummary: item.supportSummary,
+    eligibilitySummary: item.eligibilitySummary,
+    requiredDocs: item.requiredDocs,
+    officialUrl: item.officialUrl,
+    sourceUrl: item.sourceUrl,
+    sourceSystem: item.sourceSystem,
+    lifeStages: item.lifeStages,
+    targetGroups: item.targetGroups,
+    lastCheckedAt: item.lastCheckedAt?.toISOString() ?? null,
+    faq: Array.isArray((item.faqJson as any)?.items) ? (item.faqJson as any).items : [],
+  };
+});
+
+app.post("/corrections", async (request, reply) => {
+  const body = request.body as {
+    policySlug?: string;
+    email: string;
+    type: string;
+    message: string;
+  };
+
+  if (!body.email || !body.type || !body.message) {
+    return reply.code(400).send({ message: "Missing required fields" });
+  }
+
+  const created = await prisma.policyCorrectionRequest.create({ data: body });
+  return reply.code(201).send({ id: created.id, status: created.status });
+});
+
+app.listen({ port: Number(process.env.PORT || 4000), host: "0.0.0.0" });`;

@@ -1146,6 +1146,10 @@ dd {
   max-height: 620px;
 }
 
+.api-template {
+  max-height: 760px;
+}
+
 .benchmark-dashboard {
   background: white;
   border-bottom: 1px solid var(--line);

@@ -9,7 +9,9 @@ import {
   monorepoBlueprint,
   normalizedStorageFields,
   prismaSchemaTemplate,
-  recommendedStack
+  recommendedStack,
+  sharedPolicyTypeTemplate,
+  fastifyApiTemplate
 } from "../data/apiArchitecture";
 ---
 
@@ -178,6 +180,18 @@ import {
         <h2>Prisma 데이터 모델 초안</h2>
         <p class="notice">정책 원문은 `rawJson`에 보관하고, 검색·화면·필터에 필요한 값은 별도 필드로 정규화합니다. `PolicyCorrectionRequest`는 링크 오류, 마감 오류, 중복 신고 같은 운영 피드백을 처리하기 위한 최소 모델입니다.</p>
         <pre class="code-block schema-template">{prismaSchemaTemplate}</pre>
+      </section>
+
+      <section class="card">
+        <h2>공통 타입 계약</h2>
+        <p class="notice">웹과 API가 같은 정책 필드 이름을 쓰도록 `packages/shared/src/policy.ts`에 두는 타입 초안입니다. 목록은 `PolicySummary`, 상세는 `PolicyDetail`, 검색 조건은 `SearchQuery`로 분리합니다.</p>
+        <pre class="code-block schema-template">{sharedPolicyTypeTemplate}</pre>
+      </section>
+
+      <section class="card">
+        <h2>Fastify API 템플릿</h2>
+        <p class="notice">초기 API는 `/health`, `/policies`, `/policies/:slug`, `/corrections`만 두고 시작합니다. 검색 품질이 올라가면 `/policies`의 단순 DB contains 검색을 Meilisearch 쿼리로 교체합니다.</p>
+        <pre class="code-block api-template">{fastifyApiTemplate}</pre>
       </section>
     </div>
   </section>
