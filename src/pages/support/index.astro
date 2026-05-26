@@ -5,9 +5,10 @@ import QuickConditionSearch from "../../components/QuickConditionSearch.astro";
 import { CheckCircle2, Search, SlidersHorizontal } from "@lucide/astro";
 import { categories, categoryGroups, lifeStages, policies, regions } from "../../data/policies";
 import { publicSourceOptions, sourceLabel } from "../../utils/sourceNames";
-import { dedupePolicies } from "../../utils/policyUtils";
+import { dedupePolicies, isSearchOnlyPolicy } from "../../utils/policyUtils";
 
 const { canonical: displayPolicies } = dedupePolicies(policies);
+const publicDisplayPolicies = displayPolicies.filter((policy) => !isSearchOnlyPolicy(policy));
 
 const params = Astro.url.searchParams;
 const selectedQ = params.get("q") ?? "";
@@ -17,13 +18,13 @@ const selectedSource = sourceLabel(params.get("source") ?? "");
 const selectedStatus = params.get("status") ?? "";
 
 const counts = {
-  all: displayPolicies.length,
-  deadline: displayPolicies.filter((policy) => policy.status === "마감임박" || /^D-/.test(policy.dday)).length,
-  gov24: displayPolicies.filter((policy) => policy.source.includes("정부24")).length,
-  welfare: displayPolicies.filter((policy) => policy.source.includes("복지로")).length,
-  kstartup: displayPolicies.filter((policy) => policy.source.includes("K-Startup")).length,
-  youth: displayPolicies.filter((policy) => `${policy.title} ${policy.tags.join(" ")}`.includes("청년")).length,
-  smallBusiness: displayPolicies.filter((policy) => `${policy.title} ${policy.tags.join(" ")}`.includes("소상공인")).length
+  all: publicDisplayPolicies.length,
+  deadline: publicDisplayPolicies.filter((policy) => policy.status === "마감임박" || /^D-/.test(policy.dday)).length,
+  gov24: publicDisplayPolicies.filter((policy) => policy.source.includes("정부24")).length,
+  welfare: publicDisplayPolicies.filter((policy) => policy.source.includes("복지로")).length,
+  kstartup: publicDisplayPolicies.filter((policy) => policy.source.includes("K-Startup")).length,
+  youth: publicDisplayPolicies.filter((policy) => `${policy.title} ${policy.tags.join(" ")}`.includes("청년")).length,
+  smallBusiness: publicDisplayPolicies.filter((policy) => `${policy.title} ${policy.tags.join(" ")}`.includes("소상공인")).length
 };
 
 function supportHref(next: Record<string, string>) {
@@ -172,7 +173,7 @@ const intentCards = [
       <div class="support-result-main">
         <div class="result-head support-result-head">
           <div>
-            <p class="eyebrow"><span id="result-count">{displayPolicies.length}</span>개 결과</p>
+            <p class="eyebrow"><span id="result-count">{publicDisplayPolicies.length}</span>개 결과</p>
             <h2>조건, 기한, 신청처를 빠르게 비교하세요</h2>
             <p class="notice">카드를 열면 지원 대상, 신청 방법, 필요 서류와 공식 신청 링크를 확인할 수 있습니다.</p>
           </div>

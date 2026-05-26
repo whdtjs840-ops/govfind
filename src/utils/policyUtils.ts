@@ -1,6 +1,19 @@
 import type { Policy } from "../data/policies";
 
 const summaryLimit = 132;
+const searchOnlySlugs = new Set([
+  "earned-income-tax-credit-application",
+  "youth-rent-eligibility-check",
+  "local-youth-rent-support",
+  "health-insurance-out-of-pocket-refund",
+  "health-insurance-overpayment-refund",
+  "small-business-direct-loan",
+  "small-business-emergency-fund"
+]);
+
+export function isSearchOnlyPolicy(policy: Pick<Policy, "slug">) {
+  return searchOnlySlugs.has(policy.slug);
+}
 
 export function normalizeText(value = "") {
   return value

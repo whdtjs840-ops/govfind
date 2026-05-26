@@ -3,18 +3,20 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { ArrowRight, CalendarClock, Search } from "@lucide/astro";
 import { policies, categoryGroups } from "../data/policies";
 import { guides } from "../data/guides";
-import { dedupePolicies, urgentPolicies } from "../utils/policyUtils";
+import { dedupePolicies, isSearchOnlyPolicy, urgentPolicies } from "../utils/policyUtils";
+import QuickConditionSearch from "../components/QuickConditionSearch.astro";
 
 const { canonical: displayPolicies } = dedupePolicies(policies);
+const publicPolicies = displayPolicies.filter((policy) => !isSearchOnlyPolicy(policy));
 const publicGuides = guides.filter((guide) => guide.category !== "SEO");
-const totalCountLabel = displayPolicies.length.toLocaleString("ko-KR");
-const urgent = urgentPolicies(displayPolicies);
-const latest = [...displayPolicies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 18);
-const featured = [...displayPolicies].sort((a, b) => b.views - a.views).slice(0, 6);
+const totalCountLabel = publicPolicies.length.toLocaleString("ko-KR");
+const urgent = urgentPolicies(publicPolicies);
+const latest = [...publicPolicies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 18);
+const featured = [...publicPolicies].sort((a, b) => b.views - a.views).slice(0, 6);
 const recommendedGuides = publicGuides.slice(0, 4);
 const categoryCounts = categoryGroups.map((category) => ({
   ...category,
-  count: displayPolicies.filter(
+  count: publicPolicies.filter(
     (policy) => policy.category === category.label || category.keywords.some((keyword) => `${policy.title} ${policy.tags.join(" ")}`.includes(keyword))
   ).length
 }));
@@ -48,7 +50,7 @@ const quickEntryCards = [
       <p class="hero-lead">공식 출처 기준으로 정리된 정부지원금 검색 서비스입니다. 자격을 단정하지 않고, 조건 확인과 공식 신청처 이동을 돕습니다.</p>
 
       <div class="hero-cta-row">
-        <a class="button" href="/support/#condition-search">내 조건으로 찾기</a>
+        <a class="button" href="#condition-search">내 조건으로 찾기</a>
         <a class="button secondary" href="/deadline/">마감임박 지원금 보기</a>
       </div>
 
@@ -64,6 +66,12 @@ const quickEntryCards = [
         <span class="trending-label">인기</span>
         {actionKeywords.map((keyword) => <a class="trending-pill" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
       </div>
+    </div>
+  </section>
+
+  <section class="section tight home-condition-section">
+    <div class="wrap">
+      <QuickConditionSearch standalone />
     </div>
   </section>
 
