@@ -1,0 +1,73 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Policy {
+  id                 String   @id @default(cuid())
+  slug               String   @unique
+  title              String
+  summary            String
+  sourceSystem       String
+  sourceExternalId   String
+  sourceUrl          String?
+  officialUrl        String?
+  agencyName         String
+  category           String
+  lifeStages         String[]
+  targetGroups       String[]
+  regionScope        String
+  regions            String[]
+  applyType          String
+  applyStatus        String
+  applyStartAt       DateTime?
+  applyEndAt         DateTime?
+  supportSummary     String
+  eligibilitySummary String
+  contentSummary     String
+  applyMethodSummary String
+  requiredDocs       String[]
+  faqJson            Json?
+  rawJson            Json
+  canonicalKey       String?
+  relatedSourceUrls  Json?
+  isPublished        Boolean  @default(true)
+  lastCheckedAt      DateTime?
+  lastSyncedAt       DateTime @default(now())
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  corrections PolicyCorrectionRequest[]
+
+  @@unique([sourceSystem, sourceExternalId])
+  @@index([category])
+  @@index([applyStatus])
+  @@index([agencyName])
+  @@index([canonicalKey])
+}
+
+model PolicyCorrectionRequest {
+  id         String   @id @default(cuid())
+  policySlug String?
+  policy     Policy?  @relation(fields: [policySlug], references: [slug])
+  email      String
+  type       String
+  message    String
+  status     String   @default("open")
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model AdminIssue {
+  id        String   @id @default(cuid())
+  policySlug String?
+  type      String
+  severity  String   @default("medium")
+  status    String   @default("open")
+  message   String
+  createdAt DateTime @default(now())
+}

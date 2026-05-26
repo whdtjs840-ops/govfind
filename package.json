@@ -3,15 +3,31 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "prebuild": "node scripts/sync-welfare-api.mjs && node scripts/sync-public-service-api.mjs && node scripts/sync-kstartup-api.mjs",
-    "dev": "astro dev --host 127.0.0.1",
-    "build": "astro build",
-    "preview": "astro preview --host 127.0.0.1"
+    "dev": "npm run dev --workspace @govfind/web",
+    "dev:api": "npm run dev --workspace @govfind/api",
+    "build": "npm run build --workspaces --if-present",
+    "test": "vitest run",
+    "db:generate": "npm run db:generate --workspace @govfind/db",
+    "db:migrate": "npm run db:migrate --workspace @govfind/db",
+    "db:seed": "npm run db:seed --workspace @govfind/db",
+    "legacy:prebuild": "node scripts/sync-welfare-api.mjs && node scripts/sync-public-service-api.mjs && node scripts/sync-kstartup-api.mjs",
+    "legacy:dev": "astro dev --host 127.0.0.1",
+    "legacy:build": "astro build",
+    "legacy:preview": "astro preview --host 127.0.0.1"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",
     "@lucide/astro": "^1.16.0",
     "astro": "^6.3.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
   }
 }

@@ -4,3 +4,7 @@ dist/
 qa/
 .env
 .env.*
+.wrangler/
+.next/
+apps/web/.next/
+next-dev*.log
