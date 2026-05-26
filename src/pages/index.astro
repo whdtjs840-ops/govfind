@@ -23,12 +23,12 @@ const categoryCounts = categoryGroups.map((category) => ({
 }));
 const mainCategories = categoryCounts.slice(0, 9);
 const actionKeywords = [
-  "근로장려금 신청방법",
-  "근로장려금 대상조회",
-  "청년월세 지원 대상",
-  "국민취업지원제도 신청조건",
-  "건강보험 환급금 조회",
-  "소상공인 정책자금 신청서류"
+  { label: "근로장려금 신청방법", href: "/topic/earned-income-tax-credit/" },
+  { label: "근로장려금 대상조회", href: "/support/?q=근로장려금 대상조회" },
+  { label: "청년월세 지원 대상", href: "/topic/youth-rent/" },
+  { label: "국민취업지원제도 신청조건", href: "/topic/national-employment-support/" },
+  { label: "건강보험 환급금 조회", href: "/topic/health-insurance-refund/" },
+  { label: "소상공인 정책자금 신청서류", href: "/topic/small-business-policy-fund/" }
 ];
 const quickEntryCards = [
   { title: "지원금 정보", desc: "현금성 지원과 생활비 지원을 먼저 확인", href: "/support/?q=지원금" },
@@ -66,7 +66,7 @@ const quickEntryCards = [
 
       <div class="hero-trending" aria-label="인기 검색어">
         <span class="trending-label">인기</span>
-        {actionKeywords.map((keyword) => <a class="trending-pill" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
+        {actionKeywords.map((keyword) => <a class="trending-pill" href={keyword.href}>{keyword.label}</a>)}
       </div>
     </div>
   </section>

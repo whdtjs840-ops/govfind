@@ -1,0 +1,76 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { ArrowRight, Search } from "@lucide/astro";
+import { policies } from "../../data/policies";
+import { topics } from "../../data/topics";
+import { cleanSummary, dedupePolicies, isSearchOnlyPolicy, policySearchText } from "../../utils/policyUtils";
+import { sourceLabel } from "../../utils/sourceNames";
+
+export function getStaticPaths() {
+  return topics.map((topic) => ({ params: { slug: topic.slug }, props: { topic } }));
+}
+
+const { topic } = Astro.props;
+const { canonical } = dedupePolicies(policies);
+const topicPolicies = canonical
+  .filter((policy) => {
+    const text = policySearchText(policy);
+    return topic.keywords.some((keyword) => text.includes(keyword));
+  })
+  .sort((a, b) => Number(isSearchOnlyPolicy(a)) - Number(isSearchOnlyPolicy(b)) || b.views - a.views)
+  .slice(0, 9);
+---
+
+<BaseLayout title={`${topic.title} | GovFind`} description={topic.description} canonical={`/topic/${topic.slug}/`}>
+  <section class="page-head topic-head">
+    <div class="wrap">
+      <p class="eyebrow">핵심 키워드</p>
+      <h1>{topic.title}</h1>
+      <p class="lead">{topic.description} GovFind는 자격을 단정하지 않고 공식 신청처 확인을 돕습니다.</p>
+      <div class="hero-cta-row">
+        <a class="button" href={`/support/?q=${encodeURIComponent(topic.query)}`}>관련 지원금 보기 <Search size={17} /></a>
+        <a class="button secondary" href="/sources/">출처 기준 확인</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-header">
+        <h2 class="section-heading">공식 출처 기준 관련 정책</h2>
+        <a class="section-more" href={`/support/?q=${encodeURIComponent(topic.query)}`}>검색 결과 전체 보기 <ArrowRight size={16} /></a>
+      </div>
+      <div class="policy-grid">
+        {topicPolicies.map((policy) => (
+          <article class="policy-card-home">
+            <div class="card-body">
+              <div class="card-badges">
+                <span class="badge">{policy.category}</span>
+                <span class="badge soft">{sourceLabel(policy.source)}</span>
+                <span class="badge warn">{policy.dday}</span>
+              </div>
+              <h3><a class="card-title" href={`/support/${policy.slug}/`}>{policy.title}</a></h3>
+              <p class="card-summary">{cleanSummary(policy.summary)}</p>
+              <div class="card-meta">
+                <span>{policy.agency}</span>
+                <span class="meta-divider">·</span>
+                <span>확인일 {policy.updatedAt}</span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight home-source-note">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">신청 전 확인</p>
+        <h2>대상, 기간, 필요서류는 공식 신청처에서 최종 확인하세요.</h2>
+        <p class="lead">같은 이름의 지원금도 지역·기간·소득 기준에 따라 신청 가능 여부가 달라질 수 있습니다.</p>
+      </div>
+      <a class="button secondary" href="/support/#condition-search">조건으로 다시 찾기</a>
+    </div>
+  </section>
+</BaseLayout>

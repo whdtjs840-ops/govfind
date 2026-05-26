@@ -3,7 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { ExternalLink } from "@lucide/astro";
 import { policies } from "../../data/policies";
 import { sourceLabel } from "../../utils/sourceNames";
-import { cleanSummary, dedupePolicies } from "../../utils/policyUtils";
+import { cleanSummary, ddayNumber, dedupePolicies, isSearchOnlyPolicy } from "../../utils/policyUtils";
 
 export function getStaticPaths() {
   return policies.map((policy) => ({ params: { slug: policy.slug }, props: { policy } }));
@@ -17,9 +17,20 @@ const detailTarget = apiDetails?.target || policy.audience || policy.targetGroup
 const detailBenefit = apiDetails?.benefit || policy.benefits.join("\n");
 const detailApply = apiDetails?.application || policy.apply;
 const detailCriteria = apiDetails?.criteria || "";
+const deadlineDays = ddayNumber(policy);
+const deadlineBasis =
+  deadlineDays !== null
+    ? `D-day는 현재 등록된 신청기간 문구 "${policy.deadline}"과 정책 상태값을 기준으로 산정했습니다. 지역별 접수일이 다를 수 있으므로 공식 신청처에서 최종 확인해야 합니다.`
+    : `신청기간이 "${policy.deadline}"로 표시되어 있어 단일 D-day를 확정하지 않았습니다. 상시·지역별·기관별 접수는 공식 신청처의 최신 공고를 기준으로 확인해야 합니다.`;
+const sourceAdapter =
+  policy.source.includes("정부24") ? "gov24/v3 serviceList·serviceDetail" :
+  policy.source.includes("복지로") || policy.source.includes("복지") ? "NationalWelfare V001" :
+  policy.source.includes("K-Startup") ? "K-Startup 공공데이터" :
+  "공식 원문/기관 안내";
 const relatedPolicies = policies
-  .filter((item) => item.slug !== policy.slug && (item.category === policy.category || item.region === policy.region || item.tags.some((tag) => policy.tags.includes(tag))))
+  .filter((item) => !isSearchOnlyPolicy(item) && item.slug !== policy.slug && (item.category === policy.category || item.region === policy.region || item.tags.some((tag) => policy.tags.includes(tag))))
   .slice(0, 4);
+const comparisonRows = relatedPolicies.slice(0, 3);
 
 function lines(value?: string, max = 12) {
   return (value ?? "")
@@ -130,8 +141,28 @@ const quickCheckItems = [
         </section>
 
         <section class="doc-block">
+          <h3>출처와 확인 기준</h3>
+          <dl class="doc-info-table">
+            <div><dt>출처</dt><dd>{sourceLabel(policy.source)}</dd></div>
+            <div><dt>수집 기준</dt><dd>{sourceAdapter}</dd></div>
+            <div><dt>마지막 출처 확인일</dt><dd>{policy.updatedAt}</dd></div>
+            <div><dt>링크 검증 상태</dt><dd>공식 신청처 연결 제공 · 접수 가능 여부는 공식 기관 확인</dd></div>
+          </dl>
+          <p class="notice">GovFind는 원문 출처, 기관명, 신청 링크, 마지막 확인일을 함께 보여주어 사용자가 공식 신청 전 빠르게 검토할 수 있도록 돕습니다.</p>
+        </section>
+
+        <section class="doc-block">
           <h3>정책 요약</h3>
           <p>{cleanSummary(policy.summary)}</p>
+        </section>
+
+        <section class="doc-block">
+          <h3>근거 요약</h3>
+          <p>
+            이 페이지는 {sourceLabel(policy.source)}와 {policy.agency} 안내를 기준으로 {policy.title}의 대상, 지원내용, 신청기간, 필요서류를 같은 순서로 정리했습니다.
+            GovFind는 신청 가능성을 단정하지 않으며, 최종 접수 가능 여부와 자격 판정은 공식 신청처에서 확인해야 합니다.
+          </p>
+          <p class="notice">{deadlineBasis}</p>
         </section>
 
         {(apiDetails?.benefit || apiDetails?.target || apiDetails?.application) && (
@@ -210,9 +241,55 @@ const quickCheckItems = [
             </>
           )}
         </section>
+
+        {comparisonRows.length > 0 && (
+          <section class="doc-block">
+            <h3>유사 정책 비교</h3>
+            <div class="compare-table-wrap">
+              <table class="compare-table">
+                <thead>
+                  <tr>
+                    <th>정책</th>
+                    <th>분류</th>
+                    <th>지역</th>
+                    <th>신청기간</th>
+                    <th>공식확인</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>{policy.title}</strong></td>
+                    <td>{policy.category}</td>
+                    <td>{policy.region}</td>
+                    <td>{policy.deadline}</td>
+                    <td><a href={policy.officialUrl} target="_blank" rel="noopener noreferrer">공식 신청처</a></td>
+                  </tr>
+                  {comparisonRows.map((item) => (
+                    <tr>
+                      <td><a href={`/support/${item.slug}/`}>{item.title}</a></td>
+                      <td>{item.category}</td>
+                      <td>{item.region}</td>
+                      <td>{item.deadline}</td>
+                      <td><a href={item.officialUrl} target="_blank" rel="noopener noreferrer">공식 신청처</a></td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        )}
       </article>
 
       <aside class="doc-side">
+        <div class="card doc-side-card">
+          <h2>출처 카드</h2>
+          <dl class="summary-dl">
+            <div><dt>출처</dt><dd>{sourceLabel(policy.source)}</dd></div>
+            <div><dt>확인일</dt><dd>{policy.updatedAt}</dd></div>
+            <div><dt>링크</dt><dd><a href={policy.officialSourceUrl || policy.officialUrl} target="_blank" rel="noopener noreferrer">공식 원문</a></dd></div>
+          </dl>
+        </div>
+
         <div class="card doc-side-card">
           <h2>공식 확인</h2>
           <dl class="summary-dl">
