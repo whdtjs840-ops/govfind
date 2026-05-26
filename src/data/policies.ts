@@ -2,6 +2,7 @@ import { publicServiceApiPolicies } from "./public-service-api.generated";
 import { kstartupApiPolicies } from "./kstartup-api.generated";
 import { welfareApiPolicies } from "./welfare-api.generated";
 import { localWelfareApiPolicies } from "./local-welfare-api.generated";
+import { youthApiPolicies } from "./youth-api.generated";
 
 export type PolicyStatus = "모집중" | "상시" | "예정" | "마감임박";
 
@@ -1336,6 +1337,7 @@ policies.push(...welfareApiPolicies);
 policies.push(...localWelfareApiPolicies);
 policies.push(...publicServiceApiPolicies);
 policies.push(...kstartupApiPolicies);
+policies.push(...youthApiPolicies);
 
 export const categoryGroups = [
   { slug: "youth", label: "청년", keywords: ["청년", "청년도약", "청년농"] },

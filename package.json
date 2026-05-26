@@ -15,7 +15,7 @@
     "db:generate": "npm run db:generate --workspace @govfind/db",
     "db:migrate": "npm run db:migrate --workspace @govfind/db",
     "db:seed": "npm run db:seed --workspace @govfind/db",
-    "legacy:prebuild": "node scripts/sync-welfare-api.mjs && node scripts/sync-local-welfare-api.mjs && node scripts/sync-public-service-api.mjs && node scripts/sync-kstartup-api.mjs",
+    "legacy:prebuild": "node scripts/sync-welfare-api.mjs && node scripts/sync-local-welfare-api.mjs && node scripts/sync-public-service-api.mjs && node scripts/sync-kstartup-api.mjs && node scripts/sync-youth-api.mjs",
     "legacy:dev": "astro dev --host 127.0.0.1",
     "legacy:build": "astro build",
     "legacy:preview": "astro preview --host 127.0.0.1"
