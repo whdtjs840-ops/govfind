@@ -59,13 +59,13 @@ const intentCards = [
 
 <BaseLayout
   title="정부지원금 검색 결과 - GovFind"
-  description="정부지원금을 키워드, 카테고리, 지역, 모집 상태, 공식 출처별로 검색하고 지원 대상, 필요 서류, 신청처를 비교하세요."
+  description="공식 출처 기준으로 정리된 정부지원금 검색 결과입니다. 자격을 단정하지 않고 조건 확인과 공식 신청처 이동을 돕습니다."
 >
   <section class="support-search-head">
     <div class="wrap">
       <p class="eyebrow">내 조건으로 찾기</p>
       <h1>지원금, 환급금, 정책자금을 조건별로 빠르게 비교하세요</h1>
-      <p class="lead">대상, 지역, 신청 기간, 필요 서류를 먼저 확인하고 최종 신청은 공식 신청처에서 진행하세요.</p>
+      <p class="lead">GovFind는 공식 출처 기준으로 정보를 정리하고, 자격을 단정하지 않습니다. 대상, 지역, 신청 기간, 필요 서류를 먼저 확인한 뒤 공식 신청처로 이동하세요.</p>
 
       <div class="support-intent-grid" aria-label="빠른 검색 유형">
         {intentCards.map((item) => (
@@ -159,7 +159,7 @@ const intentCards = [
 
         <div class="card support-source-card">
           <h2><CheckCircle2 size={18} /> 확인 기준</h2>
-          <p>GovFind는 조건을 정리해 보여주며, 자격 판정과 접수는 각 기관 공식 페이지에서 진행됩니다.</p>
+          <p>GovFind는 공식 출처를 기준으로 조건 확인을 돕고, 자격 판정과 접수는 각 기관 공식 페이지에서 진행됩니다.</p>
         </div>
       </aside>
 
@@ -194,7 +194,7 @@ const intentCards = [
       <div>
         <p class="eyebrow">공식 신청 전 체크</p>
         <h2>민간 사이트에서 끝내지 말고 공식 원문까지 확인하세요</h2>
-        <p class="lead">GovFind는 조건을 정리해 보여주는 정보 탐색 사이트입니다. 최종 자격 판정과 접수는 정부24, 복지로, 고용24, K-Startup 등 공식 기관에서 진행됩니다.</p>
+        <p class="lead">GovFind는 공식 출처 기준으로 정리된 정부지원금 검색 서비스입니다. 최종 자격 판정과 접수는 정부24, 복지로, 고용24, K-Startup 등 공식 기관에서 진행됩니다.</p>
         <div class="toolbar"><a class="button secondary" href="/sources/">공식 데이터 출처 보기</a></div>
       </div>
       <div class="notification-grid">

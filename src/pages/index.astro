@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { ArrowRight, CalendarClock, Search } from "@lucide/astro";
-import { policies, categoryGroups, popularKeywords } from "../data/policies";
+import { policies, categoryGroups } from "../data/policies";
 import { guides } from "../data/guides";
 
 const totalCountLabel = policies.length.toLocaleString("ko-KR");
@@ -12,6 +12,7 @@ const urgent = policies
     return rank(a.dday) - rank(b.dday);
   });
 const latest = [...policies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 18);
+const featured = [...policies].sort((a, b) => b.views - a.views).slice(0, 6);
 const recommendedGuides = guides.slice(0, 4);
 const categoryCounts = categoryGroups.map((category) => ({
   ...category,
@@ -40,13 +41,13 @@ const quickEntryCards = [
 
 <BaseLayout
   title="GovFind - 정부지원금 맞춤 검색"
-  description="청년, 복지, 주거, 고용, 창업 등 정부지원금과 지원사업을 검색하고 마감일, 지원내용, 공식 신청처를 확인하세요."
+  description="공식 출처 기준으로 정리된 정부지원금 검색 서비스입니다. 자격을 단정하지 않고 조건 확인과 공식 신청처 이동을 돕습니다."
 >
   <section class="home-plain-hero hero-compact">
     <div class="wrap">
       <h1>놓치기 쉬운 <strong>정부지원금</strong>, 내 조건으로 빠르게 찾아보세요</h1>
       <p class="home-count-line">공식 확인된 핵심 정책 {totalCountLabel}개</p>
-      <p class="hero-lead">정부24·복지로·K-Startup 등 공식 출처 기준으로 지원 대상, 신청 기간, 필요 서류, 공식 신청처를 정리했습니다.</p>
+      <p class="hero-lead">공식 출처 기준으로 정리된 정부지원금 검색 서비스입니다. 자격을 단정하지 않고, 조건 확인과 공식 신청처 이동을 돕습니다.</p>
 
       <div class="hero-cta-row">
         <a class="button" href="/support/">내 조건으로 찾기</a>
@@ -71,9 +72,9 @@ const quickEntryCards = [
   <section class="home-entry-strip">
     <div class="wrap">
       <div class="home-trust-grid" aria-label="GovFind 이용 기준">
-        <div><strong>공식 출처 기준</strong><span>기관 안내를 기준으로 정리</span></div>
-        <div><strong>조건 먼저 정리</strong><span>대상·지역·기간부터 확인</span></div>
-        <div><strong>최종 신청은 공식 기관</strong><span>신청 페이지로 바로 이동</span></div>
+        <div><strong>공식 출처 기준</strong><span>정부24·복지로·K-Startup 등 기관 안내 기준</span></div>
+        <div><strong>자격 단정 없음</strong><span>대상·지역·기간 조건을 먼저 확인</span></div>
+        <div><strong>공식 신청처 이동</strong><span>최종 신청은 공식 기관 페이지에서 진행</span></div>
       </div>
       <div class="quick-entry-grid" aria-label="빠른 진입">
         {quickEntryCards.map((item) => (
@@ -103,10 +104,28 @@ const quickEntryCards = [
     </div>
   </section>
 
+  <section class="section section-tight home-featured-section">
+    <div class="wrap">
+      <div class="section-header">
+        <h2 class="section-heading">주목 받는 지원금</h2>
+        <a href="/support/?sort=popular" class="section-more">더보기 <ArrowRight size={16} /></a>
+      </div>
+      <div class="featured-policy-grid">
+        {featured.map((policy) => (
+          <a href={`/support/${policy.slug}/`} class="featured-policy-card" data-event="featured_policy_click" data-policy={policy.slug}>
+            <span>{policy.category}</span>
+            <strong>{policy.title}</strong>
+            <small>{policy.agency} · {policy.dday}</small>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
   <section class="section section-tight">
     <div class="wrap">
       <div class="section-header">
-        <h2 class="section-heading">마감 임박</h2>
+        <h2 class="section-heading">곧 만료되는 지원금</h2>
         <a href="/deadline/" class="section-more">더보기 <ArrowRight size={16} /></a>
       </div>
       <div class="deadline-scroll">
@@ -180,8 +199,8 @@ const quickEntryCards = [
       <CalendarClock size={24} />
       <div>
         <p class="eyebrow">공식 신청처 확인</p>
-        <h2>GovFind는 지원사업을 정리해 보여주고, 최종 신청은 공식 신청처로 안내합니다.</h2>
-        <p class="lead">지원 대상과 신청 가능 여부는 각 기관의 공식 안내에서 최종 확인하세요.</p>
+        <h2>자격을 단정하지 않고, 조건 확인과 공식 신청처 이동을 돕습니다.</h2>
+        <p class="lead">지원 대상과 신청 가능 여부는 정부24·복지로·K-Startup 등 공식 안내에서 최종 확인하세요.</p>
       </div>
       <a class="button secondary" href="/sources/">출처 확인</a>
     </div>

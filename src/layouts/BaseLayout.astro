@@ -10,7 +10,7 @@ type Props = {
 
 const {
   title = "GovFind - 정부지원금 맞춤 검색",
-  description = "청년, 복지, 주거, 고용, 창업 등 정부지원금과 지원사업을 한 곳에서 검색하고 공식 신청처를 확인하세요.",
+  description = "공식 출처 기준으로 정리된 정부지원금 검색 서비스입니다. 자격을 단정하지 않고 조건 확인과 공식 신청처 이동을 돕습니다.",
   canonical = Astro.url.pathname
 } = Astro.props;
 
@@ -40,7 +40,7 @@ const canonicalUrl = new URL(canonical, siteUrl).toString();
       "@type": "WebSite",
       name: "GovFind",
       url: siteUrl,
-      description: "정부지원금과 지원사업을 검색하고 공식 신청처를 확인하는 서비스",
+      description: "공식 출처 기준으로 정리된 정부지원금 검색 서비스",
       potentialAction: {
         "@type": "SearchAction",
         target: `${siteUrl}/support/?q={search_term_string}`,
@@ -84,7 +84,7 @@ const canonicalUrl = new URL(canonical, siteUrl).toString();
             <span class="brand-mark">G</span>
             <span>GovFind</span>
           </a>
-          <p>정부지원금과 지원사업을 검색하고, 조건을 비교한 뒤 공식 신청처로 이동할 수 있도록 정리합니다.</p>
+          <p>공식 출처 기준으로 정부지원금을 정리하고, 자격을 단정하지 않은 상태에서 조건 확인과 공식 신청처 이동을 돕습니다.</p>
         </div>
         <div>
           <h2>서비스</h2>
