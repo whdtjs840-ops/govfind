@@ -63,6 +63,11 @@ const quickCheckItems = [
   { label: "공식 신청처", value: sourceLabel(policy.source) },
   { label: "마지막 확인일", value: policy.updatedAt || "공식 신청처 확인 필요" }
 ];
+const applyPath = [
+  "대상·지역 조건 확인",
+  "기간·필요서류 확인",
+  "공식 신청처에서 최종 신청"
+];
 ---
 
 <BaseLayout title={`${policy.title} - 지원 대상과 신청 방법 | GovFind`} description={policy.summary} canonical={`/support/${policy.slug}/`}>
@@ -90,6 +95,11 @@ const quickCheckItems = [
         </a>
       </div>
 
+      <div class="doc-safety-note" role="note">
+        <strong>신청 전 안내</strong>
+        <span>GovFind는 자격을 단정하지 않습니다. 대상, 기간, 서류를 빠르게 확인한 뒤 최종 신청은 공식 기관에서 진행하세요.</span>
+      </div>
+
       <section class="quick-check-box" aria-label="신청 전 빠른 확인">
         <div class="quick-check-head">
           <h2>신청 전 빠른 확인</h2>
@@ -103,6 +113,15 @@ const quickCheckItems = [
           ))}
         </dl>
       </section>
+
+      <div class="doc-apply-path" aria-label="신청 확인 순서">
+        {applyPath.map((item, index) => (
+          <div>
+            <span>{index + 1}</span>
+            <strong>{item}</strong>
+          </div>
+        ))}
+      </div>
 
       <nav class="doc-anchor-nav" aria-label="상세 섹션 이동">
         <a href="#summary">요약</a>
