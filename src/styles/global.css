@@ -1084,6 +1084,11 @@ dd {
   margin-top: 18px;
 }
 
+.schema-grid.compact,
+.integration-grid.compact {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .schema-grid div,
 .integration-grid div {
   display: grid;
@@ -1103,6 +1108,24 @@ dd {
 .integration-grid span,
 .integration-grid small {
   color: var(--muted);
+}
+
+.api-detail-table {
+  min-width: 1200px;
+}
+
+.inline-json {
+  margin: 0;
+  padding: 12px;
+  max-width: 340px;
+  white-space: pre-wrap;
+  color: #334448;
+  background: #f6faf9;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  font-size: 0.82rem;
+  line-height: 1.55;
 }
 
 .benchmark-dashboard {

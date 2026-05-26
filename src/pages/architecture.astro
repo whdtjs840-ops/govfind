@@ -1,0 +1,146 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { ArrowRight, Database, RefreshCw, SearchCheck, ShieldCheck } from "@lucide/astro";
+import { apiSources, architectureLayers, deferredIntegrations, implementationSteps, normalizedStorageFields } from "../data/apiArchitecture";
+---
+
+<BaseLayout title="API 전략과 통합 아키텍처 - GovFind" description="GovFind의 정기 수집형 API 전략, 표준 스키마, 내부 검색 인덱스 운영 방향입니다." canonical="/architecture/">
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">API 아키텍처</p>
+      <h1>원천 API는 정기 수집하고, 사용자는 내부 인덱스를 검색합니다</h1>
+      <p class="lead">GovFind는 사용자 검색 때마다 공공 API를 직접 호출하지 않습니다. API 한도, 지연, 장애 전파를 줄이기 위해 수집 레이어에서 정규화한 데이터를 화면과 검색에 사용합니다.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="flow-grid architecture-flow" aria-label="GovFind 데이터 흐름">
+        {architectureLayers.map((layer, index) => (
+          <section class="card">
+            <span class="badge soft">{index + 1}</span>
+            <h2>{layer.title}</h2>
+            <ul class="list-clean">
+              {layer.items.map((item) => <li>{item}</li>)}
+            </ul>
+          </section>
+        ))}
+      </div>
+
+      <div class="architecture-arrow-row" aria-hidden="true">
+        <span>공공 원천</span><ArrowRight size={18} /><span>수집·정규화</span><ArrowRight size={18} /><span>내부 인덱스</span><ArrowRight size={18} /><span>사용자 화면</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight band">
+    <div class="wrap grid cols-3">
+      <section class="card">
+        <h2><RefreshCw size={20} />현재 구현</h2>
+        <p>빌드 전 `scripts/sync-*.mjs`가 원천 API를 수집하고, 키가 없거나 실패하면 기존 생성 데이터를 유지합니다.</p>
+      </section>
+      <section class="card">
+        <h2><SearchCheck size={20} />사용자 검색</h2>
+        <p>사용자 화면은 정규화된 내부 정책 데이터와 정적 검색 인덱스를 기준으로 필터링합니다.</p>
+      </section>
+      <section class="card">
+        <h2><Database size={20} />확장 방향</h2>
+        <p>트래픽과 데이터가 커지면 PostgreSQL에 원천·정규화 데이터를 저장하고 Meilisearch로 검색 계층을 분리합니다.</p>
+      </section>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap grid">
+      <section class="card">
+        <h2><ShieldCheck size={20} />원천별 호출 전략</h2>
+        <div class="source-table-wrap">
+          <table class="source-table">
+            <thead>
+              <tr>
+                <th>원천</th>
+                <th>한도 기준</th>
+                <th>역할</th>
+                <th>운영 방식</th>
+              </tr>
+            </thead>
+            <tbody>
+              {apiSources.map((source) => (
+                <tr>
+                  <td>{source.name}</td>
+                  <td>{source.quota}</td>
+                  <td>{source.role}</td>
+                  <td>{source.strategy}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>구현 원칙</h2>
+        <ol class="list-clean">
+          {implementationSteps.map((item) => <li>{item}</li>)}
+        </ol>
+        <div class="schema-grid compact">
+          {normalizedStorageFields.map((field) => (
+            <div>
+              <code>{field.name}</code>
+              <span>{field.description}</span>
+            </div>
+          ))}
+        </div>
+        <p class="notice">Next.js, Fastify, PostgreSQL, Meilisearch 구조는 확장 목표입니다. 현재 배포판은 Astro 정적 사이트에서 같은 원칙을 빌드 시 수집과 정적 인덱스로 먼저 구현합니다.</p>
+      </section>
+    </div>
+  </section>
+
+  <section class="section tight band">
+    <div class="wrap grid">
+      <section class="card">
+        <h2>권장 API와 정규화 기준</h2>
+        <p class="notice">아래 응답 예시는 실제 운영 응답을 복사한 값이 아니라, 공식 문서의 주요 필드 목적을 기준으로 재구성한 가공 예시입니다. 실구현에서는 원본 응답을 `raw_json`에 보관하고 화면용 데이터는 `normalized_policy`로 별도 매핑합니다.</p>
+        <div class="source-table-wrap">
+          <table class="source-table api-detail-table">
+            <thead>
+              <tr>
+                <th>API</th>
+                <th>용도</th>
+                <th>장점</th>
+                <th>주의</th>
+                <th>비용·트래픽</th>
+                <th>가공 응답 예시</th>
+              </tr>
+            </thead>
+            <tbody>
+              {apiSources.map((source) => (
+                <tr>
+                  <td>{source.name}</td>
+                  <td>{source.role}</td>
+                  <td>{source.advantage}</td>
+                  <td>{source.caution}</td>
+                  <td>{source.quota}</td>
+                  <td><pre class="inline-json">{JSON.stringify(source.sample, null, 2)}</pre></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>이번 MVP에서 보류할 연동</h2>
+        <div class="integration-grid compact">
+          {deferredIntegrations.map((item) => (
+            <div>
+              <strong>{item.name}</strong>
+              <span>{item.reason}</span>
+              <small>{item.stage}</small>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  </section>
+</BaseLayout>

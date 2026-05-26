@@ -33,7 +33,14 @@ export const publicApiSources = [
     provider: "한국사회보장정보원",
     purpose: "지역별 지원금과 복지서비스 확인 기준으로 활용 예정",
     fields: "시도, 시군구, 대상, 관심주제, 검색어, 정렬",
-    endpoint: "지역 복지서비스 API 기준"
+    endpoint: "지자체 복지서비스 API 정기 수집 예정"
+  },
+  {
+    name: "온통청년 청년정책",
+    provider: "국무조정실·청년정책 포털",
+    purpose: "청년 정책군과 청년 랜딩 정확도 보강",
+    fields: "정책명, 분야, 지역, 신청기간, 지원내용, 신청처",
+    endpoint: "청년정책 API 정기 수집 예정"
   },
   {
     name: "K-Startup 지원사업",
@@ -47,6 +54,7 @@ export const publicApiSources = [
 export const infrastructureIntegrations = [
   { name: "공식 링크 확인 기준", role: "신청 링크와 원문 링크를 공식 기관 기준으로 확인", provider: "정적 데이터 관리 + 수동 검수" },
   { name: "주기 수집 구조", role: "사용자 요청마다 API를 직접 호출하지 않고, 수집 후 내부 표준 스키마로 정리하는 방식", provider: "공공 API 캐시형 운영" },
+  { name: "내부 검색 인덱스", role: "수집된 정책을 검색 전용 형태로 변환해 사용자 검색에 사용", provider: "/search-index.json" },
   { name: "데이터 최신성 표시", role: "정책별 마지막 확인일과 출처를 화면에 표시", provider: "공공 원문 확인" },
   { name: "검색 행동 분석", role: "향후 인기 키워드와 공식 신청 클릭 흐름을 익명 집계 예정", provider: "GA4 또는 Cloudflare Web Analytics" },
   { name: "주소 검색", role: "비로그인 지역 정밀 검색이 필요할 때만 선택", provider: "도로명주소 API" }
