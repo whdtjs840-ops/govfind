@@ -626,3 +626,105 @@ export default function HomePage() {
     </main>
   );
 }`;
+
+export const webPolicyDetailTemplate = `import Script from "next/script";
+
+async function getPolicy(slug: string) {
+  const res = await fetch(\`\${process.env.API_BASE_URL}/policies/\${slug}\`, {
+    next: { revalidate: 3600 },
+  });
+  if (!res.ok) throw new Error("Failed to load");
+  return res.json();
+}
+
+export default async function PolicyDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const policy = await getPolicy(slug);
+
+  const faqJsonLd =
+    policy.faq?.length
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: policy.faq.map((item: { question: string; answer: string }) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: { "@type": "Answer", text: item.answer },
+          })),
+        }
+      : null;
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "홈", item: \`\${process.env.SITE_URL}\` },
+      { "@type": "ListItem", position: 2, name: "지원금 검색", item: \`\${process.env.SITE_URL}/support\` },
+      { "@type": "ListItem", position: 3, name: policy.title, item: \`\${process.env.SITE_URL}/support/\${policy.slug}\` },
+    ],
+  };
+
+  return (
+    <main className="mx-auto max-w-4xl px-4 py-10">
+      <p className="text-sm text-neutral-600">
+        {policy.category} · {policy.agencyName} · {policy.applyStatus}
+      </p>
+      <h1 className="mt-2 text-3xl font-bold">{policy.title}</h1>
+      <p className="mt-4 text-lg text-neutral-800">{policy.summary}</p>
+
+      <div className="mt-6 rounded-2xl border p-5">
+        <h2 className="text-xl font-semibold">공식 확인</h2>
+        <p className="mt-3 text-neutral-700">
+          최종 자격과 신청 가능 여부는 공식 기관에서 판단합니다.
+        </p>
+        {policy.officialUrl && (
+          <a href={policy.officialUrl} className="mt-4 inline-block rounded-lg border px-4 py-3">
+            공식 신청처 보기
+          </a>
+        )}
+        <p className="mt-3 text-sm text-neutral-500">
+          마지막 확인일: {policy.lastCheckedAt ? new Date(policy.lastCheckedAt).toLocaleDateString("ko-KR") : "확인 예정"}
+        </p>
+      </div>
+
+      <section className="mt-8 grid gap-6 md:grid-cols-2">
+        <div className="rounded-2xl border p-5">
+          <h2 className="text-xl font-semibold">지원 대상</h2>
+          <p className="mt-3 whitespace-pre-line text-neutral-700">{policy.eligibilitySummary}</p>
+        </div>
+
+        <div className="rounded-2xl border p-5">
+          <h2 className="text-xl font-semibold">준비 서류</h2>
+          <ul className="mt-3 space-y-2 text-neutral-700">
+            {policy.requiredDocs.map((doc: string) => <li key={doc}>• {doc}</li>)}
+          </ul>
+        </div>
+      </section>
+
+      {!!policy.faq?.length && (
+        <section className="mt-8 rounded-2xl border p-5">
+          <h2 className="text-xl font-semibold">자주 묻는 질문</h2>
+          <div className="mt-4 space-y-4">
+            {policy.faq.map((item: { question: string; answer: string }) => (
+              <details key={item.question} className="rounded-lg border p-4">
+                <summary className="cursor-pointer font-medium">{item.question}</summary>
+                <p className="mt-3 text-neutral-700">{item.answer}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <Script id="faq-jsonld" type="application/ld+json">
+        {JSON.stringify(faqJsonLd)}
+      </Script>
+      <Script id="breadcrumb-jsonld" type="application/ld+json">
+        {JSON.stringify(breadcrumbJsonLd)}
+      </Script>
+    </main>
+  );
+}`;
