@@ -156,3 +156,111 @@ export const deferredIntegrations = [
     stage: "라이선스 검토 후 별도 영역"
   }
 ];
+
+export const recommendedStack = [
+  {
+    name: "Next.js App Router",
+    role: "검색 유입형 웹 프론트",
+    reason: "파일 시스템 라우팅, Server Components, Suspense, 라우트 기준 코드 스플리팅이 콘텐츠형 검색 사이트에 적합"
+  },
+  {
+    name: "Fastify",
+    role: "BFF/API 서버",
+    reason: "낮은 오버헤드와 플러그인 구조로 수집·검색·정정요청 API를 가볍게 운영하기 좋음"
+  },
+  {
+    name: "PostgreSQL + Prisma",
+    role: "원천·정규화 데이터 저장",
+    reason: "raw_json과 normalized_policy를 함께 보관하고 타입 안전한 DB 접근과 마이그레이션을 제공"
+  },
+  {
+    name: "Meilisearch",
+    role: "검색 인덱스",
+    reason: "search-as-you-type, facet, filtering, sorting을 내장해 조건검색과 목록 UX에 유리"
+  }
+];
+
+export const monorepoBlueprint = [
+  "govfind/",
+  "  apps/",
+  "    web/",
+  "      app/",
+  "        page.tsx",
+  "        support/page.tsx",
+  "        support/[slug]/page.tsx",
+  "        layout.tsx",
+  "      components/quick-finder.tsx",
+  "      components/policy-card.tsx",
+  "      lib/api.ts",
+  "    api/",
+  "      src/server.ts",
+  "      src/routes/policies.ts",
+  "      src/jobs/sync.ts",
+  "      src/adapters/gov24.ts",
+  "      src/adapters/bokjiro-central.ts",
+  "      src/adapters/bokjiro-local.ts",
+  "      src/adapters/kstartup.ts",
+  "      src/adapters/youth.ts",
+  "  packages/",
+  "    shared/src/policy.ts",
+  "    db/prisma/schema.prisma",
+  "  docker-compose.yml",
+  "  .env.example",
+  "  pnpm-workspace.yaml",
+  "  package.json"
+];
+
+export const prismaSchemaTemplate = `datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Policy {
+  id                 String   @id @default(cuid())
+  slug               String   @unique
+  title              String
+  summary            String
+  sourceSystem       String
+  sourceExternalId   String
+  sourceUrl          String?
+  officialUrl        String?
+  agencyName         String
+  category           String
+  lifeStages         String[]
+  targetGroups       String[]
+  regionScope        String
+  regions            String[]
+  applyType          String
+  applyStatus        String
+  applyStartAt       DateTime?
+  applyEndAt         DateTime?
+  supportSummary     String
+  eligibilitySummary String
+  requiredDocs       String[]
+  faqJson            Json?
+  rawJson            Json
+  isPublished        Boolean  @default(true)
+  lastCheckedAt      DateTime?
+  lastSyncedAt       DateTime @default(now())
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  @@unique([sourceSystem, sourceExternalId])
+  @@index([category])
+  @@index([applyStatus])
+  @@index([agencyName])
+}
+
+model PolicyCorrectionRequest {
+  id         String   @id @default(cuid())
+  policySlug String?
+  email      String
+  type       String
+  message    String
+  status     String   @default("open")
+  createdAt  DateTime @default(now())
+}`;

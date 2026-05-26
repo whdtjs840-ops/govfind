@@ -1128,6 +1128,24 @@ dd {
   line-height: 1.55;
 }
 
+.code-block {
+  margin: 16px 0 0;
+  padding: 18px;
+  overflow-x: auto;
+  white-space: pre;
+  color: #263a40;
+  background: #f6faf9;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  font-size: 0.86rem;
+  line-height: 1.65;
+}
+
+.schema-template {
+  max-height: 620px;
+}
+
 .benchmark-dashboard {
   background: white;
   border-bottom: 1px solid var(--line);

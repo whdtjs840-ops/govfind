@@ -1,7 +1,16 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { ArrowRight, Database, RefreshCw, SearchCheck, ShieldCheck } from "@lucide/astro";
-import { apiSources, architectureLayers, deferredIntegrations, implementationSteps, normalizedStorageFields } from "../data/apiArchitecture";
+import { ArrowRight, Code2, Database, RefreshCw, SearchCheck, ShieldCheck } from "@lucide/astro";
+import {
+  apiSources,
+  architectureLayers,
+  deferredIntegrations,
+  implementationSteps,
+  monorepoBlueprint,
+  normalizedStorageFields,
+  prismaSchemaTemplate,
+  recommendedStack
+} from "../data/apiArchitecture";
 ---
 
 <BaseLayout title="API 전략과 통합 아키텍처 - GovFind" description="GovFind의 정기 수집형 API 전략, 표준 스키마, 내부 검색 인덱스 운영 방향입니다." canonical="/architecture/">
@@ -140,6 +149,35 @@ import { apiSources, architectureLayers, deferredIntegrations, implementationSte
             </div>
           ))}
         </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap grid">
+      <section class="card">
+        <h2><Code2 size={20} />확장 구현 청사진</h2>
+        <p class="notice">현재 GovFind는 Astro 정적 배포로 빠르게 운영하고, 데이터와 트래픽이 커지는 시점에는 아래 스택으로 분리합니다. 핵심은 사용자 화면을 원천 API와 분리하고, 수집·정규화·검색을 독립 계층으로 두는 것입니다.</p>
+        <div class="integration-grid">
+          {recommendedStack.map((stack) => (
+            <div>
+              <strong>{stack.name}</strong>
+              <span>{stack.role}</span>
+              <small>{stack.reason}</small>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>모노레포 기준 구조</h2>
+        <pre class="code-block">{monorepoBlueprint.join("\n")}</pre>
+      </section>
+
+      <section class="card">
+        <h2>Prisma 데이터 모델 초안</h2>
+        <p class="notice">정책 원문은 `rawJson`에 보관하고, 검색·화면·필터에 필요한 값은 별도 필드로 정규화합니다. `PolicyCorrectionRequest`는 링크 오류, 마감 오류, 중복 신고 같은 운영 피드백을 처리하기 위한 최소 모델입니다.</p>
+        <pre class="code-block schema-template">{prismaSchemaTemplate}</pre>
       </section>
     </div>
   </section>
