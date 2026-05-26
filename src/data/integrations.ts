@@ -18,14 +18,14 @@ export const publicApiSources = [
     provider: "공공데이터포털·정부24 계열",
     purpose: "공식 혜택 카탈로그를 확인하고 주요 정책 정보를 정리",
     fields: "서비스명, 기관명, 분류, 상세, 기관 코드, 공식 링크",
-    endpoint: "공공데이터포털 신청 API 기준"
+    endpoint: "gov24/v3/serviceList, serviceDetail 기준"
   },
   {
     name: "중앙부처 복지서비스",
     provider: "한국사회보장정보원·복지로",
     purpose: "전국 단위 복지 서비스 목록과 상세 정보를 확인",
     fields: "생애주기, 대상, 관심주제, 나이, 온라인 신청, 정렬",
-    endpoint: "공공데이터포털 복지서비스 API 기준"
+    endpoint: "NationalWelfarelistV001, NationalWelfaredetailedV001 기준"
   },
   {
     name: "지자체 복지서비스",
@@ -45,7 +45,8 @@ export const publicApiSources = [
 
 export const infrastructureIntegrations = [
   { name: "공식 링크 확인 기준", role: "신청 링크와 원문 링크를 공식 기관 기준으로 확인", provider: "정적 데이터 관리 + 수동 검수" },
+  { name: "주기 수집 구조", role: "사용자 요청마다 API를 직접 호출하지 않고, 수집 후 내부 표준 스키마로 정리하는 방식", provider: "공공 API 캐시형 운영" },
   { name: "데이터 최신성 표시", role: "정책별 마지막 확인일과 출처를 화면에 표시", provider: "공공 원문 확인" },
   { name: "검색 행동 분석", role: "향후 인기 키워드와 공식 신청 클릭 흐름을 익명 집계 예정", provider: "GA4 또는 Cloudflare Web Analytics" },
-  { name: "주소 검색", role: "향후 지역 정밀 검색이 필요할 때만 선택", provider: "도로명주소 API" }
+  { name: "주소 검색", role: "비로그인 지역 정밀 검색이 필요할 때만 선택", provider: "도로명주소 API" }
 ];

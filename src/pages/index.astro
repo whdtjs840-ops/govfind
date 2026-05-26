@@ -10,6 +10,7 @@ const { canonical: displayPolicies } = dedupePolicies(policies);
 const publicPolicies = displayPolicies.filter((policy) => !isSearchOnlyPolicy(policy));
 const publicGuides = guides.filter((guide) => guide.category !== "SEO");
 const totalCountLabel = publicPolicies.length.toLocaleString("ko-KR");
+const latestUpdateLabel = [...publicPolicies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))[0]?.updatedAt ?? "공식 출처 확인 필요";
 const urgent = urgentPolicies(publicPolicies);
 const latest = [...publicPolicies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 18);
 const featured = [...publicPolicies].sort((a, b) => b.views - a.views).slice(0, 6);
@@ -47,6 +48,7 @@ const quickEntryCards = [
     <div class="wrap">
       <h1>놓치기 쉬운 <strong>정부지원금</strong>, 내 조건으로 빠르게 찾아보세요</h1>
       <p class="home-count-line">공식 확인된 핵심 정책 {totalCountLabel}개</p>
+      <p class="home-freshness-line">마지막 데이터 확인 {latestUpdateLabel} · 비로그인 조건검색 · 최종 신청은 공식 기관에서 진행</p>
       <p class="hero-lead">공식 출처 기준으로 정리된 정부지원금 검색 서비스입니다. 자격을 단정하지 않고, 조건 확인과 공식 신청처 이동을 돕습니다.</p>
 
       <div class="hero-cta-row">
@@ -81,6 +83,7 @@ const quickEntryCards = [
         <div><strong>공식 출처 기준</strong><span>정부24·복지로·K-Startup 등 기관 안내 기준</span></div>
         <div><strong>자격 단정 없음</strong><span>대상·지역·기간 조건을 먼저 확인</span></div>
         <div><strong>공식 신청처 이동</strong><span>최종 신청은 공식 기관 페이지에서 진행</span></div>
+        <div><strong>비로그인 탐색</strong><span>회원가입 없이 검색·필터·상세 비교부터 시작</span></div>
       </div>
       <div class="quick-entry-grid" aria-label="빠른 진입">
         {quickEntryCards.map((item) => (
