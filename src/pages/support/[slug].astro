@@ -32,6 +32,11 @@ const deadlineBasis = deadlineBasisText(policy);
 const displayStatus = getDisplayStatus(policy);
 const displayRegion = getDisplayRegion(policy);
 const showOfficialConfirmation = shouldRequireOfficialConfirmation(policy);
+const showOfficialConfirmationBlock =
+  showOfficialConfirmation ||
+  policy.statusConfidence === "unknown" ||
+  policy.dateConfidence === "unknown" ||
+  policy.applicationPeriodLabel === "공식 공고 확인";
 const sourceAdapter =
   policy.source.includes("정부24") ? "gov24/v3 serviceList·serviceDetail" :
   policy.source.includes("복지로") || policy.source.includes("복지") ? "NationalWelfare V001" :
@@ -108,14 +113,15 @@ const applyPath = [
         </a>
       </div>
 
-      <div class="doc-safety-note" role="note">
-        <strong>신청 전 안내</strong>
-        <span>GovFind는 자격을 단정하지 않습니다. 대상, 기간, 서류를 빠르게 확인한 뒤 최종 신청은 공식 기관에서 진행하세요.</span>
-      </div>
-      {showOfficialConfirmation && (
+      {showOfficialConfirmationBlock ? (
         <div class="doc-safety-note" role="note">
-          <strong>공식 확인 필요</strong>
-          <span>신청기간과 자격은 공식 공고에서 확인하세요.</span>
+          <strong>신청 전 확인하세요</strong>
+          <span>이 정책은 공식 출처 기준으로 정리되었습니다. 신청기간, 자격, 지원 내용은 변경될 수 있으므로 신청 전 공식 공고를 확인하세요.</span>
+        </div>
+      ) : (
+        <div class="doc-safety-note" role="note">
+          <strong>신청 전 안내</strong>
+          <span>GovFind는 자격을 단정하지 않습니다. 대상, 기간, 서류를 빠르게 확인한 뒤 최종 신청은 공식 기관에서 진행하세요.</span>
         </div>
       )}
 
