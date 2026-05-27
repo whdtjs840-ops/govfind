@@ -8,7 +8,6 @@ const requiredStringFields = [
   "category",
   "source",
   "agency",
-  "region",
   "deadline",
   "dday",
   "status",
@@ -55,6 +54,18 @@ function isKnownRegion(value) {
   return false;
 }
 
+function hasAllowedUnknownRegion(policy) {
+  return (
+    isBlank(policy.region) &&
+    !isBlank(policy.regionLabel) &&
+    (
+      policy.regionLabel === "공식 공고 확인" ||
+      policy.publishPolicy?.includeInRegionPage === false ||
+      policy.warnings?.includes("unknown region")
+    )
+  );
+}
+
 function checkDuplicate(values, label) {
   const counts = new Map();
   for (const value of values.filter(Boolean)) {
@@ -79,7 +90,9 @@ for (const policy of policies) {
     addError(policy, `unknown category: ${policy.category}`);
   }
 
-  if (!isBlank(policy.region) && !isKnownRegion(policy.region)) {
+  if (isBlank(policy.region)) {
+    if (!hasAllowedUnknownRegion(policy)) addError(policy, "missing region");
+  } else if (!isKnownRegion(policy.region)) {
     addError(policy, `unknown region: ${policy.region}`);
   }
 

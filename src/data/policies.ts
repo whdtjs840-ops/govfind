@@ -22746,6 +22746,16221 @@ const gov24PromotionPoliciesBatch3: Policy[] = [
 
 policies.push(...gov24PromotionPoliciesBatch3);
 
+const gov24PromotionPoliciesBatch4: Policy[] = [
+  {
+    "slug": "gov24-포천시-청년신혼부부-공공임대주택-주거비-지원-임대보증금",
+    "title": "포천시 청년·신혼부부 공공임대주택 주거비 지원(임대보증금)",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 포천시",
+    "region": "경기",
+    "amount": "관내 공공임대주택(송우파인빌, 포천헤리센트)에 거주하는 청년·신혼부부에게 주거비 지원",
+    "deadline": "2026-03-30 ~ 2026-11-30",
+    "dday": "D-187",
+    "status": "마감",
+    "startDate": "2026-03-30",
+    "endDate": "2026-11-30",
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "청년·주거·복지",
+    "targetGroup": "청년, 신혼부부",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "포천시 청년·신혼부부 공공임대주택 주거비 지원(임대보증금)",
+      "청년",
+      "경기",
+      "경기도 포천시",
+      "마감",
+      "신혼부부",
+      "주거",
+      "복지",
+      "관내",
+      "공공임대주택(송우파인빌,",
+      "포천헤리센트)에",
+      "거주하는"
+    ],
+    "summary": "관내 공공임대주택(송우파인빌, 포천헤리센트)에 거주하는 청년·신혼부부에게 주거비 지원",
+    "audience": "○ 대상주택: 청년, 신혼·신생아매입임대주택(송우파인빌, 포천헤리센트)\n ※ 단, 송우파인빌의 경우 2026년 1월 이후 신규 입주자만 신청 가능(2025년 이전 기존 입주자는 월 임대료로 신청)\n\n○ 지원내용\n - 임대보증금(전환보증금 최대 3,000만원) 지원 \n ※ 2~3순위 기준 기본 임대조건의 임대보증금은 자부담하여야 하며, 추가 전환보증금에 한하여 최대 3,000만원 한도 내에서 무이자 지원함\n (예시) ‘청년 매입임대주택’ 입주자: 200만원\n (예시) ‘신혼·신생아 매입임대주택’ 입주자:호별 상이함\n (※ 단, 입주자 모집 및 임대차계약 갱신 시 기본 임대조건의 임대보증금은 변경될 수 있으며, 호별 기본 임대조건 및 최대 전환 가능 금액은 예비입주자 모집 공고문 및 임대차계약서·전환보증금 안내문 참고)",
+    "benefits": [
+      "관내 공공임대주택(송우파인빌, 포천헤리센트)에 거주하는 청년·신혼부부에게 주거비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문 또는 온라인(정부24) 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/560000000143",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/560000000143",
+    "contact": "경기도 포천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 대상주택: 청년, 신혼·신생아매입임대주택(송우파인빌, 포천헤리센트)\n ※ 단, 송우파인빌의 경우 2026년 1월 이후 신규 입주자만 신청 가능(2025년 이전 기존 입주자는 월 임대료로 신청)\n\n○ 지원내용\n - 임대보증금(전환보증금 최대 3,000만원) 지원 \n ※ 2~3순위 기준 기본 임대조건의 임대보증금은 자부담하여야 하며, 추가 전환보증금에 한하여 최대 3,000만원 한도 내에서 무이자 지원함\n (예시) ‘청년 매입임대주택’ 입주자: 200만원\n (예시) ‘신혼·신생아 매입임대주택’ 입주자:호별 상이함\n (※ 단, 입주자 모집 및 임대차계약 갱신 시 기본 임대조건의 임대보증금은 변경될 수 있으며, 호별 기본 임대조건 및 최대 전환 가능 금액은 예비입주자 모집 공고문 및 임대차계약서·전환보증금 안내문 참고)",
+      "benefit": "관내 공공임대주택(송우파인빌, 포천헤리센트)에 거주하는 청년·신혼부부에게 주거비 지원",
+      "application": "방문 또는 온라인(정부24) 신청",
+      "contact": "경기도 포천시"
+    }
+  },
+  {
+    "slug": "gov24-고령농업인-영농비-지원",
+    "title": "고령농업인 영농비 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "고령농업인에게 영농비 지원",
+    "deadline": "2026-03-20 ~ 2026-03-20",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": "2026-03-20",
+    "endDate": "2026-03-20",
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "전체",
+    "targetGroup": "어르신, 농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "고령농업인 영농비 지원",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "마감",
+      "어르신",
+      "농어업인",
+      "아동",
+      "전체",
+      "고령농업인에게",
+      "영농비",
+      "지원"
+    ],
+    "summary": "충청남도 아산시의 고령농업인 영농비 지원사업입니다. 세부 자격과 지원 기준은 공식 공고에서 확인하세요.",
+    "audience": "○ 농업경영체등록된 자로서 아산에 거주하면서 아산에 영농(1,000㎡ 이상 3,500㎡ 이하)을 하는 농업인 중만 70세 이상(1956. 1. 1.이전 출생자)(2026. 1. 1.기준)에게 논 150원/㎡, 밭 100원/㎡ 지원\n\n ※ 예산의 범위내에서 변경 될수 있음",
+    "benefits": [
+      "고령농업인에게 영농비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 농지소재지 읍면동 행정복지센터 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000121",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000121",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 농업경영체등록된 자로서 아산에 거주하면서 아산에 영농(1,000㎡ 이상 3,500㎡ 이하)을 하는 농업인 중만 70세 이상(1956. 1. 1.이전 출생자)(2026. 1. 1.기준)에게 논 150원/㎡, 밭 100원/㎡ 지원\n\n ※ 예산의 범위내에서 변경 될수 있음",
+      "benefit": "고령농업인에게 영농비 지원",
+      "application": "○ 방문 신청 \n - 주민센터 : 농지소재지 읍면동 행정복지센터 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-소형-농기계-구입비-지원",
+    "title": "소형 농기계 구입비 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "영농농업인 등에게 농기계 구입비 50% 보조 지원",
+    "deadline": "2026-02-19 ~ 2026-02-19",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": "2026-02-19",
+    "endDate": "2026-02-19",
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "소형 농기계 구입비 지원",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "마감",
+      "농어업인",
+      "전체",
+      "영농농업인",
+      "등에게",
+      "농기계",
+      "구입비",
+      "50%"
+    ],
+    "summary": "영농농업인 등에게 농기계 구입비 50% 보조 지원",
+    "audience": "○ 농업경영체등록된 자로서 아산에 거주하면서 아산에 영농(벼, 밭)하는 농업인 또는 농업법인에게 농기계 구입비 50% 보조",
+    "benefits": [
+      "영농농업인 등에게 농기계 구입비 50% 보조 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 농지소재지 읍면동 행정복지센터 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000146",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000146",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 농업경영체등록된 자로서 아산에 거주하면서 아산에 영농(벼, 밭)하는 농업인 또는 농업법인에게 농기계 구입비 50% 보조",
+      "benefit": "영농농업인 등에게 농기계 구입비 50% 보조 지원",
+      "application": "○ 방문 신청 \n - 주민센터 : 농지소재지 읍면동 행정복지센터 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-양주시-경기청년-역량강화-기회지원",
+    "title": "양주시 경기청년 역량강화 기회지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "□ (신청방법) 잡아바 어플라이를 통한 신청 □ (사업내용) 어학·자격증 응시료 지원",
+    "deadline": "2026-05-11 ~ 2026-12-04",
+    "dday": "D-191",
+    "status": "모집중",
+    "startDate": "2026-05-11",
+    "endDate": "2026-12-04",
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "청년·취업·사업",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "양주시 경기청년 역량강화 기회지원",
+      "청년",
+      "경기",
+      "경기도 양주시",
+      "모집중",
+      "구직자",
+      "취업",
+      "사업",
+      "□",
+      "(신청방법)",
+      "잡아바",
+      "어플라이를"
+    ],
+    "summary": "□ (신청방법) 잡아바 어플라이를 통한 신청 □ (사업내용) 어학·자격증 응시료 지원",
+    "audience": "□ (신청기간) 2026-05-11 09:00 ~ 2026-12-04 18:00\n※ 단, 예산 소진 시, 사업 조기 종료\n□ (사업대상) 양주시 거주 미취업 청년(19~39세)\n□ (소요예산) 68,100천원\n□ (신청방법) 잡아바 어플라이를 통한 신청\n□ (사업내용) 어학·자격증 응시료 지원",
+    "benefits": [
+      "□ (신청방법) 잡아바 어플라이를 통한 신청 □ (사업내용) 어학·자격증 응시료 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온라인신청\n- 경기도일자리재단 통합접수시스템(잡아바어플라이) 내 신청서 작성 및 필수서류 업로드 ※ 제출서류는 PDF 파일을 권장\n\n온라인: https://apply.jobaba.net/bsns/bsnsListView.do",
+    "officialUrl": "https://apply.jobaba.net/bsns/bsnsListView.do",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000429",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "□ (신청기간) 2026-05-11 09:00 ~ 2026-12-04 18:00\n※ 단, 예산 소진 시, 사업 조기 종료\n□ (사업대상) 양주시 거주 미취업 청년(19~39세)\n□ (소요예산) 68,100천원\n□ (신청방법) 잡아바 어플라이를 통한 신청\n□ (사업내용) 어학·자격증 응시료 지원",
+      "benefit": "□ (신청방법) 잡아바 어플라이를 통한 신청 □ (사업내용) 어학·자격증 응시료 지원",
+      "application": "온라인신청\n- 경기도일자리재단 통합접수시스템(잡아바어플라이) 내 신청서 작성 및 필수서류 업로드 ※ 제출서류는 PDF 파일을 권장\n\n온라인: https://apply.jobaba.net/bsns/bsnsListView.do",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-양주시-청년-이력서-사진-촬영-지원-청춘사진관",
+    "title": "양주시 청년 이력서 사진 촬영 지원 (청춘사진관)",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "양주시 거주자로 구직 중인 청년 대상 이력서 사진촬영 지원 사업",
+    "deadline": "2025-02-01 ~ 2025-11-30",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": "2025-02-01",
+    "endDate": "2025-11-30",
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "청년·취업·사업",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "양주시 청년 이력서 사진 촬영 지원 (청춘사진관)",
+      "청년",
+      "경기",
+      "경기도 양주시",
+      "마감",
+      "구직자",
+      "취업",
+      "사업",
+      "양주시",
+      "거주자로",
+      "구직",
+      "중인"
+    ],
+    "summary": "양주시 거주자로 구직 중인 청년 대상 이력서 사진촬영 지원 사업",
+    "audience": "★ 기간 : 2025. 11. 30.까지 (기간내 예산소진시 조기마감)\n★ 장소 : 양주시 관내 사진관 (고읍 소재 / 추후 개별 안내)\n★ 대상 : 19~39세인 양주시 거주자로 구직 중인 청년\n★ 지원내용 : 사진촬영 및 인화, 포토샵 보정 및 정 장합성 지원, 촬영부터 인화까지 원스톱 서비스\n★ 준비사항\n- 구직서류 접수 : 교육신청 후 \"이력서 등 구직서류 이메일 접수\"(워크넷 구직등록, 취업포털 가입 증빙 가능)\n- 촬영당일 : 신분증, 이력서용 사진을 위한 용모단정한 차림(정장이 없을 경우 정장 합성 지원)\n\n★ 접수메일 : sdgri@korea.kr\n\n★ 진행절차 : 홈페이지 수강신청 → 구직서류 이메일 접수 → 승인 → 장소 및 연락처 문자안내 → 촬영 희망일시 개별예약 → 사진관 방문 → 신분증 확인 → 촬영 및 편집 후 완성사진 수령!\n\n※ 유의사항\n▶ 이력서를 이메일 접수해야 신청승인이 완료됩니다!!\n▶ 구직서류 확인 후 승인처리 되며 승인 안내 문자가 발송됩니다. 이후 사진촬영은 안내된 사진관과 개별적으로 원하는 촬영일시를 예약하여 진행합니다.\n▶ 당일 촬영, 당일 수령을 위해 기다리는 시간이 소요될 수 있으니 참고하시기 바랍니다~\n▶ 본인 및 주소지 확인을 위해 신분증을 지참하시기 바랍니다~ (주소지 변경 안되어있을 경우 등본 추가 지참)",
+    "benefits": [
+      "양주시 거주자로 구직 중인 청년 대상 이력서 사진촬영 지원 사업"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "홈페이지 수강신청 → 구직서류 이메일 접수 → 승인 → 장소 및 연락처 문자안내 → 촬영 희망일시 개별예약 → 사진관 방문 → 신분증 확인 → 촬영 및 편집 후 완성사진 수령\n\n온라인: https://www.yangju.go.kr/youth/eduLctreWebView.do?key=3180&amp;eduLctreNo=11708&amp;searchEduInsttNo=&amp;searchEduPlaceNo=&amp;searchEduSttus=&amp;searchRceptBgnde=&amp;sear",
+    "officialUrl": "https://www.yangju.go.kr/youth/eduLctreWebView.do?key=3180&amp;eduLctreNo=11708&amp;searchEduInsttNo=&amp;searchEduPlaceNo=&amp;searchEduSttus=&amp;searchRceptBgnde=&amp;sear",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000439",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "★ 기간 : 2025. 11. 30.까지 (기간내 예산소진시 조기마감)\n★ 장소 : 양주시 관내 사진관 (고읍 소재 / 추후 개별 안내)\n★ 대상 : 19~39세인 양주시 거주자로 구직 중인 청년\n★ 지원내용 : 사진촬영 및 인화, 포토샵 보정 및 정 장합성 지원, 촬영부터 인화까지 원스톱 서비스\n★ 준비사항\n- 구직서류 접수 : 교육신청 후 \"이력서 등 구직서류 이메일 접수\"(워크넷 구직등록, 취업포털 가입 증빙 가능)\n- 촬영당일 : 신분증, 이력서용 사진을 위한 용모단정한 차림(정장이 없을 경우 정장 합성 지원)\n\n★ 접수메일 : sdgri@korea.kr\n\n★ 진행절차 : 홈페이지 수강신청 → 구직서류 이메일 접수 → 승인 → 장소 및 연락처 문자안내 → 촬영 희망일시 개별예약 → 사진관 방문 → 신분증 확인 → 촬영 및 편집 후 완성사진 수령!\n\n※ 유의사항\n▶ 이력서를 이메일 접수해야 신청승인이 완료됩니다!!\n▶ 구직서류 확인 후 승인처리 되며 승인 안내 문자가 발송됩니다. 이후 사진촬영은 안내된 사진관과 개별적으로 원하는 촬영일시를 예약하여 진행합니다.\n▶ 당일 촬영, 당일 수령을 위해 기다리는 시간이 소요될 수 있으니 참고하시기 바랍니다~\n▶ 본인 및 주소지 확인을 위해 신분증을 지참하시기 바랍니다~ (주소지 변경 안되어있을 경우 등본 추가 지참)",
+      "benefit": "양주시 거주자로 구직 중인 청년 대상 이력서 사진촬영 지원 사업",
+      "application": "홈페이지 수강신청 → 구직서류 이메일 접수 → 승인 → 장소 및 연락처 문자안내 → 촬영 희망일시 개별예약 → 사진관 방문 → 신분증 확인 → 촬영 및 편집 후 완성사진 수령\n\n온라인: https://www.yangju.go.kr/youth/eduLctreWebView.do?key=3180&amp;eduLctreNo=11708&amp;searchEduInsttNo=&amp;searchEduPlaceNo=&amp;searchEduSttus=&amp;searchRceptBgnde=&amp;sear",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-못자리용-제품상토-지원",
+    "title": "못자리용 제품상토 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "보령시 거주(주민등록등재) 벼 재배농가로 '25년 실 경작자에게 못자리용 제품상토 지원",
+    "deadline": "2025-03-05 ~ 2025-03-12",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": "2025-03-05",
+    "endDate": "2025-03-12",
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "못자리용 제품상토 지원",
+      "농림어업",
+      "충남",
+      "충청남도 보령시",
+      "마감",
+      "농어업인",
+      "전체",
+      "보령시",
+      "거주(주민등록등재)",
+      "벼",
+      "재배농가로",
+      "'25년"
+    ],
+    "summary": "보령시 거주(주민등록등재) 벼 재배농가로 '25년 실 경작자에게 못자리용 제품상토 지원",
+    "audience": "○ 보령시 거주(주민등록재) 벼 재배농가로 농업경영체 등록 농업인에 못자리용 상토 지원\n - 벼 재배면적 규모별 지원기준\n ㆍ농가당 0.1ha~7ha 미만 벼 재배면적은 100% 지원\n ㆍ농가당 7ha를 초과하는 면적은 50% 자부담\n - ha당 용량별 지원기준: 20L-50포 / 40L-25포",
+    "benefits": [
+      "보령시 거주(주민등록등재) 벼 재배농가로 '25년 실 경작자에게 못자리용 제품상토 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 행정복지센터 : 주소지 관할 행정복지센터 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000119",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000119",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 보령시 거주(주민등록재) 벼 재배농가로 농업경영체 등록 농업인에 못자리용 상토 지원\n - 벼 재배면적 규모별 지원기준\n ㆍ농가당 0.1ha~7ha 미만 벼 재배면적은 100% 지원\n ㆍ농가당 7ha를 초과하는 면적은 50% 자부담\n - ha당 용량별 지원기준: 20L-50포 / 40L-25포",
+      "benefit": "보령시 거주(주민등록등재) 벼 재배농가로 '25년 실 경작자에게 못자리용 제품상토 지원",
+      "application": "○ 방문 신청 \n - 행정복지센터 : 주소지 관할 행정복지센터 신청",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-양돈농가-prrs-백신-지원",
+    "title": "양돈농가 PRRS 백신 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "양돈농가에 PRRS 예방백신 지원",
+    "deadline": "2026-01-31 ~ 2026-02-21",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": "2026-01-31",
+    "endDate": "2026-02-21",
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "양돈농가 PRRS 백신 지원",
+      "농림어업",
+      "충남",
+      "충청남도 보령시",
+      "마감",
+      "농어업인",
+      "전체",
+      "양돈농가에",
+      "PRRS",
+      "예방백신",
+      "지원"
+    ],
+    "summary": "양돈농가에 PRRS 예방백신 지원",
+    "audience": "○ 돼지생식기호흡기증후근(PRRS) 예방백신 지원\n - 대상 : 관내 모돈 250두 미만 양돈농가\n - 사업비: 100,000천원(보조 50%, 자담 50%)",
+    "benefits": [
+      "양돈농가에 PRRS 예방백신 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 읍면사무소 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000123",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000123",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 돼지생식기호흡기증후근(PRRS) 예방백신 지원\n - 대상 : 관내 모돈 250두 미만 양돈농가\n - 사업비: 100,000천원(보조 50%, 자담 50%)",
+      "benefit": "양돈농가에 PRRS 예방백신 지원",
+      "application": "○ 방문 신청 \n - 주민센터 : 읍면사무소 방문 신청",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-축산물판매업소-위생개선-재료-지원",
+    "title": "축산물판매업소 위생개선 재료 지원",
+    "category": "창업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "축산물판매업소에 흡수지, 위생마스크 등 위생개선 재료 지원",
+    "deadline": "2026-04-27 ~ 2026-05-11",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": "2026-04-27",
+    "endDate": "2026-05-11",
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "취업·사업",
+    "targetGroup": "구직자, 농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "축산물판매업소 위생개선 재료 지원",
+      "창업",
+      "충남",
+      "충청남도 보령시",
+      "마감",
+      "구직자",
+      "농어업인",
+      "전체",
+      "취업",
+      "사업",
+      "축산물판매업소에",
+      "흡수지,"
+    ],
+    "summary": "축산물판매업소에 흡수지, 위생마스크 등 위생개선 재료 지원",
+    "audience": "○ 흡수지, 위생마스크, 골절기 톱날, 진공포장 필름 등 식육판매업소 소모성 재료 지원\n - 대상 : 식육판매업소\n - 사업비 : 1,000만원(보조 100%)\n - 사업량 : 25개소",
+    "benefits": [
+      "축산물판매업소에 흡수지, 위생마스크 등 위생개선 재료 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 농업기술센터 축산과 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000125",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000125",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 흡수지, 위생마스크, 골절기 톱날, 진공포장 필름 등 식육판매업소 소모성 재료 지원\n - 대상 : 식육판매업소\n - 사업비 : 1,000만원(보조 100%)\n - 사업량 : 25개소",
+      "benefit": "축산물판매업소에 흡수지, 위생마스크 등 위생개선 재료 지원",
+      "application": "○ 방문 신청 \n - 농업기술센터 축산과 방문 신청",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-다자녀가정임신부-바우처카드-발급",
+    "title": "다자녀가정·임신부 바우처카드 발급",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "다자녀가정 및 임신부에게 연 10만 원 상당 바우처카드 지원(다자녀가정의 경우 차등지원)",
+    "deadline": "2026-04-01 ~ 2026-12-31",
+    "dday": "D-218",
+    "status": "모집중",
+    "startDate": "2026-04-01",
+    "endDate": "2026-12-31",
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "다자녀가정·임신부 바우처카드 발급",
+      "보건의료",
+      "충남",
+      "충청남도 보령시",
+      "모집중",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "다자녀가정",
+      "및",
+      "임신부에게",
+      "연"
+    ],
+    "summary": "다자녀가정 및 임신부에게 연 10만 원 상당 바우처카드 지원(다자녀가정의 경우 차등지원)",
+    "audience": "○ 연 10만 원 상당 바우처카드 지원(다자녀가정의 경우 차등지원)",
+    "benefits": [
+      "다자녀가정 및 임신부에게 연 10만 원 상당 바우처카드 지원(다자녀가정의 경우 차등지원)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 관할 읍면동 행정복지센터 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000143",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000143",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 연 10만 원 상당 바우처카드 지원(다자녀가정의 경우 차등지원)",
+      "benefit": "다자녀가정 및 임신부에게 연 10만 원 상당 바우처카드 지원(다자녀가정의 경우 차등지원)",
+      "application": "○ 방문 신청 \n - 관할 읍면동 행정복지센터 방문 신청",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-양주시-초등학생-입학축하금-지원",
+    "title": "양주시 초등학생 입학축하금 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "초등학교에 최초 입학하는 학생을 대상으로 입학축하금 지원",
+    "deadline": "2026-03-03 ~ 2026-06-04",
+    "dday": "D-8",
+    "status": "마감임박",
+    "startDate": "2026-03-03",
+    "endDate": "2026-06-04",
+    "statusLabel": "마감임박",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "양주시 초등학생 입학축하금 지원",
+      "교육",
+      "경기",
+      "경기도 양주시",
+      "마감임박",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "복지",
+      "초등학교에",
+      "최초",
+      "입학하는"
+    ],
+    "summary": "초등학교에 최초 입학하는 학생을 대상으로 입학축하금 지원",
+    "audience": "○ 지원대상\n - 입학일을 기준으로 양주시에 주민등록을 두고 초등학교에 최초 입학하는 학생 대상\n\n○ 신청자\n - 지원 대상자의 친권자, 후견인 또는 그 밖의 사람으로서 지원 대상자와 주민등록이 같이 등재되어있는 실질적인 보호·양육하고 있는 보호자가 신청\n\n○ 지원내용\n - 초등학생 1인당 20만원 (지역화폐, 계좌 입금 중 택 1) : 중복 선택 시 계좌 입금의 방법으로 지원되며 지급 완료 후 다른 방법으로의 수정 지급은 불가함\n\n○ 신청기간\n - 2026. 3. ~ 2026. 6. (3개월간)\n \n○ 지급시기\n - 2026. 4월 말부터 (신청 후 익월 말에 지급 예정)\n\n※ FAQ\nQ-1. 지역화폐 지급과 계좌 입금을 모두 선택할 경우 어떤 방법으로 지급이 되나요?\n\nA-1. 지급방법을 중복으로 선택하셨을 경우 계좌 입금의 방법으로 지급되며 지급된 후 다른 방법으로의 수정 지급은 불가합니다.\n\nQ-2. 신청시 필요서류는 어떻게 되나요?\n\nA-2. 신청서를 제출하면 됩니다.(읍면동 행정복지센터 방문신청시 신분증, 계좌이체용 통장사본 지참)\n\nQ-3. 신청은 어떻게 하나요?\n\nA-3.\n온라인 : 정부24(혜택알리미)(지금 접속 중인 사이트에서 가능)\n방문접수 : 주민등록상 주소지 읍면동 행정복지센터 방문신청\n\nQ-4. 아동의 양육자가 부모가 아닌 경우 입학축하금을 받을 수 없나요?\n\nA-4. 가능합니다. 신청 아동과 주민등록이 같이 되어있는 실질적인 보호자는 입학축하금을 신청할 수 있습니다.\n\nQ-5. 입학일 이후 전입했을 경우 입학축하금을 받을 수 있나요?\n\nA-5. 없습니다. 입학일(2026. 3. 3.) 당시 양주시에 주소지를 두고 있어야 가능합니다.\n\nQ-6. 지역화폐카드가 없는 경우 어떻게 하나요?\n\nA-6. 계좌 입금이 아닌 지역화폐 지급을 선택하였으나 카드가 없으신 경우 주소지로 양주지역화폐가 자동 배송되므로 주소지를 정확히 입력하여 주시고, \n경기지역화폐 앱에 가입하시면 신청이 최종 완료됩니다. 또한 신청시 신청인(보호자) 본인 명의의 휴대폰 번호를 기재하지 않을 경우 지역화폐 지급 시 오류 되오니 정확한 휴대폰 번호를 기재해 주시기 바랍니다.",
+    "benefits": [
+      "초등학교에 최초 입학하는 학생을 대상으로 입학축하금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청 : 정부24(혜택알리미)\n○ 오프라인 신청 : 각 읍면동 주민센터(구비서류 확인)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000144",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000144",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 지원대상\n - 입학일을 기준으로 양주시에 주민등록을 두고 초등학교에 최초 입학하는 학생 대상\n\n○ 신청자\n - 지원 대상자의 친권자, 후견인 또는 그 밖의 사람으로서 지원 대상자와 주민등록이 같이 등재되어있는 실질적인 보호·양육하고 있는 보호자가 신청\n\n○ 지원내용\n - 초등학생 1인당 20만원 (지역화폐, 계좌 입금 중 택 1) : 중복 선택 시 계좌 입금의 방법으로 지원되며 지급 완료 후 다른 방법으로의 수정 지급은 불가함\n\n○ 신청기간\n - 2026. 3. ~ 2026. 6. (3개월간)\n \n○ 지급시기\n - 2026. 4월 말부터 (신청 후 익월 말에 지급 예정)\n\n※ FAQ\nQ-1. 지역화폐 지급과 계좌 입금을 모두 선택할 경우 어떤 방법으로 지급이 되나요?\n\nA-1. 지급방법을 중복으로 선택하셨을 경우 계좌 입금의 방법으로 지급되며 지급된 후 다른 방법으로의 수정 지급은 불가합니다.\n\nQ-2. 신청시 필요서류는 어떻게 되나요?\n\nA-2. 신청서를 제출하면 됩니다.(읍면동 행정복지센터 방문신청시 신분증, 계좌이체용 통장사본 지참)\n\nQ-3. 신청은 어떻게 하나요?\n\nA-3.\n온라인 : 정부24(혜택알리미)(지금 접속 중인 사이트에서 가능)\n방문접수 : 주민등록상 주소지 읍면동 행정복지센터 방문신청\n\nQ-4. 아동의 양육자가 부모가 아닌 경우 입학축하금을 받을 수 없나요?\n\nA-4. 가능합니다. 신청 아동과 주민등록이 같이 되어있는 실질적인 보호자는 입학축하금을 신청할 수 있습니다.\n\nQ-5. 입학일 이후 전입했을 경우 입학축하금을 받을 수 있나요?\n\nA-5. 없습니다. 입학일(2026. 3. 3.) 당시 양주시에 주소지를 두고 있어야 가능합니다.\n\nQ-6. 지역화폐카드가 없는 경우 어떻게 하나요?\n\nA-6. 계좌 입금이 아닌 지역화폐 지급을 선택하였으나 카드가 없으신 경우 주소지로 양주지역화폐가 자동 배송되므로 주소지를 정확히 입력하여 주시고, \n경기지역화폐 앱에 가입하시면 신청이 최종 완료됩니다. 또한 신청시 신청인(보호자) 본인 명의의 휴대폰 번호를 기재하지 않을 경우 지역화폐 지급 시 오류 되오니 정확한 휴대폰 번호를 기재해 주시기 바랍니다.",
+      "benefit": "초등학교에 최초 입학하는 학생을 대상으로 입학축하금 지원",
+      "application": "○ 온라인 신청 : 정부24(혜택알리미)\n○ 오프라인 신청 : 각 읍면동 주민센터(구비서류 확인)",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-청년창업농-융자금-이자-지원",
+    "title": "청년창업농 융자금 이자 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "후계농 융자금 실행한 청년농업인에게 이자 지원",
+    "deadline": "2026-06-01 ~ 2026-06-30",
+    "dday": "D-34",
+    "status": "모집중",
+    "startDate": "2026-06-01",
+    "endDate": "2026-06-30",
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "청년·사업",
+    "targetGroup": "청년, 농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "청년창업농 융자금 이자 지원",
+      "청년",
+      "충남",
+      "충청남도 아산시",
+      "모집중",
+      "농어업인",
+      "아동",
+      "중장년",
+      "사업",
+      "후계농",
+      "융자금",
+      "실행한"
+    ],
+    "summary": "후계농 융자금 실행한 청년농업인에게 이자 지원",
+    "audience": "○ 후계농 융자금 이자납부의 50% 지원",
+    "benefits": [
+      "후계농 융자금 실행한 청년농업인에게 이자 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문신청\n - 기타 : 아산시 농업기술센터\n - 당해년도 후계농업경영인 융자금 이자 상환 후 사업신청서 및 증빙서류 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000124",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000124",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 후계농 융자금 이자납부의 50% 지원",
+      "benefit": "후계농 융자금 실행한 청년농업인에게 이자 지원",
+      "application": "○ 방문신청\n - 기타 : 아산시 농업기술센터\n - 당해년도 후계농업경영인 융자금 이자 상환 후 사업신청서 및 증빙서류 제출",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-친환경-벼농가-병충해방제약-지원",
+    "title": "친환경 벼농가 병충해방제약 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "친환경인증을 받은 벼 농가에 병충해방제약 구입비 지원",
+    "deadline": "2026-00-01 ~ 2026-00-02",
+    "dday": "공식 확인 필요",
+    "status": "모집중",
+    "startDate": "2026-00-01",
+    "endDate": "2026-00-02",
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "친환경 벼농가 병충해방제약 지원",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "모집중",
+      "농어업인",
+      "전체",
+      "친환경인증을",
+      "받은",
+      "벼",
+      "농가에",
+      "병충해방제약"
+    ],
+    "summary": "친환경인증을 받은 벼 농가에 병충해방제약 구입비 지원",
+    "audience": "○ 친환경인증을 받은 벼 농가에 대해 병충해방제약 구입비 지원\n - 유기농업자재로 공시된 농업자재에 대해서만 지원가능",
+    "benefits": [
+      "친환경인증을 받은 벼 농가에 병충해방제약 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 관할 읍면동 행정복지센터(산업개발팀) 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000143",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000143",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 친환경인증을 받은 벼 농가에 대해 병충해방제약 구입비 지원\n - 유기농업자재로 공시된 농업자재에 대해서만 지원가능",
+      "benefit": "친환경인증을 받은 벼 농가에 병충해방제약 구입비 지원",
+      "application": "○ 방문 신청 \n - 주민센터 : 관할 읍면동 행정복지센터(산업개발팀) 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-친환경농가-규산질비료-지원",
+    "title": "친환경농가 규산질비료 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "친환경농산물 인증을 받은 농업인에게 규산질비료 구입비 지원",
+    "deadline": "2026-00-01 ~ 2026-00-02",
+    "dday": "공식 확인 필요",
+    "status": "모집중",
+    "startDate": "2026-00-01",
+    "endDate": "2026-00-02",
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "친환경농가 규산질비료 지원",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "모집중",
+      "농어업인",
+      "전체",
+      "친환경농산물",
+      "인증을",
+      "받은",
+      "농업인에게",
+      "규산질비료"
+    ],
+    "summary": "친환경농산물 인증을 받은 농업인에게 규산질비료 구입비 지원",
+    "audience": "○ 친환경인증을 받은 농가에 대해 규산질비료 구입비 지원\n - 유기농업자재로 공시된 농업자재에 대해서만 지원가능",
+    "benefits": [
+      "친환경농산물 인증을 받은 농업인에게 규산질비료 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 관할 읍면동 행정복지센터(산업개발팀) 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000144",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000144",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 친환경인증을 받은 농가에 대해 규산질비료 구입비 지원\n - 유기농업자재로 공시된 농업자재에 대해서만 지원가능",
+      "benefit": "친환경농산물 인증을 받은 농업인에게 규산질비료 구입비 지원",
+      "application": "○ 방문 신청 \n - 주민센터 : 관할 읍면동 행정복지센터(산업개발팀) 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-친환경농가-수도작-과수-유기질비료-지원",
+    "title": "친환경농가(수도작/과수) 유기질비료 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "친환경농산물 인증을 받은 농업인(수도작/과수)에게 유기질비료 구입비 지원",
+    "deadline": "2026-00-01 ~ 2026-00-02",
+    "dday": "공식 확인 필요",
+    "status": "모집중",
+    "startDate": "2026-00-01",
+    "endDate": "2026-00-02",
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "친환경농가(수도작/과수) 유기질비료 지원",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "모집중",
+      "농어업인",
+      "전체",
+      "친환경농산물",
+      "인증을",
+      "받은",
+      "농업인(수도작/과수)에게",
+      "유기질비료"
+    ],
+    "summary": "친환경농산물 인증을 받은 농업인(수도작/과수)에게 유기질비료 구입비 지원",
+    "audience": "○ 친환경인증을 받은 농가에 대해 유기질비료 구입비 지원\n - 유기농업자재로 공시된 농업자재에 대해서만 지원가능\n - 수도작(벼) 및 과수농가에 대해서 지원",
+    "benefits": [
+      "친환경농산물 인증을 받은 농업인(수도작/과수)에게 유기질비료 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 관할 읍면동 행정복지센터(산업개발팀) 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000153",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000153",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 친환경인증을 받은 농가에 대해 유기질비료 구입비 지원\n - 유기농업자재로 공시된 농업자재에 대해서만 지원가능\n - 수도작(벼) 및 과수농가에 대해서 지원",
+      "benefit": "친환경농산물 인증을 받은 농업인(수도작/과수)에게 유기질비료 구입비 지원",
+      "application": "○ 방문 신청 \n - 주민센터 : 관할 읍면동 행정복지센터(산업개발팀) 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-친환경-시설채소-농가-농업자재-지원",
+    "title": "친환경 시설채소 농가 농업자재 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "친환경인증을 받은 시설채소 농가에 농업자재 구입비 지원",
+    "deadline": "2026-00-01 ~ 2026-00-02",
+    "dday": "공식 확인 필요",
+    "status": "모집중",
+    "startDate": "2026-00-01",
+    "endDate": "2026-00-02",
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "친환경 시설채소 농가 농업자재 지원",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "모집중",
+      "농어업인",
+      "전체",
+      "친환경인증을",
+      "받은",
+      "시설채소",
+      "농가에",
+      "농업자재"
+    ],
+    "summary": "친환경인증을 받은 시설채소 농가에 농업자재 구입비 지원",
+    "audience": "○ 친환경인증을 받은 시설채소 농가에 대해 농업자재 구입비 지원\n - 유기농업자재로 공시된 농업자재에 대해서만 지원가능",
+    "benefits": [
+      "친환경인증을 받은 시설채소 농가에 농업자재 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 관할 읍면동 행정복지센터(산업개발팀) 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000155",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000155",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 친환경인증을 받은 시설채소 농가에 대해 농업자재 구입비 지원\n - 유기농업자재로 공시된 농업자재에 대해서만 지원가능",
+      "benefit": "친환경인증을 받은 시설채소 농가에 농업자재 구입비 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 관할 읍면동 행정복지센터(산업개발팀) 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-배지상토-교체-지원-및-벼-재배농가-못자리상토-종자소독약-지원",
+    "title": "배지상토 교체 지원 및 벼 재배농가(못자리상토, 종자소독약) 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 계룡시",
+    "region": "충남",
+    "amount": "시설원예 농가에 못자리 상토, 벼 종자 소독약 등 지원",
+    "deadline": "2026-01-26 ~ 2026-03-06",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": "2026-01-26",
+    "endDate": "2026-03-06",
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "배지상토 교체 지원 및 벼 재배농가(못자리상토, 종자소독약) 지원",
+      "농림어업",
+      "충남",
+      "충청남도 계룡시",
+      "마감",
+      "농어업인",
+      "전체",
+      "시설원예",
+      "농가에",
+      "못자리",
+      "상토,",
+      "벼"
+    ],
+    "summary": "시설원예 농가에 못자리 상토, 벼 종자 소독약 등 지원",
+    "audience": "○ 못자리 상토 : 재배면적 10a당 산파 105L, 조파 75L\n\n○ 벼 종자 소독약 : 1ha당 1.25병\n\n○ 상토, 점적호스, 흑백비닐 등(8,335원/m)",
+    "benefits": [
+      "시설원예 농가에 못자리 상토, 벼 종자 소독약 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 주소지 면,동사무소 신청서 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/558000000106",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/558000000106",
+    "contact": "충청남도 계룡시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 못자리 상토 : 재배면적 10a당 산파 105L, 조파 75L\n\n○ 벼 종자 소독약 : 1ha당 1.25병\n\n○ 상토, 점적호스, 흑백비닐 등(8,335원/m)",
+      "benefit": "시설원예 농가에 못자리 상토, 벼 종자 소독약 등 지원",
+      "application": "○ 방문 신청 \n - 주민센터 : 주소지 면,동사무소 신청서 제출",
+      "contact": "충청남도 계룡시"
+    }
+  },
+  {
+    "slug": "gov24-딸기-화분교배용-수정벌-지원",
+    "title": "딸기 화분교배용 수정벌 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 계룡시",
+    "region": "충남",
+    "amount": "딸기재배농가에 화분교배용 수정벌 지원",
+    "deadline": "2026-07-20 ~ 2026-08-07",
+    "dday": "D-72",
+    "status": "모집중",
+    "startDate": "2026-07-20",
+    "endDate": "2026-08-07",
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "딸기 화분교배용 수정벌 지원",
+      "농림어업",
+      "충남",
+      "충청남도 계룡시",
+      "모집중",
+      "농어업인",
+      "전체",
+      "딸기재배농가에",
+      "화분교배용",
+      "수정벌",
+      "지원"
+    ],
+    "summary": "딸기재배농가에 화분교배용 수정벌 지원",
+    "audience": "○ 비닐하우스에서 딸기를 생산하는 농가를 대상으로 화분교배용 수정벌 지원\n - 하우스 1동당 1통",
+    "benefits": [
+      "딸기재배농가에 화분교배용 수정벌 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 주소지 면,동사무소 신청서 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/558000000110",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/558000000110",
+    "contact": "충청남도 계룡시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 비닐하우스에서 딸기를 생산하는 농가를 대상으로 화분교배용 수정벌 지원\n - 하우스 1동당 1통",
+      "benefit": "딸기재배농가에 화분교배용 수정벌 지원",
+      "application": "○ 방문 신청 \n - 주민센터 : 주소지 면,동사무소 신청서 제출",
+      "contact": "충청남도 계룡시"
+    }
+  },
+  {
+    "slug": "gov24-벼-못자리용-상토-지원",
+    "title": "벼 못자리용 상토 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 포천시",
+    "region": "경기",
+    "amount": "수도작 재배 농업경영체 등에 벼 못자리용 상토 지원",
+    "deadline": "2024-12-23 ~ 2025-01-31",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": "2024-12-23",
+    "endDate": "2025-01-31",
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "복지",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "벼 못자리용 상토 지원",
+      "농림어업",
+      "경기",
+      "경기도 포천시",
+      "마감",
+      "농어업인",
+      "전체",
+      "복지",
+      "수도작",
+      "재배",
+      "농업경영체",
+      "등에"
+    ],
+    "summary": "수도작 재배 농업경영체 등에 벼 못자리용 상토 지원",
+    "audience": "가. 접수기간: 2024. 12. 23.(월) ~ 2025. 1. 31.(금)\n 나. 지원대상자: 관내 수도작 재배 농업경영체 및 경영체 등록 농지(포천시민 대상)\n - 단, 포천시에 주소지를 둔 자는 연접 시군에 농지를 경작하고 있는 경우 지원 가능\n - 타 지역에 주소지를 둔 자는 관내 농지에 경작하더라도 지원 제외\n 다. 지원기준(ha당) : 중량(20리터) 64포, 경량(40리터) 32포\n 라. 지원조건: 시비 100% ※자부담 없음\n 마. 신청방법: 읍‧면‧동 행정복지센터(환경산업팀)로 문의 및 신청",
+    "benefits": [
+      "수도작 재배 농업경영체 등에 벼 못자리용 상토 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 거주지 관할 읍면동 주민센터에 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/560000000118",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/560000000118",
+    "contact": "경기도 포천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "가. 접수기간: 2024. 12. 23.(월) ~ 2025. 1. 31.(금)\n 나. 지원대상자: 관내 수도작 재배 농업경영체 및 경영체 등록 농지(포천시민 대상)\n - 단, 포천시에 주소지를 둔 자는 연접 시군에 농지를 경작하고 있는 경우 지원 가능\n - 타 지역에 주소지를 둔 자는 관내 농지에 경작하더라도 지원 제외\n 다. 지원기준(ha당) : 중량(20리터) 64포, 경량(40리터) 32포\n 라. 지원조건: 시비 100% ※자부담 없음\n 마. 신청방법: 읍‧면‧동 행정복지센터(환경산업팀)로 문의 및 신청",
+      "benefit": "수도작 재배 농업경영체 등에 벼 못자리용 상토 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 거주지 관할 읍면동 주민센터에 방문 신청",
+      "contact": "경기도 포천시"
+    }
+  },
+  {
+    "slug": "gov24-새일센터-인턴-취업장려금-지원",
+    "title": "새일센터 인턴 취업장려금 지원",
+    "category": "창업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상남도 창원시",
+    "region": "경남",
+    "amount": "경력단절 여성을 위해 취업장려금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "취업·사업",
+    "targetGroup": "구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "새일센터 인턴 취업장려금 지원",
+      "창업",
+      "경남",
+      "경상남도 창원시",
+      "상시",
+      "구직자",
+      "전체",
+      "취업",
+      "사업",
+      "경력단절",
+      "여성을",
+      "위해"
+    ],
+    "summary": "경력단절 여성을 위해 취업장려금 지원",
+    "audience": "○ 새일센터 취업장려금 지원",
+    "benefits": [
+      "경력단절 여성을 위해 취업장려금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/567000000112",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/567000000112",
+    "contact": "경상남도 창원시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 새일센터 취업장려금 지원",
+      "benefit": "경력단절 여성을 위해 취업장려금 지원",
+      "application": "방문신청",
+      "contact": "경상남도 창원시"
+    }
+  },
+  {
+    "slug": "gov24-청년기술창업수당-지원",
+    "title": "청년기술창업수당 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상남도 창원시",
+    "region": "경남",
+    "amount": "혁신기술 보유 초기 기술창업자의 안정적인 시장진입을 위해 창업활동에 투입되는 비용 보조",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년·취업·사업",
+    "targetGroup": "청년, 구직자, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "청년기술창업수당 지원",
+      "청년",
+      "경남",
+      "경상남도 창원시",
+      "모집중",
+      "구직자",
+      "소상공인",
+      "취업",
+      "사업",
+      "혁신기술",
+      "보유",
+      "초기"
+    ],
+    "summary": "혁신기술 보유 초기 기술창업자의 안정적인 시장진입을 위해 창업활동에 투입되는 비용 보조",
+    "audience": "○ 지원대상 : 자격요건을 갖춘 초기 기술창업자 35명 (자세한 자격 요건은 시 누리집 공고 참조)\n○ 지원내용 : 연간 최대 630만원 상당의 창업활동비 지원(월 70만원 x 9개월) * 2026년도 사업 기준 \n - 1월: 모집 공고 및 신청접수\n - 2월 : 대상자 선정\n - 3~11월 : 서비스 지원\n - 12월 : 만족도조사 및 정산",
+    "benefits": [
+      "혁신기술 보유 초기 기술창업자의 안정적인 시장진입을 위해 창업활동에 투입되는 비용 보조"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "기타 온라인신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/567000000108",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/567000000108",
+    "contact": "경상남도 창원시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 지원대상 : 자격요건을 갖춘 초기 기술창업자 35명 (자세한 자격 요건은 시 누리집 공고 참조)\n○ 지원내용 : 연간 최대 630만원 상당의 창업활동비 지원(월 70만원 x 9개월) * 2026년도 사업 기준 \n - 1월: 모집 공고 및 신청접수\n - 2월 : 대상자 선정\n - 3~11월 : 서비스 지원\n - 12월 : 만족도조사 및 정산",
+      "benefit": "혁신기술 보유 초기 기술창업자의 안정적인 시장진입을 위해 창업활동에 투입되는 비용 보조",
+      "application": "기타 온라인신청",
+      "contact": "경상남도 창원시"
+    }
+  },
+  {
+    "slug": "gov24-산모신생아-건강관리-지원",
+    "title": "산모·신생아 건강관리 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상남도 창원시",
+    "region": "경남",
+    "amount": "출산가구에 산모신생아 건강관리 서비스 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "산모·신생아 건강관리 지원",
+      "보건의료",
+      "경남",
+      "경상남도 창원시",
+      "상시",
+      "부모/육아",
+      "장애인",
+      "전체",
+      "임신·출산·육아",
+      "복지",
+      "출산가구에",
+      "산모신생아"
+    ],
+    "summary": "출산가구에 산모신생아 건강관리 서비스 지원",
+    "audience": "○ 출산가정에 건강관리사를 파견하여 산모의 산후회복과 신생아의 양육을 지원하고, 출산가정의 경제적 부담을 경감",
+    "benefits": [
+      "출산가구에 산모신생아 건강관리 서비스 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "기타 온라인신청||방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/567000000105",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/567000000105",
+    "contact": "경상남도 창원시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 출산가정에 건강관리사를 파견하여 산모의 산후회복과 신생아의 양육을 지원하고, 출산가정의 경제적 부담을 경감",
+      "benefit": "출산가구에 산모신생아 건강관리 서비스 지원",
+      "application": "기타 온라인신청||방문신청",
+      "contact": "경상남도 창원시"
+    }
+  },
+  {
+    "slug": "gov24-임산부-영유아-관리지원",
+    "title": "임산부 영유아 관리지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상남도 창원시",
+    "region": "경남",
+    "amount": "임산부에게 엽산제 및 철분제, 태아기형아 검사 등 제공(맘편한임신 원스톱 택배서비스 가능)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "임산부 영유아 관리지원",
+      "보건의료",
+      "경남",
+      "경상남도 창원시",
+      "상시",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "임산부에게",
+      "엽산제",
+      "및",
+      "철분제,"
+    ],
+    "summary": "임산부에게 엽산제 및 철분제, 태아기형아 검사 등 제공(맘편한임신 원스톱 택배서비스 가능)",
+    "audience": "○ 관내 임산부로 보건소에서 임산부 등록을 한 임산부에 한하여 엽산제 및 철분제, 태아기형아 쿠폰 제공\n\n○ 관내 임산부로 보건소에서 임산부 등록을 한 임산부에 한하여 유축기 최대 3주 대여(출산 60일 이내 신청 가능)",
+    "benefits": [
+      "임산부에게 엽산제 및 철분제, 태아기형아 검사 등 제공(맘편한임신 원스톱 택배서비스 가능)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/567000000111",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/567000000111",
+    "contact": "경상남도 창원시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 관내 임산부로 보건소에서 임산부 등록을 한 임산부에 한하여 엽산제 및 철분제, 태아기형아 쿠폰 제공\n\n○ 관내 임산부로 보건소에서 임산부 등록을 한 임산부에 한하여 유축기 최대 3주 대여(출산 60일 이내 신청 가능)",
+      "benefit": "임산부에게 엽산제 및 철분제, 태아기형아 검사 등 제공(맘편한임신 원스톱 택배서비스 가능)",
+      "application": "방문신청",
+      "contact": "경상남도 창원시"
+    }
+  },
+  {
+    "slug": "gov24-근로복지공단-생활안정자금-대출이자-지원",
+    "title": "근로복지공단 생활안정자금 대출이자 지원",
+    "category": "고용",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상남도 창원시",
+    "region": "경남",
+    "amount": "근로복지공단 생활안정자금 융자 실행자에 대한 대출이자 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "근로복지공단 생활안정자금 대출이자 지원",
+      "고용",
+      "경남",
+      "경상남도 창원시",
+      "확인필요",
+      "일반",
+      "전체",
+      "복지",
+      "근로복지공단",
+      "생활안정자금",
+      "융자",
+      "실행자에"
+    ],
+    "summary": "근로복지공단 생활안정자금 융자 실행자에 대한 대출이자 지원",
+    "audience": "○ 지원대상 : 근로복지공단 생활안정자금, 체불근로자생계비 융자 실행 창원시민\n○ 지원내용 : 융자금에 대한 최초 거치기간 1년분 이자 납부액 지원\n○ 지급 시기 : 연 2회(6월, 12월)",
+    "benefits": [
+      "근로복지공단 생활안정자금 융자 실행자에 대한 대출이자 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "직접입력",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/567000000106",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/567000000106",
+    "contact": "경상남도 창원시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 지원대상 : 근로복지공단 생활안정자금, 체불근로자생계비 융자 실행 창원시민\n○ 지원내용 : 융자금에 대한 최초 거치기간 1년분 이자 납부액 지원\n○ 지급 시기 : 연 2회(6월, 12월)",
+      "benefit": "근로복지공단 생활안정자금 융자 실행자에 대한 대출이자 지원",
+      "application": "직접입력",
+      "contact": "경상남도 창원시"
+    }
+  },
+  {
+    "slug": "gov24-지역사회중심재활사업",
+    "title": "지역사회중심재활사업",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상남도 창원시",
+    "region": "경남",
+    "amount": "장애인을 위한 재활치료실 운영, 가옥내 편의시설 설치 지원, 방문재활프로그램 등",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "지역사회중심재활사업",
+      "보건의료",
+      "경남",
+      "경상남도 창원시",
+      "상시",
+      "장애인",
+      "전체",
+      "복지",
+      "장애인을",
+      "위한",
+      "재활치료실",
+      "운영,"
+    ],
+    "summary": "장애인을 위한 재활치료실 운영, 가옥내 편의시설 설치 지원, 방문재활프로그램 등",
+    "audience": "○ 재활치료실 운영(물리치료실,운동치료실)\n - 저속 트레드밀, 코끼리자전거, 상하지운동기구, 휠체어사용 장애인 재활운동기구 등 \n\n○ 장애인 재활운동기구(상하지 페달운동기구, 상지용 어깨회전운동기구) 대여\n\n○ 재가장애인 방문재활프로그램 : 재활운동도구 등을 이용한 자가재활운동법 지도 등\n\n○ 장애인 가옥 내 편의시설 지원서비스 : 안전손잡이 등",
+    "benefits": [
+      "장애인을 위한 재활치료실 운영, 가옥내 편의시설 설치 지원, 방문재활프로그램 등"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청||직접입력",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/567000000107",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/567000000107",
+    "contact": "경상남도 창원시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 재활치료실 운영(물리치료실,운동치료실)\n - 저속 트레드밀, 코끼리자전거, 상하지운동기구, 휠체어사용 장애인 재활운동기구 등 \n\n○ 장애인 재활운동기구(상하지 페달운동기구, 상지용 어깨회전운동기구) 대여\n\n○ 재가장애인 방문재활프로그램 : 재활운동도구 등을 이용한 자가재활운동법 지도 등\n\n○ 장애인 가옥 내 편의시설 지원서비스 : 안전손잡이 등",
+      "benefit": "장애인을 위한 재활치료실 운영, 가옥내 편의시설 설치 지원, 방문재활프로그램 등",
+      "application": "방문신청||직접입력",
+      "contact": "경상남도 창원시"
+    }
+  },
+  {
+    "slug": "gov24-문화시설-이용요금-감면-시립문수궁도장",
+    "title": "문화시설 이용요금 감면(시립문수궁도장)",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "울산시설공단",
+    "region": "울산",
+    "amount": "울산광역시체육시설 관리 운영 조례에 의거하여 시립문수궁도장 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아, 어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "문화시설 이용요금 감면(시립문수궁도장)",
+      "교육",
+      "울산",
+      "울산시설공단",
+      "상시",
+      "부모/육아",
+      "어르신",
+      "장애인",
+      "아동",
+      "청소년",
+      "임신·출산·육아",
+      "복지"
+    ],
+    "summary": "울산광역시체육시설 관리 운영 조례에 의거하여 시립문수궁도장 이용요금 감면(대상별 상이)",
+    "audience": "○ 체육시설 사용료 면제\n - 「울산광역시 체육시설 관리 운영 조례」 에 따라 국가 또는 지방자치단체에서 주관하는 경기 또는 행사 \n - 「울산광역시 체육시설 관리 운영 조례」 에 따라 울산광역시체육회 또는 울산광역시장애인체육회 등에 등록된 선수(팀)로서 해당 체육회 훈련계획에 따라 훈련하는 경우\n\n○ 사용료·이용료·관람료 감면(50%)\n\n - 「장애인복지법」에 따른 장애인\n - 「국가유공자 등 예우 및 지원에 관한 법률」에 따라 국가유공자와 그 유족 또는 가족\n - 「독립유공자 예우에 관한 법률」에 따른 독립유공자와 그 유족 또는 가족\n - 「518 민주유공자 예우에 관한 법률」에 따른 518 민주유공자와 그 유족 또는 가족\n - 「참전유공자 예우 및 단체 설립에 관한 법률」에 따른 참전유공자\n - 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」에 따른 환자, 2세환자\n - 「특수임무유공자 예우 및 단체설립에 관한 법률 시행령」에 따른 유공자와 그 유족 또는 가족\n - 「의사상자 등 예우 및 지원에 관한 법률 시행령」에 따른 의상자와 그 유족 또는 가족\n - 「국군포로의 송환 및 대우 등에 관한 법률」에 따른 귀환포로, 포로가족\n - 어린이 및 시 관내 문화예술단체가 주최하는 행사 중 감면의 필요성이 있다고 시장이 인정하는 경우\n - 다문화가족지원법 제2조 제1호에 따른 다문화 가족인 경우\n - 북한이탈주민의 보호 및 정착지원에 관한 법률에 따른 북한이탈주민인 경우\n - 울산광역시 시정발전 기여자 예우에 관한 조례에 따른 시정발전 기여자\n\n○ 사용료·이용료·관람료 감면(30%)\n - 학생 및 노인 \n - 「국민기초생활보장법」에 따른 수급자\n - 「울산광역시 병역 명문가 예우에 관한 조례」에 따른 대상자\n\n○ 사용료·이용료·관람료 감면(10%)\n - 「울산광역시 저출산대책 및 지원에 관한 조례」에 따른 다자녀가정\n\n○ 사용료 감면(80%)\n - 시가 주체하는 경기 또는 행사(관내 숙소 이용자 전지훈련팀)\n - 국제적인 경기 또는 행사나 전지훈련을 하는 선수팀 또는 선수가 사용하는 경우( 관내 숙소를 이용하는 경우로 한정한다)\n - 시 관내 문화예술단체가 주최하는 행사 중 감면의 필요성이 있다고 시장이 인정하는 경우",
+    "benefits": [
+      "울산광역시체육시설 관리 운영 조례에 의거하여 시립문수궁도장 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 시립문수궁도장(052-275-2791)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025000011",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025000011",
+    "contact": "울산시설공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 체육시설 사용료 면제\n - 「울산광역시 체육시설 관리 운영 조례」 에 따라 국가 또는 지방자치단체에서 주관하는 경기 또는 행사 \n - 「울산광역시 체육시설 관리 운영 조례」 에 따라 울산광역시체육회 또는 울산광역시장애인체육회 등에 등록된 선수(팀)로서 해당 체육회 훈련계획에 따라 훈련하는 경우\n\n○ 사용료·이용료·관람료 감면(50%)\n\n - 「장애인복지법」에 따른 장애인\n - 「국가유공자 등 예우 및 지원에 관한 법률」에 따라 국가유공자와 그 유족 또는 가족\n - 「독립유공자 예우에 관한 법률」에 따른 독립유공자와 그 유족 또는 가족\n - 「518 민주유공자 예우에 관한 법률」에 따른 518 민주유공자와 그 유족 또는 가족\n - 「참전유공자 예우 및 단체 설립에 관한 법률」에 따른 참전유공자\n - 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」에 따른 환자, 2세환자\n - 「특수임무유공자 예우 및 단체설립에 관한 법률 시행령」에 따른 유공자와 그 유족 또는 가족\n - 「의사상자 등 예우 및 지원에 관한 법률 시행령」에 따른 의상자와 그 유족 또는 가족\n - 「국군포로의 송환 및 대우 등에 관한 법률」에 따른 귀환포로, 포로가족\n - 어린이 및 시 관내 문화예술단체가 주최하는 행사 중 감면의 필요성이 있다고 시장이 인정하는 경우\n - 다문화가족지원법 제2조 제1호에 따른 다문화 가족인 경우\n - 북한이탈주민의 보호 및 정착지원에 관한 법률에 따른 북한이탈주민인 경우\n - 울산광역시 시정발전 기여자 예우에 관한 조례에 따른 시정발전 기여자\n\n○ 사용료·이용료·관람료 감면(30%)\n - 학생 및 노인 \n - 「국민기초생활보장법」에 따른 수급자\n - 「울산광역시 병역 명문가 예우에 관한 조례」에 따른 대상자\n\n○ 사용료·이용료·관람료 감면(10%)\n - 「울산광역시 저출산대책 및 지원에 관한 조례」에 따른 다자녀가정\n\n○ 사용료 감면(80%)\n - 시가 주체하는 경기 또는 행사(관내 숙소 이용자 전지훈련팀)\n - 국제적인 경기 또는 행사나 전지훈련을 하는 선수팀 또는 선수가 사용하는 경우( 관내 숙소를 이용하는 경우로 한정한다)\n - 시 관내 문화예술단체가 주최하는 행사 중 감면의 필요성이 있다고 시장이 인정하는 경우",
+      "benefit": "울산광역시체육시설 관리 운영 조례에 의거하여 시립문수궁도장 이용요금 감면(대상별 상이)",
+      "application": "○ 방문 신청\n - 기타 : 시립문수궁도장(052-275-2791)",
+      "contact": "울산시설공단"
+    }
+  },
+  {
+    "slug": "gov24-저소득층지원사업-특기교육비",
+    "title": "저소득층지원사업 특기교육비",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "• 저소득 가정의 생활안정 및 자립기반의 구축을 도모 • 교육비로 경제적 부담을 완화",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "저소득층지원사업 특기교육비",
+      "교육",
+      "경기",
+      "경기도 양주시",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "복지",
+      "•",
+      "저소득",
+      "가정의"
+    ],
+    "summary": "• 저소득 가정의 생활안정 및 자립기반의 구축을 도모 • 교육비로 경제적 부담을 완화",
+    "audience": "○ 기초수급자에게 예체능,어학,학습보조,자격기능 등의 교육비 지원",
+    "benefits": [
+      "• 저소득 가정의 생활안정 및 자립기반의 구축을 도모 • 교육비로 경제적 부담을 완화"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000433",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000433",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 기초수급자에게 예체능,어학,학습보조,자격기능 등의 교육비 지원",
+      "benefit": "• 저소득 가정의 생활안정 및 자립기반의 구축을 도모 • 교육비로 경제적 부담을 완화",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-장애인-활동지원-시추가",
+    "title": "장애인 활동지원(시추가)",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "장애인활동지원(국비급여) 수급자에게 추가 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인 활동지원(시추가)",
+      "복지",
+      "경기",
+      "경기도 양주시",
+      "상시",
+      "장애인",
+      "전체",
+      "장애인활동지원(국비급여)",
+      "수급자에게",
+      "추가",
+      "지원"
+    ],
+    "summary": "장애인활동지원(국비급여) 수급자에게 추가 지원",
+    "audience": "○ 장애인활동지원(국비) 수급자에 대하여 5~90시간/월(바우처) 추가 지원",
+    "benefits": [
+      "장애인활동지원(국비급여) 수급자에게 추가 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 행정복지센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000117",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000117",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 장애인활동지원(국비) 수급자에 대하여 5~90시간/월(바우처) 추가 지원",
+      "benefit": "장애인활동지원(국비급여) 수급자에게 추가 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 행정복지센터 방문",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-장애인-이동용-보조기기-수리-비용-지원",
+    "title": "장애인 이동용 보조기기 수리 비용 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "* 관내 등록 장애인 이동용 보조기기 수리 비용 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인 이동용 보조기기 수리 비용 지원",
+      "복지",
+      "경기",
+      "경기도 양주시",
+      "상시",
+      "장애인",
+      "전체",
+      "*",
+      "관내",
+      "등록",
+      "이동용",
+      "보조기기"
+    ],
+    "summary": "* 관내 등록 장애인 이동용 보조기기 수리 비용 지원",
+    "audience": "장애인 이동용 보조기기 수리 비용 지원",
+    "benefits": [
+      "* 관내 등록 장애인 이동용 보조기기 수리 비용 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 : 주소지 관할 행정복지센터",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000118",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000118",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인 이동용 보조기기 수리 비용 지원",
+      "benefit": "* 관내 등록 장애인 이동용 보조기기 수리 비용 지원",
+      "application": "○ 방문 신청 : 주소지 관할 행정복지센터",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-체육시설-이용요금-감면",
+    "title": "체육시설 이용요금 감면",
+    "category": "문화생활",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천광역시남동구도시관리공단",
+    "region": "인천",
+    "amount": "사회적 취약계층에게 체육시설 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "체육시설 이용요금 감면",
+      "문화생활",
+      "인천",
+      "인천광역시남동구도시관리공단",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "복지",
+      "사회적",
+      "취약계층에게",
+      "체육시설"
+    ],
+    "summary": "사회적 취약계층에게 체육시설 이용요금 감면(대상별 상이)",
+    "audience": "○ 남동구 체육시설 설치 및 운영에 관한 조례에 따른 대상은 체육시설 이용료를 감면함\n\n'제10조(사용료의 감면 등) ① 구청장(수탁자를 포함한다. 이하 이 조에서 같다)은 「체육시설의 설치·이용에 관한 법률 시행령」 제4조의2제1호에 따라 국가나 다른 지방자치단체가 주최하거나 주관하는 행사의 경우 제9조에서 정한 사용료의 전부를 면제할 수 있다.(일부개정 2020.7.3.)\n② 구청장은 다음 각 호의 어느 하나에 해당하는 사람에 대해서 제9조에서 정한 사용료의 100분의 50의 범위에서 감면한다.(일부개정 2020.7.3., 2021.11.9.)\n - 「국가유공자 등 예우 및 지원에 관한 법률 시행령」 제86조제1항 각 호의 어느 하나에 해당하는 사람 (전부개정 2021.11.9.)\n - 「독립유공자 예우에 관한 법률 시행령」 제15조에 해당하는 사람 (전부개정 2021.11.9.)\n - 「5·18민주유공자예우 및 단체설립에 관한 법률 시행령」 제52조제1항 각 호의 어느 하나에 해당하는 사람 (전부개정 2021.11.9.)\n - 「특수임무유공자 예우 및 단체설립에 관한 법률 시행령」 제58조에 해당하는 사람 (전부개정 2021. 11. 9.)\n - 「의사상자 등 예우 및 지원에 관한 법률 시행령」 제17조의2제1항 각 호의 어느 하나에 해당하는 사람 (전부개정 2021. 11. 9.)\n - 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」 제8조의3 각 호의 어느 하나에 해당하는 사람 (전부개정 2021. 11. 9.)\n - 「참전유공자 예우 및 단체 설립에 관한 법률」 제2조제2호에 해당하는 사람 (신설 2021. 11. 9.)\n - 「국군포로의 송환 및 대우 등에 관한 법률」 제2조제5호에 따른 등록포로 및 같은 조 제3호에 따른 억류지출신 포로가족 (신설 2021. 11. 9.)\n - 「장애인복지법」 제32조에 따라 장애인으로 등록된 사람과 장애의 정도가 심한 장애인을 동반하는 보호자 1명 (개정 2019. 6. 28., 2021. 11. 9.)\n - 「국민기초생활 보장법」에 따른 수급자\n - 「노인복지법」 제26조에 따라 경로우대를 받는 65세 이상의 노인 (일부개정 2021. 11. 9.)\n - 그 밖에 구청장이 필요하다고 인정하는 사람 (신설 2020.7.3.)\n③ 수영장 이용자 중 13세 이상 55세 이하 여성의 경우에는 제9조에서 정한 수영장 월 이용료의 100분의 10을 감면할 수 있다.\n④ 구청장은 인천 아이모아카드를 소지한 세 자녀 이상 가정의 부모와 자녀에 대해서는 제9조에서 정한 사용료의 100분의 30의 범위에서 감면할 수 있다. (신설 2017. 12. 22., 2020.7.3.)\n⑤ 「남동구 병역명문가 예우에 관한 조례」에 따른 예우대상자로서 병역명문가증과 주소가 기입된 신분증을 제시하는 경우에는 제9조에서 정한 사용료의 100분의 30의 범위에서 감면할 수 있다. (신설 2020.5.15., 일부개정 2021. 11. 9.)",
+    "benefits": [
+      "사회적 취약계층에게 체육시설 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 방문 감면증빙 제시후 감면",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026900005",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026900005",
+    "contact": "인천광역시남동구도시관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 남동구 체육시설 설치 및 운영에 관한 조례에 따른 대상은 체육시설 이용료를 감면함\n\n'제10조(사용료의 감면 등) ① 구청장(수탁자를 포함한다. 이하 이 조에서 같다)은 「체육시설의 설치·이용에 관한 법률 시행령」 제4조의2제1호에 따라 국가나 다른 지방자치단체가 주최하거나 주관하는 행사의 경우 제9조에서 정한 사용료의 전부를 면제할 수 있다.(일부개정 2020.7.3.)\n② 구청장은 다음 각 호의 어느 하나에 해당하는 사람에 대해서 제9조에서 정한 사용료의 100분의 50의 범위에서 감면한다.(일부개정 2020.7.3., 2021.11.9.)\n - 「국가유공자 등 예우 및 지원에 관한 법률 시행령」 제86조제1항 각 호의 어느 하나에 해당하는 사람 (전부개정 2021.11.9.)\n - 「독립유공자 예우에 관한 법률 시행령」 제15조에 해당하는 사람 (전부개정 2021.11.9.)\n - 「5·18민주유공자예우 및 단체설립에 관한 법률 시행령」 제52조제1항 각 호의 어느 하나에 해당하는 사람 (전부개정 2021.11.9.)\n - 「특수임무유공자 예우 및 단체설립에 관한 법률 시행령」 제58조에 해당하는 사람 (전부개정 2021. 11. 9.)\n - 「의사상자 등 예우 및 지원에 관한 법률 시행령」 제17조의2제1항 각 호의 어느 하나에 해당하는 사람 (전부개정 2021. 11. 9.)\n - 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」 제8조의3 각 호의 어느 하나에 해당하는 사람 (전부개정 2021. 11. 9.)\n - 「참전유공자 예우 및 단체 설립에 관한 법률」 제2조제2호에 해당하는 사람 (신설 2021. 11. 9.)\n - 「국군포로의 송환 및 대우 등에 관한 법률」 제2조제5호에 따른 등록포로 및 같은 조 제3호에 따른 억류지출신 포로가족 (신설 2021. 11. 9.)\n - 「장애인복지법」 제32조에 따라 장애인으로 등록된 사람과 장애의 정도가 심한 장애인을 동반하는 보호자 1명 (개정 2019. 6. 28., 2021. 11. 9.)\n - 「국민기초생활 보장법」에 따른 수급자\n - 「노인복지법」 제26조에 따라 경로우대를 받는 65세 이상의 노인 (일부개정 2021. 11. 9.)\n - 그 밖에 구청장이 필요하다고 인정하는 사람 (신설 2020.7.3.)\n③ 수영장 이용자 중 13세 이상 55세 이하 여성의 경우에는 제9조에서 정한 수영장 월 이용료의 100분의 10을 감면할 수 있다.\n④ 구청장은 인천 아이모아카드를 소지한 세 자녀 이상 가정의 부모와 자녀에 대해서는 제9조에서 정한 사용료의 100분의 30의 범위에서 감면할 수 있다. (신설 2017. 12. 22., 2020.7.3.)\n⑤ 「남동구 병역명문가 예우에 관한 조례」에 따른 예우대상자로서 병역명문가증과 주소가 기입된 신분증을 제시하는 경우에는 제9조에서 정한 사용료의 100분의 30의 범위에서 감면할 수 있다. (신설 2020.5.15., 일부개정 2021. 11. 9.)",
+      "benefit": "사회적 취약계층에게 체육시설 이용요금 감면(대상별 상이)",
+      "application": "○ 방문 신청\n - 기타 : 방문 감면증빙 제시후 감면",
+      "contact": "인천광역시남동구도시관리공단"
+    }
+  },
+  {
+    "slug": "gov24-인구증가시책-귀농인-정착금-지원",
+    "title": "인구증가시책 귀농인 정착금 지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "○ 타 지자체에서 전입한 귀농세대에 정착금 50만원 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "인구증가시책 귀농인 정착금 지원",
+      "주거",
+      "충남",
+      "충청남도 보령시",
+      "확인필요",
+      "일반",
+      "전체",
+      "○",
+      "타",
+      "지자체에서",
+      "전입한",
+      "귀농세대에"
+    ],
+    "summary": "충청남도 보령시의 귀농인 정착금 지원사업입니다. 전입·귀농 요건과 신청기간은 공식 공고에서 확인하세요.",
+    "audience": "○ 타 지자체에서 전입한 귀농세대에 정착금 50만원 지원",
+    "benefits": [
+      "○ 타 지자체에서 전입한 귀농세대에 정착금 50만원 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 관할 주소지 읍면동 행정복지센터 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000113",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000113",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 타 지자체에서 전입한 귀농세대에 정착금 50만원 지원",
+      "benefit": "○ 타 지자체에서 전입한 귀농세대에 정착금 50만원 지원",
+      "application": "○ 방문 신청 \n - 주민센터 : 관할 주소지 읍면동 행정복지센터 방문 신청",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-보령시-시민안전보험-자전거보험",
+    "title": "보령시 시민안전보험(자전거보험)",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "보령시 시민안전보험(자전거보험)",
+      "보건의료",
+      "충남",
+      "충청남도 보령시",
+      "상시",
+      "어르신",
+      "아동",
+      "복지",
+      "재난이나",
+      "그밖의",
+      "각종",
+      "사고로"
+    ],
+    "summary": "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상",
+    "audience": "보령시민이 온열질환으로 진단 확정시(1회 한도) 10\n보령시민이 폭발, 화재, 붕괴, 사태 사고로 상해사망한 경우(만15세 미만자 제외) 1500\n보령시민이 폭발, 화재, 붕괴, 사태 사고로 3%~100%의 상해후유장해가 발생한 경우 1500\n보령시민이 대중교통 이용 중에 발생한 사고에 의해 사망한 경우(만15세 미만자 제외) 1500\n보령시민이 승객으로서 대중교통 이용 중에 발생한 사고로 3%~100%의 상해후유장해가 발생한 경우 1500\n보령시민(만12세이하)이 어린이보호구역으로 지정한 지역(스쿨존)에서 교통사고로 신체에 상해를 입은 경우 부상등급(1~5등급)에 따라 부상치료비 보상 1500\n보령시민이 만65세 이상인 자가 보험기간 중 노인보호구역으로 지정한 지역에서 교통사고로 상해를 입은 경우 1500\n보령시민이 급격하고도 우연한 익사사고로 인해 사망한 경우(질병 제외) (만15세 미만자 제외) 1000\n보령시민이 농기계로 인한 사고의 직접적인 결과로 사망한 경우(만15세 미만자 제외) 1000\n보령시민이 농기계로 인한 사고의 직접적인 결과로 3%~100%의 상해후유장해가 발생한 경우 1000\n보령시민이 자전거 교통사고로 사망한 경우(15세미만자 제외) 1000\n보령시민이 자전거 교통사고로 3%~100%의 후유장해가 발생한 경우 1000\n보령시민이 의사의 진단에 따른 치료 중 또는 그 치료의 직접결과로 의료사고가 발생하여 법원에 소를 제기한 경우 1000\n「재난 및 안전관리기본법」에서 정한 사회재난의 직접적인 결과로 사망한 경우(만 15세 미만자 제외) 1500\n보령시민이 보험기간 둥에 국내에서 발생한 개 물림사고의 직접결과로써 응급실에 내원하여 진료를 받은 경우 10\n보령시민이 자전거 운전 중 타인을 사상케 하여 확정판결로 벌금을 부담하는 경우 2000\n보령시민이 자전거 운전 중 타인을 사상케 하여 구속영장에 의해 구속 되거나, 검찰에 의해 공소제기된 경우 200\n보령시민이 자전거 운전 중 타인(가족제외, 동승자 포함)을 사망케 하거나 중상해를 입혀 검찰에 공소제기되어 형사합의를 봐야할 경우(피해자 1인당) 3000\n보령시민이 자전거 교통사고로 4주 이상의 치료를 요한다는 진단을 받은 경우 진단일에 따라 지급(최초 진단기준, 1회에 한해 지급) 60\n보령시민이 자전거 사고로 4주 이상의 치료를 요한다는 진단을 받고, 1주일(7일) 이상 입원한 경우 20",
+    "benefits": [
+      "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "해당 서비스는 신청없이 자격대상자에게 자동적으로 제공됩니다.",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000240",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000240",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "보령시민이 온열질환으로 진단 확정시(1회 한도) 10\n보령시민이 폭발, 화재, 붕괴, 사태 사고로 상해사망한 경우(만15세 미만자 제외) 1500\n보령시민이 폭발, 화재, 붕괴, 사태 사고로 3%~100%의 상해후유장해가 발생한 경우 1500\n보령시민이 대중교통 이용 중에 발생한 사고에 의해 사망한 경우(만15세 미만자 제외) 1500\n보령시민이 승객으로서 대중교통 이용 중에 발생한 사고로 3%~100%의 상해후유장해가 발생한 경우 1500\n보령시민(만12세이하)이 어린이보호구역으로 지정한 지역(스쿨존)에서 교통사고로 신체에 상해를 입은 경우 부상등급(1~5등급)에 따라 부상치료비 보상 1500\n보령시민이 만65세 이상인 자가 보험기간 중 노인보호구역으로 지정한 지역에서 교통사고로 상해를 입은 경우 1500\n보령시민이 급격하고도 우연한 익사사고로 인해 사망한 경우(질병 제외) (만15세 미만자 제외) 1000\n보령시민이 농기계로 인한 사고의 직접적인 결과로 사망한 경우(만15세 미만자 제외) 1000\n보령시민이 농기계로 인한 사고의 직접적인 결과로 3%~100%의 상해후유장해가 발생한 경우 1000\n보령시민이 자전거 교통사고로 사망한 경우(15세미만자 제외) 1000\n보령시민이 자전거 교통사고로 3%~100%의 후유장해가 발생한 경우 1000\n보령시민이 의사의 진단에 따른 치료 중 또는 그 치료의 직접결과로 의료사고가 발생하여 법원에 소를 제기한 경우 1000\n「재난 및 안전관리기본법」에서 정한 사회재난의 직접적인 결과로 사망한 경우(만 15세 미만자 제외) 1500\n보령시민이 보험기간 둥에 국내에서 발생한 개 물림사고의 직접결과로써 응급실에 내원하여 진료를 받은 경우 10\n보령시민이 자전거 운전 중 타인을 사상케 하여 확정판결로 벌금을 부담하는 경우 2000\n보령시민이 자전거 운전 중 타인을 사상케 하여 구속영장에 의해 구속 되거나, 검찰에 의해 공소제기된 경우 200\n보령시민이 자전거 운전 중 타인(가족제외, 동승자 포함)을 사망케 하거나 중상해를 입혀 검찰에 공소제기되어 형사합의를 봐야할 경우(피해자 1인당) 3000\n보령시민이 자전거 교통사고로 4주 이상의 치료를 요한다는 진단을 받은 경우 진단일에 따라 지급(최초 진단기준, 1회에 한해 지급) 60\n보령시민이 자전거 사고로 4주 이상의 치료를 요한다는 진단을 받고, 1주일(7일) 이상 입원한 경우 20",
+      "benefit": "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상",
+      "application": "해당 서비스는 신청없이 자격대상자에게 자동적으로 제공됩니다.",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-이삭-도열병-공동방제약-지원",
+    "title": "이삭 도열병 공동방제약 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "영농 농업인에게 방제약 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "이삭 도열병 공동방제약 지원",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "영농",
+      "농업인에게",
+      "방제약",
+      "지원"
+    ],
+    "summary": "충청남도 아산시의 이삭 도열병 공동방제약 지원사업입니다. 대상 농지와 방제 지원 조건은 공식 공고에서 확인하세요.",
+    "audience": "농업경영체 등록된 자로서 아산에 거주하면서 아산에 영농(벼) 하는 농업인에게 방제약품 및 항공방제 지원",
+    "benefits": [
+      "영농 농업인에게 방제약 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 농지소재지 읍면동 행정복지센터 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000156",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000156",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "농업경영체 등록된 자로서 아산에 거주하면서 아산에 영농(벼) 하는 농업인에게 방제약품 및 항공방제 지원",
+      "benefit": "영농 농업인에게 방제약 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 농지소재지 읍면동 행정복지센터 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-예비엄마-건강검진-지원",
+    "title": "예비엄마 건강검진 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "예비엄마에게 갑상선, 풍진, 당뇨 등 건강검진 쿠폰 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "예비엄마 건강검진 지원",
+      "보건의료",
+      "충남",
+      "충청남도 아산시",
+      "모집중",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "예비엄마에게",
+      "갑상선,",
+      "풍진,",
+      "당뇨"
+    ],
+    "summary": "예비엄마에게 갑상선, 풍진, 당뇨 등 건강검진 쿠폰 제공",
+    "audience": "○ 관내 산부인과에서 사용할 수 있는 갑상선, 풍진, 당뇨 등 건강검진 쿠폰 제공\n - 14만원 상당, 임신주기별 1회",
+    "benefits": [
+      "예비엄마에게 갑상선, 풍진, 당뇨 등 건강검진 쿠폰 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 보건소 방문신청\n - 구비서류 : 주민등록등본, 가족관계증명서, 청첩장 등",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000166",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000166",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 관내 산부인과에서 사용할 수 있는 갑상선, 풍진, 당뇨 등 건강검진 쿠폰 제공\n - 14만원 상당, 임신주기별 1회",
+      "benefit": "예비엄마에게 갑상선, 풍진, 당뇨 등 건강검진 쿠폰 제공",
+      "application": "○ 방문 신청\n - 보건소 : 보건소 방문신청\n - 구비서류 : 주민등록등본, 가족관계증명서, 청첩장 등",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-축산농가-폐의약품-처리-지원",
+    "title": "축산농가 폐의약품 처리 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "축산농가에 폐의약품 처리 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "축산농가 폐의약품 처리 지원",
+      "농림어업",
+      "경기",
+      "경기도 양주시",
+      "상시",
+      "농어업인",
+      "전체",
+      "축산농가에",
+      "폐의약품",
+      "처리",
+      "지원"
+    ],
+    "summary": "경기도 양주시의 축산농가 폐의약품 처리 지원사업입니다. 처리 대상과 신청 방법은 공식 안내를 기준으로 확인하세요.",
+    "audience": "○ 관내 축산농가에서 발생하는 주사기, 공병 등 폐의약품 처리 지원",
+    "benefits": [
+      "축산농가에 폐의약품 처리 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 각 읍면동 축산계 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000104",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000104",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 관내 축산농가에서 발생하는 주사기, 공병 등 폐의약품 처리 지원",
+      "benefit": "축산농가에 폐의약품 처리 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 각 읍면동 축산계 방문",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-고능력가축-생산-지원",
+    "title": "고능력가축 생산 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "대가축 사육농가에 사료조 및 자동목걸이 설치 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "고능력가축 생산 지원",
+      "농림어업",
+      "경기",
+      "경기도 양주시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "대가축",
+      "사육농가에",
+      "사료조",
+      "및",
+      "자동목걸이"
+    ],
+    "summary": "대가축 사육농가에 사료조 및 자동목걸이 설치 지원",
+    "audience": "○ 관내 대가축사육농가 사료조 및 자동목걸이 설치 지원",
+    "benefits": [
+      "대가축 사육농가에 사료조 및 자동목걸이 설치 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000108",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000108",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 관내 대가축사육농가 사료조 및 자동목걸이 설치 지원",
+      "benefit": "대가축 사육농가에 사료조 및 자동목걸이 설치 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-다용도-축산분뇨처리장비-스키드로더-지원",
+    "title": "다용도 축산분뇨처리장비(스키드로더) 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "축산농가에 다용도 축산분뇨처리장비(스키드로더) 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "다용도 축산분뇨처리장비(스키드로더) 지원",
+      "농림어업",
+      "경기",
+      "경기도 양주시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "축산농가에",
+      "다용도",
+      "축산분뇨처리장비(스키드로더)",
+      "지원"
+    ],
+    "summary": "축산농가에 다용도 축산분뇨처리장비(스키드로더) 지원",
+    "audience": "○ 다용도 축산분뇨처리장비(스키드로더, 소형굴삭기) 지원\n - 지원단가 : 3,000만원/대\n - 지원비율 : 보조50%, 자부담50%",
+    "benefits": [
+      "축산농가에 다용도 축산분뇨처리장비(스키드로더) 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000111",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000111",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 다용도 축산분뇨처리장비(스키드로더, 소형굴삭기) 지원\n - 지원단가 : 3,000만원/대\n - 지원비율 : 보조50%, 자부담50%",
+      "benefit": "축산농가에 다용도 축산분뇨처리장비(스키드로더) 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-밀폐형-축분-고속발효기-콤포스트-지원",
+    "title": "밀폐형 축분 고속발효기(콤포스트) 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "축산농가에 밀폐형 축분 고속발효기(콤포스트) 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "밀폐형 축분 고속발효기(콤포스트) 지원",
+      "농림어업",
+      "경기",
+      "경기도 양주시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "축산농가에",
+      "밀폐형",
+      "축분",
+      "고속발효기(콤포스트)",
+      "지원"
+    ],
+    "summary": "축산농가에 밀폐형 축분 고속발효기(콤포스트) 지원",
+    "audience": "○ 밀폐형 축분 고속발효기(콤포스트) 지원\n - 지원단가 : 150백만원/대\n - 지원비율 : 보조 50%, 자부담 50%",
+    "benefits": [
+      "축산농가에 밀폐형 축분 고속발효기(콤포스트) 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000112",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000112",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 밀폐형 축분 고속발효기(콤포스트) 지원\n - 지원단가 : 150백만원/대\n - 지원비율 : 보조 50%, 자부담 50%",
+      "benefit": "축산농가에 밀폐형 축분 고속발효기(콤포스트) 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-밭작물-고품질-지원",
+    "title": "밭작물 고품질 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "밭작물 재배농업인에게 칼슘(유황)비료 공급 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "밭작물 고품질 지원",
+      "농림어업",
+      "경기",
+      "경기도 양주시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "밭작물",
+      "재배농업인에게",
+      "칼슘(유황)비료",
+      "공급",
+      "지원"
+    ],
+    "summary": "밭작물 재배농업인에게 칼슘(유황)비료 공급 지원",
+    "audience": "○ 밭작물 재배하는 농가(단체)에 칼슘(유황)비료 공급 지원",
+    "benefits": [
+      "밭작물 재배농업인에게 칼슘(유황)비료 공급 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000113",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000113",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 밭작물 재배하는 농가(단체)에 칼슘(유황)비료 공급 지원",
+      "benefit": "밭작물 재배농업인에게 칼슘(유황)비료 공급 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-주택밀집지역-축산농가-환경개선-지원",
+    "title": "주택밀집지역 축산농가 환경개선 지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "축산농가에 환경개선 악취저감제 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "주택밀집지역 축산농가 환경개선 지원",
+      "주거",
+      "경기",
+      "경기도 양주시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "축산농가에",
+      "환경개선",
+      "악취저감제",
+      "지원"
+    ],
+    "summary": "축산농가에 환경개선 악취저감제 지원",
+    "audience": "○ 주택밀집지역 축산환경개선 악취저감제 지원\n - 주택밀집지역 축산농가 환경개선을 위한 가축음수용 미네랄제제 지원\n - 지원단가 : 15,000원/L\n - 지원비율 : 보조 50%, 자부담 50%",
+    "benefits": [
+      "축산농가에 환경개선 악취저감제 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000114",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000114",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 주택밀집지역 축산환경개선 악취저감제 지원\n - 주택밀집지역 축산농가 환경개선을 위한 가축음수용 미네랄제제 지원\n - 지원단가 : 15,000원/L\n - 지원비율 : 보조 50%, 자부담 50%",
+      "benefit": "축산농가에 환경개선 악취저감제 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-젖소-개량-지원",
+    "title": "젖소 개량 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "젖소사육농가에 산유검정비 50% 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "젖소 개량 지원",
+      "농림어업",
+      "경기",
+      "경기도 양주시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "젖소사육농가에",
+      "산유검정비",
+      "50%",
+      "지원"
+    ],
+    "summary": "젖소사육농가에 산유검정비 50% 지원",
+    "audience": "○ 젖소사육농가\n - 산유검정기관에서 산유검정실시후 검정비의 50% 할인혜택\n\n○ 종축개량협회, 서울우유협동조합\n - 산유검정실시 후 산유검정 결과 젖소사육농가에 통지 및 검정비 수납(시 50%, 농가부담 50%)",
+    "benefits": [
+      "젖소사육농가에 산유검정비 50% 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 양주시 소재 서울우유 북부낙농지원센터",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000116",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000116",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 젖소사육농가\n - 산유검정기관에서 산유검정실시후 검정비의 50% 할인혜택\n\n○ 종축개량협회, 서울우유협동조합\n - 산유검정실시 후 산유검정 결과 젖소사육농가에 통지 및 검정비 수납(시 50%, 농가부담 50%)",
+      "benefit": "젖소사육농가에 산유검정비 50% 지원",
+      "application": "○ 방문 신청\n - 기타 : 양주시 소재 서울우유 북부낙농지원센터",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-소-사육농가-폭염대비-장비지원",
+    "title": "소 사육농가 폭염대비 장비지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "소 사육농가에 환기시설(환풍기) 등 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "소 사육농가 폭염대비 장비지원",
+      "농림어업",
+      "경기",
+      "경기도 양주시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "소",
+      "사육농가에",
+      "환기시설(환풍기)",
+      "등",
+      "지원"
+    ],
+    "summary": "소 사육농가에 환기시설(환풍기) 등 지원",
+    "audience": "○ 양주시 소재 소 사육농가(축산업 허가농가)\n - 소 사육시설의 환기장비(환풍기) 등 지원\n ㆍ지원기준 : 사업비의 50% 지원",
+    "benefits": [
+      "소 사육농가에 환기시설(환풍기) 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 시군구 : 양주시 축산과 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000119",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000119",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 양주시 소재 소 사육농가(축산업 허가농가)\n - 소 사육시설의 환기장비(환풍기) 등 지원\n ㆍ지원기준 : 사업비의 50% 지원",
+      "benefit": "소 사육농가에 환기시설(환풍기) 등 지원",
+      "application": "○ 방문 신청\n - 시군구 : 양주시 축산과 방문",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-농산물-임가공-및-포장재-디자인-지원",
+    "title": "농산물 임가공 및 포장재, 디자인 지원",
+    "category": "문화생활",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "판매업 허가를 얻은 농업(법)인에게 임가공, 포장재 구입 등 비용 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "사업",
+    "targetGroup": "소상공인, 농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "농산물 임가공 및 포장재, 디자인 지원",
+      "문화생활",
+      "경기",
+      "경기도 양주시",
+      "확인필요",
+      "소상공인",
+      "농어업인",
+      "전체",
+      "사업",
+      "판매업",
+      "허가를",
+      "얻은"
+    ],
+    "summary": "판매업 허가를 얻은 농업(법)인에게 임가공, 포장재 구입 등 비용 지원",
+    "audience": "○ 농산물 가공시설이 없는 소규모 농가에 임가공비 지원\n○ 포장재 및 디자인 개발비 지원",
+    "benefits": [
+      "판매업 허가를 얻은 농업(법)인에게 임가공, 포장재 구입 등 비용 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 양주시농업기술센터 농업정책과 농업유통지원팀\n - 연초 사업신청 모집 시 신청 / 미달 시 추가 모집\n(양주시청 홈페이지 고시·공고 게시판 확인 : https://www.yangju.go.kr/www/selectEminwonList.do?key=4075 / 미표출 시 접수 마감)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000127",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000127",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 농산물 가공시설이 없는 소규모 농가에 임가공비 지원\n○ 포장재 및 디자인 개발비 지원",
+      "benefit": "판매업 허가를 얻은 농업(법)인에게 임가공, 포장재 구입 등 비용 지원",
+      "application": "○ 방문 신청\n - 양주시농업기술센터 농업정책과 농업유통지원팀\n - 연초 사업신청 모집 시 신청 / 미달 시 추가 모집\n(양주시청 홈페이지 고시·공고 게시판 확인 : https://www.yangju.go.kr/www/selectEminwonList.do?key=4075 / 미표출 시 접수 마감)",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-양돈농가-사육환경-기자재-및-설치비-지원",
+    "title": "양돈농가 사육환경 기자재 및 설치비 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "양돈농가에 기자재 및 시설 설치 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "양돈농가 사육환경 기자재 및 설치비 지원",
+      "농림어업",
+      "경기",
+      "경기도 양주시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "양돈농가에",
+      "기자재",
+      "및",
+      "시설",
+      "설치"
+    ],
+    "summary": "양돈농가에 기자재 및 시설 설치 지원",
+    "audience": "○ 관내 양돈사육농가 기자재 및 시설 설치 지원\n - 지원비율 : 보조 50%, 자부담 50%",
+    "benefits": [
+      "양돈농가에 기자재 및 시설 설치 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000129",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000129",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 관내 양돈사육농가 기자재 및 시설 설치 지원\n - 지원비율 : 보조 50%, 자부담 50%",
+      "benefit": "양돈농가에 기자재 및 시설 설치 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-수분조절제-톱밥-지원",
+    "title": "수분조절제(톱밥) 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "축산농가에 수분조절제(톱밥) 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "수분조절제(톱밥) 지원",
+      "농림어업",
+      "경기",
+      "경기도 양주시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "축산농가에",
+      "수분조절제(톱밥)",
+      "지원"
+    ],
+    "summary": "축산농가에 수분조절제(톱밥) 지원",
+    "audience": "○ 수분조절제(톱밥) 지원\n - 축산농가 악취문제 해소를 위한 수분조절제(톱밥) 구입 지원\n - 지원단가 : 10만원/톤\n - 지원비율 : 보조 50%, 자부담 50%",
+    "benefits": [
+      "축산농가에 수분조절제(톱밥) 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000131",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000131",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 수분조절제(톱밥) 지원\n - 축산농가 악취문제 해소를 위한 수분조절제(톱밥) 구입 지원\n - 지원단가 : 10만원/톤\n - 지원비율 : 보조 50%, 자부담 50%",
+      "benefit": "축산농가에 수분조절제(톱밥) 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-보훈명예수당-지원",
+    "title": "보훈명예수당 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "국가보훈대상자에게 보훈명예수당 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "보훈명예수당 지원",
+      "복지",
+      "경기",
+      "경기도 양주시",
+      "상시",
+      "일반",
+      "아동",
+      "전체",
+      "국가보훈대상자에게",
+      "보훈명예수당",
+      "지원"
+    ],
+    "summary": "국가보훈대상자에게 보훈명예수당 지원",
+    "audience": "국가보훈대상자의 숭고한 애국정신을 존중하고 명예를 기리기 위하여「양주시 국가보훈대상자 예우 및 지원에 관한 조례」에 근거하여 국가보훈대상자에게 보훈명예수당을 지급하고 있습니다.",
+    "benefits": [
+      "국가보훈대상자에게 보훈명예수당 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 신청방법: 방문 신청\n - 주소지 관할 읍·면·동 행정복지센터 방문\n\n○ 지급액 및 지급방법\n - 매월 20일 신청계좌로 지급\n - 65세 이상 : 15만원\n - 65세 미만 : 5만원\n\n※ 지급중지: 사망, 타시·군 전출, 기타 부적격자의 경우 해당 월까지만 지급\n※ 신청주의: 수당을 신청한 날 기준 양주시 거주자에게 지급되며 소급 불가",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000132",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000132",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "국가보훈대상자의 숭고한 애국정신을 존중하고 명예를 기리기 위하여「양주시 국가보훈대상자 예우 및 지원에 관한 조례」에 근거하여 국가보훈대상자에게 보훈명예수당을 지급하고 있습니다.",
+      "benefit": "국가보훈대상자에게 보훈명예수당 지원",
+      "application": "○ 신청방법: 방문 신청\n - 주소지 관할 읍·면·동 행정복지센터 방문\n\n○ 지급액 및 지급방법\n - 매월 20일 신청계좌로 지급\n - 65세 이상 : 15만원\n - 65세 미만 : 5만원\n\n※ 지급중지: 사망, 타시·군 전출, 기타 부적격자의 경우 해당 월까지만 지급\n※ 신청주의: 수당을 신청한 날 기준 양주시 거주자에게 지급되며 소급 불가",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-양주골쌀-인센티브-지원",
+    "title": "양주골쌀 인센티브 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "양주골쌀을 취급하는 단체급식소 및 요식업소에 20kg 포당 5,000원 할인 공급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "양주골쌀 인센티브 지원",
+      "농림어업",
+      "경기",
+      "경기도 양주시",
+      "상시",
+      "농어업인",
+      "전체",
+      "양주골쌀을",
+      "취급하는",
+      "단체급식소",
+      "및",
+      "요식업소에"
+    ],
+    "summary": "양주골쌀을 취급하는 단체급식소 및 요식업소에 20kg 포당 5,000원 할인 공급",
+    "audience": "○ 대상자: 요식업체 및 집단급식소\n- 유통업체를 통해 양주골쌀 인센티브 지원사업 참여 신청 후 양주골쌀을 할인가에 구매(정상가의 88% 수준)\n- 유통업체에서는 할인판매분 차액에 대하여 RPC(양주연합농협미곡종합처리장)를 통하여 차액지원(인센티브)을 신청\n- 양주시 지원 인센티브 : 5,000원/20kg포, 2,500원/10kg포\n (* RPC 지원 인센티브 별도 : 3,000원/20kg포, 1500원/10kg포)\n\n※ 예산 조기 소진 시 당해 지원 종료",
+    "benefits": [
+      "양주골쌀을 취급하는 단체급식소 및 요식업소에 20kg 포당 5,000원 할인 공급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 하나로마트 등 관내 양주골쌀 유통업체로 문의하여 신청서 작성·제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000453",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000453",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 대상자: 요식업체 및 집단급식소\n- 유통업체를 통해 양주골쌀 인센티브 지원사업 참여 신청 후 양주골쌀을 할인가에 구매(정상가의 88% 수준)\n- 유통업체에서는 할인판매분 차액에 대하여 RPC(양주연합농협미곡종합처리장)를 통하여 차액지원(인센티브)을 신청\n- 양주시 지원 인센티브 : 5,000원/20kg포, 2,500원/10kg포\n (* RPC 지원 인센티브 별도 : 3,000원/20kg포, 1500원/10kg포)\n\n※ 예산 조기 소진 시 당해 지원 종료",
+      "benefit": "양주골쌀을 취급하는 단체급식소 및 요식업소에 20kg 포당 5,000원 할인 공급",
+      "application": "○ 하나로마트 등 관내 양주골쌀 유통업체로 문의하여 신청서 작성·제출",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-올림픽기념국민생활관-스포츠-문화-프로그램-할인",
+    "title": "올림픽기념국민생활관 스포츠 문화 프로그램 할인",
+    "category": "문화생활",
+    "source": "정부24 공공서비스 API",
+    "agency": "종로구시설관리공단",
+    "region": null,
+    "amount": "사회적 취약계층 및 구민에게 체육시설 회비 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "unknown region"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아, 어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "올림픽기념국민생활관 스포츠 문화 프로그램 할인",
+      "문화생활",
+      "null",
+      "종로구시설관리공단",
+      "모집중",
+      "부모/육아",
+      "어르신",
+      "장애인",
+      "아동",
+      "임신·출산·육아",
+      "복지",
+      "사회적"
+    ],
+    "summary": "사회적 취약계층 및 구민에게 체육시설 회비 감면(대상별 상이)",
+    "audience": "○ 스포츠·문화 프로그램 할인\n - 「장애인복지법」에 따른 장애인(50%)\n - 「국민기초생활 보장법」에 의한 국민기초생활보장 수급자(50%)\n - 「국가유공자등예우및지원에관한법률」에 따른 상이자(50%)\n - 「아동복지법」에 따른 18세미만 아동(50%)\n - 경로우대(30%)\n - 가임여성할인(10%)\n - 복수강좌 등록(3강좌 이상 등록시 3%)\n※ 수영프로그램만 적용\n - 장기선납(3개월 이상 선납 3%, 6개월 이상 선납 5%)\n - 자동이체(3%)\n - 모니터 회원(100%) \n※ 헬스 또는 사물함\n - 에코마일리지 카드 소지자(5%)\n - 단체(기관)협약에 따른 회원(10%미만)\n - 종로구민 (10%)\n - 「서울특별시 종로구 병역명문가 예우에 관한 조례」에 따른 예우대상자(30%)\n\n※ 사용료의 면제나 감면사유를 증명할 수 있는 서류 등을 붙이거나 제시하여야 한다.",
+    "benefits": [
+      "사회적 취약계층 및 구민에게 체육시설 회비 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 종로구시설관리공단 올림픽기념국민생활관 직접 방문\n\n○ 온라인 신청\n - https://www.ijongno.co.kr/fmcs/1\n\n온라인: https://www.ijongno.co.kr/fmcs/19",
+    "officialUrl": "https://www.ijongno.co.kr/fmcs/19",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00024200001",
+    "contact": "종로구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 스포츠·문화 프로그램 할인\n - 「장애인복지법」에 따른 장애인(50%)\n - 「국민기초생활 보장법」에 의한 국민기초생활보장 수급자(50%)\n - 「국가유공자등예우및지원에관한법률」에 따른 상이자(50%)\n - 「아동복지법」에 따른 18세미만 아동(50%)\n - 경로우대(30%)\n - 가임여성할인(10%)\n - 복수강좌 등록(3강좌 이상 등록시 3%)\n※ 수영프로그램만 적용\n - 장기선납(3개월 이상 선납 3%, 6개월 이상 선납 5%)\n - 자동이체(3%)\n - 모니터 회원(100%) \n※ 헬스 또는 사물함\n - 에코마일리지 카드 소지자(5%)\n - 단체(기관)협약에 따른 회원(10%미만)\n - 종로구민 (10%)\n - 「서울특별시 종로구 병역명문가 예우에 관한 조례」에 따른 예우대상자(30%)\n\n※ 사용료의 면제나 감면사유를 증명할 수 있는 서류 등을 붙이거나 제시하여야 한다.",
+      "benefit": "사회적 취약계층 및 구민에게 체육시설 회비 감면(대상별 상이)",
+      "application": "○ 방문 신청\n - 종로구시설관리공단 올림픽기념국민생활관 직접 방문\n\n○ 온라인 신청\n - https://www.ijongno.co.kr/fmcs/1\n\n온라인: https://www.ijongno.co.kr/fmcs/19",
+      "contact": "종로구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-체육시설-이용요금-감면-계산국민체육센터",
+    "title": "체육시설 이용요금 감면(계산국민체육센터)",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천시설공단",
+    "region": "인천",
+    "amount": "사회적 취약계층에게 계산국민체육센터 이용요금 감면",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "체육시설 이용요금 감면(계산국민체육센터)",
+      "청년",
+      "인천",
+      "인천시설공단",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "청소년",
+      "복지",
+      "사회적",
+      "취약계층에게"
+    ],
+    "summary": "사회적 취약계층에게 계산국민체육센터 이용요금 감면",
+    "audience": "○ 체육시설 이용료 감면(50%)\n ① 「장애인복지법」에 의한 등록 장애인(장애의 정도가 심한 장애인 경우에는 관련자 1명 포함)\n ② 「국가유공자 등 예우 및 지원에 관한 법률」에 의한 국가유공자와 그 유족 또는 가족\n ③ 「독립유공자 예우에 관한 법률」에 의한 독립유공자와 그 유족 또는 가족\n ④ 「5·18민주유공자예우에 관한 법률」에 따른 5·18민주유공자와그 유족 또는 가족 \n ⑤ 「특수임무유공자 예우 및 단체설립에 관한 법률」에 따른 특수임무유공자와 그 유족 또는 가족\n ⑥ 「의사상자 등 예우 및 지원에 관한 법률」에 따른 의상자와 그 가족 또는 의사자 유족(의상자 1, 2급의 경우 동반 활동보조인 1명 포함)\n ⑦ 「국민기초생활 보장법」에 따른 수급자 및 차상위계층 \n ⑧ 「노인복지법」에 따른 65세 이상인 자 다만, 평일 유료 이용자가 없는 시간대에 한해 수영장을 제외한 시설을 이용할 경우 80퍼센트 범위에서 감면할 수 있다.\n ⑨ 「참전유공자 예우 및 단체설립에 관한 법률」에 따른 참전유공자\n ⑩ 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」에 따라 등록된 자\n ⑪ 「국군포로의 송환 및 대우 등에 관한 법률」에 따른 등록포로 및 대한민국으로 귀환한 억류지출신 포로가족\n ⑫ 「학교 밖 청소년 지원에 관한 법률」제12조에 따른 학교 밖 청소년지원센터의 체육활동과 관련된 자립지원 활동\n ⑬ 시에 거주하는 자 중, 인천 다자녀가정 우대카드 소유자이거나 18세 이하의 자녀를 포함한 2자녀 이상 다자녀가정의 가구원이 증명서류(주민등록등본 등)를 제시하는 경우\n \n○ 체육시설 이용료 감면(30%)\n ① 「인천광역시 병역명문가 예우에 관한 조례」에 따른 병역명문가 예우대상자\n\n○ 패키지 이용료 감면(20%)\n ① 2종목 이상 프로그램 동시 이용 시 20% 할인\n\n○ 수영장 월 사용료 감면(10%)\n ① 수영장 등록회원 중 13세 이상 55세 이하 여성의 경우에는 수영장 월 사용료의 10퍼센트 범위",
+    "benefits": [
+      "사회적 취약계층에게 계산국민체육센터 이용요금 감면"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - 인천시설공단(www.insiseol.or.kr) 통합예약 접속 후 진행\n · 프로그램 신청 화면에서 '비대면 자격 조회' 클릭\n · 담당자 유선 연락 : 해당하는 감면서비스 확인 및 \n기한내 현장 증빙서류 제출후 감면 적용\n \n○ 방문 신청\n - 기타 : 증빙서류 지참 후 기한내 시설 방문 신청\n\n온라인: http://www.insiseol.or.kr",
+    "officialUrl": "http://www.insiseol.or.kr",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025800008",
+    "contact": "인천시설공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 체육시설 이용료 감면(50%)\n ① 「장애인복지법」에 의한 등록 장애인(장애의 정도가 심한 장애인 경우에는 관련자 1명 포함)\n ② 「국가유공자 등 예우 및 지원에 관한 법률」에 의한 국가유공자와 그 유족 또는 가족\n ③ 「독립유공자 예우에 관한 법률」에 의한 독립유공자와 그 유족 또는 가족\n ④ 「5·18민주유공자예우에 관한 법률」에 따른 5·18민주유공자와그 유족 또는 가족 \n ⑤ 「특수임무유공자 예우 및 단체설립에 관한 법률」에 따른 특수임무유공자와 그 유족 또는 가족\n ⑥ 「의사상자 등 예우 및 지원에 관한 법률」에 따른 의상자와 그 가족 또는 의사자 유족(의상자 1, 2급의 경우 동반 활동보조인 1명 포함)\n ⑦ 「국민기초생활 보장법」에 따른 수급자 및 차상위계층 \n ⑧ 「노인복지법」에 따른 65세 이상인 자 다만, 평일 유료 이용자가 없는 시간대에 한해 수영장을 제외한 시설을 이용할 경우 80퍼센트 범위에서 감면할 수 있다.\n ⑨ 「참전유공자 예우 및 단체설립에 관한 법률」에 따른 참전유공자\n ⑩ 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」에 따라 등록된 자\n ⑪ 「국군포로의 송환 및 대우 등에 관한 법률」에 따른 등록포로 및 대한민국으로 귀환한 억류지출신 포로가족\n ⑫ 「학교 밖 청소년 지원에 관한 법률」제12조에 따른 학교 밖 청소년지원센터의 체육활동과 관련된 자립지원 활동\n ⑬ 시에 거주하는 자 중, 인천 다자녀가정 우대카드 소유자이거나 18세 이하의 자녀를 포함한 2자녀 이상 다자녀가정의 가구원이 증명서류(주민등록등본 등)를 제시하는 경우\n \n○ 체육시설 이용료 감면(30%)\n ① 「인천광역시 병역명문가 예우에 관한 조례」에 따른 병역명문가 예우대상자\n\n○ 패키지 이용료 감면(20%)\n ① 2종목 이상 프로그램 동시 이용 시 20% 할인\n\n○ 수영장 월 사용료 감면(10%)\n ① 수영장 등록회원 중 13세 이상 55세 이하 여성의 경우에는 수영장 월 사용료의 10퍼센트 범위",
+      "benefit": "사회적 취약계층에게 계산국민체육센터 이용요금 감면",
+      "application": "○ 온라인 신청\n - 인천시설공단(www.insiseol.or.kr) 통합예약 접속 후 진행\n · 프로그램 신청 화면에서 '비대면 자격 조회' 클릭\n · 담당자 유선 연락 : 해당하는 감면서비스 확인 및 \n기한내 현장 증빙서류 제출후 감면 적용\n \n○ 방문 신청\n - 기타 : 증빙서류 지참 후 기한내 시설 방문 신청\n\n온라인: http://www.insiseol.or.kr",
+      "contact": "인천시설공단"
+    }
+  },
+  {
+    "slug": "gov24-하수처리시설-견학",
+    "title": "하수처리시설 견학",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천환경공단",
+    "region": "인천",
+    "amount": "신청자에게 하수처리과정 안내",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "하수처리시설 견학",
+      "교육",
+      "인천",
+      "인천환경공단",
+      "상시",
+      "일반",
+      "전체",
+      "신청자에게",
+      "하수처리과정",
+      "안내"
+    ],
+    "summary": "인천환경공단의 하수처리시설 견학 안내 서비스입니다. 견학 가능 시설과 신청 절차는 공식 안내에서 확인하세요.",
+    "audience": "○ 하수처리 처리과정 안내(사업소: 가좌, 승기, 남항, 공촌, 운북, 강화)",
+    "benefits": [
+      "신청자에게 하수처리과정 안내"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - 인천환경공단 홈페이지(www.eco-i.or.kr) 회원가입 후 체육시설/시설견학 예약시스템에서 시설견학 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025900002",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025900002",
+    "contact": "인천환경공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 하수처리 처리과정 안내(사업소: 가좌, 승기, 남항, 공촌, 운북, 강화)",
+      "benefit": "신청자에게 하수처리과정 안내",
+      "application": "○ 온라인 신청\n - 인천환경공단 홈페이지(www.eco-i.or.kr) 회원가입 후 체육시설/시설견학 예약시스템에서 시설견학 신청",
+      "contact": "인천환경공단"
+    }
+  },
+  {
+    "slug": "gov24-문화시설-대관료-감면-남동소래아트홀",
+    "title": "문화시설 대관료 감면(남동소래아트홀)",
+    "category": "문화생활",
+    "source": "정부24 공공서비스 API",
+    "agency": "(재)남동문화재단",
+    "region": null,
+    "amount": "남동소래아트홀 대관료 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "unknown region",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "사업",
+    "targetGroup": "소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "문화시설 대관료 감면(남동소래아트홀)",
+      "문화생활",
+      "null",
+      "(재)남동문화재단",
+      "확인필요",
+      "소상공인",
+      "전체",
+      "사업",
+      "남동소래아트홀",
+      "대관료",
+      "감면(대상별",
+      "상이)"
+    ],
+    "summary": "남동소래아트홀 대관료 감면(대상별 상이)",
+    "audience": "○ 사용료 전액 감면\n - 국가, 인천광역시 및 인천광역시 남동구에서 사용하는 경우\n - 법령 또는 조례에 의하여 구청장이 지원하는 행사 \n - 그 밖에 공익상 필요하다고 구청장이 인정하는 경우 \n\n○ 기본시설 사용료의 50% 감면 \n - 구에 사업자등록(주민등록)이 되어 있는 비영리 법인·단체 또는 개인의 비영리 목적의 순수 문화예술 공연 및 전시\n - 구 또는 구의회가 후원하는 비영리 목적의 공연, 전시 및 행사 \n - 외국인 또는 외국단체에서 주최하고 구 또는 구의회가 후원하는 공연, 전시 및 행사",
+    "benefits": [
+      "남동소래아트홀 대관료 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "이메일 신청 또는 공문 발송",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026900002",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026900002",
+    "contact": "(재)남동문화재단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 사용료 전액 감면\n - 국가, 인천광역시 및 인천광역시 남동구에서 사용하는 경우\n - 법령 또는 조례에 의하여 구청장이 지원하는 행사 \n - 그 밖에 공익상 필요하다고 구청장이 인정하는 경우 \n\n○ 기본시설 사용료의 50% 감면 \n - 구에 사업자등록(주민등록)이 되어 있는 비영리 법인·단체 또는 개인의 비영리 목적의 순수 문화예술 공연 및 전시\n - 구 또는 구의회가 후원하는 비영리 목적의 공연, 전시 및 행사 \n - 외국인 또는 외국단체에서 주최하고 구 또는 구의회가 후원하는 공연, 전시 및 행사",
+      "benefit": "남동소래아트홀 대관료 감면(대상별 상이)",
+      "application": "이메일 신청 또는 공문 발송",
+      "contact": "(재)남동문화재단"
+    }
+  },
+  {
+    "slug": "gov24-문화시설-입장료-감면-남동소래아트홀",
+    "title": "문화시설 입장료 감면(남동소래아트홀)",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "(재)남동문화재단",
+    "region": null,
+    "amount": "취약계층, 구민 등에게 남동소래아트홀 입장료 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "unknown region"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년·복지",
+    "targetGroup": "청년, 어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "문화시설 입장료 감면(남동소래아트홀)",
+      "청년",
+      "null",
+      "(재)남동문화재단",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "복지",
+      "취약계층,",
+      "구민",
+      "등에게"
+    ],
+    "summary": "취약계층, 구민 등에게 남동소래아트홀 입장료 감면(대상별 상이)",
+    "audience": "○ 입장료 감면(50%)\n - 저소득층, 장애인, 국가유공자, 만65세이상 어르신\n\n○ 입장료 감면(40%)\n - 초, 중, 고, 대학생\n\n○ 입장료 감면(20%)\n - 4인이상 단체\n\n○ 입장료 감면(20%)\n - 남동구민\n\n○ 릴레이 티켓 감면(20%)\n - 남동문화재단 '2024년도 스포트라이트 시리즈' 기획공연 관람 티켓 소유자 \n\n○ 나눔티켓(100%)\n - '나눔티켓' 홈페이지 가입 후 신청자에 한해 예매진행\n \n\n※ 입장료 감면자는 사유를 증명할 수 있는 서류를 공연 날 제출하여야 하며, 불충분 시 현장에서 차액 결제를 진행한다.",
+    "benefits": [
+      "취약계층, 구민 등에게 남동소래아트홀 입장료 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - 남동소래아트홀 : https://www.namdongcf.or.kr/\n - 예매사이트 : 예매사이트를 통해 각 공연별 할인권종을 선택하여 직접 할인 예매\n\n온라인: https://www.namdongcf.or.kr/",
+    "officialUrl": "https://www.namdongcf.or.kr/",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026900004",
+    "contact": "(재)남동문화재단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 입장료 감면(50%)\n - 저소득층, 장애인, 국가유공자, 만65세이상 어르신\n\n○ 입장료 감면(40%)\n - 초, 중, 고, 대학생\n\n○ 입장료 감면(20%)\n - 4인이상 단체\n\n○ 입장료 감면(20%)\n - 남동구민\n\n○ 릴레이 티켓 감면(20%)\n - 남동문화재단 '2024년도 스포트라이트 시리즈' 기획공연 관람 티켓 소유자 \n\n○ 나눔티켓(100%)\n - '나눔티켓' 홈페이지 가입 후 신청자에 한해 예매진행\n \n\n※ 입장료 감면자는 사유를 증명할 수 있는 서류를 공연 날 제출하여야 하며, 불충분 시 현장에서 차액 결제를 진행한다.",
+      "benefit": "취약계층, 구민 등에게 남동소래아트홀 입장료 감면(대상별 상이)",
+      "application": "○ 온라인 신청\n - 남동소래아트홀 : https://www.namdongcf.or.kr/\n - 예매사이트 : 예매사이트를 통해 각 공연별 할인권종을 선택하여 직접 할인 예매\n\n온라인: https://www.namdongcf.or.kr/",
+      "contact": "(재)남동문화재단"
+    }
+  },
+  {
+    "slug": "gov24-아산시-출생축하금-지원",
+    "title": "아산시 출생축하금 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "출생 영아를 위해 출생축하금(아산패이-모바일상품권) 지원(chak 어플설치)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "아산시 출생축하금 지원",
+      "복지",
+      "충남",
+      "충청남도 아산시",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "출생",
+      "영아를",
+      "위해",
+      "출생축하금(아산패이-모바일상품권)"
+    ],
+    "summary": "출생 영아를 위해 출생축하금(아산패이-모바일상품권) 지원(chak 어플설치)",
+    "audience": "○ 아산시 출산 자녀 가정에 첫째 50만원, 둘째 100만원, 셋째이상 1,000만원(계속거주자에 한하여 5년 분할 지급)\n\n - 아산시 출생신고 및 주민등록 ,출산일 기준 아산시 6개월 거주기간 조건",
+    "benefits": [
+      "출생 영아를 위해 출생축하금(아산패이-모바일상품권) 지원(chak 어플설치)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 행정복지센터 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000108",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000108",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 아산시 출산 자녀 가정에 첫째 50만원, 둘째 100만원, 셋째이상 1,000만원(계속거주자에 한하여 5년 분할 지급)\n\n - 아산시 출생신고 및 주민등록 ,출산일 기준 아산시 6개월 거주기간 조건",
+      "benefit": "출생 영아를 위해 출생축하금(아산패이-모바일상품권) 지원(chak 어플설치)",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 행정복지센터 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-근로자-이주정착지원금-지급",
+    "title": "근로자 이주정착지원금 지급",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "근로자로 이주정착한 전입자에게 지원금 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "근로자 이주정착지원금 지급",
+      "주거",
+      "충남",
+      "충청남도 보령시",
+      "상시",
+      "일반",
+      "전체",
+      "근로자로",
+      "이주정착한",
+      "전입자에게",
+      "지원금",
+      "지급"
+    ],
+    "summary": "근로자로 이주정착한 전입자에게 지원금 지급",
+    "audience": "○ 근로자 이주정착 지원금\n - 1년 이상 주민등록 유지 의향시 전입세대원 1인당 50만원(1년 더 유지 의향 시 50만원을 추가로 신청 가능)\n - 2년 이상 주민등록 유지 의향시 전입세대원 1인당 100만원\n - 전입세대원이 5명 이상이고 모든 전입세대원이 2년 이상 주민등록 유지 의향시 다섯번째 전입세대원부터 1인당 200만원\n - 전입 후 세대원 모두 3년 이상 주민등록 유지 시 : 세대당 50만원\n - 이주정착지원금은 관내로 주민등록을 이전한 후 2년 이내에 신청하여야 하여야 한다. \n○ 반 환 대 상\n - 이주정착지원금을 받은 직원이 주소유지기간 이내에 퇴사, 이직, 타 지역으로의 이주 등으로 주민등록 이전이 확인되면 이전기업의 책임으로 지원금을 시장에게 반환하여야 함.(사망 등 부득이한 경우는 제외한다)",
+    "benefits": [
+      "근로자로 이주정착한 전입자에게 지원금 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 시군구 : 관할 군청 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000138",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000138",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 근로자 이주정착 지원금\n - 1년 이상 주민등록 유지 의향시 전입세대원 1인당 50만원(1년 더 유지 의향 시 50만원을 추가로 신청 가능)\n - 2년 이상 주민등록 유지 의향시 전입세대원 1인당 100만원\n - 전입세대원이 5명 이상이고 모든 전입세대원이 2년 이상 주민등록 유지 의향시 다섯번째 전입세대원부터 1인당 200만원\n - 전입 후 세대원 모두 3년 이상 주민등록 유지 시 : 세대당 50만원\n - 이주정착지원금은 관내로 주민등록을 이전한 후 2년 이내에 신청하여야 하여야 한다. \n○ 반 환 대 상\n - 이주정착지원금을 받은 직원이 주소유지기간 이내에 퇴사, 이직, 타 지역으로의 이주 등으로 주민등록 이전이 확인되면 이전기업의 책임으로 지원금을 시장에게 반환하여야 함.(사망 등 부득이한 경우는 제외한다)",
+      "benefit": "근로자로 이주정착한 전입자에게 지원금 지급",
+      "application": "○ 방문 신청\n - 시군구 : 관할 군청 방문",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-청년근로자-연봉-지원",
+    "title": "청년근로자 연봉 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "청년근로자에게 적금 형태로 연봉 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·청년·취업",
+    "targetGroup": "청년, 구직자, 부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "청년근로자 연봉 지원",
+      "청년",
+      "충남",
+      "충청남도 보령시",
+      "상시",
+      "구직자",
+      "부모/육아",
+      "아동",
+      "중장년",
+      "임신·출산·육아",
+      "취업",
+      "청년근로자에게"
+    ],
+    "summary": "청년근로자에게 적금 형태로 연봉 지원",
+    "audience": "○ 청년근로자 연봉지원 : 관내 5명 이상 중소, 중견 제조업체(보령시에 공장등록되어있어야함) 내국인 근로자 중 만18~만45세/ 세전연봉 40백만원 미만\n - 시장은 기업체의 고용안정과 근로자의 시 정착을 위해 취업보상제를 통한 시와 근로자 각 50:50의 비율로 현금을 적립지원해 줄 수 있으며 근로자별 생애 1회 약정에 한한다.\n - 대상자는 5명 이상 관내 중소ㆍ중견기업 제조업체(관내에 공장등록되어있어야함) 내국인 근로자 중 18세 이상 45세 까지로 하고 연봉 4천만 원 이하인 근로자로 하며, 인건비 상승 등 요인에 따라 5년 주기로 적용 연봉을 조정할 수 있다.\n - 적립지원 약정기간은 3년 이상 5년 이내로 하고 월 최대 40만 원으로 한정하며 다음 각 호와 같이 한도를 차등하여 지원한다.\n ㆍ신규로 전입하는 근로자 중 전입일로부터 1년 이내에 약정을 체결하여야 하며 약정당시 세대원 수가 1∼2명: 20만 원, 3∼4명: 30만 원,　5명 이상: 40만 원 한도\n ㆍ시에 5년 이상 주소를 두고 학교 졸업 후 관내 기업에 최초 취업자는 30만 원 한도\n\n○ 지원대상\n - 5명 이상 중소, 중견 제조업체(보령시에 공장등록되어있어야 함) 내국인 근로자 중 18∼450세(신규 전입은 전입 1년 이내에 약정 체결하여야함)\n - 약정시 직전년도 세 전 연봉 40백만 원 미만, 생애 1회 한정\n - 5년 이상 주소를 두고 졸업 후 관내 기업에 최초 취업자\n\n○ 지원내용\n - 매월 1∼2인 가구 20만원, 3∼4인 30만원, 5인 이상40만원\n - 시에 주소를 두고 관내 기업 최초 취업자는 30만원 한도\n\n○ 신청시기 : 수시 \n\n○ 지급시기 : 약정기간+2년 경과 후 지급\n\n○ 적립방식 : 약정기간 매월 적립(약정기간 동안 지급정지)\n\n○ 지급시기\n - 약정기간에 따라 약정기간+2년 경과 후 지급\n ㆍ(예) 5년 신청자의 경우 5년 적립 + 2년 유지 = 7년 후 지급\n\n○ 지급중지 및 미지급\n - 미 취업기간 지급 중지, 미취업 3개월 초과 시 해지 및 미지급\n - 군 경력기간(입대 전·후 1개월 포함)은 해지조건에 제외\n - 약정 일부터 지급 시까지 세대원 중 관외 주소이전 경력이 있는 경우 미 이동 세대원 수만 지원기준에 따라 정산 지급 \n - 약정 후 출생 또는 신규 전입자에 대하여는 미 적용\n ㆍ출생자는 출산장려금 수령, 사망 시에는 약정사항 지속 유지\n - 약정 해지사유 발생 시 근로자가 적립한 금액과 발생이자만 지급\n\n○ 적립통장 개설\n - 근로자 명의로 적립통장을 개설하되 약정기간 동안 지급정지 신청\n ㆍ해지 또는 인출 등 협약기간 유지를 위한 조치\n - 시금고인 농협은행을 적립통장 개설 대상 금융기관으로 선정",
+    "benefits": [
+      "청년근로자에게 적금 형태로 연봉 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 연초 보령시 홈페이지에 공고하는 공고문의 개인별 신청서 및 구비서류를 기업 담당자에게 제출하여 기업 담당자가 총괄 신청서 및 구비서류, 각 근로자가 준비한 개인별 신청서 및 구비서류를 보령시청 기업지원팀 담당자에게 제출\n\n○ 청년근로자 연봉지원\n - 순서 : 근로자 → 회사 → 시 → 심사 → 결과회신 → 적립\n - 신청시기 : 수시\n - 기존 근로자 : 매 년 3∼5월 경 / 연말정산 종료 후\n - 신입 근로자 : 수시 / 근로계약서 및 추정연봉 확인서 첨부\n - 5년 이상 관내 거주자 : 수시",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000148",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000148",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 청년근로자 연봉지원 : 관내 5명 이상 중소, 중견 제조업체(보령시에 공장등록되어있어야함) 내국인 근로자 중 만18~만45세/ 세전연봉 40백만원 미만\n - 시장은 기업체의 고용안정과 근로자의 시 정착을 위해 취업보상제를 통한 시와 근로자 각 50:50의 비율로 현금을 적립지원해 줄 수 있으며 근로자별 생애 1회 약정에 한한다.\n - 대상자는 5명 이상 관내 중소ㆍ중견기업 제조업체(관내에 공장등록되어있어야함) 내국인 근로자 중 18세 이상 45세 까지로 하고 연봉 4천만 원 이하인 근로자로 하며, 인건비 상승 등 요인에 따라 5년 주기로 적용 연봉을 조정할 수 있다.\n - 적립지원 약정기간은 3년 이상 5년 이내로 하고 월 최대 40만 원으로 한정하며 다음 각 호와 같이 한도를 차등하여 지원한다.\n ㆍ신규로 전입하는 근로자 중 전입일로부터 1년 이내에 약정을 체결하여야 하며 약정당시 세대원 수가 1∼2명: 20만 원, 3∼4명: 30만 원,　5명 이상: 40만 원 한도\n ㆍ시에 5년 이상 주소를 두고 학교 졸업 후 관내 기업에 최초 취업자는 30만 원 한도\n\n○ 지원대상\n - 5명 이상 중소, 중견 제조업체(보령시에 공장등록되어있어야 함) 내국인 근로자 중 18∼450세(신규 전입은 전입 1년 이내에 약정 체결하여야함)\n - 약정시 직전년도 세 전 연봉 40백만 원 미만, 생애 1회 한정\n - 5년 이상 주소를 두고 졸업 후 관내 기업에 최초 취업자\n\n○ 지원내용\n - 매월 1∼2인 가구 20만원, 3∼4인 30만원, 5인 이상40만원\n - 시에 주소를 두고 관내 기업 최초 취업자는 30만원 한도\n\n○ 신청시기 : 수시 \n\n○ 지급시기 : 약정기간+2년 경과 후 지급\n\n○ 적립방식 : 약정기간 매월 적립(약정기간 동안 지급정지)\n\n○ 지급시기\n - 약정기간에 따라 약정기간+2년 경과 후 지급\n ㆍ(예) 5년 신청자의 경우 5년 적립 + 2년 유지 = 7년 후 지급\n\n○ 지급중지 및 미지급\n - 미 취업기간 지급 중지, 미취업 3개월 초과 시 해지 및 미지급\n - 군 경력기간(입대 전·후 1개월 포함)은 해지조건에 제외\n - 약정 일부터 지급 시까지 세대원 중 관외 주소이전 경력이 있는 경우 미 이동 세대원 수만 지원기준에 따라 정산 지급 \n - 약정 후 출생 또는 신규 전입자에 대하여는 미 적용\n ㆍ출생자는 출산장려금 수령, 사망 시에는 약정사항 지속 유지\n - 약정 해지사유 발생 시 근로자가 적립한 금액과 발생이자만 지급\n\n○ 적립통장 개설\n - 근로자 명의로 적립통장을 개설하되 약정기간 동안 지급정지 신청\n ㆍ해지 또는 인출 등 협약기간 유지를 위한 조치\n - 시금고인 농협은행을 적립통장 개설 대상 금융기관으로 선정",
+      "benefit": "청년근로자에게 적금 형태로 연봉 지원",
+      "application": "○ 방문 신청\n - 기타 : 연초 보령시 홈페이지에 공고하는 공고문의 개인별 신청서 및 구비서류를 기업 담당자에게 제출하여 기업 담당자가 총괄 신청서 및 구비서류, 각 근로자가 준비한 개인별 신청서 및 구비서류를 보령시청 기업지원팀 담당자에게 제출\n\n○ 청년근로자 연봉지원\n - 순서 : 근로자 → 회사 → 시 → 심사 → 결과회신 → 적립\n - 신청시기 : 수시\n - 기존 근로자 : 매 년 3∼5월 경 / 연말정산 종료 후\n - 신입 근로자 : 수시 / 근로계약서 및 추정연봉 확인서 첨부\n - 5년 이상 관내 거주자 : 수시",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-저소득층-자격증-취득수당-수강료-지원",
+    "title": "저소득층 자격증 취득수당, 수강료 지원",
+    "category": "창업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "○ 자격증 취득 수당 및 자격증 취득 수강료 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "취업·사업·복지",
+    "targetGroup": "구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "저소득층 자격증 취득수당, 수강료 지원",
+      "창업",
+      "충남",
+      "충청남도 아산시",
+      "상시",
+      "구직자",
+      "전체",
+      "취업",
+      "사업",
+      "복지",
+      "○",
+      "자격증"
+    ],
+    "summary": "충청남도 아산시의 저소득층 자격증 취득수당·수강료 지원사업입니다. 지원 조건과 신청 절차는 공식 안내를 기준으로 확인하세요.",
+    "audience": "○ 자격증 취득,수료 시 수당 및 수강료 1인당 1회 50만원 지원",
+    "benefits": [
+      "○ 자격증 취득 수당 및 자격증 취득 수강료 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 대상자 발생 시 충남아산지역자활센터 안내",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000103",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000103",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 자격증 취득,수료 시 수당 및 수강료 1인당 1회 50만원 지원",
+      "benefit": "○ 자격증 취득 수당 및 자격증 취득 수강료 지원",
+      "application": "○ 대상자 발생 시 충남아산지역자활센터 안내",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-국가보훈대상자-장례비-지원",
+    "title": "국가보훈대상자 장례비 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "국가보훈대상자 사망 시 유가족에게 장례비 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "국가보훈대상자 장례비 지원",
+      "복지",
+      "충남",
+      "충청남도 아산시",
+      "상시",
+      "일반",
+      "전체",
+      "국가보훈대상자",
+      "사망",
+      "시",
+      "유가족에게",
+      "장례비"
+    ],
+    "summary": "국가보훈대상자 사망 시 유가족에게 장례비 지급",
+    "audience": "○ 국가보훈대상자 사망시 장례비 50만원 지급",
+    "benefits": [
+      "국가보훈대상자 사망 시 유가족에게 장례비 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 관할 읍면동 행정복지센터 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000104",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000104",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 국가보훈대상자 사망시 장례비 50만원 지급",
+      "benefit": "국가보훈대상자 사망 시 유가족에게 장례비 지급",
+      "application": "○ 방문 신청\n - 주민센터 : 관할 읍면동 행정복지센터 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-농업인-월급제-지원",
+    "title": "농업인 월급제 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "벼 재배농업인에게 벼 수매대금 선지급으로 월급 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "농업인 월급제 지원",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "상시",
+      "농어업인",
+      "전체",
+      "벼",
+      "재배농업인에게",
+      "수매대금",
+      "선지급으로",
+      "월급"
+    ],
+    "summary": "벼 재배농업인에게 벼 수매대금 선지급으로 월급 지원",
+    "audience": "○ 벼 수매대금의 70%를 봄부터 수확기까지 매별 선지급",
+    "benefits": [
+      "벼 재배농업인에게 벼 수매대금 선지급으로 월급 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 지역 농협",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000109",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000109",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 벼 수매대금의 70%를 봄부터 수확기까지 매별 선지급",
+      "benefit": "벼 재배농업인에게 벼 수매대금 선지급으로 월급 지원",
+      "application": "○ 방문 신청\n - 기타 : 지역 농협",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-참전유공자수당",
+    "title": "참전유공자수당",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "참전유공자에게 수당 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "참전유공자수당",
+      "복지",
+      "충남",
+      "충청남도 아산시",
+      "상시",
+      "일반",
+      "전체",
+      "참전유공자에게",
+      "수당",
+      "지급"
+    ],
+    "summary": "충청남도 아산시의 참전유공자 수당 지원사업입니다. 지급 대상과 신청 방법은 공식 공고에서 확인하세요.",
+    "audience": "○ 참전유공자 수당 대상자에게 매월 50만원 또는 40만원 지급(6.25 참전유공자 50만원/ 월남전 참전유공자 40만원)",
+    "benefits": [
+      "참전유공자에게 수당 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 관할 읍면동 행정복지센터 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000110",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000110",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 참전유공자 수당 대상자에게 매월 50만원 또는 40만원 지급(6.25 참전유공자 50만원/ 월남전 참전유공자 40만원)",
+      "benefit": "참전유공자에게 수당 지급",
+      "application": "○ 방문 신청\n - 주민센터 : 관할 읍면동 행정복지센터 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-내일키움통장-만기-축하금-지원",
+    "title": "내일키움통장 만기 축하금 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "내일키움통장 만기가입자에게 축하금을 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "내일키움통장 만기 축하금 지원",
+      "교육",
+      "충남",
+      "충청남도 아산시",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "내일키움통장",
+      "만기가입자에게",
+      "축하금을",
+      "지원"
+    ],
+    "summary": "내일키움통장 만기가입자에게 축하금을 지원",
+    "audience": "○ 내일키움통장 가입자 중 만기해지 시 100만원 지원",
+    "benefits": [
+      "내일키움통장 만기가입자에게 축하금을 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 충남아산지역자활센터 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000112",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000112",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 내일키움통장 가입자 중 만기해지 시 100만원 지원",
+      "benefit": "내일키움통장 만기가입자에게 축하금을 지원",
+      "application": "○ 충남아산지역자활센터 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-장애행복수당",
+    "title": "장애행복수당",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "- 기존 장애수당 대상자(수급자 및 차상위) 중 재가 경증 장애인에게 장애행복수당 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애행복수당",
+      "복지",
+      "충남",
+      "충청남도 아산시",
+      "확인필요",
+      "장애인",
+      "전체",
+      "-",
+      "기존",
+      "장애수당",
+      "대상자(수급자",
+      "및"
+    ],
+    "summary": "- 기존 장애수당 대상자(수급자 및 차상위) 중 재가 경증 장애인에게 장애행복수당 지급",
+    "audience": "○ 저소득 재가 경증장애인 중 만 18세 이상 수급자 및 차상위계층에게 월 2만원 지급",
+    "benefits": [
+      "- 기존 장애수당 대상자(수급자 및 차상위) 중 재가 경증 장애인에게 장애행복수당 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 개인 신청절차 없음\n - 장애수당(기초,차상위) 대상자에게 읍면동행정복지센터에서 직권으로 지급",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000113",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000113",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 저소득 재가 경증장애인 중 만 18세 이상 수급자 및 차상위계층에게 월 2만원 지급",
+      "benefit": "- 기존 장애수당 대상자(수급자 및 차상위) 중 재가 경증 장애인에게 장애행복수당 지급",
+      "application": "○ 개인 신청절차 없음\n - 장애수당(기초,차상위) 대상자에게 읍면동행정복지센터에서 직권으로 지급",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-충청남도-참전명예-복지-수당",
+    "title": "충청남도 참전명예(복지)수당",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "참전유공자 및 배우자에게 참전명예(복지)수당 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "충청남도 참전명예(복지)수당",
+      "복지",
+      "충남",
+      "충청남도 아산시",
+      "상시",
+      "일반",
+      "전체",
+      "참전유공자",
+      "및",
+      "배우자에게",
+      "참전명예(복지)수당",
+      "지급"
+    ],
+    "summary": "참전유공자 및 배우자에게 참전명예(복지)수당 지급",
+    "audience": "○ 참전유공자 매월 10만 원 지급, 사망한 참전유공자의 배우자에게 매월 5만 원 복지수당 지급",
+    "benefits": [
+      "참전유공자 및 배우자에게 참전명예(복지)수당 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 관할 읍면동 행정복지센터 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000119",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000119",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 참전유공자 매월 10만 원 지급, 사망한 참전유공자의 배우자에게 매월 5만 원 복지수당 지급",
+      "benefit": "참전유공자 및 배우자에게 참전명예(복지)수당 지급",
+      "application": "○ 방문 신청 \n - 주민센터 : 관할 읍면동 행정복지센터 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-독립유공자명예수당",
+    "title": "독립유공자명예수당",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "독립유공자 등에게 매월 명예수당 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "독립유공자명예수당",
+      "복지",
+      "충남",
+      "충청남도 아산시",
+      "상시",
+      "일반",
+      "전체",
+      "독립유공자",
+      "등에게",
+      "매월",
+      "명예수당",
+      "지급"
+    ],
+    "summary": "독립유공자 등에게 매월 명예수당 지급",
+    "audience": "○ 독립유공자명예수당 대상자에게 매월 10만 원 지급",
+    "benefits": [
+      "독립유공자 등에게 매월 명예수당 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 관할 읍면동 행정복지센터 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000157",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000157",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 독립유공자명예수당 대상자에게 매월 10만 원 지급",
+      "benefit": "독립유공자 등에게 매월 명예수당 지급",
+      "application": "○ 방문 신청 \n - 주민센터 : 관할 읍면동 행정복지센터 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-저소득-한부모가족-명절-생필품-지원",
+    "title": "저소득 한부모가족 명절 생필품 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "저소득 한부모가족의 가구주에게 명절 생필품비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "저소득 한부모가족 명절 생필품 지원",
+      "복지",
+      "충남",
+      "충청남도 아산시",
+      "모집중",
+      "일반",
+      "전체",
+      "저소득",
+      "한부모가족의",
+      "가구주에게",
+      "명절",
+      "생필품비"
+    ],
+    "summary": "저소득 한부모가족의 가구주에게 명절 생필품비 지원",
+    "audience": "○ 지원대상 및 내용 : 저소득 한부모가족 가구당 10만원(설, 추석 각 5만원)\n ※ 기초생계급여 가구 중복지원 제외",
+    "benefits": [
+      "저소득 한부모가족의 가구주에게 명절 생필품비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 개인 신청절차 없음 \n - 신청불요(담당부서 자체조사 및 선정)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000167",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000167",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 지원대상 및 내용 : 저소득 한부모가족 가구당 10만원(설, 추석 각 5만원)\n ※ 기초생계급여 가구 중복지원 제외",
+      "benefit": "저소득 한부모가족의 가구주에게 명절 생필품비 지원",
+      "application": "○ 개인 신청절차 없음 \n - 신청불요(담당부서 자체조사 및 선정)",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-보훈명예수당",
+    "title": "보훈명예수당",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "전몰군경, 순직군경 유족, 전상군경,공상군경, 무공수훈자 및 유족 등 보훈명예수당 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "보훈명예수당",
+      "복지",
+      "충남",
+      "충청남도 아산시",
+      "상시",
+      "일반",
+      "전체",
+      "전몰군경,",
+      "순직군경",
+      "유족,",
+      "전상군경,공상군경,",
+      "무공수훈자"
+    ],
+    "summary": "전몰군경, 순직군경 유족, 전상군경,공상군경, 무공수훈자 및 유족 등 보훈명예수당 지급",
+    "audience": "○ 보훈명예수당 대상자에게 매월 10만 원 지급",
+    "benefits": [
+      "전몰군경, 순직군경 유족, 전상군경,공상군경, 무공수훈자 및 유족 등 보훈명예수당 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 관할 읍면동 행정복지센터 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000168",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000168",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 보훈명예수당 대상자에게 매월 10만 원 지급",
+      "benefit": "전몰군경, 순직군경 유족, 전상군경,공상군경, 무공수훈자 및 유족 등 보훈명예수당 지급",
+      "application": "○ 방문 신청 \n - 주민센터 : 관할 읍면동 행정복지센터 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-노인장기요양-급여-지원",
+    "title": "노인장기요양 급여 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청북도 증평군",
+    "region": "충북",
+    "amount": "국민기초생활보장수급자 등 노인에게 신체활동 또는 가사활동 등의 장기요양급여 비용 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "노인장기요양 급여 지원",
+      "보건의료",
+      "충북",
+      "충청북도 증평군",
+      "상시",
+      "어르신",
+      "복지",
+      "국민기초생활보장수급자",
+      "등",
+      "노인에게",
+      "신체활동",
+      "또는"
+    ],
+    "summary": "국민기초생활보장수급자 등 노인에게 신체활동 또는 가사활동 등의 장기요양급여 비용 지원",
+    "audience": "노인요양시설 입소비용 및 의료급여 수급자의 재가장기요양기관 이용에 따른 건강보험공단 관리 운영비 지원",
+    "benefits": [
+      "국민기초생활보장수급자 등 노인에게 신체활동 또는 가사활동 등의 장기요양급여 비용 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 읍면 주민센터를 통한 신청 \n - 구비서류 : 신청서, 장기요양등급인정서, 표준장기요양계획서",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000110",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000110",
+    "contact": "충청북도 증평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "노인요양시설 입소비용 및 의료급여 수급자의 재가장기요양기관 이용에 따른 건강보험공단 관리 운영비 지원",
+      "benefit": "국민기초생활보장수급자 등 노인에게 신체활동 또는 가사활동 등의 장기요양급여 비용 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 읍면 주민센터를 통한 신청 \n - 구비서류 : 신청서, 장기요양등급인정서, 표준장기요양계획서",
+      "contact": "충청북도 증평군"
+    }
+  },
+  {
+    "slug": "gov24-참전유공자-명예수당",
+    "title": "참전유공자 명예수당",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청북도 증평군",
+    "region": "충북",
+    "amount": "참전유공자(유족)에게 명예수당 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "참전유공자 명예수당",
+      "복지",
+      "충북",
+      "충청북도 증평군",
+      "상시",
+      "일반",
+      "전체",
+      "참전유공자(유족)에게",
+      "명예수당",
+      "지급"
+    ],
+    "summary": "참전유공자(유족)에게 명예수당 지급",
+    "audience": "○ 참전유공자의 국가 안보에 대한 예우",
+    "benefits": [
+      "참전유공자(유족)에게 명예수당 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 : 읍,면사무소 주민복지팀",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000111",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000111",
+    "contact": "충청북도 증평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 참전유공자의 국가 안보에 대한 예우",
+      "benefit": "참전유공자(유족)에게 명예수당 지급",
+      "application": "○ 방문 신청 : 읍,면사무소 주민복지팀",
+      "contact": "충청북도 증평군"
+    }
+  },
+  {
+    "slug": "gov24-공공형-어린이집-지원",
+    "title": "공공형 어린이집 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청북도 증평군",
+    "region": "충북",
+    "amount": "민간, 가정어린이집 중 공공형어린이집으로 선정된 어린이집에 매월 운영비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "공공형 어린이집 지원",
+      "복지",
+      "충북",
+      "충청북도 증평군",
+      "모집중",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "민간,",
+      "가정어린이집",
+      "중",
+      "공공형어린이집으로"
+    ],
+    "summary": "민간, 가정어린이집 중 공공형어린이집으로 선정된 어린이집에 매월 운영비 지원",
+    "audience": "○ 우수한 민간, 가정어린이집 등을 선정하여 매월 운영비를 지원하고 보다 강화된 운영기준을 적용하여 보육서비스 질 제고를 추진하는 제도",
+    "benefits": [
+      "민간, 가정어린이집 중 공공형어린이집으로 선정된 어린이집에 매월 운영비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 시군구 : 시도별 선정 일정에 따라 신청기한 내 시군으로 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000112",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000112",
+    "contact": "충청북도 증평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 우수한 민간, 가정어린이집 등을 선정하여 매월 운영비를 지원하고 보다 강화된 운영기준을 적용하여 보육서비스 질 제고를 추진하는 제도",
+      "benefit": "민간, 가정어린이집 중 공공형어린이집으로 선정된 어린이집에 매월 운영비 지원",
+      "application": "○ 방문 신청\n - 시군구 : 시도별 선정 일정에 따라 신청기한 내 시군으로 신청",
+      "contact": "충청북도 증평군"
+    }
+  },
+  {
+    "slug": "gov24-한센병환자-관리지원",
+    "title": "한센병환자 관리지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청북도 증평군",
+    "region": "충북",
+    "amount": "생계유지가 어려운 재가한센인에게 생계비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "한센병환자 관리지원",
+      "주거",
+      "충북",
+      "충청북도 증평군",
+      "상시",
+      "장애인",
+      "전체",
+      "복지",
+      "생계유지가",
+      "어려운",
+      "재가한센인에게",
+      "생계비"
+    ],
+    "summary": "생계유지가 어려운 재가한센인에게 생계비 지원",
+    "audience": "- 2개월마다 1회 이동순회진료- 한센인 조기발견과 만성적인 피부질환에 대한 의뢰 진료- 한센장애인에 대한 보장구(의족수, 특수화 등) 지원",
+    "benefits": [
+      "생계유지가 어려운 재가한센인에게 생계비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 주민등록지 관할 시군구의 보건소에 방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000113",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000113",
+    "contact": "충청북도 증평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "- 2개월마다 1회 이동순회진료- 한센인 조기발견과 만성적인 피부질환에 대한 의뢰 진료- 한센장애인에 대한 보장구(의족수, 특수화 등) 지원",
+      "benefit": "생계유지가 어려운 재가한센인에게 생계비 지원",
+      "application": "○ 주민등록지 관할 시군구의 보건소에 방문신청",
+      "contact": "충청북도 증평군"
+    }
+  },
+  {
+    "slug": "gov24-저소득-주민-국민건강보험료-지원",
+    "title": "저소득 주민 국민건강보험료 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청북도 증평군",
+    "region": "충북",
+    "amount": "노인, 장애인 세대 등에게 국민건강보험료 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "저소득 주민 국민건강보험료 지원",
+      "보건의료",
+      "충북",
+      "충청북도 증평군",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "복지",
+      "노인,",
+      "세대",
+      "등에게"
+    ],
+    "summary": "노인, 장애인 세대 등에게 국민건강보험료 지원",
+    "audience": "○ 지원대상 : 국민기초생활 보장 수급자가 아니며, 주민등록을 증평군에 둔 일반 군민 중 건강보험 지역가입자로 본인이 부담하는 건강보험료(장기요양보험료 포함) 납부금액이 최저보험료 이하인 아래의 자로 건강보험공단에서 통보된 자\n - 65세 이상 노인세대, 장애인 세대, 한부모세대\n\n○ 선정기준 : 건강보험공단에서 매월 통보된 대상자(65세 이상 세대, 장애인세대, 한부모세대) 중 사망자, 관외 전출자, 장애등록 상실자, 한부모 보호 상실자 등 부적합자 제외 후 매월 지급대상자 선정",
+    "benefits": [
+      "노인, 장애인 세대 등에게 국민건강보험료 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 기타 : 건강보험공단",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000114",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000114",
+    "contact": "충청북도 증평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 지원대상 : 국민기초생활 보장 수급자가 아니며, 주민등록을 증평군에 둔 일반 군민 중 건강보험 지역가입자로 본인이 부담하는 건강보험료(장기요양보험료 포함) 납부금액이 최저보험료 이하인 아래의 자로 건강보험공단에서 통보된 자\n - 65세 이상 노인세대, 장애인 세대, 한부모세대\n\n○ 선정기준 : 건강보험공단에서 매월 통보된 대상자(65세 이상 세대, 장애인세대, 한부모세대) 중 사망자, 관외 전출자, 장애등록 상실자, 한부모 보호 상실자 등 부적합자 제외 후 매월 지급대상자 선정",
+      "benefit": "노인, 장애인 세대 등에게 국민건강보험료 지원",
+      "application": "○ 기타 : 건강보험공단",
+      "contact": "충청북도 증평군"
+    }
+  },
+  {
+    "slug": "gov24-출생아-건강보험-지원",
+    "title": "출생아 건강보험 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청북도 증평군",
+    "region": "충북",
+    "amount": "사업 대상자에게 임신·출산 관련 진료비에 사용할 수 있는 이용권 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "출생아 건강보험 지원",
+      "보건의료",
+      "충북",
+      "충청북도 증평군",
+      "확인필요",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "사업",
+      "대상자에게",
+      "임신·출산",
+      "관련"
+    ],
+    "summary": "사업 대상자에게 임신·출산 관련 진료비에 사용할 수 있는 이용권 지원",
+    "audience": "○ 임신 및 출산에 관련된 의료비 부담을 경감하여 출산 친화적 환경을 조성하고자 임신·출산 관련 진료비에 사용할 수 있는 이용권(국민행복카드)을 국민건강보험에서 지원한 제도",
+    "benefits": [
+      "사업 대상자에게 임신·출산 관련 진료비에 사용할 수 있는 이용권 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "2017년 이후 출생아 신규가입 불가",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000115",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000115",
+    "contact": "충청북도 증평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 임신 및 출산에 관련된 의료비 부담을 경감하여 출산 친화적 환경을 조성하고자 임신·출산 관련 진료비에 사용할 수 있는 이용권(국민행복카드)을 국민건강보험에서 지원한 제도",
+      "benefit": "사업 대상자에게 임신·출산 관련 진료비에 사용할 수 있는 이용권 지원",
+      "application": "2017년 이후 출생아 신규가입 불가",
+      "contact": "충청북도 증평군"
+    }
+  },
+  {
+    "slug": "gov24-인삼-생산-시설-현대화-지원",
+    "title": "인삼 생산 시설 현대화 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청북도 증평군",
+    "region": "충북",
+    "amount": "농업인, 농업법인 등에 고품질 인삼 생산에 필요한 시설 및 장비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "인삼 생산 시설 현대화 지원",
+      "농림어업",
+      "충북",
+      "충청북도 증평군",
+      "상시",
+      "농어업인",
+      "전체",
+      "농업인,",
+      "농업법인",
+      "등에",
+      "고품질",
+      "인삼"
+    ],
+    "summary": "농업인, 농업법인 등에 고품질 인삼 생산에 필요한 시설 및 장비 지원",
+    "audience": "○ 고품질 인삼 생산에 필요한 시설 및 장비 지원\n - 철재 해가림시설, 무인방제시설, 점적관수시설, 방풍망시설, 야생동물방지시설, 도난방지시설, 인삼 이식기, 파종기, 수확기, 인삼밭쟁기, 두둑형성기",
+    "benefits": [
+      "농업인, 농업법인 등에 고품질 인삼 생산에 필요한 시설 및 장비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 시군구 : 농지소재지 읍면사무소 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000116",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000116",
+    "contact": "충청북도 증평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 고품질 인삼 생산에 필요한 시설 및 장비 지원\n - 철재 해가림시설, 무인방제시설, 점적관수시설, 방풍망시설, 야생동물방지시설, 도난방지시설, 인삼 이식기, 파종기, 수확기, 인삼밭쟁기, 두둑형성기",
+      "benefit": "농업인, 농업법인 등에 고품질 인삼 생산에 필요한 시설 및 장비 지원",
+      "application": "○ 방문 신청\n - 시군구 : 농지소재지 읍면사무소 신청",
+      "contact": "충청북도 증평군"
+    }
+  },
+  {
+    "slug": "gov24-귀농인-정착자금-지원",
+    "title": "귀농인 정착자금 지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청북도 증평군",
+    "region": "충북",
+    "amount": "전입 5년 이내 귀농인에게 정착자금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "귀농인 정착자금 지원",
+      "주거",
+      "충북",
+      "충청북도 증평군",
+      "상시",
+      "농어업인",
+      "전체",
+      "전입",
+      "5년",
+      "이내",
+      "귀농인에게",
+      "정착자금"
+    ],
+    "summary": "전입 5년 이내 귀농인에게 정착자금 지원",
+    "audience": "○ 귀농 인구 유입 장려 및 귀농인의 안정적 정착을 위한 지원정책",
+    "benefits": [
+      "전입 5년 이내 귀농인에게 정착자금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 시군구 : 해당 주소지 읍·면주민센터 산업팀 방문 신청\n - 신청서 및 붙임서류(주민등록등본, 주민등록초본, 농업경영체등록확인서, 건강보험자격득실확인서) 구비하여 사업 신청 \n - 신청서 적격심사 및 현장확인 후 대상자 통보 \n - 지원금 청구 및 지급",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000117",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000117",
+    "contact": "충청북도 증평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 귀농 인구 유입 장려 및 귀농인의 안정적 정착을 위한 지원정책",
+      "benefit": "전입 5년 이내 귀농인에게 정착자금 지원",
+      "application": "○ 방문 신청\n - 시군구 : 해당 주소지 읍·면주민센터 산업팀 방문 신청\n - 신청서 및 붙임서류(주민등록등본, 주민등록초본, 농업경영체등록확인서, 건강보험자격득실확인서) 구비하여 사업 신청 \n - 신청서 적격심사 및 현장확인 후 대상자 통보 \n - 지원금 청구 및 지급",
+      "contact": "충청북도 증평군"
+    }
+  },
+  {
+    "slug": "gov24-증평군립도서관-프로그램-운영",
+    "title": "증평군립도서관 프로그램 운영",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청북도 증평군",
+    "region": "충북",
+    "amount": "증평군립도서관에서 운영하는 각종 독서문화 프로그램 및 행사 안내",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "증평군립도서관 프로그램 운영",
+      "교육",
+      "충북",
+      "충청북도 증평군",
+      "확인필요",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "증평군립도서관에서",
+      "운영하는",
+      "각종",
+      "독서문화"
+    ],
+    "summary": "증평군립도서관에서 운영하는 각종 독서문화 프로그램 및 행사 안내",
+    "audience": "○정기 프로그램\n -여름방학, 겨울방학 프로그램 운영\n -상반기, 하반기 프로그램 운영\n -성인, 유아, 초등학생 대상\n\n○북스타트 프로그램\n -동화책 등 배부 및 맞춤 문화프로그램\n -영유아 대상\n\n○ 도서관 주간 및 독서의 달\n -도서관 주간(4월) 독서의 달(9월) 기념행사\n - 전시홀 전시 및 독서 이벤트 진행\n-전 연령층 대상\n\n○북페스티벌\n -증평군립도서관 대표 행사\n -매해 테마에 맞춘 독서 대축제\n -전 연령층 대상",
+    "benefits": [
+      "증평군립도서관에서 운영하는 각종 독서문화 프로그램 및 행사 안내"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○온라인 신청\n 증평군립도서관 홈페이지 -> 문화프로그램 -> 프로그램 신청\n\n온라인: https://lib.jp.go.kr/front/",
+    "officialUrl": "https://lib.jp.go.kr/front/",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000119",
+    "contact": "충청북도 증평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○정기 프로그램\n -여름방학, 겨울방학 프로그램 운영\n -상반기, 하반기 프로그램 운영\n -성인, 유아, 초등학생 대상\n\n○북스타트 프로그램\n -동화책 등 배부 및 맞춤 문화프로그램\n -영유아 대상\n\n○ 도서관 주간 및 독서의 달\n -도서관 주간(4월) 독서의 달(9월) 기념행사\n - 전시홀 전시 및 독서 이벤트 진행\n-전 연령층 대상\n\n○북페스티벌\n -증평군립도서관 대표 행사\n -매해 테마에 맞춘 독서 대축제\n -전 연령층 대상",
+      "benefit": "증평군립도서관에서 운영하는 각종 독서문화 프로그램 및 행사 안내",
+      "application": "○온라인 신청\n 증평군립도서관 홈페이지 -> 문화프로그램 -> 프로그램 신청\n\n온라인: https://lib.jp.go.kr/front/",
+      "contact": "충청북도 증평군"
+    }
+  },
+  {
+    "slug": "gov24-증평군-군민안전보험",
+    "title": "증평군 군민안전보험",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청북도 증평군",
+    "region": "충북",
+    "amount": "재난이나 그밖의 각종 사고로 사망 또는 후유장애가 발생한 경우 그 피해를 보상",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "증평군 군민안전보험",
+      "복지",
+      "충북",
+      "충청북도 증평군",
+      "상시",
+      "장애인",
+      "아동",
+      "재난이나",
+      "그밖의",
+      "각종",
+      "사고로",
+      "사망"
+    ],
+    "summary": "재난이나 그밖의 각종 사고로 사망 또는 후유장애가 발생한 경우 그 피해를 보상",
+    "audience": "자연재해(열사병, 일사병, 저체온증 포함)로 인하여 사망한 경우(만15세미만자 제외) 18,000천원\n폭발․ 화재․ 붕괴사태 사고로 상해 사망한 경우(만15세미만자 제외) 18,000천원\n폭발, 화재, 붕괴 사고로 3~100%의 상해 후유장해가 발생한 경우 18,000천원\n대중교통 이용 중 상해 사망한 경우(만15세미만자 제외) 18,000천원\n대중교통 이용 중 사고로 3~100%의 상해 후유장해가 발생한 경우 18,000천원\n어린이보호구역 내에서 교통사고로 인한 직접결과로 자동차사고 부상등급표의 상해등급을 받은 경우(1~5등급) 10,00천원\n급격하고도 우연한 익사사고로 상해 사망한 경우 1,000천원\n농기계로 인하여 발생한 상해의 직접 결과로 사망한 경우 (만15세미만자 제외) 18,000천원\n농기계로 인하여 발생한 상해의 직접 결과로 3%~100% 상해 후유장해가발생한 경우 17,000천원\n강도에 의해 발생한 사고의 직접적인 결과로 사망한 경우(만15세미만자 제외) 10,000천원\n강도에 의해 발생한 사고의 직접적인 결과로 3~100%의 상해 후유장해가 발생한 경우 10,000천원\n형법 등에서 정하는 성폭력 범죄로 피해를 입은 경우 1,000천원\n형법 등에서 정하는 성폭력 범죄로 상해를 입어 1개월을 초과하여 치료를 요하는 경우 1,000천원\n사회재난(재난상황으로 보고된 건에 한함)으로 사망한 경우(만15세미만자 제외) 7,000천원\n형법 등에서 정하는 강력 범죄로 상해를 입어 사망하거나 1개월을 초과하여 치료를 요하는 경우 1,000천원\n개인형 이동장치(PM) 사고로 인한 상해의 직접 결과로써 사망한 경우 5,000천원\n개인형 이동장치(PM) 사고로 인한 상해의 직접 결과로써 상해후유장해가 발생한 경우 5,000원",
+    "benefits": [
+      "재난이나 그밖의 각종 사고로 사망 또는 후유장애가 발생한 경우 그 피해를 보상"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "한국지방재정공제회 전화접수 : 1577-5939",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000250",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000250",
+    "contact": "충청북도 증평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "자연재해(열사병, 일사병, 저체온증 포함)로 인하여 사망한 경우(만15세미만자 제외) 18,000천원\n폭발․ 화재․ 붕괴사태 사고로 상해 사망한 경우(만15세미만자 제외) 18,000천원\n폭발, 화재, 붕괴 사고로 3~100%의 상해 후유장해가 발생한 경우 18,000천원\n대중교통 이용 중 상해 사망한 경우(만15세미만자 제외) 18,000천원\n대중교통 이용 중 사고로 3~100%의 상해 후유장해가 발생한 경우 18,000천원\n어린이보호구역 내에서 교통사고로 인한 직접결과로 자동차사고 부상등급표의 상해등급을 받은 경우(1~5등급) 10,00천원\n급격하고도 우연한 익사사고로 상해 사망한 경우 1,000천원\n농기계로 인하여 발생한 상해의 직접 결과로 사망한 경우 (만15세미만자 제외) 18,000천원\n농기계로 인하여 발생한 상해의 직접 결과로 3%~100% 상해 후유장해가발생한 경우 17,000천원\n강도에 의해 발생한 사고의 직접적인 결과로 사망한 경우(만15세미만자 제외) 10,000천원\n강도에 의해 발생한 사고의 직접적인 결과로 3~100%의 상해 후유장해가 발생한 경우 10,000천원\n형법 등에서 정하는 성폭력 범죄로 피해를 입은 경우 1,000천원\n형법 등에서 정하는 성폭력 범죄로 상해를 입어 1개월을 초과하여 치료를 요하는 경우 1,000천원\n사회재난(재난상황으로 보고된 건에 한함)으로 사망한 경우(만15세미만자 제외) 7,000천원\n형법 등에서 정하는 강력 범죄로 상해를 입어 사망하거나 1개월을 초과하여 치료를 요하는 경우 1,000천원\n개인형 이동장치(PM) 사고로 인한 상해의 직접 결과로써 사망한 경우 5,000천원\n개인형 이동장치(PM) 사고로 인한 상해의 직접 결과로써 상해후유장해가 발생한 경우 5,000원",
+      "benefit": "재난이나 그밖의 각종 사고로 사망 또는 후유장애가 발생한 경우 그 피해를 보상",
+      "application": "한국지방재정공제회 전화접수 : 1577-5939",
+      "contact": "충청북도 증평군"
+    }
+  },
+  {
+    "slug": "gov24-저소득-주민-국민건강장기요양-보험료-지원",
+    "title": "저소득 주민 국민건강·장기요양 보험료 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 계룡시",
+    "region": "충남",
+    "amount": "저소득 노인, 장애인 세대 등에게 건강보험료 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "저소득 주민 국민건강·장기요양 보험료 지원",
+      "보건의료",
+      "충남",
+      "충청남도 계룡시",
+      "모집중",
+      "어르신",
+      "장애인",
+      "아동",
+      "복지",
+      "저소득",
+      "노인,",
+      "세대"
+    ],
+    "summary": "저소득 노인, 장애인 세대 등에게 건강보험료 지원",
+    "audience": "○ 건강보험부과금액이 보건복지부장관이 정한 최저보험료 이하인 세대에게 국민건강·장기요양 보험료 지원",
+    "benefits": [
+      "저소득 노인, 장애인 세대 등에게 건강보험료 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 개인 신청절차 없음\n - 별도의 신청없이 건강보험 공단에서 명단 통보되면 검토 후 지원",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/558000000105",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/558000000105",
+    "contact": "충청남도 계룡시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 건강보험부과금액이 보건복지부장관이 정한 최저보험료 이하인 세대에게 국민건강·장기요양 보험료 지원",
+      "benefit": "저소득 노인, 장애인 세대 등에게 건강보험료 지원",
+      "application": "○ 개인 신청절차 없음\n - 별도의 신청없이 건강보험 공단에서 명단 통보되면 검토 후 지원",
+      "contact": "충청남도 계룡시"
+    }
+  },
+  {
+    "slug": "gov24-저소득-주민-생활-안정-지원",
+    "title": "저소득 주민 생활 안정 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 계룡시",
+    "region": "충남",
+    "amount": "기초생활수급자, 차상위계층 등 저소득층에게 월동대책비, 건강증진보조비, 교육비 등 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "저소득 주민 생활 안정 지원",
+      "교육",
+      "충남",
+      "충청남도 계룡시",
+      "모집중",
+      "일반",
+      "전체",
+      "복지",
+      "기초생활수급자,",
+      "차상위계층",
+      "등",
+      "저소득층에게"
+    ],
+    "summary": "기초생활수급자, 차상위계층 등 저소득층에게 월동대책비, 건강증진보조비, 교육비 등 지원",
+    "audience": "○ 법정 저소득층(기초생활수급자, 차상위계층확인, 저소득 한부모가족)에게 월동대책비, 건강증진보조비, 교육비 등 지원",
+    "benefits": [
+      "기초생활수급자, 차상위계층 등 저소득층에게 월동대책비, 건강증진보조비, 교육비 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 개인 신청절차 없음\n - 별도의 신청없이 법정저소득 자격이 책정된 자에게 지원",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/558000000116",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/558000000116",
+    "contact": "충청남도 계룡시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 법정 저소득층(기초생활수급자, 차상위계층확인, 저소득 한부모가족)에게 월동대책비, 건강증진보조비, 교육비 등 지원",
+      "benefit": "기초생활수급자, 차상위계층 등 저소득층에게 월동대책비, 건강증진보조비, 교육비 등 지원",
+      "application": "○ 개인 신청절차 없음\n - 별도의 신청없이 법정저소득 자격이 책정된 자에게 지원",
+      "contact": "충청남도 계룡시"
+    }
+  },
+  {
+    "slug": "gov24-양주시-난임부부-원외처방-약제비-지원",
+    "title": "양주시 난임부부 원외처방 약제비 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "난임 시술과 직접적 관련 있는 원외처방 약제비에 대해 정부지원금액 한도 내에서 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "양주시 난임부부 원외처방 약제비 지원",
+      "보건의료",
+      "경기",
+      "경기도 양주시",
+      "상시",
+      "일반",
+      "전체",
+      "난임",
+      "시술과",
+      "직접적",
+      "관련",
+      "있는"
+    ],
+    "summary": "난임 시술과 직접적 관련 있는 원외처방 약제비에 대해 정부지원금액 한도 내에서 지원",
+    "audience": "난임 시술과 직접적 관련 있는 원외처방 약제비에 대해 정부지원금액 한도 내에서 지원",
+    "benefits": [
+      "난임 시술과 직접적 관련 있는 원외처방 약제비에 대해 정부지원금액 한도 내에서 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "해당 회차 시술 완료 후 관련 서류를 첨부하여 '1개월 이내'에 관할 보건소로 청구\n• 온라인 신청 : 정부24\n• 방문 신청 : 지원결정통지서 발급 받았던 관할 보건소 방문 신청(여성 주소지 기준)\n\n※ 의료기관의 시술비 청구금액 확인 후 지급되므로, 개인지급까지 다소 시간이 소요될 수 있음",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000434",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000434",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "난임 시술과 직접적 관련 있는 원외처방 약제비에 대해 정부지원금액 한도 내에서 지원",
+      "benefit": "난임 시술과 직접적 관련 있는 원외처방 약제비에 대해 정부지원금액 한도 내에서 지원",
+      "application": "해당 회차 시술 완료 후 관련 서류를 첨부하여 '1개월 이내'에 관할 보건소로 청구\n• 온라인 신청 : 정부24\n• 방문 신청 : 지원결정통지서 발급 받았던 관할 보건소 방문 신청(여성 주소지 기준)\n\n※ 의료기관의 시술비 청구금액 확인 후 지급되므로, 개인지급까지 다소 시간이 소요될 수 있음",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-양주시-청년-면접정장대여-사업-청년옷장",
+    "title": "양주시 청년 면접정장대여 사업 (청년옷장)",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "19세~39세로 채용 면접 예정인 양주시 거주 청년 / 면접정장대여",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년·취업·사업",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "양주시 청년 면접정장대여 사업 (청년옷장)",
+      "청년",
+      "경기",
+      "경기도 양주시",
+      "상시",
+      "구직자",
+      "아동",
+      "취업",
+      "사업",
+      "19세~39세로",
+      "채용",
+      "면접"
+    ],
+    "summary": "19세~39세로 채용 면접 예정인 양주시 거주 청년 / 면접정장대여",
+    "audience": "이용안내\n[운영시간]\n평일 09:00 ~ 18:00 (토·공휴일 휴관)\n\n신청자격\n19세~39세로 채용 면접 예정인 양주시 거주 청년\n(양주소재 대학생 및 고3 취업준비생 중 채용면접 예정자 신청가능 - 신청 시 추가전달사항에 ‘학교명’ 작성)\n\n \n대여기준\n1인 1세트 기준(단품대여가능/잔여 개수에 한함)\n\n대여횟수\n연간 총 10회(3박4일/회)\n\n대여품목\n남자-자켓, 바지, 셔츠, 구두, 벨트, 넥타이\n여자-자켓, 스커트, 바지, 블라우스, 구두",
+    "benefits": [
+      "19세~39세로 채용 면접 예정인 양주시 거주 청년 / 면접정장대여"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "청년센터홈페이지 대여신청 - 본인인증 - 사이즈 및 방문일시 선택 - 승인완료 후 해당 신청시간에 방문\n\n온라인: https://www.yangju.go.kr/youth/contents.do?key=3185",
+    "officialUrl": "https://www.yangju.go.kr/youth/contents.do?key=3185",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000437",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "이용안내\n[운영시간]\n평일 09:00 ~ 18:00 (토·공휴일 휴관)\n\n신청자격\n19세~39세로 채용 면접 예정인 양주시 거주 청년\n(양주소재 대학생 및 고3 취업준비생 중 채용면접 예정자 신청가능 - 신청 시 추가전달사항에 ‘학교명’ 작성)\n\n \n대여기준\n1인 1세트 기준(단품대여가능/잔여 개수에 한함)\n\n대여횟수\n연간 총 10회(3박4일/회)\n\n대여품목\n남자-자켓, 바지, 셔츠, 구두, 벨트, 넥타이\n여자-자켓, 스커트, 바지, 블라우스, 구두",
+      "benefit": "19세~39세로 채용 면접 예정인 양주시 거주 청년 / 면접정장대여",
+      "application": "청년센터홈페이지 대여신청 - 본인인증 - 사이즈 및 방문일시 선택 - 승인완료 후 해당 신청시간에 방문\n\n온라인: https://www.yangju.go.kr/youth/contents.do?key=3185",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-양주시-청년창업-경진대회",
+    "title": "양주시 청년창업 경진대회",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "양주시장상 수여 및 창업지원금 총 19,000천원 지원 (3개팀)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년·취업·사업",
+    "targetGroup": "청년, 구직자, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "양주시 청년창업 경진대회",
+      "청년",
+      "경기",
+      "경기도 양주시",
+      "모집중",
+      "구직자",
+      "소상공인",
+      "취업",
+      "사업",
+      "양주시장상",
+      "수여",
+      "및"
+    ],
+    "summary": "양주시장상 수여 및 창업지원금 총 19,000천원 지원 (3개팀)",
+    "audience": "◦ 경진대회 우수자 상금·상장 (양주시장상, 상금 총 19,000천원 지원)\n◦ 아이템 고도화 및 발표자료 일대일 컨설팅\n◦ 청년센터 내 창업사무실 입주시 가점 부여",
+    "benefits": [
+      "양주시장상 수여 및 창업지원금 총 19,000천원 지원 (3개팀)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "□ 접수 방법 : \n ① 청년센터 홈페이지 ▶ 센터소식 ▶ 공지사항 ▶ “경진대회” 참가신청서 등 제출 서류 다운로드 ▶ 이메일 접수 ( sdgri@korea.kr)\n\n온라인: https://yangju.go.kr/youth/selectBbsNttView.do?bbsNo=360&amp;key=3192&amp;nttNo=204263",
+    "officialUrl": "https://yangju.go.kr/youth/selectBbsNttView.do?bbsNo=360&amp;key=3192&amp;nttNo=204263",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000440",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "◦ 경진대회 우수자 상금·상장 (양주시장상, 상금 총 19,000천원 지원)\n◦ 아이템 고도화 및 발표자료 일대일 컨설팅\n◦ 청년센터 내 창업사무실 입주시 가점 부여",
+      "benefit": "양주시장상 수여 및 창업지원금 총 19,000천원 지원 (3개팀)",
+      "application": "□ 접수 방법 : \n ① 청년센터 홈페이지 ▶ 센터소식 ▶ 공지사항 ▶ “경진대회” 참가신청서 등 제출 서류 다운로드 ▶ 이메일 접수 ( sdgri@korea.kr)\n\n온라인: https://yangju.go.kr/youth/selectBbsNttView.do?bbsNo=360&amp;key=3192&amp;nttNo=204263",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-공영주차장-이용요금-감면",
+    "title": "공영주차장 이용요금 감면",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "울산광역시중구도시관리공단",
+    "region": "울산",
+    "amount": "취약계층,자원봉사자 등에게 공영주차장 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "공영주차장 이용요금 감면",
+      "복지",
+      "울산",
+      "울산광역시중구도시관리공단",
+      "상시",
+      "장애인",
+      "전체",
+      "취약계층,자원봉사자",
+      "등에게",
+      "공영주차장",
+      "이용요금",
+      "감면(대상별"
+    ],
+    "summary": "취약계층,자원봉사자 등에게 공영주차장 이용요금 감면(대상별 상이)",
+    "audience": "공영주차장 주차요금 감면",
+    "benefits": [
+      "취약계층,자원봉사자 등에게 공영주차장 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 출차 전 사전정산 또는 출차 시 감면증빙 자료 제시",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025700001",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025700001",
+    "contact": "울산광역시중구도시관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "공영주차장 주차요금 감면",
+      "benefit": "취약계층,자원봉사자 등에게 공영주차장 이용요금 감면(대상별 상이)",
+      "application": "○ 방문 신청\n - 기타 : 출차 전 사전정산 또는 출차 시 감면증빙 자료 제시",
+      "contact": "울산광역시중구도시관리공단"
+    }
+  },
+  {
+    "slug": "gov24-부설주차장-이용요금-감면",
+    "title": "부설주차장 이용요금 감면",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "울산광역시중구도시관리공단",
+    "region": "울산",
+    "amount": "취약계층,자원봉사자 등에게 부설주차장 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "부설주차장 이용요금 감면",
+      "복지",
+      "울산",
+      "울산광역시중구도시관리공단",
+      "상시",
+      "일반",
+      "전체",
+      "취약계층,자원봉사자",
+      "등에게",
+      "부설주차장",
+      "이용요금",
+      "감면(대상별"
+    ],
+    "summary": "취약계층,자원봉사자 등에게 부설주차장 이용요금 감면(대상별 상이)",
+    "audience": "청사 부설주차장 주차요금 감면",
+    "benefits": [
+      "취약계층,자원봉사자 등에게 부설주차장 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 출차 전 사전정산 또는 출차 시 감면증빙 자료 제시",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025700003",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025700003",
+    "contact": "울산광역시중구도시관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "청사 부설주차장 주차요금 감면",
+      "benefit": "취약계층,자원봉사자 등에게 부설주차장 이용요금 감면(대상별 상이)",
+      "application": "○ 방문 신청\n - 기타 : 출차 전 사전정산 또는 출차 시 감면증빙 자료 제시",
+      "contact": "울산광역시중구도시관리공단"
+    }
+  },
+  {
+    "slug": "gov24-거주자우선주차-요금감면",
+    "title": "거주자우선주차 요금감면",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "울산광역시중구도시관리공단",
+    "region": "울산",
+    "amount": "사회적 취약계층에게 거주자우선주차 요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "거주자우선주차 요금감면",
+      "복지",
+      "울산",
+      "울산광역시중구도시관리공단",
+      "상시",
+      "장애인",
+      "전체",
+      "사회적",
+      "취약계층에게",
+      "거주자우선주차",
+      "요금",
+      "감면(대상별"
+    ],
+    "summary": "사회적 취약계층에게 거주자우선주차 요금 감면(대상별 상이)",
+    "audience": "거주자우선주차제 주차요금 감면",
+    "benefits": [
+      "사회적 취약계층에게 거주자우선주차 요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 주차구획 정기신청 또는 수시배정 시 감면증빙 자료 제시, 수시배정 비대면 즉시감면 서비스 이용",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025700004",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025700004",
+    "contact": "울산광역시중구도시관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "거주자우선주차제 주차요금 감면",
+      "benefit": "사회적 취약계층에게 거주자우선주차 요금 감면(대상별 상이)",
+      "application": "○ 방문 신청\n - 기타 : 주차구획 정기신청 또는 수시배정 시 감면증빙 자료 제시, 수시배정 비대면 즉시감면 서비스 이용",
+      "contact": "울산광역시중구도시관리공단"
+    }
+  },
+  {
+    "slug": "gov24-체육시설-이용요금-감면-미추홀구-국민체육센터",
+    "title": "체육시설 이용요금 감면(미추홀구 국민체육센터)",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천광역시미추홀구시설관리공단",
+    "region": "인천",
+    "amount": "미추홀구국민체육센터 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "체육시설 이용요금 감면(미추홀구 국민체육센터)",
+      "청년",
+      "인천",
+      "인천광역시미추홀구시설관리공단",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "청소년",
+      "복지",
+      "미추홀구국민체육센터",
+      "이용요금"
+    ],
+    "summary": "미추홀구국민체육센터 이용요금 감면(대상별 상이)",
+    "audience": "○ 인천광역시 미추홀구 국민체육센터 설치 및 운영 조례에 따라 이용료 감면(개정 2021.7.12.)\n\n ①「국가유공자 등 예우 및 지원에 관한 법률 시행령」제86조 제1항 각 호의 어느 하나에 해당하는 사람 /감면율 50%\n ②「독립유공자예우에 관한 법률 시행령」제15조에 해당하는 사람 /감면율 50%\n ③「참전유공자 예우 및 단체설립에 관한 법률」제2조제2호에 해당하는 사람 /감면율 50%\n ④「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」제8조의3 각 호의 어느 하나에 해당하는 사람 /감면율 50%\n ⑤「5ㆍ18민주유공자예우에 관한 법률 시행령」제52조제1항 각 호의 어느 하나에 해당하는 사람 /감면율 50%\n ⑥「특수임무유공자 예우 및 단체설립에 관한 법률 시행령」제58조에 해당하는 사람 /감면율 50%\n ⑦「의사상자 등 예우 및 지원에 관한 법률 시행령」제17조의2제1항 각 호의 어느 하나에 해당하는 사람 /감면율 50%\n ⑧「국군포로의 송환 및 대우 등에 관한 법률」제2조제5호에 따른 등록포로 및 같은 조 제3호에 따른 억류지출신 포로 가족 /감면율 50%\n ⑨「국민기초생활 보장법」에 따른 생계·의료급여수급자와 그 세대를 같이 하는 세대원 /감면율 50%\n ⑩「장애인복지법」에 따라 등록된 장애인(장애의 정도가 심한 장애인은 보호자 1명 포함) /감면율 50%\n ⑪「노인복지법」에 따라 경로우대를 받는 65세 이상의 노인 /감면율 50%\n ⑫「한부모가족지원법」에 따른 한부모 가족 /감면율 50%\n ⑬「다문화가족지원법」에 따른 다문화 가족 /감면율 50%\n ⑭「초·중등교육법」제2조에 따른 학교의 체육활동과 관련된 정규 수업 및 방과 후 활동 /감면율 50%\n ⑮「학교 밖 청소년 지원에 관한 법률」제12조에 따른 청소년 지원센터의 체육활동과 관련된 자립지원 활동 참여자 /감면율 50%\n ⑯「인천광역시 미추홀구 병역명문가 예우에 관한 조례」에 따른 예우대상자로서 병역명문가증과 주소가 기입된 신분증을 제시하는 경우 /감면율 50%\n ⑰「보훈보상대상자 지원에 관한 법률」에 따른 보훈보상대상자와 그 유족 또는 가족 /감면율 50%\n ⑱ 다자녀 가족 할인 /감면율 30 %\n ⑲「모자보건법」에 따른 임산부 /감면율 30 %\n ⑳「제대군인지원에 관한 법률」에 따른 장기복무 제대군인 /감면율 30 %\n ㉑ 그 밖에 구청장이 필요하다고 인정하는 경우 30% 이내\n ㉒ 가임기간 여성 할인(13세 ∼ 55세) (수영장 이용 회원만) /감면율 10 %\n\n ※ 사용자에게 가장 유리한 감면사항 1개만 적용 가능(중복 감면 불가)",
+    "benefits": [
+      "미추홀구국민체육센터 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 미추홀구국민체육센터 홈페이지 가입 후 행정 감면 서비스 이용\n○ 미추홀구국민체육센터 안내데스크 증빙 제시 후 감면\n\n온라인: https://www.inimc.co.kr/main/business/athletic.jsp",
+    "officialUrl": "https://www.inimc.co.kr/main/business/athletic.jsp",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00027000001",
+    "contact": "인천광역시미추홀구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 인천광역시 미추홀구 국민체육센터 설치 및 운영 조례에 따라 이용료 감면(개정 2021.7.12.)\n\n ①「국가유공자 등 예우 및 지원에 관한 법률 시행령」제86조 제1항 각 호의 어느 하나에 해당하는 사람 /감면율 50%\n ②「독립유공자예우에 관한 법률 시행령」제15조에 해당하는 사람 /감면율 50%\n ③「참전유공자 예우 및 단체설립에 관한 법률」제2조제2호에 해당하는 사람 /감면율 50%\n ④「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」제8조의3 각 호의 어느 하나에 해당하는 사람 /감면율 50%\n ⑤「5ㆍ18민주유공자예우에 관한 법률 시행령」제52조제1항 각 호의 어느 하나에 해당하는 사람 /감면율 50%\n ⑥「특수임무유공자 예우 및 단체설립에 관한 법률 시행령」제58조에 해당하는 사람 /감면율 50%\n ⑦「의사상자 등 예우 및 지원에 관한 법률 시행령」제17조의2제1항 각 호의 어느 하나에 해당하는 사람 /감면율 50%\n ⑧「국군포로의 송환 및 대우 등에 관한 법률」제2조제5호에 따른 등록포로 및 같은 조 제3호에 따른 억류지출신 포로 가족 /감면율 50%\n ⑨「국민기초생활 보장법」에 따른 생계·의료급여수급자와 그 세대를 같이 하는 세대원 /감면율 50%\n ⑩「장애인복지법」에 따라 등록된 장애인(장애의 정도가 심한 장애인은 보호자 1명 포함) /감면율 50%\n ⑪「노인복지법」에 따라 경로우대를 받는 65세 이상의 노인 /감면율 50%\n ⑫「한부모가족지원법」에 따른 한부모 가족 /감면율 50%\n ⑬「다문화가족지원법」에 따른 다문화 가족 /감면율 50%\n ⑭「초·중등교육법」제2조에 따른 학교의 체육활동과 관련된 정규 수업 및 방과 후 활동 /감면율 50%\n ⑮「학교 밖 청소년 지원에 관한 법률」제12조에 따른 청소년 지원센터의 체육활동과 관련된 자립지원 활동 참여자 /감면율 50%\n ⑯「인천광역시 미추홀구 병역명문가 예우에 관한 조례」에 따른 예우대상자로서 병역명문가증과 주소가 기입된 신분증을 제시하는 경우 /감면율 50%\n ⑰「보훈보상대상자 지원에 관한 법률」에 따른 보훈보상대상자와 그 유족 또는 가족 /감면율 50%\n ⑱ 다자녀 가족 할인 /감면율 30 %\n ⑲「모자보건법」에 따른 임산부 /감면율 30 %\n ⑳「제대군인지원에 관한 법률」에 따른 장기복무 제대군인 /감면율 30 %\n ㉑ 그 밖에 구청장이 필요하다고 인정하는 경우 30% 이내\n ㉒ 가임기간 여성 할인(13세 ∼ 55세) (수영장 이용 회원만) /감면율 10 %\n\n ※ 사용자에게 가장 유리한 감면사항 1개만 적용 가능(중복 감면 불가)",
+      "benefit": "미추홀구국민체육센터 이용요금 감면(대상별 상이)",
+      "application": "○ 미추홀구국민체육센터 홈페이지 가입 후 행정 감면 서비스 이용\n○ 미추홀구국민체육센터 안내데스크 증빙 제시 후 감면\n\n온라인: https://www.inimc.co.kr/main/business/athletic.jsp",
+      "contact": "인천광역시미추홀구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-미추홀구-공영주차장-이용요금-감면",
+    "title": "미추홀구 공영주차장 이용요금 감면",
+    "category": "소상공인",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천광역시미추홀구시설관리공단",
+    "region": "인천",
+    "amount": "[인천광역시 미추홀구 주차장 설치 및 관리 조례] 제5조에 따라 감면 혜택 적용",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "소상공인, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "미추홀구 공영주차장 이용요금 감면",
+      "소상공인",
+      "인천",
+      "인천광역시미추홀구시설관리공단",
+      "상시",
+      "장애인",
+      "전체",
+      "복지",
+      "[인천광역시",
+      "미추홀구",
+      "주차장",
+      "설치"
+    ],
+    "summary": "[인천광역시 미추홀구 주차장 설치 및 관리 조례] 제5조에 따라 감면 혜택 적용",
+    "audience": "○ 「인천광역시 미추홀구 주차장 설치 및 관리 조례」제5조 주차요금의 감면 (개정 2021. 11. 15.)\n\n① 다음 각 목의 어느 하나에 해당하는 자가 본인의 자동차를 직접 운전하거나 장애 정도가 심하여 동승하고 타인으로 하여금 대리 운전하게 하는 경우(1회 주차의 경우 최초부터 1시간까지는 면제) / 감면율 80%\n가. 「국가유공자 등 예우 및 지원에 관한 법률 시행령」 제14조 규정에 의한 상이1급 내지 7급의 국가유공자로서 「국가유공자 등 예우 및 지원에 관한 법률 시행령」 제101조의 규정에 의하여 국가보훈처장이 발행한 국가유공자증서를 소지한 자 \n나. 「장애인복지법」 제2조의 규정에 의한 등록 장애인으로서 「장애인복지법」제32조의 규정에 의한 장애인등록증을 소지한 자\n다. 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」 제2조 제3호의 규정에 의한 고엽제후유의 증환자로서 국가 보훈처장이 발급한 표지(스티커)를 차량에 부착한 자 \n라. 「5.18민주유공자예우에 관한 법률」제4조제2호에 따른 보상을 받은 사람으로서 「5.18민주유공자예우에 관한 법률 시행령」제6조 제6항에 따른 국가보훈처장이 발행한 5.18민주유공자증서를 소지한 자 \n마. 「보훈보상대상자 지원에 관한 법률 시행령」제8조에 따른 상이 1급부터 7급까지의 보훈보상대상자로서「보훈보상대상자 지원에 관한 법률 시행령」제86조에 따른 국가보훈처장이 발행한 보훈보상 대상자 증서를 소지한 자 \n바. 「인천광역시 병역명문가 예우에 관한 조례」제2조에 따른 병역명문가 예우대상자 \n② 「자동차관리법 시행규칙」별표 1의 경형자동차 및 이륜 자동차 / 감면율 60%\n③ 「인천광역시 승용차요일제 지원 조례」제5조에 따른 승용차요일제 참여차량(단, 월 정기주차 제외) / 감면율 50%\n④ 환승주차장으로 지정된 공영주차장에 차량을 주차하고 수도권 전철로 환승한 것이 확인된 경우 / 감면율 50%\n⑤ 모범납세자로 표창을 받은 자로서 시장 또는 국세청장이 교부한 성실납세증표지(스티커)를 부착한 차량(1년) / 감면율 100%\n⑥ 「대기환경보전법」 제2조제16호에 따른 저공해자동차로서 같은 법 제58조제11항 및 같은 법 시행규칙 제79조의8에 따라 저공해자동차 등의 표지를 부착한 차량 /감면율 50%\n⑦ 전통시장 활성화를 위하여 구청장이 필요하다고 지정하는 전통시장 주차장을 이용한 고객으로서 전통시장에서 발급한 주차권을 소지한 경우 / 최초부터 1시간까지 면제\n⑧ 구에 주민등록을 둔 임산부가 탑승한 임산부 표시 부착 차량 또는 인천광역시에 주민등록을 둔 임산부가 병원이나 보건소에서 발행한 산모수첩을 소지한 경우 / 감면율 100%\n⑨ 아이모아카드 소지자이거나 18세 이하의 자녀를 포함한 2자녀 이상 다자녀가정의 가구원이 증명서류(주민등록등본 등)를 제시하고 공영주차장을 이용하는 경우 / 감면율 50%\n⑩ 「인천광역시 미추홀구 자원봉사활동 지원 조례」에 의한 자원봉사자로서 주차요금 감면증표 부착차량 /1일 2시간이내 100% 감면(자원봉사활동 매 500시간 초과자에 대하여 시간초과 다음연도부터 2년간 적용)\n⑪ 시장이 지정한 승용차 공동이용 자동차(승용차 공동이용 회원이 필요한 경우 시간제로 공동 이용하는 자동차)는 월 정기권을 발행받아 지정된 주차구획에 주차하는 경우 / 감면율 50%\n⑫ 「재난 및 안전관리 기본법」제3조에 따른 재난 상황 시 지역경제위기 극복을 위해 구청장이 주차요금 감면기준을 따로 정할 수 있음\n⑬ 「도로교통법」제2조제22호에 따른 그 본래의 긴급한 용도로 사용되고 있는 긴급자동차에 대해서는 주차요금 면제\n\n※ 감면액의 100원 미만은 절사하고, 2개 이상의 주차요금 감면사유에 해당하는 때에는 그 중 감면율이 높은 하나만 적용",
+    "benefits": [
+      "[인천광역시 미추홀구 주차장 설치 및 관리 조례] 제5조에 따라 감면 혜택 적용"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 유인주차장: 현장 직원 확인 후 감면 적용\n○ 무인주차장: 정산기 호출 버튼(관제센터 확인 후 감면 적용)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00027000002",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00027000002",
+    "contact": "인천광역시미추홀구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 「인천광역시 미추홀구 주차장 설치 및 관리 조례」제5조 주차요금의 감면 (개정 2021. 11. 15.)\n\n① 다음 각 목의 어느 하나에 해당하는 자가 본인의 자동차를 직접 운전하거나 장애 정도가 심하여 동승하고 타인으로 하여금 대리 운전하게 하는 경우(1회 주차의 경우 최초부터 1시간까지는 면제) / 감면율 80%\n가. 「국가유공자 등 예우 및 지원에 관한 법률 시행령」 제14조 규정에 의한 상이1급 내지 7급의 국가유공자로서 「국가유공자 등 예우 및 지원에 관한 법률 시행령」 제101조의 규정에 의하여 국가보훈처장이 발행한 국가유공자증서를 소지한 자 \n나. 「장애인복지법」 제2조의 규정에 의한 등록 장애인으로서 「장애인복지법」제32조의 규정에 의한 장애인등록증을 소지한 자\n다. 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」 제2조 제3호의 규정에 의한 고엽제후유의 증환자로서 국가 보훈처장이 발급한 표지(스티커)를 차량에 부착한 자 \n라. 「5.18민주유공자예우에 관한 법률」제4조제2호에 따른 보상을 받은 사람으로서 「5.18민주유공자예우에 관한 법률 시행령」제6조 제6항에 따른 국가보훈처장이 발행한 5.18민주유공자증서를 소지한 자 \n마. 「보훈보상대상자 지원에 관한 법률 시행령」제8조에 따른 상이 1급부터 7급까지의 보훈보상대상자로서「보훈보상대상자 지원에 관한 법률 시행령」제86조에 따른 국가보훈처장이 발행한 보훈보상 대상자 증서를 소지한 자 \n바. 「인천광역시 병역명문가 예우에 관한 조례」제2조에 따른 병역명문가 예우대상자 \n② 「자동차관리법 시행규칙」별표 1의 경형자동차 및 이륜 자동차 / 감면율 60%\n③ 「인천광역시 승용차요일제 지원 조례」제5조에 따른 승용차요일제 참여차량(단, 월 정기주차 제외) / 감면율 50%\n④ 환승주차장으로 지정된 공영주차장에 차량을 주차하고 수도권 전철로 환승한 것이 확인된 경우 / 감면율 50%\n⑤ 모범납세자로 표창을 받은 자로서 시장 또는 국세청장이 교부한 성실납세증표지(스티커)를 부착한 차량(1년) / 감면율 100%\n⑥ 「대기환경보전법」 제2조제16호에 따른 저공해자동차로서 같은 법 제58조제11항 및 같은 법 시행규칙 제79조의8에 따라 저공해자동차 등의 표지를 부착한 차량 /감면율 50%\n⑦ 전통시장 활성화를 위하여 구청장이 필요하다고 지정하는 전통시장 주차장을 이용한 고객으로서 전통시장에서 발급한 주차권을 소지한 경우 / 최초부터 1시간까지 면제\n⑧ 구에 주민등록을 둔 임산부가 탑승한 임산부 표시 부착 차량 또는 인천광역시에 주민등록을 둔 임산부가 병원이나 보건소에서 발행한 산모수첩을 소지한 경우 / 감면율 100%\n⑨ 아이모아카드 소지자이거나 18세 이하의 자녀를 포함한 2자녀 이상 다자녀가정의 가구원이 증명서류(주민등록등본 등)를 제시하고 공영주차장을 이용하는 경우 / 감면율 50%\n⑩ 「인천광역시 미추홀구 자원봉사활동 지원 조례」에 의한 자원봉사자로서 주차요금 감면증표 부착차량 /1일 2시간이내 100% 감면(자원봉사활동 매 500시간 초과자에 대하여 시간초과 다음연도부터 2년간 적용)\n⑪ 시장이 지정한 승용차 공동이용 자동차(승용차 공동이용 회원이 필요한 경우 시간제로 공동 이용하는 자동차)는 월 정기권을 발행받아 지정된 주차구획에 주차하는 경우 / 감면율 50%\n⑫ 「재난 및 안전관리 기본법」제3조에 따른 재난 상황 시 지역경제위기 극복을 위해 구청장이 주차요금 감면기준을 따로 정할 수 있음\n⑬ 「도로교통법」제2조제22호에 따른 그 본래의 긴급한 용도로 사용되고 있는 긴급자동차에 대해서는 주차요금 면제\n\n※ 감면액의 100원 미만은 절사하고, 2개 이상의 주차요금 감면사유에 해당하는 때에는 그 중 감면율이 높은 하나만 적용",
+      "benefit": "[인천광역시 미추홀구 주차장 설치 및 관리 조례] 제5조에 따라 감면 혜택 적용",
+      "application": "○ 유인주차장: 현장 직원 확인 후 감면 적용\n○ 무인주차장: 정산기 호출 버튼(관제센터 확인 후 감면 적용)",
+      "contact": "인천광역시미추홀구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-효도수당",
+    "title": "효도수당",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "4대이상 가정에 효도수당 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "효도수당",
+      "복지",
+      "충남",
+      "충청남도 보령시",
+      "상시",
+      "일반",
+      "아동",
+      "전체",
+      "4대이상",
+      "가정에",
+      "지원"
+    ],
+    "summary": "충청남도 보령시의 효도수당 지원사업입니다. 세대 구성과 부양 요건은 공식 공고에서 확인하세요.",
+    "audience": "○ 지원대상 : 효도수당 신청일 현재 4대 이상 가정으로 실질적으로 70세 이상의 직계존속을 부양하는 사람\n\n○ 지원내용 : 1명당 월 5만원 지원",
+    "benefits": [
+      "4대이상 가정에 효도수당 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 행정복지센터 : 읍·면·동 행정복지센터 방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000112",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000112",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 지원대상 : 효도수당 신청일 현재 4대 이상 가정으로 실질적으로 70세 이상의 직계존속을 부양하는 사람\n\n○ 지원내용 : 1명당 월 5만원 지원",
+      "benefit": "4대이상 가정에 효도수당 지원",
+      "application": "○ 방문 신청 \n - 행정복지센터 : 읍·면·동 행정복지센터 방문신청",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-귀어업인-정착금-지원",
+    "title": "귀어업인 정착금 지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "전입 후 1년 이내에 귀어세대에게 정착금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "귀어업인 정착금 지원",
+      "주거",
+      "충남",
+      "충청남도 보령시",
+      "상시",
+      "농어업인",
+      "전체",
+      "전입",
+      "후",
+      "1년",
+      "이내에",
+      "귀어세대에게"
+    ],
+    "summary": "전입 후 1년 이내에 귀어세대에게 정착금 지원",
+    "audience": "○ 전입 후 1년 이내에 귀어세대 당 50만원 지급",
+    "benefits": [
+      "전입 후 1년 이내에 귀어세대에게 정착금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 전입 후 1년 이내 신청(주소지 관할 읍면동사무소)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000114",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000114",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 전입 후 1년 이내에 귀어세대 당 50만원 지급",
+      "benefit": "전입 후 1년 이내에 귀어세대에게 정착금 지원",
+      "application": "○ 방문 신청 \n - 주민센터 : 전입 후 1년 이내 신청(주소지 관할 읍면동사무소)",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-보령-넝쿨강낭콩-지리적표시-증명표장-활용-포장판매-지원",
+    "title": "보령 넝쿨강낭콩 지리적표시 증명표장 활용 포장판매 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "넝쿨강낭콩 재배농가에 포장 판매 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "보령 넝쿨강낭콩 지리적표시 증명표장 활용 포장판매 지원",
+      "농림어업",
+      "충남",
+      "충청남도 보령시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "넝쿨강낭콩",
+      "재배농가에",
+      "포장",
+      "판매",
+      "지원"
+    ],
+    "summary": "넝쿨강낭콩 재배농가에 포장 판매 지원",
+    "audience": "○ 넝쿨강낭콩 포장 판매지원 : 4kg 종이박스(1개/3,3㎡)",
+    "benefits": [
+      "넝쿨강낭콩 재배농가에 포장 판매 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 농업기술센터, 각읍면주민센터",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000118",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000118",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 넝쿨강낭콩 포장 판매지원 : 4kg 종이박스(1개/3,3㎡)",
+      "benefit": "넝쿨강낭콩 재배농가에 포장 판매 지원",
+      "application": "○ 방문 신청\n - 농업기술센터, 각읍면주민센터",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-북한이탈주민-정착-지원",
+    "title": "북한이탈주민 정착 지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "북한이탈주민에게 긴급구호, 취업, 멘토링, 예방접종 등 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거·취업·복지",
+    "targetGroup": "구직자, 어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "북한이탈주민 정착 지원",
+      "주거",
+      "충남",
+      "충청남도 보령시",
+      "상시",
+      "구직자",
+      "어르신",
+      "취업",
+      "복지",
+      "북한이탈주민에게",
+      "긴급구호,",
+      "취업,"
+    ],
+    "summary": "북한이탈주민에게 긴급구호, 취업, 멘토링, 예방접종 등 지원",
+    "audience": "○ 긴급구호지원, 긴급지원, 취업지원, 멘토링지원, 예방접종지원, 동절기 김치나눔",
+    "benefits": [
+      "북한이탈주민에게 긴급구호, 취업, 멘토링, 예방접종 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 명천종합사회복지관",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000120",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000120",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 긴급구호지원, 긴급지원, 취업지원, 멘토링지원, 예방접종지원, 동절기 김치나눔",
+      "benefit": "북한이탈주민에게 긴급구호, 취업, 멘토링, 예방접종 등 지원",
+      "application": "○ 방문 신청\n - 기타 : 명천종합사회복지관",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-임신-전-산전검사-및-물품-지원",
+    "title": "임신 전 산전검사 및 물품 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "신혼부부에게 산전검사 및 물품 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·주거",
+    "targetGroup": "신혼부부, 부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "임신 전 산전검사 및 물품 지원",
+      "복지",
+      "충남",
+      "충청남도 보령시",
+      "상시",
+      "신혼부부",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "주거",
+      "신혼부부에게",
+      "산전검사"
+    ],
+    "summary": "신혼부부에게 산전검사 및 물품 지원",
+    "audience": "○ 임신 전 산전검사 및 물품지원",
+    "benefits": [
+      "신혼부부에게 산전검사 및 물품 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 보건소 : 보건소 방문신청\n - 구비서류 : 신분증",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000121",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000121",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 임신 전 산전검사 및 물품지원",
+      "benefit": "신혼부부에게 산전검사 및 물품 지원",
+      "application": "○ 방문 신청 \n - 보건소 : 보건소 방문신청\n - 구비서류 : 신분증",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-산모신생아-건강관리사-교통비-지원",
+    "title": "산모·신생아 건강관리사 교통비 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "산모를 지원하는 산모신생아 건강관리사에게 교통비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "산모·신생아 건강관리사 교통비 지원",
+      "보건의료",
+      "충남",
+      "충청남도 보령시",
+      "확인필요",
+      "일반",
+      "전체",
+      "산모를",
+      "지원하는",
+      "산모신생아",
+      "건강관리사에게",
+      "교통비"
+    ],
+    "summary": "산모를 지원하는 산모신생아 건강관리사에게 교통비 지원",
+    "audience": "○ 산모 신생아 건강관리사 교통비 지원",
+    "benefits": [
+      "산모를 지원하는 산모신생아 건강관리사에게 교통비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 (신청은 산모 신생아 건강관리 업체에 한함)\n - 보건소 : 방문신청 또는 등기우편\n - 구비서류 : 지원 청구서, 산모 신생아 건강관리 서비스 제공기록지",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000122",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000122",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 산모 신생아 건강관리사 교통비 지원",
+      "benefit": "산모를 지원하는 산모신생아 건강관리사에게 교통비 지원",
+      "application": "○ 방문 신청 (신청은 산모 신생아 건강관리 업체에 한함)\n - 보건소 : 방문신청 또는 등기우편\n - 구비서류 : 지원 청구서, 산모 신생아 건강관리 서비스 제공기록지",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-양돈농가-파리감소화-지원",
+    "title": "양돈농가 파리감소화 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "양돈농가에 배합사료 첨가용 파리 유충제거제 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "양돈농가 파리감소화 지원",
+      "농림어업",
+      "충남",
+      "충청남도 보령시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "양돈농가에",
+      "배합사료",
+      "첨가용",
+      "파리",
+      "유충제거제"
+    ],
+    "summary": "양돈농가에 배합사료 첨가용 파리 유충제거제 지원",
+    "audience": "○ 배합사료 첨가용 파리 유충제거제 지원\n - 대상 : 양돈농가\n - 사업비 : 66,000천원(보조 50%, 자담 50%)\n - 단가 : 8.8천원/KG, 농가 신청 한도 250KG",
+    "benefits": [
+      "양돈농가에 배합사료 첨가용 파리 유충제거제 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 읍면사무소 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000124",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000124",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 배합사료 첨가용 파리 유충제거제 지원\n - 대상 : 양돈농가\n - 사업비 : 66,000천원(보조 50%, 자담 50%)\n - 단가 : 8.8천원/KG, 농가 신청 한도 250KG",
+      "benefit": "양돈농가에 배합사료 첨가용 파리 유충제거제 지원",
+      "application": "○ 방문 신청 \n - 주민센터 : 읍면사무소 방문 신청",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-전입학생-생활지원금-지급",
+    "title": "전입학생 생활지원금 지급",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "전입학생에게 지원금 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "전입학생 생활지원금 지급",
+      "주거",
+      "충남",
+      "충청남도 보령시",
+      "상시",
+      "일반",
+      "전체",
+      "전입학생에게",
+      "지원금",
+      "지급"
+    ],
+    "summary": "충청남도 보령시의 전입학생 생활지원금 지급사업입니다. 지급 요건과 신청 절차는 공식 공고에서 확인하세요.",
+    "audience": "○ 전입학생 지원금(60만원)\n - 전입 시 : 5만원 상당 상품권\n - 전입 6개월 후 : 20만원\n - 전입 1년 후 : 15만원\n - 전입 1년 6개월 후 : 20만원",
+    "benefits": [
+      "전입학생에게 지원금 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 거주지 행정복지센터 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000127",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000127",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 전입학생 지원금(60만원)\n - 전입 시 : 5만원 상당 상품권\n - 전입 6개월 후 : 20만원\n - 전입 1년 후 : 15만원\n - 전입 1년 6개월 후 : 20만원",
+      "benefit": "전입학생에게 지원금 지급",
+      "application": "○ 방문 신청 \n - 거주지 행정복지센터 신청",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-임산부-출산용품-및-안전벨트-지원",
+    "title": "임산부 출산용품 및 안전벨트 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "임산부에게 출산용품, 임산부 안전벨트 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "임산부 출산용품 및 안전벨트 지원",
+      "복지",
+      "충남",
+      "충청남도 보령시",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "임산부에게",
+      "출산용품,",
+      "임산부",
+      "안전벨트"
+    ],
+    "summary": "임산부에게 출산용품, 임산부 안전벨트 지원",
+    "audience": "○ 임산부 출산용품, 임산부 안전벨트 지원",
+    "benefits": [
+      "임산부에게 출산용품, 임산부 안전벨트 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 보건소 : 보건소 방문신청\n - 구비서류 : 신분증, 산모수첩 혹은 임신확인서",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000129",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000129",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 임산부 출산용품, 임산부 안전벨트 지원",
+      "benefit": "임산부에게 출산용품, 임산부 안전벨트 지원",
+      "application": "○ 방문 신청 \n - 보건소 : 보건소 방문신청\n - 구비서류 : 신분증, 산모수첩 혹은 임신확인서",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-정관-난관-복원-시술비-지원",
+    "title": "정관, 난관 복원 시술비 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "주민을 대상으로 정관, 난관 복원 시술비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "정관, 난관 복원 시술비 지원",
+      "보건의료",
+      "충남",
+      "충청남도 보령시",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "주민을",
+      "대상으로",
+      "정관,",
+      "난관"
+    ],
+    "summary": "주민을 대상으로 정관, 난관 복원 시술비 지원",
+    "audience": "○ 출산을 원하는 영구 피임 시술자에게 복원시술비 지원\n - 의료보험 적용 본인부담금 1인 최대 100만원",
+    "benefits": [
+      "주민을 대상으로 정관, 난관 복원 시술비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 보건소 방문신청\n - 구비서류 : 주민등록등본, 통장사본, 진단서 또는 소견서, 진료비 영수증 및 세부내역서",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000132",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000132",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 출산을 원하는 영구 피임 시술자에게 복원시술비 지원\n - 의료보험 적용 본인부담금 1인 최대 100만원",
+      "benefit": "주민을 대상으로 정관, 난관 복원 시술비 지원",
+      "application": "○ 방문 신청\n - 보건소 : 보건소 방문신청\n - 구비서류 : 주민등록등본, 통장사본, 진단서 또는 소견서, 진료비 영수증 및 세부내역서",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-아토피-천식-예방관리-지원",
+    "title": "아토피 천식 예방관리 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "아토피 천식 환아에게 의료비 및 보습제 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "아토피 천식 예방관리 지원",
+      "보건의료",
+      "충남",
+      "충청남도 보령시",
+      "상시",
+      "일반",
+      "아동",
+      "전체",
+      "아토피",
+      "천식",
+      "환아에게",
+      "의료비"
+    ],
+    "summary": "아토피 천식 환아에게 의료비 및 보습제 지원",
+    "audience": "○ 아토피 천식 환아 보습제 지원\n○ 중증 아토피 환아 의료비 지원",
+    "benefits": [
+      "아토피 천식 환아에게 의료비 및 보습제 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 보건소 모자보건팀",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000133",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000133",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 아토피 천식 환아 보습제 지원\n○ 중증 아토피 환아 의료비 지원",
+      "benefit": "아토피 천식 환아에게 의료비 및 보습제 지원",
+      "application": "○ 방문 신청\n - 보건소 : 보건소 모자보건팀",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-산후조리-비용-본인부담금-지원-기준중위소득-150-이하",
+    "title": "산후조리 비용 본인부담금 지원(기준중위소득 150%이하)",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "산후조리 도우미 서비스 비용 중 본인부담금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "산후조리 비용 본인부담금 지원(기준중위소득 150%이하)",
+      "보건의료",
+      "충남",
+      "충청남도 보령시",
+      "마감",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "산후조리",
+      "도우미",
+      "서비스",
+      "비용"
+    ],
+    "summary": "산후조리 도우미 서비스 비용 중 본인부담금 지원",
+    "audience": "○ 산후조리 도우미 서비스 비용 중 본인부담금 지원(도비지원)\n○ 지원금액 : 본인부담금의 90% 지원(상한액 400,000원)",
+    "benefits": [
+      "산후조리 도우미 서비스 비용 중 본인부담금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 보건소 방문신청\n - 구비서류 : 서비스 이용 영수증, 주민등록등본 혹은 초본, 통장사본",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000137",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000137",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 산후조리 도우미 서비스 비용 중 본인부담금 지원(도비지원)\n○ 지원금액 : 본인부담금의 90% 지원(상한액 400,000원)",
+      "benefit": "산후조리 도우미 서비스 비용 중 본인부담금 지원",
+      "application": "○ 방문 신청\n - 보건소 : 보건소 방문신청\n - 구비서류 : 서비스 이용 영수증, 주민등록등본 혹은 초본, 통장사본",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-아주자동차대학생-반값등록금-지원",
+    "title": "아주자동차대학생 반값등록금 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "대학(원)생에게 반값등록금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "아주자동차대학생 반값등록금 지원",
+      "청년",
+      "충남",
+      "충청남도 보령시",
+      "모집중",
+      "대학(원)생에게",
+      "반값등록금",
+      "지원"
+    ],
+    "summary": "충청남도 보령시의 아주자동차대학생 반값등록금 지원사업입니다. 추천 기준과 지원 범위는 공식 안내에서 확인하세요.",
+    "audience": "○ 대학교: 관내 고등학교를 졸업하고 관내 대학 재학생으로 학(총)장이 추천하는 자(이 경우, 성적기준을 적용하지 않을 수 있음)\n - 1학기 150만원 내외 지원, 2학기 100만원 내외 반값등록금 지원\n○ 대학원: 관내 학교 졸업자 또는 보령시에 2년이상 계속해서 주민등록을 두고 거주하는 학생 및 시민으로 학(총)장이 추천하는 자\n - 1.2학기: 200만원 내외 반값등록금 지원",
+    "benefits": [
+      "대학(원)생에게 반값등록금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 아주자동차대학교 교학기획처",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000144",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000144",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 대학교: 관내 고등학교를 졸업하고 관내 대학 재학생으로 학(총)장이 추천하는 자(이 경우, 성적기준을 적용하지 않을 수 있음)\n - 1학기 150만원 내외 지원, 2학기 100만원 내외 반값등록금 지원\n○ 대학원: 관내 학교 졸업자 또는 보령시에 2년이상 계속해서 주민등록을 두고 거주하는 학생 및 시민으로 학(총)장이 추천하는 자\n - 1.2학기: 200만원 내외 반값등록금 지원",
+      "benefit": "대학(원)생에게 반값등록금 지원",
+      "application": "○ 방문 신청\n - 기타 : 아주자동차대학교 교학기획처",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-산모신생아-동반-자녀-돌봄-지원",
+    "title": "산모·신생아 동반 자녀 돌봄 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "산모에게 산모신생아 동반 자녀 돌봄 서비스 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "산모·신생아 동반 자녀 돌봄 지원",
+      "교육",
+      "충남",
+      "충청남도 보령시",
+      "확인필요",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "산모에게",
+      "산모신생아",
+      "동반",
+      "자녀"
+    ],
+    "summary": "산모에게 산모신생아 동반 자녀 돌봄 서비스 지원",
+    "audience": "○ 산후도우미가 산모의 회복을 돕기 위해 기존 자녀 돌봄을 일부 보조하는 서비스로,\n○ 기존 자녀 돌봄이 이뤄진 경우, 해당 건강관리사에게 보령시에서 돌봄 비용을 지원함",
+    "benefits": [
+      "산모에게 산모신생아 동반 자녀 돌봄 서비스 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청(산모 신생아 건강관리 업체에 한함) \n - 보건소 : 보건소 방문신청\n - 구비서류 : 지원 청구서, 산모 신생아 건강관리 서비스 제공기록지",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000146",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000146",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 산후도우미가 산모의 회복을 돕기 위해 기존 자녀 돌봄을 일부 보조하는 서비스로,\n○ 기존 자녀 돌봄이 이뤄진 경우, 해당 건강관리사에게 보령시에서 돌봄 비용을 지원함",
+      "benefit": "산모에게 산모신생아 동반 자녀 돌봄 서비스 지원",
+      "application": "○ 방문 신청(산모 신생아 건강관리 업체에 한함) \n - 보건소 : 보건소 방문신청\n - 구비서류 : 지원 청구서, 산모 신생아 건강관리 서비스 제공기록지",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-산모신생아-건강관리-지원-확대",
+    "title": "산모·신생아 건강관리 지원(확대)",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "출산가정에 산모신생아 건강관리 서비스 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "산모·신생아 건강관리 지원(확대)",
+      "보건의료",
+      "충남",
+      "충청남도 보령시",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "출산가정에",
+      "산모신생아",
+      "건강관리",
+      "서비스"
+    ],
+    "summary": "출산가정에 산모신생아 건강관리 서비스 지원",
+    "audience": "(대상자) 기준중위소득 150% 초과 가구 대상\n\n○ 산모 건강관리 : 유방관리, 부종관리, 영양관리, 좌욕지원, 산후 위생관리\n\n○ 신생아 건강관리 : 신생아 청결·위생관리(목욕, 배꼽관리, 기저귀교체, 용품소독), 수유 및 예방접종 지원\n\n○ 산모·신생아 가사지원 : 산모 식사준비, 산모 및 신생아 주 생활공간 청소, 산모 및 신생아 의류 세탁\n\n○ 산모 정보제공 및 정서지원 : 응급상황 발견 및 대응, 감염 예방 및 관리, 정서 상태 이해 및 지지\n※ 산모·신생아 외 다른 가족 돌봄이나 일반 가사활동영역은 표준 서비스에 포함되지 않는 부가 서비스이므로 원하는 경우 별도로 추가구매가 필요함",
+    "benefits": [
+      "출산가정에 산모신생아 건강관리 서비스 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 및 온라인 신청 가능\n - 복지로 :www.bokjiro.go.kr",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000149",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000149",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "(대상자) 기준중위소득 150% 초과 가구 대상\n\n○ 산모 건강관리 : 유방관리, 부종관리, 영양관리, 좌욕지원, 산후 위생관리\n\n○ 신생아 건강관리 : 신생아 청결·위생관리(목욕, 배꼽관리, 기저귀교체, 용품소독), 수유 및 예방접종 지원\n\n○ 산모·신생아 가사지원 : 산모 식사준비, 산모 및 신생아 주 생활공간 청소, 산모 및 신생아 의류 세탁\n\n○ 산모 정보제공 및 정서지원 : 응급상황 발견 및 대응, 감염 예방 및 관리, 정서 상태 이해 및 지지\n※ 산모·신생아 외 다른 가족 돌봄이나 일반 가사활동영역은 표준 서비스에 포함되지 않는 부가 서비스이므로 원하는 경우 별도로 추가구매가 필요함",
+      "benefit": "출산가정에 산모신생아 건강관리 서비스 지원",
+      "application": "○ 방문 신청 및 온라인 신청 가능\n - 복지로 :www.bokjiro.go.kr",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-고등학교-신입생-교복비-지원",
+    "title": "고등학교 신입생 교복비 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "서비스 대상: 관내 고등학교 신입생: 1,700여명 신청방법: 방문신청(학교장에게 신청)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "고등학교 신입생 교복비 지원",
+      "교육",
+      "충남",
+      "충청남도 보령시",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "서비스",
+      "대상:",
+      "관내",
+      "고등학교"
+    ],
+    "summary": "서비스 대상: 관내 고등학교 신입생: 1,700여명 신청방법: 방문신청(학교장에게 신청)",
+    "audience": "○ 관내 고등학교 신입생 교복비 지원\n- 지원기간 : 2026.1.1 ~2026.12.31\n- 지원대상 : 관내고등학교(6개교) 신입생 ( 1,700여명)\n- 지원금액 : 1인 35만원 내\n- 지원방식: 현물\n- 지원방법 : 교육기관에대한 보조금\n- 추진방향 : ① 지원받은 교복 구입비는 학교별 계약한 교복업체에 일괄 지급 ② 학생,학부모 개인계좌로 지급 불가\n③ 기 자부담으로 구입한 학생들의 교복 구입비 보전 불가(보령시 교육경비 보조에 관한 조례 제2조 (보조사업의 범위) –보령시 관내 고등학교)\n- 신청자격 : 학생의 부모, 보호자, 본인\n- 신청방법 : 학교장에게 신청",
+    "benefits": [
+      "서비스 대상: 관내 고등학교 신입생: 1,700여명 신청방법: 방문신청(학교장에게 신청)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문신청\n- 기타 : 해당 학교장에게 신청(신청서 제출)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000246",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000246",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 관내 고등학교 신입생 교복비 지원\n- 지원기간 : 2026.1.1 ~2026.12.31\n- 지원대상 : 관내고등학교(6개교) 신입생 ( 1,700여명)\n- 지원금액 : 1인 35만원 내\n- 지원방식: 현물\n- 지원방법 : 교육기관에대한 보조금\n- 추진방향 : ① 지원받은 교복 구입비는 학교별 계약한 교복업체에 일괄 지급 ② 학생,학부모 개인계좌로 지급 불가\n③ 기 자부담으로 구입한 학생들의 교복 구입비 보전 불가(보령시 교육경비 보조에 관한 조례 제2조 (보조사업의 범위) –보령시 관내 고등학교)\n- 신청자격 : 학생의 부모, 보호자, 본인\n- 신청방법 : 학교장에게 신청",
+      "benefit": "서비스 대상: 관내 고등학교 신입생: 1,700여명 신청방법: 방문신청(학교장에게 신청)",
+      "application": "○ 방문신청\n- 기타 : 해당 학교장에게 신청(신청서 제출)",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-칡소-도축장려금-지원",
+    "title": "칡소 도축장려금 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "칡소 사육 농가에 출하우 도축장려금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "칡소 도축장려금 지원",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "모집중",
+      "농어업인",
+      "전체",
+      "칡소",
+      "사육",
+      "농가에",
+      "출하우",
+      "도축장려금"
+    ],
+    "summary": "칡소 사육 농가에 출하우 도축장려금 지원",
+    "audience": "○ 칡소 출하우 도축장려금 지원\n ※ 거세 비육우 우선 지원",
+    "benefits": [
+      "칡소 사육 농가에 출하우 도축장려금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청(아산시농업기술센터 축산과)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000102",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000102",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 칡소 출하우 도축장려금 지원\n ※ 거세 비육우 우선 지원",
+      "benefit": "칡소 사육 농가에 출하우 도축장려금 지원",
+      "application": "○ 방문 신청(아산시농업기술센터 축산과)",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-육계농가-왕겨-지원",
+    "title": "육계농가 왕겨 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "육계 사육농가에 왕겨구입비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "육계농가 왕겨 지원",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "상시",
+      "농어업인",
+      "전체",
+      "육계",
+      "사육농가에",
+      "왕겨구입비",
+      "지원"
+    ],
+    "summary": "충청남도 아산시의 육계농가 왕겨 구입비 지원사업입니다. 지원 비율과 신청 방법은 공식 공고에서 확인하세요.",
+    "audience": "○ 육계 사육농가 왕겨구입비 지원\n\n○ 지원대상 : 육계 사육농가\n\n○ 지원비율 : 보조 50%, 자부담 50%",
+    "benefits": [
+      "육계 사육농가에 왕겨구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 관할 읍면동 행정복지센터 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000114",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000114",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 육계 사육농가 왕겨구입비 지원\n\n○ 지원대상 : 육계 사육농가\n\n○ 지원비율 : 보조 50%, 자부담 50%",
+      "benefit": "육계 사육농가에 왕겨구입비 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 관할 읍면동 행정복지센터 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-벼-육묘-상자처리제-지원",
+    "title": "벼 육묘 상자처리제 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "벼 재배농가에 벼 육묘 상자처리제 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "벼 육묘 상자처리제 지원",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "벼",
+      "재배농가에",
+      "육묘",
+      "상자처리제",
+      "지원"
+    ],
+    "summary": "벼 재배농가에 벼 육묘 상자처리제 지원",
+    "audience": "○ 지원기준 : 1kg(포)/660㎡\n ※ 농가당 3ha까지 지원",
+    "benefits": [
+      "벼 재배농가에 벼 육묘 상자처리제 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 관할 읍면동 행정복지센터 신청\n - 농업경영체 등록 확인서 내, 기입된 필지 기준 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000137",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000137",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 지원기준 : 1kg(포)/660㎡\n ※ 농가당 3ha까지 지원",
+      "benefit": "벼 재배농가에 벼 육묘 상자처리제 지원",
+      "application": "○ 방문 신청 \n - 주민센터 : 관할 읍면동 행정복지센터 신청\n - 농업경영체 등록 확인서 내, 기입된 필지 기준 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-양돈농가-악취저감제-지원-악취민원",
+    "title": "양돈농가 악취저감제 지원(악취민원)",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "관내 양돈농가에게 악취저감제 지원(악취민원 발생 농가 우선 지원)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "양돈농가 악취저감제 지원(악취민원)",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "모집중",
+      "농어업인",
+      "전체",
+      "관내",
+      "양돈농가에게",
+      "악취저감제",
+      "지원(악취민원",
+      "발생"
+    ],
+    "summary": "관내 양돈농가에게 악취저감제 지원(악취민원 발생 농가 우선 지원)",
+    "audience": "○ 양돈농가에 악취탈취제·축분부숙 촉진제 및 환경개선제 구입비 지원\n - 악취탈취제: 액비살포 관련 민원 및 축산농가의 악취 민원 해소를 위한 탈취제 지원\n - 미생물, 미네랄, 효소제 등 축분부숙촉진제 및 악취저감제 지원",
+    "benefits": [
+      "관내 양돈농가에게 악취저감제 지원(악취민원 발생 농가 우선 지원)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 신청서류(사업신청서, 사업대상자 서약서, 개인정보 수집 및 조회 이용 동의서) 구비하여 읍·면·동 행정복지지원센터에 방문 제출\n※ 신청기간 등 상세 내역은 사업연도「축산사업 시행지침」참조",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000138",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000138",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 양돈농가에 악취탈취제·축분부숙 촉진제 및 환경개선제 구입비 지원\n - 악취탈취제: 액비살포 관련 민원 및 축산농가의 악취 민원 해소를 위한 탈취제 지원\n - 미생물, 미네랄, 효소제 등 축분부숙촉진제 및 악취저감제 지원",
+      "benefit": "관내 양돈농가에게 악취저감제 지원(악취민원 발생 농가 우선 지원)",
+      "application": "○ 방문 신청\n - 신청서류(사업신청서, 사업대상자 서약서, 개인정보 수집 및 조회 이용 동의서) 구비하여 읍·면·동 행정복지지원센터에 방문 제출\n※ 신청기간 등 상세 내역은 사업연도「축산사업 시행지침」참조",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-도고쪽파-유박비료-지원",
+    "title": "도고쪽파 유박비료 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "쪽파재배농가에 친환경 유박비료 구입비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "도고쪽파 유박비료 지원",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "쪽파재배농가에",
+      "친환경",
+      "유박비료",
+      "구입비",
+      "지원"
+    ],
+    "summary": "쪽파재배농가에 친환경 유박비료 구입비 지원",
+    "audience": "○ 아산시에 주소를 두고 도고저수지 상류지역에서 쪽파를 0.1ha 이상 재배농가에 친환경 유박비료 구입비 50% 지원",
+    "benefits": [
+      "쪽파재배농가에 친환경 유박비료 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 거주지 읍면동 행정복지센터 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000140",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000140",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 아산시에 주소를 두고 도고저수지 상류지역에서 쪽파를 0.1ha 이상 재배농가에 친환경 유박비료 구입비 50% 지원",
+      "benefit": "쪽파재배농가에 친환경 유박비료 구입비 지원",
+      "application": "○ 방문 신청 \n - 주민센터 : 거주지 읍면동 행정복지센터 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-과수재배농가-농기계-구입-지원",
+    "title": "과수재배농가 농기계 구입 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "과수재배 농업인에게 농기계 구입비 지원(신청기종에 따라 차등 지원)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "과수재배농가 농기계 구입 지원",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "과수재배",
+      "농업인에게",
+      "농기계",
+      "구입비",
+      "지원(신청기종에"
+    ],
+    "summary": "과수재배 농업인에게 농기계 구입비 지원(신청기종에 따라 차등 지원)",
+    "audience": "○ 과수농가 농기계 구입비 지원\n - 신청기종에 따라 차등 지원",
+    "benefits": [
+      "과수재배 농업인에게 농기계 구입비 지원(신청기종에 따라 차등 지원)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 관할 읍면동 행정복지센터 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000141",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000141",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 과수농가 농기계 구입비 지원\n - 신청기종에 따라 차등 지원",
+      "benefit": "과수재배 농업인에게 농기계 구입비 지원(신청기종에 따라 차등 지원)",
+      "application": "○ 방문 신청 \n - 주민센터 : 관할 읍면동 행정복지센터 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-칡소-다산장려금-지원",
+    "title": "칡소 다산장려금 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "칡소 사육 농가에 송아지 출산 시 다산장려금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아, 농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "칡소 다산장려금 지원",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "모집중",
+      "부모/육아",
+      "농어업인",
+      "전체",
+      "임신·출산·육아",
+      "칡소",
+      "사육",
+      "농가에"
+    ],
+    "summary": "칡소 사육 농가에 송아지 출산 시 다산장려금 지원",
+    "audience": "○ 3산 이상 칡소의 송아지 출산 시 다산장려금 지원",
+    "benefits": [
+      "칡소 사육 농가에 송아지 출산 시 다산장려금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청(아산시농업기술센터 축산과)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000149",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000149",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 3산 이상 칡소의 송아지 출산 시 다산장려금 지원",
+      "benefit": "칡소 사육 농가에 송아지 출산 시 다산장려금 지원",
+      "application": "○ 방문 신청(아산시농업기술센터 축산과)",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-오이재배농가-액상비료-지원",
+    "title": "오이재배농가 액상비료 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "배방 오이재배 농가에 액상비료 구입비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "오이재배농가 액상비료 지원",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "배방",
+      "오이재배",
+      "농가에",
+      "액상비료",
+      "구입비"
+    ],
+    "summary": "배방 오이재배 농가에 액상비료 구입비 지원",
+    "audience": "○ 배방 오이재배 농가(노지 및 시설오이)에 오이 액상비료(관주용 비료) 구입비 50% 지원",
+    "benefits": [
+      "배방 오이재배 농가에 액상비료 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 거주지 읍면동 행정복지센터 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000158",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000158",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 배방 오이재배 농가(노지 및 시설오이)에 오이 액상비료(관주용 비료) 구입비 50% 지원",
+      "benefit": "배방 오이재배 농가에 액상비료 구입비 지원",
+      "application": "○ 방문 신청 \n - 주민센터 : 거주지 읍면동 행정복지센터 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-버섯재배농가-버섯배지-지원",
+    "title": "버섯재배농가 버섯배지 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "버섯재배 농가에게 종균, 농자재(볏짚, 밀짚, 면실박, 면실피 등) 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "버섯재배농가 버섯배지 지원",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "버섯재배",
+      "농가에게",
+      "종균,",
+      "농자재(볏짚,",
+      "밀짚,"
+    ],
+    "summary": "버섯재배 농가에게 종균, 농자재(볏짚, 밀짚, 면실박, 면실피 등) 지원",
+    "audience": "○ 농업경영체 등록을 한 버섯재배 농업인에 버섯배지 구입비 50% 지원",
+    "benefits": [
+      "버섯재배 농가에게 종균, 농자재(볏짚, 밀짚, 면실박, 면실피 등) 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 농업기술센터 방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000159",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000159",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 농업경영체 등록을 한 버섯재배 농업인에 버섯배지 구입비 50% 지원",
+      "benefit": "버섯재배 농가에게 종균, 농자재(볏짚, 밀짚, 면실박, 면실피 등) 지원",
+      "application": "○ 방문 신청 \n - 농업기술센터 방문신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-환경친화적-신소재-영농지원",
+    "title": "환경친화적 신소재 영농지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "원예작물 재배농가에 친환경 신소재 영농자재 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "환경친화적 신소재 영농지원",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "원예작물",
+      "재배농가에",
+      "친환경",
+      "신소재",
+      "영농자재"
+    ],
+    "summary": "원예작물 재배농가에 친환경 신소재 영농자재 지원",
+    "audience": "○ 아산시 관내 원예작물 재배농가에 생분해멀칭제(190원/㎡당), 하우스 차광도포제(*인위제거형 500원/㎡당), 액상멀칭제(190원/㎡당), Y자형 고추지주대(3,900원/1개당), PLS 대응 충해관리제 구입비 (150원/㎡당)",
+    "benefits": [
+      "원예작물 재배농가에 친환경 신소재 영농자재 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 거주지 읍면동 행정복지센터 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000160",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000160",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 아산시 관내 원예작물 재배농가에 생분해멀칭제(190원/㎡당), 하우스 차광도포제(*인위제거형 500원/㎡당), 액상멀칭제(190원/㎡당), Y자형 고추지주대(3,900원/1개당), PLS 대응 충해관리제 구입비 (150원/㎡당)",
+      "benefit": "원예작물 재배농가에 친환경 신소재 영농자재 지원",
+      "application": "○ 방문 신청 \n - 주민센터 : 거주지 읍면동 행정복지센터 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-친환경유기질비료-지원-배방",
+    "title": "친환경유기질비료 지원(배방)",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "배방읍 채소재배 농가에 친환경 유기질 비료 구입비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "친환경유기질비료 지원(배방)",
+      "교육",
+      "충남",
+      "충청남도 아산시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "배방읍",
+      "채소재배",
+      "농가에",
+      "친환경",
+      "유기질"
+    ],
+    "summary": "배방읍 채소재배 농가에 친환경 유기질 비료 구입비 지원",
+    "audience": "○ 배방 자이아파트 ,북수초등학교, 호서대학교 반경500m 농지(갈매리, 북수리 등)에 330㎡ 이상 채소재배 농가에 친환경 유기질비료(유박비료) 구입비 50% 지원",
+    "benefits": [
+      "배방읍 채소재배 농가에 친환경 유기질 비료 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 배방읍 행정복지센터 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000163",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000163",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 배방 자이아파트 ,북수초등학교, 호서대학교 반경500m 농지(갈매리, 북수리 등)에 330㎡ 이상 채소재배 농가에 친환경 유기질비료(유박비료) 구입비 50% 지원",
+      "benefit": "배방읍 채소재배 농가에 친환경 유기질 비료 구입비 지원",
+      "application": "○ 배방읍 행정복지센터 방문 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-대안교육기관-등-학생-교복-지원",
+    "title": "대안교육기관 등 학생 교복 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "대안교육기관 등의 학생에게 교복비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "대안교육기관 등 학생 교복 지원",
+      "교육",
+      "경기",
+      "경기도 양주시",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "대안교육기관",
+      "등의",
+      "학생에게",
+      "교복비"
+    ],
+    "summary": "대안교육기관 등의 학생에게 교복비 지원",
+    "audience": "○ 교복비 지원 1인당 최대 40만원",
+    "benefits": [
+      "대안교육기관 등의 학생에게 교복비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - 서류구비하여 경기민원24(https://gg24.gg.go.kr/main/main.do) 온라인 신청\n\n○ 방문 신청\n - 행정복지센터 : 주소지 관할 읍·면·동 행정복지센터 방문\n\n온라인: https://gg24.gg.go.kr/main/main.do",
+    "officialUrl": "https://gg24.gg.go.kr/main/main.do",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000102",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 교복비 지원 1인당 최대 40만원",
+      "benefit": "대안교육기관 등의 학생에게 교복비 지원",
+      "application": "○ 온라인 신청\n - 서류구비하여 경기민원24(https://gg24.gg.go.kr/main/main.do) 온라인 신청\n\n○ 방문 신청\n - 행정복지센터 : 주소지 관할 읍·면·동 행정복지센터 방문\n\n온라인: https://gg24.gg.go.kr/main/main.do",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-입양아동-축하금-지원",
+    "title": "입양아동 축하금 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "입양가정에 입양축하금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "입양아동 축하금 지원",
+      "복지",
+      "경기",
+      "경기도 양주시",
+      "상시",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "입양가정에",
+      "입양축하금",
+      "지원"
+    ],
+    "summary": "경기도 양주시의 입양아동 축하금 지원사업입니다. 입양 확정일 등 세부 요건은 공식 공고에서 확인하세요.",
+    "audience": "입양아동 1명당 200만원 1회 지급\n(입양특례법 상 허가를 받은 입양기관에 의해 아동을 국내 입양한 가정 중에서, 가정법원 입양확정일이 2022년 1월 1일 이후인 가정 대상)",
+    "benefits": [
+      "입양가정에 입양축하금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000105",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000105",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "입양아동 1명당 200만원 1회 지급\n(입양특례법 상 허가를 받은 입양기관에 의해 아동을 국내 입양한 가정 중에서, 가정법원 입양확정일이 2022년 1월 1일 이후인 가정 대상)",
+      "benefit": "입양가정에 입양축하금 지원",
+      "application": "방문 신청",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-양주시-출산축하금-지원",
+    "title": "양주시 출산축하금 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "출생한 아이의 출산축하금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "양주시 출산축하금 지원",
+      "복지",
+      "경기",
+      "경기도 양주시",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "출생한",
+      "아이의",
+      "출산축하금",
+      "지원"
+    ],
+    "summary": "경기도 양주시의 출산축하금 지원사업입니다. 지급 대상과 신청 방법은 공식 공고에서 확인하세요.",
+    "audience": "○ 출산축하금 지원",
+    "benefits": [
+      "출생한 아이의 출산축하금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 행정복지센터 : 주소지 관할 읍·면·동 행정복지센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000122",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000122",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 출산축하금 지원",
+      "benefit": "출생한 아이의 출산축하금 지원",
+      "application": "○ 방문 신청\n - 행정복지센터 : 주소지 관할 읍·면·동 행정복지센터 방문",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-유축기-대여-지원",
+    "title": "유축기 대여 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "출산부에게 유축기 대여",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "유축기 대여 지원",
+      "복지",
+      "경기",
+      "경기도 양주시",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "출산부에게",
+      "유축기",
+      "대여"
+    ],
+    "summary": "경기도 양주시의 출산부 유축기 대여 지원입니다. 대여 기간과 신청 방법은 공식 안내에서 확인하세요.",
+    "audience": "○ 관내 출산부에게 유축기 대여(2개월,다태아일 경우 3개월)",
+    "benefits": [
+      "출산부에게 유축기 대여"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 관할 보건소 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000123",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000123",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 관내 출산부에게 유축기 대여(2개월,다태아일 경우 3개월)",
+      "benefit": "출산부에게 유축기 대여",
+      "application": "○ 방문 신청\n - 보건소 : 관할 보건소 방문",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-축산-환경개선-지원-미생물제-지원",
+    "title": "축산 환경개선 지원(미생물제 지원)",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "축산농가에 악취저감용 미생물제 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "축산 환경개선 지원(미생물제 지원)",
+      "농림어업",
+      "경기",
+      "경기도 양주시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "축산농가에",
+      "악취저감용",
+      "미생물제",
+      "지원"
+    ],
+    "summary": "축산농가에 악취저감용 미생물제 지원",
+    "audience": "악취저감용 미생물제제 공급 지원",
+    "benefits": [
+      "축산농가에 악취저감용 미생물제 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000125",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000125",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "악취저감용 미생물제제 공급 지원",
+      "benefit": "축산농가에 악취저감용 미생물제 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-양주시-생활안전보험",
+    "title": "양주시 생활안전보험",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거·복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "양주시 생활안전보험",
+      "주거",
+      "경기",
+      "경기도 양주시",
+      "상시",
+      "어르신",
+      "아동",
+      "복지",
+      "재난이나",
+      "그밖의",
+      "각종",
+      "사고로"
+    ],
+    "summary": "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상",
+    "audience": "- 상해사망(교통상해 제외) : 양주시민이 상해의 직접 결과로 사망한 경우(만 15세 미만자 제외) \n- 자전거사고 사망 : 양주시민이 자전거 사고에 의한 사고의 직접적인 결과로 사망한 경우(만 15세 미만자 제외)\n- 자연재해상해 진단위로금(일사병, 열사병 포함) : 양주시민이 자연재해의 피해로 상해 진단확인시 \n- 사회재난상해 진단위로금(감염병 제외) : 양주시민이 사회재난의 피해로 상해 진단확인시 \n- 스쿨존 교통상해 부상치료비 : 양주시민 만 12세 이하인 자가 보험기간 중에 어린이보호구역으로 지정한 지역에서 교통사고로 상해를 입은 경우 \n- 노인보호구역 교통상해 부상치료비 : 양주시민 만65세이상인 자가 보험기간 중에 노인보호구역으로 지정한 지역에서 교통사고로 상해를 입은경우\n- 상해 진단위로금(교통상해, 자연재해 및 사회재난 제외) : 양주시민이 의료법 제3조에서 정한 의료기관에서 4주 이상 최초 진단을 받은 경우 \n- 자전거 상해 진단 위로금 : 양주시민이 자전거사고로 상해를 입어 의료법 제3조에서 정한 의료기관에서 4주 이상 최초 진단을 받은 경우\n- 가스사고 사망 : 양주시민이 가스사고로 발생한 상해로 사망한 경우 (만 15세 미만자 제외)\n- 가스사고 후유장해 : 양주시민이 가스사고로 발생한 상해로 3~100% 상해후유장해가 발생한 경우 \n- 폭발화재붕괴산사태 사고재난비용 : 양주시민이 폭발, 화재, 붕괴, 산사태로 인하여 발생한 주택의 인테리어 복구 지원(도배 및 장판 교체 비용) 및 숙식 지원(재난복구 기간 동안 주택에 주거하지 못하여 발생하는 숙박시설 비용 및 식대)",
+    "benefits": [
+      "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "양주시 생활안전보험 콜센터(☎1522-3556) 유선 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000430",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000430",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "- 상해사망(교통상해 제외) : 양주시민이 상해의 직접 결과로 사망한 경우(만 15세 미만자 제외) \n- 자전거사고 사망 : 양주시민이 자전거 사고에 의한 사고의 직접적인 결과로 사망한 경우(만 15세 미만자 제외)\n- 자연재해상해 진단위로금(일사병, 열사병 포함) : 양주시민이 자연재해의 피해로 상해 진단확인시 \n- 사회재난상해 진단위로금(감염병 제외) : 양주시민이 사회재난의 피해로 상해 진단확인시 \n- 스쿨존 교통상해 부상치료비 : 양주시민 만 12세 이하인 자가 보험기간 중에 어린이보호구역으로 지정한 지역에서 교통사고로 상해를 입은 경우 \n- 노인보호구역 교통상해 부상치료비 : 양주시민 만65세이상인 자가 보험기간 중에 노인보호구역으로 지정한 지역에서 교통사고로 상해를 입은경우\n- 상해 진단위로금(교통상해, 자연재해 및 사회재난 제외) : 양주시민이 의료법 제3조에서 정한 의료기관에서 4주 이상 최초 진단을 받은 경우 \n- 자전거 상해 진단 위로금 : 양주시민이 자전거사고로 상해를 입어 의료법 제3조에서 정한 의료기관에서 4주 이상 최초 진단을 받은 경우\n- 가스사고 사망 : 양주시민이 가스사고로 발생한 상해로 사망한 경우 (만 15세 미만자 제외)\n- 가스사고 후유장해 : 양주시민이 가스사고로 발생한 상해로 3~100% 상해후유장해가 발생한 경우 \n- 폭발화재붕괴산사태 사고재난비용 : 양주시민이 폭발, 화재, 붕괴, 산사태로 인하여 발생한 주택의 인테리어 복구 지원(도배 및 장판 교체 비용) 및 숙식 지원(재난복구 기간 동안 주택에 주거하지 못하여 발생하는 숙박시설 비용 및 식대)",
+      "benefit": "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상",
+      "application": "양주시 생활안전보험 콜센터(☎1522-3556) 유선 신청",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-양주시-산후조리비-지원",
+    "title": "양주시 산후조리비 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양주시",
+    "region": "경기",
+    "amount": "산후조리원 및 산모신생아 건강관리서비스 제공기관 이용 후 최대 50만원 현금지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "양주시 산후조리비 지원",
+      "보건의료",
+      "경기",
+      "경기도 양주시",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "산후조리원",
+      "및",
+      "산모신생아",
+      "건강관리서비스"
+    ],
+    "summary": "산후조리원 및 산모신생아 건강관리서비스 제공기관 이용 후 최대 50만원 현금지원",
+    "audience": "〇 산후조리원 및 「산모·신생아 건강관리 지원사업」제공기관 이용 후 본인부담금의 90%, 최대 50만원 현금지원\n - 서비스 이용기간 종료 후 신청 가능\n\n〇 지급시기: 신청일의 익월 15일 이내",
+    "benefits": [
+      "산후조리원 및 산모신생아 건강관리서비스 제공기관 이용 후 최대 50만원 현금지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ (산모 본인 신청의 경우) 보건소 모자보건팀 방문 또는 온라인 신청(정부24(혜택알리미))\n○ (대리 신청시) 보건소 모자보건팀 방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000431",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/559000000431",
+    "contact": "경기도 양주시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "〇 산후조리원 및 「산모·신생아 건강관리 지원사업」제공기관 이용 후 본인부담금의 90%, 최대 50만원 현금지원\n - 서비스 이용기간 종료 후 신청 가능\n\n〇 지급시기: 신청일의 익월 15일 이내",
+      "benefit": "산후조리원 및 산모신생아 건강관리서비스 제공기관 이용 후 최대 50만원 현금지원",
+      "application": "○ (산모 본인 신청의 경우) 보건소 모자보건팀 방문 또는 온라인 신청(정부24(혜택알리미))\n○ (대리 신청시) 보건소 모자보건팀 방문신청",
+      "contact": "경기도 양주시"
+    }
+  },
+  {
+    "slug": "gov24-창원시-장애인활동지원",
+    "title": "창원시 장애인활동지원",
+    "category": "문화생활",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상남도 창원시",
+    "region": "경남",
+    "amount": "장애 정도가 심한 장애인에게 활동지원급여 추가 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "창원시 장애인활동지원",
+      "문화생활",
+      "경남",
+      "경상남도 창원시",
+      "확인필요",
+      "장애인",
+      "전체",
+      "복지",
+      "장애",
+      "정도가",
+      "심한",
+      "장애인에게"
+    ],
+    "summary": "장애 정도가 심한 장애인에게 활동지원급여 추가 지원",
+    "audience": "○ 장애인활동지원사업 수급대상자 중 활동지원 급여가 더 필요한 장애 정도가 심한 장애인에게 시비로 추가급여 지원",
+    "benefits": [
+      "장애 정도가 심한 장애인에게 활동지원급여 추가 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "2019. 7월부터 신규대상자 미지원",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/567000000103",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/567000000103",
+    "contact": "경상남도 창원시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 장애인활동지원사업 수급대상자 중 활동지원 급여가 더 필요한 장애 정도가 심한 장애인에게 시비로 추가급여 지원",
+      "benefit": "장애 정도가 심한 장애인에게 활동지원급여 추가 지원",
+      "application": "2019. 7월부터 신규대상자 미지원",
+      "contact": "경상남도 창원시"
+    }
+  },
+  {
+    "slug": "gov24-남구국민체육센터-강습-할인",
+    "title": "남구국민체육센터 강습 할인",
+    "category": "문화생활",
+    "source": "정부24 공공서비스 API",
+    "agency": "울산광역시남구도시관리공단",
+    "region": "울산",
+    "amount": "사회적 취약계층에게 강습료 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "남구국민체육센터 강습 할인",
+      "문화생활",
+      "울산",
+      "울산광역시남구도시관리공단",
+      "상시",
+      "부모/육아",
+      "장애인",
+      "아동",
+      "임신·출산·육아",
+      "복지",
+      "사회적",
+      "취약계층에게"
+    ],
+    "summary": "사회적 취약계층에게 강습료 감면(대상별 상이)",
+    "audience": "○ 기초생활수급자,장애인,국가유공자: 50%\n\n○ 5.18민주,특수임무 유공자: 50%\n\n○ 울산시자원봉사자: 20%\n\n○ 가임여성(13세~55세): 10%\n\n○ 36개월미만: 무료입장\n\n○ 북한이탈주민: 50%\n\n○ 다문화가족: 50%\n\n○ 한부모가족: 50%\n\n○ 남구우수자원봉사자: 30%",
+    "benefits": [
+      "사회적 취약계층에게 강습료 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 울산남구도시관리공단 체육시설예약서비스 https://crs.uncmc.or.kr 접속\n\n온라인: https://crs.uncmc.or.kr",
+    "officialUrl": "https://crs.uncmc.or.kr",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025400003",
+    "contact": "울산광역시남구도시관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 기초생활수급자,장애인,국가유공자: 50%\n\n○ 5.18민주,특수임무 유공자: 50%\n\n○ 울산시자원봉사자: 20%\n\n○ 가임여성(13세~55세): 10%\n\n○ 36개월미만: 무료입장\n\n○ 북한이탈주민: 50%\n\n○ 다문화가족: 50%\n\n○ 한부모가족: 50%\n\n○ 남구우수자원봉사자: 30%",
+      "benefit": "사회적 취약계층에게 강습료 감면(대상별 상이)",
+      "application": "○ 울산남구도시관리공단 체육시설예약서비스 https://crs.uncmc.or.kr 접속\n\n온라인: https://crs.uncmc.or.kr",
+      "contact": "울산광역시남구도시관리공단"
+    }
+  },
+  {
+    "slug": "gov24-청년-매입임대주택-지원",
+    "title": "청년 매입임대주택 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천도시공사",
+    "region": "인천",
+    "amount": "주거취약계층에게 기존주택을 매입하여 공급하는 공공임대주택",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년·주거",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "청년 매입임대주택 지원",
+      "청년",
+      "인천",
+      "인천도시공사",
+      "확인필요",
+      "주거",
+      "주거취약계층에게",
+      "기존주택을",
+      "매입하여",
+      "공급하는",
+      "공공임대주택"
+    ],
+    "summary": "주거취약계층에게 기존주택을 매입하여 공급하는 공공임대주택",
+    "audience": "○ 입주지원\n - 대상지역 : 인천광역시 관내\n - 대상주택 : 국민주택규모(50㎡) 이하 다세대, 연립주택 등\n - 임대기간 : 재계약 4회 가능 (최장 10년 거주)",
+    "benefits": [
+      "주거취약계층에게 기존주택을 매입하여 공급하는 공공임대주택"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026200001",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026200001",
+    "contact": "인천도시공사",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 입주지원\n - 대상지역 : 인천광역시 관내\n - 대상주택 : 국민주택규모(50㎡) 이하 다세대, 연립주택 등\n - 임대기간 : 재계약 4회 가능 (최장 10년 거주)",
+      "benefit": "주거취약계층에게 기존주택을 매입하여 공급하는 공공임대주택",
+      "application": "○ 방문 신청",
+      "contact": "인천도시공사"
+    }
+  },
+  {
+    "slug": "gov24-고령친화-맞춤형-집수리-지원",
+    "title": "고령친화 맞춤형 집수리 지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천도시공사",
+    "region": "인천",
+    "amount": "만65세 이상 고령자 대상으로 집수리 항목 도출 및 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "고령친화 맞춤형 집수리 지원",
+      "주거",
+      "인천",
+      "인천도시공사",
+      "확인필요",
+      "어르신",
+      "아동",
+      "만65세",
+      "이상",
+      "고령자",
+      "대상으로",
+      "집수리"
+    ],
+    "summary": "만65세 이상 고령자 대상으로 집수리 항목 도출 및 지원",
+    "audience": "○ 고령친화 집수리 지원\n - 주택 내 행위 수행의 어려움을 해소하여 자립성을 높이는 방향으로 고령친화 집수리 항목을 도출하여 집수리 공사 지원",
+    "benefits": [
+      "만65세 이상 고령자 대상으로 집수리 항목 도출 및 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 거주지 행정복지센터\n\n○ 전화 문의\n - 인천도시공사 광역주거복지센터(1811-7757)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026200004",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026200004",
+    "contact": "인천도시공사",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 고령친화 집수리 지원\n - 주택 내 행위 수행의 어려움을 해소하여 자립성을 높이는 방향으로 고령친화 집수리 항목을 도출하여 집수리 공사 지원",
+      "benefit": "만65세 이상 고령자 대상으로 집수리 항목 도출 및 지원",
+      "application": "○ 방문 신청\n - 거주지 행정복지센터\n\n○ 전화 문의\n - 인천도시공사 광역주거복지센터(1811-7757)",
+      "contact": "인천도시공사"
+    }
+  },
+  {
+    "slug": "gov24-긴급취약계층-임시주택-지원",
+    "title": "긴급취약계층 임시주택 지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천도시공사",
+    "region": "인천",
+    "amount": "재해로 인한 긴급취약계층 발생시 임시주택 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거·복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "긴급취약계층 임시주택 지원",
+      "주거",
+      "인천",
+      "인천도시공사",
+      "확인필요",
+      "일반",
+      "전체",
+      "복지",
+      "재해로",
+      "인한",
+      "긴급취약계층",
+      "발생시"
+    ],
+    "summary": "재해로 인한 긴급취약계층 발생시 임시주택 제공",
+    "audience": "○ 임시주택 임대보증금 및 임대료 무상 제공\n - 「긴급복지지원법 시행령」에 따라 재해주택 복구기간(2~3개월) 무상 제공",
+    "benefits": [
+      "재해로 인한 긴급취약계층 발생시 임시주택 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 시군구 : 구청 접수 -> iH에 요청\n\n○ 복지콜센터(129번) 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026200005",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026200005",
+    "contact": "인천도시공사",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 임시주택 임대보증금 및 임대료 무상 제공\n - 「긴급복지지원법 시행령」에 따라 재해주택 복구기간(2~3개월) 무상 제공",
+      "benefit": "재해로 인한 긴급취약계층 발생시 임시주택 제공",
+      "application": "○ 방문 신청\n - 시군구 : 구청 접수 -> iH에 요청\n\n○ 복지콜센터(129번) 신청",
+      "contact": "인천도시공사"
+    }
+  },
+  {
+    "slug": "gov24-기존주택-임대주택-지원-매입",
+    "title": "기존주택 임대주택 지원(매입)",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천도시공사",
+    "region": "인천",
+    "amount": "주거취약계층에게 기존주택을 매입하여 공급하는 공공임대주택",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "기존주택 임대주택 지원(매입)",
+      "주거",
+      "인천",
+      "인천도시공사",
+      "확인필요",
+      "일반",
+      "전체",
+      "주거취약계층에게",
+      "기존주택을",
+      "매입하여",
+      "공급하는",
+      "공공임대주택"
+    ],
+    "summary": "주거취약계층에게 기존주택을 매입하여 공급하는 공공임대주택",
+    "audience": "○ 입주지원\n - 대상지역 : 인천광역시 관내\n - 대상주택 : 국민주택규모(85㎡) 이하 다세대, 연립주택 등\n - 임대기간 : 최초 2년 거주, 재계약 14회 가능(최장 30년 거주)",
+    "benefits": [
+      "주거취약계층에게 기존주택을 매입하여 공급하는 공공임대주택"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 직접 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026200006",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026200006",
+    "contact": "인천도시공사",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 입주지원\n - 대상지역 : 인천광역시 관내\n - 대상주택 : 국민주택규모(85㎡) 이하 다세대, 연립주택 등\n - 임대기간 : 최초 2년 거주, 재계약 14회 가능(최장 30년 거주)",
+      "benefit": "주거취약계층에게 기존주택을 매입하여 공급하는 공공임대주택",
+      "application": "○ 방문 신청\n - 주민센터 : 직접 방문",
+      "contact": "인천도시공사"
+    }
+  },
+  {
+    "slug": "gov24-기존주택-임대주택-지원-전세",
+    "title": "기존주택 임대주택 지원(전세)",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천도시공사",
+    "region": "인천",
+    "amount": "저소득층에게 기존주택을 임대하여 전세지원금을 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거·복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "기존주택 임대주택 지원(전세)",
+      "주거",
+      "인천",
+      "인천도시공사",
+      "모집중",
+      "어르신",
+      "장애인",
+      "복지",
+      "저소득층에게",
+      "기존주택을",
+      "임대하여",
+      "전세지원금을"
+    ],
+    "summary": "저소득층에게 기존주택을 임대하여 전세지원금을 지원",
+    "audience": "○ 주택도시기금을 통해 전세지원금 지원\n - 대상지역 : 인천광역시 관내(8개 구, 2개 군)\n - 대상주택 : 국민주택규모(전용면적 85㎡ 이하)\n - 지원한도 : 최대 1.3억 원(호당)",
+    "benefits": [
+      "저소득층에게 기존주택을 임대하여 전세지원금을 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 직접 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026200007",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026200007",
+    "contact": "인천도시공사",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 주택도시기금을 통해 전세지원금 지원\n - 대상지역 : 인천광역시 관내(8개 구, 2개 군)\n - 대상주택 : 국민주택규모(전용면적 85㎡ 이하)\n - 지원한도 : 최대 1.3억 원(호당)",
+      "benefit": "저소득층에게 기존주택을 임대하여 전세지원금을 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 직접 방문",
+      "contact": "인천도시공사"
+    }
+  },
+  {
+    "slug": "gov24-신혼신생아-매입임대주택-지원",
+    "title": "신혼ㆍ신생아 매입임대주택 지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천도시공사",
+    "region": "인천",
+    "amount": "주거취약계층에게 기존주택을 매입하여 공급하는 공공임대주택",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거",
+    "targetGroup": "신혼부부",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "신혼ㆍ신생아 매입임대주택 지원",
+      "주거",
+      "인천",
+      "인천도시공사",
+      "확인필요",
+      "신혼부부",
+      "전체",
+      "주거취약계층에게",
+      "기존주택을",
+      "매입하여",
+      "공급하는",
+      "공공임대주택"
+    ],
+    "summary": "주거취약계층에게 기존주택을 매입하여 공급하는 공공임대주택",
+    "audience": "○ 입주지원\n - 대상지역 : 인천광역시 관내\n - 대상주택 : 국민주택규모(85㎡) 이하 다세대, 연립주택 등\n - 임대기간 : 재계약 4회 가능 (최장 10년 거주), 자녀 있는 경우 2회 연장 가능(최장 14년 거주)",
+    "benefits": [
+      "주거취약계층에게 기존주택을 매입하여 공급하는 공공임대주택"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026200008",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026200008",
+    "contact": "인천도시공사",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 입주지원\n - 대상지역 : 인천광역시 관내\n - 대상주택 : 국민주택규모(85㎡) 이하 다세대, 연립주택 등\n - 임대기간 : 재계약 4회 가능 (최장 10년 거주), 자녀 있는 경우 2회 연장 가능(최장 14년 거주)",
+      "benefit": "주거취약계층에게 기존주택을 매입하여 공급하는 공공임대주택",
+      "application": "○ 방문 신청",
+      "contact": "인천도시공사"
+    }
+  },
+  {
+    "slug": "gov24-취약계층-및-셋째아-이상-산후조리비용-지원",
+    "title": "취약계층 및 셋째아 이상 산후조리비용 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상남도 창원시",
+    "region": "경남",
+    "amount": "취약계층 및 셋째아 이상 출산가정에 산후조리비용 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "취약계층 및 셋째아 이상 산후조리비용 지원",
+      "복지",
+      "경남",
+      "경상남도 창원시",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "취약계층",
+      "및",
+      "셋째아",
+      "이상"
+    ],
+    "summary": "취약계층 및 셋째아 이상 출산가정에 산후조리비용 지원",
+    "audience": "○ 취약계층(기초생활수급자, 차상위계층) 및 셋째아이상 출산 가정에 창원사랑모바일상품권 50만원 지원(다태아의 경우 출생아 수에 따라 50만원 배수로 지급)",
+    "benefits": [
+      "취약계층 및 셋째아 이상 출산가정에 산후조리비용 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 관할 보건소 방문\n - 출생일로부터 4개월 이내 관할 보건소 신청 \n - 구비서류:\n (취약계층) - 기초생활수급증명서 및 차상위증명서, 주민등록등본\n (셋째아이상) - 주민등록등본",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/567000000102",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/567000000102",
+    "contact": "경상남도 창원시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 취약계층(기초생활수급자, 차상위계층) 및 셋째아이상 출산 가정에 창원사랑모바일상품권 50만원 지원(다태아의 경우 출생아 수에 따라 50만원 배수로 지급)",
+      "benefit": "취약계층 및 셋째아 이상 출산가정에 산후조리비용 지원",
+      "application": "○ 방문 신청\n - 보건소 : 관할 보건소 방문\n - 출생일로부터 4개월 이내 관할 보건소 신청 \n - 구비서류:\n (취약계층) - 기초생활수급증명서 및 차상위증명서, 주민등록등본\n (셋째아이상) - 주민등록등본",
+      "contact": "경상남도 창원시"
+    }
+  },
+  {
+    "slug": "gov24-형편이-어려운-청년-취업생활비-지원",
+    "title": "형편이 어려운 청년 취업생활비 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "구직활동지원금 최대 30만 원 지급(최대 6회 신청 가능)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년·취업·사업",
+    "targetGroup": "청년, 구직자, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "형편이 어려운 청년 취업생활비 지원",
+      "청년",
+      "충남",
+      "충청남도 보령시",
+      "마감",
+      "구직자",
+      "소상공인",
+      "아동",
+      "취업",
+      "사업",
+      "구직활동지원금",
+      "최대"
+    ],
+    "summary": "구직활동지원금 최대 30만 원 지급(최대 6회 신청 가능)",
+    "audience": "❍ 모집기간: 매월 1일 ~ 7일 18시까지 ※ 연중 상시 접수(예산 소진 시 종료)\n\n❍ 지원대상: 미취업 청년으로 아래 요건을 모두 만족하는 자\n - 신청일 기준 만 18세 이상 ~ 45세 이하\n - 3개월 이상 보령시에 거주 중인 자\n - 신청일 기준 미취·창업자(고용보험 미가입자, 사업자 미등록자)\n ※ 단, 고용보험 가입자 중 근로시간이 주 30시간 미만인 경우 미취업으로 간주\n - 최종학력 졸업·중퇴·수료자\n ※ 2026년 졸업예정자는 졸업예정증명서 제출 시 신청 가능\n - 소득기준\n · 18~34세: 가구소득인정액 기준중위소득 120%~150% 이하\n · 35~45세: 가구소득인정액 기준중위소득 60%~150% 이하\n - 지원제외 대상에 해당되지 않는 자\n\n❍ 지원내용: 구직활동지원금 최대 30만 원 지급(최대 6회 신청 가능)\n - 신청 시 제출한 구직활동 보고서(구직활동을 위한 학습비, 교재구입비, 시험응시료, 증명사진 촬영비 등 내역 증빙)를 검토 후, 적정하게 사용된 금액에 대하여 신청자 개인 계좌로 말일 지급",
+    "benefits": [
+      "구직활동지원금 최대 30만 원 지급(최대 6회 신청 가능)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "보령시청 신산업전략과 방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000244",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000244",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "❍ 모집기간: 매월 1일 ~ 7일 18시까지 ※ 연중 상시 접수(예산 소진 시 종료)\n\n❍ 지원대상: 미취업 청년으로 아래 요건을 모두 만족하는 자\n - 신청일 기준 만 18세 이상 ~ 45세 이하\n - 3개월 이상 보령시에 거주 중인 자\n - 신청일 기준 미취·창업자(고용보험 미가입자, 사업자 미등록자)\n ※ 단, 고용보험 가입자 중 근로시간이 주 30시간 미만인 경우 미취업으로 간주\n - 최종학력 졸업·중퇴·수료자\n ※ 2026년 졸업예정자는 졸업예정증명서 제출 시 신청 가능\n - 소득기준\n · 18~34세: 가구소득인정액 기준중위소득 120%~150% 이하\n · 35~45세: 가구소득인정액 기준중위소득 60%~150% 이하\n - 지원제외 대상에 해당되지 않는 자\n\n❍ 지원내용: 구직활동지원금 최대 30만 원 지급(최대 6회 신청 가능)\n - 신청 시 제출한 구직활동 보고서(구직활동을 위한 학습비, 교재구입비, 시험응시료, 증명사진 촬영비 등 내역 증빙)를 검토 후, 적정하게 사용된 금액에 대하여 신청자 개인 계좌로 말일 지급",
+      "benefit": "구직활동지원금 최대 30만 원 지급(최대 6회 신청 가능)",
+      "application": "보령시청 신산업전략과 방문신청",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-아산시-장애인고령자-등-주거약자-주택개량지원",
+    "title": "아산시 장애인·고령자 등 주거약자 주택개량지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "장애인, 고령자 등 주거약자 주택개량 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거·복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "아산시 장애인·고령자 등 주거약자 주택개량지원",
+      "주거",
+      "충남",
+      "충청남도 아산시",
+      "확인필요",
+      "어르신",
+      "장애인",
+      "아동",
+      "복지",
+      "장애인,",
+      "고령자",
+      "등"
+    ],
+    "summary": "장애인, 고령자 등 주거약자 주택개량 지원",
+    "audience": "○ 저소득층 주거약자 자가가구에 대하여 주택개량을 지원\n (소득기준) 기준중위소득 60%이하\n(대상) 아산시 소재하는 주택에 3년이상 거주하는 주택소유자",
+    "benefits": [
+      "장애인, 고령자 등 주거약자 주택개량 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 개인 신청절차 없음 \n - 읍면동장 추천",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000130",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000130",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 저소득층 주거약자 자가가구에 대하여 주택개량을 지원\n (소득기준) 기준중위소득 60%이하\n(대상) 아산시 소재하는 주택에 3년이상 거주하는 주택소유자",
+      "benefit": "장애인, 고령자 등 주거약자 주택개량 지원",
+      "application": "○ 개인 신청절차 없음 \n - 읍면동장 추천",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-임산부-진료비-플러스",
+    "title": "임산부 진료비 플러스",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상남도 창원시",
+    "region": "경남",
+    "amount": "임산부에게 국민행복카드 지원금 초과분 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "임산부 진료비 플러스",
+      "보건의료",
+      "경남",
+      "경상남도 창원시",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "임산부에게",
+      "국민행복카드",
+      "지원금",
+      "초과분"
+    ],
+    "summary": "임산부에게 국민행복카드 지원금 초과분 지급",
+    "audience": "○ 대상 : 신청일기준으로 창원시에 1년이상 주소를 두고 있는 임산부\n\n○ 산부인과 진료비 영수증 합산 금액 중 국민행복카드 지원금 초과분에 대해 최대 20만원 지급\n - 지원제외 : 제증명료, 식대비, 한의원, 약국, 산후조리원, 고위험 임산부 진료비 등",
+    "benefits": [
+      "임산부에게 국민행복카드 지원금 초과분 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 관할 보건소 방문\n - 출생일로부터 6개월 이내 관할 보건소 신청\n - 구비서류: 신분증, 진료비영수증, 산모통장사본, 주민등록초본, 산모수첩등",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/567000000104",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/567000000104",
+    "contact": "경상남도 창원시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 대상 : 신청일기준으로 창원시에 1년이상 주소를 두고 있는 임산부\n\n○ 산부인과 진료비 영수증 합산 금액 중 국민행복카드 지원금 초과분에 대해 최대 20만원 지급\n - 지원제외 : 제증명료, 식대비, 한의원, 약국, 산후조리원, 고위험 임산부 진료비 등",
+      "benefit": "임산부에게 국민행복카드 지원금 초과분 지급",
+      "application": "○ 방문 신청\n - 보건소 : 관할 보건소 방문\n - 출생일로부터 6개월 이내 관할 보건소 신청\n - 구비서류: 신분증, 진료비영수증, 산모통장사본, 주민등록초본, 산모수첩등",
+      "contact": "경상남도 창원시"
+    }
+  },
+  {
+    "slug": "gov24-노동자종합복지회관-사용료-감면",
+    "title": "노동자종합복지회관 사용료 감면",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "울산시설공단",
+    "region": "울산",
+    "amount": "사회적 취약계층에게 문화체육시설 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "노동자종합복지회관 사용료 감면",
+      "청년",
+      "울산",
+      "울산시설공단",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "청소년",
+      "복지",
+      "사회적",
+      "취약계층에게"
+    ],
+    "summary": "사회적 취약계층에게 문화체육시설 이용요금 감면(대상별 상이)",
+    "audience": "○ 스포츠시설 이용료 감면\n - 수영장이용 가임여성(만13세~만55세이하) 10% 신분증 지참\n - 다자녀 가정 10% 신분증·등본 등 지참\n - 노인(만65세이상), 청소년, 군인 30%, 어린이일일입장(만12세이하) 50% 신분증·등본 지참\n - 국가유공자, 장애인, 독립독립유공자, 5·18민주유공자와 유족, 의사자유족, 의상자와 그가족 50% 증명서 제출\n - 다자녀가정 수영장, 헬스, 그룹운동(GX) 10% 증명서 제출\n ㆍ 감면혜택시 반드시 증빙서류 제출,감면사항이 중복될 경우 사용자에게 유리한 감면율 1개만 적용\n\n○ 문화시설 이용료 감면\n - 국가유공자, 장애인, 독립유공자, 5·18민주유공자와유족, 의사자유족, 의상자와 그가족 50% 증명서 제출\n - 다자녀 가정 10% 신분증·등본 등 지",
+    "benefits": [
+      "사회적 취약계층에게 문화체육시설 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 기타\n - 행정감면서비스 이용",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025000006",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025000006",
+    "contact": "울산시설공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 스포츠시설 이용료 감면\n - 수영장이용 가임여성(만13세~만55세이하) 10% 신분증 지참\n - 다자녀 가정 10% 신분증·등본 등 지참\n - 노인(만65세이상), 청소년, 군인 30%, 어린이일일입장(만12세이하) 50% 신분증·등본 지참\n - 국가유공자, 장애인, 독립독립유공자, 5·18민주유공자와 유족, 의사자유족, 의상자와 그가족 50% 증명서 제출\n - 다자녀가정 수영장, 헬스, 그룹운동(GX) 10% 증명서 제출\n ㆍ 감면혜택시 반드시 증빙서류 제출,감면사항이 중복될 경우 사용자에게 유리한 감면율 1개만 적용\n\n○ 문화시설 이용료 감면\n - 국가유공자, 장애인, 독립유공자, 5·18민주유공자와유족, 의사자유족, 의상자와 그가족 50% 증명서 제출\n - 다자녀 가정 10% 신분증·등본 등 지",
+      "benefit": "사회적 취약계층에게 문화체육시설 이용요금 감면(대상별 상이)",
+      "application": "○ 기타\n - 행정감면서비스 이용",
+      "contact": "울산시설공단"
+    }
+  },
+  {
+    "slug": "gov24-문화시설-이용요금-감면-울산대공원",
+    "title": "문화시설 이용요금 감면(울산대공원)",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "울산시설공단",
+    "region": "울산",
+    "amount": "사회적 취약계층에게 울산대공원 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아, 어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "문화시설 이용요금 감면(울산대공원)",
+      "교육",
+      "울산",
+      "울산시설공단",
+      "상시",
+      "부모/육아",
+      "어르신",
+      "장애인",
+      "아동",
+      "임신·출산·육아",
+      "복지",
+      "사회적"
+    ],
+    "summary": "사회적 취약계층에게 울산대공원 이용요금 감면(대상별 상이)",
+    "audience": "○ 공원시설의 입장료 면제\n - 국빈 외교사절단 또는 그 수행자\n - 4세 미만 또는 65세 이상인 사람\n - 공익 또는 학술 목적으로 조사ㆍ연구를 위하여 출입하는 사람\n - 공무수행을 위하여 출입하는 자\n - 국가 또는 지방자치단체가 주관하는 경축 및 기념행사를 위하여 출입하는 사람\n - 공원 내에서 자연보호활동 및 자원봉사활동을 위하여 출입하는 자\n - 「장애인복지법 시행규칙」 제2조에 따른 장애의 정도가 심한 장애인과 동반보호자 1명 및 장애의 정도가 심하지 않은 장애인\n - 「국가유공자 등 예우 및 지원에 관한 법률 시행령」 제86조제1항 각 호의 어느 하나에 해당하는 사람\n - 「공직선거법」 및 「지방교육자치에 관한 법률」에 따라 투표에 참여한 사람으로서 선거관리위원회가 발급한 투표 확인증(해당 선거일 후 3개월까지만 유효한 것으로 한다)을 제출한 사람\n - 「독립유공자 예우에 관한 법률 시행령」 제15조에 해당하는 사람\n - 「참전유공자 예우 및 단체설립에 관한 법률」 제2조제2호에 따른 참전유공자\n - 「5ㆍ18민주유공자예우에 관한 법률 시행령」 제52조제1항 각 호의 어느 하나에 해당하는 사람\n - 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」 제8조의3 각 호의 어느 하나에 해당하는 사람\n - 「특수임무유공자 예우 및 단체설립에 관한 법률 시행령」 제58조에 해당하는 사람\n - 「의사상자 등 예우 및 지원에 관한 법률 시행령」 제17조의2제1항 각 호에 해당하는 사람\n - 「국군포로의 송환 및 대우 등에 관한 법률」 제15조의4제1항에 해당하는 사람\n - 그 밖에 관리청이 필요하다고 인정하는 사람\n - 수영장, 장미원․어린이동물원, 나비식물원, 파크골프장의 경우 시설관리자가 고객유치 또는 홍보를 위한 이벤트 행사, 견학 프로그램 등에 초청하는 사람\n\n○ 공원시설의 입장료 (50%)감면\n - 65세 이상인 사람, 장애인, 장애의 정도가 심한 장애인의 동반보호자 1명 및「국가유공자 등 예우 및 지원에 관한 법률 시행령」 제86조제1항 각 호의 어느 하나에 해당하는 사람이 수영장, 헬스장, 파크골프장 시설을 사용하거나 월 강습을 받는 경우\n\n○ 공원시설의 입장료 (20%)감면\n - 「울산광역시 병역명문가 예우에 관한 조례」에 따른 병역명문가 예우대상자\n - 「울산광역시 저출산대책 및 지원에 관한 조례」에 따른 다자녀등록가정\n\n○ 공원시설의 입장료 (10%)감면\n - 수영장 이용자 중 가임기(10세 이상 55세 이하) 여성은 사용료를 감면 할 수 있다.",
+    "benefits": [
+      "사회적 취약계층에게 울산대공원 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - 인터넷 (www.uic.or.kr)\n\n○ 방문 신청\n - 기타 : 울산대공원\n\n온라인: http://www.uic.or.kr",
+    "officialUrl": "http://www.uic.or.kr",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025000010",
+    "contact": "울산시설공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 공원시설의 입장료 면제\n - 국빈 외교사절단 또는 그 수행자\n - 4세 미만 또는 65세 이상인 사람\n - 공익 또는 학술 목적으로 조사ㆍ연구를 위하여 출입하는 사람\n - 공무수행을 위하여 출입하는 자\n - 국가 또는 지방자치단체가 주관하는 경축 및 기념행사를 위하여 출입하는 사람\n - 공원 내에서 자연보호활동 및 자원봉사활동을 위하여 출입하는 자\n - 「장애인복지법 시행규칙」 제2조에 따른 장애의 정도가 심한 장애인과 동반보호자 1명 및 장애의 정도가 심하지 않은 장애인\n - 「국가유공자 등 예우 및 지원에 관한 법률 시행령」 제86조제1항 각 호의 어느 하나에 해당하는 사람\n - 「공직선거법」 및 「지방교육자치에 관한 법률」에 따라 투표에 참여한 사람으로서 선거관리위원회가 발급한 투표 확인증(해당 선거일 후 3개월까지만 유효한 것으로 한다)을 제출한 사람\n - 「독립유공자 예우에 관한 법률 시행령」 제15조에 해당하는 사람\n - 「참전유공자 예우 및 단체설립에 관한 법률」 제2조제2호에 따른 참전유공자\n - 「5ㆍ18민주유공자예우에 관한 법률 시행령」 제52조제1항 각 호의 어느 하나에 해당하는 사람\n - 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」 제8조의3 각 호의 어느 하나에 해당하는 사람\n - 「특수임무유공자 예우 및 단체설립에 관한 법률 시행령」 제58조에 해당하는 사람\n - 「의사상자 등 예우 및 지원에 관한 법률 시행령」 제17조의2제1항 각 호에 해당하는 사람\n - 「국군포로의 송환 및 대우 등에 관한 법률」 제15조의4제1항에 해당하는 사람\n - 그 밖에 관리청이 필요하다고 인정하는 사람\n - 수영장, 장미원․어린이동물원, 나비식물원, 파크골프장의 경우 시설관리자가 고객유치 또는 홍보를 위한 이벤트 행사, 견학 프로그램 등에 초청하는 사람\n\n○ 공원시설의 입장료 (50%)감면\n - 65세 이상인 사람, 장애인, 장애의 정도가 심한 장애인의 동반보호자 1명 및「국가유공자 등 예우 및 지원에 관한 법률 시행령」 제86조제1항 각 호의 어느 하나에 해당하는 사람이 수영장, 헬스장, 파크골프장 시설을 사용하거나 월 강습을 받는 경우\n\n○ 공원시설의 입장료 (20%)감면\n - 「울산광역시 병역명문가 예우에 관한 조례」에 따른 병역명문가 예우대상자\n - 「울산광역시 저출산대책 및 지원에 관한 조례」에 따른 다자녀등록가정\n\n○ 공원시설의 입장료 (10%)감면\n - 수영장 이용자 중 가임기(10세 이상 55세 이하) 여성은 사용료를 감면 할 수 있다.",
+      "benefit": "사회적 취약계층에게 울산대공원 이용요금 감면(대상별 상이)",
+      "application": "○ 온라인 신청\n - 인터넷 (www.uic.or.kr)\n\n○ 방문 신청\n - 기타 : 울산대공원\n\n온라인: http://www.uic.or.kr",
+      "contact": "울산시설공단"
+    }
+  },
+  {
+    "slug": "gov24-공영주차장-이용요금-감면-울산대공원-문화공원-태화강역-제1주차장",
+    "title": "공영주차장 이용요금 감면(울산대공원, 문화공원, 태화강역 제1주차장)",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "울산시설공단",
+    "region": "울산",
+    "amount": "울산대공원, 문화공원, 태화강역 제1주차장 공영주차장 이용요금 감면",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "공영주차장 이용요금 감면(울산대공원, 문화공원, 태화강역 제1주차장)",
+      "교육",
+      "울산",
+      "울산시설공단",
+      "상시",
+      "부모/육아",
+      "장애인",
+      "전체",
+      "임신·출산·육아",
+      "복지",
+      "울산대공원,",
+      "문화공원,"
+    ],
+    "summary": "울산대공원, 문화공원, 태화강역 제1주차장 공영주차장 이용요금 감면",
+    "audience": "○ 주차요금 60% 감면 \n - 「울산광역시 저출산대책 및 지원에 관한 조례」 제2조제2호에 따른 다자녀가정의 자동차 중 다자녀 사랑카드에 등재되어 있는 자가 운전하는 비사업용 자동차 \n - 배기량 1,000cc 이하의 경형 자동차 \n\n○ 주차요금 1시간면제후 50% 감면 \n - 「장애인복지법」에 따른 장애인등록증을 소지한 자 \n - 「국가유공자 등 예우 및 지원에 관한 법률」에 따른 1급부터 7급까지의 상이자로서 국가보훈처장이 발행한 국가유공자증서를 소지한 자\n- 「5·18민주유공자예우에 관한 법률」에 따른 5·18민주화운동 부상자로서 국가보훈처장이 발행한 5·18 민주유공자증을 소지한 자 \n - 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」에 따른 등록한 고엽제후유증환자 및 고엽제후유의증환자로서 국가보훈처장이 발행한 차량표지를 부착한 자\n - 「환경친화적 자동차의 개발 및 보급 촉진에 관한 법률」 제2조에 따른 환경친화적 자동차 표지 또는 「대기환경보전법」 제58조에 따른 저공해 표지를 부착한 전기자동차가 충전을 위해 주차하는 경우\n\n○ 주차요금 50% 감면 \n - 승용차 요일제에 참여하는 차량 \n - 「환경친화적 자동차의 개발 및 보급 촉진에 관한 법률」 제2조에 따른 환경친화적 자동차 표지 또는 「대기환경보전법」 제58조에 따른 저공해 표지를 부착한 자동차\n - 「울산광역시 지정무형문화재 보유자 예우 및 지원에 관한조례」에 따른 시지정무형문화재 보유자의 비사업용 자동차 \n - 「모자보건법」 에 따른 임산부가 탑승한 경우로서 병원이나 보건소에서 발행한 산모수첩 등 임산부 증명자료를 제시하는 경우\n- 승용차 요일제에 참여하는 차량\n\n○ 면제\n- 모범납세자 표창을 받은 자로서 시장 또는 국세청장이 발급한 성실납세증 표지를 부착한 차량에 대하여 수상일부터 1년간\n\n○ 기타감면 \n - 선거관리위원회가 발급한 투표 확인증을 제출한 사람에게 주차요금 2,000원 경감 \n (해당 선거일로부터 3개월까지 유효) \n - 자동차부제운행을 준수하는 차량 및 함께타기 참여하는 차량의 주차요금 20% 경감 \n- 시장이 발급한 자원봉사증 소지자의 주차요금 20% 경감\n- 스마트주차결제시스템에 등록한 차량의 주차요금 10% 경감\n - 아쿠아시스 및 가족문화센터 월 정기 회원 (아쿠아시스 : 3시간 감면, 가족문화센터 : 2시간 감면)",
+    "benefits": [
+      "울산대공원, 문화공원, 태화강역 제1주차장 공영주차장 이용요금 감면"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 기타 : 본인이 신분증 및 증빙서류 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025000012",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025000012",
+    "contact": "울산시설공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 주차요금 60% 감면 \n - 「울산광역시 저출산대책 및 지원에 관한 조례」 제2조제2호에 따른 다자녀가정의 자동차 중 다자녀 사랑카드에 등재되어 있는 자가 운전하는 비사업용 자동차 \n - 배기량 1,000cc 이하의 경형 자동차 \n\n○ 주차요금 1시간면제후 50% 감면 \n - 「장애인복지법」에 따른 장애인등록증을 소지한 자 \n - 「국가유공자 등 예우 및 지원에 관한 법률」에 따른 1급부터 7급까지의 상이자로서 국가보훈처장이 발행한 국가유공자증서를 소지한 자\n- 「5·18민주유공자예우에 관한 법률」에 따른 5·18민주화운동 부상자로서 국가보훈처장이 발행한 5·18 민주유공자증을 소지한 자 \n - 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」에 따른 등록한 고엽제후유증환자 및 고엽제후유의증환자로서 국가보훈처장이 발행한 차량표지를 부착한 자\n - 「환경친화적 자동차의 개발 및 보급 촉진에 관한 법률」 제2조에 따른 환경친화적 자동차 표지 또는 「대기환경보전법」 제58조에 따른 저공해 표지를 부착한 전기자동차가 충전을 위해 주차하는 경우\n\n○ 주차요금 50% 감면 \n - 승용차 요일제에 참여하는 차량 \n - 「환경친화적 자동차의 개발 및 보급 촉진에 관한 법률」 제2조에 따른 환경친화적 자동차 표지 또는 「대기환경보전법」 제58조에 따른 저공해 표지를 부착한 자동차\n - 「울산광역시 지정무형문화재 보유자 예우 및 지원에 관한조례」에 따른 시지정무형문화재 보유자의 비사업용 자동차 \n - 「모자보건법」 에 따른 임산부가 탑승한 경우로서 병원이나 보건소에서 발행한 산모수첩 등 임산부 증명자료를 제시하는 경우\n- 승용차 요일제에 참여하는 차량\n\n○ 면제\n- 모범납세자 표창을 받은 자로서 시장 또는 국세청장이 발급한 성실납세증 표지를 부착한 차량에 대하여 수상일부터 1년간\n\n○ 기타감면 \n - 선거관리위원회가 발급한 투표 확인증을 제출한 사람에게 주차요금 2,000원 경감 \n (해당 선거일로부터 3개월까지 유효) \n - 자동차부제운행을 준수하는 차량 및 함께타기 참여하는 차량의 주차요금 20% 경감 \n- 시장이 발급한 자원봉사증 소지자의 주차요금 20% 경감\n- 스마트주차결제시스템에 등록한 차량의 주차요금 10% 경감\n - 아쿠아시스 및 가족문화센터 월 정기 회원 (아쿠아시스 : 3시간 감면, 가족문화센터 : 2시간 감면)",
+      "benefit": "울산대공원, 문화공원, 태화강역 제1주차장 공영주차장 이용요금 감면",
+      "application": "○ 방문 신청 \n - 기타 : 본인이 신분증 및 증빙서류 제출",
+      "contact": "울산시설공단"
+    }
+  },
+  {
+    "slug": "gov24-문화시설-이용요금-감면-어린이과학관",
+    "title": "문화시설 이용요금 감면(어린이과학관)",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천시설공단",
+    "region": "인천",
+    "amount": "시민 및 취약계층에게 어린이과학관 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아, 어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "문화시설 이용요금 감면(어린이과학관)",
+      "교육",
+      "인천",
+      "인천시설공단",
+      "상시",
+      "부모/육아",
+      "어르신",
+      "장애인",
+      "아동",
+      "임신·출산·육아",
+      "복지",
+      "시민"
+    ],
+    "summary": "시민 및 취약계층에게 어린이과학관 이용요금 감면(대상별 상이)",
+    "audience": "○ 어린이과학관 이용료 감면(50%) - 인천광역시 시민 대상\n\n○ 어린이과학관 이용료 면제\n - 인천광역시 어린이과학관 설립과 운영에 관한 조례(인천광역시조례)로 정한 자",
+    "benefits": [
+      "시민 및 취약계층에게 어린이과학관 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - 인천시설공단(www.insiseol.or.kr) 통합예약 접속 후 진행",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025800002",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025800002",
+    "contact": "인천시설공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 어린이과학관 이용료 감면(50%) - 인천광역시 시민 대상\n\n○ 어린이과학관 이용료 면제\n - 인천광역시 어린이과학관 설립과 운영에 관한 조례(인천광역시조례)로 정한 자",
+      "benefit": "시민 및 취약계층에게 어린이과학관 이용요금 감면(대상별 상이)",
+      "application": "○ 온라인 신청\n - 인천시설공단(www.insiseol.or.kr) 통합예약 접속 후 진행",
+      "contact": "인천시설공단"
+    }
+  },
+  {
+    "slug": "gov24-체육시설-이용요금-감면-아시아드경기장-외",
+    "title": "체육시설 이용요금 감면(아시아드경기장 외)",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천시설공단",
+    "region": "경기",
+    "amount": "사회적 취약계층에게 아시아드경기장 등 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "체육시설 이용요금 감면(아시아드경기장 외)",
+      "청년",
+      "경기",
+      "인천시설공단",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "청소년",
+      "복지",
+      "사회적",
+      "취약계층에게"
+    ],
+    "summary": "사회적 취약계층에게 아시아드경기장 등 이용요금 감면(대상별 상이)",
+    "audience": "○ 인천광역시 체육시설 사용요금 감면\n - 시설명 : 아시아드경기장, 강화경기장, 삼산월드체육관, 청라 공촌유수지 체육시설\n\n○ 체육시설 이용료 감면(50%)\n - 「장애인복지법」에 의한 등록 장애인(장애의 정도가 심한 장애인 경우에는 보호자 1명 포함) \n - 「국가유공자 등 예우 및 지원에 관한 법률」에 의한 국가유공자와 그 유족 또는 가족 \n - 「독립유공자 예우에 관한 법률」에 의한 독립유공자와 그 유족 또는 가족 \n - 「5·18민주유공자예우에 관한 법률」에 따른 5·18민주유공자와그 유족 또는 가족 \n - 「특수임무유공자 예우 및 단체설립에 관한 법률」에 따른 특수임무유공자와 그 유족 또는 가족 \n - 「의사상자 등 예우 및 지원에 관한 법률」에 따른 의상자와 그 가족 또는 의사자 유족(의상자 1, 2급의 경우 동반 활동보조인 1명 포함) \n - 「국민기초생활 보장법」에 따른 수급자 및 차상위계층 \n - 「노인복지법」에 따른 65세 이상인 자 다만, 평일 유료 이용자가 없는 시간대에 한해 수영장을 제외한 시설을 이용할 경우 80퍼센트 범위에서 감면할 수 있다. \n - 「참전유공자 예우 및 단체설립에 관한 법률」에 따른 참전유공자 \n - 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」에 따라 등록된 자 \n - 「국군포로의 송환 및 대우 등에 관한 법률」에 따른 등록포로 및 대한민국으로 귀환한 억류지출신 포로가족 \n - 「학교 밖 청소년 지원에 관한 법률」제12조에 따른 학교 밖 청소년지원센터의 체육활동과 관련된 자립지원 활동\n - 인천 아이모아카드를 소지하거나 18세 이하의 자녀를 포함한 2자녀 이상 가정의 부모와 자녀\n\n○ 체육시설 이용료 감면(30%) \n - 「인천광역시 병역명문가 예우에 관한 조례」에 따른 병역명문가 예우대상자",
+    "benefits": [
+      "사회적 취약계층에게 아시아드경기장 등 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - 인천시설공단(www.insiseol.or.kr) 통합예약 접속 후 진행\n · 프로그램 신청 화면에서 '감면자격변경' 클릭\n · 담당자 유선 연락 : 해당하는 감면서비스 확인 및 적격여부 심사 후 감면 적용\n\n○ 방문 신청\n - 기타 : 증빙서류 지참 후 각 시설 방문 신청\n ※ 시설별 신청방법 상이(별도 확인 필요)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025800003",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025800003",
+    "contact": "인천시설공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 인천광역시 체육시설 사용요금 감면\n - 시설명 : 아시아드경기장, 강화경기장, 삼산월드체육관, 청라 공촌유수지 체육시설\n\n○ 체육시설 이용료 감면(50%)\n - 「장애인복지법」에 의한 등록 장애인(장애의 정도가 심한 장애인 경우에는 보호자 1명 포함) \n - 「국가유공자 등 예우 및 지원에 관한 법률」에 의한 국가유공자와 그 유족 또는 가족 \n - 「독립유공자 예우에 관한 법률」에 의한 독립유공자와 그 유족 또는 가족 \n - 「5·18민주유공자예우에 관한 법률」에 따른 5·18민주유공자와그 유족 또는 가족 \n - 「특수임무유공자 예우 및 단체설립에 관한 법률」에 따른 특수임무유공자와 그 유족 또는 가족 \n - 「의사상자 등 예우 및 지원에 관한 법률」에 따른 의상자와 그 가족 또는 의사자 유족(의상자 1, 2급의 경우 동반 활동보조인 1명 포함) \n - 「국민기초생활 보장법」에 따른 수급자 및 차상위계층 \n - 「노인복지법」에 따른 65세 이상인 자 다만, 평일 유료 이용자가 없는 시간대에 한해 수영장을 제외한 시설을 이용할 경우 80퍼센트 범위에서 감면할 수 있다. \n - 「참전유공자 예우 및 단체설립에 관한 법률」에 따른 참전유공자 \n - 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」에 따라 등록된 자 \n - 「국군포로의 송환 및 대우 등에 관한 법률」에 따른 등록포로 및 대한민국으로 귀환한 억류지출신 포로가족 \n - 「학교 밖 청소년 지원에 관한 법률」제12조에 따른 학교 밖 청소년지원센터의 체육활동과 관련된 자립지원 활동\n - 인천 아이모아카드를 소지하거나 18세 이하의 자녀를 포함한 2자녀 이상 가정의 부모와 자녀\n\n○ 체육시설 이용료 감면(30%) \n - 「인천광역시 병역명문가 예우에 관한 조례」에 따른 병역명문가 예우대상자",
+      "benefit": "사회적 취약계층에게 아시아드경기장 등 이용요금 감면(대상별 상이)",
+      "application": "○ 온라인 신청\n - 인천시설공단(www.insiseol.or.kr) 통합예약 접속 후 진행\n · 프로그램 신청 화면에서 '감면자격변경' 클릭\n · 담당자 유선 연락 : 해당하는 감면서비스 확인 및 적격여부 심사 후 감면 적용\n\n○ 방문 신청\n - 기타 : 증빙서류 지참 후 각 시설 방문 신청\n ※ 시설별 신청방법 상이(별도 확인 필요)",
+      "contact": "인천시설공단"
+    }
+  },
+  {
+    "slug": "gov24-장사시설-이용요금-감면",
+    "title": "장사시설 이용요금 감면",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천시설공단",
+    "region": "인천",
+    "amount": "사회적 취약계층에게 장사시설 이용요금 감면",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장사시설 이용요금 감면",
+      "보건의료",
+      "인천",
+      "인천시설공단",
+      "상시",
+      "일반",
+      "아동",
+      "복지",
+      "사회적",
+      "취약계층에게",
+      "장사시설",
+      "이용요금"
+    ],
+    "summary": "사회적 취약계층에게 장사시설 이용요금 감면",
+    "audience": "○ 화장시설 및 봉안시설 사용료 전액감면\n - 「장사 등에 관한 법률」 제12조에 의한 사망자\n - 관내주민 중 「사회복지사업법」에 따른 사회복지시설 입소자 중 무연고자(관내주민)\n - 그 밖에 재난 등으로 인해 특별한 사유가 있다고 시장이 인정한 자(관내주민)\n※ 사용기간 연장은 제외\n\n○ 화장시설 전액감면(관내 및 관외주민)\n - 「국민기초생활 보장법」제7조제1항제1호에 따른 생계급여 수급자 또는 같은 항 제3호에 따른 의료급여 수급자\n - 「국가보훈 기본법」제3조제1호에 해당하는 희생·공헌자\n - 「의사상자 등 예우 및 지원에 관한 법률」에 따른 의사자\n - 관내 의학·과학 대학에 연구용으로 기증된 시신\n - 인체조직 및 장기를 기증한 시신\n\n○ 화장시설 이용료 50% 감면\n - 관내주민 중 사망일 기준 만 75세 이상자\n\n○ 봉안시설 이용료 전액감면\n - 「국가보훈 기본법」 제3조제1호에 해당하는 희생·공헌자 중 관내주민 중 장사시설에 관한 조례 제6조의3에 따른 호국봉안담 사용 대상자\n\n○ 봉안시설 이용료 50% 감면\n - 관내주민 중 「국민기초생활 보장법」제7조제1항제1호에 따른 생계급여 수급자 또는 같은 항 제3호에 따른 의료급여 수급자\n - 「국가보훈 기본법」 제3조제1호에 해당하는 희생·공헌자(관내 및 관외주민)\n - 「의사상자 등 예우 및 지원에 관한 법률」에 따른 의사자(관내 및 관외주민)\n\n※ 사용료를 면제 또는 감면 받고자 하는 자가 사용허가를 신청하는 경우에는 사용료의 면제나 감면사유를 증명할 수 있는 서류 등을 붙이거나 제시하여야 한다.\n○ 화장시설 전액감면(관내 및 관외주민)\n - 「국민기초생활 보장법」제7조제1항제1호에 따른 생계급여 수급자 또는 같은 항 제3호에 따른 의료급여 수급자\n - 「국가보훈 기본법」제3조제1호에 해당하는 희생·공헌자\n - 「의사상자 등 예우 및 지원에 관한 법률」에 따른 의사자\n - 관내 의학·과학 대학에 연구용으로 기증된 시신\n - 인체조직 및 장기를 기증한 시신\n\n○ 화장시설 이용료 50% 감면\n - 관내주민 중 사망일 기준 만 90세 이상자\n\n○ 봉안시설 이용료 전액감면\n - 「국가보훈 기본법」 제3조제1호에 해당하는 희생·공헌자 중 관내주민 중 장사시설에 관한 조례 제6조의3에 따른 호국봉안담 사용 대상자\n\n○ 봉안시설 이용료 50% 감면\n - 관내주민 중 「국민기초생활 보장법」제7조제1항제1호에 따른 생계급여 수급자 또는 같은 항 제3호에 따른 의료급여 수급자\n - 「국가보훈 기본법」 제3조제1호에 해당하는 희생·공헌자(관내 및 관외주민)\n - 「의사상자 등 예우 및 지원에 관한 법률」에 따른 의사자(관내 및 관외주민)\n\n※ 사용료를 면제 또는 감면 받고자 하는 자가 사용허가를 신청하는 경우에는 사용료의 면제나 감면사유를 증명할 수 있는 서류 등을 붙이거나 제시하여야 한다.",
+    "benefits": [
+      "사회적 취약계층에게 장사시설 이용요금 감면"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 인천가족공원 통합접수실 직접 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025800004",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025800004",
+    "contact": "인천시설공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 화장시설 및 봉안시설 사용료 전액감면\n - 「장사 등에 관한 법률」 제12조에 의한 사망자\n - 관내주민 중 「사회복지사업법」에 따른 사회복지시설 입소자 중 무연고자(관내주민)\n - 그 밖에 재난 등으로 인해 특별한 사유가 있다고 시장이 인정한 자(관내주민)\n※ 사용기간 연장은 제외\n\n○ 화장시설 전액감면(관내 및 관외주민)\n - 「국민기초생활 보장법」제7조제1항제1호에 따른 생계급여 수급자 또는 같은 항 제3호에 따른 의료급여 수급자\n - 「국가보훈 기본법」제3조제1호에 해당하는 희생·공헌자\n - 「의사상자 등 예우 및 지원에 관한 법률」에 따른 의사자\n - 관내 의학·과학 대학에 연구용으로 기증된 시신\n - 인체조직 및 장기를 기증한 시신\n\n○ 화장시설 이용료 50% 감면\n - 관내주민 중 사망일 기준 만 75세 이상자\n\n○ 봉안시설 이용료 전액감면\n - 「국가보훈 기본법」 제3조제1호에 해당하는 희생·공헌자 중 관내주민 중 장사시설에 관한 조례 제6조의3에 따른 호국봉안담 사용 대상자\n\n○ 봉안시설 이용료 50% 감면\n - 관내주민 중 「국민기초생활 보장법」제7조제1항제1호에 따른 생계급여 수급자 또는 같은 항 제3호에 따른 의료급여 수급자\n - 「국가보훈 기본법」 제3조제1호에 해당하는 희생·공헌자(관내 및 관외주민)\n - 「의사상자 등 예우 및 지원에 관한 법률」에 따른 의사자(관내 및 관외주민)\n\n※ 사용료를 면제 또는 감면 받고자 하는 자가 사용허가를 신청하는 경우에는 사용료의 면제나 감면사유를 증명할 수 있는 서류 등을 붙이거나 제시하여야 한다.\n○ 화장시설 전액감면(관내 및 관외주민)\n - 「국민기초생활 보장법」제7조제1항제1호에 따른 생계급여 수급자 또는 같은 항 제3호에 따른 의료급여 수급자\n - 「국가보훈 기본법」제3조제1호에 해당하는 희생·공헌자\n - 「의사상자 등 예우 및 지원에 관한 법률」에 따른 의사자\n - 관내 의학·과학 대학에 연구용으로 기증된 시신\n - 인체조직 및 장기를 기증한 시신\n\n○ 화장시설 이용료 50% 감면\n - 관내주민 중 사망일 기준 만 90세 이상자\n\n○ 봉안시설 이용료 전액감면\n - 「국가보훈 기본법」 제3조제1호에 해당하는 희생·공헌자 중 관내주민 중 장사시설에 관한 조례 제6조의3에 따른 호국봉안담 사용 대상자\n\n○ 봉안시설 이용료 50% 감면\n - 관내주민 중 「국민기초생활 보장법」제7조제1항제1호에 따른 생계급여 수급자 또는 같은 항 제3호에 따른 의료급여 수급자\n - 「국가보훈 기본법」 제3조제1호에 해당하는 희생·공헌자(관내 및 관외주민)\n - 「의사상자 등 예우 및 지원에 관한 법률」에 따른 의사자(관내 및 관외주민)\n\n※ 사용료를 면제 또는 감면 받고자 하는 자가 사용허가를 신청하는 경우에는 사용료의 면제나 감면사유를 증명할 수 있는 서류 등을 붙이거나 제시하여야 한다.",
+      "benefit": "사회적 취약계층에게 장사시설 이용요금 감면",
+      "application": "○ 방문 신청\n - 기타 : 인천가족공원 통합접수실 직접 방문",
+      "contact": "인천시설공단"
+    }
+  },
+  {
+    "slug": "gov24-체육시설-이용요금-감면-하늘문화센터",
+    "title": "체육시설 이용요금 감면(하늘문화센터)",
+    "category": "문화생활",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천시설공단",
+    "region": "인천",
+    "amount": "사회적 취약계층에게 하늘문화센터 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아, 어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "체육시설 이용요금 감면(하늘문화센터)",
+      "문화생활",
+      "인천",
+      "인천시설공단",
+      "상시",
+      "부모/육아",
+      "어르신",
+      "장애인",
+      "아동",
+      "임신·출산·육아",
+      "복지",
+      "사회적"
+    ],
+    "summary": "사회적 취약계층에게 하늘문화센터 이용요금 감면(대상별 상이)",
+    "audience": "○ 인천광역시 체육시설 사용요금 감면\n - 시설명 : 하늘문화센터\n\n○ 이용사용료 50% 감면\n - 「국가유공자 등 예우 및 지원에 관한 법률 시행령」 제86조제1항 각 호의 어느 하나에 해당하는 사람 \n - 「독립유공자 예우에 관한 법률 시행령」 제15조에 해당하는 사람 \n - 「참전유공자 예우 및 단체 설립에 관한 법률」 제2조제2호에 해당하는 사람 \n - 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」 제8조의3 각 호의 어느 하나에 해당하는 사람 \n - 「5·18민주유공자예우 및 단체설립에 관한 법률 시행령」 제52조제1항 각 호의 어느 하나에 해당하는 사람 \n - 「특수임무유공자 예우 및 단체설립에 관한 법률 시행령」 제58조에 해당하는 사람 \n - 「의사상자 등 예우 및 지원에 관한 법률 시행령」 제17조의2제1항 각 호의 어느 하나에 해당하는 사람 \n - 「국군포로의 송환 및 대우 등에 관한 법률」 제2조제5호에 따른 등록포로 및 같은 조 제3호에 따른 억류지출신 포로가족 \n - 「장애인복지법」 제2조제2항에 해당하는 사람(장애 정도가 심한 경우는 보호자 1명 포함) \n - 「국민기초생활 보장법」 제2조제2호에 따른 수급자 \n - 「노인복지법」 제26조제1항에 따른 65세 이상인 사람 \n\n○ 이용사용료 30% 감면\n - 「인천광역시 병역명문가 예우에 관한 조례」 제2조제2호에 해당하는 사람 \n - 「인천광역시 저출산 대책 및 지원에 관한 조례」 제13조제2호에 해당하는 아이모아카드를 소지한 사람",
+    "benefits": [
+      "사회적 취약계층에게 하늘문화센터 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - 인천시설공단(www.insiseol.or.kr) 통합예약 접속 후 진행",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025800005",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025800005",
+    "contact": "인천시설공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 인천광역시 체육시설 사용요금 감면\n - 시설명 : 하늘문화센터\n\n○ 이용사용료 50% 감면\n - 「국가유공자 등 예우 및 지원에 관한 법률 시행령」 제86조제1항 각 호의 어느 하나에 해당하는 사람 \n - 「독립유공자 예우에 관한 법률 시행령」 제15조에 해당하는 사람 \n - 「참전유공자 예우 및 단체 설립에 관한 법률」 제2조제2호에 해당하는 사람 \n - 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」 제8조의3 각 호의 어느 하나에 해당하는 사람 \n - 「5·18민주유공자예우 및 단체설립에 관한 법률 시행령」 제52조제1항 각 호의 어느 하나에 해당하는 사람 \n - 「특수임무유공자 예우 및 단체설립에 관한 법률 시행령」 제58조에 해당하는 사람 \n - 「의사상자 등 예우 및 지원에 관한 법률 시행령」 제17조의2제1항 각 호의 어느 하나에 해당하는 사람 \n - 「국군포로의 송환 및 대우 등에 관한 법률」 제2조제5호에 따른 등록포로 및 같은 조 제3호에 따른 억류지출신 포로가족 \n - 「장애인복지법」 제2조제2항에 해당하는 사람(장애 정도가 심한 경우는 보호자 1명 포함) \n - 「국민기초생활 보장법」 제2조제2호에 따른 수급자 \n - 「노인복지법」 제26조제1항에 따른 65세 이상인 사람 \n\n○ 이용사용료 30% 감면\n - 「인천광역시 병역명문가 예우에 관한 조례」 제2조제2호에 해당하는 사람 \n - 「인천광역시 저출산 대책 및 지원에 관한 조례」 제13조제2호에 해당하는 아이모아카드를 소지한 사람",
+      "benefit": "사회적 취약계층에게 하늘문화센터 이용요금 감면(대상별 상이)",
+      "application": "○ 온라인 신청\n - 인천시설공단(www.insiseol.or.kr) 통합예약 접속 후 진행",
+      "contact": "인천시설공단"
+    }
+  },
+  {
+    "slug": "gov24-인천대공원-주차장-이용요금-감면",
+    "title": "인천대공원 주차장 이용요금 감면",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천시설공단",
+    "region": "인천",
+    "amount": "감면 대상자에게 인천대공원 주차장 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "인천대공원 주차장 이용요금 감면",
+      "보건의료",
+      "인천",
+      "인천시설공단",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "복지",
+      "감면",
+      "대상자에게",
+      "인천대공원"
+    ],
+    "summary": "감면 대상자에게 인천대공원 주차장 이용요금 감면(대상별 상이)",
+    "audience": "○ 주차장 요금 50% 감면\n - 승용차요일제 지정 차량\n - 저공해 및 친환경 자동차\n - 「아이모아카드」소유자 및 2자녀 이상 다자녀가정(증빙자료 필요)\n - 만65세 이상 인천거주자(증빙자료 필요)\n - 승용차 요일제 참여 차량(요일제 표기)\n\n○ 주차장 요금 60% 감면\n - 경차 및 이륜차\n\n○ 주차장 요금 80% 감면\n - 국가유공자 관련 법규에 의한 상이 1급~7급 유공자 등\n - 장애인 1~6급\n - 병역명문가(증빙자료 필요)\n\n○ 1시간 요금 무료\n - 전기차 충전차량(충전 증빙 필요)\n\n○ 주차장 요금 무료\n - 임산부 탑승차량(증빙필요)\n - 인천시 자원봉사자(자원봉사자증 필요)\n - 모범납세자(성실 납세증 스티커 필요)\n\n※ 요금을 감면 받고자 하는 경우에는 감면사유를 증명할 수 있는 서류 혹은 카드등을 요금 결제시 제시하여야 한다.",
+    "benefits": [
+      "감면 대상자에게 인천대공원 주차장 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 결제 시 감면사유를 증빙할 수 있는 서류 혹은 카드 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025800006",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025800006",
+    "contact": "인천시설공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 주차장 요금 50% 감면\n - 승용차요일제 지정 차량\n - 저공해 및 친환경 자동차\n - 「아이모아카드」소유자 및 2자녀 이상 다자녀가정(증빙자료 필요)\n - 만65세 이상 인천거주자(증빙자료 필요)\n - 승용차 요일제 참여 차량(요일제 표기)\n\n○ 주차장 요금 60% 감면\n - 경차 및 이륜차\n\n○ 주차장 요금 80% 감면\n - 국가유공자 관련 법규에 의한 상이 1급~7급 유공자 등\n - 장애인 1~6급\n - 병역명문가(증빙자료 필요)\n\n○ 1시간 요금 무료\n - 전기차 충전차량(충전 증빙 필요)\n\n○ 주차장 요금 무료\n - 임산부 탑승차량(증빙필요)\n - 인천시 자원봉사자(자원봉사자증 필요)\n - 모범납세자(성실 납세증 스티커 필요)\n\n※ 요금을 감면 받고자 하는 경우에는 감면사유를 증명할 수 있는 서류 혹은 카드등을 요금 결제시 제시하여야 한다.",
+      "benefit": "감면 대상자에게 인천대공원 주차장 이용요금 감면(대상별 상이)",
+      "application": "○ 방문 신청\n - 결제 시 감면사유를 증빙할 수 있는 서류 혹은 카드 제출",
+      "contact": "인천시설공단"
+    }
+  },
+  {
+    "slug": "gov24-체육시설-이용요금-감면-송도공원",
+    "title": "체육시설 이용요금 감면(송도공원)",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천시설공단",
+    "region": "인천",
+    "amount": "사회적 취약계층에게 송도공원 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "체육시설 이용요금 감면(송도공원)",
+      "청년",
+      "인천",
+      "인천시설공단",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "청소년",
+      "복지",
+      "사회적",
+      "취약계층에게"
+    ],
+    "summary": "사회적 취약계층에게 송도공원 이용요금 감면(대상별 상이)",
+    "audience": "○ 인천광역시 체육시설 사용요금 감면\n - 시설명 : 송도공원( 다목적구장, 실내농구장, 테니스장, 배드민턴장, 리틀야구장, 풋살장, 테니스장, 축구장, 야구장, 인천송도파크골프장)\n\n○ 체육시설 이용료 감면(50%)\n - 국가유공자\n - 「장애인복지법」에 의한 장애인복지카드를 소지한 사람\n - 만65세 이상 어르신\n - 만18세 미만 청소년\n - 그 밖에 위 각 호에 준하는 사유가 있는 자로서 시장이 필요하다고 인정하는 자\n\n※ 사용료를 면제 또는 감면 받고자 하는 자가 사용허가를 신청하는 경우에는 사용료의 면제나 감면사유를 증명할 수 있는 서류 등을 붙이거나 제시하여야 한다.",
+    "benefits": [
+      "사회적 취약계층에게 송도공원 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - 인천시설공단 : www.insiseol.or.kr\n - 체육시설 온라인 예약 후, 감면 내용 적용 후 결제(주민번호 및 복지번호 입력으로 자동 감면 가능)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025800007",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025800007",
+    "contact": "인천시설공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 인천광역시 체육시설 사용요금 감면\n - 시설명 : 송도공원( 다목적구장, 실내농구장, 테니스장, 배드민턴장, 리틀야구장, 풋살장, 테니스장, 축구장, 야구장, 인천송도파크골프장)\n\n○ 체육시설 이용료 감면(50%)\n - 국가유공자\n - 「장애인복지법」에 의한 장애인복지카드를 소지한 사람\n - 만65세 이상 어르신\n - 만18세 미만 청소년\n - 그 밖에 위 각 호에 준하는 사유가 있는 자로서 시장이 필요하다고 인정하는 자\n\n※ 사용료를 면제 또는 감면 받고자 하는 자가 사용허가를 신청하는 경우에는 사용료의 면제나 감면사유를 증명할 수 있는 서류 등을 붙이거나 제시하여야 한다.",
+      "benefit": "사회적 취약계층에게 송도공원 이용요금 감면(대상별 상이)",
+      "application": "○ 온라인 신청\n - 인천시설공단 : www.insiseol.or.kr\n - 체육시설 온라인 예약 후, 감면 내용 적용 후 결제(주민번호 및 복지번호 입력으로 자동 감면 가능)",
+      "contact": "인천시설공단"
+    }
+  },
+  {
+    "slug": "gov24-청소년-통합지원체계-청소년안전망",
+    "title": "청소년 통합지원체계(청소년안전망)",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천광역시서구시설관리공단",
+    "region": "인천",
+    "amount": "위기 청소년에 대한 상담, 보호, 교육, 자립 등 맞춤형 서비스 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "청소년 통합지원체계(청소년안전망)",
+      "청년",
+      "인천",
+      "인천광역시서구시설관리공단",
+      "상시",
+      "부모/육아",
+      "아동",
+      "청소년",
+      "임신·출산·육아",
+      "위기",
+      "청소년에",
+      "대한"
+    ],
+    "summary": "위기 청소년에 대한 상담, 보호, 교육, 자립 등 맞춤형 서비스 제공",
+    "audience": "위기 청소년에 대한 상담, 긴급 구조, 학업 지원, 자활 지원 등의 서비스 제공",
+    "benefits": [
+      "위기 청소년에 대한 상담, 보호, 교육, 자립 등 맞춤형 서비스 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - 사이버상담 : www.sg1388.or.kr\n\n○ 방문 신청 \n - 기타 : 인천서구 청소년상담복지센터 직접 방문\n\n○ 기타\n - 전화 : 032-584-1388",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00027100001",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00027100001",
+    "contact": "인천광역시서구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "위기 청소년에 대한 상담, 긴급 구조, 학업 지원, 자활 지원 등의 서비스 제공",
+      "benefit": "위기 청소년에 대한 상담, 보호, 교육, 자립 등 맞춤형 서비스 제공",
+      "application": "○ 온라인 신청\n - 사이버상담 : www.sg1388.or.kr\n\n○ 방문 신청 \n - 기타 : 인천서구 청소년상담복지센터 직접 방문\n\n○ 기타\n - 전화 : 032-584-1388",
+      "contact": "인천광역시서구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-청소년동반자-프로그램",
+    "title": "청소년동반자 프로그램",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천광역시서구시설관리공단",
+    "region": "인천",
+    "amount": "위기 청소년을 직접 찾아가는 심리적·정서적 지지 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "청소년동반자 프로그램",
+      "청년",
+      "인천",
+      "인천광역시서구시설관리공단",
+      "상시",
+      "부모/육아",
+      "아동",
+      "청소년",
+      "임신·출산·육아",
+      "위기",
+      "청소년을",
+      "직접"
+    ],
+    "summary": "위기 청소년을 직접 찾아가는 심리적·정서적 지지 제공",
+    "audience": "○ 찾아가는 전문가 상담 (청소년동반자) : 위기 청소년의 삶의 현장(학교, 가정 등)을 직접 찾아가는 심리적·정서적 지지 제공\n\n○ 지역사회 청소년 협력자원을 발굴, 연계 서비스 제공",
+    "benefits": [
+      "위기 청소년을 직접 찾아가는 심리적·정서적 지지 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - 사이버상담 : www.sg1388.or.kr\n\n○ 방문 신청 \n - 기타 : 인천서구 청소년상담복지센터 직접 방문\n\n○ 기타\n - 전화 : 032-584-1388",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00027100002",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00027100002",
+    "contact": "인천광역시서구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 찾아가는 전문가 상담 (청소년동반자) : 위기 청소년의 삶의 현장(학교, 가정 등)을 직접 찾아가는 심리적·정서적 지지 제공\n\n○ 지역사회 청소년 협력자원을 발굴, 연계 서비스 제공",
+      "benefit": "위기 청소년을 직접 찾아가는 심리적·정서적 지지 제공",
+      "application": "○ 온라인 신청\n - 사이버상담 : www.sg1388.or.kr\n\n○ 방문 신청 \n - 기타 : 인천서구 청소년상담복지센터 직접 방문\n\n○ 기타\n - 전화 : 032-584-1388",
+      "contact": "인천광역시서구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-노인여가복지서비스",
+    "title": "노인여가복지서비스",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천광역시서구시설관리공단",
+    "region": "인천",
+    "amount": "어르신에게 건강한 여가문화복지 프로그램 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "노인여가복지서비스",
+      "교육",
+      "인천",
+      "인천광역시서구시설관리공단",
+      "상시",
+      "어르신",
+      "아동",
+      "복지",
+      "어르신에게",
+      "건강한",
+      "여가문화복지",
+      "프로그램"
+    ],
+    "summary": "어르신에게 건강한 여가문화복지 프로그램 제공",
+    "audience": "○ 건강한 노후의 삶의 영위를 위한 노인 여가문화복지 프로그램 제공\n\n○ 상담서비스, 평생교육 프로그램, 건강증진서비스, 급식서비스 등",
+    "benefits": [
+      "어르신에게 건강한 여가문화복지 프로그램 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 서구노인복지관 직접 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00027100003",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00027100003",
+    "contact": "인천광역시서구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 건강한 노후의 삶의 영위를 위한 노인 여가문화복지 프로그램 제공\n\n○ 상담서비스, 평생교육 프로그램, 건강증진서비스, 급식서비스 등",
+      "benefit": "어르신에게 건강한 여가문화복지 프로그램 제공",
+      "application": "○ 방문 신청\n - 기타 : 서구노인복지관 직접 방문",
+      "contact": "인천광역시서구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-장애인-직업재활시설-지원",
+    "title": "장애인 직업재활시설 지원",
+    "category": "창업",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천광역시서구시설관리공단",
+    "region": "인천",
+    "amount": "장애인 직업재활시설 이용자에게 재활프로그램 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "취업·사업·복지",
+    "targetGroup": "구직자, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인 직업재활시설 지원",
+      "창업",
+      "인천",
+      "인천광역시서구시설관리공단",
+      "상시",
+      "구직자",
+      "장애인",
+      "아동",
+      "취업",
+      "사업",
+      "복지",
+      "직업재활시설"
+    ],
+    "summary": "장애인 직업재활시설 이용자에게 재활프로그램 지원",
+    "audience": "장애인 직업재활 프로그램 이용(종량제,마스크 생산, 직무훈련, 작업활동프로그램, 직업적응훈련 등 )",
+    "benefits": [
+      "장애인 직업재활시설 이용자에게 재활프로그램 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 서구 구립장애인직업재활시설 직접 방문\n - 입사 지원 후 직업 능력평가 실시\n - 장애인등록증 필요",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00027100004",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00027100004",
+    "contact": "인천광역시서구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인 직업재활 프로그램 이용(종량제,마스크 생산, 직무훈련, 작업활동프로그램, 직업적응훈련 등 )",
+      "benefit": "장애인 직업재활시설 이용자에게 재활프로그램 지원",
+      "application": "○ 방문 신청\n - 서구 구립장애인직업재활시설 직접 방문\n - 입사 지원 후 직업 능력평가 실시\n - 장애인등록증 필요",
+      "contact": "인천광역시서구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-독거노인-응급안전안심서비스",
+    "title": "독거노인 응급안전안심서비스",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천광역시서구시설관리공단",
+    "region": "인천",
+    "amount": "독거노인 가정에 위급사항 발생 시 119 신고 서비스",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "독거노인 응급안전안심서비스",
+      "복지",
+      "인천",
+      "인천광역시서구시설관리공단",
+      "상시",
+      "어르신",
+      "아동",
+      "독거노인",
+      "가정에",
+      "위급사항",
+      "발생",
+      "시"
+    ],
+    "summary": "독거노인 가정에 위급사항 발생 시 119 신고 서비스",
+    "audience": "○ 어르신의 안전확인\n\n○ 화재/가스누출 등 응급 상황 시 119 자동신고\n\n○ 기타 응급 상황 시 119호출 및 센터 호출\n\n○ 댁내 시스템 모니터링 조치",
+    "benefits": [
+      "독거노인 가정에 위급사항 발생 시 119 신고 서비스"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n\n○ 기타\n - 전화",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00027100005",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00027100005",
+    "contact": "인천광역시서구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 어르신의 안전확인\n\n○ 화재/가스누출 등 응급 상황 시 119 자동신고\n\n○ 기타 응급 상황 시 119호출 및 센터 호출\n\n○ 댁내 시스템 모니터링 조치",
+      "benefit": "독거노인 가정에 위급사항 발생 시 119 신고 서비스",
+      "application": "○ 방문 신청\n\n○ 기타\n - 전화",
+      "contact": "인천광역시서구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-상호대차-지원",
+    "title": "상호대차 지원",
+    "category": "문화생활",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천광역시서구시설관리공단",
+    "region": "인천",
+    "amount": "홈페이지 신청을 통해 도서를 받을 수 있는 서비스",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "상호대차 지원",
+      "문화생활",
+      "인천",
+      "인천광역시서구시설관리공단",
+      "상시",
+      "일반",
+      "전체",
+      "홈페이지",
+      "신청을",
+      "통해",
+      "도서를",
+      "받을"
+    ],
+    "summary": "홈페이지 신청을 통해 도서를 받을 수 있는 서비스",
+    "audience": "이용하고자 하는 도서관에 원하는 도서가 없을 경우 다른 도서관에 신청하여 원하는 도서관에서 빌려볼 수 있도록 차량으로 배달",
+    "benefits": [
+      "홈페이지 신청을 통해 도서를 받을 수 있는 서비스"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - http://www.issl.go.kr\n 1) 서구구립도서관 홈페이지 및 리브로피아 앱 로그인\n 2) 자료검색-통합검색을 선택 후 자료 검색\n 3) 자료상태가 ‘비치자료(대출가능)’인 경우 상호대차 신청버튼 활성화\n 4) 상호대차 신청버튼 클릭하여 ‘수령도서관’ 선택\n\n온라인: http://www.issl.go.kr",
+    "officialUrl": "http://www.issl.go.kr",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00027100006",
+    "contact": "인천광역시서구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "이용하고자 하는 도서관에 원하는 도서가 없을 경우 다른 도서관에 신청하여 원하는 도서관에서 빌려볼 수 있도록 차량으로 배달",
+      "benefit": "홈페이지 신청을 통해 도서를 받을 수 있는 서비스",
+      "application": "○ 온라인 신청\n - http://www.issl.go.kr\n 1) 서구구립도서관 홈페이지 및 리브로피아 앱 로그인\n 2) 자료검색-통합검색을 선택 후 자료 검색\n 3) 자료상태가 ‘비치자료(대출가능)’인 경우 상호대차 신청버튼 활성화\n 4) 상호대차 신청버튼 클릭하여 ‘수령도서관’ 선택\n\n온라인: http://www.issl.go.kr",
+      "contact": "인천광역시서구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-서구푸드뱅크",
+    "title": "서구푸드뱅크",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천광역시서구시설관리공단",
+    "region": "인천",
+    "amount": "여유 식품을 기부 받아 저소득층과 복지시설에 무상 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "서구푸드뱅크",
+      "복지",
+      "인천",
+      "인천광역시서구시설관리공단",
+      "상시",
+      "일반",
+      "전체",
+      "여유",
+      "식품을",
+      "기부",
+      "받아",
+      "저소득층과"
+    ],
+    "summary": "여유 식품을 기부 받아 저소득층과 복지시설에 무상 제공",
+    "audience": "식품의 생산, 유통, 판매, 소비단계에서 발생하는 여유식품을 제조업체나 개인 기탁자들로부터 제공받아 저소득층과 복지시설에 무성제공하는 식품지원복지서비스",
+    "benefits": [
+      "여유 식품을 기부 받아 저소득층과 복지시설에 무상 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n\n○ 기타\n - 전화",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00027100007",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00027100007",
+    "contact": "인천광역시서구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "식품의 생산, 유통, 판매, 소비단계에서 발생하는 여유식품을 제조업체나 개인 기탁자들로부터 제공받아 저소득층과 복지시설에 무성제공하는 식품지원복지서비스",
+      "benefit": "여유 식품을 기부 받아 저소득층과 복지시설에 무상 제공",
+      "application": "○ 방문 신청\n\n○ 기타\n - 전화",
+      "contact": "인천광역시서구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-경로당여가문화보급사업-지원",
+    "title": "경로당여가문화보급사업 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천광역시서구시설관리공단",
+    "region": "인천",
+    "amount": "경로당 이용 어르신들에게 다양한 프로그램 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "경로당여가문화보급사업 지원",
+      "교육",
+      "인천",
+      "인천광역시서구시설관리공단",
+      "상시",
+      "어르신",
+      "복지",
+      "경로당",
+      "이용",
+      "어르신들에게",
+      "다양한",
+      "프로그램"
+    ],
+    "summary": "경로당 이용 어르신들에게 다양한 프로그램 지원",
+    "audience": "○ 정기프로그램\n - 건강증진프로그램 : 셀프마사지, 요가, 기체조, 건강체조\n - 여가교양프로그램 : 노래교실, 종합공예, 휴대폰활용\n\n○ 특화프로그램(마을활성화, 세대공감같이, 가치, 지식충전소, 개방형 경로당, 치매예방 프로그램, 뇌건강교실)\n\n○ 활성화 프로그램(경로당 자체평가 운영회의, 겨오당 임원 역량강화 교육, 사업설명회, 만족도 및 욕구조사)",
+    "benefits": [
+      "경로당 이용 어르신들에게 다양한 프로그램 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 서구노인복지관 직접 방문\n\n○ 기타\n - 전화",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00027100010",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00027100010",
+    "contact": "인천광역시서구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 정기프로그램\n - 건강증진프로그램 : 셀프마사지, 요가, 기체조, 건강체조\n - 여가교양프로그램 : 노래교실, 종합공예, 휴대폰활용\n\n○ 특화프로그램(마을활성화, 세대공감같이, 가치, 지식충전소, 개방형 경로당, 치매예방 프로그램, 뇌건강교실)\n\n○ 활성화 프로그램(경로당 자체평가 운영회의, 겨오당 임원 역량강화 교육, 사업설명회, 만족도 및 욕구조사)",
+      "benefit": "경로당 이용 어르신들에게 다양한 프로그램 지원",
+      "application": "○ 방문 신청\n - 기타 : 서구노인복지관 직접 방문\n\n○ 기타\n - 전화",
+      "contact": "인천광역시서구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-주차장-이용요금-감면-농수산물-도매시장",
+    "title": "주차장 이용요금 감면(농수산물 도매시장)",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "울산시설공단",
+    "region": "울산",
+    "amount": "사회적 취약계층에게 농수산물도매시장 주차장 이용요금 감면(50%)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인, 농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "주차장 이용요금 감면(농수산물 도매시장)",
+      "농림어업",
+      "울산",
+      "울산시설공단",
+      "상시",
+      "장애인",
+      "농어업인",
+      "전체",
+      "복지",
+      "사회적",
+      "취약계층에게",
+      "농수산물도매시장"
+    ],
+    "summary": "사회적 취약계층에게 농수산물도매시장 주차장 이용요금 감면(50%)",
+    "audience": "○ 사용료·이용료·관람료 감면(50%)\n - 「장애인복지법」에 따른 장애인등록증을 소지한 자\n - 「국가유공자 등 예우 및 지원에 관한 법률」에 따른 상이자로서 국가유공자증서를 소지한자\n - 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」에 따른 국가보훈처장이 발행한 차량표지를 부착한 자\n - 「518 민주유공자 예우에 관한 법률」에 따른 민주화운동부상자로서 5·18 민주 유공자증을 소지한 자\n - 승용차 요일제에 참여하는 차량\n - 환경친화적 자동차(저공해차량: 하이브리드, 수소차, 전기차)\n○ 사용료·이용료·관람료 감면(60%)\n - 배기량 1,000CC 이하의 경승용차\n - 경남은행다자녀사랑카드 등재 비사업용 자동차",
+    "benefits": [
+      "사회적 취약계층에게 농수산물도매시장 주차장 이용요금 감면(50%)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 농수산물 도매시장 주차장",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025000004",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025000004",
+    "contact": "울산시설공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 사용료·이용료·관람료 감면(50%)\n - 「장애인복지법」에 따른 장애인등록증을 소지한 자\n - 「국가유공자 등 예우 및 지원에 관한 법률」에 따른 상이자로서 국가유공자증서를 소지한자\n - 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」에 따른 국가보훈처장이 발행한 차량표지를 부착한 자\n - 「518 민주유공자 예우에 관한 법률」에 따른 민주화운동부상자로서 5·18 민주 유공자증을 소지한 자\n - 승용차 요일제에 참여하는 차량\n - 환경친화적 자동차(저공해차량: 하이브리드, 수소차, 전기차)\n○ 사용료·이용료·관람료 감면(60%)\n - 배기량 1,000CC 이하의 경승용차\n - 경남은행다자녀사랑카드 등재 비사업용 자동차",
+      "benefit": "사회적 취약계층에게 농수산물도매시장 주차장 이용요금 감면(50%)",
+      "application": "○ 방문 신청\n - 기타 : 농수산물 도매시장 주차장",
+      "contact": "울산시설공단"
+    }
+  },
+  {
+    "slug": "gov24-종합운동장-부설주차장-이용요금-감면",
+    "title": "종합운동장 부설주차장 이용요금 감면",
+    "category": "문화생활",
+    "source": "정부24 공공서비스 API",
+    "agency": "울산시설공단",
+    "region": "울산",
+    "amount": "사회적 취약계층에게 부설주차장 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "종합운동장 부설주차장 이용요금 감면",
+      "문화생활",
+      "울산",
+      "울산시설공단",
+      "상시",
+      "장애인",
+      "전체",
+      "복지",
+      "사회적",
+      "취약계층에게",
+      "부설주차장",
+      "이용요금"
+    ],
+    "summary": "사회적 취약계층에게 부설주차장 이용요금 감면(대상별 상이)",
+    "audience": "○ 주차요금 60% 감면\n - 경남은행다자녀사랑카드 등재 비사업용 자동차\n - 배기량 1,000cc 이하의 경형 자동차\n\n○ 주차요금 1시간면제후 50% 감면\n - 「장애인복지법」에 따른 장애인등록증을 소지한 자\n - 「국가유공자 등 예우 및 지원에 관한 법률」에 따른 상이자로서 국가유공자증서를 소지한 자\n - 「5·18민주유공자예우에 관한 법률」에 따른 민주화운동부상자로서 5·18 민주 유공자증을 소지한 자\n - 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」에 따른 국가보훈처장이 발행한 차량표지를 부착한 자\n\n○ 주차요금 50% 감면\n - 승용차 요일제에 참여하는 차량\n - 환경친화적 자동차 (저공해차량 : 하이브리드, 수소차, 전기차)\n - 「울산광역시 지정무형문화재 보유자 예우 및 지원에 관한조례」에 따른 시지정무형문화재 보유자의 비사업용 자동차\n\n○ 기타감면 \n - 전기자동차 충전시 1시간 감면\n - 선거관리위원회가 발급한 투표 확인증을 제출한 사람에게 주차요금 2,000원 경감 \n (해당 선거일로부터 3개월까지 유효)\n - 자동차부제운행을 준수하는 차량 및 함께타기 참여하는 차량의 주차요금 20% 경감\n - 축구, 야구, 농구 등 프로경기관람 경기 및 콘서트 관람\n - 동천국민체육센터연동할인 (일반회원 3시간 감면, 체육관 주말 농구 강습 : 4시간 감면)",
+    "benefits": [
+      "사회적 취약계층에게 부설주차장 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 본인이 신분증 및 증빙서류 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025000001",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025000001",
+    "contact": "울산시설공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 주차요금 60% 감면\n - 경남은행다자녀사랑카드 등재 비사업용 자동차\n - 배기량 1,000cc 이하의 경형 자동차\n\n○ 주차요금 1시간면제후 50% 감면\n - 「장애인복지법」에 따른 장애인등록증을 소지한 자\n - 「국가유공자 등 예우 및 지원에 관한 법률」에 따른 상이자로서 국가유공자증서를 소지한 자\n - 「5·18민주유공자예우에 관한 법률」에 따른 민주화운동부상자로서 5·18 민주 유공자증을 소지한 자\n - 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」에 따른 국가보훈처장이 발행한 차량표지를 부착한 자\n\n○ 주차요금 50% 감면\n - 승용차 요일제에 참여하는 차량\n - 환경친화적 자동차 (저공해차량 : 하이브리드, 수소차, 전기차)\n - 「울산광역시 지정무형문화재 보유자 예우 및 지원에 관한조례」에 따른 시지정무형문화재 보유자의 비사업용 자동차\n\n○ 기타감면 \n - 전기자동차 충전시 1시간 감면\n - 선거관리위원회가 발급한 투표 확인증을 제출한 사람에게 주차요금 2,000원 경감 \n (해당 선거일로부터 3개월까지 유효)\n - 자동차부제운행을 준수하는 차량 및 함께타기 참여하는 차량의 주차요금 20% 경감\n - 축구, 야구, 농구 등 프로경기관람 경기 및 콘서트 관람\n - 동천국민체육센터연동할인 (일반회원 3시간 감면, 체육관 주말 농구 강습 : 4시간 감면)",
+      "benefit": "사회적 취약계층에게 부설주차장 이용요금 감면(대상별 상이)",
+      "application": "○ 방문 신청\n - 기타 : 본인이 신분증 및 증빙서류 제출",
+      "contact": "울산시설공단"
+    }
+  },
+  {
+    "slug": "gov24-공영주차장-이용요금-감면-월정기",
+    "title": "공영주차장 이용요금 감면(월정기)",
+    "category": "소상공인",
+    "source": "정부24 공공서비스 API",
+    "agency": "울산광역시남구도시관리공단",
+    "region": "울산",
+    "amount": "사회적 취약계층에게 주차장 이용요금 감면(월정기, 대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "소상공인, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "공영주차장 이용요금 감면(월정기)",
+      "소상공인",
+      "울산",
+      "울산광역시남구도시관리공단",
+      "모집중",
+      "장애인",
+      "전체",
+      "복지",
+      "사회적",
+      "취약계층에게",
+      "주차장",
+      "이용요금"
+    ],
+    "summary": "사회적 취약계층에게 주차장 이용요금 감면(월정기, 대상별 상이)",
+    "audience": "○ 장애인, 국가유공자, 전기차: 1시간무료(전기차량 충전시 무료). 1시간 초과시간과 1일 및 월정기 주차 50%\n\n○ 경차, 다자녀: 60% 감면(1000cc이하)\n\n○ 모범납세자: (1년간) 100% 감면\n\n○ 10부제차량: 20% 감면\n\n○ 선거참여자: (선거일로부터 3개월) 2,000원 감면\n\n○ 전통시장 인근 주차장: 1시간 면제\n\n○ 요일제, 임산부, 친환경, 병역명문가: 50%(전기차 충전 시 1시간 면제)",
+    "benefits": [
+      "사회적 취약계층에게 주차장 이용요금 감면(월정기, 대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - 증빙서류 파일 첨부\n\n온라인: https://www.uncmc.or.kr",
+    "officialUrl": "https://www.uncmc.or.kr",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025400001",
+    "contact": "울산광역시남구도시관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 장애인, 국가유공자, 전기차: 1시간무료(전기차량 충전시 무료). 1시간 초과시간과 1일 및 월정기 주차 50%\n\n○ 경차, 다자녀: 60% 감면(1000cc이하)\n\n○ 모범납세자: (1년간) 100% 감면\n\n○ 10부제차량: 20% 감면\n\n○ 선거참여자: (선거일로부터 3개월) 2,000원 감면\n\n○ 전통시장 인근 주차장: 1시간 면제\n\n○ 요일제, 임산부, 친환경, 병역명문가: 50%(전기차 충전 시 1시간 면제)",
+      "benefit": "사회적 취약계층에게 주차장 이용요금 감면(월정기, 대상별 상이)",
+      "application": "○ 온라인 신청\n - 증빙서류 파일 첨부\n\n온라인: https://www.uncmc.or.kr",
+      "contact": "울산광역시남구도시관리공단"
+    }
+  },
+  {
+    "slug": "gov24-공영주차장-이용요금-할인",
+    "title": "공영주차장 이용요금 할인",
+    "category": "소상공인",
+    "source": "정부24 공공서비스 API",
+    "agency": "울산광역시남구도시관리공단",
+    "region": "울산",
+    "amount": "사회적 취약계층에게 주차장 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "소상공인, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "공영주차장 이용요금 할인",
+      "소상공인",
+      "울산",
+      "울산광역시남구도시관리공단",
+      "상시",
+      "장애인",
+      "전체",
+      "복지",
+      "사회적",
+      "취약계층에게",
+      "주차장",
+      "이용요금"
+    ],
+    "summary": "사회적 취약계층에게 주차장 이용요금 감면(대상별 상이)",
+    "audience": "○ 장애인, 국가유공자, 전기차: 1시간무료(전기차량 충전시 무료). 1시간 초과시간과 1일 및 월정기 주차 50%\n\n○ 경차, 다자녀: 60% 감면(1000cc이하)\n\n○ 모범납세자: (1년간) 100% 감면\n\n○ 10부제차량: 20% 감면\n\n○ 선거참여자: (선거일로부터 3개월) 2,000원 감면\n\n○ 전통시장 인근 주차장: 1시간 면제\n\n○ 요일제, 임산부, 친환경, 병역명문가: 50%(전기차 충전 시 1시간 면제)",
+    "benefits": [
+      "사회적 취약계층에게 주차장 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 남구 공영주차장 이용 시 감면증빙 자료 제시",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025400005",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025400005",
+    "contact": "울산광역시남구도시관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 장애인, 국가유공자, 전기차: 1시간무료(전기차량 충전시 무료). 1시간 초과시간과 1일 및 월정기 주차 50%\n\n○ 경차, 다자녀: 60% 감면(1000cc이하)\n\n○ 모범납세자: (1년간) 100% 감면\n\n○ 10부제차량: 20% 감면\n\n○ 선거참여자: (선거일로부터 3개월) 2,000원 감면\n\n○ 전통시장 인근 주차장: 1시간 면제\n\n○ 요일제, 임산부, 친환경, 병역명문가: 50%(전기차 충전 시 1시간 면제)",
+      "benefit": "사회적 취약계층에게 주차장 이용요금 감면(대상별 상이)",
+      "application": "○ 방문 신청\n - 남구 공영주차장 이용 시 감면증빙 자료 제시",
+      "contact": "울산광역시남구도시관리공단"
+    }
+  },
+  {
+    "slug": "gov24-캠핑장-이용요금-감면",
+    "title": "캠핑장 이용요금 감면",
+    "category": "문화생활",
+    "source": "정부24 공공서비스 API",
+    "agency": "울산광역시북구시설관리공단",
+    "region": "울산",
+    "amount": "사회적 취약계층 및 지역주민에게 캠핑장 이용요금 감면",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "캠핑장 이용요금 감면",
+      "문화생활",
+      "울산",
+      "울산광역시북구시설관리공단",
+      "모집중",
+      "장애인",
+      "아동",
+      "복지",
+      "사회적",
+      "취약계층",
+      "및",
+      "지역주민에게"
+    ],
+    "summary": "사회적 취약계층 및 지역주민에게 캠핑장 이용요금 감면",
+    "audience": "○ 100분의 30 감면\n - 「국민기초생활 보장법」에 따른 수급자\n - 「장애인 복지법 시행규칙」제2조에 따른 장애의 정도가 심한 장애인\n - 「국가유공자 등 예우 및 지원에 관한 법률 시행령」제6조제1항 각 호의 어느 하나에 해당하는 국가유공자\n - 「독립유공자예우에 관한 법률」제6조로 등록된 독립유공자\n - 「참전유공자 예우 및 단체설립에 관한 법률」제5조로 등록된 참전유공자\n - 「5·18민주유공자예우에 관한 법률」제7조로 등록된 5·18 민주유공자\n - 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」에 따른 고엽제 후유증환자·고엽제후유의증환자 및 고엽제휴유증 2세 환자\n - 「특수임무유공자 예우 및 단체설립에 관한 법률」제6조에 따라 등록된 특수임무유공자\n - 울산다자녀사랑카드를 소지한 사람\n\n○ 100분의 20 감면\n - 「주민등록법」에 따라 울산광역시 북구에 주소를 둔 사람\n\n○ 100분의 10 감면\n - 「주민등록법」에 따라 울산광역시에 주소를 둔 사람",
+    "benefits": [
+      "사회적 취약계층 및 지역주민에게 캠핑장 이용요금 감면"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문, 온라인\n○ 방문 신청 : 울산광역시 북구캠핑장(증명서 및 신분증 지참)\n○ 온라인 신청 : 울산북구캠핑장예약서비스(https://camping.ubimc.or.kr)\n\n온라인: https://camping.ubimc.or.kr",
+    "officialUrl": "https://camping.ubimc.or.kr",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025500002",
+    "contact": "울산광역시북구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 100분의 30 감면\n - 「국민기초생활 보장법」에 따른 수급자\n - 「장애인 복지법 시행규칙」제2조에 따른 장애의 정도가 심한 장애인\n - 「국가유공자 등 예우 및 지원에 관한 법률 시행령」제6조제1항 각 호의 어느 하나에 해당하는 국가유공자\n - 「독립유공자예우에 관한 법률」제6조로 등록된 독립유공자\n - 「참전유공자 예우 및 단체설립에 관한 법률」제5조로 등록된 참전유공자\n - 「5·18민주유공자예우에 관한 법률」제7조로 등록된 5·18 민주유공자\n - 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」에 따른 고엽제 후유증환자·고엽제후유의증환자 및 고엽제휴유증 2세 환자\n - 「특수임무유공자 예우 및 단체설립에 관한 법률」제6조에 따라 등록된 특수임무유공자\n - 울산다자녀사랑카드를 소지한 사람\n\n○ 100분의 20 감면\n - 「주민등록법」에 따라 울산광역시 북구에 주소를 둔 사람\n\n○ 100분의 10 감면\n - 「주민등록법」에 따라 울산광역시에 주소를 둔 사람",
+      "benefit": "사회적 취약계층 및 지역주민에게 캠핑장 이용요금 감면",
+      "application": "○ 방문, 온라인\n○ 방문 신청 : 울산광역시 북구캠핑장(증명서 및 신분증 지참)\n○ 온라인 신청 : 울산북구캠핑장예약서비스(https://camping.ubimc.or.kr)\n\n온라인: https://camping.ubimc.or.kr",
+      "contact": "울산광역시북구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-부설-및-공영주차장-이용요금-감면",
+    "title": "부설 및 공영주차장 이용요금 감면",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "울산광역시북구시설관리공단",
+    "region": "울산",
+    "amount": "취약계층,자원봉사자 등에게 공영주차장 이용요금 감면",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "부설 및 공영주차장 이용요금 감면",
+      "복지",
+      "울산",
+      "울산광역시북구시설관리공단",
+      "모집중",
+      "장애인",
+      "전체",
+      "취약계층,자원봉사자",
+      "등에게",
+      "공영주차장",
+      "이용요금",
+      "감면"
+    ],
+    "summary": "취약계층,자원봉사자 등에게 공영주차장 이용요금 감면",
+    "audience": "○ 모범납세자\n - 1년간 100% 감면\n\n○ 경차\n - 당일 이용요금의 60% 감면\n - 1일주차 / 월 정기 주차 60%\n\n○ 다자녀 사랑 카드\n - 당일 이용요금의 60% 감면\n - 1일주차 / 월 정기 주차 60%\n\n○ 장애인,국가유공자,독립유공자,5.18민주화운동 부상자, 고엽제후유증환자\n - 1시간 면제 + 1시간 초과시 50%(기본 30분 적용)\n - 1일주차 / 월 정기 주차 50%\n\n○ 장기 기증자\n - 당일 이용요금의 50% 감면\n\n○ 요일제 참여\n - 당일 이용요금 / 1일 주차 50% 감면\n - 월 정기 주차 제외\n\n○ 환경친화적 자동차\n - 당일 이용요금 / 1일 주차 50% 감면\n - 월 정기 주차 제외\n\n○ 투표확인증\n - 2,000원 감면",
+    "benefits": [
+      "취약계층,자원봉사자 등에게 공영주차장 이용요금 감면"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 : 울산광역시 북구시설관리공단(증명서 및 신분증 지참)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025500003",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025500003",
+    "contact": "울산광역시북구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 모범납세자\n - 1년간 100% 감면\n\n○ 경차\n - 당일 이용요금의 60% 감면\n - 1일주차 / 월 정기 주차 60%\n\n○ 다자녀 사랑 카드\n - 당일 이용요금의 60% 감면\n - 1일주차 / 월 정기 주차 60%\n\n○ 장애인,국가유공자,독립유공자,5.18민주화운동 부상자, 고엽제후유증환자\n - 1시간 면제 + 1시간 초과시 50%(기본 30분 적용)\n - 1일주차 / 월 정기 주차 50%\n\n○ 장기 기증자\n - 당일 이용요금의 50% 감면\n\n○ 요일제 참여\n - 당일 이용요금 / 1일 주차 50% 감면\n - 월 정기 주차 제외\n\n○ 환경친화적 자동차\n - 당일 이용요금 / 1일 주차 50% 감면\n - 월 정기 주차 제외\n\n○ 투표확인증\n - 2,000원 감면",
+      "benefit": "취약계층,자원봉사자 등에게 공영주차장 이용요금 감면",
+      "application": "○ 방문 신청 : 울산광역시 북구시설관리공단(증명서 및 신분증 지참)",
+      "contact": "울산광역시북구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-울주군-청소년-진로직업체험센터-서비스",
+    "title": "울주군 청소년 진로직업체험센터 서비스",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "울주군시설관리공단",
+    "region": null,
+    "amount": "청소년 진로직업체험 및 자유학년제 매칭 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "unknown region"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "울주군 청소년 진로직업체험센터 서비스",
+      "청년",
+      "null",
+      "울주군시설관리공단",
+      "상시",
+      "부모/육아",
+      "청소년",
+      "임신·출산·육아",
+      "진로직업체험",
+      "및",
+      "자유학년제",
+      "매칭"
+    ],
+    "summary": "청소년 진로직업체험 및 자유학년제 매칭 지원",
+    "audience": "○ 청소년 진로직업체험 및 자유학년제 매칭 지원\n - 현장직업체험활동, 직업실무체험, 진로멘토링특강, 진로상담사업 지원 등",
+    "benefits": [
+      "청소년 진로직업체험 및 자유학년제 매칭 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - 꿈길: www.ggoomgil.go.kr",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025600004",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025600004",
+    "contact": "울주군시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 청소년 진로직업체험 및 자유학년제 매칭 지원\n - 현장직업체험활동, 직업실무체험, 진로멘토링특강, 진로상담사업 지원 등",
+      "benefit": "청소년 진로직업체험 및 자유학년제 매칭 지원",
+      "application": "○ 온라인 신청\n - 꿈길: www.ggoomgil.go.kr",
+      "contact": "울주군시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-울주군청소년상담복지센터-서비스-이용",
+    "title": "울주군청소년상담복지센터 서비스 이용",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "울주군시설관리공단",
+    "region": null,
+    "amount": "청소년 및 보호자에게 심리적 안정을 위한 상담 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "unknown region"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "울주군청소년상담복지센터 서비스 이용",
+      "청년",
+      "null",
+      "울주군시설관리공단",
+      "상시",
+      "일반",
+      "아동",
+      "청소년",
+      "복지",
+      "및",
+      "보호자에게",
+      "심리적"
+    ],
+    "summary": "청소년 및 보호자에게 심리적 안정을 위한 상담 제공",
+    "audience": "개인상담, 심리검사 및 기타 지원서비스 연계",
+    "benefits": [
+      "청소년 및 보호자에게 심리적 안정을 위한 상담 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 울주군청소년상담복지센터 직접 방문 신청 가능\n\n○ 기타\n - 전화 : 청소년전화(1388)로 상담신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025600006",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025600006",
+    "contact": "울주군시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "개인상담, 심리검사 및 기타 지원서비스 연계",
+      "benefit": "청소년 및 보호자에게 심리적 안정을 위한 상담 제공",
+      "application": "○ 방문 신청\n - 기타 : 울주군청소년상담복지센터 직접 방문 신청 가능\n\n○ 기타\n - 전화 : 청소년전화(1388)로 상담신청",
+      "contact": "울주군시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-시민-정보화교육-안내",
+    "title": "시민 정보화교육 안내",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "정보 소외계층 대상 시민 정보화교육 실시",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "시민 정보화교육 안내",
+      "교육",
+      "충남",
+      "충청남도 보령시",
+      "확인필요",
+      "일반",
+      "전체",
+      "정보",
+      "소외계층",
+      "대상",
+      "시민",
+      "정보화교육"
+    ],
+    "summary": "정보 소외계층 대상 시민 정보화교육 실시",
+    "audience": "정보 소외계층 대상 시민 정보화교육 실시\n대상: 보령시민",
+    "benefits": [
+      "정보 소외계층 대상 시민 정보화교육 실시"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "보령시청 누리집 또는 전화신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000250",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000250",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "정보 소외계층 대상 시민 정보화교육 실시\n대상: 보령시민",
+      "benefit": "정보 소외계층 대상 시민 정보화교육 실시",
+      "application": "보령시청 누리집 또는 전화신청",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-이태원초-수영장-프로그램-할인-장애인",
+    "title": "이태원초 수영장 프로그램 할인(장애인)",
+    "category": "문화생활",
+    "source": "정부24 공공서비스 API",
+    "agency": "용산구시설관리공단",
+    "region": null,
+    "amount": "장애인에게 프로그램 이용요금 50%감면",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "unknown region"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "이태원초 수영장 프로그램 할인(장애인)",
+      "문화생활",
+      "null",
+      "용산구시설관리공단",
+      "상시",
+      "장애인",
+      "전체",
+      "복지",
+      "장애인에게",
+      "프로그램",
+      "이용요금",
+      "50%감면"
+    ],
+    "summary": "장애인에게 프로그램 이용요금 50%감면",
+    "audience": "중증,경증 장애인 50% 할인 (중증장애인 보호자 1인 포함)",
+    "benefits": [
+      "장애인에게 프로그램 이용요금 50%감면"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 이태원초등학교수영장 직접 방문 후 해당 서류 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00024000054",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00024000054",
+    "contact": "용산구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "중증,경증 장애인 50% 할인 (중증장애인 보호자 1인 포함)",
+      "benefit": "장애인에게 프로그램 이용요금 50%감면",
+      "application": "○ 방문 신청\n - 이태원초등학교수영장 직접 방문 후 해당 서류 제출",
+      "contact": "용산구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-이태원초등학교수영장-프로그램-할인-경로",
+    "title": "이태원초등학교수영장 프로그램 할인(경로)",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "용산구시설관리공단",
+    "region": null,
+    "amount": "경로자에게 프로그램 이용요금 감면",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "unknown region"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "이태원초등학교수영장 프로그램 할인(경로)",
+      "교육",
+      "null",
+      "용산구시설관리공단",
+      "상시",
+      "어르신",
+      "아동",
+      "전체",
+      "경로자에게",
+      "프로그램",
+      "이용요금",
+      "감면"
+    ],
+    "summary": "경로자에게 프로그램 이용요금 감면",
+    "audience": "만 65세 이상 회원 의 시설 이용시 20% 할인",
+    "benefits": [
+      "경로자에게 프로그램 이용요금 감면"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 이태원초등학교수영장직접 방문 후 해당 서류 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00024000055",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00024000055",
+    "contact": "용산구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "만 65세 이상 회원 의 시설 이용시 20% 할인",
+      "benefit": "경로자에게 프로그램 이용요금 감면",
+      "application": "○ 방문 신청\n - 이태원초등학교수영장직접 방문 후 해당 서류 제출",
+      "contact": "용산구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-이태원초등학교수영장-프로그램-할인-기초생활수급자",
+    "title": "이태원초등학교수영장 프로그램 할인(기초생활수급자)",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "용산구시설관리공단",
+    "region": null,
+    "amount": "기초생활수급자에게 이태원초등학교수영장 수영 프로그램 이용요금 감면",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "unknown region"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "이태원초등학교수영장 프로그램 할인(기초생활수급자)",
+      "교육",
+      "null",
+      "용산구시설관리공단",
+      "상시",
+      "일반",
+      "전체",
+      "복지",
+      "기초생활수급자에게",
+      "이태원초등학교수영장",
+      "수영",
+      "프로그램"
+    ],
+    "summary": "기초생활수급자에게 이태원초등학교수영장 수영 프로그램 이용요금 감면",
+    "audience": "기초생활 수급자로 등록된 강좌 등록시 50% 할인",
+    "benefits": [
+      "기초생활수급자에게 이태원초등학교수영장 수영 프로그램 이용요금 감면"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 이태원초등학교수영장 직접 방문 후 해당 서류 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00024000056",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00024000056",
+    "contact": "용산구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "기초생활 수급자로 등록된 강좌 등록시 50% 할인",
+      "benefit": "기초생활수급자에게 이태원초등학교수영장 수영 프로그램 이용요금 감면",
+      "application": "○ 방문 신청\n - 이태원초등학교수영장 직접 방문 후 해당 서류 제출",
+      "contact": "용산구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-이태원초등학교수영장-프로그램-할인-가임여성",
+    "title": "이태원초등학교수영장 프로그램 할인(가임여성)",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "용산구시설관리공단",
+    "region": null,
+    "amount": "가임여성에게 수영 프로그램 이용요금 10%감면",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "unknown region"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "이태원초등학교수영장 프로그램 할인(가임여성)",
+      "교육",
+      "null",
+      "용산구시설관리공단",
+      "상시",
+      "일반",
+      "아동",
+      "전체",
+      "가임여성에게",
+      "수영",
+      "프로그램",
+      "이용요금"
+    ],
+    "summary": "가임여성에게 수영 프로그램 이용요금 10%감면",
+    "audience": "수영 프로그램에 한하여 만 13세 이상 만 55세 이하 여성 10% 할인",
+    "benefits": [
+      "가임여성에게 수영 프로그램 이용요금 10%감면"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n -이태원초등학교수영장 직접 방문 후 해당 서류 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00024000057",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00024000057",
+    "contact": "용산구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "수영 프로그램에 한하여 만 13세 이상 만 55세 이하 여성 10% 할인",
+      "benefit": "가임여성에게 수영 프로그램 이용요금 10%감면",
+      "application": "○ 방문 신청\n -이태원초등학교수영장 직접 방문 후 해당 서류 제출",
+      "contact": "용산구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-이태원초등학교수영장-프로그램-할인-다자녀-가족",
+    "title": "이태원초등학교수영장 프로그램 할인(다자녀 가족)",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "용산구시설관리공단",
+    "region": null,
+    "amount": "다자녀가족에게 문화체육센터 프로그램 이용요금 50%감면",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "unknown region"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "이태원초등학교수영장 프로그램 할인(다자녀 가족)",
+      "교육",
+      "null",
+      "용산구시설관리공단",
+      "상시",
+      "일반",
+      "전체",
+      "다자녀가족에게",
+      "문화체육센터",
+      "프로그램",
+      "이용요금",
+      "50%감면"
+    ],
+    "summary": "다자녀가족에게 문화체육센터 프로그램 이용요금 50%감면",
+    "audience": "용산구에 거주하는 다둥이 행복카드 소지자 중 자녀 2명 이상을 둔 부모 및 그 자녀로 막내가 만 18세까지 50% 할인",
+    "benefits": [
+      "다자녀가족에게 문화체육센터 프로그램 이용요금 50%감면"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 이태원초등학교수영장 직접 방문 후 해당 서류 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00024000058",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00024000058",
+    "contact": "용산구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "용산구에 거주하는 다둥이 행복카드 소지자 중 자녀 2명 이상을 둔 부모 및 그 자녀로 막내가 만 18세까지 50% 할인",
+      "benefit": "다자녀가족에게 문화체육센터 프로그램 이용요금 50%감면",
+      "application": "○ 방문 신청\n - 이태원초등학교수영장 직접 방문 후 해당 서류 제출",
+      "contact": "용산구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-이태원초등학교수영장-프로그램-할인-용산구자원봉사자",
+    "title": "이태원초등학교수영장 프로그램 할인(용산구자원봉사자)",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "용산구시설관리공단",
+    "region": null,
+    "amount": "자원봉사자에게이태원초등학교수영장 프로그램 이용요금 10%감면",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "unknown region"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "이태원초등학교수영장 프로그램 할인(용산구자원봉사자)",
+      "교육",
+      "null",
+      "용산구시설관리공단",
+      "상시",
+      "일반",
+      "전체",
+      "자원봉사자에게이태원초등학교수영장",
+      "프로그램",
+      "이용요금",
+      "10%감면"
+    ],
+    "summary": "자원봉사자에게이태원초등학교수영장 프로그램 이용요금 10%감면",
+    "audience": "용산구 등록 자원봉사자 10% 할인",
+    "benefits": [
+      "자원봉사자에게이태원초등학교수영장 프로그램 이용요금 10%감면"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 이태원초등학교수영장 직접 방문 후 해당 서류 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00024000059",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00024000059",
+    "contact": "용산구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "용산구 등록 자원봉사자 10% 할인",
+      "benefit": "자원봉사자에게이태원초등학교수영장 프로그램 이용요금 10%감면",
+      "application": "○ 방문 신청\n - 이태원초등학교수영장 직접 방문 후 해당 서류 제출",
+      "contact": "용산구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-송도스포츠파크-실내체육시설-이용요금-감면",
+    "title": "송도스포츠파크 실내체육시설 이용요금 감면",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천환경공단",
+    "region": "인천",
+    "amount": "사회적 취약계층에게 체육시설 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "송도스포츠파크 실내체육시설 이용요금 감면",
+      "청년",
+      "인천",
+      "인천환경공단",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "청소년",
+      "복지",
+      "사회적",
+      "취약계층에게"
+    ],
+    "summary": "사회적 취약계층에게 체육시설 이용요금 감면(대상별 상이)",
+    "audience": "○ 실내체육시설 이용료 할인\n - 청소년(만4~18세), 경로(만65세 이상) 이용료 30% 할인(규정상 30%이지만 백원단위 절사하여 33%할인적용)\n - 국가유공자, 장애인, 의사상자(본인만) 이용료 50% 할인\n\n※ 감면 혜택은 중복 적용하지 않는다",
+    "benefits": [
+      "사회적 취약계층에게 체육시설 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - 인천환경공단 홈페이지(www.eco-i.or.kr) 회원가입 후 송도 스포츠파크 예약에서 시설예약 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025900001",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025900001",
+    "contact": "인천환경공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 실내체육시설 이용료 할인\n - 청소년(만4~18세), 경로(만65세 이상) 이용료 30% 할인(규정상 30%이지만 백원단위 절사하여 33%할인적용)\n - 국가유공자, 장애인, 의사상자(본인만) 이용료 50% 할인\n\n※ 감면 혜택은 중복 적용하지 않는다",
+      "benefit": "사회적 취약계층에게 체육시설 이용요금 감면(대상별 상이)",
+      "application": "○ 온라인 신청\n - 인천환경공단 홈페이지(www.eco-i.or.kr) 회원가입 후 송도 스포츠파크 예약에서 시설예약 신청",
+      "contact": "인천환경공단"
+    }
+  },
+  {
+    "slug": "gov24-생활폐기물-소각시설-견학",
+    "title": "생활폐기물 소각시설 견학",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천환경공단",
+    "region": "인천",
+    "amount": "신청자에게 생활폐기물 처리과정 안내",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "생활폐기물 소각시설 견학",
+      "교육",
+      "인천",
+      "인천환경공단",
+      "상시",
+      "일반",
+      "전체",
+      "신청자에게",
+      "생활폐기물",
+      "처리과정",
+      "안내"
+    ],
+    "summary": "신청자에게 생활폐기물 처리과정 안내",
+    "audience": "○ 생활폐기물 처리과정 안내(사업소: 송도, 청라)",
+    "benefits": [
+      "신청자에게 생활폐기물 처리과정 안내"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - 인천환경공단 홈페이지(www.eco-i.or.kr) 회원가입 후 체육시설/시설견학 예약시스템에서 시설견학 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025900003",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025900003",
+    "contact": "인천환경공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 생활폐기물 처리과정 안내(사업소: 송도, 청라)",
+      "benefit": "신청자에게 생활폐기물 처리과정 안내",
+      "application": "○ 온라인 신청\n - 인천환경공단 홈페이지(www.eco-i.or.kr) 회원가입 후 체육시설/시설견학 예약시스템에서 시설견학 신청",
+      "contact": "인천환경공단"
+    }
+  },
+  {
+    "slug": "gov24-난임부부-엽산-영양제-지원",
+    "title": "난임부부 엽산 영양제 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "난임부부에게 연 2회 엽산영양제 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "난임부부 엽산 영양제 지원",
+      "복지",
+      "충남",
+      "충청남도 아산시",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "난임부부에게",
+      "연",
+      "2회",
+      "엽산영양제"
+    ],
+    "summary": "난임부부에게 연 2회 엽산영양제 지급",
+    "audience": "○ 아산시 난임부부에게 연 2회 엽산영양제 지급(3개월분 상당)",
+    "benefits": [
+      "난임부부에게 연 2회 엽산영양제 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 보건소 : 보건소 방문신청\n - 구비서류 : 주민등록초본, 난임진단서 등",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000126",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000126",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 아산시 난임부부에게 연 2회 엽산영양제 지급(3개월분 상당)",
+      "benefit": "난임부부에게 연 2회 엽산영양제 지급",
+      "application": "○ 방문 신청 \n - 보건소 : 보건소 방문신청\n - 구비서류 : 주민등록초본, 난임진단서 등",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-농업기계-수리부품대금-지원",
+    "title": "농업기계 수리부품대금 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "농업인에게 농업기계 부품대금 지원 연간 농가당 5기종, 40만원 한도",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "농업기계 수리부품대금 지원",
+      "농림어업",
+      "충남",
+      "충청남도 아산시",
+      "상시",
+      "농어업인",
+      "전체",
+      "농업인에게",
+      "농업기계",
+      "부품대금",
+      "지원",
+      "연간"
+    ],
+    "summary": "농업인에게 농업기계 부품대금 지원 연간 농가당 5기종, 40만원 한도",
+    "audience": "지원내용 : 시 지정 수리점에서 농업기계수리 시 수리에 사용한 부품대금 지원\n지원금액 : 연간 농가당 5기종, 40만원 한도 (동일기종 중복신청 불가)\n\n - 대형기종(250,000원(대당 지원 한도액)) : 트랙터, 콤바인, 승용이앙기, 승용관리기, 농업용로더, 농업용굴삭기, 스피드스프레이어\n - 중형기종(100,000원(대당 지원 한도액)) : 경운기, 보행이앙기, 보행관리기, 과수용 승용제초기, 동력운반차\n - 소형기종(50,000원(대당 지원 한도액)) : 예취기 등 기타 엔진부착장비\n\n※ 부품대금 지원기종은 면세유 공급대상으로 농협에 등록된 농업기계에 한정하며, 각종 오일교환에 소요되는 오일류 및 부동액 제외 \n※ 예산소진 시 지원 종료",
+    "benefits": [
+      "농업인에게 농업기계 부품대금 지원 연간 농가당 5기종, 40만원 한도"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 아산시농업기술센터",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000127",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000127",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "지원내용 : 시 지정 수리점에서 농업기계수리 시 수리에 사용한 부품대금 지원\n지원금액 : 연간 농가당 5기종, 40만원 한도 (동일기종 중복신청 불가)\n\n - 대형기종(250,000원(대당 지원 한도액)) : 트랙터, 콤바인, 승용이앙기, 승용관리기, 농업용로더, 농업용굴삭기, 스피드스프레이어\n - 중형기종(100,000원(대당 지원 한도액)) : 경운기, 보행이앙기, 보행관리기, 과수용 승용제초기, 동력운반차\n - 소형기종(50,000원(대당 지원 한도액)) : 예취기 등 기타 엔진부착장비\n\n※ 부품대금 지원기종은 면세유 공급대상으로 농협에 등록된 농업기계에 한정하며, 각종 오일교환에 소요되는 오일류 및 부동액 제외 \n※ 예산소진 시 지원 종료",
+      "benefit": "농업인에게 농업기계 부품대금 지원 연간 농가당 5기종, 40만원 한도",
+      "application": "○ 방문 신청\n - 기타 : 아산시농업기술센터",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-선천성-갑상선기능저하증-환아-의료비-지원",
+    "title": "선천성 갑상선기능저하증 환아 의료비 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "선천성대사이상 환자에게 의료비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "선천성 갑상선기능저하증 환아 의료비 지원",
+      "보건의료",
+      "충남",
+      "충청남도 아산시",
+      "상시",
+      "일반",
+      "청년",
+      "전체",
+      "선천성대사이상",
+      "환자에게",
+      "의료비",
+      "지원"
+    ],
+    "summary": "선천성대사이상 환자에게 의료비 지원",
+    "audience": "○ 선천성 갑상선기능저하증 진단 후 보건소에 환아 등록한 이후 치료를 위해 발생한 의료비 최대 25만원 지원",
+    "benefits": [
+      "선천성대사이상 환자에게 의료비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 보건소 : 관할 보건소 신청\n - 구비서류 : 신분증, 진단서, 진료비 영수증, 세부내역서, 처방전, 약제비영수증, 통장사본",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000135",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000135",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 선천성 갑상선기능저하증 진단 후 보건소에 환아 등록한 이후 치료를 위해 발생한 의료비 최대 25만원 지원",
+      "benefit": "선천성대사이상 환자에게 의료비 지원",
+      "application": "○ 방문 신청 \n - 보건소 : 관할 보건소 신청\n - 구비서류 : 신분증, 진단서, 진료비 영수증, 세부내역서, 처방전, 약제비영수증, 통장사본",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-부산물-비료-퇴비-구입지원",
+    "title": "부산물 비료(퇴비) 구입지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "부산",
+    "amount": "영농 농업인 등에게 가축분퇴비 무상 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "부산물 비료(퇴비) 구입지원",
+      "농림어업",
+      "부산",
+      "충청남도 아산시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "영농",
+      "농업인",
+      "등에게",
+      "가축분퇴비",
+      "무상"
+    ],
+    "summary": "영농 농업인 등에게 가축분퇴비 무상 지원",
+    "audience": "부산물 친환경 퇴비를 농협중앙회(지역농협 포함)와 협력으로 농가에 공급하여 밭,과수작물 밑거름으로 사용",
+    "benefits": [
+      "영농 농업인 등에게 가축분퇴비 무상 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 주민센터 : 농지소재지 읍면동 행정복지센터 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000142",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000142",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "부산물 친환경 퇴비를 농협중앙회(지역농협 포함)와 협력으로 농가에 공급하여 밭,과수작물 밑거름으로 사용",
+      "benefit": "영농 농업인 등에게 가축분퇴비 무상 지원",
+      "application": "○ 방문 신청 \n - 주민센터 : 농지소재지 읍면동 행정복지센터 신청",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-임산부-철분제-지원",
+    "title": "임산부 철분제 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "임산부에게 철분제 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "임산부 철분제 지원",
+      "복지",
+      "충남",
+      "충청남도 아산시",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "임산부에게",
+      "철분제",
+      "지원"
+    ],
+    "summary": "충청남도 아산시의 임산부 철분제 지원사업입니다. 지원 시기와 신청 방법은 공식 안내에서 확인하세요.",
+    "audience": "○ 임신 16주~분만 전까지 철분제 지원\n - 최대 5개월분, 소급지원 불가",
+    "benefits": [
+      "임산부에게 철분제 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청 \n - 정부24(맘편한 임신 원스톱서비스) : www.gov.kr\n○ 방문신청\n - 아산시 보건소 모자보건팀",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000169",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000169",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 임신 16주~분만 전까지 철분제 지원\n - 최대 5개월분, 소급지원 불가",
+      "benefit": "임산부에게 철분제 지원",
+      "application": "○ 온라인 신청 \n - 정부24(맘편한 임신 원스톱서비스) : www.gov.kr\n○ 방문신청\n - 아산시 보건소 모자보건팀",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-임산부-엽산제-지원",
+    "title": "임산부 엽산제 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "임산부에게 엽산제 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "임산부 엽산제 지원",
+      "복지",
+      "충남",
+      "충청남도 아산시",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "임산부에게",
+      "엽산제",
+      "지원"
+    ],
+    "summary": "충청남도 아산시의 임산부 엽산제 지원사업입니다. 지원 시기와 신청 방법은 공식 안내에서 확인하세요.",
+    "audience": "○ 임신 12주까지 엽산제 지원\n - 최대 2개월분, 소급지원 불가",
+    "benefits": [
+      "임산부에게 엽산제 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청 \n - 정부24(맘편한 임신 원스톱서비스) : www.gov.kr\n○ 방문신청\n - 아산시보건소 모자보건팀",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000173",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000173",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 임신 12주까지 엽산제 지원\n - 최대 2개월분, 소급지원 불가",
+      "benefit": "임산부에게 엽산제 지원",
+      "application": "○ 온라인 신청 \n - 정부24(맘편한 임신 원스톱서비스) : www.gov.kr\n○ 방문신청\n - 아산시보건소 모자보건팀",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-약국약제비-본인부담금-지원",
+    "title": "약국약제비 본인부담금 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 계룡시",
+    "region": "충남",
+    "amount": "약국약제비 본인부담금 일부 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "약국약제비 본인부담금 지원",
+      "보건의료",
+      "충남",
+      "충청남도 계룡시",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "복지",
+      "약국약제비",
+      "본인부담금",
+      "일부"
+    ],
+    "summary": "충청남도 계룡시의 약국약제비 본인부담금 지원사업입니다. 대상자와 감면 절차는 공식 안내에서 확인하세요.",
+    "audience": "○ 대상자가 계룡시 보건소 및 보건지소에서 진료 후 관내 약국을 이용한 경우, 약국약제비 본인부담금 중 70% 감면, 30% 본인부담[ 익월 약국에서 보건소로 70% 감면액 청구]",
+    "benefits": [
+      "약국약제비 본인부담금 일부 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "개인 신청 절차 없음 [익월 약국에서 보건소로 신청]",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/558000000104",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/558000000104",
+    "contact": "충청남도 계룡시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 대상자가 계룡시 보건소 및 보건지소에서 진료 후 관내 약국을 이용한 경우, 약국약제비 본인부담금 중 70% 감면, 30% 본인부담[ 익월 약국에서 보건소로 70% 감면액 청구]",
+      "benefit": "약국약제비 본인부담금 일부 지원",
+      "application": "개인 신청 절차 없음 [익월 약국에서 보건소로 신청]",
+      "contact": "충청남도 계룡시"
+    }
+  },
+  {
+    "slug": "gov24-체육시설-프로그램-이용-요금-감면",
+    "title": "체육시설 (프로그램) 이용 요금 감면",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시은평구시설관리공단",
+    "region": "서울",
+    "amount": "은평구민의 건강증진과 여가선용을 목적으로 생활체육프로그램 운영",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아, 어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "체육시설 (프로그램) 이용 요금 감면",
+      "청년",
+      "서울",
+      "서울특별시은평구시설관리공단",
+      "상시",
+      "부모/육아",
+      "어르신",
+      "장애인",
+      "아동",
+      "청소년",
+      "임신·출산·육아",
+      "복지"
+    ],
+    "summary": "은평구민의 건강증진과 여가선용을 목적으로 생활체육프로그램 운영",
+    "audience": "□ 체육프로그램 \n ○ 수 영 \n - 조기수영 외 13개 프로그램\n - 대상 : 성인, 청소년, 어린이, 유아\n\n ○ 생활체육 \n - 에어로빅 외 23개 프로그램\n - 대상 : 성인, 청소년\n\n ○ 대체육관 \n - 성인농구 외 8개 프로그램\n - 대상 : 성인, 청소년 , 어린이 \n\n ○ 헬스\n - 대상 : 성인, 청소년, 어린이\n\n ○ 어린이축구교실\n - 대상 : 유아, 어린이\n\n ○ 골프 \n - 골프교실외 2개 프로그램\n - 대상 : 성인, 청소넌\n\n ○ 테니스\n - 대상 : 성인, 청소년, 어린이\n \n ○ 기구필라테스 \n - 대상 : 누구나 \n\n ○ 은평다목적프로그램\n - 탁구강습 외 3개 프로그램 \n - 대상 : 성인, 청소년, 어린이\n\n□ 교육문화프로그램 \n ○ 피아노교실\n - 대상 : 성인, 청소년\n\n ○ 바이올린/기타교실\n - 대상 : 어린이 이상\n\n ○ 노래교실\n - 대상 : 성인\n\n ○ 유아스포츠단\n - 대상 : 유아(6~7세)",
+    "benefits": [
+      "은평구민의 건강증진과 여가선용을 목적으로 생활체육프로그램 운영"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문신청 : 은평구민체육센터\n\n○ 온라인 신청 : https://www.efmc.or.kr/fmcs/27(공동인증서 본인인증)\n\n온라인: https://www.efmc.or.kr/fmcs/27",
+    "officialUrl": "https://www.efmc.or.kr/fmcs/27",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00024100001",
+    "contact": "서울특별시은평구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "□ 체육프로그램 \n ○ 수 영 \n - 조기수영 외 13개 프로그램\n - 대상 : 성인, 청소년, 어린이, 유아\n\n ○ 생활체육 \n - 에어로빅 외 23개 프로그램\n - 대상 : 성인, 청소년\n\n ○ 대체육관 \n - 성인농구 외 8개 프로그램\n - 대상 : 성인, 청소년 , 어린이 \n\n ○ 헬스\n - 대상 : 성인, 청소년, 어린이\n\n ○ 어린이축구교실\n - 대상 : 유아, 어린이\n\n ○ 골프 \n - 골프교실외 2개 프로그램\n - 대상 : 성인, 청소넌\n\n ○ 테니스\n - 대상 : 성인, 청소년, 어린이\n \n ○ 기구필라테스 \n - 대상 : 누구나 \n\n ○ 은평다목적프로그램\n - 탁구강습 외 3개 프로그램 \n - 대상 : 성인, 청소년, 어린이\n\n□ 교육문화프로그램 \n ○ 피아노교실\n - 대상 : 성인, 청소년\n\n ○ 바이올린/기타교실\n - 대상 : 어린이 이상\n\n ○ 노래교실\n - 대상 : 성인\n\n ○ 유아스포츠단\n - 대상 : 유아(6~7세)",
+      "benefit": "은평구민의 건강증진과 여가선용을 목적으로 생활체육프로그램 운영",
+      "application": "○ 방문신청 : 은평구민체육센터\n\n○ 온라인 신청 : https://www.efmc.or.kr/fmcs/27(공동인증서 본인인증)\n\n온라인: https://www.efmc.or.kr/fmcs/27",
+      "contact": "서울특별시은평구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-문화시설-이용요금-감면-울산시립어린이테마파크",
+    "title": "문화시설 이용요금 감면(울산시립어린이테마파크)",
+    "category": "문화생활",
+    "source": "정부24 공공서비스 API",
+    "agency": "울산시설공단",
+    "region": "울산",
+    "amount": "단체 및 취약계층 등에게 울산시립어린이테마파크 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "문화시설 이용요금 감면(울산시립어린이테마파크)",
+      "문화생활",
+      "울산",
+      "울산시설공단",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "복지",
+      "단체",
+      "및",
+      "취약계층"
+    ],
+    "summary": "단체 및 취약계층 등에게 울산시립어린이테마파크 이용요금 감면(대상별 상이)",
+    "audience": "○ 사용료 감면\n - 국민기초생활 보장법 제2조에 따른 수급자 및 그 자녀\n - 한부모가족 지원법 제4조에 따른 한부모가족\n - 장애인복지법 제32조에 따라 등록된 장애인. 중증장애인의 경우 동반보호자 1명 포함\n - 국가유공자 등 예우 및 지원에 관한 법률 제4조에 따른 국가유공자 및 그 유족이나 가족\n - 만 3세 미만인 사람과 만 65세 이상인 사람\n - 단체이용객의 경우에는 어린이 7명당 인솔교사 1명의 입장료 면제\n - 그 밖에 시장이 필요하다고 인정하는 자\n\n○ 사용료 감액\n - 단체(20명 이상) 감액(33%) 및 단체관람 인솔교사 어린이 7명당 1명 무료\n - 울산광역시 다자녀사랑카드 소지자 및 동반가족 입장료 감액(50%)",
+    "benefits": [
+      "단체 및 취약계층 등에게 울산시립어린이테마파크 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 울산시립어린이테마파크",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025000003",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025000003",
+    "contact": "울산시설공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 사용료 감면\n - 국민기초생활 보장법 제2조에 따른 수급자 및 그 자녀\n - 한부모가족 지원법 제4조에 따른 한부모가족\n - 장애인복지법 제32조에 따라 등록된 장애인. 중증장애인의 경우 동반보호자 1명 포함\n - 국가유공자 등 예우 및 지원에 관한 법률 제4조에 따른 국가유공자 및 그 유족이나 가족\n - 만 3세 미만인 사람과 만 65세 이상인 사람\n - 단체이용객의 경우에는 어린이 7명당 인솔교사 1명의 입장료 면제\n - 그 밖에 시장이 필요하다고 인정하는 자\n\n○ 사용료 감액\n - 단체(20명 이상) 감액(33%) 및 단체관람 인솔교사 어린이 7명당 1명 무료\n - 울산광역시 다자녀사랑카드 소지자 및 동반가족 입장료 감액(50%)",
+      "benefit": "단체 및 취약계층 등에게 울산시립어린이테마파크 이용요금 감면(대상별 상이)",
+      "application": "○ 방문 신청\n - 기타 : 울산시립어린이테마파크",
+      "contact": "울산시설공단"
+    }
+  },
+  {
+    "slug": "gov24-기초수급자-임대보증금-및-임대료-할인",
+    "title": "기초수급자 임대보증금 및 임대료 할인",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "울산광역시도시공사",
+    "region": "울산",
+    "amount": "기초생활수급자에게 임대보증금 및 임대료 감면",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거·복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "기초수급자 임대보증금 및 임대료 할인",
+      "주거",
+      "울산",
+      "울산광역시도시공사",
+      "모집중",
+      "일반",
+      "전체",
+      "복지",
+      "기초생활수급자에게",
+      "임대보증금",
+      "및",
+      "임대료"
+    ],
+    "summary": "기초생활수급자에게 임대보증금 및 임대료 감면",
+    "audience": "○ 50년 공공임대주택 아파트 국민기초생활보장 수급자 임대보증금 및 임대료 감면\n - 「국민기초생활 보장법」에 의한 국민기초생활보장 수급자에게 임대보증금 및 임대료 감면",
+    "benefits": [
+      "기초생활수급자에게 임대보증금 및 임대료 감면"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 신청인 제출서류\n - 울산광역시도시공사 계약시 기초생활수급자 증명서 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025100001",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025100001",
+    "contact": "울산광역시도시공사",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 50년 공공임대주택 아파트 국민기초생활보장 수급자 임대보증금 및 임대료 감면\n - 「국민기초생활 보장법」에 의한 국민기초생활보장 수급자에게 임대보증금 및 임대료 감면",
+      "benefit": "기초생활수급자에게 임대보증금 및 임대료 감면",
+      "application": "○ 신청인 제출서류\n - 울산광역시도시공사 계약시 기초생활수급자 증명서 제출",
+      "contact": "울산광역시도시공사"
+    }
+  },
+  {
+    "slug": "gov24-부평국민체육센터-주차장-이용요금-감면",
+    "title": "[부평국민체육센터] 주차장 이용요금 감면",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천광역시부평구시설관리공단",
+    "region": "인천",
+    "amount": "부평국민체육센터 체육시설 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "[부평국민체육센터] 주차장 이용요금 감면",
+      "보건의료",
+      "인천",
+      "인천광역시부평구시설관리공단",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "복지",
+      "부평국민체육센터",
+      "체육시설",
+      "이용요금"
+    ],
+    "summary": "부평국민체육센터 체육시설 이용요금 감면(대상별 상이)",
+    "audience": "● 50% 감면 \n - 국가유공자(1급~7급) / 장애인 / 고엽제후유증환자 / 의사상자 / 5.18 민주유공자(부상자) / 보훈보상대상자(상이 1급~7급)\n ※ 비고사항 : 위의 관련 증서를 소지한 사람이 본인 소유의 자동차를 직접 운전하거나 동승한 경우\n - 병역명문가증과 부평구민임을 증명할 수 있는 신분증 소지자\n - 아이모아카드 소유자이거나 18세 이하의 자녀를 포함한 2자녀 이상 다자녀 가정의 가구원\n ※ 비고사항 : 증명서류(주민등록등본, 건강보험카드 등) 제시한 경우\n - 승용차부제 참여자동차(외부에 별 표지 부착)\n - 저공해자동차 운행(외부에 식별 표지 부착, 경유자동차 제외)\n - 환경친화적 자동차(전기자동차, 태양광자동차, 하이브리드 자동차, 수소전기자동차 등) / 다만, 전기자동차 충전을 위해 주차하는 경우 최초 1시간까지 주차요금 면제\n - 경로우대 혜택의 대상이 되는 65세 이상의 노인\n ※비고사항 : 65세 이상 노인이 운전하고, 신분증을 제시하는 경우\n\n● 60% 감면\n - 경형자동차 / 이륜자동차(오토바이 등)\n\n● 100% 감면\n - 모범납세자(성실납세증 표시 부착한 차량)\n - 시장이 발급한 자원봉사증을 소지한 사람(자원봉사 활동을 위해 주차한 사실이 확인된 경우)\n ※ 비고사항 : 1년간 감면",
+    "benefits": [
+      "부평국민체육센터 체육시설 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "● 방문신청\n - 현장에서 확인 후 감면적용",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026700011",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026700011",
+    "contact": "인천광역시부평구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "● 50% 감면 \n - 국가유공자(1급~7급) / 장애인 / 고엽제후유증환자 / 의사상자 / 5.18 민주유공자(부상자) / 보훈보상대상자(상이 1급~7급)\n ※ 비고사항 : 위의 관련 증서를 소지한 사람이 본인 소유의 자동차를 직접 운전하거나 동승한 경우\n - 병역명문가증과 부평구민임을 증명할 수 있는 신분증 소지자\n - 아이모아카드 소유자이거나 18세 이하의 자녀를 포함한 2자녀 이상 다자녀 가정의 가구원\n ※ 비고사항 : 증명서류(주민등록등본, 건강보험카드 등) 제시한 경우\n - 승용차부제 참여자동차(외부에 별 표지 부착)\n - 저공해자동차 운행(외부에 식별 표지 부착, 경유자동차 제외)\n - 환경친화적 자동차(전기자동차, 태양광자동차, 하이브리드 자동차, 수소전기자동차 등) / 다만, 전기자동차 충전을 위해 주차하는 경우 최초 1시간까지 주차요금 면제\n - 경로우대 혜택의 대상이 되는 65세 이상의 노인\n ※비고사항 : 65세 이상 노인이 운전하고, 신분증을 제시하는 경우\n\n● 60% 감면\n - 경형자동차 / 이륜자동차(오토바이 등)\n\n● 100% 감면\n - 모범납세자(성실납세증 표시 부착한 차량)\n - 시장이 발급한 자원봉사증을 소지한 사람(자원봉사 활동을 위해 주차한 사실이 확인된 경우)\n ※ 비고사항 : 1년간 감면",
+      "benefit": "부평국민체육센터 체육시설 이용요금 감면(대상별 상이)",
+      "application": "● 방문신청\n - 현장에서 확인 후 감면적용",
+      "contact": "인천광역시부평구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-장애인스포츠강좌이용권-다목적실내체육관",
+    "title": "장애인스포츠강좌이용권(다목적실내체육관)",
+    "category": "문화생활",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천광역시부평구시설관리공단",
+    "region": "인천",
+    "amount": "장애인에게 스포츠강좌 이용권 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "장애인스포츠강좌이용권(다목적실내체육관)",
+      "문화생활",
+      "인천",
+      "인천광역시부평구시설관리공단",
+      "상시",
+      "장애인",
+      "아동",
+      "복지",
+      "장애인에게",
+      "스포츠강좌",
+      "이용권",
+      "제공"
+    ],
+    "summary": "장애인에게 스포츠강좌 이용권 제공",
+    "audience": "-부평구 관내 장애인의 건전한 여가활동을 지원하여 삶의 질 향상과 스포츠 참여 기회를 확대\n- 배드민턴 프로그램",
+    "benefits": [
+      "장애인에게 스포츠강좌 이용권 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n -장애인스포츠강좌이용권: https://dvoucher.kspo.or.kr/main.do\n - 위 스포츠 강좌이용권 사이트 내 신청 및 온라인 결제\n\n온라인: https://dvoucher.kspo.or.kr/main.do",
+    "officialUrl": "https://dvoucher.kspo.or.kr/main.do",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026700012",
+    "contact": "인천광역시부평구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-부평구 관내 장애인의 건전한 여가활동을 지원하여 삶의 질 향상과 스포츠 참여 기회를 확대\n- 배드민턴 프로그램",
+      "benefit": "장애인에게 스포츠강좌 이용권 제공",
+      "application": "○ 온라인 신청\n -장애인스포츠강좌이용권: https://dvoucher.kspo.or.kr/main.do\n - 위 스포츠 강좌이용권 사이트 내 신청 및 온라인 결제\n\n온라인: https://dvoucher.kspo.or.kr/main.do",
+      "contact": "인천광역시부평구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-65세이상-노인-약제비-지원",
+    "title": "65세이상 노인 약제비 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 아산시",
+    "region": "충남",
+    "amount": "65세 이상 보건소 이용환자에게 약제비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "65세이상 노인 약제비 지원",
+      "보건의료",
+      "충남",
+      "충청남도 아산시",
+      "상시",
+      "어르신",
+      "아동",
+      "복지",
+      "65세",
+      "이상",
+      "보건소",
+      "이용환자에게"
+    ],
+    "summary": "65세 이상 보건소 이용환자에게 약제비 지원",
+    "audience": "○ 보건(지)소를 이용하는 65세 이상 환자에게 약제비 지원",
+    "benefits": [
+      "65세 이상 보건소 이용환자에게 약제비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 개인 신청절차 없음\n - 신청불요 : 보건(지)소 이용 후 진료비 결제시 본인부담금 면제, 의약분업 대상지역 환자 처방료 면제 및 본인부담금 최저정액 부담금 지원(1,000원)\n( ->진료 처방전으로 약국에서 조제한 이후 해당약국에서 1,000원씩 감면해주고 추후 약국에서 보건소로 청구함)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000175",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000175",
+    "contact": "충청남도 아산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 보건(지)소를 이용하는 65세 이상 환자에게 약제비 지원",
+      "benefit": "65세 이상 보건소 이용환자에게 약제비 지원",
+      "application": "○ 개인 신청절차 없음\n - 신청불요 : 보건(지)소 이용 후 진료비 결제시 본인부담금 면제, 의약분업 대상지역 환자 처방료 면제 및 본인부담금 최저정액 부담금 지원(1,000원)\n( ->진료 처방전으로 약국에서 조제한 이후 해당약국에서 1,000원씩 감면해주고 추후 약국에서 보건소로 청구함)",
+      "contact": "충청남도 아산시"
+    }
+  },
+  {
+    "slug": "gov24-치매-조호물품-제공",
+    "title": "치매 조호물품 제공",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청북도 증평군",
+    "region": "충북",
+    "amount": "치매환자에게 조호물품을 무상곱급하여 치매환자 및 가족의 경제적 부담을 경감",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "치매 조호물품 제공",
+      "보건의료",
+      "충북",
+      "충청북도 증평군",
+      "상시",
+      "어르신",
+      "복지",
+      "치매환자에게",
+      "조호물품을",
+      "무상곱급하여",
+      "치매환자",
+      "및"
+    ],
+    "summary": "치매환자에게 조호물품을 무상곱급하여 치매환자 및 가족의 경제적 부담을 경감",
+    "audience": "○ 치매환자의 상태에 따라 돌봄에 필요한 조호물품을 신청일로부터 최대 1년간 무상공급",
+    "benefits": [
+      "치매환자에게 조호물품을 무상곱급하여 치매환자 및 가족의 경제적 부담을 경감"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000120",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/557000000120",
+    "contact": "충청북도 증평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 치매환자의 상태에 따라 돌봄에 필요한 조호물품을 신청일로부터 최대 1년간 무상공급",
+      "benefit": "치매환자에게 조호물품을 무상곱급하여 치매환자 및 가족의 경제적 부담을 경감",
+      "application": "○ 방문 신청",
+      "contact": "충청북도 증평군"
+    }
+  },
+  {
+    "slug": "gov24-청년-면접용-정장-대여비-지원",
+    "title": "청년 면접용 정장 대여비 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 계룡시",
+    "region": "충남",
+    "amount": "지정된 정장 대여업체를 통해 3박 4일간 면접용 정장 무료 대여",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년·취업·사업",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "청년 면접용 정장 대여비 지원",
+      "청년",
+      "충남",
+      "충청남도 계룡시",
+      "상시",
+      "구직자",
+      "취업",
+      "사업",
+      "지정된",
+      "정장",
+      "대여업체를",
+      "통해"
+    ],
+    "summary": "지정된 정장 대여업체를 통해 3박 4일간 면접용 정장 무료 대여",
+    "audience": "지원내용 : 구직청년이 계룡시에 신청서를 제출 후 검토, 승인 후 접수증 교부, 지정된 정장 대여업체를 통해 3박 4일간 면접용 정장 무료 대여",
+    "benefits": [
+      "지정된 정장 대여업체를 통해 3박 4일간 면접용 정장 무료 대여"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온라인 신청 : 담당자 전화 후 이메일 신청\n방문 신청 : 계룡청년공간 소소마루 운영 시간 내 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/558000000302",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/558000000302",
+    "contact": "충청남도 계룡시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "지원내용 : 구직청년이 계룡시에 신청서를 제출 후 검토, 승인 후 접수증 교부, 지정된 정장 대여업체를 통해 3박 4일간 면접용 정장 무료 대여",
+      "benefit": "지정된 정장 대여업체를 통해 3박 4일간 면접용 정장 무료 대여",
+      "application": "온라인 신청 : 담당자 전화 후 이메일 신청\n방문 신청 : 계룡청년공간 소소마루 운영 시간 내 방문 신청",
+      "contact": "충청남도 계룡시"
+    }
+  },
+  {
+    "slug": "gov24-계룡시-제4기-청년정책네트워크-운영",
+    "title": "계룡시 제4기 청년정책네트워크 운영",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 계룡시",
+    "region": "충남",
+    "amount": "계룡시 청년정책 발굴을 위한 소모임 활동, 정책화를 위한 정책제안의 날 활동 진행",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년·취업·복지",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "계룡시 제4기 청년정책네트워크 운영",
+      "청년",
+      "충남",
+      "충청남도 계룡시",
+      "확인필요",
+      "취업",
+      "복지",
+      "계룡시",
+      "청년정책",
+      "발굴을",
+      "위한",
+      "소모임"
+    ],
+    "summary": "계룡시 청년정책 발굴을 위한 소모임 활동, 정책화를 위한 정책제안의 날 활동 진행",
+    "audience": "청년정책 발굴을 위한 소모임 활동 진행\n- (수시)일자리, 경제, 문화, 복지 등 관심 분야별 소모임으로 나누어 정책 조사, 사례 연구 등 정기 정책 제안 활동 준비\n정책 발표 및 정책화 제안을 위한 정책제안의 날 활동 운영\n- (연 6~8회) 정기 제안 활동을 진행하여 구성원 간 다양한 의견 청취와 아이디어 공유, 피드백 제공\n- 지역별 청년 간담회 등 참여하여 타 지역 청년들과의 정책 교류 추진",
+    "benefits": [
+      "계룡시 청년정책 발굴을 위한 소모임 활동, 정책화를 위한 정책제안의 날 활동 진행"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "계룡시 홈페이지 공지사항 게시",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/558000000303",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/558000000303",
+    "contact": "충청남도 계룡시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "청년정책 발굴을 위한 소모임 활동 진행\n- (수시)일자리, 경제, 문화, 복지 등 관심 분야별 소모임으로 나누어 정책 조사, 사례 연구 등 정기 정책 제안 활동 준비\n정책 발표 및 정책화 제안을 위한 정책제안의 날 활동 운영\n- (연 6~8회) 정기 제안 활동을 진행하여 구성원 간 다양한 의견 청취와 아이디어 공유, 피드백 제공\n- 지역별 청년 간담회 등 참여하여 타 지역 청년들과의 정책 교류 추진",
+      "benefit": "계룡시 청년정책 발굴을 위한 소모임 활동, 정책화를 위한 정책제안의 날 활동 진행",
+      "application": "계룡시 홈페이지 공지사항 게시",
+      "contact": "충청남도 계룡시"
+    }
+  },
+  {
+    "slug": "gov24-장애인주간이용시설-서비스-이용료-감면",
+    "title": "장애인주간이용시설 서비스 이용료 감면",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "울주군시설관리공단",
+    "region": null,
+    "amount": "기초생활수급자에게 서비스 이용요금 감면",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "unknown region"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인주간이용시설 서비스 이용료 감면",
+      "복지",
+      "null",
+      "울주군시설관리공단",
+      "상시",
+      "장애인",
+      "전체",
+      "기초생활수급자에게",
+      "서비스",
+      "이용요금",
+      "감면"
+    ],
+    "summary": "기초생활수급자에게 서비스 이용요금 감면",
+    "audience": "「국민기초생활 보장법」에 의한 국민기초생활보장 수급자 대상 이용료 감면",
+    "benefits": [
+      "기초생활수급자에게 서비스 이용요금 감면"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 수급자 증명서를 구비한 이용자",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025600005",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00025600005",
+    "contact": "울주군시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "「국민기초생활 보장법」에 의한 국민기초생활보장 수급자 대상 이용료 감면",
+      "benefit": "기초생활수급자에게 서비스 이용요금 감면",
+      "application": "○ 방문 신청\n - 기타 : 수급자 증명서를 구비한 이용자",
+      "contact": "울주군시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-도시철도-요금-면제-장애인",
+    "title": "도시철도 요금 면제(장애인)",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천교통공사",
+    "region": "인천",
+    "amount": "장애인 및 부양자에게 도시철도 무료 이용 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "도시철도 요금 면제(장애인)",
+      "복지",
+      "인천",
+      "인천교통공사",
+      "상시",
+      "장애인",
+      "전체",
+      "및",
+      "부양자에게",
+      "도시철도",
+      "무료",
+      "이용"
+    ],
+    "summary": "장애인 및 부양자에게 도시철도 무료 이용 지원",
+    "audience": "○ 장애인과 장애인을 부양하는 자의 경제적 부담을 줄이고 도시철도 이용 편의 제공 \n\n○ 도시철도 무료 이용",
+    "benefits": [
+      "장애인 및 부양자에게 도시철도 무료 이용 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 행정복지센터(동사무소) \n - 기타 : 신한은행\n \n \n○ 방문 신청 \n - 기타 : 발매기에 주민등록증 또는 운전면허증 인식 후 발급",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100001",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100001",
+    "contact": "인천교통공사",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 장애인과 장애인을 부양하는 자의 경제적 부담을 줄이고 도시철도 이용 편의 제공 \n\n○ 도시철도 무료 이용",
+      "benefit": "장애인 및 부양자에게 도시철도 무료 이용 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 행정복지센터(동사무소) \n - 기타 : 신한은행\n \n \n○ 방문 신청 \n - 기타 : 발매기에 주민등록증 또는 운전면허증 인식 후 발급",
+      "contact": "인천교통공사"
+    }
+  },
+  {
+    "slug": "gov24-도시철도-요금-감면-청소년",
+    "title": "도시철도 요금 감면(청소년)",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천교통공사",
+    "region": "인천",
+    "amount": "청소년에게 도시철도 이용요금 할인",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "도시철도 요금 감면(청소년)",
+      "청년",
+      "인천",
+      "인천교통공사",
+      "상시",
+      "일반",
+      "아동",
+      "청소년",
+      "복지",
+      "청소년에게",
+      "도시철도",
+      "이용요금"
+    ],
+    "summary": "청소년에게 도시철도 이용요금 할인",
+    "audience": "○ 도시철도 청소년 운임할인 \n - 기본운임 900원 \n - 교통카드 사용 시 해당",
+    "benefits": [
+      "청소년에게 도시철도 이용요금 할인"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 청소년 교통카드 구매 후 티머니 홈페이지에서 생년월일 등록",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100003",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100003",
+    "contact": "인천교통공사",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 도시철도 청소년 운임할인 \n - 기본운임 900원 \n - 교통카드 사용 시 해당",
+      "benefit": "청소년에게 도시철도 이용요금 할인",
+      "application": "○ 방문 신청\n - 기타 : 청소년 교통카드 구매 후 티머니 홈페이지에서 생년월일 등록",
+      "contact": "인천교통공사"
+    }
+  },
+  {
+    "slug": "gov24-도시철도-요금-감면-단체",
+    "title": "도시철도 요금 감면(단체)",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천교통공사",
+    "region": "인천",
+    "amount": "도시철도 단체 할인(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "도시철도 요금 감면(단체)",
+      "청년",
+      "인천",
+      "인천교통공사",
+      "상시",
+      "일반",
+      "아동",
+      "청소년",
+      "전체",
+      "도시철도",
+      "단체",
+      "할인(대상별"
+    ],
+    "summary": "도시철도 단체 할인(대상별 상이)",
+    "audience": "○ 도시철도 단체 할인 \n - 어린이 : 어린이운임에서 20% 할인\n - 청소년·학생 : 청소년운임에서 20% 할인\n - 어른 : 어른운임에서 20% 할인\n* 할인율 적용하여 산출한 1인당 운임이 기본운임에 미달한 때에는 기본운임 적용\n* 단체권 이용에 따른 운임 면제 기준 : 20명당 1명 운임 면제",
+    "benefits": [
+      "도시철도 단체 할인(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 고객안내센터에서 단체권 발급",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100004",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100004",
+    "contact": "인천교통공사",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 도시철도 단체 할인 \n - 어린이 : 어린이운임에서 20% 할인\n - 청소년·학생 : 청소년운임에서 20% 할인\n - 어른 : 어른운임에서 20% 할인\n* 할인율 적용하여 산출한 1인당 운임이 기본운임에 미달한 때에는 기본운임 적용\n* 단체권 이용에 따른 운임 면제 기준 : 20명당 1명 운임 면제",
+      "benefit": "도시철도 단체 할인(대상별 상이)",
+      "application": "○ 방문 신청\n - 기타 : 고객안내센터에서 단체권 발급",
+      "contact": "인천교통공사"
+    }
+  },
+  {
+    "slug": "gov24-도시철도-요금-감면-어린이",
+    "title": "도시철도 요금 감면(어린이)",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천교통공사",
+    "region": "인천",
+    "amount": "어린이에게 도시철도 이용요금 할인",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "도시철도 요금 감면(어린이)",
+      "교육",
+      "인천",
+      "인천교통공사",
+      "상시",
+      "일반",
+      "아동",
+      "전체",
+      "어린이에게",
+      "도시철도",
+      "이용요금",
+      "할인"
+    ],
+    "summary": "어린이에게 도시철도 이용요금 할인",
+    "audience": "○ 도시철도 어린이 할인승차 \n - 교통카드 : 기본운임 550원\n - 1회용교통카드 : 교통카드 운임과 동일(기본운임 550원)",
+    "benefits": [
+      "어린이에게 도시철도 이용요금 할인"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 어린이 교통카드 구매 후 티머니 홈페이지에서 생년월일 등록",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100005",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100005",
+    "contact": "인천교통공사",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 도시철도 어린이 할인승차 \n - 교통카드 : 기본운임 550원\n - 1회용교통카드 : 교통카드 운임과 동일(기본운임 550원)",
+      "benefit": "어린이에게 도시철도 이용요금 할인",
+      "application": "○ 방문 신청\n - 기타 : 어린이 교통카드 구매 후 티머니 홈페이지에서 생년월일 등록",
+      "contact": "인천교통공사"
+    }
+  },
+  {
+    "slug": "gov24-도시철도-요금-감면-조조할인",
+    "title": "도시철도 요금 감면(조조할인)",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천교통공사",
+    "region": "인천",
+    "amount": "조조 승차 시 기본운임 20%할인",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "도시철도 요금 감면(조조할인)",
+      "청년",
+      "인천",
+      "인천교통공사",
+      "모집중",
+      "일반",
+      "아동",
+      "청소년",
+      "전체",
+      "조조",
+      "승차",
+      "시"
+    ],
+    "summary": "조조 승차 시 기본운임 20%할인",
+    "audience": "○ 첫차 ~ 06:30이전 승차 시 선·후급교통카드 기본운임의 20% 할인 \n - 처음 승차하는 교통수단 기본운임만 할인되며 거리 추가운임 미적용 \n - 1회권, 정기권, 단체권 미적용 \n ㆍ조조할인 운임 : 일반(1,550→1,240원), 청소년(900원→720원), 어린이(550원→440원)",
+    "benefits": [
+      "조조 승차 시 기본운임 20%할인"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 개인 신청불필요 \n - 별도의 신청행위를 하지 않음",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100007",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100007",
+    "contact": "인천교통공사",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 첫차 ~ 06:30이전 승차 시 선·후급교통카드 기본운임의 20% 할인 \n - 처음 승차하는 교통수단 기본운임만 할인되며 거리 추가운임 미적용 \n - 1회권, 정기권, 단체권 미적용 \n ㆍ조조할인 운임 : 일반(1,550→1,240원), 청소년(900원→720원), 어린이(550원→440원)",
+      "benefit": "조조 승차 시 기본운임 20%할인",
+      "application": "○ 개인 신청불필요 \n - 별도의 신청행위를 하지 않음",
+      "contact": "인천교통공사"
+    }
+  },
+  {
+    "slug": "gov24-도시철도-요금-면제-노인",
+    "title": "도시철도 요금 면제(노인)",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천교통공사",
+    "region": "인천",
+    "amount": "만65세 이상 어르신에게 도시철도 무료 이용 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "도시철도 요금 면제(노인)",
+      "복지",
+      "인천",
+      "인천교통공사",
+      "상시",
+      "어르신",
+      "아동",
+      "만65세",
+      "이상",
+      "어르신에게",
+      "도시철도",
+      "무료"
+    ],
+    "summary": "만65세 이상 어르신에게 도시철도 무료 이용 지원",
+    "audience": "○ 노인 복지 지원 \n - 우대용교통카드 : 무임(100% 할인)",
+    "benefits": [
+      "만65세 이상 어르신에게 도시철도 무료 이용 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 행정복지센터(동사무소)\n - 기타 : 신한은행\n\n \n○ 방문 신청\n - 발매기에 주민등록증 또는 운전면허증 인식 후 발급",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100008",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100008",
+    "contact": "인천교통공사",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 노인 복지 지원 \n - 우대용교통카드 : 무임(100% 할인)",
+      "benefit": "만65세 이상 어르신에게 도시철도 무료 이용 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 행정복지센터(동사무소)\n - 기타 : 신한은행\n\n \n○ 방문 신청\n - 발매기에 주민등록증 또는 운전면허증 인식 후 발급",
+      "contact": "인천교통공사"
+    }
+  },
+  {
+    "slug": "gov24-귤현차량사업소-견학",
+    "title": "귤현차량사업소 견학",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천교통공사",
+    "region": "인천",
+    "amount": "유치원·학생, 일반인 대상으로 차량기지 견학기회 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "귤현차량사업소 견학",
+      "교육",
+      "인천",
+      "인천교통공사",
+      "상시",
+      "부모/육아",
+      "아동",
+      "청소년",
+      "임신·출산·육아",
+      "유치원·학생,",
+      "일반인",
+      "대상으로"
+    ],
+    "summary": "유치원·학생, 일반인 대상으로 차량기지 견학기회 제공",
+    "audience": "○ 차량기지 안전체험프로그램을 통해 도시철도에 대한 시민이해와 관심도 제고\n\n○ 전동차 안전체험 및 지하철 이용 에티켓 교육으로 선진 교통문화 정착 유도",
+    "benefits": [
+      "유치원·학생, 일반인 대상으로 차량기지 견학기회 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - 공사 공식홈페이지(www.ictr.or.kr) \"\"안전환경-안전체험프로그램\"\"에서 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100009",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100009",
+    "contact": "인천교통공사",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 차량기지 안전체험프로그램을 통해 도시철도에 대한 시민이해와 관심도 제고\n\n○ 전동차 안전체험 및 지하철 이용 에티켓 교육으로 선진 교통문화 정착 유도",
+      "benefit": "유치원·학생, 일반인 대상으로 차량기지 견학기회 제공",
+      "application": "○ 온라인 신청\n - 공사 공식홈페이지(www.ictr.or.kr) \"\"안전환경-안전체험프로그램\"\"에서 신청",
+      "contact": "인천교통공사"
+    }
+  },
+  {
+    "slug": "gov24-교통약자-이동지원",
+    "title": "교통약자 이동지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천교통공사",
+    "region": "인천",
+    "amount": "장애인, 어르신 등 교통약자에게 저렴한 비용으로 이동 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "교통약자 이동지원",
+      "보건의료",
+      "인천",
+      "인천교통공사",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "복지",
+      "장애인,",
+      "등",
+      "교통약자에게"
+    ],
+    "summary": "장애인, 어르신 등 교통약자에게 저렴한 비용으로 이동 지원",
+    "audience": "○ 저렴한 요금으로 맞춤형 이동수단(특별교통수단, 바우처 택시) 이용\n - 보행상 장애인 및 휠체어 이용 노약자는 특별교통수단 이용\n - 보행상 장애판정기준에 부합되면서 휠체어를 이용하지 않는 장애인은 바우처 택시 이용",
+    "benefits": [
+      "장애인, 어르신 등 교통약자에게 저렴한 비용으로 이동 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 기타\n - 이용 필요시 : 전화, 인터넷, 문자 활용 이용 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100010",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100010",
+    "contact": "인천교통공사",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 저렴한 요금으로 맞춤형 이동수단(특별교통수단, 바우처 택시) 이용\n - 보행상 장애인 및 휠체어 이용 노약자는 특별교통수단 이용\n - 보행상 장애판정기준에 부합되면서 휠체어를 이용하지 않는 장애인은 바우처 택시 이용",
+      "benefit": "장애인, 어르신 등 교통약자에게 저렴한 비용으로 이동 지원",
+      "application": "○ 기타\n - 이용 필요시 : 전화, 인터넷, 문자 활용 이용 신청",
+      "contact": "인천교통공사"
+    }
+  },
+  {
+    "slug": "gov24-매점-및-음료자판기-우선임대",
+    "title": "매점 및 음료자판기 우선임대",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천교통공사",
+    "region": "인천",
+    "amount": "인천지하철 역구내 매점 및 음료자판기 임대차계약 우선자격 부여",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "매점 및 음료자판기 우선임대",
+      "주거",
+      "인천",
+      "인천교통공사",
+      "모집중",
+      "어르신",
+      "장애인",
+      "복지",
+      "인천지하철",
+      "역구내",
+      "매점",
+      "및"
+    ],
+    "summary": "인천지하철 역구내 매점 및 음료자판기 임대차계약 우선자격 부여",
+    "audience": "인천지하철 역구내 매점 및 음료자판기 임대차계약 우선자격 부여",
+    "benefits": [
+      "인천지하철 역구내 매점 및 음료자판기 임대차계약 우선자격 부여"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 인천교통공사 홈페이지 모집공고를 참고후 직접 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100011",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100011",
+    "contact": "인천교통공사",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "인천지하철 역구내 매점 및 음료자판기 임대차계약 우선자격 부여",
+      "benefit": "인천지하철 역구내 매점 및 음료자판기 임대차계약 우선자격 부여",
+      "application": "○ 방문 신청\n - 기타 : 인천교통공사 홈페이지 모집공고를 참고후 직접 방문 신청",
+      "contact": "인천교통공사"
+    }
+  },
+  {
+    "slug": "gov24-도시철도-요금-면제-보훈보상대상자",
+    "title": "도시철도 요금 면제(보훈보상대상자)",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천교통공사",
+    "region": "인천",
+    "amount": "보훈보상대상자에게 도시철도 무료 이용 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "도시철도 요금 면제(보훈보상대상자)",
+      "복지",
+      "인천",
+      "인천교통공사",
+      "상시",
+      "일반",
+      "전체",
+      "보훈보상대상자에게",
+      "도시철도",
+      "무료",
+      "이용",
+      "지원"
+    ],
+    "summary": "보훈보상대상자에게 도시철도 무료 이용 지원",
+    "audience": "○ 보훈보상대자상자와 그를 부양하는 자의 경제적 부담을 줄이고 도시철도 이용 편의 제공 \n○ 도시철도 무료 이용",
+    "benefits": [
+      "보훈보상대상자에게 도시철도 무료 이용 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 발매기에 국가보훈등록증 인식 후 발급",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100012",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026100012",
+    "contact": "인천교통공사",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 보훈보상대자상자와 그를 부양하는 자의 경제적 부담을 줄이고 도시철도 이용 편의 제공 \n○ 도시철도 무료 이용",
+      "benefit": "보훈보상대상자에게 도시철도 무료 이용 지원",
+      "application": "○ 방문 신청 \n - 발매기에 국가보훈등록증 인식 후 발급",
+      "contact": "인천교통공사"
+    }
+  },
+  {
+    "slug": "gov24-청년창업-육성사업",
+    "title": "청년창업 육성사업",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "예비창업자에게 창업교육 및 초기창업자금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년·취업·사업",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "청년창업 육성사업",
+      "청년",
+      "충남",
+      "충청남도 보령시",
+      "확인필요",
+      "구직자",
+      "아동",
+      "취업",
+      "사업",
+      "예비창업자에게",
+      "창업교육",
+      "및"
+    ],
+    "summary": "예비창업자에게 창업교육 및 초기창업자금 지원",
+    "audience": "보령시에서 창업을 희망하는 예비 청년창업자에게 창업교육 및 초기창업자금 지원\n - 창업교육, 사업계획 수립, 엑셀러레이팅 등 초기창업 지원",
+    "benefits": [
+      "예비창업자에게 창업교육 및 초기창업자금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "이메일 신청 : 공고문에 게시된 이메일 주소로 사업 참여 희망 청년창업자 창업육성사업 신청서 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000141",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000141",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "보령시에서 창업을 희망하는 예비 청년창업자에게 창업교육 및 초기창업자금 지원\n - 창업교육, 사업계획 수립, 엑셀러레이팅 등 초기창업 지원",
+      "benefit": "예비창업자에게 창업교육 및 초기창업자금 지원",
+      "application": "이메일 신청 : 공고문에 게시된 이메일 주소로 사업 참여 희망 청년창업자 창업육성사업 신청서 제출",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-한센병환자-이동진료서비스",
+    "title": "한센병환자 이동진료서비스",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "한센병 대상자 및 지역주민을 위한 이동진료 서비스 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "한센병환자 이동진료서비스",
+      "보건의료",
+      "충남",
+      "충청남도 보령시",
+      "상시",
+      "일반",
+      "전체",
+      "복지",
+      "한센병",
+      "대상자",
+      "및",
+      "지역주민을"
+    ],
+    "summary": "한센병 대상자 및 지역주민을 위한 이동진료 서비스 지원",
+    "audience": "한국한센복지협회 이동진료로 보건소 내소 또는 가정방문을 통해 한센병 대상자 및 지역사회 주민 피부과 진료 실시",
+    "benefits": [
+      "한센병 대상자 및 지역주민을 위한 이동진료 서비스 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "진료 당일 보건소 방문 접수",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000109",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000109",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "한국한센복지협회 이동진료로 보건소 내소 또는 가정방문을 통해 한센병 대상자 및 지역사회 주민 피부과 진료 실시",
+      "benefit": "한센병 대상자 및 지역주민을 위한 이동진료 서비스 지원",
+      "application": "진료 당일 보건소 방문 접수",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-에이즈-치료비-지원",
+    "title": "에이즈 치료비 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "실명 등록된 HIV감염인 및 에이즈 환자 진료비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "에이즈 치료비 지원",
+      "보건의료",
+      "충남",
+      "충청남도 보령시",
+      "상시",
+      "일반",
+      "전체",
+      "실명",
+      "등록된",
+      "HIV감염인",
+      "및",
+      "에이즈"
+    ],
+    "summary": "실명 등록된 HIV감염인 및 에이즈 환자 진료비 지원",
+    "audience": "실명 등록된 HIV 감염인 및 에이즈 환자 본인부담금 진료비 지원",
+    "benefits": [
+      "실명 등록된 HIV감염인 및 에이즈 환자 진료비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "환자 본인 직접 청구 또는 진료 받은 해당 의료기관 대리 청구",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000110",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000110",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "실명 등록된 HIV 감염인 및 에이즈 환자 본인부담금 진료비 지원",
+      "benefit": "실명 등록된 HIV감염인 및 에이즈 환자 진료비 지원",
+      "application": "환자 본인 직접 청구 또는 진료 받은 해당 의료기관 대리 청구",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-한우농가-사양관리-지원",
+    "title": "한우농가 사양관리 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 계룡시",
+    "region": "충남",
+    "amount": "한우농가에 원형볏짚, 톱밥 등 구입비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "한우농가 사양관리 지원",
+      "농림어업",
+      "충남",
+      "충청남도 계룡시",
+      "상시",
+      "농어업인",
+      "전체",
+      "한우농가에",
+      "원형볏짚,",
+      "톱밥",
+      "등",
+      "구입비"
+    ],
+    "summary": "한우농가에 원형볏짚, 톱밥 등 구입비 지원",
+    "audience": "○ 한우농가 사양관리 개선을 위한 원형볏짚, 톱밥 등 구입비 지원",
+    "benefits": [
+      "한우농가에 원형볏짚, 톱밥 등 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 면, 동사무소 신청서 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/558000000101",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/558000000101",
+    "contact": "충청남도 계룡시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 한우농가 사양관리 개선을 위한 원형볏짚, 톱밥 등 구입비 지원",
+      "benefit": "한우농가에 원형볏짚, 톱밥 등 구입비 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 면, 동사무소 신청서 제출",
+      "contact": "충청남도 계룡시"
+    }
+  },
+  {
+    "slug": "gov24-재가정신질환자-약제비-지원",
+    "title": "재가정신질환자 약제비 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 계룡시",
+    "region": "충남",
+    "amount": "재가정신질환자에게 약제비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "재가정신질환자 약제비 지원",
+      "보건의료",
+      "충남",
+      "충청남도 계룡시",
+      "상시",
+      "일반",
+      "전체",
+      "재가정신질환자에게",
+      "약제비",
+      "지원"
+    ],
+    "summary": "충청남도 계룡시의 재가정신질환자 약제비 지원사업입니다. 지원 한도와 신청 방법은 공식 공고에서 확인하세요.",
+    "audience": "○ 정신의료기관 진료 및 치료비용(약제비포함) 월 3만원/연간 36만원 이내 지급",
+    "benefits": [
+      "재가정신질환자에게 약제비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 거주지 관할 보건소 방문(계룡시)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/558000000108",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/558000000108",
+    "contact": "충청남도 계룡시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 정신의료기관 진료 및 치료비용(약제비포함) 월 3만원/연간 36만원 이내 지급",
+      "benefit": "재가정신질환자에게 약제비 지원",
+      "application": "○ 방문 신청\n - 보건소 : 거주지 관할 보건소 방문(계룡시)",
+      "contact": "충청남도 계룡시"
+    }
+  },
+  {
+    "slug": "gov24-부평남부체육센터-체육시설-이용요금-감면",
+    "title": "[부평남부체육센터] 체육시설 이용요금 감면",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천광역시부평구시설관리공단",
+    "region": "인천",
+    "amount": "사회적 취약계층에게 체육시설 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "[부평남부체육센터] 체육시설 이용요금 감면",
+      "청년",
+      "인천",
+      "인천광역시부평구시설관리공단",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "청소년",
+      "복지",
+      "사회적",
+      "취약계층에게"
+    ],
+    "summary": "사회적 취약계층에게 체육시설 이용요금 감면(대상별 상이)",
+    "audience": "○ 부평남부체육센터 이용료 감면\n - 이용료 감면 50%\n · 「국민기초생활 보장법」에 의한 생계급여, 의료급여 수급자와 세대원\n · 「장애인복지법」에 의한 장애인 복지카드 소지자 \n · 「노인복지법」에 의한 만 65세 이상 노인\n · 「보훈관계 법령」에 의한 국가유공자증 소지자\n · 「병역명문가 조례」에 의한 예우대상자와 가족\n · 학교체육활동/방과후활동 대상자\n · 청소년지원센터체육활동/자립지원활동 대상자\n - 이용료 감면 30%\n · 막내가 만 15세 이하 2자녀 이상의 가정의 부모, 자녀\n - 이용료 감면 20%\n · 「인천광역시부평구 자원봉사활동 지원 조례」에 따라 부평구 자원봉사센터에 등록된 자원봉사활동 실적이 2,000시간 이상인 사람 또는 전년도 100시간 이상인 사람\n - 이용료 감면 10%\n · 12세 이상 55세 이하의 여성 (* 수영 종목만 해당)\n - 이용료 감면 5%\n · 그린카드 소지자\n\n※ 할인 대상 중 가장 높은률의 할인만 적용됨, 중복할인 불가\n※ 할인 시 각 대상 증명을 위한 서류 지참 필수\n※ 대관시설의 경우 감면 대상에서 제외",
+    "benefits": [
+      "사회적 취약계층에게 체육시설 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청 : www.bpss.or.kr/nbsc\nㆍ접수기간에 부평구시설관리공단 홈페이지 접속하여 신청(기초생활수급자, 65세 이상 노인, 장애인, 국가유공자, 여성, 다자녀 할인의 경우만 가능) \n\n○ 방문 신청\nㆍ 부평남부체육센터(인천광역시 부평구 남부체육센터로 40)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026700008",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026700008",
+    "contact": "인천광역시부평구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 부평남부체육센터 이용료 감면\n - 이용료 감면 50%\n · 「국민기초생활 보장법」에 의한 생계급여, 의료급여 수급자와 세대원\n · 「장애인복지법」에 의한 장애인 복지카드 소지자 \n · 「노인복지법」에 의한 만 65세 이상 노인\n · 「보훈관계 법령」에 의한 국가유공자증 소지자\n · 「병역명문가 조례」에 의한 예우대상자와 가족\n · 학교체육활동/방과후활동 대상자\n · 청소년지원센터체육활동/자립지원활동 대상자\n - 이용료 감면 30%\n · 막내가 만 15세 이하 2자녀 이상의 가정의 부모, 자녀\n - 이용료 감면 20%\n · 「인천광역시부평구 자원봉사활동 지원 조례」에 따라 부평구 자원봉사센터에 등록된 자원봉사활동 실적이 2,000시간 이상인 사람 또는 전년도 100시간 이상인 사람\n - 이용료 감면 10%\n · 12세 이상 55세 이하의 여성 (* 수영 종목만 해당)\n - 이용료 감면 5%\n · 그린카드 소지자\n\n※ 할인 대상 중 가장 높은률의 할인만 적용됨, 중복할인 불가\n※ 할인 시 각 대상 증명을 위한 서류 지참 필수\n※ 대관시설의 경우 감면 대상에서 제외",
+      "benefit": "사회적 취약계층에게 체육시설 이용요금 감면(대상별 상이)",
+      "application": "○ 온라인 신청 : www.bpss.or.kr/nbsc\nㆍ접수기간에 부평구시설관리공단 홈페이지 접속하여 신청(기초생활수급자, 65세 이상 노인, 장애인, 국가유공자, 여성, 다자녀 할인의 경우만 가능) \n\n○ 방문 신청\nㆍ 부평남부체육센터(인천광역시 부평구 남부체육센터로 40)",
+      "contact": "인천광역시부평구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-부평남부체육센터-주차장-이용요금-감면",
+    "title": "[부평남부체육센터] 주차장 이용요금 감면",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "인천광역시부평구시설관리공단",
+    "region": "인천",
+    "amount": "부평남부체육센터 부설주차장 이용요금 감면(대상별 상이)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "[부평남부체육센터] 주차장 이용요금 감면",
+      "보건의료",
+      "인천",
+      "인천광역시부평구시설관리공단",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "복지",
+      "부평남부체육센터",
+      "부설주차장",
+      "이용요금"
+    ],
+    "summary": "부평남부체육센터 부설주차장 이용요금 감면(대상별 상이)",
+    "audience": "● 50% 감면 \n - 국가유공자(1급~7급) / 장애인 / 고엽제후유증환자 / 의사상자 / 5.18 민주유공자(부상자) / 보훈보상대상자(상이 1급~7급)\n ※ 비고사항 : 위의 관련 증서를 소지한 사람이 본인 소유의 자동차를 직접 운전하거나 동승한 경우\n - 병역명문가증과 부평구민임을 증명할 수 있는 신분증 소지자\n - 아이모아카드 소유자이거나 18세 이하의 자녀를 포함한 2자녀 이상 다자녀 가정의 가구원\n ※ 비고사항 : 증명서류(주민등록등본, 건강보험카드 등) 제시한 경우\n - 승용차부제 참여자동차(외부에 별 표지 부착)\n - 저공해자동차 운행(외부에 식별 표지 부착, 경유자동차 제외)\n - 환경친화적 자동차(전기자동차, 태양광자동차, 하이브리드 자동차, 수소전기자동차 등) / 다만, 전기자동차 충전을 위해 주차하는 경우 최초 1시간까지 주차요금 면제\n - 경로우대 혜택의 대상이 되는 65세 이상의 노인\n ※비고사항 : 65세 이상 노인이 운전하고, 신분증을 제시하는 경우\n\n● 60% 감면\n - 경형자동차 / 이륜자동차(오토바이 등)\n\n● 100% 감면\n - 모범납세자(성실납세증 표시 부착한 차량)\n - 시장이 발급한 자원봉사증을 소지한 사람(자원봉사 활동을 위해 주차한 사실이 확인된 경우)\n ※ 비고사항 : 1년간 감면",
+    "benefits": [
+      "부평남부체육센터 부설주차장 이용요금 감면(대상별 상이)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "● 방문신청\n - 현장에서 확인 후 감면적용",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026700010",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00026700010",
+    "contact": "인천광역시부평구시설관리공단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "● 50% 감면 \n - 국가유공자(1급~7급) / 장애인 / 고엽제후유증환자 / 의사상자 / 5.18 민주유공자(부상자) / 보훈보상대상자(상이 1급~7급)\n ※ 비고사항 : 위의 관련 증서를 소지한 사람이 본인 소유의 자동차를 직접 운전하거나 동승한 경우\n - 병역명문가증과 부평구민임을 증명할 수 있는 신분증 소지자\n - 아이모아카드 소유자이거나 18세 이하의 자녀를 포함한 2자녀 이상 다자녀 가정의 가구원\n ※ 비고사항 : 증명서류(주민등록등본, 건강보험카드 등) 제시한 경우\n - 승용차부제 참여자동차(외부에 별 표지 부착)\n - 저공해자동차 운행(외부에 식별 표지 부착, 경유자동차 제외)\n - 환경친화적 자동차(전기자동차, 태양광자동차, 하이브리드 자동차, 수소전기자동차 등) / 다만, 전기자동차 충전을 위해 주차하는 경우 최초 1시간까지 주차요금 면제\n - 경로우대 혜택의 대상이 되는 65세 이상의 노인\n ※비고사항 : 65세 이상 노인이 운전하고, 신분증을 제시하는 경우\n\n● 60% 감면\n - 경형자동차 / 이륜자동차(오토바이 등)\n\n● 100% 감면\n - 모범납세자(성실납세증 표시 부착한 차량)\n - 시장이 발급한 자원봉사증을 소지한 사람(자원봉사 활동을 위해 주차한 사실이 확인된 경우)\n ※ 비고사항 : 1년간 감면",
+      "benefit": "부평남부체육센터 부설주차장 이용요금 감면(대상별 상이)",
+      "application": "● 방문신청\n - 현장에서 확인 후 감면적용",
+      "contact": "인천광역시부평구시설관리공단"
+    }
+  },
+  {
+    "slug": "gov24-참전유공자-배우자-복지수당",
+    "title": "참전유공자 배우자 복지수당",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "참전유공자의 미망인에게 복지수당 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "참전유공자 배우자 복지수당",
+      "복지",
+      "충남",
+      "충청남도 보령시",
+      "상시",
+      "일반",
+      "전체",
+      "참전유공자의",
+      "미망인에게",
+      "복지수당",
+      "지급"
+    ],
+    "summary": "참전유공자의 미망인에게 복지수당 지급",
+    "audience": "○ 참전유공자 미망인 복지수당 : 월 13만원",
+    "benefits": [
+      "참전유공자의 미망인에게 복지수당 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 거주지 관할 읍면동 주민센터에 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000105",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000105",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 참전유공자 미망인 복지수당 : 월 13만원",
+      "benefit": "참전유공자의 미망인에게 복지수당 지급",
+      "application": "○ 방문 신청\n - 주민센터 : 거주지 관할 읍면동 주민센터에 방문 신청",
+      "contact": "충청남도 보령시"
+    }
+  },
+  {
+    "slug": "gov24-참전명예수당",
+    "title": "참전명예수당",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "충청남도 보령시",
+    "region": "충남",
+    "amount": "참전유공자에게 참전명예수당 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "참전명예수당",
+      "복지",
+      "충남",
+      "충청남도 보령시",
+      "상시",
+      "일반",
+      "전체",
+      "참전유공자에게",
+      "지원"
+    ],
+    "summary": "충청남도 보령시의 참전명예수당 지원사업입니다. 지급 대상과 신청 방법은 공식 공고에서 확인하세요.",
+    "audience": "○ 참전명예수당 : 월 30만원 지원",
+    "benefits": [
+      "참전유공자에게 참전명예수당 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 거주지 관할 읍면동 주민센터에 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000136",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/451000000136",
+    "contact": "충청남도 보령시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 참전명예수당 : 월 30만원 지원",
+      "benefit": "참전유공자에게 참전명예수당 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 거주지 관할 읍면동 주민센터에 방문 신청",
+      "contact": "충청남도 보령시"
+    }
+  }
+];
+
+policies.push(...gov24PromotionPoliciesBatch4);
+
 policies.push(...welfareApiPolicies);
 policies.push(...localWelfareApiPolicies);
 policies.push(...publicServiceApiPolicies);
