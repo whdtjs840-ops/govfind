@@ -3015,6 +3015,36 @@ dd {
   display: none;
 }
 
+.active-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.active-filter-chips[hidden] {
+  display: none;
+}
+
+.active-filter-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 10px;
+  border: 1px solid rgba(37, 99, 235, 0.22);
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1e40af;
+  font-size: 0.88rem;
+  font-weight: 900;
+}
+
+.active-filter-chip:hover,
+.active-filter-chip:focus {
+  border-color: var(--brand);
+  background: #dbeafe;
+}
+
 .quick-check-box {
   display: grid;
   gap: 14px;
