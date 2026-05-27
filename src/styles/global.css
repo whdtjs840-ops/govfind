@@ -674,6 +674,11 @@ dd {
   width: min(920px, calc(100% - 40px));
 }
 
+.policy-doc-head .doc-wrap,
+.policy-doc-section .doc-wrap {
+  width: min(1180px, calc(100% - 40px));
+}
+
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
@@ -720,13 +725,15 @@ dd {
 
 .policy-doc-section .doc-wrap {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 280px;
-  gap: 28px;
+  grid-template-columns: minmax(0, 760px) minmax(280px, 320px);
+  justify-content: space-between;
+  gap: 40px;
   align-items: start;
 }
 
 .policy-doc {
   display: grid;
+  min-width: 0;
   gap: 26px;
 }
 
@@ -796,12 +803,18 @@ dd {
   position: sticky;
   top: 92px;
   display: grid;
+  min-width: 0;
   gap: 18px;
 }
 
 .doc-side-card {
   display: grid;
   gap: 16px;
+}
+
+.doc-side-card h2 {
+  font-size: 1.25rem;
+  line-height: 1.25;
 }
 
 .side-policy-list {

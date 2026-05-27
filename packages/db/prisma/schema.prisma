@@ -42,12 +42,30 @@ model Policy {
   updatedAt          DateTime @updatedAt
 
   corrections PolicyCorrectionRequest[]
+  rawItems    SourceRawItem[]
 
   @@unique([sourceSystem, sourceExternalId])
   @@index([category])
   @@index([applyStatus])
   @@index([agencyName])
   @@index([canonicalKey])
+}
+
+model SourceRawItem {
+  id           String   @id @default(cuid())
+  sourceName   String
+  sourceItemId String
+  payload      Json
+  payloadHash  String
+  fetchedAt    DateTime
+  policyId     String?
+  policy       Policy?  @relation(fields: [policyId], references: [id])
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@unique([sourceName, sourceItemId])
+  @@index([payloadHash])
+  @@index([fetchedAt])
 }
 
 model PolicyCorrectionRequest {

@@ -3,7 +3,14 @@ import type { SourceAdapter } from "./types";
 
 export const bokjiroCentralAdapter: SourceAdapter = {
   ...gov24Adapter,
+  sourceName: "bokjiro-central",
   sourceSystem: "bokjiro-central",
+  async fetchList() {
+    return [];
+  },
+  async fetchDetail(raw) {
+    return raw;
+  },
   normalize(raw) {
     return { ...gov24Adapter.normalize(raw), sourceSystem: "bokjiro-central", category: String(raw.category ?? "복지") };
   }

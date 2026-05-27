@@ -1,19 +1,17 @@
 import { policies } from "../data/policies";
-import { dedupePolicies, isSearchOnlyPolicy } from "../utils/policyUtils";
+import { getDisplayRegion, getDisplayStatus, getPublicPolicies } from "../utils/policyUtils";
 import { sourceLabel } from "../utils/sourceNames";
 
 export function GET() {
-  const { canonical } = dedupePolicies(policies);
-  const items = canonical
-    .filter((policy) => !isSearchOnlyPolicy(policy))
+  const items = getPublicPolicies(policies)
     .map((policy) => ({
       id: policy.slug,
       title: policy.title,
       category: policy.category,
-      region: policy.region,
+      region: getDisplayRegion(policy),
       source: sourceLabel(policy.source),
       agency: policy.agency,
-      status: policy.status,
+      status: getDisplayStatus(policy),
       dday: policy.dday,
       updatedAt: policy.updatedAt,
       applyOnline: policy.applyOnline,
@@ -23,7 +21,7 @@ export function GET() {
       searchText: [
         policy.title,
         policy.category,
-        policy.region,
+        getDisplayRegion(policy),
         sourceLabel(policy.source),
         policy.agency,
         policy.targetGroup,

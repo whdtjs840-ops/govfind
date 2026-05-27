@@ -9,8 +9,14 @@ export type NormalizedPolicy = PolicyDetail & {
 };
 
 export type SourceAdapter = {
+  sourceName: SourceSystem;
   sourceSystem: SourceSystem;
-  fetchList(): Promise<RawPolicy[]>;
+  fetchList(options?: SourceFetchOptions): Promise<RawPolicy[]>;
   fetchDetail(raw: RawPolicy): Promise<RawPolicy>;
   normalize(raw: RawPolicy): NormalizedPolicy;
+};
+
+export type SourceFetchOptions = {
+  page?: number;
+  perPage?: number;
 };

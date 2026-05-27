@@ -3,7 +3,17 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { ExternalLink } from "@lucide/astro";
 import { policies } from "../../data/policies";
 import { sourceLabel } from "../../utils/sourceNames";
-import { cleanSummary, deadlineBasisText, deadlineDisplay, dedupePolicies, isSearchOnlyPolicy } from "../../utils/policyUtils";
+import {
+  cleanSummary,
+  deadlineBasisText,
+  deadlineDisplay,
+  dedupePolicies,
+  getDisplayRegion,
+  getDisplayStatus,
+  isDeadlineSoonPolicy,
+  isSearchOnlyPolicy,
+  shouldRequireOfficialConfirmation
+} from "../../utils/policyUtils";
 
 export function getStaticPaths() {
   return policies.map((policy) => ({ params: { slug: policy.slug }, props: { policy } }));
@@ -19,6 +29,9 @@ const detailApply = apiDetails?.application || policy.apply;
 const detailCriteria = apiDetails?.criteria || "";
 const deadlineLabel = deadlineDisplay(policy);
 const deadlineBasis = deadlineBasisText(policy);
+const displayStatus = getDisplayStatus(policy);
+const displayRegion = getDisplayRegion(policy);
+const showOfficialConfirmation = shouldRequireOfficialConfirmation(policy);
 const sourceAdapter =
   policy.source.includes("정부24") ? "gov24/v3 serviceList·serviceDetail" :
   policy.source.includes("복지로") || policy.source.includes("복지") ? "NationalWelfare V001" :
@@ -27,7 +40,7 @@ const sourceAdapter =
 const sourceName = sourceLabel(policy.source);
 const sourceWithAgency = sourceName === policy.agency ? `${sourceName} 안내` : `${sourceName}와 ${policy.agency} 안내`;
 const relatedPolicies = policies
-  .filter((item) => !isSearchOnlyPolicy(item) && item.slug !== policy.slug && (item.category === policy.category || item.region === policy.region || item.tags.some((tag) => policy.tags.includes(tag))))
+  .filter((item) => !isSearchOnlyPolicy(item) && item.slug !== policy.slug && (item.category === policy.category || (policy.region && item.region === policy.region) || item.tags.some((tag) => policy.tags.includes(tag))))
   .slice(0, 4);
 const comparisonRows = relatedPolicies.slice(0, 3);
 
@@ -55,7 +68,7 @@ const categorySlug =
   "startup";
 const quickCheckItems = [
   { label: "대상", value: policy.targetGroup || targetLines[0] || "공식 신청처 확인 필요" },
-  { label: "지역", value: policy.region },
+  { label: "지역", value: displayRegion },
   { label: "신청기간", value: `${policy.deadline} · ${deadlineLabel}` },
   { label: "지원내용", value: cleanSummary(policy.amount || benefitLines[0] || "공식 신청처 확인 필요") },
   { label: "신청방식", value: policy.applyOnline ? "온라인 신청 가능" : "공식 신청처 확인 필요" },
@@ -83,7 +96,7 @@ const applyPath = [
 
       <div class="policy-doc-title">
         <div class="policy-status-row">
-          <span class={policy.status === "마감임박" ? "badge deadline" : "badge warn"}>{policy.status}</span>
+          <span class={isDeadlineSoonPolicy(policy) ? "badge deadline" : "badge warn"}>{displayStatus}</span>
           <span class="badge">{policy.category}</span>
           <span class="badge soft">{deadlineLabel}</span>
           <span class="badge soft">{sourceLabel(policy.source)}</span>
@@ -99,6 +112,12 @@ const applyPath = [
         <strong>신청 전 안내</strong>
         <span>GovFind는 자격을 단정하지 않습니다. 대상, 기간, 서류를 빠르게 확인한 뒤 최종 신청은 공식 기관에서 진행하세요.</span>
       </div>
+      {showOfficialConfirmation && (
+        <div class="doc-safety-note" role="note">
+          <strong>공식 확인 필요</strong>
+          <span>신청기간과 자격은 공식 공고에서 확인하세요.</span>
+        </div>
+      )}
 
       <section class="quick-check-box" aria-label="신청 전 빠른 확인">
         <div class="quick-check-head">
@@ -151,7 +170,7 @@ const applyPath = [
           <dl class="doc-info-table">
             <div><dt>분류</dt><dd>{policy.category}</dd></div>
             <div><dt>담당부처</dt><dd>{policy.agency}</dd></div>
-            <div><dt>지역</dt><dd>{policy.region}</dd></div>
+            <div><dt>지역</dt><dd>{displayRegion}</dd></div>
             <div><dt>신청기간</dt><dd>{policy.deadline} <strong>{deadlineLabel}</strong></dd></div>
             <div><dt>지원규모</dt><dd>{policy.amount}</dd></div>
             <div><dt>안내처</dt><dd>{sourceLabel(policy.source)}</dd></div>
@@ -278,7 +297,7 @@ const applyPath = [
                   <tr>
                     <td><strong>{policy.title}</strong></td>
                     <td>{policy.category}</td>
-                    <td>{policy.region}</td>
+                    <td>{displayRegion}</td>
                     <td>{policy.deadline} · {deadlineLabel}</td>
                     <td><a href={policy.officialUrl} target="_blank" rel="noopener noreferrer">공식 신청처</a></td>
                   </tr>

@@ -1,4 +1,5 @@
 import type { Policy } from "../data/policies";
+import { sourceLabel } from "./sourceNames";
 
 const summaryLimit = 132;
 const searchOnlySlugs = new Set([
@@ -38,9 +39,9 @@ export function policySearchText(policy: Policy) {
   return [
     policy.title,
     policy.category,
-    policy.source,
+    sourceLabel(policy.source),
     policy.agency,
-    policy.region,
+    getDisplayRegion(policy),
     policy.lifeStage,
     policy.targetGroup,
     policy.income,
@@ -54,10 +55,166 @@ export function policySearchText(policy: Policy) {
   ].join(" ");
 }
 
+export type PolicyFilters = {
+  q?: string;
+  category?: string;
+  source?: string;
+  status?: string;
+  region?: string;
+  online?: boolean;
+};
+
+export type PolicySort = "recommended" | "deadline" | "popular" | "online" | "updated";
+
+export function getPublicPolicies(items: Policy[]) {
+  const { canonical } = dedupePolicies(items);
+  return canonical.filter((policy) => !isSearchOnlyPolicy(policy));
+}
+
+export const officialCheckLabel = "공식 공고 확인";
+
+export function getDisplayStatus(policy: Pick<Policy, "status" | "statusLabel">) {
+  if (policy.statusLabel) return policy.statusLabel;
+  if (policy.status === "확인필요") return officialCheckLabel;
+  return policy.status;
+}
+
+export function getDisplayRegion(policy: Pick<Policy, "region" | "regionLabel">) {
+  return policy.regionLabel ?? policy.region ?? officialCheckLabel;
+}
+
+export function hasKnownStatus(policy: Pick<Policy, "statusConfidence" | "publishPolicy">) {
+  if (policy.statusConfidence === "unknown") return false;
+  if (policy.publishPolicy?.includeInStatusFilters === false) return false;
+  return true;
+}
+
 export function ddayNumber(policy: Pick<Policy, "dday">) {
   if (policy.dday === "D-Day") return 0;
   const match = policy.dday.match(/^D-(\d{1,3})$/);
   return match ? Number(match[1]) : null;
+}
+
+export function hasKnownDate(policy: Pick<Policy, "dateConfidence" | "publishPolicy" | "dday" | "endDate">) {
+  if (policy.dateConfidence === "unknown") return false;
+  if (policy.publishPolicy?.includeInDeadlineSort === false || policy.publishPolicy?.showDday === false) return false;
+  if (policy.endDate === null) return false;
+  if (policy.endDate) {
+    const parsed = new Date(`${policy.endDate}T00:00:00+09:00`);
+    if (Number.isNaN(parsed.getTime())) return false;
+  }
+  return ddayNumber(policy) !== null;
+}
+
+export function shouldShowDday(policy: Pick<Policy, "dateConfidence" | "publishPolicy" | "dday" | "endDate">) {
+  if (policy.publishPolicy?.showDday === false) return false;
+  return hasKnownDate(policy);
+}
+
+export function shouldIncludeInDeadlineSort(policy: Pick<Policy, "dateConfidence" | "publishPolicy" | "dday" | "endDate">) {
+  if (policy.publishPolicy?.includeInDeadlineSort === false) return false;
+  return hasKnownDate(policy);
+}
+
+export function shouldIncludeInStatusFilter(policy: Pick<Policy, "status" | "statusConfidence" | "publishPolicy" | "dday" | "dateConfidence" | "endDate">, status = "") {
+  const normalizedStatus = normalizeStatusFilter(status);
+  if (!normalizedStatus) return true;
+  if (!hasKnownStatus(policy)) return false;
+  if (normalizedStatus === "마감임박") return isDeadlineSoonPolicy(policy);
+  return policy.status === normalizedStatus;
+}
+
+export function shouldIncludeInRegionPage(policy: Pick<Policy, "region" | "regionLabel" | "publishPolicy">) {
+  if (policy.publishPolicy?.includeInRegionPage === false) return false;
+  if (!policy.region) return false;
+  if (policy.regionLabel === officialCheckLabel) return false;
+  return true;
+}
+
+export function shouldRequireOfficialConfirmation(policy: Pick<Policy, "requiresOfficialConfirmation" | "publishPolicy">) {
+  return Boolean(policy.requiresOfficialConfirmation || policy.publishPolicy?.requiresOfficialConfirmation);
+}
+
+export function isDeadlineSoonPolicy(policy: Pick<Policy, "status" | "dday" | "dateConfidence" | "statusConfidence" | "publishPolicy" | "endDate">) {
+  if (!shouldIncludeInDeadlineSort(policy)) return false;
+  if (!hasKnownStatus(policy)) return false;
+  const days = ddayNumber(policy);
+  return policy.status === "마감임박" && days !== null && days >= 0 && days <= 14;
+}
+
+export function getPolicyCounts(items: Policy[]) {
+  const publicPolicies = getPublicPolicies(items);
+  return {
+    all: publicPolicies.length,
+    deadline: publicPolicies.filter(isDeadlineSoonPolicy).length,
+    byCategory: Object.fromEntries(
+      [...new Set(publicPolicies.map((policy) => policy.category))]
+        .sort((a, b) => a.localeCompare(b, "ko-KR"))
+        .map((category) => [category, publicPolicies.filter((policy) => policy.category === category).length])
+    ) as Record<string, number>,
+    bySource: Object.fromEntries(
+      [...new Set(publicPolicies.map((policy) => sourceLabel(policy.source)))]
+        .sort((a, b) => a.localeCompare(b, "ko-KR"))
+        .map((source) => [source, publicPolicies.filter((policy) => sourceLabel(policy.source) === source).length])
+    ) as Record<string, number>
+  };
+}
+
+function tokenizeQuery(value = "") {
+  return value
+    .split(/\s+/)
+    .map((token) => token.trim())
+    .filter(Boolean);
+}
+
+function normalizeStatusFilter(value = "") {
+  if (["deadlineSoon", "closingSoon", "closing"].includes(value)) return "마감임박";
+  return value;
+}
+
+function isNationwideRegion(value = "") {
+  return value === "전국" || value.includes("전국");
+}
+
+export function policyMatchesFilters(policy: Policy, filters: PolicyFilters) {
+  const queryTokens = tokenizeQuery(filters.q);
+  if (queryTokens.length) {
+    const searchable = normalizeText(policySearchText(policy));
+    const matchesAllTokens = queryTokens.every((token) => searchable.includes(normalizeText(token)));
+    if (!matchesAllTokens) return false;
+  }
+
+  if (filters.category && policy.category !== filters.category) return false;
+
+  if (filters.source && sourceLabel(policy.source) !== sourceLabel(filters.source)) return false;
+
+  const status = normalizeStatusFilter(filters.status);
+  if (status) {
+    if (!shouldIncludeInStatusFilter(policy, status)) return false;
+  }
+
+  if (filters.region && filters.region !== "전체") {
+    if (!shouldIncludeInRegionPage(policy)) return false;
+    const policyRegion = policy.region ?? "";
+    if (policyRegion !== filters.region && !isNationwideRegion(policyRegion)) return false;
+  }
+
+  if (filters.online && !policy.applyOnline) return false;
+
+  return true;
+}
+
+export function filterPolicies(items: Policy[], filters: PolicyFilters) {
+  return items.filter((policy) => policyMatchesFilters(policy, filters));
+}
+
+export function sortPolicies(items: Policy[], sort: PolicySort = "recommended") {
+  const sorted = [...items];
+  if (sort === "deadline") return sorted.sort((a, b) => (shouldIncludeInDeadlineSort(a) ? ddayNumber(a) ?? 999 : 9999) - (shouldIncludeInDeadlineSort(b) ? ddayNumber(b) ?? 999 : 9999));
+  if (sort === "popular") return sorted.sort((a, b) => b.views - a.views);
+  if (sort === "online") return sorted.sort((a, b) => Number(b.applyOnline) - Number(a.applyOnline));
+  if (sort === "updated") return sorted.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
+  return sorted;
 }
 
 export function hasVariableDeadline(policy: Pick<Policy, "deadline" | "dday">) {
@@ -65,7 +222,11 @@ export function hasVariableDeadline(policy: Pick<Policy, "deadline" | "dday">) {
   return /지자체|지역별|기관별|별도|확인|상시|예정|접수중|모집중/.test(text) && ddayNumber(policy) === null;
 }
 
-export function deadlineDisplay(policy: Pick<Policy, "deadline" | "dday">) {
+export function deadlineDisplay(policy: Pick<Policy, "deadline" | "dday" | "dateConfidence" | "publishPolicy" | "endDate" | "applicationPeriodLabel">) {
+  if (policy.applicationPeriodLabel) return policy.applicationPeriodLabel;
+  if (!shouldShowDday(policy)) {
+    if (/확인|별도|공고/.test(policy.deadline) || policy.dateConfidence === "unknown") return officialCheckLabel;
+  }
   if (/지자체|지역별|기관별/.test(policy.deadline)) return "지역별 상이";
   if (/확인|별도/.test(policy.deadline) && ddayNumber(policy) === null) return "공식 확인 필요";
   return policy.dday;
@@ -86,14 +247,15 @@ export function urgentPolicies(items: Policy[], limit = 14) {
   return items
     .filter((policy) => {
       const days = ddayNumber(policy);
-      return policy.status === "마감임박" && days !== null && days >= 0 && days <= limit;
+      return isDeadlineSoonPolicy(policy) && days !== null && days <= limit;
     })
-    .sort((a, b) => (ddayNumber(a) ?? 999) - (ddayNumber(b) ?? 999));
+    .sort((a, b) => (shouldIncludeInDeadlineSort(a) ? ddayNumber(a) ?? 999 : 9999) - (shouldIncludeInDeadlineSort(b) ? ddayNumber(b) ?? 999 : 9999));
 }
 
 export function upcomingPolicies(items: Policy[]) {
   return items
     .filter((policy) => {
+      if (!shouldIncludeInDeadlineSort(policy)) return false;
       const days = ddayNumber(policy);
       return days !== null && days > 14;
     })

@@ -1,89 +1,72 @@
+import { getSourceAdapter } from "../adapters/registry";
 import { prisma } from "../db";
-import { gov24Adapter } from "../adapters/gov24";
-import { bokjiroCentralAdapter } from "../adapters/bokjiro-central";
-import { bokjiroLocalAdapter } from "../adapters/bokjiro-local";
-import { kstartupAdapter } from "../adapters/kstartup";
-import { youthAdapter } from "../adapters/youth";
-import type { NormalizedPolicy, SourceAdapter } from "../adapters/types";
 import { indexPolicies } from "../search/meili";
+import { printSummary, runSourceSync } from "./sync-core";
 
-const adapters: SourceAdapter[] = [gov24Adapter, bokjiroCentralAdapter, bokjiroLocalAdapter, kstartupAdapter, youthAdapter];
-
-function canonicalKey(item: NormalizedPolicy) {
-  return [item.title, item.agencyName, item.officialUrl ?? "", item.sourceSystem].join("::").toLowerCase();
+function argValue(name: string) {
+  const prefix = `--${name}=`;
+  const found = process.argv.find((item) => item.startsWith(prefix));
+  return found ? found.slice(prefix.length) : undefined;
 }
 
-function dedupe(items: NormalizedPolicy[]) {
-  const map = new Map<string, NormalizedPolicy>();
-  for (const item of items) {
-    const key = canonicalKey(item);
-    const previous = map.get(key);
-    if (!previous) {
-      map.set(key, { ...item, canonicalKey: key });
-      continue;
-    }
-    const previousScore = Number(Boolean(previous.officialUrl)) + Number(Boolean(previous.applyEndAt)) + previous.eligibilitySummary.length / 1000;
-    const nextScore = Number(Boolean(item.officialUrl)) + Number(Boolean(item.applyEndAt)) + item.eligibilitySummary.length / 1000;
-    if (nextScore > previousScore) map.set(key, { ...item, canonicalKey: key });
-  }
-  return [...map.values()];
-}
-
-async function collectFromAdapter(adapter: SourceAdapter) {
-  const list = await adapter.fetchList();
-  const detailed = await Promise.all(list.map((raw) => adapter.fetchDetail(raw)));
-  return detailed.map((raw) => adapter.normalize(raw));
-}
-
-async function upsert(items: NormalizedPolicy[]) {
-  for (const item of items) {
-    await prisma.policy.upsert({
-      where: {
-        sourceSystem_sourceExternalId: {
-          sourceSystem: item.sourceSystem,
-          sourceExternalId: item.sourceExternalId
-        }
-      },
-      create: {
-        ...item,
-        applyStartAt: item.applyStartAt ? new Date(item.applyStartAt) : null,
-        applyEndAt: item.applyEndAt ? new Date(item.applyEndAt) : null,
-        lastCheckedAt: item.lastCheckedAt ? new Date(item.lastCheckedAt) : null,
-        faqJson: { items: item.faq },
-        rawJson: item.rawJson as any
-      },
-      update: {
-        title: item.title,
-        summary: item.summary,
-        category: item.category,
-        agencyName: item.agencyName,
-        regions: item.regions,
-        applyType: item.applyType,
-        applyStatus: item.applyStatus,
-        supportSummary: item.supportSummary,
-        eligibilitySummary: item.eligibilitySummary,
-        contentSummary: item.contentSummary,
-        applyMethodSummary: item.applyMethodSummary,
-        requiredDocs: item.requiredDocs,
-        faqJson: { items: item.faq },
-        rawJson: item.rawJson as any,
-        lastSyncedAt: new Date()
-      }
-    });
-  }
+function hasFlag(name: string) {
+  return process.argv.includes(`--${name}`);
 }
 
 async function main() {
-  const collected = (await Promise.all(adapters.map(collectFromAdapter))).flat();
-  const merged = dedupe(collected);
-  await upsert(merged);
-  await indexPolicies(merged);
-  console.log(`Synced ${merged.length} policies`);
+  const source = argValue("source") ?? "gov24-public-service-benefits";
+  const adapter = getSourceAdapter(source);
+  if (!adapter) throw new Error(`Unknown source adapter: ${source}`);
+
+  const page = Number(argValue("page") ?? process.env.GOVFIND_GOV24_PAGE ?? 1);
+  const perPage = Number(argValue("per-page") ?? process.env.GOVFIND_GOV24_PER_PAGE ?? 20);
+  const dryRun = hasFlag("dry-run");
+
+  const summary = await runSourceSync(adapter, { page, perPage, dryRun });
+  printSummary(summary);
+
+  if (!dryRun && summary.insertedCount + summary.updatedCount > 0) {
+    const rows = await prisma.policy.findMany({ where: { isPublished: true }, orderBy: { updatedAt: "desc" } });
+    await indexPolicies(
+      rows.map((row) => ({
+        slug: row.slug,
+        title: row.title,
+        summary: row.summary,
+        category: row.category,
+        agencyName: row.agencyName,
+        regionScope: row.regionScope as any,
+        regions: row.regions,
+        applyType: row.applyType as any,
+        applyStatus: row.applyStatus as any,
+        applyStartAt: row.applyStartAt?.toISOString() ?? null,
+        applyEndAt: row.applyEndAt?.toISOString() ?? null,
+        supportSummary: row.supportSummary,
+        eligibilitySummary: row.eligibilitySummary,
+        contentSummary: row.contentSummary,
+        applyMethodSummary: row.applyMethodSummary,
+        officialUrl: row.officialUrl,
+        sourceUrl: row.sourceUrl,
+        sourceSystem: row.sourceSystem as any,
+        lifeStages: row.lifeStages,
+        targetGroups: row.targetGroups,
+        requiredDocs: row.requiredDocs,
+        lastCheckedAt: row.lastCheckedAt?.toISOString() ?? null,
+        faq: Array.isArray((row.faqJson as any)?.items) ? (row.faqJson as any).items : []
+      }))
+    );
+  }
 }
 
 main()
   .catch((error) => {
     console.error(error);
+    printSummary({
+      fetchedCount: 0,
+      insertedCount: 0,
+      updatedCount: 0,
+      skippedDuplicateCount: 0,
+      failedCount: 1
+    });
     process.exit(1);
   })
   .finally(async () => {

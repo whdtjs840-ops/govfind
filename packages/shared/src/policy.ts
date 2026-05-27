@@ -1,4 +1,11 @@
-export type SourceSystem = "gov24" | "bokjiro-central" | "bokjiro-local" | "kstartup" | "youth";
+export type SourceSystem =
+  | "gov24"
+  | "gov24-public-service-benefits"
+  | "bokjiro-central"
+  | "bokjiro-local"
+  | "bizinfo"
+  | "kstartup"
+  | "youth";
 export type ApplyType = "online" | "offline" | "mixed" | "check";
 export type ApplyStatus = "open" | "closing" | "scheduled" | "always" | "closed" | "check";
 

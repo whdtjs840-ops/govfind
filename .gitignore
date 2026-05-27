@@ -8,3 +8,5 @@ qa/
 .next/
 apps/web/.next/
 next-dev*.log
+data/imports/
+data/staging/

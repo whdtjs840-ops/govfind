@@ -2,10 +2,10 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { Search } from "@lucide/astro";
 import { policies, categoryGroups } from "../data/policies";
-import { deadlineDisplay, dedupePolicies, isSearchOnlyPolicy, urgentPolicies } from "../utils/policyUtils";
+import { deadlineDisplay, getPolicyCounts, getPublicPolicies, urgentPolicies } from "../utils/policyUtils";
 
-const { canonical: displayPolicies } = dedupePolicies(policies);
-const publicPolicies = displayPolicies.filter((policy) => !isSearchOnlyPolicy(policy));
+const publicPolicies = getPublicPolicies(policies);
+const counts = getPolicyCounts(policies);
 const latestPrograms = [...publicPolicies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 9);
 const urgentSlugs = new Set<string>();
 const urgentBase = [
@@ -16,14 +16,12 @@ const urgentBase = [
   urgentSlugs.add(policy.slug);
   return true;
 }).slice(0, 6);
-const deadlineBadgeFallbacks = ["D-Day", "D-3", "D-5", "D-Day", "D-3", "D-5"];
-const deadlinePrograms = urgentBase.map((policy, index) => ({
+const deadlinePrograms = urgentBase.map((policy) => ({
   ...policy,
-  displayDday: deadlineBadgeFallbacks[index] ?? deadlineDisplay(policy)
+  displayDday: deadlineDisplay(policy)
 }));
 
-const categoryCount = (label: string) =>
-  publicPolicies.filter((policy) => policy.category === label || policy.tags.some((tag) => tag.includes(label))).length;
+const categoryCount = (label: string) => counts.byCategory[label] ?? 0;
 
 const categoryRoute = (label: string) => {
   const matched = categoryGroups.find((category) => category.label === label);
@@ -33,18 +31,18 @@ const categoryRoute = (label: string) => {
 };
 
 const categoryCards = [
-  { icon: "📋", label: "전체", count: 14369 },
-  { icon: "👨‍🎓", label: "청년", count: categoryCount("청년") || 451 },
-  { icon: "🤝", label: "복지", count: categoryCount("복지") || 5010 },
-  { icon: "🏠", label: "주거", count: categoryCount("주거") || 713 },
-  { icon: "💼", label: "고용", count: categoryCount("고용") || 1377 },
-  { icon: "🚀", label: "창업", count: categoryCount("창업") || 1237 },
-  { icon: "📚", label: "교육", count: categoryCount("교육") || 1536 },
-  { icon: "🏥", label: "보건의료", count: categoryCount("보건의료") || 1208 },
-  { icon: "🎨", label: "문화생활", count: categoryCount("문화생활") || 642 },
-  { icon: "🌾", label: "농림어업", count: categoryCount("농림어업") || 1604 },
-  { icon: "📌", label: "기타", count: categoryCount("기타") || 34 },
-  { icon: "🧾", label: "채용", count: categoryCount("채용") || 557 }
+  { icon: "📋", label: "전체", count: counts.all },
+  { icon: "👨‍🎓", label: "청년", count: categoryCount("청년") },
+  { icon: "🤝", label: "복지", count: categoryCount("복지") },
+  { icon: "🏠", label: "주거", count: categoryCount("주거") },
+  { icon: "💼", label: "고용", count: categoryCount("고용") },
+  { icon: "🚀", label: "창업", count: categoryCount("창업") },
+  { icon: "📚", label: "교육", count: categoryCount("교육") },
+  { icon: "🏥", label: "보건의료", count: categoryCount("보건의료") },
+  { icon: "🎨", label: "문화생활", count: categoryCount("문화생활") },
+  { icon: "🌾", label: "농림어업", count: categoryCount("농림어업") },
+  { icon: "📌", label: "기타", count: categoryCount("기타") },
+  { icon: "🧾", label: "채용", count: categoryCount("채용") }
 ];
 
 const popularKeywords = ["청년", "창업", "주거", "채용", "복지", "소상공인", "교육", "의료"];
@@ -65,7 +63,7 @@ const popularKeywords = ["청년", "창업", "주거", "채용", "복지", "소�
           <button type="submit">검색</button>
         </form>
         <div class="home-portal-stats" aria-label="서비스 요약">
-          <span>모집중 지원사업 14,000+건</span>
+          <span>공식 출처로 선별한 핵심 지원정책 {counts.all.toLocaleString("ko-KR")}개</span>
           <span>매일 업데이트</span>
           <span>맞춤형 카테고리 탐색</span>
         </div>
@@ -133,8 +131,8 @@ const popularKeywords = ["청년", "창업", "주거", "채용", "복지", "소�
             <div class="home-card-badges">
               <span class="home-status-badge">모집중</span>
               <span class="home-program-category">{policy.category}</span>
-              <span class:list={["home-dday-badge", index % 3 === 0 ? "is-danger" : "is-warning"]}>
-                {deadlineBadgeFallbacks[index % deadlineBadgeFallbacks.length]}
+              <span class:list={["home-dday-badge", deadlineDisplay(policy) === "D-Day" ? "is-danger" : "is-warning"]}>
+                {deadlineDisplay(policy)}
               </span>
             </div>
             <h3><a href={`/support/${policy.slug}/`}>{policy.title}</a></h3>

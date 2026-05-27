@@ -2,7 +2,20 @@
 import { ArrowRight, ExternalLink } from "@lucide/astro";
 import type { Policy } from "../data/policies";
 import { sourceLabel } from "../utils/sourceNames";
-import { cleanSummary, deadlineDisplay, isSearchOnlyPolicy, policySearchText } from "../utils/policyUtils";
+import {
+  cleanSummary,
+  deadlineDisplay,
+  getDisplayRegion,
+  getDisplayStatus,
+  isDeadlineSoonPolicy,
+  isSearchOnlyPolicy,
+  policySearchText,
+  shouldIncludeInDeadlineSort,
+  shouldIncludeInRegionPage,
+  shouldIncludeInStatusFilter,
+  shouldRequireOfficialConfirmation,
+  shouldShowDday
+} from "../utils/policyUtils";
 
 const { policy, compact = false } = Astro.props as { policy: Policy; compact?: boolean };
 const publicSourceLabel = sourceLabel(policy.source);
@@ -10,21 +23,31 @@ const searchText = policySearchText({ ...policy, source: publicSourceLabel });
 const summary = cleanSummary(policy.summary);
 const amount = cleanSummary(policy.amount);
 const target = cleanSummary(policy.targetGroup || policy.audience);
-const matchScore = Math.min(96, 72 + policy.matchReasons.length * 4 + (policy.applyOnline ? 8 : 0) + (policy.status === "마감임박" ? 5 : 0));
+const matchScore = Math.min(96, 72 + policy.matchReasons.length * 4 + (policy.applyOnline ? 8 : 0) + (isDeadlineSoonPolicy(policy) ? 5 : 0));
 const searchOnly = isSearchOnlyPolicy(policy);
 const deadlineLabel = deadlineDisplay(policy);
+const displayStatus = getDisplayStatus(policy);
+const displayRegion = getDisplayRegion(policy);
+const showOfficialConfirmation = shouldRequireOfficialConfirmation(policy);
 ---
 
 <article
   class="card policy-card support-card"
   data-category={policy.category}
-  data-region={policy.region}
+  data-region={policy.region ?? ""}
+  data-region-label={displayRegion}
+  data-include-region-page={String(shouldIncludeInRegionPage(policy))}
   data-status={policy.status}
+  data-status-label={displayStatus}
+  data-status-confidence={policy.statusConfidence ?? "known"}
+  data-include-status-filters={String(shouldIncludeInStatusFilter(policy, policy.status))}
   data-source={publicSourceLabel}
   data-source-label={publicSourceLabel}
   data-online={String(policy.applyOnline)}
   data-score={String(matchScore)}
-  data-dday={policy.dday}
+  data-dday={shouldShowDday(policy) ? policy.dday : ""}
+  data-include-deadline-sort={String(shouldIncludeInDeadlineSort(policy))}
+  data-show-dday={String(shouldShowDday(policy))}
   data-updated={policy.updatedAt}
   data-views={String(policy.views)}
   data-search-only={String(searchOnly)}
@@ -36,7 +59,7 @@ const deadlineLabel = deadlineDisplay(policy);
   hidden={searchOnly}
 >
   <div class="meta policy-card-topline">
-    <span class={policy.status === "마감임박" ? "badge deadline" : "badge warn"}>{policy.status}</span>
+    <span class={isDeadlineSoonPolicy(policy) ? "badge deadline" : "badge warn"}>{displayStatus}</span>
     <span class="badge">{policy.category}</span>
     <span class="badge soft">{publicSourceLabel}</span>
   </div>
@@ -46,8 +69,9 @@ const deadlineLabel = deadlineDisplay(policy);
     <p class="policy-quick-line">
       <strong>대상</strong> {target || "공식 확인 필요"}
       <span>·</span>
-      <strong>지역</strong> {policy.region}
+      <strong>지역</strong> {displayRegion}
     </p>
+    {showOfficialConfirmation && <p class="notice compact">신청기간과 자격은 공식 공고에서 확인하세요.</p>}
   </div>
   <dl class="card-facts">
     <div><dt>신청</dt><dd>{policy.applyOnline ? "온라인 가능" : "기관 확인"}</dd></div>

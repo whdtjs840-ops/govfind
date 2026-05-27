@@ -1,10 +1,10 @@
 import { gov24Adapter } from "./gov24";
 import type { SourceAdapter } from "./types";
 
-export const youthAdapter: SourceAdapter = {
+export const bizinfoAdapter: SourceAdapter = {
   ...gov24Adapter,
-  sourceName: "youth",
-  sourceSystem: "youth",
+  sourceName: "bizinfo",
+  sourceSystem: "bizinfo",
   async fetchList() {
     return [];
   },
@@ -14,10 +14,8 @@ export const youthAdapter: SourceAdapter = {
   normalize(raw) {
     return {
       ...gov24Adapter.normalize(raw),
-      sourceSystem: "youth",
-      category: String(raw.category ?? "청년"),
-      lifeStages: ["청년"],
-      targetGroups: ["청년"]
+      sourceSystem: "bizinfo",
+      category: String(raw.category ?? "소상공인")
     };
   }
 };

@@ -5,10 +5,10 @@ import QuickConditionSearch from "../../components/QuickConditionSearch.astro";
 import { CheckCircle2, Search, SlidersHorizontal } from "@lucide/astro";
 import { categories, categoryGroups, lifeStages, policies, regions } from "../../data/policies";
 import { publicSourceOptions, sourceLabel } from "../../utils/sourceNames";
-import { dedupePolicies, isSearchOnlyPolicy } from "../../utils/policyUtils";
+import { getPolicyCounts, getPublicPolicies } from "../../utils/policyUtils";
 
-const { canonical: displayPolicies } = dedupePolicies(policies);
-const publicDisplayPolicies = displayPolicies.filter((policy) => !isSearchOnlyPolicy(policy));
+const publicDisplayPolicies = getPublicPolicies(policies);
+const policyCounts = getPolicyCounts(policies);
 
 const params = Astro.url.searchParams;
 const selectedQ = params.get("q") ?? "";
@@ -18,11 +18,11 @@ const selectedSource = sourceLabel(params.get("source") ?? "");
 const selectedStatus = params.get("status") ?? "";
 
 const counts = {
-  all: publicDisplayPolicies.length,
-  deadline: publicDisplayPolicies.filter((policy) => policy.status === "마감임박" || /^D-/.test(policy.dday)).length,
-  gov24: publicDisplayPolicies.filter((policy) => policy.source.includes("정부24")).length,
-  welfare: publicDisplayPolicies.filter((policy) => policy.source.includes("복지로")).length,
-  kstartup: publicDisplayPolicies.filter((policy) => policy.source.includes("K-Startup")).length,
+  all: policyCounts.all,
+  deadline: policyCounts.deadline,
+  gov24: policyCounts.bySource["정부24"] ?? 0,
+  welfare: policyCounts.bySource["복지로"] ?? 0,
+  kstartup: policyCounts.bySource["K-Startup"] ?? 0,
   youth: publicDisplayPolicies.filter((policy) => `${policy.title} ${policy.tags.join(" ")}`.includes("청년")).length,
   smallBusiness: publicDisplayPolicies.filter((policy) => `${policy.title} ${policy.tags.join(" ")}`.includes("소상공인")).length
 };
@@ -191,7 +191,7 @@ const intentCards = [
         </div>
 
         <div class="result-grid support-result-list">
-          {displayPolicies.map((policy) => <PolicyCard policy={policy} />)}
+          {publicDisplayPolicies.map((policy) => <PolicyCard policy={policy} />)}
         </div>
         <div class="card no-results" id="noResults" hidden>
           <h2>검색 결과 없음</h2>
@@ -268,11 +268,11 @@ const intentCards = [
       return value
         .split(/\s+/)
         .map((item) => item.trim())
-        .filter((item) => item.length > 1);
+        .filter(Boolean);
     }
 
     function meaningfulTokens(value: string) {
-      return queryTokens(value).filter((item) => !stopWords.has(item));
+      return queryTokens(value);
     }
 
     function cardQueryScore(card: HTMLElement) {
@@ -283,7 +283,7 @@ const intentCards = [
       const text = normalizeSearch(card.dataset.search ?? "");
       const query = normalizeSearch(keyword);
       const tokens = meaningfulTokens(keyword);
-      const hasMeaningfulMatch = tokens.length === 0 || tokens.some((token) => text.includes(normalizeSearch(token)));
+      const hasMeaningfulMatch = tokens.length === 0 || tokens.every((token) => text.includes(normalizeSearch(token)));
       if (!hasMeaningfulMatch) return 0;
 
       let score = 0;
@@ -364,11 +364,28 @@ const intentCards = [
     }
 
     function ddayRank(value: string) {
+      if (!value) return 9999;
       if (value === "D-Day") return 0;
       if (value.startsWith("D-")) return Number(value.replace("D-", "")) || 999;
       if (value === "상시") return 500;
       if (value === "예정") return 700;
       return 999;
+    }
+
+    function isDeadlineSoonDday(value: string) {
+      if (value === "D-Day") return true;
+      const match = value.match(/^D-(\d{1,3})$/);
+      if (!match) return false;
+      const days = Number(match[1]);
+      return days >= 0 && days <= 14;
+    }
+
+    function statusMatches(cardStatus: string, cardDday: string, filterStatus: string, includeStatusFilters: boolean) {
+      if (!filterStatus) return true;
+      if (!includeStatusFilters) return false;
+      if (["deadlineSoon", "closingSoon", "closing"].includes(filterStatus)) filterStatus = "마감임박";
+      if (filterStatus === "마감임박") return cardStatus === "마감임박" || isDeadlineSoonDday(cardDday);
+      return cardStatus === filterStatus;
     }
 
     function syncUrl() {
@@ -394,7 +411,7 @@ const intentCards = [
       const sorted = [...cards].sort((a, b) => {
         const scoreDiff = cardQueryScore(b) - cardQueryScore(a);
         if (keyword && scoreDiff !== 0) return scoreDiff;
-        if (sort.value === "deadline") return ddayRank(a.dataset.dday ?? "") - ddayRank(b.dataset.dday ?? "");
+        if (sort.value === "deadline" || status?.value === "마감임박") return ddayRank(a.dataset.dday ?? "") - ddayRank(b.dataset.dday ?? "");
         if (sort.value === "popular") return Number(b.dataset.views ?? 0) - Number(a.dataset.views ?? 0);
         if (sort.value === "online") return Number(b.dataset.online === "true") - Number(a.dataset.online === "true");
         if (sort.value === "updated") return (b.dataset.updated ?? "").localeCompare(a.dataset.updated ?? "");
@@ -425,7 +442,8 @@ const intentCards = [
         const matchCategory = !selectedCategory || cardCategory === selectedCategory;
         const matchRegion = !selectedRegion || cardRegion === selectedRegion || cardRegion === "전국" || cardRegion === "지역별";
         const matchLife = !lifeValue || text.includes(lifeValue);
-        const matchStatus = !statusValue || cardStatus === statusValue;
+        const includeStatusFilters = card.dataset.includeStatusFilters !== "false";
+        const matchStatus = statusMatches(cardStatus, card.dataset.dday ?? "", statusValue, includeStatusFilters);
         const matchSource = !sourceValue || cardSource === sourceValue || cardSourceLabel === sourceValue;
         const matchOnline = (!onlineOnly && !selectedApplyOnline) || cardOnline;
         const matchProfile = conditionMatches(card, selectedProfile);

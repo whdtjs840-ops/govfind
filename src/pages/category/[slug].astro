@@ -2,16 +2,16 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PolicyCard from "../../components/PolicyCard.astro";
 import { categoryGroups, policies } from "../../data/policies";
-import { dedupePolicies } from "../../utils/policyUtils";
+import { getPublicPolicies, hasKnownStatus, isDeadlineSoonPolicy } from "../../utils/policyUtils";
 
 export function getStaticPaths() {
   return categoryGroups.map((category) => ({ params: { slug: category.slug }, props: { category } }));
 }
 
 const { category } = Astro.props;
-const { canonical: displayPolicies } = dedupePolicies(policies);
-const categoryPolicies = displayPolicies.filter((policy) => policy.category === category.label || category.keywords.some((keyword) => [...policy.tags, policy.title, policy.summary].join(" ").includes(keyword)));
-const urgent = categoryPolicies.filter((policy) => policy.status === "마감임박" || policy.status === "모집중");
+const displayPolicies = getPublicPolicies(policies);
+const categoryPolicies = displayPolicies.filter((policy) => policy.category === category.label);
+const urgent = categoryPolicies.filter((policy) => isDeadlineSoonPolicy(policy) || (policy.status === "모집중" && hasKnownStatus(policy)));
 ---
 
 <BaseLayout title={`${category.label} 정부지원금 - GovFind`} description={`${category.label} 분야 정부지원금, 지원사업, 신청 조건, 공식 신청처를 정리했습니다.`} canonical={`/category/${category.slug}/`}>
