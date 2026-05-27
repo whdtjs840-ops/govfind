@@ -1,0 +1,255 @@
+{
+  "checkedAt": "2026-05-27T05:09:10.953Z",
+  "deploymentUrl": "https://27a6d447.govfind.pages.dev",
+  "productionUrl": "https://govfind.kr",
+  "policyCount": 476,
+  "searchIndexCount": 476,
+  "government24SourceCount": 344,
+  "deploymentSearchIndexCount": 476,
+  "checkedUrls": [
+    "https://govfind.kr/",
+    "https://govfind.kr/support/",
+    "https://govfind.kr/search-index.json",
+    "https://govfind.kr/category/welfare/",
+    "https://govfind.kr/category/farming/",
+    "https://govfind.kr/support/gov24-신재생에너지설비-설치-보조금-지원/",
+    "https://govfind.kr/support/gov24-가평군-난임부부-시술비-약제비-지원-난임시술-이후-원외-약제비-청구/",
+    "https://govfind.kr/support/gov24-주거위기가구-임시주거지원/",
+    "https://govfind.kr/support/gov24-특별교통수단-운영지원/",
+    "https://govfind.kr/support/gov24-대학생-학습멘토링-프로그램-운영/",
+    "https://govfind.kr/support/gov24-1차진료-내과-서비스/",
+    "https://govfind.kr/support/gov24-보건소-한방진료-지원/",
+    "https://govfind.kr/support/gov24-보제원-한방이동진료실-운영/",
+    "https://govfind.kr/support/gov24-구강보건서비스/",
+    "https://govfind.kr/support/gov24-장애인-보장구-수리-지원/",
+    "https://govfind.kr/support/?q=%EC%8B%A0%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A7%80",
+    "https://govfind.kr/support/?q=%EB%82%9C%EC%9E%84",
+    "https://govfind.kr/support/?q=%EC%A3%BC%EA%B1%B0%EC%9C%84%EA%B8%B0",
+    "https://govfind.kr/support/?q=%ED%8A%B9%EB%B3%84%EA%B5%90%ED%86%B5%EC%88%98%EB%8B%A8",
+    "https://govfind.kr/support/?q=%ED%95%99%EC%8A%B5%EB%A9%98%ED%86%A0%EB%A7%81",
+    "https://govfind.kr/support/?q=%ED%95%9C%EB%B0%A9%EC%A7%84%EB%A3%8C",
+    "https://govfind.kr/support/?q=%EA%B5%AC%EA%B0%95%EB%B3%B4%EA%B1%B4",
+    "https://govfind.kr/support/?q=%EC%9E%A5%EC%95%A0%EC%9D%B8%20%EB%B3%B4%EC%9E%A5%EA%B5%AC"
+  ],
+  "failedUrls": [],
+  "invalidDateFound": false,
+  "nanFound": false,
+  "undefinedOrNullTextFound": false,
+  "ddayGuardIssues": [],
+  "statusGuardIssues": [],
+  "officialConfirmationIssues": [],
+  "searchQaResult": [
+    {
+      "url": "https://govfind.kr/support/?q=%EC%8B%A0%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A7%80",
+      "query": "신재생에너지",
+      "count": 2,
+      "sampleTitles": [
+        "신재생에너지설비 설치 보조금 지원",
+        "양식장 친환경에너지 보급"
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://govfind.kr/support/?q=%EB%82%9C%EC%9E%84",
+      "query": "난임",
+      "count": 3,
+      "sampleTitles": [
+        "[중랑구]난임부부 약제비 지원(난임시술 이후 원외약제비 청구)",
+        "[가평군] 난임부부 시술비 약제비 지원(난임시술 이후 원외 약제비 청구)",
+        "난임부부 지원"
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://govfind.kr/support/?q=%EC%A3%BC%EA%B1%B0%EC%9C%84%EA%B8%B0",
+      "query": "주거위기",
+      "count": 1,
+      "sampleTitles": [
+        "주거위기가구 임시주거지원"
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://govfind.kr/support/?q=%ED%8A%B9%EB%B3%84%EA%B5%90%ED%86%B5%EC%88%98%EB%8B%A8",
+      "query": "특별교통수단",
+      "count": 1,
+      "sampleTitles": [
+        "특별교통수단 운영지원"
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://govfind.kr/support/?q=%ED%95%99%EC%8A%B5%EB%A9%98%ED%86%A0%EB%A7%81",
+      "query": "학습멘토링",
+      "count": 1,
+      "sampleTitles": [
+        "대학생 학습멘토링 프로그램 운영"
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://govfind.kr/support/?q=%ED%95%9C%EB%B0%A9%EC%A7%84%EB%A3%8C",
+      "query": "한방진료",
+      "count": 2,
+      "sampleTitles": [
+        "보건소 한방진료 지원",
+        "보제원 한방이동진료실 운영"
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://govfind.kr/support/?q=%EA%B5%AC%EA%B0%95%EB%B3%B4%EA%B1%B4",
+      "query": "구강보건",
+      "count": 1,
+      "sampleTitles": [
+        "구강보건서비스"
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://govfind.kr/support/?q=%EC%9E%A5%EC%95%A0%EC%9D%B8%20%EB%B3%B4%EC%9E%A5%EA%B5%AC",
+      "query": "장애인 보장구",
+      "count": 1,
+      "sampleTitles": [
+        "장애인 보장구 수리 지원"
+      ],
+      "passed": true
+    }
+  ],
+  "pageResults": [
+    {
+      "url": "https://govfind.kr/",
+      "status": 200,
+      "ok": true,
+      "invalidDate": false,
+      "nan": false,
+      "undefinedOrNull": false
+    },
+    {
+      "url": "https://govfind.kr/support/",
+      "status": 200,
+      "ok": true,
+      "invalidDate": false,
+      "nan": false,
+      "undefinedOrNull": false,
+      "countTextFound": true
+    },
+    {
+      "url": "https://govfind.kr/category/welfare/",
+      "status": 200,
+      "ok": true,
+      "invalidDate": false,
+      "nan": false,
+      "undefinedOrNull": false
+    },
+    {
+      "url": "https://govfind.kr/category/farming/",
+      "status": 200,
+      "ok": true,
+      "invalidDate": false,
+      "nan": false,
+      "undefinedOrNull": false
+    },
+    {
+      "url": "https://govfind.kr/support/gov24-신재생에너지설비-설치-보조금-지원/",
+      "status": 200,
+      "ok": true,
+      "invalidDate": false,
+      "nan": false,
+      "undefinedOrNull": false,
+      "hasOfficialLink": true,
+      "hasTitle": true
+    },
+    {
+      "url": "https://govfind.kr/support/gov24-가평군-난임부부-시술비-약제비-지원-난임시술-이후-원외-약제비-청구/",
+      "status": 200,
+      "ok": true,
+      "invalidDate": false,
+      "nan": false,
+      "undefinedOrNull": false,
+      "hasOfficialLink": true,
+      "hasTitle": true
+    },
+    {
+      "url": "https://govfind.kr/support/gov24-주거위기가구-임시주거지원/",
+      "status": 200,
+      "ok": true,
+      "invalidDate": false,
+      "nan": false,
+      "undefinedOrNull": false,
+      "hasOfficialLink": true,
+      "hasTitle": true
+    },
+    {
+      "url": "https://govfind.kr/support/gov24-특별교통수단-운영지원/",
+      "status": 200,
+      "ok": true,
+      "invalidDate": false,
+      "nan": false,
+      "undefinedOrNull": false,
+      "hasOfficialLink": true,
+      "hasTitle": true
+    },
+    {
+      "url": "https://govfind.kr/support/gov24-대학생-학습멘토링-프로그램-운영/",
+      "status": 200,
+      "ok": true,
+      "invalidDate": false,
+      "nan": false,
+      "undefinedOrNull": false,
+      "hasOfficialLink": true,
+      "hasTitle": true
+    },
+    {
+      "url": "https://govfind.kr/support/gov24-1차진료-내과-서비스/",
+      "status": 200,
+      "ok": true,
+      "invalidDate": false,
+      "nan": false,
+      "undefinedOrNull": false,
+      "hasOfficialLink": true,
+      "hasTitle": true
+    },
+    {
+      "url": "https://govfind.kr/support/gov24-보건소-한방진료-지원/",
+      "status": 200,
+      "ok": true,
+      "invalidDate": false,
+      "nan": false,
+      "undefinedOrNull": false,
+      "hasOfficialLink": true,
+      "hasTitle": true
+    },
+    {
+      "url": "https://govfind.kr/support/gov24-보제원-한방이동진료실-운영/",
+      "status": 200,
+      "ok": true,
+      "invalidDate": false,
+      "nan": false,
+      "undefinedOrNull": false,
+      "hasOfficialLink": true,
+      "hasTitle": true
+    },
+    {
+      "url": "https://govfind.kr/support/gov24-구강보건서비스/",
+      "status": 200,
+      "ok": true,
+      "invalidDate": false,
+      "nan": false,
+      "undefinedOrNull": false,
+      "hasOfficialLink": true,
+      "hasTitle": true
+    },
+    {
+      "url": "https://govfind.kr/support/gov24-장애인-보장구-수리-지원/",
+      "status": 200,
+      "ok": true,
+      "invalidDate": false,
+      "nan": false,
+      "undefinedOrNull": false,
+      "hasOfficialLink": true,
+      "hasTitle": true
+    }
+  ],
+  "finalProductionQaDecision": "production_pass"
+}
