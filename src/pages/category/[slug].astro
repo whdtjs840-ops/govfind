@@ -12,9 +12,11 @@ const { category } = Astro.props;
 const displayPolicies = getPublicPolicies(policies);
 const categoryPolicies = displayPolicies.filter((policy) => policy.category === category.label);
 const urgent = categoryPolicies.filter((policy) => isDeadlineSoonPolicy(policy) || (policy.status === "모집중" && hasKnownStatus(policy)));
+const categorySeoTitle = `${category.label} 지원사업 | GovFind`;
+const categorySeoDescription = `${category.label} 관련 정부지원사업과 복지서비스를 공식 출처 기준으로 확인하세요.`;
 ---
 
-<BaseLayout title={`${category.label} 정부지원금 - GovFind`} description={`${category.label} 분야 정부지원금, 지원사업, 신청 조건, 공식 신청처를 정리했습니다.`} canonical={`/category/${category.slug}/`}>
+<BaseLayout title={categorySeoTitle} description={categorySeoDescription} canonical={`/category/${category.slug}/`}>
   <section class="page-head">
     <div class="wrap">
       <p class="eyebrow">카테고리</p>

@@ -86,9 +86,24 @@ const applyPath = [
   "기간·필요서류 확인",
   "공식 신청처에서 최종 신청"
 ];
+
+function compactText(value?: string) {
+  return (value ?? "").replace(/\s+/g, " ").trim();
+}
+
+function truncateMeta(value: string, maxLength = 155) {
+  const text = compactText(value);
+  return text.length > maxLength ? `${text.slice(0, maxLength - 1)}…` : text;
+}
+
+const seoAgency = compactText(policy.agency) || sourceLabel(policy.source);
+const seoCategory = compactText(policy.category) || "정부지원";
+const seoDescription = truncateMeta(
+  `${seoAgency}의 ${seoCategory} 관련 지원정책입니다. 지원 대상, 신청 방법, 공식 신청처를 GovFind에서 확인하세요.`
+);
 ---
 
-<BaseLayout title={`${policy.title} - 지원 대상과 신청 방법 | GovFind`} description={policy.summary} canonical={`/support/${policy.slug}/`}>
+<BaseLayout title={`${policy.title} | GovFind`} description={seoDescription} canonical={`/support/${policy.slug}/`}>
   <section class="policy-doc-head">
     <div class="wrap doc-wrap">
       <nav class="breadcrumb" aria-label="현재 위치">
