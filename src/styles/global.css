@@ -1844,6 +1844,22 @@ dd {
   margin: 0 0 18px;
 }
 
+.support-result-progress {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 850;
+}
+
+.support-result-progress strong,
+.support-result-progress #visible-count,
+.support-result-progress #visible-total {
+  color: var(--ink);
+}
+
 .support-result-list {
   display: grid;
   gap: 12px;
@@ -1935,6 +1951,23 @@ dd {
 
 .support-result-list .official-link {
   background: white;
+}
+
+.support-load-more {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.support-load-more[hidden] {
+  display: none;
+}
+
+.support-load-more p {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 850;
 }
 
 @media (max-width: 840px) {

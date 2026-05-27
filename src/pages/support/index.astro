@@ -9,6 +9,9 @@ import { getPolicyCounts, getPublicPolicies } from "../../utils/policyUtils";
 
 const publicDisplayPolicies = getPublicPolicies(policies);
 const policyCounts = getPolicyCounts(policies);
+const supportPageSize = 30;
+const initialSupportPolicies = publicDisplayPolicies.slice(0, supportPageSize);
+const deferredSupportPolicies = publicDisplayPolicies.slice(supportPageSize);
 
 const params = Astro.url.searchParams;
 const selectedQ = params.get("q") ?? "";
@@ -190,8 +193,22 @@ const intentCards = [
           {actionKeywords.map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
         </div>
 
+        <div class="support-result-progress" aria-live="polite">
+          <span id="visible-count">{Math.min(supportPageSize, publicDisplayPolicies.length)}</span>
+          <span>/</span>
+          <span id="visible-total">{publicDisplayPolicies.length}</span>
+          <span>개 표시</span>
+        </div>
+
         <div class="result-grid support-result-list">
-          {publicDisplayPolicies.map((policy) => <PolicyCard policy={policy} />)}
+          {initialSupportPolicies.map((policy) => <PolicyCard policy={policy} />)}
+        </div>
+        <template id="supportCardTemplate">
+          {deferredSupportPolicies.map((policy) => <PolicyCard policy={policy} />)}
+        </template>
+        <div class="support-load-more">
+          <button class="button secondary" id="loadMorePolicies" type="button">더 보기</button>
+          <p id="allResultsShown" hidden>모든 결과를 표시했습니다.</p>
         </div>
         <div class="card no-results" id="noResults" hidden>
           <h2>검색 결과 없음</h2>
@@ -236,14 +253,25 @@ const intentCards = [
     const selectedApplyOnline = params.get("applyOnline") === "true";
     const selectedSort = params.get("sort")?.trim() ?? "recommended";
     const count = document.querySelector("#result-count");
-    const cards = Array.from(document.querySelectorAll<HTMLElement>(".support-card"));
+    const resultGrid = document.querySelector<HTMLElement>(".result-grid");
+    const cardTemplate = document.querySelector<HTMLTemplateElement>("#supportCardTemplate");
+    const cards = [
+      ...Array.from(resultGrid?.querySelectorAll<HTMLElement>(".support-card") ?? []),
+      ...Array.from(cardTemplate?.content.querySelectorAll<HTMLElement>(".support-card") ?? [])
+    ];
     const lifeStage = document.querySelector<HTMLSelectElement>('[data-filter="lifeStage"]');
     const status = document.querySelector<HTMLSelectElement>('[data-filter="status"]');
     const source = document.querySelector<HTMLSelectElement>('[data-filter="source"]');
     const online = document.querySelector<HTMLInputElement>('[data-filter="online"]');
     const sort = document.querySelector<HTMLSelectElement>("[data-sort]");
-    const resultGrid = document.querySelector<HTMLElement>(".result-grid");
     const noResults = document.querySelector<HTMLElement>("#noResults");
+    const pageSize = 30;
+    const visibleCount = document.querySelector<HTMLElement>("#visible-count");
+    const visibleTotal = document.querySelector<HTMLElement>("#visible-total");
+    const loadMoreButton = document.querySelector<HTMLButtonElement>("#loadMorePolicies");
+    const loadMoreWrap = document.querySelector<HTMLElement>(".support-load-more");
+    const allResultsShown = document.querySelector<HTMLElement>("#allResultsShown");
+    let visibleLimit = pageSize;
     const topCategory = document.querySelector<HTMLSelectElement>('.support-search-selects select[name="category"]');
     const topRegion = document.querySelector<HTMLSelectElement>('.support-search-selects select[name="region"]');
     const topSource = document.querySelector<HTMLSelectElement>('.support-search-selects select[name="source"]');
@@ -252,6 +280,7 @@ const intentCards = [
     const conditionChips = Array.from(document.querySelectorAll<HTMLButtonElement>(".condition-chip"));
     const conditionSubmit = document.querySelector<HTMLButtonElement>("#conditionSubmit");
     const stopWords = new Set(["신청", "신청방법", "방법", "대상", "대상조회", "조회", "지원", "조건", "서류", "신청서류", "확인", "보기", "정보"]);
+    let matchedCardsInOrder: HTMLElement[] = [];
 
     function normalizeSource(value: string) {
       if (value.includes("정부24")) return "정부24";
@@ -406,9 +435,9 @@ const intentCards = [
       window.history.replaceState(null, "", query ? `/support/?${query}` : "/support/");
     }
 
-    function sortCards() {
-      if (!resultGrid || !sort) return;
-      const sorted = [...cards].sort((a, b) => {
+    function sortCardList(cardList: HTMLElement[]) {
+      if (!sort) return cardList;
+      return [...cardList].sort((a, b) => {
         const scoreDiff = cardQueryScore(b) - cardQueryScore(a);
         if (keyword && scoreDiff !== 0) return scoreDiff;
         if (sort.value === "deadline" || status?.value === "마감임박") return ddayRank(a.dataset.dday ?? "") - ddayRank(b.dataset.dday ?? "");
@@ -417,7 +446,28 @@ const intentCards = [
         if (sort.value === "updated") return (b.dataset.updated ?? "").localeCompare(a.dataset.updated ?? "");
         return Number(b.dataset.score ?? 0) - Number(a.dataset.score ?? 0);
       });
-      for (const card of sorted) resultGrid.appendChild(card);
+    }
+
+    function updateResultWindow() {
+      const total = matchedCardsInOrder.length;
+      const visibleNow = Math.min(visibleLimit, total);
+      const visibleCards = matchedCardsInOrder.slice(0, visibleNow);
+
+      if (resultGrid) {
+        resultGrid.replaceChildren(...visibleCards);
+        for (const card of visibleCards) {
+          card.hidden = false;
+          card.style.display = "";
+        }
+      }
+
+      if (count) count.textContent = String(total);
+      if (visibleCount) visibleCount.textContent = String(visibleNow);
+      if (visibleTotal) visibleTotal.textContent = String(total);
+      if (noResults) noResults.hidden = total > 0;
+      if (loadMoreWrap) loadMoreWrap.hidden = total === 0 || total <= pageSize;
+      if (loadMoreButton) loadMoreButton.hidden = visibleNow >= total;
+      if (allResultsShown) allResultsShown.hidden = !(total > pageSize && visibleNow >= total);
     }
 
     function applyFilters() {
@@ -425,7 +475,8 @@ const intentCards = [
       const statusValue = status?.value ?? "";
       const sourceValue = source?.value ?? "";
       const onlineOnly = online?.checked ?? false;
-      let visible = 0;
+      visibleLimit = pageSize;
+      const matchedCards: HTMLElement[] = [];
 
       for (const card of cards) {
         const text = card.dataset.search ?? "";
@@ -450,15 +501,13 @@ const intentCards = [
         const matchTarget = conditionMatches(card, selectedTarget);
         const matchPurpose = conditionMatches(card, selectedPurpose);
         const matchSearchOnly = !searchOnly || Boolean(keyword);
-        const isVisible = matchSearchOnly && matchKeyword && matchCategory && matchRegion && matchLife && matchStatus && matchSource && matchOnline && matchProfile && matchTarget && matchPurpose;
-        card.hidden = !isVisible;
-        card.style.display = isVisible ? "" : "none";
-        if (isVisible) visible += 1;
+        const isMatched = matchSearchOnly && matchKeyword && matchCategory && matchRegion && matchLife && matchStatus && matchSource && matchOnline && matchProfile && matchTarget && matchPurpose;
+        card.dataset.filterMatch = String(isMatched);
+        if (isMatched) matchedCards.push(card);
       }
 
-      if (count) count.textContent = String(visible);
-      if (noResults) noResults.hidden = visible > 0;
-      sortCards();
+      matchedCardsInOrder = sortCardList(matchedCards);
+      updateResultWindow();
       syncUrl();
       syncActiveTabs();
     }
@@ -495,6 +544,10 @@ const intentCards = [
     source?.addEventListener("change", applyFilters);
     online?.addEventListener("change", applyFilters);
     sort?.addEventListener("change", applyFilters);
+    loadMoreButton?.addEventListener("click", () => {
+      visibleLimit += pageSize;
+      updateResultWindow();
+    });
     applyFilters();
   </script>
 </BaseLayout>
