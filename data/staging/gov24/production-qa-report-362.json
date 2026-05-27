@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-05-27T02:35:42.280Z",
+  "deploymentUrl": "https://e8b2ef53.govfind.pages.dev",
+  "productionUrl": "https://govfind.kr",
+  "policyCount": 362,
+  "searchIndexCount": 362,
+  "gov24SourceCount": 230,
+  "checkedUrls": [
+    "https://govfind.kr/",
+    "https://govfind.kr/support/",
+    "https://govfind.kr/search-index.json",
+    "https://govfind.kr/category/welfare/",
+    "https://govfind.kr/category/farming/",
+    "https://govfind.kr/support/gov24-귀농-청년농업인-주거비-월세-지원/",
+    "https://govfind.kr/support/gov24-동대문구-성병진단검사/",
+    "https://govfind.kr/support/gov24-중랑구-통합-교육지원센터/",
+    "https://govfind.kr/support/gov24-청년어촌정착지원/",
+    "https://govfind.kr/support/gov24-근로-자녀장려금/",
+    "https://govfind.kr/support/?q=귀농",
+    "https://govfind.kr/support/?q=동대문구",
+    "https://govfind.kr/support/?q=중랑구",
+    "https://govfind.kr/support/?q=장애인%20미용실",
+    "https://govfind.kr/support/?q=자치회관",
+    "https://govfind.kr/sitemap.xml",
+    "https://govfind.kr/robots.txt"
+  ],
+  "failedUrls": [],
+  "invalidDateFound": false,
+  "nanFound": false,
+  "undefinedOrNullTextFound": false,
+  "finalProductionQaDecision": "production_pass",
+  "note": "Direct upload deployment is live on govfind.kr. Visible checked pages did not expose Invalid Date, NaN, undefined, or null text."
+}
