@@ -75,16 +75,18 @@ function toPolicyBlock(blockName, policies) {
 
 async function main() {
   const limit = Number.parseInt(argValue("limit", "98"), 10);
+  const batch = Number.parseInt(argValue("batch", "2"), 10);
   if (!hasFlag("confirm")) {
     throw new Error("Refusing to write production source-of-truth without --confirm.");
   }
 
   const policiesPath = "src/data/policies.ts";
-  const applyReportPath = "data/staging/bokjiro-central/apply-report-bokjiro-central-batch-1.json";
+  const applyReportPath = `data/staging/bokjiro-central/apply-report-bokjiro-central-batch-${batch}.json`;
   const sourceText = await readFile(policiesPath, "utf8");
+  const blockName = batch === 1 ? "bokjiroCentralPromotionPolicies" : `bokjiroCentralPromotionPoliciesBatch${batch}`;
 
-  if (sourceText.includes("const bokjiroCentralPromotionPolicies")) {
-    throw new Error("bokjiroCentralPromotionPolicies block already exists. Refusing to apply twice.");
+  if (sourceText.includes(`const ${blockName}`)) {
+    throw new Error(`${blockName} block already exists. Refusing to apply twice.`);
   }
 
   const dryRunReport = await readJson(bokjiroPaths.applyDryRunReport);
@@ -99,7 +101,6 @@ async function main() {
     throw new Error(`Could not find insertion marker: ${insertBefore}`);
   }
 
-  const blockName = "bokjiroCentralPromotionPolicies";
   const updatedText = sourceText.replace(insertBefore, `${toPolicyBlock(blockName, selectedPolicies)}${insertBefore}`);
   await writeFile(policiesPath, updatedText, "utf8");
 
@@ -123,7 +124,7 @@ async function main() {
   const report = {
     runAt: new Date().toISOString(),
     sourceName: "bokjiro-central",
-    batch: 1,
+    batch,
     applied: true,
     appliedCount: selectedPolicies.length,
     previousPolicyCount: dryRunReport.currentPolicyCount,
@@ -171,4 +172,3 @@ main().catch((error) => {
   console.error(error instanceof Error ? error.message : String(error));
   process.exit(1);
 });
-
