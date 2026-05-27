@@ -58,6 +58,66 @@ function normalizeUrl(value = "") {
     .toLowerCase();
 }
 
+function parseUrl(value = "") {
+  const raw = String(value ?? "").trim();
+  if (!raw) return null;
+  try {
+    return new URL(/^https?:\/\//i.test(raw) ? raw : `https://${raw}`);
+  } catch {
+    return null;
+  }
+}
+
+function isGov24DetailUrl(value = "") {
+  const parsed = parseUrl(value);
+  if (!parsed) return false;
+  return /(^|\.)gov\.kr$/i.test(parsed.hostname) && /\/portal\/rcvfvrSvc\/dtlEx\/[^/?#]+/i.test(parsed.pathname);
+}
+
+function isBokjiroDetailUrl(value = "") {
+  const parsed = parseUrl(value);
+  if (!parsed) return false;
+  return /(^|\.)bokjiro\.go\.kr$/i.test(parsed.hostname) && parsed.searchParams.has("wlfareInfoId");
+}
+
+function isGenericOfficialUrl(value = "", sharedCount = 1) {
+  const parsed = parseUrl(value);
+  if (!parsed) return true;
+  const host = parsed.hostname.replace(/^www\./i, "").toLowerCase();
+  const path = parsed.pathname.replace(/\/+$/g, "");
+  const lowerPath = path.toLowerCase();
+  const hasQuery = parsed.searchParams.toString().length > 0;
+  const pathSegments = path.split("/").filter(Boolean);
+
+  if (sharedCount > 1) return true;
+  if (isGov24DetailUrl(value) || isBokjiroDetailUrl(value)) return false;
+  if (host === "gov.kr" && !/\/dtlEx\//i.test(path)) return true;
+  if (host === "government24.go.kr" && !/\/dtlEx\//i.test(path)) return true;
+  if (host === "bokjiro.go.kr" && !parsed.searchParams.has("wlfareInfoId")) return true;
+  if (["apply.jobaba.net", "www.jobaba.net"].includes(host) && pathSegments.length <= 1) return true;
+  if (/(search|list|serviceList|benefitTotalSrvcList|main|portal)$/i.test(lowerPath)) return true;
+  if (!hasQuery && pathSegments.length <= 1) return true;
+  return false;
+}
+
+function titleSimilarity(left = "", right = "") {
+  const a = normalizeText(left);
+  const b = normalizeText(right);
+  if (!a || !b) return 0;
+  if (a === b) return 1;
+  if (a.includes(b) || b.includes(a)) return Math.min(a.length, b.length) / Math.max(a.length, b.length);
+  const bigrams = (value) => {
+    if (value.length < 2) return new Set([value]);
+    const set = new Set();
+    for (let i = 0; i < value.length - 1; i += 1) set.add(value.slice(i, i + 2));
+    return set;
+  };
+  const aSet = bigrams(a);
+  const bSet = bigrams(b);
+  const intersection = [...aSet].filter((item) => bSet.has(item)).length;
+  return (2 * intersection) / (aSet.size + bSet.size);
+}
+
 function hasCategoryMappingGap(item) {
   return (
     item.publicPolicyPreview?.category === "기타" ||
@@ -71,6 +131,20 @@ function candidateSourceKey(item) {
 
 function titleAgencyKey(policy) {
   return `${normalizeText(policy.title)}::${normalizeText(policy.agency)}`;
+}
+
+function policyUrls(policy = {}) {
+  const urls = [
+    { field: "officialUrl", value: policy.officialUrl },
+    { field: "officialSourceUrl", value: policy.officialSourceUrl }
+  ].filter((entry) => entry.value);
+  const seen = new Set();
+  return urls.filter((entry) => {
+    const normalized = normalizeUrl(entry.value);
+    if (!normalized || seen.has(normalized)) return false;
+    seen.add(normalized);
+    return true;
+  });
 }
 
 function validateCandidate(item) {
@@ -104,33 +178,110 @@ function conflictCheck(existingPolicies, selectedItems) {
   const existingUrls = new Map();
   const existingTitleAgency = new Map();
   for (const policy of existingPolicies) {
-    const url = normalizeUrl(policy.officialUrl || policy.officialSourceUrl);
-    if (url) existingUrls.set(url, policy);
+    for (const entry of policyUrls(policy)) {
+      const url = normalizeUrl(entry.value);
+      if (!url) continue;
+      if (!existingUrls.has(url)) existingUrls.set(url, []);
+      existingUrls.get(url).push({ policy, field: entry.field, value: entry.value });
+    }
     existingTitleAgency.set(titleAgencyKey(policy), policy);
   }
 
   const seenSlugs = new Set();
   const seenSourceKeys = new Set();
-  const seenUrls = new Set();
+  const seenUrls = new Map();
   const seenTitleAgency = new Set();
   const accepted = [];
   const skipped = [];
+  const officialUrlConflictDetails = [];
 
   for (const item of selectedItems) {
     const policy = item.publicPolicyPreview;
     const conflicts = [];
+    const downgradedOfficialUrlConflicts = [];
     const sourceKey = candidateSourceKey(item);
-    const url = normalizeUrl(policy?.officialUrl || policy?.officialSourceUrl);
     const taKey = policy ? titleAgencyKey(policy) : "";
 
     if (policy?.slug && existingSlugs.has(policy.slug)) conflicts.push({ type: "slug", matchedSlug: policy.slug });
     if (policy?.slug && seenSlugs.has(policy.slug)) conflicts.push({ type: "slug-within-selection", matchedSlug: policy.slug });
     if (seenSourceKeys.has(sourceKey)) conflicts.push({ type: "sourceName+sourceItemId", sourceKey });
-    if (url && existingUrls.has(url)) {
-      const matched = existingUrls.get(url);
-      conflicts.push({ type: "officialUrl", matchedSlug: matched.slug, matchedTitle: matched.title });
+    for (const candidateUrl of policyUrls(policy)) {
+      const url = normalizeUrl(candidateUrl.value);
+      const existingMatches = existingUrls.get(url) ?? [];
+      for (const match of existingMatches) {
+        const sharedCount = existingMatches.length;
+        const candidateGeneric = isGenericOfficialUrl(candidateUrl.value, sharedCount);
+        const matchedGeneric = isGenericOfficialUrl(match.value, sharedCount);
+        const similarity = titleSimilarity(policy?.title, match.policy.title);
+        const sameOrganization = normalizeText(policy?.agency) === normalizeText(match.policy.agency);
+        const isIndividualDetail = (
+          (isGov24DetailUrl(candidateUrl.value) && isGov24DetailUrl(match.value)) ||
+          (isBokjiroDetailUrl(candidateUrl.value) && isBokjiroDetailUrl(match.value))
+        );
+        const genericOfficialUrl = candidateGeneric || matchedGeneric;
+        const conflictStrength = genericOfficialUrl ? "weak" : "strong";
+        const detail = {
+          type: "officialUrl",
+          candidateSourceItemId: item.sourceItemId,
+          candidateTitle: policy?.title ?? item.title,
+          candidateSlug: policy?.slug,
+          candidateField: candidateUrl.field,
+          candidateUrl: candidateUrl.value,
+          matchedField: match.field,
+          matchedUrl: match.value,
+          matchedSlug: match.policy.slug,
+          matchedTitle: match.policy.title,
+          officialUrlGeneric: genericOfficialUrl,
+          isIndividualDetailUrl: isIndividualDetail,
+          titleSimilarity: Number(similarity.toFixed(3)),
+          sameOrganization,
+          conflictStrength,
+          reason: genericOfficialUrl
+            ? "generic or shared URL is not sufficient for a strong duplicate"
+            : "individual policy URL matches existing policy",
+          finalDecision: genericOfficialUrl ? "downgraded_not_blocking" : "blocking_conflict"
+        };
+
+        officialUrlConflictDetails.push(detail);
+        if (conflictStrength === "strong") {
+          conflicts.push({
+            type: "officialUrl",
+            matchedSlug: match.policy.slug,
+            matchedTitle: match.policy.title,
+            conflictStrength,
+            officialUrlGeneric: false
+          });
+        } else {
+          downgradedOfficialUrlConflicts.push(detail);
+        }
+      }
+
+      const seenMatch = seenUrls.get(url);
+      if (seenMatch) {
+        const genericOfficialUrl = isGenericOfficialUrl(candidateUrl.value, 2) || isGenericOfficialUrl(seenMatch.value, 2);
+        const detail = {
+          type: "officialUrl-within-selection",
+          candidateSourceItemId: item.sourceItemId,
+          candidateTitle: policy?.title ?? item.title,
+          candidateSlug: policy?.slug,
+          candidateField: candidateUrl.field,
+          candidateUrl: candidateUrl.value,
+          matchedField: seenMatch.field,
+          matchedUrl: seenMatch.value,
+          matchedSlug: seenMatch.policy.slug,
+          matchedTitle: seenMatch.policy.title,
+          officialUrlGeneric: genericOfficialUrl,
+          conflictStrength: genericOfficialUrl ? "weak" : "strong",
+          reason: genericOfficialUrl
+            ? "generic or shared URL within selection is not sufficient for a strong duplicate"
+            : "individual policy URL repeats within selection",
+          finalDecision: genericOfficialUrl ? "downgraded_not_blocking" : "blocking_conflict"
+        };
+        officialUrlConflictDetails.push(detail);
+        if (genericOfficialUrl) downgradedOfficialUrlConflicts.push(detail);
+        else conflicts.push({ type: "officialUrl-within-selection", url, conflictStrength: "strong" });
+      }
     }
-    if (url && seenUrls.has(url)) conflicts.push({ type: "officialUrl-within-selection", url });
     if (taKey && existingTitleAgency.has(taKey)) {
       const matched = existingTitleAgency.get(taKey);
       conflicts.push({ type: "title+organization", matchedSlug: matched.slug, matchedTitle: matched.title });
@@ -138,18 +289,29 @@ function conflictCheck(existingPolicies, selectedItems) {
     if (taKey && seenTitleAgency.has(taKey)) conflicts.push({ type: "title+organization-within-selection" });
 
     if (conflicts.length) {
-      skipped.push({ sourceItemId: item.sourceItemId, title: item.title, slug: policy?.slug, reasons: conflicts });
+      skipped.push({
+        sourceItemId: item.sourceItemId,
+        title: item.title,
+        slug: policy?.slug,
+        reasons: conflicts,
+        downgradedOfficialUrlConflicts
+      });
       continue;
     }
 
     accepted.push(item);
     if (policy?.slug) seenSlugs.add(policy.slug);
     seenSourceKeys.add(sourceKey);
-    if (url) seenUrls.add(url);
+    for (const candidateUrl of policyUrls(policy)) {
+      const url = normalizeUrl(candidateUrl.value);
+      if (url && !seenUrls.has(url)) {
+        seenUrls.set(url, { policy, field: candidateUrl.field, value: candidateUrl.value });
+      }
+    }
     if (taKey) seenTitleAgency.add(taKey);
   }
 
-  return { accepted, skipped };
+  return { accepted, skipped, officialUrlConflictDetails };
 }
 
 function conflictCheckSelectedOnly(existingPolicies, selectedItems) {
@@ -298,7 +460,11 @@ async function main() {
     candidatesAfterPrecheck.push(item);
   }
 
-  const { accepted: acceptedBeforeLimit, skipped: conflictSkipped } = conflictCheck(existingPolicies, candidatesAfterPrecheck);
+  const {
+    accepted: acceptedBeforeLimit,
+    skipped: conflictSkipped,
+    officialUrlConflictDetails
+  } = conflictCheck(existingPolicies, candidatesAfterPrecheck);
   const accepted = acceptedBeforeLimit.slice(0, limit);
   const selectedPolicies = accepted.map((item) => item.publicPolicyPreview);
   const skippedItems = [
@@ -321,6 +487,9 @@ async function main() {
   });
 
   const finalSelectionConflicts = conflictCheckSelectedOnly(existingPolicies, accepted);
+  const genericOfficialUrlConflicts = officialUrlConflictDetails.filter((conflict) => conflict.officialUrlGeneric);
+  const downgradedOfficialUrlConflicts = officialUrlConflictDetails.filter((conflict) => conflict.finalDecision === "downgraded_not_blocking");
+  const strongOfficialUrlConflicts = officialUrlConflictDetails.filter((conflict) => conflict.conflictStrength === "strong");
   const report = {
     runAt: new Date().toISOString(),
     dryRun: true,
@@ -352,6 +521,10 @@ async function main() {
       conflictCount: conflictSkipped.length,
       conflicts: conflictSkipped
     },
+    genericOfficialUrlConflicts,
+    downgradedOfficialUrlConflicts,
+    strongOfficialUrlConflicts,
+    officialUrlConflictDetails,
     searchIndexPreview,
     pageGenerationPreview,
     guardValidation,

@@ -377,3 +377,37 @@ npm.cmd run promote:gov24:apply -- --limit=48 --batch=6 --confirm
 ```
 
 That command must only be run after a human reviews the dry-run report. `update:apply:dry-run` itself never accepts `--confirm` and never writes to the source-of-truth policy file.
+
+## Step 21 Final Selection Guard
+
+`update:report` is a preliminary routing report. It can say that a source has `safeToApplyCount` candidates and recommend `ready_for_apply_dry_run`, but that does not mean the candidates are safe to write to `src/data/policies.ts`.
+
+`update:apply:dry-run` is the final pre-apply decision point. It re-runs source promotion, public Policy generation, temp merge validation, search index preview, page generation preview, and guard validation.
+
+If `safeToApplyCount` is greater than zero but `finalSelectedCount` is zero:
+
+- do not run any apply command,
+- treat `applyReadiness` as `not_ready_no_selected_candidates`,
+- treat `recommendedNextAction` as `need_more_discovery` or candidate review,
+- inspect `candidateTrace` and `excludedAfterFinalValidationReasons`,
+- run more discovery or fix the source-specific filter only after reviewing the exclusion reasons.
+
+The final apply rule is:
+
+```text
+finalApplyAllowed === true
+```
+
+This requires a non-zero final selected count and a ready final dry-run. A preliminary `safeToApplyCount` alone is never enough for production writes.
+
+Official URL conflicts are treated carefully. A shared or generic URL, such as a source main page, search/list page, common application platform, or a URL that does not identify a single source item, is not enough by itself to block a candidate as a strong duplicate. It should be recorded as a weak/downgraded conflict and reviewed with title, organization, source item ID, and content similarity.
+
+Strong duplicate evidence should come from at least one of these:
+
+- identical source name and source item ID,
+- identical source-specific detail URL,
+- identical slug,
+- high title similarity with the same organization,
+- high title and support-content similarity.
+
+`update:apply:dry-run` also uses a small-batch safety guard. If the final selected count is non-zero but below the minimum manual apply threshold, the report should recommend more discovery instead of immediate apply.

@@ -77631,6 +77631,7206 @@ const gov24PromotionPoliciesBatch6: Policy[] = [
 
 policies.push(...gov24PromotionPoliciesBatch6);
 
+const gov24PromotionPoliciesBatch7: Policy[] = [
+  {
+    "slug": "gov24-아빠-육아휴직장려금-지원",
+    "title": "아빠 육아휴직장려금 지원",
+    "category": "고용",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 강남구",
+    "region": "서울",
+    "amount": "휴직기간당 월 30만원, 최대 1년 1개월 미만 기간은 일할계산(1일 지급액=1만원 기준)",
+    "deadline": "2026-01-01 ~ 2026-12-31",
+    "dday": "D-218",
+    "status": "모집중",
+    "startDate": "2026-01-01",
+    "endDate": "2026-12-31",
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "임신·출산·육아·취업",
+    "targetGroup": "구직자, 부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "아빠 육아휴직장려금 지원",
+      "고용",
+      "서울",
+      "서울특별시 강남구",
+      "모집중",
+      "구직자",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "취업",
+      "휴직기간당",
+      "월"
+    ],
+    "summary": "휴직기간당 월 30만원, 최대 1년 1개월 미만 기간은 일할계산(1일 지급액=1만원 기준)",
+    "audience": "○ 아빠 육아휴직 장려금\n - 신청일 기준 1년 이상 계속하여 강남구에 주민등록이 되어있는 남성 육아휴직자(대상 자녀는 강남구에 주민등록이 된 경우)\n - 고용보험 가입자로 육아휴직급여 수급자(공무원, 교사 등 연금 수급자 제외)\n - 2026. 1. 1. 이후 육아 휴직을 시작한 자\n - 동일한 육아휴직기간으로 고용노동부 6+6 부모육아휴직제 지원 대상자 제외\n * 특례기간 종료 후 지원 가능(특례기간 제외한 휴직기간 지원)",
+    "benefits": [
+      "휴직기간당 월 30만원, 최대 1년 1개월 미만 기간은 일할계산(1일 지급액=1만원 기준)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "정부24온라인신청||방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000125",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000125",
+    "contact": "서울특별시 강남구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 아빠 육아휴직 장려금\n - 신청일 기준 1년 이상 계속하여 강남구에 주민등록이 되어있는 남성 육아휴직자(대상 자녀는 강남구에 주민등록이 된 경우)\n - 고용보험 가입자로 육아휴직급여 수급자(공무원, 교사 등 연금 수급자 제외)\n - 2026. 1. 1. 이후 육아 휴직을 시작한 자\n - 동일한 육아휴직기간으로 고용노동부 6+6 부모육아휴직제 지원 대상자 제외\n * 특례기간 종료 후 지원 가능(특례기간 제외한 휴직기간 지원)",
+      "benefit": "휴직기간당 월 30만원, 최대 1년 1개월 미만 기간은 일할계산(1일 지급액=1만원 기준)",
+      "application": "정부24온라인신청||방문신청",
+      "contact": "서울특별시 강남구"
+    }
+  },
+  {
+    "slug": "gov24-동작구-전세피해임차인-지원금-소송수행비-실비-지원",
+    "title": "동작구 전세피해임차인 지원금(소송수행비 실비 지원)",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동작구",
+    "region": "서울",
+    "amount": "동작구 전세사기피해자(등)가 기지출한 집행권원 확보 조치 비용에 대한 실비 지원",
+    "deadline": "2025-03-17 ~ 2025-03-17",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": "2025-03-17",
+    "endDate": "2025-03-17",
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "주거",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "동작구 전세피해임차인 지원금(소송수행비 실비 지원)",
+      "주거",
+      "서울",
+      "서울특별시 동작구",
+      "마감",
+      "일반",
+      "아동",
+      "동작구",
+      "전세사기피해자(등)가",
+      "기지출한",
+      "집행권원",
+      "확보"
+    ],
+    "summary": "동작구 전세사기피해자(등)가 기지출한 집행권원 확보 조치 비용에 대한 실비 지원",
+    "audience": "○ 동작구 전세피해임차인 소송수행경비 지원(최대 100만원 실비지원, 1회)\n - 신청기간 : 2025년 3월 17일 ~ 예산소진 시까지 ※2025년 예산 소진으로 2025.11.20. 이후 신청자는 내년도 1월중 지원금 지급예정\n - 지원대상 : 전세사기피해자(특별법 적용)로 결정된 동작구민\n - 지원내용: 전세사기피해자(등)가 기지출한 집행권원 확보 조치 비용에 대한 실비 지원(1세대당 100만원 이내)\n ㆍ법무사·변호사 수임료 : 지급명령(40만원), 전세보증금반환소송(100만원)\n ㆍ나홀로소송 인지·송달료 : 지급명령(40만원), 전세보증금반환소송(100만원)\n ※ 지급명령과 전세보증금 반환소송 2건이 진행 된 경우 100만원 이내 지급",
+    "benefits": [
+      "동작구 전세사기피해자(등)가 기지출한 집행권원 확보 조치 비용에 대한 실비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 신청방법\n - 방문신청 : 동작구 전세사기피해지원 센터 [동작구청 2층 부동산정보과 / 09:00~18:00]\n - 온라인신청 : 정부24(혜택알리미)(www.gov.kr), \"동작구 전세피해임차인 지원금(소송수행비 실비 지원)” 검색",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000166",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000166",
+    "contact": "서울특별시 동작구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 동작구 전세피해임차인 소송수행경비 지원(최대 100만원 실비지원, 1회)\n - 신청기간 : 2025년 3월 17일 ~ 예산소진 시까지 ※2025년 예산 소진으로 2025.11.20. 이후 신청자는 내년도 1월중 지원금 지급예정\n - 지원대상 : 전세사기피해자(특별법 적용)로 결정된 동작구민\n - 지원내용: 전세사기피해자(등)가 기지출한 집행권원 확보 조치 비용에 대한 실비 지원(1세대당 100만원 이내)\n ㆍ법무사·변호사 수임료 : 지급명령(40만원), 전세보증금반환소송(100만원)\n ㆍ나홀로소송 인지·송달료 : 지급명령(40만원), 전세보증금반환소송(100만원)\n ※ 지급명령과 전세보증금 반환소송 2건이 진행 된 경우 100만원 이내 지급",
+      "benefit": "동작구 전세사기피해자(등)가 기지출한 집행권원 확보 조치 비용에 대한 실비 지원",
+      "application": "○ 신청방법\n - 방문신청 : 동작구 전세사기피해지원 센터 [동작구청 2층 부동산정보과 / 09:00~18:00]\n - 온라인신청 : 정부24(혜택알리미)(www.gov.kr), \"동작구 전세피해임차인 지원금(소송수행비 실비 지원)” 검색",
+      "contact": "서울특별시 동작구"
+    }
+  },
+  {
+    "slug": "gov24-동작구-전세피해임차인-지원금-보증금반환보증료-실비-지원",
+    "title": "동작구 전세피해임차인 지원금(보증금반환보증료 실비 지원)",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동작구",
+    "region": "서울",
+    "amount": "동작구 전세사기피해자(등)가 기지출한 보증금반환보증료 실비 지원",
+    "deadline": "2025-07-14 ~ 2025-07-14",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": "2025-07-14",
+    "endDate": "2025-07-14",
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "주거·사업",
+    "targetGroup": "소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "동작구 전세피해임차인 지원금(보증금반환보증료 실비 지원)",
+      "주거",
+      "서울",
+      "서울특별시 동작구",
+      "마감",
+      "소상공인",
+      "전체",
+      "사업",
+      "동작구",
+      "전세사기피해자(등)가",
+      "기지출한",
+      "보증금반환보증료"
+    ],
+    "summary": "동작구 전세사기피해자(등)가 기지출한 보증금반환보증료 실비 지원",
+    "audience": "○ 동작구 전세피해임차인 보증금반환보증료 지원(최대 100만원 실비지원, 1회)\n - 신청기간 : 2025년 7월 14일 ~ 예산소진시 ※2025년 예산 소진으로 2025.11.20. 이후 신청자는 내년도 1월중 지원금 지급예정\n - 신청자격 : 새로운 전·월세 계약으로 입주하여 보증료를 납부한 자\n - 지원대상 : 전세사기피해자(특별법 적용)로 결정된 동작구민\n - 지원범위\n · 전세보증금 반환보증보험(HF, HUG, SGI)에 가입하고 납부한 비용\n · 등록임대사업자의 주택을 임차한 경우 임차인 부담금(25%)",
+    "benefits": [
+      "동작구 전세사기피해자(등)가 기지출한 보증금반환보증료 실비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 신청방법\n - 방문신청 : 동작구 전세사기피해지원 센터 [동작구청 2층 부동산정보과 / 09:00~18:00]\n - 온라인신청 : 정부24(혜택알리미)(www.gov.kr), \"동작구 전세피해임차인 지원금(보증금반환보증료 실비 지원)” 검색\n\n○ 지급방법\n - 처리기간 : 최대 20일(신청 접수순 순차 지급)\n - 지급방법 : 피해자 본인 계좌 입금\n ㆍ신청 접수량이 많을 경우, 지원금 지급이 지연될 수 있음\n ㆍ신청 시 서류 보완이 필요한 경우 보완 완료 후 최종 접수됨",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000167",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000167",
+    "contact": "서울특별시 동작구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 동작구 전세피해임차인 보증금반환보증료 지원(최대 100만원 실비지원, 1회)\n - 신청기간 : 2025년 7월 14일 ~ 예산소진시 ※2025년 예산 소진으로 2025.11.20. 이후 신청자는 내년도 1월중 지원금 지급예정\n - 신청자격 : 새로운 전·월세 계약으로 입주하여 보증료를 납부한 자\n - 지원대상 : 전세사기피해자(특별법 적용)로 결정된 동작구민\n - 지원범위\n · 전세보증금 반환보증보험(HF, HUG, SGI)에 가입하고 납부한 비용\n · 등록임대사업자의 주택을 임차한 경우 임차인 부담금(25%)",
+      "benefit": "동작구 전세사기피해자(등)가 기지출한 보증금반환보증료 실비 지원",
+      "application": "○ 신청방법\n - 방문신청 : 동작구 전세사기피해지원 센터 [동작구청 2층 부동산정보과 / 09:00~18:00]\n - 온라인신청 : 정부24(혜택알리미)(www.gov.kr), \"동작구 전세피해임차인 지원금(보증금반환보증료 실비 지원)” 검색\n\n○ 지급방법\n - 처리기간 : 최대 20일(신청 접수순 순차 지급)\n - 지급방법 : 피해자 본인 계좌 입금\n ㆍ신청 접수량이 많을 경우, 지원금 지급이 지연될 수 있음\n ㆍ신청 시 서류 보완이 필요한 경우 보완 완료 후 최종 접수됨",
+      "contact": "서울특별시 동작구"
+    }
+  },
+  {
+    "slug": "gov24-동작구-전세피해임차인-지원금-이사비-실비-지원",
+    "title": "동작구 전세피해임차인 지원금(이사비 실비 지원)",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동작구",
+    "region": "서울",
+    "amount": "동작구 전세사기피해자(등)가 새로운 전·월세 계약으로 발생한 이사비용에 대한 실비 지원",
+    "deadline": "2025-07-14 ~ 2025-07-14",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": "2025-07-14",
+    "endDate": "2025-07-14",
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "주거",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "동작구 전세피해임차인 지원금(이사비 실비 지원)",
+      "주거",
+      "서울",
+      "서울특별시 동작구",
+      "마감",
+      "일반",
+      "전체",
+      "동작구",
+      "전세사기피해자(등)가",
+      "새로운",
+      "전·월세",
+      "계약으로"
+    ],
+    "summary": "동작구 전세사기피해자(등)가 새로운 전·월세 계약으로 발생한 이사비용에 대한 실비 지원",
+    "audience": "○ 동작구 전세피해임차인 이사비 실비 지원(최대 100만원 실비지원, 1회) \n - 신청기간 : 2025년 7월 14일~예산소진 시 ※2025년 예산 소진으로 2025.11.20. 이후 신청자는 내년도 1월중 지원금 지급예정\n - 신청자격 : 새로운 전·월세 계약으로 이사하여 비용이 발생한 자\n - 지원대상 : 전세사기피해자(특별법 적용)로 결정된 동작구민 \n - 지원범위\n · 주거이전 시 부담한 이사비용(이사비, 에어컨 이전비, 사다리차, 중개수수료 등)\n · 직계존속, 형제, 자매 등 2촌 이내 혈족의 주택 임차 시 제외",
+    "benefits": [
+      "동작구 전세사기피해자(등)가 새로운 전·월세 계약으로 발생한 이사비용에 대한 실비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 신청방법 \n - 방문신청 : 동작구 전세사기피해지원 센터 [동작구청 2층 부동산정보과 / 09:00~18:00] \n - 온라인신청 : 정부24(혜택알리미)(www.gov.kr), \"동작구 전세피해임차인 지원금(이사비 실비 지원)” 검색",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000168",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000168",
+    "contact": "서울특별시 동작구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 동작구 전세피해임차인 이사비 실비 지원(최대 100만원 실비지원, 1회) \n - 신청기간 : 2025년 7월 14일~예산소진 시 ※2025년 예산 소진으로 2025.11.20. 이후 신청자는 내년도 1월중 지원금 지급예정\n - 신청자격 : 새로운 전·월세 계약으로 이사하여 비용이 발생한 자\n - 지원대상 : 전세사기피해자(특별법 적용)로 결정된 동작구민 \n - 지원범위\n · 주거이전 시 부담한 이사비용(이사비, 에어컨 이전비, 사다리차, 중개수수료 등)\n · 직계존속, 형제, 자매 등 2촌 이내 혈족의 주택 임차 시 제외",
+      "benefit": "동작구 전세사기피해자(등)가 새로운 전·월세 계약으로 발생한 이사비용에 대한 실비 지원",
+      "application": "○ 신청방법 \n - 방문신청 : 동작구 전세사기피해지원 센터 [동작구청 2층 부동산정보과 / 09:00~18:00] \n - 온라인신청 : 정부24(혜택알리미)(www.gov.kr), \"동작구 전세피해임차인 지원금(이사비 실비 지원)” 검색",
+      "contact": "서울특별시 동작구"
+    }
+  },
+  {
+    "slug": "gov24-동작구-전세피해임차인-지원금-월세-실비-지원",
+    "title": "동작구 전세피해임차인 지원금(월세 실비 지원)",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동작구",
+    "region": "서울",
+    "amount": "동작구 전세사기피해자(등)가 새로운 월세 계약으로 발생한 임대료에 대한 실비 지원",
+    "deadline": "2025-07-14 ~ 2025-07-14",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": "2025-07-14",
+    "endDate": "2025-07-14",
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "주거",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "동작구 전세피해임차인 지원금(월세 실비 지원)",
+      "주거",
+      "서울",
+      "서울특별시 동작구",
+      "마감",
+      "일반",
+      "전체",
+      "동작구",
+      "전세사기피해자(등)가",
+      "새로운",
+      "월세",
+      "계약으로"
+    ],
+    "summary": "동작구 전세사기피해자(등)가 새로운 월세 계약으로 발생한 임대료에 대한 실비 지원",
+    "audience": "○ 동작구 전세피해임차인 월세 실비 지원(최대 100만원 실비지원, 1회) \n - 신청기간 : 2025년 7월 14일 ~ 예산소진 시까지 ※2025년 예산 소진으로 2025.11.20. 이후 신청자는 내년도 1월중 지원금 지급예정\n - 신청자격 : 새로운 월세 계약으로 입주하여 임대료를 납부한 자\n - 지원대상 : 전세사기피해자(특별법 적용)로 결정된 동작구민 \n - 지원범위\n · 기 지출한 월 임대료(선납 시 해당 월 이후 신청 가능)\n · 직계존속, 형제, 자매 등 2촌 이내 혈족의 주택 임차 시 제외",
+    "benefits": [
+      "동작구 전세사기피해자(등)가 새로운 월세 계약으로 발생한 임대료에 대한 실비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 신청방법 \n - 방문신청 : 동작구 전세사기피해지원 센터 [동작구청 2층 부동산정보과 / 09:00~18:00] \n - 온라인신청 : 정부24(혜택알리미)(www.gov.kr), \"동작구 전세피해임차인 지원금(월세 실비 지원)” 검색",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000169",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000169",
+    "contact": "서울특별시 동작구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 동작구 전세피해임차인 월세 실비 지원(최대 100만원 실비지원, 1회) \n - 신청기간 : 2025년 7월 14일 ~ 예산소진 시까지 ※2025년 예산 소진으로 2025.11.20. 이후 신청자는 내년도 1월중 지원금 지급예정\n - 신청자격 : 새로운 월세 계약으로 입주하여 임대료를 납부한 자\n - 지원대상 : 전세사기피해자(특별법 적용)로 결정된 동작구민 \n - 지원범위\n · 기 지출한 월 임대료(선납 시 해당 월 이후 신청 가능)\n · 직계존속, 형제, 자매 등 2촌 이내 혈족의 주택 임차 시 제외",
+      "benefit": "동작구 전세사기피해자(등)가 새로운 월세 계약으로 발생한 임대료에 대한 실비 지원",
+      "application": "○ 신청방법 \n - 방문신청 : 동작구 전세사기피해지원 센터 [동작구청 2층 부동산정보과 / 09:00~18:00] \n - 온라인신청 : 정부24(혜택알리미)(www.gov.kr), \"동작구 전세피해임차인 지원금(월세 실비 지원)” 검색",
+      "contact": "서울특별시 동작구"
+    }
+  },
+  {
+    "slug": "gov24-동작구-전세피해임차인-지원금-심리치료비-실비-지원",
+    "title": "동작구 전세피해임차인 지원금(심리치료비 실비 지원)",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동작구",
+    "region": "서울",
+    "amount": "동작구 전세사기피해자(등)가 전세피해로 인해 심리상담 및 치료 받은 비용에 대한 실비 지원",
+    "deadline": "2025-07-14 ~ 2025-07-14",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": "2025-07-14",
+    "endDate": "2025-07-14",
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "주거",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "동작구 전세피해임차인 지원금(심리치료비 실비 지원)",
+      "주거",
+      "서울",
+      "서울특별시 동작구",
+      "마감",
+      "일반",
+      "전체",
+      "동작구",
+      "전세사기피해자(등)가",
+      "전세피해로",
+      "인해",
+      "심리상담"
+    ],
+    "summary": "동작구 전세사기피해자(등)가 전세피해로 인해 심리상담 및 치료 받은 비용에 대한 실비 지원",
+    "audience": "○ 동작구 전세피해임차인 심리치료비 실비 지원(최대 100만원 실비지원, 1회) \n - 신청기간 : 2025년 7월 14일 ~ 예산소진 시까지 ※2025년 예산 소진으로 2025.11.20. 이후 신청자는 내년도 1월중 지원금 지급예정\n - 신청자격 : 전세피해로 심리상담 및 치료를 받은 자\n - 지원대상 : 전세사기피해자(특별법 적용)로 결정된 동작구민 \n - 지원범위\n · 전문가 및 의사와 상담, 치료를 받고 지출한 비용\n · 상담료, 진료비, 약제비 등(건강보험공단 부담분 제외)",
+    "benefits": [
+      "동작구 전세사기피해자(등)가 전세피해로 인해 심리상담 및 치료 받은 비용에 대한 실비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 신청방법 \n - 방문신청 : 동작구 전세사기피해지원 센터 [동작구청 2층 부동산정보과 / 09:00~18:00] \n - 온라인신청 : 정부24(혜택알리미)(www.gov.kr), \"동작구 전세피해임차인 지원금(심리치료비 실비 지원)” 검색",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000170",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000170",
+    "contact": "서울특별시 동작구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 동작구 전세피해임차인 심리치료비 실비 지원(최대 100만원 실비지원, 1회) \n - 신청기간 : 2025년 7월 14일 ~ 예산소진 시까지 ※2025년 예산 소진으로 2025.11.20. 이후 신청자는 내년도 1월중 지원금 지급예정\n - 신청자격 : 전세피해로 심리상담 및 치료를 받은 자\n - 지원대상 : 전세사기피해자(특별법 적용)로 결정된 동작구민 \n - 지원범위\n · 전문가 및 의사와 상담, 치료를 받고 지출한 비용\n · 상담료, 진료비, 약제비 등(건강보험공단 부담분 제외)",
+      "benefit": "동작구 전세사기피해자(등)가 전세피해로 인해 심리상담 및 치료 받은 비용에 대한 실비 지원",
+      "application": "○ 신청방법 \n - 방문신청 : 동작구 전세사기피해지원 센터 [동작구청 2층 부동산정보과 / 09:00~18:00] \n - 온라인신청 : 정부24(혜택알리미)(www.gov.kr), \"동작구 전세피해임차인 지원금(심리치료비 실비 지원)” 검색",
+      "contact": "서울특별시 동작구"
+    }
+  },
+  {
+    "slug": "gov24-동작구-전세피해임차인-지원금-주거안정-지원",
+    "title": "동작구 전세피해임차인 지원금(주거안정 지원)",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동작구",
+    "region": "서울",
+    "amount": "동작구 전세사기피해자의 신속한 주거안정 및 피해 최소화를 위한 재정지원(정액 50만원)",
+    "deadline": "2025-07-14 ~ 2025-07-14",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": "2025-07-14",
+    "endDate": "2025-07-14",
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "주거",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "동작구 전세피해임차인 지원금(주거안정 지원)",
+      "주거",
+      "서울",
+      "서울특별시 동작구",
+      "마감",
+      "일반",
+      "전체",
+      "동작구",
+      "전세사기피해자의",
+      "신속한",
+      "주거안정",
+      "및"
+    ],
+    "summary": "동작구 전세사기피해자의 신속한 주거안정 및 피해 최소화를 위한 재정지원(정액 50만원)",
+    "audience": "○ 동작구 전세피해임차인 주거안정 지원(50만원 정액지원, 1회) \n - 신청기간 : 2025년 7월 14일 ~ 예산소진 시까지 ※2025년 예산 소진으로 2025.11.20. 이후 신청자는 내년도 1월중 지원금 지급예정\n - 신청자격 : 피해자로 결정된 무주택 동작구민\n - 지원범위\n · 전세피해임차인의 신속한 주거안정 및 피해 최소화를 위한 재정지원",
+    "benefits": [
+      "동작구 전세사기피해자의 신속한 주거안정 및 피해 최소화를 위한 재정지원(정액 50만원)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 신청방법 \n - 방문신청 : 동작구 전세사기피해지원 센터 [동작구청 본관 2층 부동산정보과 / 09:00~18:00] \n - 온라인신청 : 정부24(혜택알리미)(www.gov.kr), \"동작구 전세피해임차인 지원금(주거안정 지원)” 검색",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000171",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000171",
+    "contact": "서울특별시 동작구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 동작구 전세피해임차인 주거안정 지원(50만원 정액지원, 1회) \n - 신청기간 : 2025년 7월 14일 ~ 예산소진 시까지 ※2025년 예산 소진으로 2025.11.20. 이후 신청자는 내년도 1월중 지원금 지급예정\n - 신청자격 : 피해자로 결정된 무주택 동작구민\n - 지원범위\n · 전세피해임차인의 신속한 주거안정 및 피해 최소화를 위한 재정지원",
+      "benefit": "동작구 전세사기피해자의 신속한 주거안정 및 피해 최소화를 위한 재정지원(정액 50만원)",
+      "application": "○ 신청방법 \n - 방문신청 : 동작구 전세사기피해지원 센터 [동작구청 본관 2층 부동산정보과 / 09:00~18:00] \n - 온라인신청 : 정부24(혜택알리미)(www.gov.kr), \"동작구 전세피해임차인 지원금(주거안정 지원)” 검색",
+      "contact": "서울특별시 동작구"
+    }
+  },
+  {
+    "slug": "gov24-취약계층-인플루엔자-백신-및-접종-지원",
+    "title": "취약계층 인플루엔자 백신 및 접종 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "취약계층 인플루엔자 예방접종 지원",
+    "deadline": "2025-10-15 ~ 2025-12-31",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": "2025-10-15",
+    "endDate": "2025-12-31",
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "known",
+    "requiresOfficialConfirmation": false,
+    "warnings": [],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": true,
+      "showDday": true,
+      "requiresOfficialConfirmation": false
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "취약계층 인플루엔자 백신 및 접종 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 관악구",
+      "마감",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "복지",
+      "취약계층",
+      "인플루엔자",
+      "예방접종"
+    ],
+    "summary": "관악구의 취약계층 인플루엔자 예방접종 지원사업입니다. 접종 대상과 이용 가능한 위탁의료기관은 공식 안내에서 확인하세요.",
+    "audience": "○ 취약계층 인플루엔자 예방접종",
+    "benefits": [
+      "취약계층 인플루엔자 예방접종 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○신청방법: 해당신분증(국가유공자증, 복지카드 등)을 지참 후 관내 위탁의료기관에서 접종",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000110",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000110",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 취약계층 인플루엔자 예방접종",
+      "benefit": "취약계층 인플루엔자 예방접종 지원",
+      "application": "○신청방법: 해당신분증(국가유공자증, 복지카드 등)을 지참 후 관내 위탁의료기관에서 접종",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-남성-난임-지원",
+    "title": "남성 난임 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 강남구",
+    "region": "서울",
+    "amount": "난임부부 중 남성에게 검진 비용 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "남성 난임 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 강남구",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "난임부부",
+      "중",
+      "남성에게",
+      "검진"
+    ],
+    "summary": "난임부부 중 남성에게 검진 비용 지원",
+    "audience": "○ 남성 난임 검진 상담 및 비용(일부본인부담금 및 비급여) 지원",
+    "benefits": [
+      "난임부부 중 남성에게 검진 비용 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000108",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000108",
+    "contact": "서울특별시 강남구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 남성 난임 검진 상담 및 비용(일부본인부담금 및 비급여) 지원",
+      "benefit": "난임부부 중 남성에게 검진 비용 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 강남구"
+    }
+  },
+  {
+    "slug": "gov24-독거어르신-ict-돌봄서비스",
+    "title": "독거어르신 ICT 돌봄서비스",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 강남구",
+    "region": "서울",
+    "amount": "취약계층을 대상으로 ICT 스마트기기를 통한 돌봄서비스 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "독거어르신 ICT 돌봄서비스",
+      "복지",
+      "서울",
+      "서울특별시 강남구",
+      "상시",
+      "어르신",
+      "아동",
+      "취약계층을",
+      "대상으로",
+      "ICT",
+      "스마트기기를",
+      "통한"
+    ],
+    "summary": "취약계층을 대상으로 ICT 스마트기기를 통한 돌봄서비스 제공",
+    "audience": "- AI 스피커 400대, 혁신스마트기기(반려로봇 등) 130대, 초롱이 10대\n- 음성인식 AI스피커로 말벗 및 생활편의서비스(감성대화, 라디오, 음악, 운세, 뉴스, 날씨 등 다양한 서비스 제공) \n- Big Data 기반 생활특성 분석 및 위급 상황 모니터링 : Data 관제센터 운영\n- AI/IoT기기를 통한 단순 서비스를 넘어, 생활지원사의 방문 및 말벗역할, 전문 심리상담가를 통한 심리적 안정과 치유를 제공",
+    "benefits": [
+      "취약계층을 대상으로 ICT 스마트기기를 통한 돌봄서비스 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000106",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000106",
+    "contact": "서울특별시 강남구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "- AI 스피커 400대, 혁신스마트기기(반려로봇 등) 130대, 초롱이 10대\n- 음성인식 AI스피커로 말벗 및 생활편의서비스(감성대화, 라디오, 음악, 운세, 뉴스, 날씨 등 다양한 서비스 제공) \n- Big Data 기반 생활특성 분석 및 위급 상황 모니터링 : Data 관제센터 운영\n- AI/IoT기기를 통한 단순 서비스를 넘어, 생활지원사의 방문 및 말벗역할, 전문 심리상담가를 통한 심리적 안정과 치유를 제공",
+      "benefit": "취약계층을 대상으로 ICT 스마트기기를 통한 돌봄서비스 제공",
+      "application": "방문신청",
+      "contact": "서울특별시 강남구"
+    }
+  },
+  {
+    "slug": "gov24-저소득-노인가구-국민건강보험료-지원",
+    "title": "저소득 노인가구 국민건강보험료 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 강남구",
+    "region": "서울",
+    "amount": "저소득 노인가구에 건강보험료 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "저소득 노인가구 국민건강보험료 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 강남구",
+      "확인필요",
+      "어르신",
+      "아동",
+      "복지",
+      "저소득",
+      "노인가구에",
+      "건강보험료",
+      "지원"
+    ],
+    "summary": "강남구의 저소득 노인가구를 위한 국민건강보험료 지원사업입니다. 지원 대상과 적용 여부는 공식 공고에서 확인하세요.",
+    "audience": "○ 건강보험료 지원",
+    "benefits": [
+      "저소득 노인가구에 건강보험료 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청불필요",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000115",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000115",
+    "contact": "서울특별시 강남구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 건강보험료 지원",
+      "benefit": "저소득 노인가구에 건강보험료 지원",
+      "application": "신청불필요",
+      "contact": "서울특별시 강남구"
+    }
+  },
+  {
+    "slug": "gov24-아동양육시설-입소아동-지원",
+    "title": "아동양육시설 입소아동 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 강남구",
+    "region": "서울",
+    "amount": "아동양육시설 입소아동을 위해 명절 위문금 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "아동양육시설 입소아동 지원",
+      "복지",
+      "서울",
+      "서울특별시 강남구",
+      "확인필요",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "아동양육시설",
+      "입소아동을",
+      "위해",
+      "명절"
+    ],
+    "summary": "아동양육시설 입소아동을 위해 명절 위문금 지급",
+    "audience": "○ 아동양육시설 입소아동(50명)에 대한 설, 추석, 어린이날 위문금 지급\n - 1인 4만원 지급",
+    "benefits": [
+      "아동양육시설 입소아동을 위해 명절 위문금 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000116",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000116",
+    "contact": "서울특별시 강남구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 아동양육시설 입소아동(50명)에 대한 설, 추석, 어린이날 위문금 지급\n - 1인 4만원 지급",
+      "benefit": "아동양육시설 입소아동을 위해 명절 위문금 지급",
+      "application": "방문신청",
+      "contact": "서울특별시 강남구"
+    }
+  },
+  {
+    "slug": "gov24-장애인-무료식당-운영-지원",
+    "title": "장애인 무료식당 운영 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 강남구",
+    "region": "서울",
+    "amount": "저소득 장애인에게 무료급식 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인 무료식당 운영 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 강남구",
+      "상시",
+      "장애인",
+      "전체",
+      "복지",
+      "저소득",
+      "장애인에게",
+      "무료급식",
+      "제공"
+    ],
+    "summary": "강남구의 저소득 장애인을 위한 무료식당 운영 지원사업입니다. 이용 대상과 운영 방식은 공식 안내를 기준으로 확인하세요.",
+    "audience": "○ 저소득 장애인을 대상으로 무료급식을 제공하여 저소득 장애인의 결식해소 및 건강 증진을 도모하고, 장애인들의 만남의 장을 마련하여 소통하는 기회 제공",
+    "benefits": [
+      "저소득 장애인에게 무료급식 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000102",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000102",
+    "contact": "서울특별시 강남구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 저소득 장애인을 대상으로 무료급식을 제공하여 저소득 장애인의 결식해소 및 건강 증진을 도모하고, 장애인들의 만남의 장을 마련하여 소통하는 기회 제공",
+      "benefit": "저소득 장애인에게 무료급식 제공",
+      "application": "방문신청",
+      "contact": "서울특별시 강남구"
+    }
+  },
+  {
+    "slug": "gov24-강남구-저소득주민-명절위문금-지원",
+    "title": "강남구 저소득주민 명절위문금 지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 강남구",
+    "region": "서울",
+    "amount": "기초생활보장수급자 및 차상위계층 가구에 명절위문금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거·복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "강남구 저소득주민 명절위문금 지원",
+      "주거",
+      "서울",
+      "서울특별시 강남구",
+      "모집중",
+      "일반",
+      "전체",
+      "복지",
+      "기초생활보장수급자",
+      "및",
+      "차상위계층",
+      "가구에"
+    ],
+    "summary": "기초생활보장수급자 및 차상위계층 가구에 명절위문금 지원",
+    "audience": "○ 서울시 강남구 거주 대상\n○ 일년에 두 번, 설, 추석 명절에 생계.의료수급자는 가구당 6만원, 주거,교육급여 수급자 및 차상위계층은 가구당 5만원 지급",
+    "benefits": [
+      "기초생활보장수급자 및 차상위계층 가구에 명절위문금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청불필요",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000118",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000118",
+    "contact": "서울특별시 강남구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 서울시 강남구 거주 대상\n○ 일년에 두 번, 설, 추석 명절에 생계.의료수급자는 가구당 6만원, 주거,교육급여 수급자 및 차상위계층은 가구당 5만원 지급",
+      "benefit": "기초생활보장수급자 및 차상위계층 가구에 명절위문금 지원",
+      "application": "신청불필요",
+      "contact": "서울특별시 강남구"
+    }
+  },
+  {
+    "slug": "gov24-입양-및-가정위탁아동-지원",
+    "title": "입양 및 가정위탁아동 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 강남구",
+    "region": "서울",
+    "amount": "입양 및 가정위탁아동을 위해 양육수당, 의료비, 위문비 등을 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "입양 및 가정위탁아동 지원",
+      "교육",
+      "서울",
+      "서울특별시 강남구",
+      "상시",
+      "부모/육아",
+      "장애인",
+      "아동",
+      "임신·출산·육아",
+      "복지",
+      "입양",
+      "및"
+    ],
+    "summary": "입양 및 가정위탁아동을 위해 양육수당, 의료비, 위문비 등을 지원",
+    "audience": "○ 입양아동양육수당(1인 10만원), 장애입양아동 양육보조금(1인 10만원), 장애입양아동 의료비(국시비 지원금 지급 후 추가지급 40만원) 지급\n\n○ 가정위탁아동 부가급여(1인 5만원), 문화활동비(1인 2만원), 명절(설, 추석) 및 어린이날 위문비(1인 10만원) 지급",
+    "benefits": [
+      "입양 및 가정위탁아동을 위해 양육수당, 의료비, 위문비 등을 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000113",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000113",
+    "contact": "서울특별시 강남구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 입양아동양육수당(1인 10만원), 장애입양아동 양육보조금(1인 10만원), 장애입양아동 의료비(국시비 지원금 지급 후 추가지급 40만원) 지급\n\n○ 가정위탁아동 부가급여(1인 5만원), 문화활동비(1인 2만원), 명절(설, 추석) 및 어린이날 위문비(1인 10만원) 지급",
+      "benefit": "입양 및 가정위탁아동을 위해 양육수당, 의료비, 위문비 등을 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 강남구"
+    }
+  },
+  {
+    "slug": "gov24-강남구-영유아-발달-정밀검사-지원",
+    "title": "강남구 영유아 발달 정밀검사 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 강남구",
+    "region": "서울",
+    "amount": "영유아 건강 관리를 위한 발달 정밀검사비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "강남구 영유아 발달 정밀검사 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 강남구",
+      "상시",
+      "부모/육아",
+      "장애인",
+      "아동",
+      "임신·출산·육아",
+      "복지",
+      "영유아",
+      "건강"
+    ],
+    "summary": "영유아 건강 관리를 위한 발달 정밀검사비 지원",
+    "audience": "○ 지원내용 : 발달장애 정밀검사에 직접적으로 필요한 검사 및 진찰료에 대한 지원\n\n○ 지원제외 : 장애인진단서 발급비용, 상급병실료 차액, 특진비 등\n\n○ 지원금액 \n - 의료급여수급권자, 차상위계층, 기초생활수급자 : 최대 40만원\n - 건강보험가입자 및 피부양자(이하 “건강보험가입자”라 한다.) : 최대 20만원\n ※ 신청 당시 자격을 기준으로 지원\n\n○ 지원기간\n - 올해 3~8차까지 영유아건강검진 대상자가 해당 차수의 영유아건강검진을 받은 날로부터 1년 이내에 영유아 발달 정밀검사를 받고, 정밀검사를 실시한 해의 다음년도 상반기(6월말)까지 신청",
+    "benefits": [
+      "영유아 건강 관리를 위한 발달 정밀검사비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "정부24온라인신청||방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000124",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000124",
+    "contact": "서울특별시 강남구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 지원내용 : 발달장애 정밀검사에 직접적으로 필요한 검사 및 진찰료에 대한 지원\n\n○ 지원제외 : 장애인진단서 발급비용, 상급병실료 차액, 특진비 등\n\n○ 지원금액 \n - 의료급여수급권자, 차상위계층, 기초생활수급자 : 최대 40만원\n - 건강보험가입자 및 피부양자(이하 “건강보험가입자”라 한다.) : 최대 20만원\n ※ 신청 당시 자격을 기준으로 지원\n\n○ 지원기간\n - 올해 3~8차까지 영유아건강검진 대상자가 해당 차수의 영유아건강검진을 받은 날로부터 1년 이내에 영유아 발달 정밀검사를 받고, 정밀검사를 실시한 해의 다음년도 상반기(6월말)까지 신청",
+      "benefit": "영유아 건강 관리를 위한 발달 정밀검사비 지원",
+      "application": "정부24온라인신청||방문신청",
+      "contact": "서울특별시 강남구"
+    }
+  },
+  {
+    "slug": "gov24-서초구-정신건강-의료비-지원",
+    "title": "서초구 정신건강 의료비 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "중증정신질환자 대상 정신건강 의료비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "서초구 정신건강 의료비 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 서초구",
+      "상시",
+      "일반",
+      "전체",
+      "중증정신질환자",
+      "대상",
+      "정신건강",
+      "의료비",
+      "지원"
+    ],
+    "summary": "중증정신질환자 대상 정신건강 의료비 지원",
+    "audience": "○ 서초구민 중증정신질환자에게 연 150만원 내 외래치료비, 입원비 등 지원",
+    "benefits": [
+      "중증정신질환자 대상 정신건강 의료비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000120",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000120",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 서초구민 중증정신질환자에게 연 150만원 내 외래치료비, 입원비 등 지원",
+      "benefit": "중증정신질환자 대상 정신건강 의료비 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 서초구"
+    }
+  },
+  {
+    "slug": "gov24-서초구-마음건강검진-및-상담지원사업",
+    "title": "서초구 마음건강검진 및 상담지원사업",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "만 19세 이상 서초구민에게 정신건강전문 상담비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "서초구 마음건강검진 및 상담지원사업",
+      "청년",
+      "서울",
+      "서울특별시 서초구",
+      "상시",
+      "만",
+      "19세",
+      "이상",
+      "서초구민에게",
+      "정신건강전문",
+      "상담비",
+      "지원"
+    ],
+    "summary": "만 19세 이상 서초구민에게 정신건강전문 상담비 지원",
+    "audience": "○ 만 19세 이상 서초구민 및 서초구 직장인에게 정신건강의학과전문의 상담비 지원(최대 3회 8만원)",
+    "benefits": [
+      "만 19세 이상 서초구민에게 정신건강전문 상담비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000117",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000117",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 만 19세 이상 서초구민 및 서초구 직장인에게 정신건강의학과전문의 상담비 지원(최대 3회 8만원)",
+      "benefit": "만 19세 이상 서초구민에게 정신건강전문 상담비 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 서초구"
+    }
+  },
+  {
+    "slug": "gov24-다자녀가정-실내바닥매트-지원",
+    "title": "다자녀가정 실내바닥매트 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "○다자녀가정 실내바닥매트 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "다자녀가정 실내바닥매트 지원",
+      "교육",
+      "서울",
+      "서울특별시 서초구",
+      "상시",
+      "부모/육아",
+      "청소년",
+      "임신·출산·육아",
+      "○다자녀가정",
+      "실내바닥매트",
+      "지원"
+    ],
+    "summary": "서초구의 다자녀가정을 위한 실내바닥매트 지원사업입니다. 신청 대상과 지원 절차는 공식 공고에서 확인하세요.",
+    "audience": "○다자녀가정 실내바닥매트 지원\n - 지원대상 : 서초구에 주민등록을 두고 거주중인 중학생이하 세자녀이상 가정\n - 지원물품 : 세대당 매트 1개 지원(240cm*140cm*4cm) \n - 신청방법\n ① 온라인신청 : 구 홈페이지(www.seocho.go.kr)\n ② 방문신청 : 동주민센터, 구청 여성보육과\n - 지원방법 : 신청접수 후 2주내 업체에서 각 가정으로 택배 배송",
+    "benefits": [
+      "○다자녀가정 실내바닥매트 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "기타 온라인신청||방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000131",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000131",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○다자녀가정 실내바닥매트 지원\n - 지원대상 : 서초구에 주민등록을 두고 거주중인 중학생이하 세자녀이상 가정\n - 지원물품 : 세대당 매트 1개 지원(240cm*140cm*4cm) \n - 신청방법\n ① 온라인신청 : 구 홈페이지(www.seocho.go.kr)\n ② 방문신청 : 동주민센터, 구청 여성보육과\n - 지원방법 : 신청접수 후 2주내 업체에서 각 가정으로 택배 배송",
+      "benefit": "○다자녀가정 실내바닥매트 지원",
+      "application": "기타 온라인신청||방문신청",
+      "contact": "서울특별시 서초구"
+    }
+  },
+  {
+    "slug": "gov24-아빠육아-휴직-장려금-지원",
+    "title": "아빠육아 휴직 장려금 지원",
+    "category": "고용",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "육아휴직 중인 남성근로자에게 육아휴직장려금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·취업",
+    "targetGroup": "구직자, 부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "아빠육아 휴직 장려금 지원",
+      "고용",
+      "서울",
+      "서울특별시 서초구",
+      "상시",
+      "구직자",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "취업",
+      "육아휴직",
+      "중인"
+    ],
+    "summary": "육아휴직 중인 남성근로자에게 육아휴직장려금 지원",
+    "audience": "○ 육아휴직 중인 남성근로자에게 육아휴직장려금 지원",
+    "benefits": [
+      "육아휴직 중인 남성근로자에게 육아휴직장려금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "기타 온라인신청||방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000107",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000107",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 육아휴직 중인 남성근로자에게 육아휴직장려금 지원",
+      "benefit": "육아휴직 중인 남성근로자에게 육아휴직장려금 지원",
+      "application": "기타 온라인신청||방문신청",
+      "contact": "서울특별시 서초구"
+    }
+  },
+  {
+    "slug": "gov24-저소득-한부모가족-지원",
+    "title": "저소득 한부모가족 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "저소득 한부모가족에게 명절 격려금 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "저소득 한부모가족 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 서초구",
+      "상시",
+      "일반",
+      "전체",
+      "복지",
+      "저소득",
+      "한부모가족에게",
+      "명절",
+      "격려금"
+    ],
+    "summary": "저소득 한부모가족에게 명절 격려금 지급",
+    "audience": "○ 저소득한부모가족 명절(설,추석) 5만원(현금) 지원",
+    "benefits": [
+      "저소득 한부모가족에게 명절 격려금 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "기타 온라인신청||방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000119",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000119",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 저소득한부모가족 명절(설,추석) 5만원(현금) 지원",
+      "benefit": "저소득 한부모가족에게 명절 격려금 지급",
+      "application": "기타 온라인신청||방문신청",
+      "contact": "서울특별시 서초구"
+    }
+  },
+  {
+    "slug": "gov24-미취학아동-구강관리-지원",
+    "title": "미취학아동 구강관리 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "미취학아동을 대상으로 불소도포 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "미취학아동 구강관리 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 서초구",
+      "상시",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "미취학아동을",
+      "대상으로",
+      "불소도포",
+      "지원"
+    ],
+    "summary": "서초구의 미취학아동 구강관리를 위한 불소도포 지원사업입니다. 이용 대상과 신청 방법은 공식 안내에서 확인하세요.",
+    "audience": "○ 개인 및 단체 대상자 충치예방을 위한 불소도포",
+    "benefits": [
+      "미취학아동을 대상으로 불소도포 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000111",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000111",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 개인 및 단체 대상자 충치예방을 위한 불소도포",
+      "benefit": "미취학아동을 대상으로 불소도포 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 서초구"
+    }
+  },
+  {
+    "slug": "gov24-장애인-치과치료-지원",
+    "title": "장애인 치과치료 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "장애인을 대상으로 치과진료 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인 치과치료 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 서초구",
+      "상시",
+      "장애인",
+      "전체",
+      "복지",
+      "장애인을",
+      "대상으로",
+      "치과진료",
+      "지원"
+    ],
+    "summary": "서초구의 장애인을 위한 치과진료 지원사업입니다. 진료 이용 방법과 대상 기준은 공식 안내를 기준으로 확인하세요.",
+    "audience": "○ 장애인 치과진료 실시",
+    "benefits": [
+      "장애인을 대상으로 치과진료 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000118",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000118",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 장애인 치과진료 실시",
+      "benefit": "장애인을 대상으로 치과진료 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 서초구"
+    }
+  },
+  {
+    "slug": "gov24-화훼-농업인-지원",
+    "title": "(화훼)농업인 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "화훼농가에 상토 구매비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(화훼)농업인 지원",
+      "농림어업",
+      "서울",
+      "서울특별시 서초구",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "화훼농가에",
+      "상토",
+      "구매비",
+      "지원"
+    ],
+    "summary": "서초구의 화훼농가를 위한 상토 구매비 지원사업입니다. 신청 자격과 접수 기간은 공식 공고에서 확인하세요.",
+    "audience": "○ 화훼농업 경영에 필요한 상토 구매비용 보조",
+    "benefits": [
+      "화훼농가에 상토 구매비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000109",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000109",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 화훼농업 경영에 필요한 상토 구매비용 보조",
+      "benefit": "화훼농가에 상토 구매비 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 서초구"
+    }
+  },
+  {
+    "slug": "gov24-재활-및-통증-완화를-위한-물리치료",
+    "title": "재활 및 통증 완화를 위한 물리치료",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "물리치료가 필요한 모든 시민에게 물리치료 서비스 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "재활 및 통증 완화를 위한 물리치료",
+      "보건의료",
+      "서울",
+      "서울특별시 서초구",
+      "상시",
+      "일반",
+      "전체",
+      "물리치료가",
+      "필요한",
+      "모든",
+      "시민에게",
+      "물리치료"
+    ],
+    "summary": "물리치료가 필요한 모든 시민에게 물리치료 서비스 제공",
+    "audience": "○ 물리치료를 희망하며 관련질환을 앓고 있는 시민에게 서비스 제공",
+    "benefits": [
+      "물리치료가 필요한 모든 시민에게 물리치료 서비스 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000128",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000128",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 물리치료를 희망하며 관련질환을 앓고 있는 시민에게 서비스 제공",
+      "benefit": "물리치료가 필요한 모든 시민에게 물리치료 서비스 제공",
+      "application": "방문신청",
+      "contact": "서울특별시 서초구"
+    }
+  },
+  {
+    "slug": "gov24-국가유공자-등-보훈대상자-예우-및-지원",
+    "title": "국가유공자 등 보훈대상자 예우 및 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 강남구",
+    "region": "서울",
+    "amount": "강남구 보훈예우수당, 참전유공자 배우자 복지수당, 사망위로금, 장례서비스 등 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "국가유공자 등 보훈대상자 예우 및 지원",
+      "복지",
+      "서울",
+      "서울특별시 강남구",
+      "상시",
+      "일반",
+      "전체",
+      "강남구",
+      "보훈예우수당,",
+      "참전유공자",
+      "배우자",
+      "복지수당,"
+    ],
+    "summary": "강남구 보훈예우수당, 참전유공자 배우자 복지수당, 사망위로금, 장례서비스 등 지원",
+    "audience": "○ 나라를 위해 희생 헌신하신 국가보훈대상자 예우 및 지원",
+    "benefits": [
+      "강남구 보훈예우수당, 참전유공자 배우자 복지수당, 사망위로금, 장례서비스 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000114",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000114",
+    "contact": "서울특별시 강남구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 나라를 위해 희생 헌신하신 국가보훈대상자 예우 및 지원",
+      "benefit": "강남구 보훈예우수당, 참전유공자 배우자 복지수당, 사망위로금, 장례서비스 등 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 강남구"
+    }
+  },
+  {
+    "slug": "gov24-서초구-기초생활수급자-관내-이사지원",
+    "title": "서초구 기초생활수급자 관내 이사지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "서초구 생계급여·의료급여 수급가구의 관내 이사비용 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "서초구 기초생활수급자 관내 이사지원",
+      "보건의료",
+      "서울",
+      "서울특별시 서초구",
+      "상시",
+      "일반",
+      "전체",
+      "복지",
+      "서초구",
+      "생계급여·의료급여",
+      "수급가구의",
+      "관내"
+    ],
+    "summary": "서초구 생계급여·의료급여 수급가구의 관내 이사비용 지원",
+    "audience": "서초구 주민등록 중인 국민기초생활 생계 혹은 의료급여 수급가구가 이사업체 통해 서초구 내에서 이사 시 이사비용 지원(최대 20만원)\n ※ 예산 조기 소진에 따른 마감 가능",
+    "benefits": [
+      "서초구 생계급여·의료급여 수급가구의 관내 이사비용 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000110",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000110",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "서초구 주민등록 중인 국민기초생활 생계 혹은 의료급여 수급가구가 이사업체 통해 서초구 내에서 이사 시 이사비용 지원(최대 20만원)\n ※ 예산 조기 소진에 따른 마감 가능",
+      "benefit": "서초구 생계급여·의료급여 수급가구의 관내 이사비용 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 서초구"
+    }
+  },
+  {
+    "slug": "gov24-서울특별시-강남구-구민안전보험",
+    "title": "서울특별시 강남구 구민안전보험",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 강남구",
+    "region": "서울",
+    "amount": "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "서울특별시 강남구 구민안전보험",
+      "주거",
+      "서울",
+      "서울특별시 강남구",
+      "상시",
+      "일반",
+      "아동",
+      "재난이나",
+      "그밖의",
+      "각종",
+      "사고로",
+      "피해가"
+    ],
+    "summary": "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상",
+    "audience": "강남구민이 상해로 화상을 입고 병원 또는 의원 등에서 수술을 받은 경우 100만원\n12세 이하 어린이(강남구민)가 보행중에 교통사고로 인하여 상해를 입은 직접적인 결과로써 자동차사고 부상등급표의 부상등급을 받은 경우 500만원 한도\n강남구민이 대중교통이용중(택시, 전세버스 제외) 교통사고로 발생한 상해로 자동차사고부상등급표의 부상등급을 받은 경우 100만원 한도\n강남구민이 강력범죄에 피해가 발생하였을 경우로 사망하거나 1개월을 초과하는 의사치료를 요하는 신체상해를 입었을 경우(경찰관이 수사하여 기소된 경우에 지급) (15세 미만자 사망제외) 100만원\n강남구민 성폭력 범죄로 인해 피해가 발생하여 1개월을 초과하여 의사의 치료를 요하는 신체상 해를 입었을 경우 (경찰관이 수사하여 기소된 경우에 지급) 500만원\n강남구민이 개 물림사고의 직접적인 결과로 병원에 내원하여 치료를 받는 경우 20만원 한도\n강남구민이 보험기간 상해(교통상해 제외)로 4주이상 진단을 받은 경우 4~5주 10만원, 6주이상 15만원\n강남구민이 상해 (교통상해 제외)의 직접결과로 3%~100% 후유장해가 발생한 경우 500만원 한도\n강남구민이 상해 (교통상해 제외)의 직접결과로 인하여 사망한 경우(만15세 미만자 제외) 500만원",
+    "benefits": [
+      "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "직접입력",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000123",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000123",
+    "contact": "서울특별시 강남구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "강남구민이 상해로 화상을 입고 병원 또는 의원 등에서 수술을 받은 경우 100만원\n12세 이하 어린이(강남구민)가 보행중에 교통사고로 인하여 상해를 입은 직접적인 결과로써 자동차사고 부상등급표의 부상등급을 받은 경우 500만원 한도\n강남구민이 대중교통이용중(택시, 전세버스 제외) 교통사고로 발생한 상해로 자동차사고부상등급표의 부상등급을 받은 경우 100만원 한도\n강남구민이 강력범죄에 피해가 발생하였을 경우로 사망하거나 1개월을 초과하는 의사치료를 요하는 신체상해를 입었을 경우(경찰관이 수사하여 기소된 경우에 지급) (15세 미만자 사망제외) 100만원\n강남구민 성폭력 범죄로 인해 피해가 발생하여 1개월을 초과하여 의사의 치료를 요하는 신체상 해를 입었을 경우 (경찰관이 수사하여 기소된 경우에 지급) 500만원\n강남구민이 개 물림사고의 직접적인 결과로 병원에 내원하여 치료를 받는 경우 20만원 한도\n강남구민이 보험기간 상해(교통상해 제외)로 4주이상 진단을 받은 경우 4~5주 10만원, 6주이상 15만원\n강남구민이 상해 (교통상해 제외)의 직접결과로 3%~100% 후유장해가 발생한 경우 500만원 한도\n강남구민이 상해 (교통상해 제외)의 직접결과로 인하여 사망한 경우(만15세 미만자 제외) 500만원",
+      "benefit": "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상",
+      "application": "직접입력",
+      "contact": "서울특별시 강남구"
+    }
+  },
+  {
+    "slug": "gov24-서초구-입양아동-양육보조금-지원",
+    "title": "서초구 입양아동 양육보조금 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "입양아동의 양육보조금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "서초구 입양아동 양육보조금 지원",
+      "교육",
+      "서울",
+      "서울특별시 서초구",
+      "상시",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "입양아동의",
+      "양육보조금",
+      "지원"
+    ],
+    "summary": "서초구의 입양아동 양육을 돕기 위한 보조금 지원사업입니다. 세부 대상과 신청 방법은 공식 안내에서 확인하세요.",
+    "audience": "서초구에서 거주중인 입양아동 중 만18세 초과 ~ 고등학교 졸업 전 아동에 대해 \n\n양육보조금 200천원(인/월) 지원",
+    "benefits": [
+      "입양아동의 양육보조금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "정부24온라인신청||방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000108",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000108",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "서초구에서 거주중인 입양아동 중 만18세 초과 ~ 고등학교 졸업 전 아동에 대해 \n\n양육보조금 200천원(인/월) 지원",
+      "benefit": "입양아동의 양육보조금 지원",
+      "application": "정부24온라인신청||방문신청",
+      "contact": "서울특별시 서초구"
+    }
+  },
+  {
+    "slug": "gov24-서리풀-희망사다리-프로젝트-자립준비청년-보호종료아동-자립정착금-지원",
+    "title": "서리풀 희망사다리 프로젝트 자립준비청년(보호종료아동) 자립정착금 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "자립준비청년에게 자립정착금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·청년·주거",
+    "targetGroup": "청년, 부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "서리풀 희망사다리 프로젝트 자립준비청년(보호종료아동) 자립정착금 지원",
+      "청년",
+      "서울",
+      "서울특별시 서초구",
+      "상시",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "주거",
+      "자립준비청년에게",
+      "자립정착금",
+      "지원"
+    ],
+    "summary": "서초구의 자립준비청년을 위한 자립정착금 지원사업입니다. 거주 요건과 신청 절차는 공식 공고에서 확인하세요.",
+    "audience": "서초구에서 1년이상 거주한 자립준비청년(보호종료아동)에 대한 자립정착금 연 500만원 지원",
+    "benefits": [
+      "자립준비청년에게 자립정착금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000121",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000121",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "서초구에서 1년이상 거주한 자립준비청년(보호종료아동)에 대한 자립정착금 연 500만원 지원",
+      "benefit": "자립준비청년에게 자립정착금 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 서초구"
+    }
+  },
+  {
+    "slug": "gov24-서리풀-희망사다리-프로젝트-자립준비청년-보호종료아동-자립컨설팅-지원",
+    "title": "서리풀 희망사다리 프로젝트 자립준비청년(보호종료아동) 자립컨설팅 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "자립준비청년을 대상으로 자립컨설팅 및 전화 모니터링 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·청년·주거",
+    "targetGroup": "청년, 부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "서리풀 희망사다리 프로젝트 자립준비청년(보호종료아동) 자립컨설팅 지원",
+      "청년",
+      "서울",
+      "서울특별시 서초구",
+      "상시",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "주거",
+      "자립준비청년을",
+      "대상으로",
+      "자립컨설팅"
+    ],
+    "summary": "자립준비청년을 대상으로 자립컨설팅 및 전화 모니터링 지원",
+    "audience": "홀로 서기를 시작한 자립준비청년(보호종료아동)의 안전한 자립을 위해 생활, 주거, 학업, 재무관리 등 전반적인 자립컨설팅 제공",
+    "benefits": [
+      "자립준비청년을 대상으로 자립컨설팅 및 전화 모니터링 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000123",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000123",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "홀로 서기를 시작한 자립준비청년(보호종료아동)의 안전한 자립을 위해 생활, 주거, 학업, 재무관리 등 전반적인 자립컨설팅 제공",
+      "benefit": "자립준비청년을 대상으로 자립컨설팅 및 전화 모니터링 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 서초구"
+    }
+  },
+  {
+    "slug": "gov24-서리풀-희망사다리-프로젝트-자립준비청년-보호종료아동-교육비-지원",
+    "title": "서리풀 희망사다리 프로젝트 자립준비청년(보호종료아동) 교육비 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "자립준비청년에게 대학등록금 및 학원비 등 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·청년·취업",
+    "targetGroup": "청년, 구직자, 부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "서리풀 희망사다리 프로젝트 자립준비청년(보호종료아동) 교육비 지원",
+      "청년",
+      "서울",
+      "서울특별시 서초구",
+      "상시",
+      "구직자",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "취업",
+      "자립준비청년에게",
+      "대학등록금"
+    ],
+    "summary": "자립준비청년에게 대학등록금 및 학원비 등 지원",
+    "audience": "교육비(대학등록금) 연 300만원 내 실비지원(1회 150만원)\n\n교육비(학원비) 연 200만원 내 실비지원(1회 100만원)",
+    "benefits": [
+      "자립준비청년에게 대학등록금 및 학원비 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000115",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000115",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "교육비(대학등록금) 연 300만원 내 실비지원(1회 150만원)\n\n교육비(학원비) 연 200만원 내 실비지원(1회 100만원)",
+      "benefit": "자립준비청년에게 대학등록금 및 학원비 등 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 서초구"
+    }
+  },
+  {
+    "slug": "gov24-서리풀-희망사다리-프로젝트-자립준비청년-보호종료아동-생활보조수당-지원",
+    "title": "서리풀 희망사다리 프로젝트 자립준비청년(보호종료아동) 생활보조수당 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "자립준비청년에게 생활보조수당 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·청년",
+    "targetGroup": "청년, 부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "서리풀 희망사다리 프로젝트 자립준비청년(보호종료아동) 생활보조수당 지원",
+      "청년",
+      "서울",
+      "서울특별시 서초구",
+      "상시",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "자립준비청년에게",
+      "생활보조수당",
+      "지원"
+    ],
+    "summary": "서초구의 자립준비청년을 위한 생활보조수당 지원사업입니다. 소득 기준과 신청 절차는 공식 안내에서 확인하세요.",
+    "audience": "서초구에서 1년이상 거주중인 자립준비청년(보호종료아동) 중 \n\n기준중위소득 60% 이하 청년에게 생활보조수당 300천원(인/월) 지원",
+    "benefits": [
+      "자립준비청년에게 생활보조수당 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000114",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000114",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "서초구에서 1년이상 거주중인 자립준비청년(보호종료아동) 중 \n\n기준중위소득 60% 이하 청년에게 생활보조수당 300천원(인/월) 지원",
+      "benefit": "자립준비청년에게 생활보조수당 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 서초구"
+    }
+  },
+  {
+    "slug": "gov24-임산부-영유아-등록관리-지원",
+    "title": "임산부 영유아 등록관리 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "임산부에게 영양제, 산전검사, 유축기 대여 등 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "임산부 영유아 등록관리 지원",
+      "복지",
+      "서울",
+      "서울특별시 서초구",
+      "상시",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "임산부에게",
+      "영양제,",
+      "산전검사,",
+      "유축기"
+    ],
+    "summary": "임산부에게 영양제, 산전검사, 유축기 대여 등 지원",
+    "audience": "임신초기검사, 기형아검사, 임신성 당뇨검사 등 임산부 산전관리\n임산부 영양제 지원\n모유수유 클리닉운영, 유축기 대여 지원사업 등 모유수유 권장환경 조성",
+    "benefits": [
+      "임산부에게 영양제, 산전검사, 유축기 대여 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000126",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000126",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "임신초기검사, 기형아검사, 임신성 당뇨검사 등 임산부 산전관리\n임산부 영양제 지원\n모유수유 클리닉운영, 유축기 대여 지원사업 등 모유수유 권장환경 조성",
+      "benefit": "임산부에게 영양제, 산전검사, 유축기 대여 등 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 서초구"
+    }
+  },
+  {
+    "slug": "gov24-강남구-산후건강관리비용-지원사업-본인부담금-환급",
+    "title": "강남구 산후건강관리비용 지원사업(본인부담금 환급)",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 강남구",
+    "region": "서울",
+    "amount": "산모신생아 건강관리 바우처 이용이 끝난 출산가정에 본인부담금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "강남구 산후건강관리비용 지원사업(본인부담금 환급)",
+      "보건의료",
+      "서울",
+      "서울특별시 강남구",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "산모신생아",
+      "건강관리",
+      "바우처",
+      "이용이"
+    ],
+    "summary": "산모신생아 건강관리 바우처 이용이 끝난 출산가정에 본인부담금 지원",
+    "audience": "산모신생아 건강관리 서비스 이용 후 본인부담금 지원(최대 100만원 한도내 1회 지원)",
+    "benefits": [
+      "산모신생아 건강관리 바우처 이용이 끝난 출산가정에 본인부담금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "정부24온라인신청||방문신청||직접입력",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000107",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000107",
+    "contact": "서울특별시 강남구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "산모신생아 건강관리 서비스 이용 후 본인부담금 지원(최대 100만원 한도내 1회 지원)",
+      "benefit": "산모신생아 건강관리 바우처 이용이 끝난 출산가정에 본인부담금 지원",
+      "application": "정부24온라인신청||방문신청||직접입력",
+      "contact": "서울특별시 강남구"
+    }
+  },
+  {
+    "slug": "gov24-장애인-보장구-휠체어-수리비-지원",
+    "title": "장애인 보장구 휠체어 수리비 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 강남구",
+    "region": "서울",
+    "amount": "전동보조기기를 사용하는 장애인에게 휠체어 수리비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인 보장구 휠체어 수리비 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 강남구",
+      "상시",
+      "장애인",
+      "전체",
+      "복지",
+      "전동보조기기를",
+      "사용하는",
+      "장애인에게",
+      "휠체어"
+    ],
+    "summary": "전동보조기기를 사용하는 장애인에게 휠체어 수리비 지원",
+    "audience": "○ 강남구 거주 등록장애인 휠체어 수리비 지원\n - 기초생활수급자 및 차상위계층 : 300,000원(연간)\n - 일반장애인 : 200,000원(연간)\n\n ※ 당해연도 예산소진 시 서비스는 종료됩니다",
+    "benefits": [
+      "전동보조기기를 사용하는 장애인에게 휠체어 수리비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000119",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000119",
+    "contact": "서울특별시 강남구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 강남구 거주 등록장애인 휠체어 수리비 지원\n - 기초생활수급자 및 차상위계층 : 300,000원(연간)\n - 일반장애인 : 200,000원(연간)\n\n ※ 당해연도 예산소진 시 서비스는 종료됩니다",
+      "benefit": "전동보조기기를 사용하는 장애인에게 휠체어 수리비 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 강남구"
+    }
+  },
+  {
+    "slug": "gov24-송파구-임산부-건강관리-서비스-지원",
+    "title": "(송파구)임산부 건강관리 서비스 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 송파구",
+    "region": "서울",
+    "amount": "임산부에게 엽산제, 철분제, 임신초기검사, 기형아검사, 당뇨검사, 막달검사,유축기 등 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(송파구)임산부 건강관리 서비스 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 송파구",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "임산부에게",
+      "엽산제,",
+      "철분제,",
+      "임신초기검사,"
+    ],
+    "summary": "임산부에게 엽산제, 철분제, 임신초기검사, 기형아검사, 당뇨검사, 막달검사,유축기 등 지원",
+    "audience": "○ 관내 주민등록을 둔 임산부에게 임신초기검사, 기형아검사, 당뇨검사, 막달검사 등 지원\n - 임신초기검사(혈액검사) : 6주~9주\n - 임산부 기형아검사 : 16~18주 2차 쿼드검사\n - 임신성 당뇨검사 : 24주~28주(빈혈검사 포함)\n - 막달검사(혈액 및 소변검사) : 35주 전후\n○ 임산부에게 엽산제 및 철분제 지원\n○ 출산 후 유축기 대여(4주)",
+    "benefits": [
+      "임산부에게 엽산제, 철분제, 임신초기검사, 기형아검사, 당뇨검사, 막달검사,유축기 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000106",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000106",
+    "contact": "서울특별시 송파구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 관내 주민등록을 둔 임산부에게 임신초기검사, 기형아검사, 당뇨검사, 막달검사 등 지원\n - 임신초기검사(혈액검사) : 6주~9주\n - 임산부 기형아검사 : 16~18주 2차 쿼드검사\n - 임신성 당뇨검사 : 24주~28주(빈혈검사 포함)\n - 막달검사(혈액 및 소변검사) : 35주 전후\n○ 임산부에게 엽산제 및 철분제 지원\n○ 출산 후 유축기 대여(4주)",
+      "benefit": "임산부에게 엽산제, 철분제, 임신초기검사, 기형아검사, 당뇨검사, 막달검사,유축기 등 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 송파구"
+    }
+  },
+  {
+    "slug": "gov24-송파구-공동주택-유지관리비용-일부지원",
+    "title": "(송파구)공동주택 유지관리비용 일부지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 송파구",
+    "region": "서울",
+    "amount": "10년 이상 경과된 공동주택을 대상으로 시설물 유지비용 일부 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(송파구)공동주택 유지관리비용 일부지원",
+      "주거",
+      "서울",
+      "서울특별시 송파구",
+      "상시",
+      "일반",
+      "아동",
+      "전체",
+      "10년",
+      "이상",
+      "경과된",
+      "공동주택을"
+    ],
+    "summary": "10년 이상 경과된 공동주택을 대상으로 시설물 유지비용 일부 지원",
+    "audience": "사용승인 후 10년 경과된 공동주택을 대상으로 시설물 유지비용 일부 지원\n(어린이놀이터 보수: 5년이상, 옥외보안등전기료: 1년이상)\n - 지원항목 : '송파구 공동주택 지원 조례'에 의거, 주도로 보수, 하수도 유지보수, 보안등 유지보수 등 지원\n - 지원기준 : 지원한도는 예산범위 5%이내, 격년제 지원\n - 지원금액 : '지원 조례' [별표]를 기준으로 총사업비 구간별로 지원비율이 달라지며, 매년 예산상황에 따라 지원비율을 증감하여 운영함.",
+    "benefits": [
+      "10년 이상 경과된 공동주택을 대상으로 시설물 유지비용 일부 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000114",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000114",
+    "contact": "서울특별시 송파구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "사용승인 후 10년 경과된 공동주택을 대상으로 시설물 유지비용 일부 지원\n(어린이놀이터 보수: 5년이상, 옥외보안등전기료: 1년이상)\n - 지원항목 : '송파구 공동주택 지원 조례'에 의거, 주도로 보수, 하수도 유지보수, 보안등 유지보수 등 지원\n - 지원기준 : 지원한도는 예산범위 5%이내, 격년제 지원\n - 지원금액 : '지원 조례' [별표]를 기준으로 총사업비 구간별로 지원비율이 달라지며, 매년 예산상황에 따라 지원비율을 증감하여 운영함.",
+      "benefit": "10년 이상 경과된 공동주택을 대상으로 시설물 유지비용 일부 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 송파구"
+    }
+  },
+  {
+    "slug": "gov24-송파구-입양가정-입양축하금-지원",
+    "title": "(송파구)입양가정 입양축하금 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 송파구",
+    "region": "서울",
+    "amount": "○ 입양부모에게 입양축하금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(송파구)입양가정 입양축하금 지원",
+      "복지",
+      "서울",
+      "서울특별시 송파구",
+      "상시",
+      "부모/육아",
+      "장애인",
+      "아동",
+      "임신·출산·육아",
+      "○",
+      "입양부모에게",
+      "입양축하금"
+    ],
+    "summary": "송파구의 입양가정을 위한 입양축하금 지원사업입니다. 신청 기한과 지원 기준은 공식 공고에서 확인하세요.",
+    "audience": "○ 입양부모에게 입양축하금 지원\n - 입양특례법에 따라 입양된 아동의 건전한 양육을 위하여 예산의 범위 내에서 입양축하금 지원\n - 입양아동 1명당 100만원, 장애입양아동 1명당 200만원\n - 입양일을 기준으로 6개월 이상 송파구에 주민등록을 두고 실제 거주하고 있는 입양부모에게 지급\n - 입양부모가 입양신고 후 60일 이내에 구청장에게 신청해야 함",
+    "benefits": [
+      "○ 입양부모에게 입양축하금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000113",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000113",
+    "contact": "서울특별시 송파구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 입양부모에게 입양축하금 지원\n - 입양특례법에 따라 입양된 아동의 건전한 양육을 위하여 예산의 범위 내에서 입양축하금 지원\n - 입양아동 1명당 100만원, 장애입양아동 1명당 200만원\n - 입양일을 기준으로 6개월 이상 송파구에 주민등록을 두고 실제 거주하고 있는 입양부모에게 지급\n - 입양부모가 입양신고 후 60일 이내에 구청장에게 신청해야 함",
+      "benefit": "○ 입양부모에게 입양축하금 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 송파구"
+    }
+  },
+  {
+    "slug": "gov24-송파구-저소득-한부모가족-지원",
+    "title": "(송파구)저소득 한부모가족 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 송파구",
+    "region": "서울",
+    "amount": "저소득한부모 가구에 명절격려금 및 김치 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(송파구)저소득 한부모가족 지원",
+      "복지",
+      "서울",
+      "서울특별시 송파구",
+      "모집중",
+      "일반",
+      "아동",
+      "중장년",
+      "저소득한부모",
+      "가구에",
+      "명절격려금",
+      "및"
+    ],
+    "summary": "저소득한부모 가구에 명절격려금 및 김치 지원",
+    "audience": "○ 관내 법정 저소득한부모가족에게 명절격려금 가구당 30,000원 지원\n\n○ 저소득 한부모 540세대 김치 한박스(15kg) 지원",
+    "benefits": [
+      "저소득한부모 가구에 명절격려금 및 김치 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청불필요",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000111",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000111",
+    "contact": "서울특별시 송파구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 관내 법정 저소득한부모가족에게 명절격려금 가구당 30,000원 지원\n\n○ 저소득 한부모 540세대 김치 한박스(15kg) 지원",
+      "benefit": "저소득한부모 가구에 명절격려금 및 김치 지원",
+      "application": "신청불필요",
+      "contact": "서울특별시 송파구"
+    }
+  },
+  {
+    "slug": "gov24-송파구-장애인활동지원-송파구-추가지원-사업",
+    "title": "(송파구)장애인활동지원 송파구 추가지원 사업",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 송파구",
+    "region": "서울",
+    "amount": "장애인활동지원 시간 추가지원을 통한 자립생활 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(송파구)장애인활동지원 송파구 추가지원 사업",
+      "복지",
+      "서울",
+      "서울특별시 송파구",
+      "모집중",
+      "장애인",
+      "전체",
+      "장애인활동지원",
+      "시간",
+      "추가지원을",
+      "통한",
+      "자립생활"
+    ],
+    "summary": "장애인활동지원 시간 추가지원을 통한 자립생활 지원",
+    "audience": "○ 활동지원사를 통한 장애인의 신체/가사/사회활동을 지원\n - 지원방식: 매월 이용자 바우처 추가 (생성) 지원\n - 지원시간 유형: 장애인활동지원 서비스 지원 종합조사에 따른 기능제한영역점수 및 독거/취약 가구에 따른 차등 지원(60, 100, 150시간형)",
+    "benefits": [
+      "장애인활동지원 시간 추가지원을 통한 자립생활 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000115",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000115",
+    "contact": "서울특별시 송파구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 활동지원사를 통한 장애인의 신체/가사/사회활동을 지원\n - 지원방식: 매월 이용자 바우처 추가 (생성) 지원\n - 지원시간 유형: 장애인활동지원 서비스 지원 종합조사에 따른 기능제한영역점수 및 독거/취약 가구에 따른 차등 지원(60, 100, 150시간형)",
+      "benefit": "장애인활동지원 시간 추가지원을 통한 자립생활 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 송파구"
+    }
+  },
+  {
+    "slug": "gov24-송파구-출산축하금-지원",
+    "title": "(송파구)출산축하금 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 송파구",
+    "region": "서울",
+    "amount": "출산부모에게 출산축하금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(송파구)출산축하금 지원",
+      "복지",
+      "서울",
+      "서울특별시 송파구",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "출산부모에게",
+      "출산축하금",
+      "지원"
+    ],
+    "summary": "송파구의 출산가정을 위한 출산축하금 지원사업입니다. 지원 대상과 출생 시기별 기준은 공식 안내에서 확인하세요.",
+    "audience": "지원대상 - 송파구 거주 '21.12.31. 이전 출산가정 출생아 순위에 따른 차등지급\n지원기준 - 송파구 거주 6개월 이상, 출생신고 후 180일 이내 신청,국외출생아 출생후 6년 미만까지 지원\n지원금액\n - 첫째아: 200천원(21.1.1.~21.12.31.) \n - 둘째아(20.12.31.이전 출생): 300천원\n - 둘째아(21.1.1.~21.12.31.) : 400천원 \n - 셋째아: 500천원 \n - 넷째아: 1,000천원\n - 다섯째아 이상: 2,000천원",
+    "benefits": [
+      "출산부모에게 출산축하금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000117",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000117",
+    "contact": "서울특별시 송파구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "지원대상 - 송파구 거주 '21.12.31. 이전 출산가정 출생아 순위에 따른 차등지급\n지원기준 - 송파구 거주 6개월 이상, 출생신고 후 180일 이내 신청,국외출생아 출생후 6년 미만까지 지원\n지원금액\n - 첫째아: 200천원(21.1.1.~21.12.31.) \n - 둘째아(20.12.31.이전 출생): 300천원\n - 둘째아(21.1.1.~21.12.31.) : 400천원 \n - 셋째아: 500천원 \n - 넷째아: 1,000천원\n - 다섯째아 이상: 2,000천원",
+      "benefit": "출산부모에게 출산축하금 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 송파구"
+    }
+  },
+  {
+    "slug": "gov24-송파구-국가보훈대상자-위문금-지원",
+    "title": "(송파구)국가보훈대상자 위문금 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 송파구",
+    "region": "서울",
+    "amount": "국가유공자 또는 유족에게 명절 및 보훈의 달에 위문금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(송파구)국가보훈대상자 위문금 지원",
+      "복지",
+      "서울",
+      "서울특별시 송파구",
+      "상시",
+      "일반",
+      "전체",
+      "국가유공자",
+      "또는",
+      "유족에게",
+      "명절",
+      "및"
+    ],
+    "summary": "국가유공자 또는 유족에게 명절 및 보훈의 달에 위문금 지원",
+    "audience": "○ 송파구에 거주중인 국가보훈대상자 중 신청자에게 유형별 현금 지원\n - 지원금액 : 설, 추석명절(2만원), 호국보훈의 달(6월, 3만원)\n - 지원형태 : 신청인 계좌로 계좌이체",
+    "benefits": [
+      "국가유공자 또는 유족에게 명절 및 보훈의 달에 위문금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000110",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000110",
+    "contact": "서울특별시 송파구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 송파구에 거주중인 국가보훈대상자 중 신청자에게 유형별 현금 지원\n - 지원금액 : 설, 추석명절(2만원), 호국보훈의 달(6월, 3만원)\n - 지원형태 : 신청인 계좌로 계좌이체",
+      "benefit": "국가유공자 또는 유족에게 명절 및 보훈의 달에 위문금 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 송파구"
+    }
+  },
+  {
+    "slug": "gov24-송파구-참전유공자-사망위로금-지원",
+    "title": "(송파구)참전유공자 사망위로금 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 송파구",
+    "region": "서울",
+    "amount": "참전유공자 사망 시 유족에게 사망위로금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(송파구)참전유공자 사망위로금 지원",
+      "복지",
+      "서울",
+      "서울특별시 송파구",
+      "상시",
+      "일반",
+      "전체",
+      "참전유공자",
+      "사망",
+      "시",
+      "유족에게",
+      "사망위로금"
+    ],
+    "summary": "참전유공자 사망 시 유족에게 사망위로금 지원",
+    "audience": "○ 6.25참전 및 월남 참전유공자의 유족 중 신청자에게 50만원 계좌이체\n - 신청기간 : 참전유공자 사망일로부터 1년이내\n - 지원금액 : 50만원\n - 지원형태 : 신청한 유족 계좌로 계좌이체",
+    "benefits": [
+      "참전유공자 사망 시 유족에게 사망위로금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000107",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000107",
+    "contact": "서울특별시 송파구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 6.25참전 및 월남 참전유공자의 유족 중 신청자에게 50만원 계좌이체\n - 신청기간 : 참전유공자 사망일로부터 1년이내\n - 지원금액 : 50만원\n - 지원형태 : 신청한 유족 계좌로 계좌이체",
+      "benefit": "참전유공자 사망 시 유족에게 사망위로금 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 송파구"
+    }
+  },
+  {
+    "slug": "gov24-송파구-국가보훈대상자-보훈수당",
+    "title": "(송파구)국가보훈대상자 보훈수당",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 송파구",
+    "region": "서울",
+    "amount": "국가보훈대상자에게 보훈수당 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(송파구)국가보훈대상자 보훈수당",
+      "복지",
+      "서울",
+      "서울특별시 송파구",
+      "상시",
+      "일반",
+      "전체",
+      "국가보훈대상자에게",
+      "보훈수당",
+      "지원"
+    ],
+    "summary": "송파구의 국가보훈대상자를 위한 보훈수당 지원사업입니다. 신청 자격과 지급 방식은 공식 공고에서 확인하세요.",
+    "audience": "○ 국가유공자 본인 또는 보훈청에 선순위로 등록된 유족 중 신청자에게 10만원 지원\n - 신청자격 : 송파구 거주중인 국가보훈대상자\n - 지원금액 : 10만원\n - 지원형태 : 신청인 계좌로 계좌이체",
+    "benefits": [
+      "국가보훈대상자에게 보훈수당 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000103",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000103",
+    "contact": "서울특별시 송파구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 국가유공자 본인 또는 보훈청에 선순위로 등록된 유족 중 신청자에게 10만원 지원\n - 신청자격 : 송파구 거주중인 국가보훈대상자\n - 지원금액 : 10만원\n - 지원형태 : 신청인 계좌로 계좌이체",
+      "benefit": "국가보훈대상자에게 보훈수당 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 송파구"
+    }
+  },
+  {
+    "slug": "gov24-송파구-발달장애인-주간활동지원",
+    "title": "(송파구)발달장애인 주간활동지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 송파구",
+    "region": "서울",
+    "amount": "발달장애인에게 주간활동서비스 월 30시간 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(송파구)발달장애인 주간활동지원",
+      "복지",
+      "서울",
+      "서울특별시 송파구",
+      "확인필요",
+      "어르신",
+      "장애인",
+      "아동",
+      "발달장애인에게",
+      "주간활동서비스",
+      "월",
+      "30시간"
+    ],
+    "summary": "발달장애인에게 주간활동서비스 월 30시간 지원",
+    "audience": "○ 주간활동서비스를 이용할 수 있는 월 30시간 제공\n - 제공기관: 서울장애인부모연대 송파지회",
+    "benefits": [
+      "발달장애인에게 주간활동서비스 월 30시간 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000109",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000109",
+    "contact": "서울특별시 송파구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 주간활동서비스를 이용할 수 있는 월 30시간 제공\n - 제공기관: 서울장애인부모연대 송파지회",
+      "benefit": "발달장애인에게 주간활동서비스 월 30시간 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 송파구"
+    }
+  },
+  {
+    "slug": "gov24-송파구-장애인-이동기기-수리비-지원",
+    "title": "(송파구)장애인 이동기기 수리비 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 송파구",
+    "region": "서울",
+    "amount": "장애인을 대상으로 이동기기 수리비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(송파구)장애인 이동기기 수리비 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 송파구",
+      "상시",
+      "장애인",
+      "전체",
+      "복지",
+      "장애인을",
+      "대상으로",
+      "이동기기",
+      "수리비"
+    ],
+    "summary": "장애인을 대상으로 이동기기 수리비 지원",
+    "audience": "○ 일반 등록장애인에게 이동기기 수리비 연 20만원 지원\n\n○ 수급자/차상위 등록장애인에게 이동기기 수리비 연 30만원 지원",
+    "benefits": [
+      "장애인을 대상으로 이동기기 수리비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000108",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000108",
+    "contact": "서울특별시 송파구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 일반 등록장애인에게 이동기기 수리비 연 20만원 지원\n\n○ 수급자/차상위 등록장애인에게 이동기기 수리비 연 30만원 지원",
+      "benefit": "장애인을 대상으로 이동기기 수리비 지원",
+      "application": "방문신청",
+      "contact": "서울특별시 송파구"
+    }
+  },
+  {
+    "slug": "gov24-교육나눔-영어교실-운영",
+    "title": "교육나눔 영어교실 운영",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동작구",
+    "region": "서울",
+    "amount": "ㅇ 우리마을 교육나눔 영어교실 운영 - 대면 7개반",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "교육나눔 영어교실 운영",
+      "교육",
+      "서울",
+      "서울특별시 동작구",
+      "모집중",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "복지",
+      "ㅇ",
+      "우리마을",
+      "교육나눔"
+    ],
+    "summary": "ㅇ 우리마을 교육나눔 영어교실 운영 - 대면 7개반",
+    "audience": "ㅇ 우리마을 교육나눔 영어교실 운영\n - 거점별 대면형 실용영어 프로그램 7개반\n - 원어민 화상영어 프로그램 4개반",
+    "benefits": [
+      "ㅇ 우리마을 교육나눔 영어교실 운영 - 대면 7개반"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "ㅇ 일반모집 : 유관기관(동주민센터, 드림스타트)을 통하여 추천자 모집\nㅇ 추가모집 : 동작구청 교육정책과(☎02-820-9189)에 유선문의 후 자격증빙 자료 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000157",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000157",
+    "contact": "서울특별시 동작구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "ㅇ 우리마을 교육나눔 영어교실 운영\n - 거점별 대면형 실용영어 프로그램 7개반\n - 원어민 화상영어 프로그램 4개반",
+      "benefit": "ㅇ 우리마을 교육나눔 영어교실 운영 - 대면 7개반",
+      "application": "ㅇ 일반모집 : 유관기관(동주민센터, 드림스타트)을 통하여 추천자 모집\nㅇ 추가모집 : 동작구청 교육정책과(☎02-820-9189)에 유선문의 후 자격증빙 자료 제출",
+      "contact": "서울특별시 동작구"
+    }
+  },
+  {
+    "slug": "gov24-장애인가정-양육지원금-지급",
+    "title": "장애인가정 양육지원금 지급",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "장애인가정 양육지원금 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인가정 양육지원금 지급",
+      "복지",
+      "서울",
+      "서울특별시 관악구",
+      "상시",
+      "부모/육아",
+      "장애인",
+      "아동",
+      "임신·출산·육아",
+      "장애인가정",
+      "양육지원금",
+      "지급"
+    ],
+    "summary": "관악구의 장애인가정을 위한 양육지원금 지원사업입니다. 지원 대상과 신청 방법은 공식 안내에서 확인하세요.",
+    "audience": "○ 장애인가정 양육지원금 지급\n - 지원대상 : 여성장애인 또는 남성장애인의 배우자가 2022년 1월 1일 이후, 출산한 만 7세 미만의 아동을 양육하면서 신청일 기준 1년 전부터 현재까지 관악구에 주민등록을 두고 거주하는 자\n - 지원금액 : 매월 10만원 지급(1인 기준)\n - 지원일자 : 매월 25일",
+    "benefits": [
+      "장애인가정 양육지원금 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문신청 : 관할 동주민센터 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000116",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000116",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 장애인가정 양육지원금 지급\n - 지원대상 : 여성장애인 또는 남성장애인의 배우자가 2022년 1월 1일 이후, 출산한 만 7세 미만의 아동을 양육하면서 신청일 기준 1년 전부터 현재까지 관악구에 주민등록을 두고 거주하는 자\n - 지원금액 : 매월 10만원 지급(1인 기준)\n - 지원일자 : 매월 25일",
+      "benefit": "장애인가정 양육지원금 지급",
+      "application": "○ 방문신청 : 관할 동주민센터 방문 신청",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-유기동물-입양비-지원",
+    "title": "유기동물 입양비 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "입양동물 1마리당 최대 25만원 이내 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "유기동물 입양비 지원",
+      "교육",
+      "서울",
+      "서울특별시 관악구",
+      "상시",
+      "일반",
+      "전체",
+      "입양동물",
+      "1마리당",
+      "최대",
+      "25만원",
+      "이내"
+    ],
+    "summary": "입양동물 1마리당 최대 25만원 이내 지원",
+    "audience": "-지원비용: 입양동물 1마리당 최대 25만원 이내(자부담 10만원 포함)\n (2025.12.31.까지 입양: 최대 15만원 지원, 2026.1.1.이후 입양: 최대 25만원 지원)\n\n-지원항목: 질병진단비, 치료비, 예방접종비, 중성화수술비, 내장형 동물등록비, 미용비, 펫보험* 가입비, 사회화 교육 및 훈련비\n\n*펫보험의 경우 신청일 기준 유효한 보험인 경우에 한하여 지원",
+    "benefits": [
+      "입양동물 1마리당 최대 25만원 이내 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "-방문: 관악구청 일자리벤처과 또는 관악구 유기동물보호센터\n-팩스: 02-879-7834",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000313",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000313",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-지원비용: 입양동물 1마리당 최대 25만원 이내(자부담 10만원 포함)\n (2025.12.31.까지 입양: 최대 15만원 지원, 2026.1.1.이후 입양: 최대 25만원 지원)\n\n-지원항목: 질병진단비, 치료비, 예방접종비, 중성화수술비, 내장형 동물등록비, 미용비, 펫보험* 가입비, 사회화 교육 및 훈련비\n\n*펫보험의 경우 신청일 기준 유효한 보험인 경우에 한하여 지원",
+      "benefit": "입양동물 1마리당 최대 25만원 이내 지원",
+      "application": "-방문: 관악구청 일자리벤처과 또는 관악구 유기동물보호센터\n-팩스: 02-879-7834",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-장애인-관광활동-이동비용-지원",
+    "title": "장애인 관광활동 이동비용 지원",
+    "category": "문화생활",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "관광활동 이동비용 지원(차량대절비, 통행료, 주차비 등) 소요제원: 구비 100%",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인 관광활동 이동비용 지원",
+      "문화생활",
+      "서울",
+      "서울특별시 관악구",
+      "상시",
+      "장애인",
+      "전체",
+      "복지",
+      "관광활동",
+      "이동비용",
+      "지원(차량대절비,",
+      "통행료,"
+    ],
+    "summary": "관광활동 이동비용 지원(차량대절비, 통행료, 주차비 등) 소요제원: 구비 100%",
+    "audience": "장애인버스 이용비용 지원\n - 지원기간: 연중(예산 소진시까지)\n - 지원대상 :휠체어 이용 장애인 1인 이상 포함한 가족·모임·단체\n - 지원내용 : 서울장애인버스 및 사설 관광버스, 미니밴 등 차량 대절비, 통행료, 주차비 등 이동비용 일체 \n ※ 연간 인당/기관당 3회, 회당 30만원 이내 \n - 운행지역 : 전국(육상운행 가능지역) \n - 지원절차 : 직접 차량신청 → 신청 차량 이용하여 관광 → 장애인복지과로 이동비용 지원 신청 → 지원금 지급",
+    "benefits": [
+      "관광활동 이동비용 지원(차량대절비, 통행료, 주차비 등) 소요제원: 구비 100%"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청방법 : 관악구청 3층 장애인복지과 직접 방문 또는 이메일(suepupry26@ga.go.kr)로 신청서 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000122",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000122",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인버스 이용비용 지원\n - 지원기간: 연중(예산 소진시까지)\n - 지원대상 :휠체어 이용 장애인 1인 이상 포함한 가족·모임·단체\n - 지원내용 : 서울장애인버스 및 사설 관광버스, 미니밴 등 차량 대절비, 통행료, 주차비 등 이동비용 일체 \n ※ 연간 인당/기관당 3회, 회당 30만원 이내 \n - 운행지역 : 전국(육상운행 가능지역) \n - 지원절차 : 직접 차량신청 → 신청 차량 이용하여 관광 → 장애인복지과로 이동비용 지원 신청 → 지원금 지급",
+      "benefit": "관광활동 이동비용 지원(차량대절비, 통행료, 주차비 등) 소요제원: 구비 100%",
+      "application": "신청방법 : 관악구청 3층 장애인복지과 직접 방문 또는 이메일(suepupry26@ga.go.kr)로 신청서 제출",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-으뜸관악-청년통장-지원",
+    "title": "으뜸관악 청년통장 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "만 18~34세 근로 청년에게 청년통장 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년·취업·사업",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "으뜸관악 청년통장 지원",
+      "청년",
+      "서울",
+      "서울특별시 관악구",
+      "확인필요",
+      "구직자",
+      "아동",
+      "취업",
+      "사업",
+      "만",
+      "18~34세",
+      "근로"
+    ],
+    "summary": "만 18~34세 근로 청년에게 청년통장 지원",
+    "audience": "○ 만 18세~34세 근로 청년을 대상으로 2년 또는 3년 본인적립금(15만원) 대비 근로장려금 100% 매칭 지원",
+    "benefits": [
+      "만 18~34세 근로 청년에게 청년통장 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인: http://account.welfare.seoul.kr",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000102",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000102",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 만 18세~34세 근로 청년을 대상으로 2년 또는 3년 본인적립금(15만원) 대비 근로장려금 100% 매칭 지원",
+      "benefit": "만 18~34세 근로 청년에게 청년통장 지원",
+      "application": "○ 온라인: http://account.welfare.seoul.kr",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-장애인-정보화교육-지원",
+    "title": "장애인 정보화교육 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "장애인 등을 대상으로 정보화교육 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인 정보화교육 지원",
+      "교육",
+      "서울",
+      "서울특별시 관악구",
+      "확인필요",
+      "부모/육아",
+      "장애인",
+      "전체",
+      "임신·출산·육아",
+      "복지",
+      "등을",
+      "대상으로"
+    ],
+    "summary": "장애인 등을 대상으로 정보화교육 지원",
+    "audience": "장애인 컴퓨터 기초 및 인터넷 기초 등 정보화 교육",
+    "benefits": [
+      "장애인 등을 대상으로 정보화교육 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 기타 : 장애인정보화교육장(관악구 남부순환로 1696, 7층 관악구장애인단체연합회)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000103",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000103",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인 컴퓨터 기초 및 인터넷 기초 등 정보화 교육",
+      "benefit": "장애인 등을 대상으로 정보화교육 지원",
+      "application": "○ 방문 신청 \n - 기타 : 장애인정보화교육장(관악구 남부순환로 1696, 7층 관악구장애인단체연합회)",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-임산부-서비스-지원",
+    "title": "임산부 서비스 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "임산부 건강관리 서비스 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "임산부 서비스 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 관악구",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "임산부",
+      "건강관리",
+      "서비스",
+      "제공"
+    ],
+    "summary": "관악구의 임산부를 위한 건강관리 서비스 지원사업입니다. 검사, 물품 대여, 영양제 지원 등 세부 이용 방법은 공식 안내에서 확인하세요.",
+    "audience": "○ 임산부 초기검사(~12주), 태아 기형아검사(10~18주)\n○ 엽산제 지원(~12주), 철분제 지원(16~40주)\n○ 유축기 대여(대여기간:40일)\n○ 임산부자동차 표지 발급(~분만후 6개월)\n○ 임신체험복 대여(1주일)",
+    "benefits": [
+      "임산부 건강관리 서비스 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 임신초기검사, 태아 기형아검사 : 방문 신청(보건소 5층 모성실)\n\n○ 유축기 대여 : 관악구 보건소 홈페이지 > 온라인서비스 > 인터넷예약 > 모유수유 전동유축기 대여\n\n○ 엽산제, 철분제 지원 : 정부24(맘편한 임신) / 방문신청(보건소 5층 모성실)\n\n○ 임신 체험복 대여 : 방문신청(모성실 전화 예약 02-879-7161)\n\n○ 임산부 자동차 표지발급 : 방문신청(보건소 5층 모성실)\n\n온라인: https://www.gwanak.go.kr/site/health/reservationHealth/reservationHealthView.do?riIdx=RI000103",
+    "officialUrl": "https://www.gwanak.go.kr/site/health/reservationHealth/reservationHealthView.do?riIdx=RI000103",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000105",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 임산부 초기검사(~12주), 태아 기형아검사(10~18주)\n○ 엽산제 지원(~12주), 철분제 지원(16~40주)\n○ 유축기 대여(대여기간:40일)\n○ 임산부자동차 표지 발급(~분만후 6개월)\n○ 임신체험복 대여(1주일)",
+      "benefit": "임산부 건강관리 서비스 제공",
+      "application": "○ 임신초기검사, 태아 기형아검사 : 방문 신청(보건소 5층 모성실)\n\n○ 유축기 대여 : 관악구 보건소 홈페이지 > 온라인서비스 > 인터넷예약 > 모유수유 전동유축기 대여\n\n○ 엽산제, 철분제 지원 : 정부24(맘편한 임신) / 방문신청(보건소 5층 모성실)\n\n○ 임신 체험복 대여 : 방문신청(모성실 전화 예약 02-879-7161)\n\n○ 임산부 자동차 표지발급 : 방문신청(보건소 5층 모성실)\n\n온라인: https://www.gwanak.go.kr/site/health/reservationHealth/reservationHealthView.do?riIdx=RI000103",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-장애인-활동지원-구비추가",
+    "title": "장애인 활동지원(구비추가)",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "장애인에게 활동지원 서비스 구비 추가 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인 활동지원(구비추가)",
+      "복지",
+      "서울",
+      "서울특별시 관악구",
+      "상시",
+      "장애인",
+      "아동",
+      "장애인에게",
+      "활동지원",
+      "서비스",
+      "구비",
+      "추가"
+    ],
+    "summary": "장애인에게 활동지원 서비스 구비 추가 지원",
+    "audience": "○ 활동지원서비스 바우처 월 20~40시간 구비로 추가 지원\n- 기능점수(x1) 300점 이상인 독거 중증 장애인: 30시간\n- 기능점수(x1) 248점 이상인 20세 이상 발달장애인: 35시간\n- 만13세 이하 자녀 양육 부모장애인(주양육자 1인): 40시간\n- 거주시설 퇴소 장애인[특별지원급여 자립지원 종료 (예정)자]: 20시간 (최대 6개월간만 지원)",
+    "benefits": [
+      "장애인에게 활동지원 서비스 구비 추가 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 동주민센터 방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000106",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000106",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 활동지원서비스 바우처 월 20~40시간 구비로 추가 지원\n- 기능점수(x1) 300점 이상인 독거 중증 장애인: 30시간\n- 기능점수(x1) 248점 이상인 20세 이상 발달장애인: 35시간\n- 만13세 이하 자녀 양육 부모장애인(주양육자 1인): 40시간\n- 거주시설 퇴소 장애인[특별지원급여 자립지원 종료 (예정)자]: 20시간 (최대 6개월간만 지원)",
+      "benefit": "장애인에게 활동지원 서비스 구비 추가 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 동주민센터 방문신청",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-저소득-재가-장애인-밑반찬-지원",
+    "title": "저소득 재가 장애인 밑반찬 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "저소득 재가장애인에게 주 1회 밑반찬 구입할 수 있는 쿠폰 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "저소득 재가 장애인 밑반찬 지원",
+      "복지",
+      "서울",
+      "서울특별시 관악구",
+      "상시",
+      "장애인",
+      "전체",
+      "저소득",
+      "재가장애인에게",
+      "주",
+      "1회",
+      "밑반찬"
+    ],
+    "summary": "저소득 재가장애인에게 주 1회 밑반찬 구입할 수 있는 쿠폰 지원",
+    "audience": "○ 저소득 재가장애인에게 주 1회 1인당 1만원 상당의 밑반찬 구입 쿠폰 지원\n- 관악구장애인종합복지관과 협약 체결된 밑반찬가게에 한정",
+    "benefits": [
+      "저소득 재가장애인에게 주 1회 밑반찬 구입할 수 있는 쿠폰 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 관악구장애인종합복지관",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000107",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000107",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 저소득 재가장애인에게 주 1회 1인당 1만원 상당의 밑반찬 구입 쿠폰 지원\n- 관악구장애인종합복지관과 협약 체결된 밑반찬가게에 한정",
+      "benefit": "저소득 재가장애인에게 주 1회 밑반찬 구입할 수 있는 쿠폰 지원",
+      "application": "○ 방문 신청\n - 기타 : 관악구장애인종합복지관",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-전동보장구-안전교육-프로그램-제공",
+    "title": "전동보장구 안전교육 프로그램 제공",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "전동보장구 안전사고 예방 및 운전능력 향상을 위한 전동보장구 안전교육 프로그램 무상 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "전동보장구 안전교육 프로그램 제공",
+      "교육",
+      "서울",
+      "서울특별시 관악구",
+      "상시",
+      "일반",
+      "전체",
+      "전동보장구",
+      "안전사고",
+      "예방",
+      "및",
+      "운전능력"
+    ],
+    "summary": "전동보장구 안전사고 예방 및 운전능력 향상을 위한 전동보장구 안전교육 프로그램 무상 제공",
+    "audience": "○ 교육시기: 연중(혹한기, 혹서기 제외)\n○ 교육대상: 관악구 거주 전동보장구 이용자 및 관심있는 일반인\n○ 교육운영: 주 1회(매주 목요일), 3회 이수 필수 ☞ 3회 이수 후 수료증 발급\n○ 교육시간: 회당 2시간(이론, 실기) \n○ 교육강사: 전문강사\n○ 교육비용: 무료",
+    "benefits": [
+      "전동보장구 안전사고 예방 및 운전능력 향상을 위한 전동보장구 안전교육 프로그램 무상 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 장애인단체연합회 사무실로 교육 신청 \n - 방문: 서울 관악구 남부순환로 1696, 7층\n - 유선: 02-887-9878",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000126",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000126",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 교육시기: 연중(혹한기, 혹서기 제외)\n○ 교육대상: 관악구 거주 전동보장구 이용자 및 관심있는 일반인\n○ 교육운영: 주 1회(매주 목요일), 3회 이수 필수 ☞ 3회 이수 후 수료증 발급\n○ 교육시간: 회당 2시간(이론, 실기) \n○ 교육강사: 전문강사\n○ 교육비용: 무료",
+      "benefit": "전동보장구 안전사고 예방 및 운전능력 향상을 위한 전동보장구 안전교육 프로그램 무상 제공",
+      "application": "○ 장애인단체연합회 사무실로 교육 신청 \n - 방문: 서울 관악구 남부순환로 1696, 7층\n - 유선: 02-887-9878",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-장애인-전동보장구-보험가입-지원",
+    "title": "장애인 전동보장구 보험가입 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "전동보장구 운행 중 발생하는 사고에 대비하기 위해 전동보장구 보험 가입 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인 전동보장구 보험가입 지원",
+      "복지",
+      "서울",
+      "서울특별시 관악구",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "전동보장구",
+      "운행",
+      "중",
+      "발생하는"
+    ],
+    "summary": "전동보장구 운행 중 발생하는 사고에 대비하기 위해 전동보장구 보험 가입 지원",
+    "audience": "○ 보장내용: 전동보장구 운행 중 발생한 제3자(대인·대물) 배상책임 보장\n○ 보장금액: 사고당 5천만 원 한도(자부담 없음), 변호사 선임비용 5백만 원 한도 ※ 총한도, 청구횟수 제한 없음\n○ 추진체계 \n ▶ 보험가입\n - 區가 보험사와 직접 계약하고 보험료 전액 부담 \n - 관악구 등록장애인 및 노인은 별도절차 없이 가입, 타지역으로 전출 시 자동해지 \n ▶ 보험금 청구\n - 피보험자 또는 법정 상속인이 보험사에 직접 신청 \n ※ 보험금 청구 소멸시효 기간: 사고일로부터 3년",
+    "benefits": [
+      "전동보장구 운행 중 발생하는 사고에 대비하기 위해 전동보장구 보험 가입 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "- 보험금 청구 절차: 사고발생 -> 보험금청구 -> 보험사 심사 결정 -> 보험금 지급\n - 상담 문의 및 청구처: 휠체어코리아닷컴 (02-2038-0828, ARS 1번)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000127",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000127",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 보장내용: 전동보장구 운행 중 발생한 제3자(대인·대물) 배상책임 보장\n○ 보장금액: 사고당 5천만 원 한도(자부담 없음), 변호사 선임비용 5백만 원 한도 ※ 총한도, 청구횟수 제한 없음\n○ 추진체계 \n ▶ 보험가입\n - 區가 보험사와 직접 계약하고 보험료 전액 부담 \n - 관악구 등록장애인 및 노인은 별도절차 없이 가입, 타지역으로 전출 시 자동해지 \n ▶ 보험금 청구\n - 피보험자 또는 법정 상속인이 보험사에 직접 신청 \n ※ 보험금 청구 소멸시효 기간: 사고일로부터 3년",
+      "benefit": "전동보장구 운행 중 발생하는 사고에 대비하기 위해 전동보장구 보험 가입 지원",
+      "application": "- 보험금 청구 절차: 사고발생 -> 보험금청구 -> 보험사 심사 결정 -> 보험금 지급\n - 상담 문의 및 청구처: 휠체어코리아닷컴 (02-2038-0828, ARS 1번)",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-관악구-구민안전보험",
+    "title": "관악구 구민안전보험",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "예상치 못한 재난 또는 사고로부터 피해를 입은 구민의 신속한 일상회복 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "관악구 구민안전보험",
+      "보건의료",
+      "서울",
+      "서울특별시 관악구",
+      "상시",
+      "일반",
+      "전체",
+      "예상치",
+      "못한",
+      "재난",
+      "또는",
+      "사고로부터"
+    ],
+    "summary": "예상치 못한 재난 또는 사고로부터 피해를 입은 구민의 신속한 일상회복 지원",
+    "audience": "-보장기간:2026.3.30.(월)~2027.3.29.(월) (보장기간 내 사고발생일로부터 3년 이내 청구가능)\n-피보험자:관악구에 주민등록되어 있는 모든 구민 자동가입(등록외국인, 국내거소신고인 포함)\n-보장내용\n1.사회재난 상해진단위로금 10만 원\n2.상해의료비 최대 10만 원",
+    "benefits": [
+      "예상치 못한 재난 또는 사고로부터 피해를 입은 구민의 신속한 일상회복 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "- 청구사유 발생 시 보험사(상담접수센터)에 문의(02-2078-4547)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000128",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000128",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-보장기간:2026.3.30.(월)~2027.3.29.(월) (보장기간 내 사고발생일로부터 3년 이내 청구가능)\n-피보험자:관악구에 주민등록되어 있는 모든 구민 자동가입(등록외국인, 국내거소신고인 포함)\n-보장내용\n1.사회재난 상해진단위로금 10만 원\n2.상해의료비 최대 10만 원",
+      "benefit": "예상치 못한 재난 또는 사고로부터 피해를 입은 구민의 신속한 일상회복 지원",
+      "application": "- 청구사유 발생 시 보험사(상담접수센터)에 문의(02-2078-4547)",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-양한방-진료-지원",
+    "title": "양·한방 진료 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "○ 만 15세 이상 진료를 원하는 시민에게 양·한방 진료, 의료서비스 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "양·한방 진료 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 서초구",
+      "상시",
+      "일반",
+      "아동",
+      "전체",
+      "○",
+      "만",
+      "15세",
+      "이상"
+    ],
+    "summary": "서초구의 양·한방 진료와 보건의료 서비스 지원사업입니다. 이용 가능한 진료 항목과 방문 절차는 공식 안내에서 확인하세요.",
+    "audience": "○ 만 15세 이상 진료를 원하는 시민에게 양·한방 진료, 의료서비스 제공\n\n - 고혈압, 당뇨, 고지혈증 진료 및 처방증 발행\n - 금연약 처방\n - 성병검사, 당화혈색소 검사",
+    "benefits": [
+      "○ 만 15세 이상 진료를 원하는 시민에게 양·한방 진료, 의료서비스 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 거주지 관할 보건소 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000104",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000104",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 만 15세 이상 진료를 원하는 시민에게 양·한방 진료, 의료서비스 제공\n\n - 고혈압, 당뇨, 고지혈증 진료 및 처방증 발행\n - 금연약 처방\n - 성병검사, 당화혈색소 검사",
+      "benefit": "○ 만 15세 이상 진료를 원하는 시민에게 양·한방 진료, 의료서비스 제공",
+      "application": "○ 방문 신청\n - 보건소 : 거주지 관할 보건소 방문",
+      "contact": "서울특별시 서초구"
+    }
+  },
+  {
+    "slug": "gov24-김포청년-내일옷장",
+    "title": "김포청년 내일옷장",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 김포시",
+    "region": "경기",
+    "amount": "김포청년 면접정장 무료 대여",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년·취업·사업",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "김포청년 내일옷장",
+      "청년",
+      "경기",
+      "경기도 김포시",
+      "상시",
+      "구직자",
+      "아동",
+      "취업",
+      "사업",
+      "김포청년",
+      "면접정장",
+      "무료"
+    ],
+    "summary": "김포시 청년 구직자를 위한 면접정장 무료 대여 서비스입니다. 이용 횟수와 신청 절차는 공식 안내에서 확인하세요.",
+    "audience": "관내 청년구직자 면접 준비의 경제적인 부담감을 해소하고, 구직활동을 촉진시키기 위한 면접정장 무료대여 서비스 운영\n대상 : 김포시에 주소를 둔 15세~39세 청년\n대여 횟수 : 3회",
+    "benefits": [
+      "김포청년 면접정장 무료 대여"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "일자리지원사업 통합접수시스템 온라인 신청\n\n온라인: http://apply.jobaba.net",
+    "officialUrl": "http://apply.jobaba.net",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/409000000116",
+    "contact": "경기도 김포시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "관내 청년구직자 면접 준비의 경제적인 부담감을 해소하고, 구직활동을 촉진시키기 위한 면접정장 무료대여 서비스 운영\n대상 : 김포시에 주소를 둔 15세~39세 청년\n대여 횟수 : 3회",
+      "benefit": "김포청년 면접정장 무료 대여",
+      "application": "일자리지원사업 통합접수시스템 온라인 신청\n\n온라인: http://apply.jobaba.net",
+      "contact": "경기도 김포시"
+    }
+  },
+  {
+    "slug": "gov24-국가보훈대상자-보훈수당",
+    "title": "국가보훈대상자 보훈수당",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "국가유공자 및 선순위유족에게 매월 25일 보훈수당 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "국가보훈대상자 보훈수당",
+      "복지",
+      "서울",
+      "서울특별시 관악구",
+      "상시",
+      "어르신",
+      "아동",
+      "국가유공자",
+      "및",
+      "선순위유족에게",
+      "매월",
+      "25일"
+    ],
+    "summary": "국가유공자 및 선순위유족에게 매월 25일 보훈수당 지급",
+    "audience": "○ 보훈예우수당\n - 지급대상: 관악구에 거주하는 국가유공자 본인 및 선순위 유족\n - 지 급 액: 월 8만원\n - 지급방법: 지급대상자 본인 실명의 계좌입금\n\n○ 배우자복지수당\n - 지급대상: 관악구에 거주하는 사망한 참전유공자의 배우자 (보훈예우수당 미지급자)\n - 지 급 액: 월 7만원\n - 지급방법: 지급대상자 본인 실명의 계좌입금\n\n○ 참전명예수당\n - 지급대상: 서울시에 1개월 이상 거주한 만 65세 이상 참전유공자(본인)\n - 지 급 액: 만 80세 이상 월 20만원, 만 80세 미만 월 15만원\n - 지급방법: 지급대상자 본인 실명의 계좌입금\n\n○ 생활보조수당\n - 지급대상: 서울시에 1개월 이상 거주한 저소득 국가유공자 본인 또는 선순위 유족(수급자, 차상위)\n - 지 급 액: 월 20만원\n - 지급방법: 지급대상자 본인 실명의 계좌입금\n\n○ 독립유공생활지원수당\n - 지급대상: 서울시에 거주한 저소득 독립유공자 자녀 및 손자녀\n - 지 급 액: 월 20만원\n - 지급방법: 지급대상자 본인 실명의 계좌입금\n\n○ 서울시보훈예우수당\n - 지급대상: 서울시에 1개월 이상 거주한 65세 이상 민주유공자(4.19, 5.18유공자), 특수임무유공자, 전상군경, 공상군경, 공상공무원\n - 지 급 액: 월 15만원\n - 지급방법: 지급대상자 본인 실명의 계좌입금",
+    "benefits": [
+      "국가유공자 및 선순위유족에게 매월 25일 보훈수당 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청: 거주지 동주민센터(유공자(유족)증 지참)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000119",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000119",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 보훈예우수당\n - 지급대상: 관악구에 거주하는 국가유공자 본인 및 선순위 유족\n - 지 급 액: 월 8만원\n - 지급방법: 지급대상자 본인 실명의 계좌입금\n\n○ 배우자복지수당\n - 지급대상: 관악구에 거주하는 사망한 참전유공자의 배우자 (보훈예우수당 미지급자)\n - 지 급 액: 월 7만원\n - 지급방법: 지급대상자 본인 실명의 계좌입금\n\n○ 참전명예수당\n - 지급대상: 서울시에 1개월 이상 거주한 만 65세 이상 참전유공자(본인)\n - 지 급 액: 만 80세 이상 월 20만원, 만 80세 미만 월 15만원\n - 지급방법: 지급대상자 본인 실명의 계좌입금\n\n○ 생활보조수당\n - 지급대상: 서울시에 1개월 이상 거주한 저소득 국가유공자 본인 또는 선순위 유족(수급자, 차상위)\n - 지 급 액: 월 20만원\n - 지급방법: 지급대상자 본인 실명의 계좌입금\n\n○ 독립유공생활지원수당\n - 지급대상: 서울시에 거주한 저소득 독립유공자 자녀 및 손자녀\n - 지 급 액: 월 20만원\n - 지급방법: 지급대상자 본인 실명의 계좌입금\n\n○ 서울시보훈예우수당\n - 지급대상: 서울시에 1개월 이상 거주한 65세 이상 민주유공자(4.19, 5.18유공자), 특수임무유공자, 전상군경, 공상군경, 공상공무원\n - 지 급 액: 월 15만원\n - 지급방법: 지급대상자 본인 실명의 계좌입금",
+      "benefit": "국가유공자 및 선순위유족에게 매월 25일 보훈수당 지급",
+      "application": "방문신청: 거주지 동주민센터(유공자(유족)증 지참)",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-국가보훈대상자-위문금-지원",
+    "title": "국가보훈대상자 위문금 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "국가보훈대상자에게 명절 및 호국보훈의 달 위문금 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "국가보훈대상자 위문금 지원",
+      "복지",
+      "서울",
+      "서울특별시 관악구",
+      "상시",
+      "일반",
+      "전체",
+      "국가보훈대상자에게",
+      "명절",
+      "및",
+      "호국보훈의",
+      "달"
+    ],
+    "summary": "국가보훈대상자에게 명절 및 호국보훈의 달 위문금 지급",
+    "audience": "구 위문금: 관악구에 거주하는 국가보훈대상자에게 설날, 추석, 호국보훈의 달(6월) 위문금 지급\n시 위문금: 독립유공자손자녀 등에게 3.1절, 광복절, 호국보훈의 달(6월) 위문금 지급",
+    "benefits": [
+      "국가보훈대상자에게 명절 및 호국보훈의 달 위문금 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청: 거주지 동주민센터(신분확인서류)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000120",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000120",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "구 위문금: 관악구에 거주하는 국가보훈대상자에게 설날, 추석, 호국보훈의 달(6월) 위문금 지급\n시 위문금: 독립유공자손자녀 등에게 3.1절, 광복절, 호국보훈의 달(6월) 위문금 지급",
+      "benefit": "국가보훈대상자에게 명절 및 호국보훈의 달 위문금 지급",
+      "application": "방문신청: 거주지 동주민센터(신분확인서류)",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-국가보훈대상자-사망위로금",
+    "title": "국가보훈대상자 사망위로금",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "(구)국가보훈대상자 사망위로금 지급, (시)국가유공자 사망조의금 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "국가보훈대상자 사망위로금",
+      "복지",
+      "서울",
+      "서울특별시 관악구",
+      "모집중",
+      "일반",
+      "전체",
+      "(구)국가보훈대상자",
+      "사망위로금",
+      "지급,",
+      "(시)국가유공자",
+      "사망조의금"
+    ],
+    "summary": "(구)국가보훈대상자 사망위로금 지급, (시)국가유공자 사망조의금 지급",
+    "audience": "○ (구)사망위로금 지급\n - 관악구에 1년 이상 거주한 국가보훈대상자 사망시 유족에서 사망위로금 지급\n - 지 급 액 : 20만원\n - 지급시기 : 신청서 접수 후 2주 이내\n - 사망후 1년 이내 신청 가능\n\n○ (시) 국가유공자 사망조의금 지급\n - 서울시에 1개월 이상 거주한 국가유공자 사망시 유족에서 사망조의금 지급\n - 지 급 액 : 20만원\n - 지급시기 : 신청서 접수 후 1개월 내(서울시 지급)\n - '25년 이후 사망한 국가유공자에 대한 조의금 지급만 가능(소급 불가)",
+    "benefits": [
+      "(구)국가보훈대상자 사망위로금 지급, (시)국가유공자 사망조의금 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청: 사망자의 거주지 동주민센터(신분증 지참)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000121",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000121",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ (구)사망위로금 지급\n - 관악구에 1년 이상 거주한 국가보훈대상자 사망시 유족에서 사망위로금 지급\n - 지 급 액 : 20만원\n - 지급시기 : 신청서 접수 후 2주 이내\n - 사망후 1년 이내 신청 가능\n\n○ (시) 국가유공자 사망조의금 지급\n - 서울시에 1개월 이상 거주한 국가유공자 사망시 유족에서 사망조의금 지급\n - 지 급 액 : 20만원\n - 지급시기 : 신청서 접수 후 1개월 내(서울시 지급)\n - '25년 이후 사망한 국가유공자에 대한 조의금 지급만 가능(소급 불가)",
+      "benefit": "(구)국가보훈대상자 사망위로금 지급, (시)국가유공자 사망조의금 지급",
+      "application": "방문신청: 사망자의 거주지 동주민센터(신분증 지참)",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-관악구-깡충깡충-성장양육지원금",
+    "title": "관악구 깡충깡충 성장양육지원금",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "해당연령 각 1회 관악사랑상품권 30만원 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "관악구 깡충깡충 성장양육지원금",
+      "복지",
+      "서울",
+      "서울특별시 관악구",
+      "모집중",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "해당연령",
+      "각",
+      "1회",
+      "관악사랑상품권"
+    ],
+    "summary": "해당연령 각 1회 관악사랑상품권 30만원 지원",
+    "audience": "지원금액: 해당연령 각 1회 관악사랑상품권 30만 원 지원\n\n지급방법 : 신청인 본인 명의 핸드폰에 모바일 서울 pay+앱을 통해 관악사랑상품권 지급\n\n지급일자: 신청일 기준 익월 20일",
+    "benefits": [
+      "해당연령 각 1회 관악사랑상품권 30만원 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ (원칙) 온라인 신청 : 정부 24(www.gov.kr) 접속(공동인증서 본인인증)\n○ (예외) 방문 신청 : 대상영유아의 주민등록 주소지 동 주민센터(신분증 지참)\n\n※ 제출 서류 \n 1. 신청서\n 2. 주민등록 등본 및 초본(신청일 한 달 이내 발급, 출생일 및 관악구 거주 확인용, 행정정보공동이용 미동의자만)\n 3. 가족관계증명서 (신청일 한 달 이내 발급, 보호자 확인용, 해당자만, 부모와 영유아 다른 주소지 거주)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000299",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000299",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "지원금액: 해당연령 각 1회 관악사랑상품권 30만 원 지원\n\n지급방법 : 신청인 본인 명의 핸드폰에 모바일 서울 pay+앱을 통해 관악사랑상품권 지급\n\n지급일자: 신청일 기준 익월 20일",
+      "benefit": "해당연령 각 1회 관악사랑상품권 30만원 지원",
+      "application": "○ (원칙) 온라인 신청 : 정부 24(www.gov.kr) 접속(공동인증서 본인인증)\n○ (예외) 방문 신청 : 대상영유아의 주민등록 주소지 동 주민센터(신분증 지참)\n\n※ 제출 서류 \n 1. 신청서\n 2. 주민등록 등본 및 초본(신청일 한 달 이내 발급, 출생일 및 관악구 거주 확인용, 행정정보공동이용 미동의자만)\n 3. 가족관계증명서 (신청일 한 달 이내 발급, 보호자 확인용, 해당자만, 부모와 영유아 다른 주소지 거주)",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-착한가격업소-지원",
+    "title": "착한가격업소 지원",
+    "category": "소상공인",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동작구",
+    "region": "서울",
+    "amount": "맞춤형 소모품 구매비, 전기'가스'수도 등 공공요금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "사업",
+    "targetGroup": "소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "착한가격업소 지원",
+      "소상공인",
+      "서울",
+      "서울특별시 동작구",
+      "확인필요",
+      "전체",
+      "사업",
+      "맞춤형",
+      "소모품",
+      "구매비,",
+      "전기'가스'수도",
+      "등"
+    ],
+    "summary": "맞춤형 소모품 구매비, 전기'가스'수도 등 공공요금 지원",
+    "audience": "-착한가격업소 지원 및 관리",
+    "benefits": [
+      "맞춤형 소모품 구매비, 전기'가스'수도 등 공공요금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신규신청 공고 기간 중 방문, 메일, 팩스 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000149",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000149",
+    "contact": "서울특별시 동작구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-착한가격업소 지원 및 관리",
+      "benefit": "맞춤형 소모품 구매비, 전기'가스'수도 등 공공요금 지원",
+      "application": "신규신청 공고 기간 중 방문, 메일, 팩스 신청",
+      "contact": "서울특별시 동작구"
+    }
+  },
+  {
+    "slug": "gov24-창업지원센터-운영",
+    "title": "창업지원센터 운영",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동작구",
+    "region": "서울",
+    "amount": "'예비-초기-성장 단계' 창업자에게 저렴한 비용으로 사무실 제공(*심의위원회 심의 필수)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·청년·취업·사업",
+    "targetGroup": "청년, 구직자, 부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "창업지원센터 운영",
+      "청년",
+      "서울",
+      "서울특별시 동작구",
+      "모집중",
+      "구직자",
+      "부모/육아",
+      "임신·출산·육아",
+      "취업",
+      "사업",
+      "'예비-초기-성장",
+      "단계'"
+    ],
+    "summary": "'예비-초기-성장 단계' 창업자에게 저렴한 비용으로 사무실 제공(*심의위원회 심의 필수)",
+    "audience": "ㅇ (입주대상) 창업 3년 이내 초기 창업자로서 제조업, 건축·엔지니어링, 기술서비스업, 정보처리, 컴퓨터 운영 관련 업종 등\n ※ 환경관련 법규에 저촉되는 공해 배출업, 국세·지방세 체납기업 제외\n ㅇ (입주기간) 기본 2년, 1년 연장 신청 가능(심의위원회 심의 필수)\n ㅇ (입주심사)\n - 기업의 사업설명(PT) 및 질의응답 후 심사표에 의해 위원별 점수부여\n - 평균 60점 이상 기업 중 고득점 순 선정\n - 기술성, 사업성, 성장가능성, 입주적합성 등\n ㅇ (주요사업)\n - 입주공간 제공 : 초기창업기업을 위한 사무공간(6실), 오픈사무실(10석) 제공\n - 창업보육 프로그램 : 열린 창업 상담실 운영(상시/청년창업지원센터 매니저실 방문), 맞춤형 전문 컨설팅 지원(연 6회), 경영개선 특강 및 스타트업 네트워크(연 3회)\n ㅇ (보증금 및 임대료)\n - 보증금 : 임대면적 ㎡당 3만원\n - 임대료 : 매 연도마다 시가표준액 재산정 부과\n ·오픈형사무실 : 보증금 약37만원, 연임대료 약50만원\n ·개별사무실 : 보증금 55~69만원, 연임대료 73~92만원\n\n \nㅇ (입주대상) 창업 초기 및 성장단계 창업기업(창업 7년 이내, 개별사무실), 예비창업자(코워킹스페이스)로서 제외업종(일반유흥주점업, 무도유흥주점업, 기타 사행시설 관리 및 운영업 등)에 해당하지 않는 기업 ※ 휴폐업중인 자, 환경관련 법규에 저촉되는 공해 배출업, 국세·지방세 체납기업 제외\n ㅇ (입주기간) \n - 입주사무실(4개소) : 기본 3년, 연장 신청 가능(심의위원회 심의 필요)\n - 코워킹스페이스(10개소) : 기본 1년, 연장 신청 가능(심의위원회 심의 필요)\n ㅇ (입주심사)\n - 기업의 사업설명(PT) 및 질의응답 후 심사표에 의해 위원별 점수부여\n - 평균 60점 이상 기업 중 고득점 순 선정\n - 기술성, 사업성, 성장가능성, 입주적합성 등\n ㅇ (주요사업)\n - 입주공간 제공 : 창업 초기 및 성장단계 기업(창업 7년 이내)을 위한 사무공간(4실), 코워킹스페이스(10석) 제공\n - 창업보육 프로그램 : 열린 창업 상담실 운영(상시/청년창업지원센터 매니저실 방문), 맞춤형 전문 컨설팅 지원, 경영개선 특강 및 스타트업 네트워크(연 3회)\n ㅇ (보증금 및 임대료)\n - 보증금 : 임대면적 ㎡당 3만원\n - 임대료 : 매 연도마다 시가표준액 재산정 부과\n ·입주사무실 : 평균 보증금 80~100만원, 평균 연임대료 90~130만원\n ·코워킹스페이스 : 보증금 없음, 사용료 연간 33만원",
+    "benefits": [
+      "'예비-초기-성장 단계' 창업자에게 저렴한 비용으로 사무실 제공(*심의위원회 심의 필수)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 모집일정 : 신규 입주기업 모집 시, 동작구청 홈페이지 공고(게시)\n○ 접수방법 : 공고문을 확인하고 접수기간 내 방문접수 또는 이메일 접수(yeonghunk91@dongjak.go.kr)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000151",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000151",
+    "contact": "서울특별시 동작구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "ㅇ (입주대상) 창업 3년 이내 초기 창업자로서 제조업, 건축·엔지니어링, 기술서비스업, 정보처리, 컴퓨터 운영 관련 업종 등\n ※ 환경관련 법규에 저촉되는 공해 배출업, 국세·지방세 체납기업 제외\n ㅇ (입주기간) 기본 2년, 1년 연장 신청 가능(심의위원회 심의 필수)\n ㅇ (입주심사)\n - 기업의 사업설명(PT) 및 질의응답 후 심사표에 의해 위원별 점수부여\n - 평균 60점 이상 기업 중 고득점 순 선정\n - 기술성, 사업성, 성장가능성, 입주적합성 등\n ㅇ (주요사업)\n - 입주공간 제공 : 초기창업기업을 위한 사무공간(6실), 오픈사무실(10석) 제공\n - 창업보육 프로그램 : 열린 창업 상담실 운영(상시/청년창업지원센터 매니저실 방문), 맞춤형 전문 컨설팅 지원(연 6회), 경영개선 특강 및 스타트업 네트워크(연 3회)\n ㅇ (보증금 및 임대료)\n - 보증금 : 임대면적 ㎡당 3만원\n - 임대료 : 매 연도마다 시가표준액 재산정 부과\n ·오픈형사무실 : 보증금 약37만원, 연임대료 약50만원\n ·개별사무실 : 보증금 55~69만원, 연임대료 73~92만원\n\n \nㅇ (입주대상) 창업 초기 및 성장단계 창업기업(창업 7년 이내, 개별사무실), 예비창업자(코워킹스페이스)로서 제외업종(일반유흥주점업, 무도유흥주점업, 기타 사행시설 관리 및 운영업 등)에 해당하지 않는 기업 ※ 휴폐업중인 자, 환경관련 법규에 저촉되는 공해 배출업, 국세·지방세 체납기업 제외\n ㅇ (입주기간) \n - 입주사무실(4개소) : 기본 3년, 연장 신청 가능(심의위원회 심의 필요)\n - 코워킹스페이스(10개소) : 기본 1년, 연장 신청 가능(심의위원회 심의 필요)\n ㅇ (입주심사)\n - 기업의 사업설명(PT) 및 질의응답 후 심사표에 의해 위원별 점수부여\n - 평균 60점 이상 기업 중 고득점 순 선정\n - 기술성, 사업성, 성장가능성, 입주적합성 등\n ㅇ (주요사업)\n - 입주공간 제공 : 창업 초기 및 성장단계 기업(창업 7년 이내)을 위한 사무공간(4실), 코워킹스페이스(10석) 제공\n - 창업보육 프로그램 : 열린 창업 상담실 운영(상시/청년창업지원센터 매니저실 방문), 맞춤형 전문 컨설팅 지원, 경영개선 특강 및 스타트업 네트워크(연 3회)\n ㅇ (보증금 및 임대료)\n - 보증금 : 임대면적 ㎡당 3만원\n - 임대료 : 매 연도마다 시가표준액 재산정 부과\n ·입주사무실 : 평균 보증금 80~100만원, 평균 연임대료 90~130만원\n ·코워킹스페이스 : 보증금 없음, 사용료 연간 33만원",
+      "benefit": "'예비-초기-성장 단계' 창업자에게 저렴한 비용으로 사무실 제공(*심의위원회 심의 필수)",
+      "application": "○ 모집일정 : 신규 입주기업 모집 시, 동작구청 홈페이지 공고(게시)\n○ 접수방법 : 공고문을 확인하고 접수기간 내 방문접수 또는 이메일 접수(yeonghunk91@dongjak.go.kr)",
+      "contact": "서울특별시 동작구"
+    }
+  },
+  {
+    "slug": "gov24-동작구민-건강주치의-사업-운영",
+    "title": "동작구민 건강주치의 사업 운영",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동작구",
+    "region": "서울",
+    "amount": "집중관리가 필요한 어르신을 위한 다학제팀 방문건강관리서비스 운영",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "동작구민 건강주치의 사업 운영",
+      "교육",
+      "서울",
+      "서울특별시 동작구",
+      "상시",
+      "어르신",
+      "아동",
+      "복지",
+      "집중관리가",
+      "필요한",
+      "어르신을",
+      "위한"
+    ],
+    "summary": "집중관리가 필요한 어르신을 위한 다학제팀 방문건강관리서비스 운영",
+    "audience": "* 65세이상 어르신 및 건강취약계층을 위한 건강주치의 팀(의사, 간호사, 영양사, 운동사) 운영\n* 건강위험군 어르신 가정방문 실시 \n - 건강 상담 : 건강상태 평가, 복양순응도 확인, 만성질환 합병증 유무 등 파악\n - 영양 상담 : 개인별 식습관 상태 개선을 위한 영양상담 및 정보 제공\n - 신체활동 상담 : 신체활동 증진 및 체력강화를 위한 맞춤형 운동방법 제시\n\n* 건강주치의팀의 통합 방문건강관리서비스 제공\n - 건강상담 및 교육 : 건강상태 평가, 복약순응도 확인, 복약지도, 만성질환 합병증 유무 등 파악\n - 영양관리 : 식생활 점검, 영양상태 확인, 개인별 식습관 상태 개선을 위한 영양상담 및 정보 제공\n - 운동관리 : 신체활동 증진 및 체력강화를 위한 맞춤형 운동방법 제시\n - 구강관리 : 구강보건교육, 구강위생 관리법, 잇솔질 교육, 틀니 관리, 구강 위생용품 사용\n* 맞춤형 보건·의료·복지 연계 서비스 제공",
+    "benefits": [
+      "집중관리가 필요한 어르신을 위한 다학제팀 방문건강관리서비스 운영"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "1. 방문건강관리사업, 통합돌봄사업 대상자중 다학제팀 필요 대상자 의뢰 \n2. 보건지소 건강주치의팀으로 유선 신청\n\n-> 건강주치의팀 전문인력에 의한 방문건강관리",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000147",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000147",
+    "contact": "서울특별시 동작구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "* 65세이상 어르신 및 건강취약계층을 위한 건강주치의 팀(의사, 간호사, 영양사, 운동사) 운영\n* 건강위험군 어르신 가정방문 실시 \n - 건강 상담 : 건강상태 평가, 복양순응도 확인, 만성질환 합병증 유무 등 파악\n - 영양 상담 : 개인별 식습관 상태 개선을 위한 영양상담 및 정보 제공\n - 신체활동 상담 : 신체활동 증진 및 체력강화를 위한 맞춤형 운동방법 제시\n\n* 건강주치의팀의 통합 방문건강관리서비스 제공\n - 건강상담 및 교육 : 건강상태 평가, 복약순응도 확인, 복약지도, 만성질환 합병증 유무 등 파악\n - 영양관리 : 식생활 점검, 영양상태 확인, 개인별 식습관 상태 개선을 위한 영양상담 및 정보 제공\n - 운동관리 : 신체활동 증진 및 체력강화를 위한 맞춤형 운동방법 제시\n - 구강관리 : 구강보건교육, 구강위생 관리법, 잇솔질 교육, 틀니 관리, 구강 위생용품 사용\n* 맞춤형 보건·의료·복지 연계 서비스 제공",
+      "benefit": "집중관리가 필요한 어르신을 위한 다학제팀 방문건강관리서비스 운영",
+      "application": "1. 방문건강관리사업, 통합돌봄사업 대상자중 다학제팀 필요 대상자 의뢰 \n2. 보건지소 건강주치의팀으로 유선 신청\n\n-> 건강주치의팀 전문인력에 의한 방문건강관리",
+      "contact": "서울특별시 동작구"
+    }
+  },
+  {
+    "slug": "gov24-동작-백일축하용품-대여",
+    "title": "동작 백일축하용품 대여",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동작구",
+    "region": "서울",
+    "amount": "동작구에 거주하는 백일을 맞은 영아 가정에 백일 축하용품 대여",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "동작 백일축하용품 대여",
+      "복지",
+      "서울",
+      "서울특별시 동작구",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "동작구에",
+      "거주하는",
+      "백일을",
+      "맞은"
+    ],
+    "summary": "동작구에 거주하는 백일을 맞은 영아 가정에 백일 축하용품 대여",
+    "audience": "1. 신청대상 : 동작구에 주민등록이 되어 있는 영아의 부 또는 모\n2. 사업내용\n - 동작구에 거주하는 백일을 맞은 영아 가정에 백일 축하용품 대여\n - 대여용품 : 백일 축하용품, 옷(한복, 정장 및 드레스), 범보의자, 테이블\n3. 신청방법\n - 대여 희망일 전월 첫 평일 오전 10시~매월 25일 사전예약 접수 (대여 희망일 전월 선착순 신청)\n - 대한민국동작주식회사 누리집 온라인신청(https://kdongjak.co.kr/) → 자격요건 확인(구청) → 업체 배송 및 회수",
+    "benefits": [
+      "동작구에 거주하는 백일을 맞은 영아 가정에 백일 축하용품 대여"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "- 대한민국동작주식회사 누리집 온라인신청(https://kdongjak.co.kr/) → 자격요건 확인(구청) → 업체 배송 및 회수\n\n온라인: https://kdongjak.co.kr/",
+    "officialUrl": "https://kdongjak.co.kr/",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000161",
+    "contact": "서울특별시 동작구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "1. 신청대상 : 동작구에 주민등록이 되어 있는 영아의 부 또는 모\n2. 사업내용\n - 동작구에 거주하는 백일을 맞은 영아 가정에 백일 축하용품 대여\n - 대여용품 : 백일 축하용품, 옷(한복, 정장 및 드레스), 범보의자, 테이블\n3. 신청방법\n - 대여 희망일 전월 첫 평일 오전 10시~매월 25일 사전예약 접수 (대여 희망일 전월 선착순 신청)\n - 대한민국동작주식회사 누리집 온라인신청(https://kdongjak.co.kr/) → 자격요건 확인(구청) → 업체 배송 및 회수",
+      "benefit": "동작구에 거주하는 백일을 맞은 영아 가정에 백일 축하용품 대여",
+      "application": "- 대한민국동작주식회사 누리집 온라인신청(https://kdongjak.co.kr/) → 자격요건 확인(구청) → 업체 배송 및 회수\n\n온라인: https://kdongjak.co.kr/",
+      "contact": "서울특별시 동작구"
+    }
+  },
+  {
+    "slug": "gov24-동작구-산모신생아-건강관리-본인부담금-지원",
+    "title": "동작구 산모신생아 건강관리 본인부담금 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동작구",
+    "region": "서울",
+    "amount": "산모신생아 건강관리 지원서비스 본인부담금 90% 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "동작구 산모신생아 건강관리 본인부담금 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 동작구",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "산모신생아",
+      "건강관리",
+      "지원서비스",
+      "본인부담금"
+    ],
+    "summary": "산모신생아 건강관리 지원서비스 본인부담금 90% 지원",
+    "audience": "지원대상: 신생아 출생일을 기준으로 6개월 전부터 신청일까지 계속하여 동작구 거주하는 신생아의 부 또는 모, 동작구 출생등록\n지원내용: 산모신생아 건강관리지원 본인부담금 지원\n지원방법: 산모신생아 서비스 종료 후 보건소에 환급 신청 -> 지원여부 결정 -> 개별 지급계좌에 본인부담금 현금 지원\n ※서울형 산후조리경비 지원사업에 따른 산모·신생아 본인부담금\n 지원대상자는 출산유형별 본인부담금 차액을 추가 지원",
+    "benefits": [
+      "산모신생아 건강관리 지원서비스 본인부담금 90% 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청방법 : 산모신생아 서비스 종료후 보건소에 환급신청\n -방문신청 : 동작구보건소 8층 모자건강센터방문\n -우편신청 : 서울특별시 동작구 장승배기로 10길 42, 동작구 보건소 모자건강팀\n -온라인신청 : 정부24",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000162",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000162",
+    "contact": "서울특별시 동작구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "지원대상: 신생아 출생일을 기준으로 6개월 전부터 신청일까지 계속하여 동작구 거주하는 신생아의 부 또는 모, 동작구 출생등록\n지원내용: 산모신생아 건강관리지원 본인부담금 지원\n지원방법: 산모신생아 서비스 종료 후 보건소에 환급 신청 -> 지원여부 결정 -> 개별 지급계좌에 본인부담금 현금 지원\n ※서울형 산후조리경비 지원사업에 따른 산모·신생아 본인부담금\n 지원대상자는 출산유형별 본인부담금 차액을 추가 지원",
+      "benefit": "산모신생아 건강관리 지원서비스 본인부담금 90% 지원",
+      "application": "신청방법 : 산모신생아 서비스 종료후 보건소에 환급신청\n -방문신청 : 동작구보건소 8층 모자건강센터방문\n -우편신청 : 서울특별시 동작구 장승배기로 10길 42, 동작구 보건소 모자건강팀\n -온라인신청 : 정부24",
+      "contact": "서울특별시 동작구"
+    }
+  },
+  {
+    "slug": "gov24-동작구-여성-hpv-검사비-지원-참여신청",
+    "title": "동작구 여성 HPV 검사비 지원 참여신청",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동작구",
+    "region": "서울",
+    "amount": "(동작구) 여성 HPV 검사비 3만원 한도내 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "동작구 여성 HPV 검사비 지원 참여신청",
+      "보건의료",
+      "서울",
+      "서울특별시 동작구",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "(동작구)",
+      "여성",
+      "HPV",
+      "검사비"
+    ],
+    "summary": "(동작구) 여성 HPV 검사비 3만원 한도내 지원",
+    "audience": "(동작구) 여성 HPV 검사비 지원 신청\n- 대상 : '26년 임신 사전건강관리지원사업 신청한 여성 중\n ‣ 의사가 필요하다고 판단한 경우\n ‣ HPV 검사를 희망하는 경우\n- 내용 : HPV 검사비 급여 및 비급여 항목의 본인부담금 3만원 한도내 지원\n- 검사기관 : 동작구 관내 임신 사전건강관리 지원사업 참여 의료기관\n- 지원절차 : 참여신청(대상자) →승인, 접수(보건소) → 참여기관에서 검사 및 상담 → 청구신청(대상자) → 지급(보건소)",
+    "benefits": [
+      "(동작구) 여성 HPV 검사비 3만원 한도내 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청방법 : 여성 HPV 검사비 지원 참여신청\n -방문신청 : 동작구보건소 8층 모자건강센터방문 \n -온라인신청 : 정부24",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000190",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000190",
+    "contact": "서울특별시 동작구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "(동작구) 여성 HPV 검사비 지원 신청\n- 대상 : '26년 임신 사전건강관리지원사업 신청한 여성 중\n ‣ 의사가 필요하다고 판단한 경우\n ‣ HPV 검사를 희망하는 경우\n- 내용 : HPV 검사비 급여 및 비급여 항목의 본인부담금 3만원 한도내 지원\n- 검사기관 : 동작구 관내 임신 사전건강관리 지원사업 참여 의료기관\n- 지원절차 : 참여신청(대상자) →승인, 접수(보건소) → 참여기관에서 검사 및 상담 → 청구신청(대상자) → 지급(보건소)",
+      "benefit": "(동작구) 여성 HPV 검사비 3만원 한도내 지원",
+      "application": "신청방법 : 여성 HPV 검사비 지원 참여신청\n -방문신청 : 동작구보건소 8층 모자건강센터방문 \n -온라인신청 : 정부24",
+      "contact": "서울특별시 동작구"
+    }
+  },
+  {
+    "slug": "gov24-동작구-여성-hpv-검사비-청구",
+    "title": "동작구 여성 HPV 검사비 청구",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동작구",
+    "region": "서울",
+    "amount": "동작구 여성 HPV 검사비 3만원 한도내 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "동작구 여성 HPV 검사비 청구",
+      "보건의료",
+      "서울",
+      "서울특별시 동작구",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "동작구",
+      "여성",
+      "HPV",
+      "검사비"
+    ],
+    "summary": "동작구 여성 HPV 검사비 3만원 한도내 지원",
+    "audience": "(동작구) 여성 HPV 검사비 지원 청구\n- 대상 : '26년 임신 사전건강관리지원사업 신청한 여성 중\n ‣ 의사가 필요하다고 판단한 경우\n ‣ HPV 검사를 희망하는 경우\n- 내용 : HPV 검사비 급여 및 비급여 항목의 본인부담금 3만원 한도내 지원\n- 검사기관 : 동작구 관내 임신 사전건강관리 지원사업 참여 의료기관\n- 지원절차 : 참여신청(대상자) →승인, 접수(보건소) → 참여기관에서 검사 및 상담 → 청구신청(대상자) → 지급(보건소)",
+    "benefits": [
+      "동작구 여성 HPV 검사비 3만원 한도내 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청 : 보건소 8층 모자건강센터\n온라인 : 정부24",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000191",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000191",
+    "contact": "서울특별시 동작구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "(동작구) 여성 HPV 검사비 지원 청구\n- 대상 : '26년 임신 사전건강관리지원사업 신청한 여성 중\n ‣ 의사가 필요하다고 판단한 경우\n ‣ HPV 검사를 희망하는 경우\n- 내용 : HPV 검사비 급여 및 비급여 항목의 본인부담금 3만원 한도내 지원\n- 검사기관 : 동작구 관내 임신 사전건강관리 지원사업 참여 의료기관\n- 지원절차 : 참여신청(대상자) →승인, 접수(보건소) → 참여기관에서 검사 및 상담 → 청구신청(대상자) → 지급(보건소)",
+      "benefit": "동작구 여성 HPV 검사비 3만원 한도내 지원",
+      "application": "방문신청 : 보건소 8층 모자건강센터\n온라인 : 정부24",
+      "contact": "서울특별시 동작구"
+    }
+  },
+  {
+    "slug": "gov24-취약계층-저소득가구-조명-led-교체-지원",
+    "title": "취약계층(저소득가구)조명 LED 교체 지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동작구",
+    "region": "서울",
+    "amount": "취약계층에 형광등 -> LED교체 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거·복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "취약계층(저소득가구)조명 LED 교체 지원",
+      "주거",
+      "서울",
+      "서울특별시 동작구",
+      "모집중",
+      "일반",
+      "전체",
+      "복지",
+      "취약계층에",
+      "형광등",
+      "->",
+      "LED교체"
+    ],
+    "summary": "취약계층에 형광등 -> LED교체 지원",
+    "audience": "□ 서비스 절차\n - 취약계층 LED 조명 교체공사 접수 문의\n - 지원조건 해당 여부 확인 및 선정 결과 알림\n - 현장 사전 방문 (공사 물량 및 현장여건 파악)\n - LED 교체 공사 시행\n -사후관리 (하자 검사 및 현장 방문 협조)",
+    "benefits": [
+      "취약계층에 형광등 -> LED교체 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청 : 필요서류 지참하여 관할 동주민센터 또는 동작구 환경과(서울시 동작구 장승배기로 70, 10층) 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000156",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000156",
+    "contact": "서울특별시 동작구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "□ 서비스 절차\n - 취약계층 LED 조명 교체공사 접수 문의\n - 지원조건 해당 여부 확인 및 선정 결과 알림\n - 현장 사전 방문 (공사 물량 및 현장여건 파악)\n - LED 교체 공사 시행\n -사후관리 (하자 검사 및 현장 방문 협조)",
+      "benefit": "취약계층에 형광등 -> LED교체 지원",
+      "application": "방문신청 : 필요서류 지참하여 관할 동주민센터 또는 동작구 환경과(서울시 동작구 장승배기로 70, 10층) 방문",
+      "contact": "서울특별시 동작구"
+    }
+  },
+  {
+    "slug": "gov24-동작구-출산축하용품-구입비-지원",
+    "title": "동작구 출산축하용품 구입비 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동작구",
+    "region": "서울",
+    "amount": "동작구에 거주하는 출생아 부모에게 출산축하용품 구입비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "동작구 출산축하용품 구입비 지원",
+      "복지",
+      "서울",
+      "서울특별시 동작구",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "동작구에",
+      "거주하는",
+      "출생아",
+      "부모에게"
+    ],
+    "summary": "동작구에 거주하는 출생아 부모에게 출산축하용품 구입비 지원",
+    "audience": "- 동작구에 주소를 두고 신생아와 동일세대원인 부 또는 모에게 첫째아 5만원, 둘째아 10만원, 셋째아 15만원, 넷째아 이상 20만원의 현금(일시금) 지급\n- 2023. 1. 1이후 신생아부터 신청가능 (출생신고일 기준 1년이내 신청가능)\n- 신생아 거주지 주민센터로 방문하여 신청(준비서류: 부 또는 모의 신분증, 입금받을 통장사본, 육아용품구입한 영수증) 및 정부24 온라인 신청",
+    "benefits": [
+      "동작구에 거주하는 출생아 부모에게 출산축하용품 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 신청방법 \n - 방문신청 : 동주민센터 방문신청\n - 온라인신청 : 정부24>출산 관련 서비스 통합처리 신청(행복출산)>지자체별지원(출산축하용품 지원)>담당 동주민센터에 영수증 제출\n\n○ 지급시기 및 지급 방법\n - 지급시기 : 신청일로 부터 30일 이내 지급\n - 지급방법 : 대상자 신청 계좌로 입금",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000164",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000164",
+    "contact": "서울특별시 동작구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "- 동작구에 주소를 두고 신생아와 동일세대원인 부 또는 모에게 첫째아 5만원, 둘째아 10만원, 셋째아 15만원, 넷째아 이상 20만원의 현금(일시금) 지급\n- 2023. 1. 1이후 신생아부터 신청가능 (출생신고일 기준 1년이내 신청가능)\n- 신생아 거주지 주민센터로 방문하여 신청(준비서류: 부 또는 모의 신분증, 입금받을 통장사본, 육아용품구입한 영수증) 및 정부24 온라인 신청",
+      "benefit": "동작구에 거주하는 출생아 부모에게 출산축하용품 구입비 지원",
+      "application": "○ 신청방법 \n - 방문신청 : 동주민센터 방문신청\n - 온라인신청 : 정부24>출산 관련 서비스 통합처리 신청(행복출산)>지자체별지원(출산축하용품 지원)>담당 동주민센터에 영수증 제출\n\n○ 지급시기 및 지급 방법\n - 지급시기 : 신청일로 부터 30일 이내 지급\n - 지급방법 : 대상자 신청 계좌로 입금",
+      "contact": "서울특별시 동작구"
+    }
+  },
+  {
+    "slug": "gov24-관악-청년-1인-가구-무료-건강검진",
+    "title": "관악 청년 1인 가구 무료 건강검진",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "건강관리에 소홀하기 쉬운 청년층 1인 가구 건강검진 무료지원(*관악구에 주민등록을 둔 자)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "관악 청년 1인 가구 무료 건강검진",
+      "청년",
+      "서울",
+      "서울특별시 관악구",
+      "상시",
+      "건강관리에",
+      "소홀하기",
+      "쉬운",
+      "청년층",
+      "1인",
+      "가구",
+      "건강검진"
+    ],
+    "summary": "건강관리에 소홀하기 쉬운 청년층 1인 가구 건강검진 무료지원(*관악구에 주민등록을 둔 자)",
+    "audience": "○ 관악 청년 1인 가구 무료 건강검진 지원\n - 사업기간: 2024. 1. 2.부터 상시 운영\n - 검진대상: 19~39세 관악구 거주 청년 1인 가구 (*주민등록등본기준)\n - 검진장소: 관악구 보건소 (접수처: 2층 건강관리센터)\n - 운영시간: 평일 09:00 ~ 11:00(2026년 3/14, 6/13, 9/12, 12/12 토요일오전검진)\n - 준비사항: 신분증, 주민등록등본(검사일기준1개월이내발급)\n · 검진 전일 22시부터 금식 후 보건소 방문 (*사전예약 필요없음)\n - 검진비용: 무료(연 1회)\n - 검진항목: 총 47종 \n☞ 간염(A·B·C형), 간기능, 단백, 신장, 통풍, 중성지방, 고지혈, 혈당, 백혈구, 적혈구, 빈혈, 혈소판, 갑상선기능, HIV, 매독, 간암검사 등 \n ※ HIV 및 매독검사는 희망자 한해, 간암 검사는 B형간염 보균자 대상으로 실시",
+    "benefits": [
+      "건강관리에 소홀하기 쉬운 청년층 1인 가구 건강검진 무료지원(*관악구에 주민등록을 둔 자)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "- 접수장소: 관악구 보건소 2층 건강관리센터(*사전예약 필요없음)\n- 운영시간: 평일 09:00 ~ 11:00(2026년 3/14, 6/13, 9/12, 12/12 토요일오전검진)\n- 준비사항: 신분증, 주민등록등본(검사일기준1개월이내 발급)\n · 검진 전일 22시부터 금식 후 보건소 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000124",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000124",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 관악 청년 1인 가구 무료 건강검진 지원\n - 사업기간: 2024. 1. 2.부터 상시 운영\n - 검진대상: 19~39세 관악구 거주 청년 1인 가구 (*주민등록등본기준)\n - 검진장소: 관악구 보건소 (접수처: 2층 건강관리센터)\n - 운영시간: 평일 09:00 ~ 11:00(2026년 3/14, 6/13, 9/12, 12/12 토요일오전검진)\n - 준비사항: 신분증, 주민등록등본(검사일기준1개월이내발급)\n · 검진 전일 22시부터 금식 후 보건소 방문 (*사전예약 필요없음)\n - 검진비용: 무료(연 1회)\n - 검진항목: 총 47종 \n☞ 간염(A·B·C형), 간기능, 단백, 신장, 통풍, 중성지방, 고지혈, 혈당, 백혈구, 적혈구, 빈혈, 혈소판, 갑상선기능, HIV, 매독, 간암검사 등 \n ※ HIV 및 매독검사는 희망자 한해, 간암 검사는 B형간염 보균자 대상으로 실시",
+      "benefit": "건강관리에 소홀하기 쉬운 청년층 1인 가구 건강검진 무료지원(*관악구에 주민등록을 둔 자)",
+      "application": "- 접수장소: 관악구 보건소 2층 건강관리센터(*사전예약 필요없음)\n- 운영시간: 평일 09:00 ~ 11:00(2026년 3/14, 6/13, 9/12, 12/12 토요일오전검진)\n- 준비사항: 신분증, 주민등록등본(검사일기준1개월이내 발급)\n · 검진 전일 22시부터 금식 후 보건소 방문",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-중소기업육성기금-융자-지원",
+    "title": "중소기업육성기금 융자 지원",
+    "category": "소상공인",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동작구",
+    "region": "서울",
+    "amount": "관내에서 3개월 이상 영업 중인 중소기업 및 소상공인을 대상으로 시설개선 및 경영자금 융자",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "취업·사업",
+    "targetGroup": "구직자, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "중소기업육성기금 융자 지원",
+      "소상공인",
+      "서울",
+      "서울특별시 동작구",
+      "확인필요",
+      "구직자",
+      "전체",
+      "취업",
+      "사업",
+      "관내에서",
+      "3개월",
+      "이상"
+    ],
+    "summary": "관내에서 3개월 이상 영업 중인 중소기업 및 소상공인을 대상으로 시설개선 및 경영자금 융자",
+    "audience": "1. 융자대상 : 동작구 내 사업장을 둔 중소기업 및 소상공인\n - 공고일 기준 3개월 이상 경과한 업체\n - 은행 여신규정 상 담보능력 있는 중소기업 및 소상공인\n2. 융자내용\n - 자금용도 : 시설개선 및 경영안정자금\n - 금 리 : 연 1.5%\n - 융자한도 : 업체당 5천만원 이내\n - 상환조건 : 5년 범위 내 선택상환\n\n***융자실행 : 기금운용심의위원회 심의 개최 후 개별 통보",
+    "benefits": [
+      "관내에서 3개월 이상 영업 중인 중소기업 및 소상공인을 대상으로 시설개선 및 경영자금 융자"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "1. 지원시기 : 상하반기 1회 실시\n2. 지원공고 : 동작구청 홈페이지 고시공고\n3. 확인방법 : 구정문자, SNS, 블로그, 동작구청 홈페이지 등 통해 확인 홍보",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000153",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000153",
+    "contact": "서울특별시 동작구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "1. 융자대상 : 동작구 내 사업장을 둔 중소기업 및 소상공인\n - 공고일 기준 3개월 이상 경과한 업체\n - 은행 여신규정 상 담보능력 있는 중소기업 및 소상공인\n2. 융자내용\n - 자금용도 : 시설개선 및 경영안정자금\n - 금 리 : 연 1.5%\n - 융자한도 : 업체당 5천만원 이내\n - 상환조건 : 5년 범위 내 선택상환\n\n***융자실행 : 기금운용심의위원회 심의 개최 후 개별 통보",
+      "benefit": "관내에서 3개월 이상 영업 중인 중소기업 및 소상공인을 대상으로 시설개선 및 경영자금 융자",
+      "application": "1. 지원시기 : 상하반기 1회 실시\n2. 지원공고 : 동작구청 홈페이지 고시공고\n3. 확인방법 : 구정문자, SNS, 블로그, 동작구청 홈페이지 등 통해 확인 홍보",
+      "contact": "서울특별시 동작구"
+    }
+  },
+  {
+    "slug": "gov24-동작구-구민안전보험",
+    "title": "동작구 구민안전보험",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동작구",
+    "region": "서울",
+    "amount": "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "동작구 구민안전보험",
+      "주거",
+      "서울",
+      "서울특별시 동작구",
+      "상시",
+      "일반",
+      "아동",
+      "재난이나",
+      "그밖의",
+      "각종",
+      "사고로",
+      "피해가"
+    ],
+    "summary": "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상",
+    "audience": "동작구민이 상해로 화상을 입고 병원 또는 의원 등에서 수술을 받은 경우 100만원\n동작구민이 대중교통 이용중 교통사고를 입는 경우(전세버스 포함) 100만원\n동작구민이 급성감염병분류표에서 정한 급성감염병에 진단되어서 사망한 경우(법정감염병을 포함하여, 일부 감염병 제외) (만15세~만80세 미만 가입) 300만원\n동작구민이 상해사고의 직접결과로 사망한 경우(15세미만자 제외) 500만원 ※ 교통사고 제외\n동작구민이 상해사고의 직접결과로 3% ~ 100%의 후유장해경우(15세미만자 제외) 500만원 ※ 교통사고 제외\n동작구민이 주택 화재로 소방서추산 200만원 이상 피해를 입은 경우 50만원 ※ 1세대당 7일 이내 숙박실비, 화재청소비 지원\n동작구민이 보험기간중 4주(28일) 이상 진단을 받은 경우 10만원 ※ 교통사고 제외\n※ 타 보험 가입여부와 관계없이 중복보상",
+    "benefits": [
+      "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "보험사 유선신청(NH농협손해보험 1644-9666)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000165",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000165",
+    "contact": "서울특별시 동작구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "동작구민이 상해로 화상을 입고 병원 또는 의원 등에서 수술을 받은 경우 100만원\n동작구민이 대중교통 이용중 교통사고를 입는 경우(전세버스 포함) 100만원\n동작구민이 급성감염병분류표에서 정한 급성감염병에 진단되어서 사망한 경우(법정감염병을 포함하여, 일부 감염병 제외) (만15세~만80세 미만 가입) 300만원\n동작구민이 상해사고의 직접결과로 사망한 경우(15세미만자 제외) 500만원 ※ 교통사고 제외\n동작구민이 상해사고의 직접결과로 3% ~ 100%의 후유장해경우(15세미만자 제외) 500만원 ※ 교통사고 제외\n동작구민이 주택 화재로 소방서추산 200만원 이상 피해를 입은 경우 50만원 ※ 1세대당 7일 이내 숙박실비, 화재청소비 지원\n동작구민이 보험기간중 4주(28일) 이상 진단을 받은 경우 10만원 ※ 교통사고 제외\n※ 타 보험 가입여부와 관계없이 중복보상",
+      "benefit": "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상",
+      "application": "보험사 유선신청(NH농협손해보험 1644-9666)",
+      "contact": "서울특별시 동작구"
+    }
+  },
+  {
+    "slug": "gov24-청소년-문신-제거시술-무료-지원",
+    "title": "청소년 문신 제거시술 무료 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "만9세~만24세 저소득 위기 청소년에게 문신제거 지원을 통한 사회적응 기회부여",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "청소년 문신 제거시술 무료 지원",
+      "청년",
+      "서울",
+      "서울특별시 관악구",
+      "모집중",
+      "일반",
+      "아동",
+      "청소년",
+      "복지",
+      "만9세~만24세",
+      "저소득",
+      "위기"
+    ],
+    "summary": "만9세~만24세 저소득 위기 청소년에게 문신제거 지원을 통한 사회적응 기회부여",
+    "audience": "○ 추진배경\n - 판단력이 성숙되지 않고 신체적 성장기에 있는 청소년이 호기심이나 충동적으로 문신을 한 후 후회하는 일이 발생 하지만 제거가 어려움 \n - 저소득 위기 청소년에게 문신제거 지원을 통한 사회적응 기회부여 \n\n ○ 지원대상: 만9세 ~ 만24세 이하 청소년 \n - 중위소득 기준 100%이내의 청소년(여가부 지원 기준 적용)",
+    "benefits": [
+      "만9세~만24세 저소득 위기 청소년에게 문신제거 지원을 통한 사회적응 기회부여"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "동주민센터 방문신청(신분증 제시)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000123",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000123",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 추진배경\n - 판단력이 성숙되지 않고 신체적 성장기에 있는 청소년이 호기심이나 충동적으로 문신을 한 후 후회하는 일이 발생 하지만 제거가 어려움 \n - 저소득 위기 청소년에게 문신제거 지원을 통한 사회적응 기회부여 \n\n ○ 지원대상: 만9세 ~ 만24세 이하 청소년 \n - 중위소득 기준 100%이내의 청소년(여가부 지원 기준 적용)",
+      "benefit": "만9세~만24세 저소득 위기 청소년에게 문신제거 지원을 통한 사회적응 기회부여",
+      "application": "동주민센터 방문신청(신분증 제시)",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-관악구-난임부부시술-약제비-지원-시술-후-원외-약제비-신청",
+    "title": "(관악구) 난임부부시술 약제비 지원 (시술 후 원외 약제비 신청)",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "난임시술과 직접 관련이 있는 원외약 처방을 받은 경우 정부지원금액 한도 내 약제비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(관악구) 난임부부시술 약제비 지원 (시술 후 원외 약제비 신청)",
+      "보건의료",
+      "서울",
+      "서울특별시 관악구",
+      "상시",
+      "일반",
+      "전체",
+      "난임시술과",
+      "직접",
+      "관련이",
+      "있는",
+      "원외약"
+    ],
+    "summary": "난임시술과 직접 관련이 있는 원외약 처방을 받은 경우 정부지원금액 한도 내 약제비 지원",
+    "audience": "난임부부시술비 지원 대상자 시술과 직접관 관련 있는 원외약처방을 받은 경우 일부본인부담금, 비급여(전액본인부담금포함) 약제비에 대하여 정부지원금액 한도 내에서 지급 가능.",
+    "benefits": [
+      "난임시술과 직접 관련이 있는 원외약 처방을 받은 경우 정부지원금액 한도 내 약제비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "시술 완료 후 관련서류 첨부하여 1개월 이내 관할 보건소로 청구\n○ 방문신청 : 평일 오전9시~11사30분 / 오후 1시~5시 관악구보건소 5층 지역보건과 \n○ 정부24 온라인 신청 : 본인인증 후 구비서류 첨부",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000295",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000295",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "난임부부시술비 지원 대상자 시술과 직접관 관련 있는 원외약처방을 받은 경우 일부본인부담금, 비급여(전액본인부담금포함) 약제비에 대하여 정부지원금액 한도 내에서 지급 가능.",
+      "benefit": "난임시술과 직접 관련이 있는 원외약 처방을 받은 경우 정부지원금액 한도 내 약제비 지원",
+      "application": "시술 완료 후 관련서류 첨부하여 1개월 이내 관할 보건소로 청구\n○ 방문신청 : 평일 오전9시~11사30분 / 오후 1시~5시 관악구보건소 5층 지역보건과 \n○ 정부24 온라인 신청 : 본인인증 후 구비서류 첨부",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-서초-아이돌보미손주돌보미119아이돌보미-지원",
+    "title": "서초 아이돌보미·손주돌보미·119아이돌보미 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "자녀 양육가정에 아이돌보미 파견 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "서초 아이돌보미·손주돌보미·119아이돌보미 지원",
+      "교육",
+      "서울",
+      "서울특별시 서초구",
+      "상시",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "자녀",
+      "양육가정에",
+      "아이돌보미",
+      "파견"
+    ],
+    "summary": "자녀 양육가정에 아이돌보미 파견 지원",
+    "audience": "○ 3~23개월 이하 자녀를 둔 가정에 아이돌보미(한자녀(맞벌이) 이상가정) 파견\n○ 1~23개월 이하 손주를 둔 가정에 손주돌보미(부 또는 모, 조부모, 대상 아동 모두 서초구 거주) 활동수당 지원\n○ 3개월~12세 이하 자녀를 두고 긴급한 양육공백(질병 등)이 발생한 가정에 아이돌보미 파견",
+    "benefits": [
+      "자녀 양육가정에 아이돌보미 파견 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 서초구가족센터 신청\n\n온라인: https://www.seochofamily.com/",
+    "officialUrl": "https://www.seochofamily.com/",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000102",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 3~23개월 이하 자녀를 둔 가정에 아이돌보미(한자녀(맞벌이) 이상가정) 파견\n○ 1~23개월 이하 손주를 둔 가정에 손주돌보미(부 또는 모, 조부모, 대상 아동 모두 서초구 거주) 활동수당 지원\n○ 3개월~12세 이하 자녀를 두고 긴급한 양육공백(질병 등)이 발생한 가정에 아이돌보미 파견",
+      "benefit": "자녀 양육가정에 아이돌보미 파견 지원",
+      "application": "○ 방문 신청\n - 기타 : 서초구가족센터 신청\n\n온라인: https://www.seochofamily.com/",
+      "contact": "서울특별시 서초구"
+    }
+  },
+  {
+    "slug": "gov24-저소득층-주거급여-지원",
+    "title": "저소득층 주거급여 지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "저소득층 주거급여(임차, 수선유지) 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거·복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "저소득층 주거급여 지원",
+      "주거",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "일반",
+      "전체",
+      "복지",
+      "저소득층",
+      "주거급여(임차,",
+      "수선유지)",
+      "지원"
+    ],
+    "summary": "저소득층 주거급여(임차, 수선유지) 지원",
+    "audience": "O 임차급여\n - 주거급여 수급자 중 타인의 주택 등에 임차로 거주하는 가구에 임차급여 지원\n - 기준임대료에 의거 지원\nO 수선유지급여\n - 주거급여 수급자 중 주택을 소유하고 그 주택에 거주하는 가구에 수선유지급여 지원\n - 주택 노후도에 따른 현물(주택 수선) 지원",
+    "benefits": [
+      "저소득층 주거급여(임차, 수선유지) 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "O 방문, 온라인\nO 방문 : 주민등록지 주민센터(신분증 지참)\nO 온라인 : 복지로 (http://online.bokjiro.go.kr)\n\n온라인: https://bokjiro.go.kr",
+    "officialUrl": "https://bokjiro.go.kr",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000140",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "O 임차급여\n - 주거급여 수급자 중 타인의 주택 등에 임차로 거주하는 가구에 임차급여 지원\n - 기준임대료에 의거 지원\nO 수선유지급여\n - 주거급여 수급자 중 주택을 소유하고 그 주택에 거주하는 가구에 수선유지급여 지원\n - 주택 노후도에 따른 현물(주택 수선) 지원",
+      "benefit": "저소득층 주거급여(임차, 수선유지) 지원",
+      "application": "O 방문, 온라인\nO 방문 : 주민등록지 주민센터(신분증 지참)\nO 온라인 : 복지로 (http://online.bokjiro.go.kr)\n\n온라인: https://bokjiro.go.kr",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-만성감염병-관리-결핵-성병-등",
+    "title": "만성감염병 관리(결핵, 성병 등)",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "지역주민 및 학생을 위한 결핵, 성병환자 관리 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "만성감염병 관리(결핵, 성병 등)",
+      "교육",
+      "서울",
+      "서울특별시 관악구",
+      "상시",
+      "일반",
+      "전체",
+      "지역주민",
+      "및",
+      "학생을",
+      "위한",
+      "결핵,"
+    ],
+    "summary": "지역주민 및 학생을 위한 결핵, 성병환자 관리 지원",
+    "audience": "○ 감염병관리실 운영 및 내소자 관리\n (결핵, 성병 검진 및 관리)\n \n○ 학생 이동검진 등 질병 조기발견 사업 \n\n○ 만성감염병 예방교육 및 홍보",
+    "benefits": [
+      "지역주민 및 학생을 위한 결핵, 성병환자 관리 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 보건소 방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000104",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000104",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 감염병관리실 운영 및 내소자 관리\n (결핵, 성병 검진 및 관리)\n \n○ 학생 이동검진 등 질병 조기발견 사업 \n\n○ 만성감염병 예방교육 및 홍보",
+      "benefit": "지역주민 및 학생을 위한 결핵, 성병환자 관리 지원",
+      "application": "○ 방문 신청\n - 보건소 : 보건소 방문신청",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-예방접종-지원",
+    "title": "예방접종 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "국가예방접종대상자 예방접종 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아, 어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "예방접종 지원",
+      "청년",
+      "서울",
+      "서울특별시 관악구",
+      "모집중",
+      "부모/육아",
+      "어르신",
+      "아동",
+      "청소년",
+      "임신·출산·육아",
+      "복지",
+      "국가예방접종대상자"
+    ],
+    "summary": "관악구의 국가예방접종 대상자를 위한 예방접종 지원사업입니다. 접종 종류와 시기별 안내는 공식 공고에서 확인하세요.",
+    "audience": "○ 어린이 국가예방접종 19종 지원\n○ HPV 예방접종 지원\n○ B형 간염 주산기 감염 예방접종 지원\n○ 65세 이상 어르신 폐렴구균(23가 다당질) 예방접종 지원\n○ B형간염, 신증후군출혈열, 장티푸스 예방접종 지원 등\n○ 인플루엔자 예방접종 지원",
+    "benefits": [
+      "국가예방접종대상자 예방접종 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - 누리집 : nip.kdca.go.kr\n\n○ 인플루엔자 예방접종 시기는 '25-'26절기 인플루엔자 예방접종 지침에 따름",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000101",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000101",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 어린이 국가예방접종 19종 지원\n○ HPV 예방접종 지원\n○ B형 간염 주산기 감염 예방접종 지원\n○ 65세 이상 어르신 폐렴구균(23가 다당질) 예방접종 지원\n○ B형간염, 신증후군출혈열, 장티푸스 예방접종 지원 등\n○ 인플루엔자 예방접종 지원",
+      "benefit": "국가예방접종대상자 예방접종 지원",
+      "application": "○ 온라인 신청\n - 누리집 : nip.kdca.go.kr\n\n○ 인플루엔자 예방접종 시기는 '25-'26절기 인플루엔자 예방접종 지침에 따름",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-저소득주민-국민건강보험료-및-노인장기요양보험료-지원",
+    "title": "저소득주민 국민건강보험료 및 노인장기요양보험료 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "국민건강보험료 및 노인장기요양보험료 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "저소득주민 국민건강보험료 및 노인장기요양보험료 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 관악구",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "복지",
+      "국민건강보험료",
+      "및",
+      "노인장기요양보험료"
+    ],
+    "summary": "국민건강보험료 및 노인장기요양보험료 지원",
+    "audience": "○ 생활이 어려운 저소득주민에게 국민건강보험료 및 노인장기요양보험료 지원",
+    "benefits": [
+      "국민건강보험료 및 노인장기요양보험료 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주민센터에 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000111",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000111",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 생활이 어려운 저소득주민에게 국민건강보험료 및 노인장기요양보험료 지원",
+      "benefit": "국민건강보험료 및 노인장기요양보험료 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주민센터에 방문 신청",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-기초생활수급자-명절위문금-지원",
+    "title": "기초생활수급자 명절위문금 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "○ 기초생활수급자(생계·의료) 명절위문품비 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "기초생활수급자 명절위문금 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 관악구",
+      "모집중",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "복지",
+      "○",
+      "기초생활수급자(생계·의료)",
+      "명절위문품비"
+    ],
+    "summary": "관악구의 기초생활수급자를 위한 명절위문금 지원사업입니다. 지급 대상과 지급 방식은 공식 안내를 기준으로 확인하세요.",
+    "audience": "○ 기초생활수급자(생계·의료) 명절위문품비 지급\n - 지원시기: 설, 추석 연 2회 가구당 각 40,000원 지급\n - 지급방법: 해당 지급일에 수급자의 계좌에 입금",
+    "benefits": [
+      "○ 기초생활수급자(생계·의료) 명절위문품비 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "해당 서비스는 신청없이 자격대상자에게 자동적으로 제공됩니다.",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000112",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000112",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 기초생활수급자(생계·의료) 명절위문품비 지급\n - 지원시기: 설, 추석 연 2회 가구당 각 40,000원 지급\n - 지급방법: 해당 지급일에 수급자의 계좌에 입금",
+      "benefit": "○ 기초생활수급자(생계·의료) 명절위문품비 지급",
+      "application": "해당 서비스는 신청없이 자격대상자에게 자동적으로 제공됩니다.",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-관악구민-자전거보험",
+    "title": "관악구민 자전거보험",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "- 자전거 사고에 대하여 사망, 후유장애, 진단위로금 등 총 7개 항목 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "관악구민 자전거보험",
+      "복지",
+      "서울",
+      "서울특별시 관악구",
+      "상시",
+      "장애인",
+      "전체",
+      "-",
+      "자전거",
+      "사고에",
+      "대하여",
+      "사망,"
+    ],
+    "summary": "- 자전거 사고에 대하여 사망, 후유장애, 진단위로금 등 총 7개 항목 지원",
+    "audience": "○ 관악구 자전거 보험 : 자전거 사고로 신체적·경제적 피해를 입은 구민에게 실질적인 보상\n - 보장항목 : 사망, 후유장애, 진단위로금 등 총 7개 항목\n - 대 상 : 관악구에 주민등록이 등재되어 있는 전체 구민\n - 계약 보험사: DB 손해보험(02-475-8115)",
+    "benefits": [
+      "- 자전거 사고에 대하여 사망, 후유장애, 진단위로금 등 총 7개 항목 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 손해 보험사(DB손해보험: 02- 475-8115)에 전화 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000115",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000115",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 관악구 자전거 보험 : 자전거 사고로 신체적·경제적 피해를 입은 구민에게 실질적인 보상\n - 보장항목 : 사망, 후유장애, 진단위로금 등 총 7개 항목\n - 대 상 : 관악구에 주민등록이 등재되어 있는 전체 구민\n - 계약 보험사: DB 손해보험(02-475-8115)",
+      "benefit": "- 자전거 사고에 대하여 사망, 후유장애, 진단위로금 등 총 7개 항목 지원",
+      "application": "○ 손해 보험사(DB손해보험: 02- 475-8115)에 전화 신청",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-관악-미취업청년-어학자격시험-응시료-지원",
+    "title": "관악 미취업청년 어학자격시험 응시료 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "관악구 거주 미취업 청년에게 연 1회 응시료 실비 지원 (최대 10만)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년·취업·사업",
+    "targetGroup": "청년, 구직자, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "관악 미취업청년 어학자격시험 응시료 지원",
+      "청년",
+      "서울",
+      "서울특별시 관악구",
+      "확인필요",
+      "구직자",
+      "소상공인",
+      "취업",
+      "사업",
+      "관악구",
+      "거주",
+      "미취업"
+    ],
+    "summary": "관악구 거주 미취업 청년에게 연 1회 응시료 실비 지원 (최대 10만)",
+    "audience": "○ 사업기간: 2026년 7월 ~ 10월\n○ 신청기간: 2026년 9월 1일 ~ 10일 18:00시까지\n○ 지원대상: 관악구 거주 19~39세(1986년∼2007년생) 미취업 청년 300명(예산추이에 따라 변동가능)\n - 신청일 기준 관악구 거주 청년\n - 응시일부터 신청일까지 미취업 및 사업자 미등록 청년\n - 2026년 1월 1일 이후 실시한 국가기술(전문)자격시험, 국가공인자격시험\n 어학시험(토익 등), 한국사능력검정시험 등 각종 자격시험에 응시한 자\n○ 지원내용: 1인당 연 최대 10만원 (당해 연도 응시한 시험 통합1회 신청)\n○ 지원방법: 서류심사 후 응시료 실비 입금(예산범위 내 순차적 지원)",
+    "benefits": [
+      "관악구 거주 미취업 청년에게 연 1회 응시료 실비 지원 (최대 10만)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "관악구청 홈페이지 온라인 신청(참여/예약->참여신청->행정접수)\n\n온라인: https://www.gwanak.go.kr/site/gwanak/ex/reservation/re00401.do?riType=A",
+    "officialUrl": "https://www.gwanak.go.kr/site/gwanak/ex/reservation/re00401.do?riType=A",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000298",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 사업기간: 2026년 7월 ~ 10월\n○ 신청기간: 2026년 9월 1일 ~ 10일 18:00시까지\n○ 지원대상: 관악구 거주 19~39세(1986년∼2007년생) 미취업 청년 300명(예산추이에 따라 변동가능)\n - 신청일 기준 관악구 거주 청년\n - 응시일부터 신청일까지 미취업 및 사업자 미등록 청년\n - 2026년 1월 1일 이후 실시한 국가기술(전문)자격시험, 국가공인자격시험\n 어학시험(토익 등), 한국사능력검정시험 등 각종 자격시험에 응시한 자\n○ 지원내용: 1인당 연 최대 10만원 (당해 연도 응시한 시험 통합1회 신청)\n○ 지원방법: 서류심사 후 응시료 실비 입금(예산범위 내 순차적 지원)",
+      "benefit": "관악구 거주 미취업 청년에게 연 1회 응시료 실비 지원 (최대 10만)",
+      "application": "관악구청 홈페이지 온라인 신청(참여/예약->참여신청->행정접수)\n\n온라인: https://www.gwanak.go.kr/site/gwanak/ex/reservation/re00401.do?riType=A",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-관악구-출생축하용품-지원",
+    "title": "관악구 출생축하용품 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 관악구",
+    "region": "서울",
+    "amount": "출생축하용품 지원(연도별 구성품목 변경) - 2026년 축하용품: 영유아 완구 세트",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "관악구 출생축하용품 지원",
+      "복지",
+      "서울",
+      "서울특별시 관악구",
+      "모집중",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "출생축하용품",
+      "지원(연도별",
+      "구성품목",
+      "변경)"
+    ],
+    "summary": "출생축하용품 지원(연도별 구성품목 변경) - 2026년 축하용품: 영유아 완구 세트",
+    "audience": "관내 출생신고 가정에 출생축하용품 지원",
+    "benefits": [
+      "출생축하용품 지원(연도별 구성품목 변경) - 2026년 축하용품: 영유아 완구 세트"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "- 방문신청: 동 주민센터 방문신청 후 수령\n\n- 온라인신청: 정부24>행복출산(출산서비스통합처리신청)>지자체별지원(관악구 출생축하용품 지원 )>주민센터 방문 수령",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000302",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000302",
+    "contact": "서울특별시 관악구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "관내 출생신고 가정에 출생축하용품 지원",
+      "benefit": "출생축하용품 지원(연도별 구성품목 변경) - 2026년 축하용품: 영유아 완구 세트",
+      "application": "- 방문신청: 동 주민센터 방문신청 후 수령\n\n- 온라인신청: 정부24>행복출산(출산서비스통합처리신청)>지자체별지원(관악구 출생축하용품 지원 )>주민센터 방문 수령",
+      "contact": "서울특별시 관악구"
+    }
+  },
+  {
+    "slug": "gov24-서초구-가정위탁아동-양육보조금-지원",
+    "title": "서초구 가정위탁아동 양육보조금 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 서초구",
+    "region": "서울",
+    "amount": "가정위탁아동의 양육보조금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "서초구 가정위탁아동 양육보조금 지원",
+      "교육",
+      "서울",
+      "서울특별시 서초구",
+      "상시",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "가정위탁아동의",
+      "양육보조금",
+      "지원"
+    ],
+    "summary": "서초구의 가정위탁아동 양육을 돕기 위한 보조금 지원사업입니다. 신청 대상과 방문 신청 절차는 공식 안내에서 확인하세요.",
+    "audience": "서초구에서 거주중인 가정위탁아동에 양육보조금 100천원(인/월) 지원",
+    "benefits": [
+      "가정위탁아동의 양육보조금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "- 관할 동주민센터 또는 구청에서 방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000103",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/321000000103",
+    "contact": "서울특별시 서초구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "서초구에서 거주중인 가정위탁아동에 양육보조금 100천원(인/월) 지원",
+      "benefit": "가정위탁아동의 양육보조금 지원",
+      "application": "- 관할 동주민센터 또는 구청에서 방문신청",
+      "contact": "서울특별시 서초구"
+    }
+  }
+];
+
+policies.push(...gov24PromotionPoliciesBatch7);
+
 policies.push(...welfareApiPolicies);
 policies.push(...localWelfareApiPolicies);
 policies.push(...publicServiceApiPolicies);

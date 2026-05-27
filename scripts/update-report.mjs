@@ -6,7 +6,7 @@ const sourceConfigs = [
   {
     sourceName: "gov24",
     reportPath: "data/staging/automation/update-gov24-check-report.json",
-    applyDryRunCommand: (count) => `npm.cmd run promote:gov24:apply:dry-run -- --limit=${count}`,
+    applyDryRunCommand: (count) => `npm.cmd run update:apply:dry-run -- --source=gov24 --limit=${count}`,
     fetchCommand: "npm.cmd run discover:gov24 -- --pages=<page> --limit=100 --save --resume"
   },
   {
@@ -145,6 +145,8 @@ async function main() {
 
   const report = {
     runAt: new Date().toISOString(),
+    recommendationScope: "preliminary",
+    finalApplyDecisionSource: "update:apply:dry-run",
     currentPolicyCount,
     sources: sourceReports.map((source) => source.sourceName),
     missingSources,
@@ -163,6 +165,11 @@ async function main() {
     humanApprovalQueue,
     fetchRequiredSources,
     recommendedNextAction,
+    recommendationNotes: [
+      "update:report is a preliminary routing report.",
+      "Run update:apply:dry-run before any manual apply command.",
+      "Do not apply if update:apply:dry-run finalSelectedCount is 0 or finalApplyAllowed is false."
+    ],
     recommendedNextCommands
   };
 
