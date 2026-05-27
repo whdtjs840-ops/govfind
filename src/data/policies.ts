@@ -73892,6 +73892,3745 @@ const bokjiroCentralPromotionPolicies: Policy[] = [
 
 policies.push(...bokjiroCentralPromotionPolicies);
 
+const gov24PromotionPoliciesBatch6: Policy[] = [
+  {
+    "slug": "gov24-고위기-청소년-종합심리평가-지원",
+    "title": "고위기 청소년 종합심리평가 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "(재)전라남도청소년미래재단",
+    "region": "전남",
+    "amount": "자살·자해 고위험군 청소년 심리지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "고위기 청소년 종합심리평가 지원",
+      "청년",
+      "전남",
+      "(재)전라남도청소년미래재단",
+      "상시",
+      "일반",
+      "아동",
+      "청소년",
+      "전체",
+      "자살·자해",
+      "고위험군",
+      "심리지원"
+    ],
+    "summary": "자살·자해 고위험군 청소년 심리지원",
+    "audience": "위기 청소년 심리평가 및 해석(임상심리사 파견)",
+    "benefits": [
+      "자살·자해 고위험군 청소년 심리지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청||직접입력",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00093800008",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00093800008",
+    "contact": "(재)전라남도청소년미래재단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "위기 청소년 심리평가 및 해석(임상심리사 파견)",
+      "benefit": "자살·자해 고위험군 청소년 심리지원",
+      "application": "방문신청||직접입력",
+      "contact": "(재)전라남도청소년미래재단"
+    }
+  },
+  {
+    "slug": "gov24-또래상담",
+    "title": "또래상담",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "(재)전라남도청소년미래재단",
+    "region": "전남",
+    "amount": "청소년 대상으로 또래상담자 양성 및 활동 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "또래상담",
+      "청년",
+      "전남",
+      "(재)전라남도청소년미래재단",
+      "상시",
+      "부모/육아",
+      "청소년",
+      "임신·출산·육아",
+      "대상으로",
+      "또래상담자",
+      "양성",
+      "및"
+    ],
+    "summary": "청소년 대상으로 또래상담자 양성 및 활동 지원",
+    "audience": "○ 청소년 대상으로 학교폭력예방을 위한 또래상담자를 양성, 교육하여 건강한 또래문화 형성 지원\n - 또래상담지도교사 양성, 또래상담자 양성, 또래상담연합회 구축 \n - 학교 내 또래상담동아리 활동 지원",
+    "benefits": [
+      "청소년 대상으로 또래상담자 양성 및 활동 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "기타 온라인신청||방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00093800002",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00093800002",
+    "contact": "(재)전라남도청소년미래재단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 청소년 대상으로 학교폭력예방을 위한 또래상담자를 양성, 교육하여 건강한 또래문화 형성 지원\n - 또래상담지도교사 양성, 또래상담자 양성, 또래상담연합회 구축 \n - 학교 내 또래상담동아리 활동 지원",
+      "benefit": "청소년 대상으로 또래상담자 양성 및 활동 지원",
+      "application": "기타 온라인신청||방문신청",
+      "contact": "(재)전라남도청소년미래재단"
+    }
+  },
+  {
+    "slug": "gov24-중소기업-육성자금-지원",
+    "title": "중소기업 육성자금 지원",
+    "category": "소상공인",
+    "source": "정부24 공공서비스 API",
+    "agency": "재단법인전라남도중소기업일자리경제진흥원",
+    "region": "전남",
+    "amount": "중소기업의 도기금(저리융자대출) 배정 및 운전(이자지원) 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "취업·사업",
+    "targetGroup": "구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "중소기업 육성자금 지원",
+      "소상공인",
+      "전남",
+      "재단법인전라남도중소기업일자리경제진흥원",
+      "상시",
+      "구직자",
+      "전체",
+      "취업",
+      "사업",
+      "중소기업의",
+      "도기금(저리융자대출)",
+      "배정"
+    ],
+    "summary": "중소기업의 도기금(저리융자대출) 배정 및 운전(이자지원) 지원",
+    "audience": "○ 창업 및 경쟁력 강화자금(저리융자대출) : 최대 20억(시설 18억, 운전 2억)\n\n○ 벤처기업육성자금(저리융자대출) : 최대 10억(시설 8억, 운전 2억)\n\n○ 중소유통업구조개선자금(저리융자대출) : 최대 5억(시설 4억, 운전 1억)\n\n○중소기업특별경영안정자금(저리융자대출) : 최대 3억(운전)\n \n○ 경영안정자금(이자지원) : 은행자금 이용시 최대 5억 내에서 상환 조건 등에 따라 이자(1.1% ~ 2.5%) 지원",
+    "benefits": [
+      "중소기업의 도기금(저리융자대출) 배정 및 운전(이자지원) 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "기타 온라인신청||방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00093300003",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00093300003",
+    "contact": "재단법인전라남도중소기업일자리경제진흥원",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 창업 및 경쟁력 강화자금(저리융자대출) : 최대 20억(시설 18억, 운전 2억)\n\n○ 벤처기업육성자금(저리융자대출) : 최대 10억(시설 8억, 운전 2억)\n\n○ 중소유통업구조개선자금(저리융자대출) : 최대 5억(시설 4억, 운전 1억)\n\n○중소기업특별경영안정자금(저리융자대출) : 최대 3억(운전)\n \n○ 경영안정자금(이자지원) : 은행자금 이용시 최대 5억 내에서 상환 조건 등에 따라 이자(1.1% ~ 2.5%) 지원",
+      "benefit": "중소기업의 도기금(저리융자대출) 배정 및 운전(이자지원) 지원",
+      "application": "기타 온라인신청||방문신청",
+      "contact": "재단법인전라남도중소기업일자리경제진흥원"
+    }
+  },
+  {
+    "slug": "gov24-일시보호소-이용",
+    "title": "일시보호소 이용",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "(재)전라남도청소년미래재단",
+    "region": "전남",
+    "amount": "위기청소년을 보호·지원하여 가정복귀 및 시설연계하여 24시간 보호서비스",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "일시보호소 이용",
+      "청년",
+      "전남",
+      "(재)전라남도청소년미래재단",
+      "상시",
+      "일반",
+      "아동",
+      "청소년",
+      "전체",
+      "위기청소년을",
+      "보호·지원하여",
+      "가정복귀"
+    ],
+    "summary": "위기청소년을 보호·지원하여 가정복귀 및 시설연계하여 24시간 보호서비스",
+    "audience": "○ 위기청소년을 보호·지원하여 가정복귀 및 시설연계하는 24시간 보호 서비스 제공\n - 위기상황에 노출 된 위기(가능)청소년에게 잠자리제공, 식사제공, 초기상담 등을 통하여 신체적·정서적 안정 제공\n - 청소년의 가정복귀 지원, 가정복귀가 어려운 청소년에게 보호시설 연계",
+    "benefits": [
+      "위기청소년을 보호·지원하여 가정복귀 및 시설연계하여 24시간 보호서비스"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "직접입력",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00093800001",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00093800001",
+    "contact": "(재)전라남도청소년미래재단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 위기청소년을 보호·지원하여 가정복귀 및 시설연계하는 24시간 보호 서비스 제공\n - 위기상황에 노출 된 위기(가능)청소년에게 잠자리제공, 식사제공, 초기상담 등을 통하여 신체적·정서적 안정 제공\n - 청소년의 가정복귀 지원, 가정복귀가 어려운 청소년에게 보호시설 연계",
+      "benefit": "위기청소년을 보호·지원하여 가정복귀 및 시설연계하여 24시간 보호서비스",
+      "application": "직접입력",
+      "contact": "(재)전라남도청소년미래재단"
+    }
+  },
+  {
+    "slug": "gov24-청소년상담-전문교육-서비스",
+    "title": "청소년상담 전문교육 서비스",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "(재)전라남도청소년미래재단",
+    "region": "전남",
+    "amount": "청소년상담사 대상으로 교육연수 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "청소년상담 전문교육 서비스",
+      "청년",
+      "전남",
+      "(재)전라남도청소년미래재단",
+      "상시",
+      "부모/육아",
+      "청소년",
+      "임신·출산·육아",
+      "청소년상담사",
+      "대상으로",
+      "교육연수",
+      "지원"
+    ],
+    "summary": "청소년상담사 대상으로 교육연수 지원",
+    "audience": "상담자 교육연수 운영, 공개사례발표회 운영",
+    "benefits": [
+      "청소년상담사 대상으로 교육연수 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "기타 온라인신청||직접입력",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00093800005",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00093800005",
+    "contact": "(재)전라남도청소년미래재단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "상담자 교육연수 운영, 공개사례발표회 운영",
+      "benefit": "청소년상담사 대상으로 교육연수 지원",
+      "application": "기타 온라인신청||직접입력",
+      "contact": "(재)전라남도청소년미래재단"
+    }
+  },
+  {
+    "slug": "gov24-청소년동반자",
+    "title": "청소년동반자",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "(재)전라남도청소년미래재단",
+    "region": "전남",
+    "amount": "중·고위험군 청소년 대상 1:1 찾아가는 상담 서비스",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "청소년동반자",
+      "청년",
+      "전남",
+      "(재)전라남도청소년미래재단",
+      "상시",
+      "부모/육아",
+      "아동",
+      "청소년",
+      "임신·출산·육아",
+      "복지",
+      "중·고위험군",
+      "대상"
+    ],
+    "summary": "중·고위험군 청소년 대상 1:1 찾아가는 상담 서비스",
+    "audience": "○ 찾아가는 1:1 상담지원 서비스 제공\n - 「청소년복지 지원법」 제12조",
+    "benefits": [
+      "중·고위험군 청소년 대상 1:1 찾아가는 상담 서비스"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청||직접입력",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00093800006",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00093800006",
+    "contact": "(재)전라남도청소년미래재단",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 찾아가는 1:1 상담지원 서비스 제공\n - 「청소년복지 지원법」 제12조",
+      "benefit": "중·고위험군 청소년 대상 1:1 찾아가는 상담 서비스",
+      "application": "방문신청||직접입력",
+      "contact": "(재)전라남도청소년미래재단"
+    }
+  },
+  {
+    "slug": "gov24-예비-못자리-설치-지원",
+    "title": "예비 못자리 설치 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 포천시",
+    "region": "경기",
+    "amount": "수도작 재배 농업경영체에 예비못자리설치 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "예비 못자리 설치 지원",
+      "농림어업",
+      "경기",
+      "경기도 포천시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "수도작",
+      "재배",
+      "농업경영체에",
+      "예비못자리설치",
+      "지원"
+    ],
+    "summary": "경기도 포천시의 수도작 재배 농업경영체를 위한 예비 못자리 설치 지원사업입니다. 세부 지원 조건과 신청기간은 공식 공고에서 확인하세요.",
+    "audience": "○ 지원대상 : 이상기온에 의해 못자리실패농가에 대한 긴급 무상 지원\n\n○ 사업량 : 2,000장",
+    "benefits": [
+      "수도작 재배 농업경영체에 예비못자리설치 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 읍면동 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/560000000110",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/560000000110",
+    "contact": "경기도 포천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 지원대상 : 이상기온에 의해 못자리실패농가에 대한 긴급 무상 지원\n\n○ 사업량 : 2,000장",
+      "benefit": "수도작 재배 농업경영체에 예비못자리설치 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 읍면동 방문 신청",
+      "contact": "경기도 포천시"
+    }
+  },
+  {
+    "slug": "gov24-저소득층-쓰레기봉투-무상-지급",
+    "title": "저소득층 쓰레기봉투 무상 지급",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 포천시",
+    "region": "경기",
+    "amount": "저소득층에게 쓰레기 종량제봉투 무상지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "저소득층 쓰레기봉투 무상 지급",
+      "보건의료",
+      "경기",
+      "경기도 포천시",
+      "확인필요",
+      "일반",
+      "전체",
+      "복지",
+      "저소득층에게",
+      "쓰레기",
+      "종량제봉투",
+      "무상지원"
+    ],
+    "summary": "경기도 포천시에서 저소득층을 대상으로 쓰레기 종량제봉투를 무상 지원하는 사업입니다. 대상 여부와 수령 방법은 공식 안내를 기준으로 확인하세요.",
+    "audience": "○ 저소득층(수급자, 저소득 모·부자 가정)에 대한 쓰레기 종량제봉투 무상지원(1명당 매월 60L)",
+    "benefits": [
+      "저소득층에게 쓰레기 종량제봉투 무상지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 해당 읍·면·동사무소 방문 수령",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/560000000112",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/560000000112",
+    "contact": "경기도 포천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 저소득층(수급자, 저소득 모·부자 가정)에 대한 쓰레기 종량제봉투 무상지원(1명당 매월 60L)",
+      "benefit": "저소득층에게 쓰레기 종량제봉투 무상지원",
+      "application": "○ 방문 신청\n - 주민센터 : 해당 읍·면·동사무소 방문 수령",
+      "contact": "경기도 포천시"
+    }
+  },
+  {
+    "slug": "gov24-결핵환자-가족접촉자-검진비-지원",
+    "title": "결핵환자 가족접촉자 검진비 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 포천시",
+    "region": "경기",
+    "amount": "호흡기결핵 환자와 접촉한 자에게 (잠복)결핵감염 검진 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "결핵환자 가족접촉자 검진비 지원",
+      "보건의료",
+      "경기",
+      "경기도 포천시",
+      "상시",
+      "일반",
+      "전체",
+      "호흡기결핵",
+      "환자와",
+      "접촉한",
+      "자에게",
+      "(잠복)결핵감염"
+    ],
+    "summary": "호흡기결핵 환자와 접촉한 자에게 (잠복)결핵감염 검진 지원",
+    "audience": "○ 호흡기결핵 환자의 가족 등 접촉자는 '가족접촉자 검진수첩'을 제공받아 보건소 또는 의료기관(접촉자 검진 참여 의료기관)에서 전액 무료로 결핵 및 \n 잠복결핵감염 검진을 받을 수 있음 \n - 결핵 검진 : 흉부 X선 검사, 객담 검사*, 결핵균핵산증폭검사(TB PCR)* (*흉부 X선 검사 결과 유소견자 또는 유증상자로 결핵의심인 경우에 한함) \n - 잠복결핵감염 검진 : 결핵피부반응검사(Tuberculin Skin Teat, TST), 인터페론감마분비검사(Interferon-gamma Releasing Assay, IGRA)\n\n○ 가족접촉자 검진 참여 의료기관 조회: 결핵 ZERO 홈페이지 ->결핵정책->의료기관에서 검색\n ※ 단, 특진료 등 비급여 비용은 본인 부담임",
+    "benefits": [
+      "호흡기결핵 환자와 접촉한 자에게 (잠복)결핵감염 검진 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 검진대상자는 의료기관에서 무료로 진료 받고(단, 비급여 비용은 본인이 납부), 접촉자가 건강보험가입자인 경우 검진 의료기관에서 \n 국민건강보험공단(건강보험심사평가원)으로 청구, 그 외 자격자는 접촉자 주소지 보건소로 청구\n\n○ 검진 미참여 의료기관에서 검진 시 비용 청구 불가능, 참여의료기관으로 등록 전 실시한 검진비 소급하여 청구 불가능\n\n○ 보건소로 청구 시 의료기관 청구 관련 담당자는 질병보건통합관리시스템에서 청구 권한을 요청하고, 질병관리청의 승인 후 청구 가능",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/560000000122",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/560000000122",
+    "contact": "경기도 포천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 호흡기결핵 환자의 가족 등 접촉자는 '가족접촉자 검진수첩'을 제공받아 보건소 또는 의료기관(접촉자 검진 참여 의료기관)에서 전액 무료로 결핵 및 \n 잠복결핵감염 검진을 받을 수 있음 \n - 결핵 검진 : 흉부 X선 검사, 객담 검사*, 결핵균핵산증폭검사(TB PCR)* (*흉부 X선 검사 결과 유소견자 또는 유증상자로 결핵의심인 경우에 한함) \n - 잠복결핵감염 검진 : 결핵피부반응검사(Tuberculin Skin Teat, TST), 인터페론감마분비검사(Interferon-gamma Releasing Assay, IGRA)\n\n○ 가족접촉자 검진 참여 의료기관 조회: 결핵 ZERO 홈페이지 ->결핵정책->의료기관에서 검색\n ※ 단, 특진료 등 비급여 비용은 본인 부담임",
+      "benefit": "호흡기결핵 환자와 접촉한 자에게 (잠복)결핵감염 검진 지원",
+      "application": "○ 검진대상자는 의료기관에서 무료로 진료 받고(단, 비급여 비용은 본인이 납부), 접촉자가 건강보험가입자인 경우 검진 의료기관에서 \n 국민건강보험공단(건강보험심사평가원)으로 청구, 그 외 자격자는 접촉자 주소지 보건소로 청구\n\n○ 검진 미참여 의료기관에서 검진 시 비용 청구 불가능, 참여의료기관으로 등록 전 실시한 검진비 소급하여 청구 불가능\n\n○ 보건소로 청구 시 의료기관 청구 관련 담당자는 질병보건통합관리시스템에서 청구 권한을 요청하고, 질병관리청의 승인 후 청구 가능",
+      "contact": "경기도 포천시"
+    }
+  },
+  {
+    "slug": "gov24-입원명령-대상-환자지원",
+    "title": "입원명령 대상 환자지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 포천시",
+    "region": "경기",
+    "amount": "입원명령 결핵환자 입원비, 환자부담약제비, 간병비, 부양가족 생활보호비를 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "입원명령 대상 환자지원",
+      "청년",
+      "경기",
+      "경기도 포천시",
+      "상시",
+      "어르신",
+      "장애인",
+      "청소년",
+      "복지",
+      "입원명령",
+      "결핵환자",
+      "입원비,"
+    ],
+    "summary": "입원명령 결핵환자 입원비, 환자부담약제비, 간병비, 부양가족 생활보호비를 지원",
+    "audience": "○ 입원비 지원 :입원, 격리 치료명령 대상자\n - 식대, 검사 등의 요양(선별)급여 일부본인부담금\n - 비급여 및 요양급여의 전액본인부담금(지원상한액 이내) \n \n○ 환자 본인 부담 약제비 지원 : 본인부담 약제비 지원 대상자\n - 입원명령 기간 중 발생한 비급여 약제비\n - 입원명령해제 이후 나머지 지원기간 동안 발생한 비급여 약제비\n\n ○ 간병비: 지원기준에 부합하는 환자- 치매, 장애인(지체장애 또는 뇌병변장애 등), 폐절제등으로 인한 호흡곤란, 뇌졸중, 고령 등 거동불편자 및 그 외 환자(정신질환 등)\n - 간병비 실비를 예산범위 내에서 지원(1일 최대 15만원 이내)\n (간병지원 단체를 통해 간병비용 내역 확인서 등 증빙 철저) \n\n○ 결핵환자 및 부양가족생활보호비 \n - 2025년 가구별 생계급여 최저보장 수준으로 지원 \n - 지원대상자가 가구 내 주소득자인지 여부를 확인 \n ㆍ가구 내 주소득자인 경우 : 환자가구원 수 기준으로 지원 \n ㆍ가구 내 주소득자가 아닌 경우 : 환자 1인 가구 기준으로 지원",
+    "benefits": [
+      "입원명령 결핵환자 입원비, 환자부담약제비, 간병비, 부양가족 생활보호비를 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 보건소 : 관할 보건소 방문 \n\n○ 입원비\n - 입원비 지원 신청서 1부\n - 입원비 영수증(원본) 1부\n - 진료비 상세 내역서(원본) 1부\n - 입금통장사본 1부/ 보호자 신청시 가족관계증명서 1부\n\n○ 약제비\n - 의사소견서 1부\n - 약제비 지원 신청서(환자용) 1부\n - 약제비 영수증(원본) 1부\n - 환자본인부담금 항결핵제 처방전 1부\n - 입금통장사본 1부/ 보호자 신청시 가족관계증명서 1부\n\n○ 부양가족생활보호비\n - 부양가족생활보호비 지원 신청서 1부\n - 입금통장사본 1부\n - 소득 조사 관련 서류(필요 경우, 보건소에서 제출 요구)\n - 가족관계증명서(보호자 신청시), 주민등록등(초)본 1부",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/560000000124",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/560000000124",
+    "contact": "경기도 포천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 입원비 지원 :입원, 격리 치료명령 대상자\n - 식대, 검사 등의 요양(선별)급여 일부본인부담금\n - 비급여 및 요양급여의 전액본인부담금(지원상한액 이내) \n \n○ 환자 본인 부담 약제비 지원 : 본인부담 약제비 지원 대상자\n - 입원명령 기간 중 발생한 비급여 약제비\n - 입원명령해제 이후 나머지 지원기간 동안 발생한 비급여 약제비\n\n ○ 간병비: 지원기준에 부합하는 환자- 치매, 장애인(지체장애 또는 뇌병변장애 등), 폐절제등으로 인한 호흡곤란, 뇌졸중, 고령 등 거동불편자 및 그 외 환자(정신질환 등)\n - 간병비 실비를 예산범위 내에서 지원(1일 최대 15만원 이내)\n (간병지원 단체를 통해 간병비용 내역 확인서 등 증빙 철저) \n\n○ 결핵환자 및 부양가족생활보호비 \n - 2025년 가구별 생계급여 최저보장 수준으로 지원 \n - 지원대상자가 가구 내 주소득자인지 여부를 확인 \n ㆍ가구 내 주소득자인 경우 : 환자가구원 수 기준으로 지원 \n ㆍ가구 내 주소득자가 아닌 경우 : 환자 1인 가구 기준으로 지원",
+      "benefit": "입원명령 결핵환자 입원비, 환자부담약제비, 간병비, 부양가족 생활보호비를 지원",
+      "application": "○ 방문 신청 \n - 보건소 : 관할 보건소 방문 \n\n○ 입원비\n - 입원비 지원 신청서 1부\n - 입원비 영수증(원본) 1부\n - 진료비 상세 내역서(원본) 1부\n - 입금통장사본 1부/ 보호자 신청시 가족관계증명서 1부\n\n○ 약제비\n - 의사소견서 1부\n - 약제비 지원 신청서(환자용) 1부\n - 약제비 영수증(원본) 1부\n - 환자본인부담금 항결핵제 처방전 1부\n - 입금통장사본 1부/ 보호자 신청시 가족관계증명서 1부\n\n○ 부양가족생활보호비\n - 부양가족생활보호비 지원 신청서 1부\n - 입금통장사본 1부\n - 소득 조사 관련 서류(필요 경우, 보건소에서 제출 요구)\n - 가족관계증명서(보호자 신청시), 주민등록등(초)본 1부",
+      "contact": "경기도 포천시"
+    }
+  },
+  {
+    "slug": "gov24-hivaids-감염인-진료비-지원",
+    "title": "HIVㆍAIDS 감염인 진료비 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 포천시",
+    "region": "경기",
+    "amount": "HIV/AIDS 감염자에게 진료비 중 본인부담금 및 전액본인부담금을 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "HIVㆍAIDS 감염인 진료비 지원",
+      "보건의료",
+      "경기",
+      "경기도 포천시",
+      "상시",
+      "일반",
+      "전체",
+      "HIV/AIDS",
+      "감염자에게",
+      "진료비",
+      "중",
+      "본인부담금"
+    ],
+    "summary": "HIV/AIDS 감염자에게 진료비 중 본인부담금 및 전액본인부담금을 지원",
+    "audience": "○ HIV/AIDS 감염확진을 받고 실명으로 등록된 내·외국인이 진료기관에서 치료제 투약에 따른 진료와 검사를 실시 또는 관련질환으로 진료를 받을 경우, 총 진료비 중 보험급여분의 본인부담금(본인일부부담금, 전액본인부담금)을 지원",
+    "benefits": [
+      "HIV/AIDS 감염자에게 진료비 중 본인부담금 및 전액본인부담금을 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 관할 보건소 방문\n - 구비서류 : \n -- HIV/AIDS 진료비 지원 신청서(최초 1회) \n - 진료비 영수증 원본\n - 의사 소견서(타과 진료시)\n - 본인명의 통장사본(타인 지급시 가족관계증명서 제출) \n - HIV/AIDS 진료비 대리 청구서(의료기관에서 후불청구시, 청구시 마다 제출) \n (감염인이 선결제가 곤란한 경우, 의료기관에 후불 협조 요청 후 의료기관에 직접 지급) \n \n\n○ 기타\n - 우편으로 구비서류 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/560000000127",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/560000000127",
+    "contact": "경기도 포천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ HIV/AIDS 감염확진을 받고 실명으로 등록된 내·외국인이 진료기관에서 치료제 투약에 따른 진료와 검사를 실시 또는 관련질환으로 진료를 받을 경우, 총 진료비 중 보험급여분의 본인부담금(본인일부부담금, 전액본인부담금)을 지원",
+      "benefit": "HIV/AIDS 감염자에게 진료비 중 본인부담금 및 전액본인부담금을 지원",
+      "application": "○ 방문 신청\n - 보건소 : 관할 보건소 방문\n - 구비서류 : \n -- HIV/AIDS 진료비 지원 신청서(최초 1회) \n - 진료비 영수증 원본\n - 의사 소견서(타과 진료시)\n - 본인명의 통장사본(타인 지급시 가족관계증명서 제출) \n - HIV/AIDS 진료비 대리 청구서(의료기관에서 후불청구시, 청구시 마다 제출) \n (감염인이 선결제가 곤란한 경우, 의료기관에 후불 협조 요청 후 의료기관에 직접 지급) \n \n\n○ 기타\n - 우편으로 구비서류 제출",
+      "contact": "경기도 포천시"
+    }
+  },
+  {
+    "slug": "gov24-과수계약재배-활성화-지원",
+    "title": "과수계약재배 활성화 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 포천시",
+    "region": "경기",
+    "amount": "과수생산 농업인에게 출하비용 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "과수계약재배 활성화 지원",
+      "농림어업",
+      "경기",
+      "경기도 포천시",
+      "상시",
+      "농어업인",
+      "전체",
+      "과수생산",
+      "농업인에게",
+      "출하비용",
+      "지원"
+    ],
+    "summary": "과수생산 농업인에게 출하비용 지원",
+    "audience": "○ 공동으로 선별⸱포장⸱저온저장⸱규격출하⸱마케팅⸱판매 등에 소요되는 출하비용(과수농가 지급비용) 지원 \n - 지원품목 : 배⸱사과⸱포도⸱복숭아",
+    "benefits": [
+      "과수생산 농업인에게 출하비용 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 시군구 : 관할 시청 방문\n - 과수 계약재배 출하비를 지원받고자 하는 농업인은 관할 소재지 시장⸱군수에게 증빙서류*를 첨부하여 과수 계약재배 출하비 지원신청서(별지 제1호 서식) 제출\n * 증빙서류 : 인증서, 계약서 등 시장⸱군수 요구서류\n - 생산자단체에서 위임을 받아 일괄 신청하는 경우는 생산자단체가 과수 계약재배 출하비 지원신청서*(별지 제1호 서식)와 첨부서류를 제출 받아 관할 소재지 시장⸱군수에게 제출\n * 지원신청서 : “위임체크” 여부를 반드시 확인",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/560000000128",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/560000000128",
+    "contact": "경기도 포천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 공동으로 선별⸱포장⸱저온저장⸱규격출하⸱마케팅⸱판매 등에 소요되는 출하비용(과수농가 지급비용) 지원 \n - 지원품목 : 배⸱사과⸱포도⸱복숭아",
+      "benefit": "과수생산 농업인에게 출하비용 지원",
+      "application": "○ 방문 신청\n - 시군구 : 관할 시청 방문\n - 과수 계약재배 출하비를 지원받고자 하는 농업인은 관할 소재지 시장⸱군수에게 증빙서류*를 첨부하여 과수 계약재배 출하비 지원신청서(별지 제1호 서식) 제출\n * 증빙서류 : 인증서, 계약서 등 시장⸱군수 요구서류\n - 생산자단체에서 위임을 받아 일괄 신청하는 경우는 생산자단체가 과수 계약재배 출하비 지원신청서*(별지 제1호 서식)와 첨부서류를 제출 받아 관할 소재지 시장⸱군수에게 제출\n * 지원신청서 : “위임체크” 여부를 반드시 확인",
+      "contact": "경기도 포천시"
+    }
+  },
+  {
+    "slug": "gov24-축산농가-유효-미생물제-지원",
+    "title": "축산농가 유효 미생물제 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "축산농가에 생균제 구입비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "축산농가 유효 미생물제 지원",
+      "농림어업",
+      "전남",
+      "전라남도 순천시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "축산농가에",
+      "생균제",
+      "구입비",
+      "지원"
+    ],
+    "summary": "전라남도 순천시 축산농가의 생균제 등 유효 미생물제 구입을 돕는 지원사업입니다. 예산과 신청기간은 공식 공고에서 확인하세요.",
+    "audience": "○ 순천시 내 축산업 허가를 득하고 가축을 사육중인 농가에 생균제 구입비 지원(예산 소진시 종료)\n\n○ 순천시 미생물센터 생산 생균제 등 미생물 구입시 50% 지원",
+    "benefits": [
+      "축산농가에 생균제 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 연초 대상자 모집 시 지원기한에 맞춰 신청서를 작성하여 해당 읍면동에 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000101",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000101",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 순천시 내 축산업 허가를 득하고 가축을 사육중인 농가에 생균제 구입비 지원(예산 소진시 종료)\n\n○ 순천시 미생물센터 생산 생균제 등 미생물 구입시 50% 지원",
+      "benefit": "축산농가에 생균제 구입비 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 연초 대상자 모집 시 지원기한에 맞춰 신청서를 작성하여 해당 읍면동에 제출",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-가축분뇨-환경개선-지원",
+    "title": "가축분뇨 환경개선 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "축산업 등록농가에 가축분뇨처리장비 등 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "가축분뇨 환경개선 지원",
+      "농림어업",
+      "전남",
+      "전라남도 순천시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "축산업",
+      "등록농가에",
+      "가축분뇨처리장비",
+      "등",
+      "지원"
+    ],
+    "summary": "전라남도 순천시 축산업 등록농가의 가축분뇨 처리장비 등 환경개선 비용을 지원하는 사업입니다. 세부 조건은 공식 공고에서 확인하세요.",
+    "audience": "○ 가축분뇨처리장비 등 지원으로 양축농가의 노동력 절감 및 경영안정",
+    "benefits": [
+      "축산업 등록농가에 가축분뇨처리장비 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 행정복지센터 : 해당 읍면동 방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000102",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000102",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 가축분뇨처리장비 등 지원으로 양축농가의 노동력 절감 및 경영안정",
+      "benefit": "축산업 등록농가에 가축분뇨처리장비 등 지원",
+      "application": "○ 방문 신청\n - 행정복지센터 : 해당 읍면동 방문신청",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-시민안전보험-지원",
+    "title": "시민안전보험 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "순천시에 주민등록을 두고 있는 내외국인 중 재난사고로 피해를 입은 시민에 대해 보험금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "시민안전보험 지원",
+      "보건의료",
+      "전남",
+      "전라남도 순천시",
+      "상시",
+      "일반",
+      "전체",
+      "순천시에",
+      "주민등록을",
+      "두고",
+      "있는",
+      "내외국인"
+    ],
+    "summary": "순천시에 주민등록을 두고 있는 내외국인 중 재난사고로 피해를 입은 시민에 대해 보험금 지원",
+    "audience": "○ 보장대상 : 순천시에 주민등록을 두고 있는 모든 시민(등록외국인 포함)\n ※ 별도의 가입절차 없음 (순천시 시민 전체 자동가입)\n○ 보험료 : 순천시 일괄 납부(시민은 전액 무료)\n○ 보장금액 : 보장 항목에 따라 최고 2,000만 원\n○ 청구방법 : 청구서 등 필요서류 첨부하여 보험사로 청구\n○ 보장항목 : 자연재해 사망 등 21개 항목(2022년, 2023년 상해의료비 지원 항목은 예산조기소진으로 현재 청구 불가, 2024. 8. 1. 기준)\n ※ 개별 타 보험과 상관없이 중복보장 가능\n○ 문의처 : 콜센터 1522-3556 / 안전총괄과 061-749-5664",
+    "benefits": [
+      "순천시에 주민등록을 두고 있는 내외국인 중 재난사고로 피해를 입은 시민에 대해 보험금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 팩스 또는 이메일로 청구서 등 필요서류 접수\n- 팩스번호 : 0507-774-0662\n- 이메일 : 콜센터 문의(1522-3556)\n\n ※ 2024. 5. 13. 기준, 2022년, 2023년 상해의료비 지원 항목(추락, 낙상사고 등)은 예산조기소진으로 청구가 불가합니다.",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000103",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000103",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 보장대상 : 순천시에 주민등록을 두고 있는 모든 시민(등록외국인 포함)\n ※ 별도의 가입절차 없음 (순천시 시민 전체 자동가입)\n○ 보험료 : 순천시 일괄 납부(시민은 전액 무료)\n○ 보장금액 : 보장 항목에 따라 최고 2,000만 원\n○ 청구방법 : 청구서 등 필요서류 첨부하여 보험사로 청구\n○ 보장항목 : 자연재해 사망 등 21개 항목(2022년, 2023년 상해의료비 지원 항목은 예산조기소진으로 현재 청구 불가, 2024. 8. 1. 기준)\n ※ 개별 타 보험과 상관없이 중복보장 가능\n○ 문의처 : 콜센터 1522-3556 / 안전총괄과 061-749-5664",
+      "benefit": "순천시에 주민등록을 두고 있는 내외국인 중 재난사고로 피해를 입은 시민에 대해 보험금 지원",
+      "application": "○ 팩스 또는 이메일로 청구서 등 필요서류 접수\n- 팩스번호 : 0507-774-0662\n- 이메일 : 콜센터 문의(1522-3556)\n\n ※ 2024. 5. 13. 기준, 2022년, 2023년 상해의료비 지원 항목(추락, 낙상사고 등)은 예산조기소진으로 청구가 불가합니다.",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-한센양로자-의료비-지원",
+    "title": "한센양로자 의료비 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "등록재가한센인에게 예방 및 치료, 외래진료, 보장구 등 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "사업·복지",
+    "targetGroup": "소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "한센양로자 의료비 지원",
+      "보건의료",
+      "전남",
+      "전라남도 순천시",
+      "모집중",
+      "소상공인",
+      "전체",
+      "사업",
+      "복지",
+      "등록재가한센인에게",
+      "예방",
+      "및"
+    ],
+    "summary": "등록재가한센인에게 예방 및 치료, 외래진료, 보장구 등 지원",
+    "audience": "○ 사업종류 : 민간경상사업보조\n\n○ 보조사업자 : 한국한센복지협회 광주전남지부\n\n○ 사업기간 : 매년\n\n○ 지원대상 : 순천시에 등록된 재가한센인\n\n○ 지원내용 \n - 한센병의 예방 및 치료사업 \n - 이동진료 및 신환자발견을 위한 피부질환 외래진료\n - 생필품, 재활 보장구지원 등",
+    "benefits": [
+      "등록재가한센인에게 예방 및 치료, 외래진료, 보장구 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "지원대상은 순천시에 등록된 재가한센인(6명)으로 신청 별도로 필요없음.",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000104",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000104",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 사업종류 : 민간경상사업보조\n\n○ 보조사업자 : 한국한센복지협회 광주전남지부\n\n○ 사업기간 : 매년\n\n○ 지원대상 : 순천시에 등록된 재가한센인\n\n○ 지원내용 \n - 한센병의 예방 및 치료사업 \n - 이동진료 및 신환자발견을 위한 피부질환 외래진료\n - 생필품, 재활 보장구지원 등",
+      "benefit": "등록재가한센인에게 예방 및 치료, 외래진료, 보장구 등 지원",
+      "application": "지원대상은 순천시에 등록된 재가한센인(6명)으로 신청 별도로 필요없음.",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-축산농가-헬퍼-도우미-지원",
+    "title": "축산농가 헬퍼(도우미) 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "한우 및 젖소사육농가에 축산도우미(헬퍼) 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "축산농가 헬퍼(도우미) 지원",
+      "농림어업",
+      "전남",
+      "전라남도 순천시",
+      "상시",
+      "농어업인",
+      "전체",
+      "한우",
+      "및",
+      "젖소사육농가에",
+      "축산도우미(헬퍼)",
+      "지원"
+    ],
+    "summary": "한우 및 젖소사육농가에 축산도우미(헬퍼) 지원",
+    "audience": "○ 한우 및 젖소사육농가의 사양관리 및 분뇨처리를 대행하는 축산도우미 지원",
+    "benefits": [
+      "한우 및 젖소사육농가에 축산도우미(헬퍼) 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 지역축협 및 지역 낙우회",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000105",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000105",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 한우 및 젖소사육농가의 사양관리 및 분뇨처리를 대행하는 축산도우미 지원",
+      "benefit": "한우 및 젖소사육농가에 축산도우미(헬퍼) 지원",
+      "application": "○ 방문 신청\n - 기타 : 지역축협 및 지역 낙우회",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-영구임대주택-공동전기요금-지원",
+    "title": "영구임대주택 공동전기요금 지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "수급자, 유공자 등에게 영구임대아파트단지 내 공동전기요금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "영구임대주택 공동전기요금 지원",
+      "주거",
+      "전남",
+      "전라남도 순천시",
+      "상시",
+      "일반",
+      "전체",
+      "수급자,",
+      "유공자",
+      "등에게",
+      "영구임대아파트단지",
+      "내"
+    ],
+    "summary": "수급자, 유공자 등에게 영구임대아파트단지 내 공동전기요금 지원",
+    "audience": "○ 생계의료수급자, 국가유공자, 5.18민주유공자, 한부모가족, 북한이탈주민에게 영구임대아파트단지내 공동전기요금 지원",
+    "benefits": [
+      "수급자, 유공자 등에게 영구임대아파트단지 내 공동전기요금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 개인 신청절차 없음 \n - 지자체에서 대상가구 선정",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000106",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000106",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 생계의료수급자, 국가유공자, 5.18민주유공자, 한부모가족, 북한이탈주민에게 영구임대아파트단지내 공동전기요금 지원",
+      "benefit": "수급자, 유공자 등에게 영구임대아파트단지 내 공동전기요금 지원",
+      "application": "○ 개인 신청절차 없음 \n - 지자체에서 대상가구 선정",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-임산부-영유아-영양제-지원",
+    "title": "임산부 영유아 영양제 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "임산부 및 영유아에게 철분제, 엽산제, 정장제 등 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "임산부 영유아 영양제 지원",
+      "복지",
+      "전남",
+      "전라남도 순천시",
+      "상시",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "임산부",
+      "및",
+      "영유아에게",
+      "철분제,"
+    ],
+    "summary": "임산부 및 영유아에게 철분제, 엽산제, 정장제 등 지원",
+    "audience": "○ 임신부 : 엽산제(임신12주 내, 총3갑), 철분제(임신16주~분만 전, 총5갑)\n\n○ 출산모 : 비타민D(출산 후 1년 이내, 1갑 1회)\n\n○ 영유아 : 정장제(6~8개월, 12~15개월에 각 1회 지원)",
+    "benefits": [
+      "임산부 및 영유아에게 철분제, 엽산제, 정장제 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청 \n - 보육아동과 : 보건소 1층 모자보건실 방문신청\n\n○ 온라인 신청\n - 정부24시 : http://www.gov.kr (엽산제·철분제만 맘편한 임신 온라인 신청 가능)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000109",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000109",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 임신부 : 엽산제(임신12주 내, 총3갑), 철분제(임신16주~분만 전, 총5갑)\n\n○ 출산모 : 비타민D(출산 후 1년 이내, 1갑 1회)\n\n○ 영유아 : 정장제(6~8개월, 12~15개월에 각 1회 지원)",
+      "benefit": "임산부 및 영유아에게 철분제, 엽산제, 정장제 등 지원",
+      "application": "○ 방문 신청 \n - 보육아동과 : 보건소 1층 모자보건실 방문신청\n\n○ 온라인 신청\n - 정부24시 : http://www.gov.kr (엽산제·철분제만 맘편한 임신 온라인 신청 가능)",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-친환경-인증-농가-인센티브-지원",
+    "title": "친환경 인증 농가 인센티브 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "친환경농산물 재배농가 등에 장려금 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "친환경 인증 농가 인센티브 지원",
+      "농림어업",
+      "전남",
+      "전라남도 순천시",
+      "상시",
+      "농어업인",
+      "전체",
+      "친환경농산물",
+      "재배농가",
+      "등에",
+      "장려금",
+      "지급"
+    ],
+    "summary": "친환경농산물 재배농가 등에 장려금 지급",
+    "audience": "○ 친환경농산물 재배(벼, 채소, 과수) 및 신규인증·인증상향 농가에게 인센티브(장려금) 지급",
+    "benefits": [
+      "친환경농산물 재배농가 등에 장려금 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 개인 신청절차 없음 \n - 친환경인증기관에 인증신청 후 인증완료되면 별도의 신청절차 없이 신청완료",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000110",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000110",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 친환경농산물 재배(벼, 채소, 과수) 및 신규인증·인증상향 농가에게 인센티브(장려금) 지급",
+      "benefit": "친환경농산물 재배농가 등에 장려금 지급",
+      "application": "○ 개인 신청절차 없음 \n - 친환경인증기관에 인증신청 후 인증완료되면 별도의 신청절차 없이 신청완료",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-가정위탁세대-어린이날-위문-격려금-지급",
+    "title": "가정위탁세대 어린이날 위문 격려금 지급",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "가정위탁세대에게 어린이날 맞이 위문 격려금 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "가정위탁세대 어린이날 위문 격려금 지급",
+      "교육",
+      "전남",
+      "전라남도 순천시",
+      "모집중",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "가정위탁세대에게",
+      "어린이날",
+      "맞이",
+      "위문"
+    ],
+    "summary": "가정위탁세대에게 어린이날 맞이 위문 격려금 지급",
+    "audience": "○ 대상 : 가정위탁 세대\n\n○ 서비스내용 : 어린이날 맞이 위문 격려금 지급\n\n○ 금액 : 세대당 10만원",
+    "benefits": [
+      "가정위탁세대에게 어린이날 맞이 위문 격려금 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 4월중 가정위탁세대 현황 조사진행",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000114",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000114",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 대상 : 가정위탁 세대\n\n○ 서비스내용 : 어린이날 맞이 위문 격려금 지급\n\n○ 금액 : 세대당 10만원",
+      "benefit": "가정위탁세대에게 어린이날 맞이 위문 격려금 지급",
+      "application": "○ 4월중 가정위탁세대 현황 조사진행",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-순천시-신혼부부-주택전세자금-대출이자-지원",
+    "title": "순천시 신혼부부 주택전세자금 대출이자 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "신혼부부에게 주택전세자금 대출이자 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년·주거",
+    "targetGroup": "청년, 신혼부부",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "순천시 신혼부부 주택전세자금 대출이자 지원",
+      "청년",
+      "전남",
+      "전라남도 순천시",
+      "상시",
+      "신혼부부",
+      "아동",
+      "주거",
+      "신혼부부에게",
+      "주택전세자금",
+      "대출이자",
+      "지원"
+    ],
+    "summary": "신혼부부에게 주택전세자금 대출이자 지원",
+    "audience": "신혼부부 청년들의 주거비 부담을 완화하기 위하여 주택전세자금 대출이자에 대하여 월 최대 10만원을 최대 4년간 지원",
+    "benefits": [
+      "신혼부부에게 주택전세자금 대출이자 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 순천시 청년정책과 청년지원팀 방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000115",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000115",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "신혼부부 청년들의 주거비 부담을 완화하기 위하여 주택전세자금 대출이자에 대하여 월 최대 10만원을 최대 4년간 지원",
+      "benefit": "신혼부부에게 주택전세자금 대출이자 지원",
+      "application": "○ 순천시 청년정책과 청년지원팀 방문신청",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-사회복지시설-생계급여-지급",
+    "title": "사회복지시설 생계급여 지급",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "시설수급자를 대상으로 생계급여 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "사회복지시설 생계급여 지급",
+      "복지",
+      "전남",
+      "전라남도 순천시",
+      "상시",
+      "일반",
+      "전체",
+      "시설수급자를",
+      "대상으로",
+      "생계급여",
+      "지급"
+    ],
+    "summary": "시설수급자를 대상으로 생계급여 지급",
+    "audience": "○ 사회복지시설 생계급여 지급",
+    "benefits": [
+      "시설수급자를 대상으로 생계급여 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 읍면동 : 읍면동 행정복지센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000117",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000117",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 사회복지시설 생계급여 지급",
+      "benefit": "시설수급자를 대상으로 생계급여 지급",
+      "application": "○ 방문 신청\n - 읍면동 : 읍면동 행정복지센터 방문",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-장애인-보장구-수리-및-대여사업",
+    "title": "장애인 보장구 수리 및 대여사업",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "저소득 장애인 보장구 수리비 지원 및 일반시민 보장구 대여",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인 보장구 수리 및 대여사업",
+      "보건의료",
+      "전남",
+      "전라남도 순천시",
+      "상시",
+      "장애인",
+      "전체",
+      "복지",
+      "저소득",
+      "보장구",
+      "수리비",
+      "지원"
+    ],
+    "summary": "저소득 장애인 보장구 수리비 지원 및 일반시민 보장구 대여",
+    "audience": "○ 등록 장애인 보장구 수리비 지원\n ┏ 기초수급자 및 차상위 계층 : 수리비용 전액 지원 / 연간 30만원 이내\n ┗ 그 외 대상 : 수리비용 50% 지원 / 연간 15만원 이내\n\n○ 등록 장애인 보장구 소모품 교체비 지원\n ┏ 차상위 계층 이하 : 실구입가 85% 지원 / 연간 13.6만원 이내\n ┗ 전국가구 월평균소득 130% 이하 : 실구입가 50% 지원 / 연간 8만원 이내 \n ※ 전동기기(전동휠체어, 전동스쿠터) : 전지 내구연한(1년 6개월) 경과 후 교체비 지원(수급자 제외)\n\n○ 보장구 무료대여 : 일시적으로 장애인 이동기기 필요 시 대여(1개월)\n ※ 대기자 없을 시 1개월 연장 가능",
+    "benefits": [
+      "저소득 장애인 보장구 수리비 지원 및 일반시민 보장구 대여"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n- 장애인의 주민등록상 주소지 행정복지센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000119",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000119",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 등록 장애인 보장구 수리비 지원\n ┏ 기초수급자 및 차상위 계층 : 수리비용 전액 지원 / 연간 30만원 이내\n ┗ 그 외 대상 : 수리비용 50% 지원 / 연간 15만원 이내\n\n○ 등록 장애인 보장구 소모품 교체비 지원\n ┏ 차상위 계층 이하 : 실구입가 85% 지원 / 연간 13.6만원 이내\n ┗ 전국가구 월평균소득 130% 이하 : 실구입가 50% 지원 / 연간 8만원 이내 \n ※ 전동기기(전동휠체어, 전동스쿠터) : 전지 내구연한(1년 6개월) 경과 후 교체비 지원(수급자 제외)\n\n○ 보장구 무료대여 : 일시적으로 장애인 이동기기 필요 시 대여(1개월)\n ※ 대기자 없을 시 1개월 연장 가능",
+      "benefit": "저소득 장애인 보장구 수리비 지원 및 일반시민 보장구 대여",
+      "application": "○ 방문 신청\n- 장애인의 주민등록상 주소지 행정복지센터 방문",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-순천형-생활안정비-지원",
+    "title": "순천형 생활안정비 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "기초수급 부적합(중지)자에게 생활안정비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "순천형 생활안정비 지원",
+      "보건의료",
+      "전남",
+      "전라남도 순천시",
+      "상시",
+      "일반",
+      "전체",
+      "기초수급",
+      "부적합(중지)자에게",
+      "생활안정비",
+      "지원"
+    ],
+    "summary": "기초수급 부적합(중지)자에게 생활안정비 지원",
+    "audience": "○ 기초수급 중지(제외)자 중 기준중위소득 50% 이하(생계·의료급여를 받지 아니한 가구)에 생활안정비 지원\n - 가구원수별 생계급여액의 50% (최대 6개월)",
+    "benefits": [
+      "기초수급 부적합(중지)자에게 생활안정비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 개인 신청절차 없음\n - 읍면동장 추천",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000120",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000120",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 기초수급 중지(제외)자 중 기준중위소득 50% 이하(생계·의료급여를 받지 아니한 가구)에 생활안정비 지원\n - 가구원수별 생계급여액의 50% (최대 6개월)",
+      "benefit": "기초수급 부적합(중지)자에게 생활안정비 지원",
+      "application": "○ 개인 신청절차 없음\n - 읍면동장 추천",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-석면피해-구제급여-지급",
+    "title": "석면피해 구제급여 지급",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "석면 피해자 및 유족에게 구제급여 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "석면피해 구제급여 지급",
+      "보건의료",
+      "전남",
+      "전라남도 순천시",
+      "상시",
+      "일반",
+      "전체",
+      "석면",
+      "피해자",
+      "및",
+      "유족에게",
+      "구제급여"
+    ],
+    "summary": "석면 피해자 및 유족에게 구제급여 지급",
+    "audience": "○ 석면으로 건강피해를 입은 피해자(유족)에게 구제급여 지급",
+    "benefits": [
+      "석면 피해자 및 유족에게 구제급여 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n\n1. 지자체 방문접수\n - 신청서 작성 및 구비서류 첨부\n↓\n2. 한국환경산업기술원 인정신청서 접수\n - 청구서류 검토\n - 석면피해판정위원회 심의\n - 석면피해인정여부 및 피해등급 결정\n↓ \n3. 지자체 및 신청인 인정여부 통지",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000122",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000122",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 석면으로 건강피해를 입은 피해자(유족)에게 구제급여 지급",
+      "benefit": "석면 피해자 및 유족에게 구제급여 지급",
+      "application": "○ 방문 신청\n\n1. 지자체 방문접수\n - 신청서 작성 및 구비서류 첨부\n↓\n2. 한국환경산업기술원 인정신청서 접수\n - 청구서류 검토\n - 석면피해판정위원회 심의\n - 석면피해인정여부 및 피해등급 결정\n↓ \n3. 지자체 및 신청인 인정여부 통지",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-농업인-가공품-생산-지원",
+    "title": "농업인 가공품 생산 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "농업인에게 가공센터 장비사용 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "농업인 가공품 생산 지원",
+      "농림어업",
+      "전남",
+      "전라남도 순천시",
+      "상시",
+      "농어업인",
+      "전체",
+      "농업인에게",
+      "가공센터",
+      "장비사용",
+      "지원"
+    ],
+    "summary": "농업인에게 가공센터 장비사용 지원",
+    "audience": "○ 농업인 가공센터 장비사용 지원으로 농가의 식품제조 행정절차 간소화 및 소득증대 지원",
+    "benefits": [
+      "농업인에게 가공센터 장비사용 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청: 순천시농산물가공센터(전남 순천시 둔대수계길 28)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000124",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000124",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 농업인 가공센터 장비사용 지원으로 농가의 식품제조 행정절차 간소화 및 소득증대 지원",
+      "benefit": "농업인에게 가공센터 장비사용 지원",
+      "application": "방문신청: 순천시농산물가공센터(전남 순천시 둔대수계길 28)",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-과수-생력화-장비-지원",
+    "title": "과수 생력화 장비 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "과수재배 농가에 동력운반차 및 농업용 굴삭기 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "과수 생력화 장비 지원",
+      "농림어업",
+      "전남",
+      "전라남도 순천시",
+      "상시",
+      "농어업인",
+      "전체",
+      "과수재배",
+      "농가에",
+      "동력운반차",
+      "및",
+      "농업용"
+    ],
+    "summary": "과수재배 농가에 동력운반차 및 농업용 굴삭기 지원",
+    "audience": "① 사업내용 : 과수농가에 장비 지원\n② 지원품목 : 동력운반차, 농업용 굴삭기\n③ 지원대상 : 과수를 0.6ha 이상 재배하는 농가\n④ 보조액\n - 동력운반차 : 2,500천원/대\n - 농업용 굴삭기 : 10,000천원/대",
+    "benefits": [
+      "과수재배 농가에 동력운반차 및 농업용 굴삭기 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "농지소재지 관할 읍·면사무소에 신청서 및 구비서류 제출",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000131",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000131",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "① 사업내용 : 과수농가에 장비 지원\n② 지원품목 : 동력운반차, 농업용 굴삭기\n③ 지원대상 : 과수를 0.6ha 이상 재배하는 농가\n④ 보조액\n - 동력운반차 : 2,500천원/대\n - 농업용 굴삭기 : 10,000천원/대",
+      "benefit": "과수재배 농가에 동력운반차 및 농업용 굴삭기 지원",
+      "application": "농지소재지 관할 읍·면사무소에 신청서 및 구비서류 제출",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-시설원예-생산시설-지원",
+    "title": "시설원예 생산시설 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "영세농 다목적 소형하우스 지원(165평방미터 ~ 330평방미터)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "시설원예 생산시설 지원",
+      "농림어업",
+      "전남",
+      "전라남도 순천시",
+      "모집중",
+      "농어업인",
+      "전체",
+      "영세농",
+      "다목적",
+      "소형하우스",
+      "지원(165평방미터",
+      "~"
+    ],
+    "summary": "영세농 다목적 소형하우스 지원(165평방미터 ~ 330평방미터)",
+    "audience": "에너지 절감시설 3종(알루미늄 측벽, 보온덮개, 난방기)\n노동력 절감시설 3종(무인방제기, 운반대, 관비 재배시설 등)\n영세농 다목적 소형 하우스 지원",
+    "benefits": [
+      "영세농 다목적 소형하우스 지원(165평방미터 ~ 330평방미터)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "주민센터 방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000133",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000133",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "에너지 절감시설 3종(알루미늄 측벽, 보온덮개, 난방기)\n노동력 절감시설 3종(무인방제기, 운반대, 관비 재배시설 등)\n영세농 다목적 소형 하우스 지원",
+      "benefit": "영세농 다목적 소형하우스 지원(165평방미터 ~ 330평방미터)",
+      "application": "주민센터 방문신청",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-복숭아-세균구멍병-방제-지원",
+    "title": "복숭아 세균구멍병 방제 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "세균구멍병 방제 약제 구입비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "복숭아 세균구멍병 방제 지원",
+      "농림어업",
+      "전남",
+      "전라남도 순천시",
+      "모집중",
+      "농어업인",
+      "전체",
+      "세균구멍병",
+      "방제",
+      "약제",
+      "구입비",
+      "지원"
+    ],
+    "summary": "세균구멍병 방제 약제 구입비 지원",
+    "audience": "1. 목 적 \n ❍ 복숭아에 큰 피해를 줄 우려가 있는 세균성구멍병 신속하게 방제할 수 있도록 지원하여 피해 최소화로 안정적인 농산물 생산과 수급에 기여\n\n2. 근거법령\n ❍ 순천시 농업 보조금 관리 운영 조례 제4조, 제6조\n\n3. 사업추진\n 가. 사업기간 : 2025. 1. ~ 12.\n 나. 사 업 량 : 97.5ha\n 다. 사 업 비 : 39,000천원(시비 19,500, 자담 19,500)\n ※ 재원비율 : 시비 50%, 자담 50%\n 라. 방제대상 : 복숭아 세균구멍병\n 마. 지원내용 : 세균구멍병 방제 약제 구입비\n 바. 단가 : 1,000㎡당 40,000원(자부담 포함)\n ❍ 예산범위 내에서 지원하며 사업량 초과시 지원단가 조정 배정\n ❍ 사업비는 기준단가 범위 내에서 실제 병해충 방제에 소요되는 비용(정산비용)에 따라 지원 비율 적용\n ❍ 추가비용은 자부담 원칙",
+    "benefits": [
+      "세균구멍병 방제 약제 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청방법 : 가급적 생산자단체 대표 일괄 신청서 제출\n ※ 농가별 농업경영체 등록(변경등록) 확인서 사본 첨부\n - 2024년 대상자 확정 농가는 희망할 경우 기존 제출 자료로 대체 가능하나 변경 또는 신규일 경우에는 농업경영체 등록 확인서 첨부",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000134",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000134",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "1. 목 적 \n ❍ 복숭아에 큰 피해를 줄 우려가 있는 세균성구멍병 신속하게 방제할 수 있도록 지원하여 피해 최소화로 안정적인 농산물 생산과 수급에 기여\n\n2. 근거법령\n ❍ 순천시 농업 보조금 관리 운영 조례 제4조, 제6조\n\n3. 사업추진\n 가. 사업기간 : 2025. 1. ~ 12.\n 나. 사 업 량 : 97.5ha\n 다. 사 업 비 : 39,000천원(시비 19,500, 자담 19,500)\n ※ 재원비율 : 시비 50%, 자담 50%\n 라. 방제대상 : 복숭아 세균구멍병\n 마. 지원내용 : 세균구멍병 방제 약제 구입비\n 바. 단가 : 1,000㎡당 40,000원(자부담 포함)\n ❍ 예산범위 내에서 지원하며 사업량 초과시 지원단가 조정 배정\n ❍ 사업비는 기준단가 범위 내에서 실제 병해충 방제에 소요되는 비용(정산비용)에 따라 지원 비율 적용\n ❍ 추가비용은 자부담 원칙",
+      "benefit": "세균구멍병 방제 약제 구입비 지원",
+      "application": "신청방법 : 가급적 생산자단체 대표 일괄 신청서 제출\n ※ 농가별 농업경영체 등록(변경등록) 확인서 사본 첨부\n - 2024년 대상자 확정 농가는 희망할 경우 기존 제출 자료로 대체 가능하나 변경 또는 신규일 경우에는 농업경영체 등록 확인서 첨부",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-원예작물-친환경자재-지원",
+    "title": "원예작물 친환경자재 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "친환경 인증취득 농가에 친환경약제 및 채소과수 재배농가에 노동력 절감 방안으로 부직포 지",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "어르신, 농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "원예작물 친환경자재 지원",
+      "농림어업",
+      "전남",
+      "전라남도 순천시",
+      "모집중",
+      "어르신",
+      "농어업인",
+      "전체",
+      "친환경",
+      "인증취득",
+      "농가에",
+      "친환경약제"
+    ],
+    "summary": "친환경 인증취득 농가에 친환경약제 및 채소과수 재배농가에 노동력 절감 방안으로 부직포 지",
+    "audience": "친환경부직포(과수, 채소), 친환경약제 지원",
+    "benefits": [
+      "친환경 인증취득 농가에 친환경약제 및 채소과수 재배농가에 노동력 절감 방안으로 부직포 지"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "주민센터 방문 후 직접신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000135",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000135",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "친환경부직포(과수, 채소), 친환경약제 지원",
+      "benefit": "친환경 인증취득 농가에 친환경약제 및 채소과수 재배농가에 노동력 절감 방안으로 부직포 지",
+      "application": "주민센터 방문 후 직접신청",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-과수농가-인공수분기-지원",
+    "title": "과수농가 인공수분기 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "과수 인공수분기 구입비용 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "과수농가 인공수분기 지원",
+      "농림어업",
+      "전남",
+      "전라남도 순천시",
+      "상시",
+      "농어업인",
+      "전체",
+      "과수",
+      "인공수분기",
+      "구입비용",
+      "지원"
+    ],
+    "summary": "전라남도 순천시 과수 재배 농가의 인공수분기와 수분용 꽃가루 구입비용을 돕는 지원사업입니다. 신청 조건과 보조 기준은 공식 안내를 확인하세요.",
+    "audience": "○ 과수농가 인공수분기 지원\n - 과수 0.1ha 이상 재배 농가(전업 농업종사자) 대상\n - 과수 인공수분기 및 수분용꽃가루 구입비용 50% 보조금 지원\n - 인공수분기 기준 단가 1,045천원, 초과비용은 자부담에 포함",
+    "benefits": [
+      "과수 인공수분기 구입비용 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "과수 필지 소재 읍·면·동 행정복지센터에 방문 접수",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000137",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000137",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 과수농가 인공수분기 지원\n - 과수 0.1ha 이상 재배 농가(전업 농업종사자) 대상\n - 과수 인공수분기 및 수분용꽃가루 구입비용 50% 보조금 지원\n - 인공수분기 기준 단가 1,045천원, 초과비용은 자부담에 포함",
+      "benefit": "과수 인공수분기 구입비용 지원",
+      "application": "과수 필지 소재 읍·면·동 행정복지센터에 방문 접수",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-자녀학습서비스-지원",
+    "title": "자녀학습서비스 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "- 자녀학습(독서코칭, 숙제지도, 발표 토론 지도 등) 및 생활 서비스 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "자녀학습서비스 지원",
+      "교육",
+      "전남",
+      "전라남도 순천시",
+      "상시",
+      "일반",
+      "아동",
+      "전체",
+      "-",
+      "자녀학습(독서코칭,",
+      "숙제지도,",
+      "발표"
+    ],
+    "summary": "- 자녀학습(독서코칭, 숙제지도, 발표 토론 지도 등) 및 생활 서비스 제공",
+    "audience": "- 사업대상 : 만 3세~만 12세 이하 취약계층 자녀 \n- 대상기준 : 중위소득 150% 이하의 취약계층 가정(다문화, 한부모, 다자녀, 기초수급, 차상위 포함) 대상\n- 사업내용 : 자녀 학습(독서코칭, 숙제지도, 발표 토론 지도 등) 및 생활 서비스 제공",
+    "benefits": [
+      "- 자녀학습(독서코칭, 숙제지도, 발표 토론 지도 등) 및 생활 서비스 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "- 방문 접수",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000138",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000138",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "- 사업대상 : 만 3세~만 12세 이하 취약계층 자녀 \n- 대상기준 : 중위소득 150% 이하의 취약계층 가정(다문화, 한부모, 다자녀, 기초수급, 차상위 포함) 대상\n- 사업내용 : 자녀 학습(독서코칭, 숙제지도, 발표 토론 지도 등) 및 생활 서비스 제공",
+      "benefit": "- 자녀학습(독서코칭, 숙제지도, 발표 토론 지도 등) 및 생활 서비스 제공",
+      "application": "- 방문 접수",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-생분해-멀칭비닐-공급-지원",
+    "title": "생분해 멀칭비닐 공급 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "생분해 멀칭 농자재 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "어르신, 농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "생분해 멀칭비닐 공급 지원",
+      "농림어업",
+      "전남",
+      "전라남도 순천시",
+      "모집중",
+      "어르신",
+      "농어업인",
+      "전체",
+      "생분해",
+      "멀칭",
+      "농자재",
+      "지원"
+    ],
+    "summary": "전라남도 순천시에서 농촌 오염 저감과 영농 편의를 위해 생분해 멀칭 농자재를 지원하는 사업입니다. 신청 대상과 공급 기준은 공식 안내를 확인하세요.",
+    "audience": "농촌 고령화에 따른 노동력 감소 및 폐비닐 발생에 따른 농촌오염 최소화를 위해 자연 분해되는 환경친화적 농자재 지원",
+    "benefits": [
+      "생분해 멀칭 농자재 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청 : 농지소재지 읍면동 행정복지센터",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000139",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000139",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "농촌 고령화에 따른 노동력 감소 및 폐비닐 발생에 따른 농촌오염 최소화를 위해 자연 분해되는 환경친화적 농자재 지원",
+      "benefit": "생분해 멀칭 농자재 지원",
+      "application": "방문신청 : 농지소재지 읍면동 행정복지센터",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-순천형-다목적-소형농기계-지원",
+    "title": "순천형 다목적 소형농기계 지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "농가의 농기계 구입부담 경감 및 농업생산성 향상을 유도하기 위함",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "순천형 다목적 소형농기계 지원",
+      "주거",
+      "전남",
+      "전라남도 순천시",
+      "모집중",
+      "농어업인",
+      "전체",
+      "농가의",
+      "농기계",
+      "구입부담",
+      "경감",
+      "및"
+    ],
+    "summary": "농가의 농기계 구입부담 경감 및 농업생산성 향상을 유도하기 위함",
+    "audience": "정부지원 대상 농기계 및 기타 일반 농기계 중 30만원 이상 농기계 지원",
+    "benefits": [
+      "농가의 농기계 구입부담 경감 및 농업생산성 향상을 유도하기 위함"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 신청방법 : 본인이 직접 농지소재지 관할 읍면동 행정복지센터 방문하여 다목적 소형농기계 지원사업 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000140",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000140",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "정부지원 대상 농기계 및 기타 일반 농기계 중 30만원 이상 농기계 지원",
+      "benefit": "농가의 농기계 구입부담 경감 및 농업생산성 향상을 유도하기 위함",
+      "application": "○ 신청방법 : 본인이 직접 농지소재지 관할 읍면동 행정복지센터 방문하여 다목적 소형농기계 지원사업 신청",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-귀농인-소형농기계-구입-지원",
+    "title": "귀농인 소형농기계 구입 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "농업생산에 필요한 건조기, 운반기, 관리기 등 소형농기계 구입지원으로 귀농 정착 투자비용",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "귀농인 소형농기계 구입 지원",
+      "보건의료",
+      "전남",
+      "전라남도 순천시",
+      "모집중",
+      "농어업인",
+      "전체",
+      "농업생산에",
+      "필요한",
+      "건조기,",
+      "운반기,",
+      "관리기"
+    ],
+    "summary": "농업생산에 필요한 건조기, 운반기, 관리기 등 소형농기계 구입지원으로 귀농 정착 투자비용",
+    "audience": "농기계 구입비의 50% 지원(최대 300만원)",
+    "benefits": [
+      "농업생산에 필요한 건조기, 운반기, 관리기 등 소형농기계 구입지원으로 귀농 정착 투자비용"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "읍면 행정복지센터 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000142",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000142",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "농기계 구입비의 50% 지원(최대 300만원)",
+      "benefit": "농업생산에 필요한 건조기, 운반기, 관리기 등 소형농기계 구입지원으로 귀농 정착 투자비용",
+      "application": "읍면 행정복지센터 방문 신청",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-귀농인-이웃주민-초청행사",
+    "title": "귀농인 이웃주민 초청행사",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "귀농인과 지역주민의 화합을 통한 안정적 정착을 유도",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "귀농인 이웃주민 초청행사",
+      "보건의료",
+      "전남",
+      "전라남도 순천시",
+      "상시",
+      "농어업인",
+      "전체",
+      "귀농인과",
+      "지역주민의",
+      "화합을",
+      "통한",
+      "안정적"
+    ],
+    "summary": "귀농인과 지역주민의 화합을 통한 안정적 정착을 유도",
+    "audience": "이웃주민 초청행사에 소요되는 일정 비용 지원(최대 100만원)",
+    "benefits": [
+      "귀농인과 지역주민의 화합을 통한 안정적 정착을 유도"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "읍면 행정복지센터 방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000147",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000147",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "이웃주민 초청행사에 소요되는 일정 비용 지원(최대 100만원)",
+      "benefit": "귀농인과 지역주민의 화합을 통한 안정적 정착을 유도",
+      "application": "읍면 행정복지센터 방문신청",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-야생동물-피해예방시설-지원",
+    "title": "야생동물 피해예방시설 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "야생동물에 의한 피해 예방을 위한 철망울타리,전기울타리,조수류 퇴치기 등 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "야생동물 피해예방시설 지원",
+      "농림어업",
+      "전남",
+      "전라남도 순천시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "야생동물에",
+      "의한",
+      "피해",
+      "예방을",
+      "위한"
+    ],
+    "summary": "전라남도 순천시에서 야생동물로 인한 농작물 피해를 줄이기 위해 철망울타리, 전기울타리 등 예방시설을 지원하는 사업입니다. 신청 시기와 세부 조건은 공식 공고에서 확인하세요.",
+    "audience": "○야생동물에 의한 피해예방을 위한 직접 예방시설(윤형철조망, 전기울타리 등) 지원\n○야생동물에 의한 피해예방을 위한 간접 예방시설(침입감지장치 등) 지원",
+    "benefits": [
+      "야생동물에 의한 피해 예방을 위한 철망울타리,전기울타리,조수류 퇴치기 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○매년 1~2월중 지원사업 공고 이후\n○농지소재지 읍면동 주민센터에서 접수",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000148",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000148",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○야생동물에 의한 피해예방을 위한 직접 예방시설(윤형철조망, 전기울타리 등) 지원\n○야생동물에 의한 피해예방을 위한 간접 예방시설(침입감지장치 등) 지원",
+      "benefit": "야생동물에 의한 피해 예방을 위한 철망울타리,전기울타리,조수류 퇴치기 등 지원",
+      "application": "○매년 1~2월중 지원사업 공고 이후\n○농지소재지 읍면동 주민센터에서 접수",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-2025년-임업기술전문교육",
+    "title": "2025년 임업기술전문교육",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "귀산촌 지원정책 및 임업후계자 양성 교육",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "2025년 임업기술전문교육",
+      "교육",
+      "전남",
+      "전라남도 순천시",
+      "모집중",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "귀산촌",
+      "지원정책",
+      "및",
+      "임업후계자"
+    ],
+    "summary": "귀산촌 지원정책 및 임업후계자 양성 교육",
+    "audience": "❍ 교 육 명 : 임업기술전문(귀산촌 및 임업후계자 양성)교육 과정\n❍ 교육시간 : 40시간\n❍ 교육인원 : 80 명\n❍ 수 강 료 : 800천원(보조 500, 자부담300) \n❍ 교육내용 : 귀산촌 지원정책 및 임업후계자 양성 교육 등\n❍ 교육대상 및 지원가능한 자 : 순천시민",
+    "benefits": [
+      "귀산촌 지원정책 및 임업후계자 양성 교육"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "순천시 산학협력단 임업기술전문교육센터 신청(061-750-3221)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000149",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000149",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "❍ 교 육 명 : 임업기술전문(귀산촌 및 임업후계자 양성)교육 과정\n❍ 교육시간 : 40시간\n❍ 교육인원 : 80 명\n❍ 수 강 료 : 800천원(보조 500, 자부담300) \n❍ 교육내용 : 귀산촌 지원정책 및 임업후계자 양성 교육 등\n❍ 교육대상 및 지원가능한 자 : 순천시민",
+      "benefit": "귀산촌 지원정책 및 임업후계자 양성 교육",
+      "application": "순천시 산학협력단 임업기술전문교육센터 신청(061-750-3221)",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-산림특화작물-육성사업",
+    "title": "산림특화작물 육성사업",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "임업인 소득증대를 위한 산림특화작물 생산기반 보조사업 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "산림특화작물 육성사업",
+      "농림어업",
+      "전남",
+      "전라남도 순천시",
+      "모집중",
+      "농어업인",
+      "전체",
+      "임업인",
+      "소득증대를",
+      "위한",
+      "산림특화작물",
+      "생산기반"
+    ],
+    "summary": "임업인 소득증대를 위한 산림특화작물 생산기반 보조사업 지원",
+    "audience": "- 사업목적 : 임업인 소득증대를 위한 산림특화작물 생산기반 보조사업 지원\n- 지원대상 : 순천시 거주 임업인\n- 지원품목 : 떫은감, 대추나무, 고사리, 취나물, 꾸지뽕, 황칠나무, 적하수오, 비닐하우스, 밤, 청송, 관상수, 모링가, 생분해멀칭비닐 묘목구입비 등\n- 지원비율 : 시비 50%, 자부담 50%\n- 문의번호 : 061-749-8753",
+    "benefits": [
+      "임업인 소득증대를 위한 산림특화작물 생산기반 보조사업 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "읍면동 방문접수",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000151",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000151",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "- 사업목적 : 임업인 소득증대를 위한 산림특화작물 생산기반 보조사업 지원\n- 지원대상 : 순천시 거주 임업인\n- 지원품목 : 떫은감, 대추나무, 고사리, 취나물, 꾸지뽕, 황칠나무, 적하수오, 비닐하우스, 밤, 청송, 관상수, 모링가, 생분해멀칭비닐 묘목구입비 등\n- 지원비율 : 시비 50%, 자부담 50%\n- 문의번호 : 061-749-8753",
+      "benefit": "임업인 소득증대를 위한 산림특화작물 생산기반 보조사업 지원",
+      "application": "읍면동 방문접수",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-전입세대-축하금",
+    "title": "전입세대 축하금",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "○ 지원금 또는 지역상품권 : 세대당 순천사랑상품권 10만원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "전입세대 축하금",
+      "주거",
+      "전남",
+      "전라남도 순천시",
+      "상시",
+      "일반",
+      "전체",
+      "○",
+      "지원금",
+      "또는",
+      "지역상품권",
+      ":"
+    ],
+    "summary": "○ 지원금 또는 지역상품권 : 세대당 순천사랑상품권 10만원",
+    "audience": "○ 2인이상 전입세대\n - 다른 시군구에 6개월 이상 주소를 두고 있다가 2인 이상 세대를 구성하여 순천시에 전입한 세대주가 30일이내 동일 세대로 편입하여\n 2인이상이 된 경우 지원 가능",
+    "benefits": [
+      "○ 지원금 또는 지역상품권 : 세대당 순천사랑상품권 10만원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문신청 : 관할 읍면도 행복지원센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000586",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000586",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 2인이상 전입세대\n - 다른 시군구에 6개월 이상 주소를 두고 있다가 2인 이상 세대를 구성하여 순천시에 전입한 세대주가 30일이내 동일 세대로 편입하여\n 2인이상이 된 경우 지원 가능",
+      "benefit": "○ 지원금 또는 지역상품권 : 세대당 순천사랑상품권 10만원",
+      "application": "○ 방문신청 : 관할 읍면도 행복지원센터 방문",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-대학-원-생-전입장려금",
+    "title": "대학(원)생 전입장려금",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "전라남도 순천시",
+    "region": "전남",
+    "amount": "○ 최대 50만원 지급(전입시 20만 원, 1년 이상 거주시 10만원, 2년 이상 20만원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "대학(원)생 전입장려금",
+      "주거",
+      "전남",
+      "전라남도 순천시",
+      "상시",
+      "일반",
+      "전체",
+      "○",
+      "최대",
+      "50만원",
+      "지급(전입시",
+      "20만"
+    ],
+    "summary": "○ 최대 50만원 지급(전입시 20만 원, 1년 이상 거주시 10만원, 2년 이상 20만원",
+    "audience": "○ 지원금 또는 지역상품권\n - 1인당 순천사랑상품권 50만원\n - (1차) 전입신고 시 20만원\n - (2차) 1년 이상 계속 거주 시 : 10만원\n - (3차) 2년 이상 계속 거주 시 : 20만원",
+    "benefits": [
+      "○ 최대 50만원 지급(전입시 20만 원, 1년 이상 거주시 10만원, 2년 이상 20만원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "전입 주소지 관할 읍면동 행정복지센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000587",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/482000000587",
+    "contact": "전라남도 순천시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 지원금 또는 지역상품권\n - 1인당 순천사랑상품권 50만원\n - (1차) 전입신고 시 20만원\n - (2차) 1년 이상 계속 거주 시 : 10만원\n - (3차) 2년 이상 계속 거주 시 : 20만원",
+      "benefit": "○ 최대 50만원 지급(전입시 20만 원, 1년 이상 거주시 10만원, 2년 이상 20만원",
+      "application": "전입 주소지 관할 읍면동 행정복지센터 방문",
+      "contact": "전라남도 순천시"
+    }
+  },
+  {
+    "slug": "gov24-특기적성-장학금",
+    "title": "특기적성 장학금",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "재단법인세종특별자치시인재육성평생교육진흥원",
+    "region": "세종",
+    "amount": "세종시 거주 전국대회 3위 이상 입상한 학생 대상으로 장학금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·청년",
+    "targetGroup": "청년, 부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "특기적성 장학금",
+      "청년",
+      "세종",
+      "재단법인세종특별자치시인재육성평생교육진흥원",
+      "확인필요",
+      "부모/육아",
+      "임신·출산·육아",
+      "세종시",
+      "거주",
+      "전국대회",
+      "3위",
+      "이상"
+    ],
+    "summary": "세종시 거주 학생 중 전국대회 입상 등 특기적성 기준에 해당하는 학생을 위한 장학금 지원사업입니다. 선발 기준과 신청기간은 공식 공고에서 확인하세요.",
+    "audience": "세종시 거주 전국대회 3위 이상 입상자(초,중,고,대) 대상 1인당 100만원 장학금 지급",
+    "benefits": [
+      "세종시 거주 전국대회 3위 이상 입상한 학생 대상으로 장학금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청 \n - 진흥원 홈페이지 : www.sjhle.or.kr 가입 후 진행 \n - 장학금 신청 탭",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00088400009",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00088400009",
+    "contact": "재단법인세종특별자치시인재육성평생교육진흥원",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세종시 거주 전국대회 3위 이상 입상자(초,중,고,대) 대상 1인당 100만원 장학금 지급",
+      "benefit": "세종시 거주 전국대회 3위 이상 입상한 학생 대상으로 장학금 지원",
+      "application": "○ 온라인 신청 \n - 진흥원 홈페이지 : www.sjhle.or.kr 가입 후 진행 \n - 장학금 신청 탭",
+      "contact": "재단법인세종특별자치시인재육성평생교육진흥원"
+    }
+  },
+  {
+    "slug": "gov24-우수인재-장학금",
+    "title": "우수인재 장학금",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "재단법인세종특별자치시인재육성평생교육진흥원",
+    "region": "세종",
+    "amount": "세종시 소재 성적이 우수한 고등학생에게 장학금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "우수인재 장학금",
+      "교육",
+      "세종",
+      "재단법인세종특별자치시인재육성평생교육진흥원",
+      "모집중",
+      "부모/육아",
+      "청소년",
+      "임신·출산·육아",
+      "세종시",
+      "소재",
+      "성적이",
+      "우수한"
+    ],
+    "summary": "세종시 소재 성적이 우수한 고등학생에게 장학금 지원",
+    "audience": "세종시 소재 고등학교 재학생 성적우수자 대상 1인당 70만원 장학금 지급",
+    "benefits": [
+      "세종시 소재 성적이 우수한 고등학생에게 장학금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 개인 신청불필요\n - 학교별 성적 우수자 추천",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00088400010",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00088400010",
+    "contact": "재단법인세종특별자치시인재육성평생교육진흥원",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세종시 소재 고등학교 재학생 성적우수자 대상 1인당 70만원 장학금 지급",
+      "benefit": "세종시 소재 성적이 우수한 고등학생에게 장학금 지원",
+      "application": "○ 개인 신청불필요\n - 학교별 성적 우수자 추천",
+      "contact": "재단법인세종특별자치시인재육성평생교육진흥원"
+    }
+  },
+  {
+    "slug": "gov24-모범-초중고-장학금",
+    "title": "모범(초중고) 장학금",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "재단법인세종특별자치시인재육성평생교육진흥원",
+    "region": "세종",
+    "amount": "세종시 거주 저소득 초·중·고등학생 대상으로 장학금 지원(차등지급)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "모범(초중고) 장학금",
+      "교육",
+      "세종",
+      "재단법인세종특별자치시인재육성평생교육진흥원",
+      "확인필요",
+      "부모/육아",
+      "청소년",
+      "임신·출산·육아",
+      "복지",
+      "세종시",
+      "거주",
+      "저소득"
+    ],
+    "summary": "세종시 저소득 초·중·고등학생의 교육 기회 지원을 위한 장학금 사업입니다. 지원 금액과 선발 조건은 공식 공고에서 확인하세요.",
+    "audience": "○ 저소득 세종시 초·중·고등학생의 교육기회 평등을 위한 장학금 지원\n\n○ 1인당 30~90만원 장학금 지급\n - 초 : 30만원 / 중 : 60만원 / 고 : 90만원",
+    "benefits": [
+      "세종시 거주 저소득 초·중·고등학생 대상으로 장학금 지원(차등지급)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청 \n - 진흥원 홈페이지 : www.sjhle.or.kr 가입 후 진행 \n - 장학금 신청 탭",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00088400011",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00088400011",
+    "contact": "재단법인세종특별자치시인재육성평생교육진흥원",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 저소득 세종시 초·중·고등학생의 교육기회 평등을 위한 장학금 지원\n\n○ 1인당 30~90만원 장학금 지급\n - 초 : 30만원 / 중 : 60만원 / 고 : 90만원",
+      "benefit": "세종시 거주 저소득 초·중·고등학생 대상으로 장학금 지원(차등지급)",
+      "application": "○ 온라인 신청 \n - 진흥원 홈페이지 : www.sjhle.or.kr 가입 후 진행 \n - 장학금 신청 탭",
+      "contact": "재단법인세종특별자치시인재육성평생교육진흥원"
+    }
+  },
+  {
+    "slug": "gov24-긴급복지지원-장학금",
+    "title": "긴급복지지원 장학금",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "재단법인세종특별자치시인재육성평생교육진흥원",
+    "region": "세종",
+    "amount": "세종시 위기가구 학생에게 장학금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·청년·복지",
+    "targetGroup": "청년, 부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "긴급복지지원 장학금",
+      "청년",
+      "세종",
+      "재단법인세종특별자치시인재육성평생교육진흥원",
+      "상시",
+      "부모/육아",
+      "임신·출산·육아",
+      "복지",
+      "세종시",
+      "위기가구",
+      "학생에게",
+      "장학금"
+    ],
+    "summary": "세종시 위기가구 학생에게 장학금 지원",
+    "audience": "○ 세종시 위기가구 학생 장학금 지원\n - 1인당 200만원 장학금 지급",
+    "benefits": [
+      "세종시 위기가구 학생에게 장학금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 市 복지정책과(통합사례관리사) 추천을 통한 접수 및 선발 진행",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00088400012",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/O00088400012",
+    "contact": "재단법인세종특별자치시인재육성평생교육진흥원",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 세종시 위기가구 학생 장학금 지원\n - 1인당 200만원 장학금 지급",
+      "benefit": "세종시 위기가구 학생에게 장학금 지원",
+      "application": "○ 市 복지정책과(통합사례관리사) 추천을 통한 접수 및 선발 진행",
+      "contact": "재단법인세종특별자치시인재육성평생교육진흥원"
+    }
+  }
+];
+
+policies.push(...gov24PromotionPoliciesBatch6);
+
 policies.push(...welfareApiPolicies);
 policies.push(...localWelfareApiPolicies);
 policies.push(...publicServiceApiPolicies);

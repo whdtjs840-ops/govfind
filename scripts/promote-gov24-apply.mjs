@@ -31,6 +31,22 @@ function assertApplyReady(dryRunReport, limit) {
   }
 }
 
+async function readMatchingDryRunReport(candidates, limit) {
+  const mismatches = [];
+  for (const candidate of candidates) {
+    try {
+      const report = await readJson(candidate.dryRunReportPath);
+      if (report.dryRun === true && report.applyReadiness === "ready_for_apply" && report.selectedCount === limit) {
+        return { report, paths: candidate };
+      }
+      mismatches.push(`${candidate.dryRunReportPath}: selectedCount=${report.selectedCount}, applyReadiness=${report.applyReadiness}`);
+    } catch (error) {
+      mismatches.push(`${candidate.dryRunReportPath}: ${error.message}`);
+    }
+  }
+  throw new Error(`No matching Gov24 apply dry-run report found for limit ${limit}. Checked: ${mismatches.join("; ")}`);
+}
+
 function assertCandidateSafety(policies) {
   const failures = [];
   const seenSlugs = new Set();
@@ -78,8 +94,8 @@ async function main() {
   }
 
   const policiesPath = "src/data/policies.ts";
-  const dryRunReportPath = "data/staging/gov24/apply-dry-run-report.json";
-  const generatedPreviewPath = "data/staging/gov24/promotion-generated-preview.json";
+  const dryRunReportPath = argValue("dry-run-report", "data/staging/gov24/apply-dry-run-report.json");
+  const generatedPreviewPath = argValue("generated-preview", "data/staging/gov24/promotion-generated-preview.json");
   const existingSourceText = await readFile(policiesPath, "utf8");
   const requestedBatch = argValue("batch");
   const existingBatchMatches = [...existingSourceText.matchAll(/const gov24PromotionPolicies(?:Batch(\d+))?: Policy\[\]/g)];
@@ -95,10 +111,16 @@ async function main() {
   const blockName = batch === 1 ? "gov24PromotionPolicies" : `gov24PromotionPoliciesBatch${batch}`;
   const applyReportPath = batch === 1 ? "data/staging/gov24/apply-report.json" : `data/staging/gov24/apply-report-batch-${batch}.json`;
 
-  const dryRunReport = await readJson(dryRunReportPath);
+  const { report: dryRunReport, paths: selectedInputPaths } = await readMatchingDryRunReport([
+    { dryRunReportPath, generatedPreviewPath },
+    {
+      dryRunReportPath: "data/staging/automation/update-gov24-apply-dry-run-report.json",
+      generatedPreviewPath: "data/staging/automation/update-gov24-promotion-generated-preview.json"
+    }
+  ], limit);
   assertApplyReady(dryRunReport, limit);
 
-  const generatedPreview = await readJson(generatedPreviewPath);
+  const generatedPreview = await readJson(selectedInputPaths.generatedPreviewPath);
   const policiesBySlug = new Map((generatedPreview.policies ?? []).map((policy) => [policy.slug, policy]));
   const selectedPolicies = (dryRunReport.selectedItemSummaries ?? [])
     .slice(0, limit)
