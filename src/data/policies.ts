@@ -65209,6 +65209,8689 @@ const gov24PromotionPoliciesBatch5: Policy[] = [
 
 policies.push(...gov24PromotionPoliciesBatch5);
 
+const bokjiroCentralPromotionPolicies: Policy[] = [
+  {
+    "slug": "bokjiro-central-애국지사특별예우금",
+    "title": "애국지사특별예우금",
+    "category": "복지",
+    "source": "복지로 중앙부처 API",
+    "agency": "국가보훈부",
+    "region": "전국",
+    "amount": "일제강점기에 나라를 위해 자신을 희생한 애국지사의 뜻을 기리고 명예를 지킬 수 있도록 예우금을 지급합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "source category is missing; central welfare service mapped to 복지 for review",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "애국지사특별예우금",
+      "복지",
+      "전국",
+      "국가보훈부",
+      "확인필요",
+      "일반",
+      "일제강점기에",
+      "나라를",
+      "위해",
+      "자신을",
+      "희생한",
+      "애국지사의",
+      "뜻을",
+      "기리고"
+    ],
+    "summary": "일제강점기에 나라를 위해 자신을 희생한 애국지사의 뜻을 기리고 명예를 지킬 수 있도록 예우금을 지급합니다.",
+    "audience": "보훈대상자",
+    "benefits": [
+      "일제강점기에 나라를 위해 자신을 희생한 애국지사의 뜻을 기리고 명예를 지킬 수 있도록 예우금을 지급합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000750&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000750&wlfareInfoReldBztpCd=01",
+    "contact": "1577-0606",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "보훈대상자",
+      "benefit": "일제강점기에 나라를 위해 자신을 희생한 애국지사의 뜻을 기리고 명예를 지킬 수 있도록 예우금을 지급합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-0606"
+    }
+  },
+  {
+    "slug": "bokjiro-central-청소년복지시설-운영-지원",
+    "title": "청소년복지시설 운영 지원",
+    "category": "청년",
+    "source": "복지로 중앙부처 API",
+    "agency": "성평등가족부",
+    "region": null,
+    "amount": "가정 밖 청소년을 보호하고 상담, 교육문화활동 지원을 통해 비행, 탈선을 예방하여 가정복귀와 사회적응을 돕습니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "청년, 가구·부모",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "청소년복지시설 운영 지원",
+      "청년",
+      "성평등가족부",
+      "확인필요",
+      "가구·부모",
+      "가정",
+      "밖",
+      "청소년을",
+      "보호하고",
+      "상담,",
+      "교육문화활동",
+      "지원을",
+      "통해"
+    ],
+    "summary": "가정 밖 청소년을 보호하고 상담, 교육문화활동 지원을 통해 비행, 탈선을 예방하여 가정복귀와 사회적응을 돕습니다.",
+    "audience": "아동,청소년,청년",
+    "benefits": [
+      "가정 밖 청소년을 보호하고 상담, 교육문화활동 지원을 통해 비행, 탈선을 예방하여 가정복귀와 사회적응을 돕습니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000751&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000751&wlfareInfoReldBztpCd=01",
+    "contact": "1388",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "아동,청소년,청년",
+      "benefit": "가정 밖 청소년을 보호하고 상담, 교육문화활동 지원을 통해 비행, 탈선을 예방하여 가정복귀와 사회적응을 돕습니다.",
+      "application": "공식 공고 확인",
+      "contact": "1388"
+    }
+  },
+  {
+    "slug": "bokjiro-central-여성청소년-생리용품-지원",
+    "title": "여성청소년 생리용품 지원",
+    "category": "청년",
+    "source": "복지로 중앙부처 API",
+    "agency": "성평등가족부",
+    "region": null,
+    "amount": "취약계층 여성청소년 대상 생리용품 지원을 통해 여성 청소년의 건강한 성장을 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "청년, 가구·부모, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "여성청소년 생리용품 지원",
+      "청년",
+      "성평등가족부",
+      "확인필요",
+      "가구·부모",
+      "취약계층",
+      "여성청소년",
+      "대상",
+      "생리용품",
+      "지원을",
+      "통해",
+      "여성",
+      "청소년의"
+    ],
+    "summary": "취약계층 여성청소년 대상 생리용품 지원을 통해 여성 청소년의 건강한 성장을 지원합니다.",
+    "audience": "저소득,한부모·조손",
+    "benefits": [
+      "취약계층 여성청소년 대상 생리용품 지원을 통해 여성 청소년의 건강한 성장을 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000781&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000781&wlfareInfoReldBztpCd=01",
+    "contact": "1566-3232",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "저소득,한부모·조손",
+      "benefit": "취약계층 여성청소년 대상 생리용품 지원을 통해 여성 청소년의 건강한 성장을 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1566-3232"
+    }
+  },
+  {
+    "slug": "bokjiro-central-북한이탈주민-사회보장-지원-수급권자-범위의-특례",
+    "title": "(북한이탈주민)사회보장 지원(수급권자 범위의 특례)",
+    "category": "문화생활",
+    "source": "복지로 중앙부처 API",
+    "agency": "통일부",
+    "region": null,
+    "amount": "북한에서 남한으로 이주한 주민의 안정적인 정착을 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(북한이탈주민)사회보장 지원(수급권자 범위의 특례)",
+      "문화생활",
+      "통일부",
+      "확인필요",
+      "일반",
+      "북한에서",
+      "남한으로",
+      "이주한",
+      "주민의",
+      "안정적인",
+      "정착을",
+      "지원합니다."
+    ],
+    "summary": "북한에서 남한으로 이주한 주민의 안정적인 정착을 지원합니다.",
+    "audience": "다문화·탈북민",
+    "benefits": [
+      "북한에서 남한으로 이주한 주민의 안정적인 정착을 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000782&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000782&wlfareInfoReldBztpCd=01",
+    "contact": "02-2100-5554",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "다문화·탈북민",
+      "benefit": "북한에서 남한으로 이주한 주민의 안정적인 정착을 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "02-2100-5554"
+    }
+  },
+  {
+    "slug": "bokjiro-central-영구임대주택공급",
+    "title": "영구임대주택공급",
+    "category": "주거",
+    "source": "복지로 중앙부처 API",
+    "agency": "국토교통부",
+    "region": "전국",
+    "amount": "생계·의료급여 수급자, 국가유공자, 일본군 위안부 피해자 등 사회보호계층에게 영구임대주택을 공급하여 주거안정을 도모합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모, 장애인, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "영구임대주택공급",
+      "주거",
+      "전국",
+      "국토교통부",
+      "확인필요",
+      "가구·부모",
+      "장애인",
+      "취약계층",
+      "생계·의료급여",
+      "수급자,",
+      "국가유공자,",
+      "일본군",
+      "위안부",
+      "피해자"
+    ],
+    "summary": "생계·의료급여 수급자, 국가유공자, 일본군 위안부 피해자 등 사회보호계층에게 영구임대주택을 공급하여 주거안정을 도모합니다.",
+    "audience": "다문화·탈북민,보훈대상자,장애인,저소득,한부모·조손",
+    "benefits": [
+      "생계·의료급여 수급자, 국가유공자, 일본군 위안부 피해자 등 사회보호계층에게 영구임대주택을 공급하여 주거안정을 도모합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000888&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000888&wlfareInfoReldBztpCd=01",
+    "contact": "1600-1004",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "다문화·탈북민,보훈대상자,장애인,저소득,한부모·조손",
+      "benefit": "생계·의료급여 수급자, 국가유공자, 일본군 위안부 피해자 등 사회보호계층에게 영구임대주택을 공급하여 주거안정을 도모합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1600-1004"
+    }
+  },
+  {
+    "slug": "bokjiro-central-긴급복지-장제비지원",
+    "title": "긴급복지 장제비지원",
+    "category": "주거",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "생계곤란 등의 위기상황에 처하여 도움이 필요해 긴급복지 주지원(생계, 의료, 주거, 사회복지시설 이용지원)을 받는 긴급지원대상자(가구구성원 포함)가 사망한 경우 장제에 필요한 비용을 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "긴급복지 장제비지원",
+      "주거",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "취약계층",
+      "생계곤란",
+      "등의",
+      "위기상황에",
+      "처하여",
+      "도움이",
+      "필요해",
+      "긴급복지",
+      "주지원(생계,"
+    ],
+    "summary": "생계곤란 등의 위기상황에 처하여 도움이 필요해 긴급복지 주지원(생계, 의료, 주거, 사회복지시설 이용지원)을 받는 긴급지원대상자(가구구성원 포함)가 사망한 경우 장제에 필요한 비용을 지원합니다.",
+    "audience": "저소득",
+    "benefits": [
+      "생계곤란 등의 위기상황에 처하여 도움이 필요해 긴급복지 주지원(생계, 의료, 주거, 사회복지시설 이용지원)을 받는 긴급지원대상자(가구구성원 포함)가 사망한 경우 장제에 필요한 비용을 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000892&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000892&wlfareInfoReldBztpCd=01",
+    "contact": "129",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "저소득",
+      "benefit": "생계곤란 등의 위기상황에 처하여 도움이 필요해 긴급복지 주지원(생계, 의료, 주거, 사회복지시설 이용지원)을 받는 긴급지원대상자(가구구성원 포함)가 사망한 경우 장제에 필요한 비용을 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "129"
+    }
+  },
+  {
+    "slug": "bokjiro-central-중독관리통합지원센터-지원",
+    "title": "중독관리통합지원센터 지원",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "중독관리통합지원센터를 설치·운영하여 통합적인 문제 음주자 및 알코올 등 중독자 관리체계를 구축하고, 중독자 조기발견·상담·치료·재활 및 사회로의 복귀를 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "중독관리통합지원센터 지원",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "일반",
+      "중독관리통합지원센터를",
+      "설치·운영하여",
+      "통합적인",
+      "문제",
+      "음주자",
+      "및",
+      "알코올",
+      "등"
+    ],
+    "summary": "중독관리통합지원센터를 설치·운영하여 통합적인 문제 음주자 및 알코올 등 중독자 관리체계를 구축하고, 중독자 조기발견·상담·치료·재활 및 사회로의 복귀를 지원합니다.",
+    "audience": "세부 자격은 공식 공고에서 확인하세요.",
+    "benefits": [
+      "중독관리통합지원센터를 설치·운영하여 통합적인 문제 음주자 및 알코올 등 중독자 관리체계를 구축하고, 중독자 조기발견·상담·치료·재활 및 사회로의 복귀를 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000896&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000896&wlfareInfoReldBztpCd=01",
+    "contact": "129",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세부 자격은 공식 공고에서 확인하세요.",
+      "benefit": "중독관리통합지원센터를 설치·운영하여 통합적인 문제 음주자 및 알코올 등 중독자 관리체계를 구축하고, 중독자 조기발견·상담·치료·재활 및 사회로의 복귀를 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "129"
+    }
+  },
+  {
+    "slug": "bokjiro-central-긴급복지-주거지원",
+    "title": "긴급복지 주거지원",
+    "category": "주거",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "생계곤란 등의 위기상황에 처하여 도움이 필요한 경우 일시적으로 신속하게 지원함으로써 위기상황에서 벗어날 수 있도록 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "긴급복지 주거지원",
+      "주거",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "취약계층",
+      "생계곤란",
+      "등의",
+      "위기상황에",
+      "처하여",
+      "도움이",
+      "필요한",
+      "경우",
+      "일시적으로"
+    ],
+    "summary": "생계곤란 등의 위기상황에 처하여 도움이 필요한 경우 일시적으로 신속하게 지원함으로써 위기상황에서 벗어날 수 있도록 지원합니다.",
+    "audience": "저소득",
+    "benefits": [
+      "생계곤란 등의 위기상황에 처하여 도움이 필요한 경우 일시적으로 신속하게 지원함으로써 위기상황에서 벗어날 수 있도록 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000917&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000917&wlfareInfoReldBztpCd=01",
+    "contact": "129",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "저소득",
+      "benefit": "생계곤란 등의 위기상황에 처하여 도움이 필요한 경우 일시적으로 신속하게 지원함으로써 위기상황에서 벗어날 수 있도록 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "129"
+    }
+  },
+  {
+    "slug": "bokjiro-central-북한이탈주민-상담-지원",
+    "title": "(북한이탈주민)상담 지원",
+    "category": "주거",
+    "source": "복지로 중앙부처 API",
+    "agency": "통일부",
+    "region": null,
+    "amount": "북한이탈주민의 주택/취업/교육/의료 등 상담지원 서비스를 체계적으로 제공하여 성공적인 지역사회 정착을 유도합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(북한이탈주민)상담 지원",
+      "주거",
+      "통일부",
+      "확인필요",
+      "구직자",
+      "북한이탈주민의",
+      "주택/취업/교육/의료",
+      "등",
+      "상담지원",
+      "서비스를",
+      "체계적으로",
+      "제공하여",
+      "성공적인"
+    ],
+    "summary": "북한이탈주민의 주택/취업/교육/의료 등 상담지원 서비스를 체계적으로 제공하여 성공적인 지역사회 정착을 유도합니다.",
+    "audience": "다문화·탈북민",
+    "benefits": [
+      "북한이탈주민의 주택/취업/교육/의료 등 상담지원 서비스를 체계적으로 제공하여 성공적인 지역사회 정착을 유도합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000921&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000921&wlfareInfoReldBztpCd=01",
+    "contact": "1577-6635",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "다문화·탈북민",
+      "benefit": "북한이탈주민의 주택/취업/교육/의료 등 상담지원 서비스를 체계적으로 제공하여 성공적인 지역사회 정착을 유도합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-6635"
+    }
+  },
+  {
+    "slug": "bokjiro-central-여성기업-판로지원",
+    "title": "여성기업 판로지원",
+    "category": "청년",
+    "source": "복지로 중앙부처 API",
+    "agency": "중소벤처기업부",
+    "region": null,
+    "amount": "여성기업의 판로 및 수출 지원을 통해 여성기업의 경쟁력 강화를 도모합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "여성기업 판로지원",
+      "청년",
+      "중소벤처기업부",
+      "확인필요",
+      "여성기업의",
+      "판로",
+      "및",
+      "수출",
+      "지원을",
+      "통해",
+      "경쟁력"
+    ],
+    "summary": "여성기업의 판로 및 수출 지원을 통해 여성기업의 경쟁력 강화를 도모합니다.",
+    "audience": "청년,중장년,노년",
+    "benefits": [
+      "여성기업의 판로 및 수출 지원을 통해 여성기업의 경쟁력 강화를 도모합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000922&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000922&wlfareInfoReldBztpCd=01",
+    "contact": "02-369-0900",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "청년,중장년,노년",
+      "benefit": "여성기업의 판로 및 수출 지원을 통해 여성기업의 경쟁력 강화를 도모합니다.",
+      "application": "공식 공고 확인",
+      "contact": "02-369-0900"
+    }
+  },
+  {
+    "slug": "bokjiro-central-의료급여-중증질환-희귀질환-및-중증난치질환자-지원",
+    "title": "의료급여 중증질환, 희귀질환 및 중증난치질환자 지원",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "의료급여 수급권자에 대한 의료비를 지원하여 저소득층 국민보건 향상과 사회복지 증진에 기여합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "의료급여 중증질환, 희귀질환 및 중증난치질환자 지원",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "취약계층",
+      "의료급여",
+      "수급권자에",
+      "대한",
+      "의료비를",
+      "지원하여",
+      "저소득층",
+      "국민보건",
+      "향상과"
+    ],
+    "summary": "의료급여 수급권자에 대한 의료비를 지원하여 저소득층 국민보건 향상과 사회복지 증진에 기여합니다.",
+    "audience": "다문화·탈북민,보훈대상자,저소득",
+    "benefits": [
+      "의료급여 수급권자에 대한 의료비를 지원하여 저소득층 국민보건 향상과 사회복지 증진에 기여합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000923&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000923&wlfareInfoReldBztpCd=01",
+    "contact": "129",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "다문화·탈북민,보훈대상자,저소득",
+      "benefit": "의료급여 수급권자에 대한 의료비를 지원하여 저소득층 국민보건 향상과 사회복지 증진에 기여합니다.",
+      "application": "공식 공고 확인",
+      "contact": "129"
+    }
+  },
+  {
+    "slug": "bokjiro-central-산림복지서비스이용권",
+    "title": "산림복지서비스이용권",
+    "category": "복지",
+    "source": "복지로 중앙부처 API",
+    "agency": "산림청",
+    "region": null,
+    "amount": "사회·경제적 여건으로 산림복지 혜택을 받지 못하는 소외계층에게 산림복지서비스 체험 기회를 제공하여 삶의 질을 높일 수 있도록 돕습니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모, 장애인, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "산림복지서비스이용권",
+      "복지",
+      "산림청",
+      "확인필요",
+      "가구·부모",
+      "장애인",
+      "취약계층",
+      "사회·경제적",
+      "여건으로",
+      "산림복지",
+      "혜택을",
+      "받지",
+      "못하는",
+      "소외계층에게"
+    ],
+    "summary": "사회·경제적 여건으로 산림복지 혜택을 받지 못하는 소외계층에게 산림복지서비스 체험 기회를 제공하여 삶의 질을 높일 수 있도록 돕습니다.",
+    "audience": "장애인,저소득,한부모·조손",
+    "benefits": [
+      "사회·경제적 여건으로 산림복지 혜택을 받지 못하는 소외계층에게 산림복지서비스 체험 기회를 제공하여 삶의 질을 높일 수 있도록 돕습니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000946&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000946&wlfareInfoReldBztpCd=01",
+    "contact": "1544-3228",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인,저소득,한부모·조손",
+      "benefit": "사회·경제적 여건으로 산림복지 혜택을 받지 못하는 소외계층에게 산림복지서비스 체험 기회를 제공하여 삶의 질을 높일 수 있도록 돕습니다.",
+      "application": "공식 공고 확인",
+      "contact": "1544-3228"
+    }
+  },
+  {
+    "slug": "bokjiro-central-학교-밖-청소년-지원",
+    "title": "학교 밖 청소년 지원",
+    "category": "청년",
+    "source": "복지로 중앙부처 API",
+    "agency": "성평등가족부",
+    "region": null,
+    "amount": "학교 밖 청소년의 개인적 수요와 특성을 고려한 상담, 교육, 직업체험 및 취업, 자립지원 프로그램을 제공하여 건강한 사회구성원으로 성장하도록 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "학교 밖 청소년 지원",
+      "청년",
+      "성평등가족부",
+      "확인필요",
+      "구직자",
+      "학교",
+      "밖",
+      "청소년의",
+      "개인적",
+      "수요와",
+      "특성을",
+      "고려한",
+      "상담,"
+    ],
+    "summary": "학교 밖 청소년의 개인적 수요와 특성을 고려한 상담, 교육, 직업체험 및 취업, 자립지원 프로그램을 제공하여 건강한 사회구성원으로 성장하도록 지원합니다.",
+    "audience": "청소년",
+    "benefits": [
+      "학교 밖 청소년의 개인적 수요와 특성을 고려한 상담, 교육, 직업체험 및 취업, 자립지원 프로그램을 제공하여 건강한 사회구성원으로 성장하도록 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000948&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000948&wlfareInfoReldBztpCd=01",
+    "contact": "1388",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "청소년",
+      "benefit": "학교 밖 청소년의 개인적 수요와 특성을 고려한 상담, 교육, 직업체험 및 취업, 자립지원 프로그램을 제공하여 건강한 사회구성원으로 성장하도록 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1388"
+    }
+  },
+  {
+    "slug": "bokjiro-central-주거안정-월세대출",
+    "title": "주거안정 월세대출",
+    "category": "청년",
+    "source": "복지로 중앙부처 API",
+    "agency": "국토교통부",
+    "region": "전국",
+    "amount": "월세부담이 큰 사회초년생 등의 주택월세자금 융자를 통해 주거안정을 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "주거안정 월세대출",
+      "청년",
+      "전국",
+      "국토교통부",
+      "확인필요",
+      "월세부담이",
+      "큰",
+      "사회초년생",
+      "등의",
+      "주택월세자금",
+      "융자를",
+      "통해",
+      "주거안정을"
+    ],
+    "summary": "월세부담이 큰 사회초년생 등의 주택월세자금 융자를 통해 주거안정을 지원합니다.",
+    "audience": "청년,중장년,노년",
+    "benefits": [
+      "월세부담이 큰 사회초년생 등의 주택월세자금 융자를 통해 주거안정을 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001063&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001063&wlfareInfoReldBztpCd=01",
+    "contact": "1566-9009",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "청년,중장년,노년",
+      "benefit": "월세부담이 큰 사회초년생 등의 주택월세자금 융자를 통해 주거안정을 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1566-9009"
+    }
+  },
+  {
+    "slug": "bokjiro-central-6-25자녀수당",
+    "title": "6.25자녀수당",
+    "category": "복지",
+    "source": "복지로 중앙부처 API",
+    "agency": "국가보훈부",
+    "region": "전국",
+    "amount": "6.25 전쟁 중 전사하거나 순직한 전몰군경 혹은 순직군경 자녀의 생활안정과 복지향상을 위하여 수당을 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "6.25자녀수당",
+      "복지",
+      "전국",
+      "국가보훈부",
+      "확인필요",
+      "일반",
+      "6.25",
+      "전쟁",
+      "중",
+      "전사하거나",
+      "순직한",
+      "전몰군경",
+      "혹은",
+      "순직군경"
+    ],
+    "summary": "6.25 전쟁 중 전사하거나 순직한 전몰군경 혹은 순직군경 자녀의 생활안정과 복지향상을 위하여 수당을 지원합니다.",
+    "audience": "보훈대상자",
+    "benefits": [
+      "6.25 전쟁 중 전사하거나 순직한 전몰군경 혹은 순직군경 자녀의 생활안정과 복지향상을 위하여 수당을 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001064&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001064&wlfareInfoReldBztpCd=01",
+    "contact": "1577-0606",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "보훈대상자",
+      "benefit": "6.25 전쟁 중 전사하거나 순직한 전몰군경 혹은 순직군경 자녀의 생활안정과 복지향상을 위하여 수당을 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-0606"
+    }
+  },
+  {
+    "slug": "bokjiro-central-고엽제후유의증수당",
+    "title": "고엽제후유의증수당",
+    "category": "복지",
+    "source": "복지로 중앙부처 API",
+    "agency": "국가보훈부",
+    "region": "전국",
+    "amount": "고엽제후유의증환자에게 수당을 지급하여 생활안정과 복지향상을 도모합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "고엽제후유의증수당",
+      "복지",
+      "전국",
+      "국가보훈부",
+      "확인필요",
+      "일반",
+      "고엽제후유의증환자에게",
+      "수당을",
+      "지급하여",
+      "생활안정과",
+      "복지향상을",
+      "도모합니다."
+    ],
+    "summary": "고엽제후유의증환자에게 수당을 지급하여 생활안정과 복지향상을 도모합니다.",
+    "audience": "보훈대상자",
+    "benefits": [
+      "고엽제후유의증환자에게 수당을 지급하여 생활안정과 복지향상을 도모합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001065&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001065&wlfareInfoReldBztpCd=01",
+    "contact": "1577-0606",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "보훈대상자",
+      "benefit": "고엽제후유의증환자에게 수당을 지급하여 생활안정과 복지향상을 도모합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-0606"
+    }
+  },
+  {
+    "slug": "bokjiro-central-참전명예수당",
+    "title": "참전명예수당",
+    "category": "복지",
+    "source": "복지로 중앙부처 API",
+    "agency": "국가보훈부",
+    "region": "전국",
+    "amount": "참전유공자에게 수당을 지급하여 생활안정과 복지향상을 도모합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "참전명예수당",
+      "복지",
+      "전국",
+      "국가보훈부",
+      "확인필요",
+      "일반",
+      "참전유공자에게",
+      "수당을",
+      "지급하여",
+      "생활안정과",
+      "복지향상을",
+      "도모합니다."
+    ],
+    "summary": "참전유공자에게 수당을 지급하여 생활안정과 복지향상을 도모합니다.",
+    "audience": "보훈대상자",
+    "benefits": [
+      "참전유공자에게 수당을 지급하여 생활안정과 복지향상을 도모합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001066&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001066&wlfareInfoReldBztpCd=01",
+    "contact": "1577-0606",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "보훈대상자",
+      "benefit": "참전유공자에게 수당을 지급하여 생활안정과 복지향상을 도모합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-0606"
+    }
+  },
+  {
+    "slug": "bokjiro-central-장애아보육료지원",
+    "title": "장애아보육료지원",
+    "category": "교육",
+    "source": "복지로 중앙부처 API",
+    "agency": "교육부",
+    "region": "전국",
+    "amount": "어린이집 이용 장애아동에 대한 보육료 지원을 통해 부모의 자녀양육 부담경감 및 원활한 경제활동을 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애아보육료지원",
+      "교육",
+      "전국",
+      "교육부",
+      "확인필요",
+      "가구·부모",
+      "장애인",
+      "어린이집",
+      "이용",
+      "장애아동에",
+      "대한",
+      "보육료",
+      "지원을",
+      "통해"
+    ],
+    "summary": "어린이집 이용 장애아동에 대한 보육료 지원을 통해 부모의 자녀양육 부담경감 및 원활한 경제활동을 지원합니다.",
+    "audience": "장애인",
+    "benefits": [
+      "어린이집 이용 장애아동에 대한 보육료 지원을 통해 부모의 자녀양육 부담경감 및 원활한 경제활동을 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001067&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001067&wlfareInfoReldBztpCd=01",
+    "contact": "02-6222-6060",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인",
+      "benefit": "어린이집 이용 장애아동에 대한 보육료 지원을 통해 부모의 자녀양육 부담경감 및 원활한 경제활동을 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "02-6222-6060"
+    }
+  },
+  {
+    "slug": "bokjiro-central-한부모가족-아동양육비-지원",
+    "title": "한부모가족 아동양육비 지원",
+    "category": "복지",
+    "source": "복지로 중앙부처 API",
+    "agency": "성평등가족부",
+    "region": null,
+    "amount": "저소득 한부모가족 및 조손가족이 가족의 기능을 유지하고 안정된 생활을 할 수 있도록 아동 양육비를 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "한부모가족 아동양육비 지원",
+      "복지",
+      "성평등가족부",
+      "확인필요",
+      "가구·부모",
+      "취약계층",
+      "저소득",
+      "한부모가족",
+      "및",
+      "조손가족이",
+      "가족의",
+      "기능을",
+      "유지하고",
+      "안정된"
+    ],
+    "summary": "저소득 한부모가족 및 조손가족이 가족의 기능을 유지하고 안정된 생활을 할 수 있도록 아동 양육비를 지원합니다.",
+    "audience": "한부모·조손",
+    "benefits": [
+      "저소득 한부모가족 및 조손가족이 가족의 기능을 유지하고 안정된 생활을 할 수 있도록 아동 양육비를 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001068&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001068&wlfareInfoReldBztpCd=01",
+    "contact": "1577-4206",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "한부모·조손",
+      "benefit": "저소득 한부모가족 및 조손가족이 가족의 기능을 유지하고 안정된 생활을 할 수 있도록 아동 양육비를 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-4206"
+    }
+  },
+  {
+    "slug": "bokjiro-central-산재근로자-합병증-등-예방관리",
+    "title": "산재근로자 합병증 등 예방관리",
+    "category": "고용",
+    "source": "복지로 중앙부처 API",
+    "agency": "고용노동부",
+    "region": "전국",
+    "amount": "산재요양 종결 후 상병 및 장해의 특성으로 인하여 발생하는 합병증 등 예방관리를 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "산재근로자 합병증 등 예방관리",
+      "고용",
+      "전국",
+      "고용노동부",
+      "확인필요",
+      "구직자",
+      "산재요양",
+      "종결",
+      "후",
+      "상병",
+      "및",
+      "장해의",
+      "특성으로",
+      "인하여"
+    ],
+    "summary": "산재요양 종결 후 상병 및 장해의 특성으로 인하여 발생하는 합병증 등 예방관리를 지원합니다.",
+    "audience": "세부 자격은 공식 공고에서 확인하세요.",
+    "benefits": [
+      "산재요양 종결 후 상병 및 장해의 특성으로 인하여 발생하는 합병증 등 예방관리를 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001069&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001069&wlfareInfoReldBztpCd=01",
+    "contact": "1588-0075",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세부 자격은 공식 공고에서 확인하세요.",
+      "benefit": "산재요양 종결 후 상병 및 장해의 특성으로 인하여 발생하는 합병증 등 예방관리를 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1588-0075"
+    }
+  },
+  {
+    "slug": "bokjiro-central-척수장애인재활훈련지원",
+    "title": "척수장애인재활훈련지원",
+    "category": "교육",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "척수장애인에게 사회·심리 재활, 동료 상담가 파견, 지역사회 복귀훈련 등 재활프로그램을 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "척수장애인재활훈련지원",
+      "교육",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "장애인",
+      "척수장애인에게",
+      "사회·심리",
+      "재활,",
+      "동료",
+      "상담가",
+      "파견,",
+      "지역사회",
+      "복귀훈련"
+    ],
+    "summary": "척수장애인에게 사회·심리 재활, 동료 상담가 파견, 지역사회 복귀훈련 등 재활프로그램을 지원합니다.",
+    "audience": "장애인",
+    "benefits": [
+      "척수장애인에게 사회·심리 재활, 동료 상담가 파견, 지역사회 복귀훈련 등 재활프로그램을 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001070&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001070&wlfareInfoReldBztpCd=01",
+    "contact": "02-786-8483",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인",
+      "benefit": "척수장애인에게 사회·심리 재활, 동료 상담가 파견, 지역사회 복귀훈련 등 재활프로그램을 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "02-786-8483"
+    }
+  },
+  {
+    "slug": "bokjiro-central-우수학생-국가장학금-지원",
+    "title": "우수학생 국가장학금 지원",
+    "category": "청년",
+    "source": "복지로 중앙부처 API",
+    "agency": "과학기술정보통신부",
+    "region": null,
+    "amount": "이공계 우수 학생을 조기 발굴, 학비를 지원하여 이공계 진학 유도 및 미래의 핵심인재로 육성을 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "우수학생 국가장학금 지원",
+      "청년",
+      "과학기술정보통신부",
+      "확인필요",
+      "이공계",
+      "우수",
+      "학생을",
+      "조기",
+      "발굴,",
+      "학비를",
+      "지원하여"
+    ],
+    "summary": "이공계 우수 학생을 조기 발굴, 학비를 지원하여 이공계 진학 유도 및 미래의 핵심인재로 육성을 지원합니다.",
+    "audience": "청년",
+    "benefits": [
+      "이공계 우수 학생을 조기 발굴, 학비를 지원하여 이공계 진학 유도 및 미래의 핵심인재로 육성을 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001071&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001071&wlfareInfoReldBztpCd=01",
+    "contact": "1599-2000",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "청년",
+      "benefit": "이공계 우수 학생을 조기 발굴, 학비를 지원하여 이공계 진학 유도 및 미래의 핵심인재로 육성을 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1599-2000"
+    }
+  },
+  {
+    "slug": "bokjiro-central-가정폭력-성폭력-등-폭력-피해자-무료법률지원",
+    "title": "가정폭력·성폭력 등 폭력 피해자 무료법률지원",
+    "category": "복지",
+    "source": "복지로 중앙부처 API",
+    "agency": "성평등가족",
+    "region": null,
+    "amount": "가정폭력 및 성폭력, 스토킹, 교제폭력 피해자 대상 무료법률지원을 통해 권익을 보호합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "source category is missing; central welfare service mapped to 복지 for review",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "가정폭력·성폭력 등 폭력 피해자 무료법률지원",
+      "복지",
+      "성평등가족",
+      "확인필요",
+      "일반",
+      "가정폭력",
+      "및",
+      "성폭력,",
+      "스토킹,",
+      "교제폭력",
+      "피해자",
+      "대상",
+      "무료법률지원을"
+    ],
+    "summary": "가정폭력 및 성폭력, 스토킹, 교제폭력 피해자 대상 무료법률지원을 통해 권익을 보호합니다.",
+    "audience": "세부 자격은 공식 공고에서 확인하세요.",
+    "benefits": [
+      "가정폭력 및 성폭력, 스토킹, 교제폭력 피해자 대상 무료법률지원을 통해 권익을 보호합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001072&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001072&wlfareInfoReldBztpCd=01",
+    "contact": "132",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세부 자격은 공식 공고에서 확인하세요.",
+      "benefit": "가정폭력 및 성폭력, 스토킹, 교제폭력 피해자 대상 무료법률지원을 통해 권익을 보호합니다.",
+      "application": "공식 공고 확인",
+      "contact": "132"
+    }
+  },
+  {
+    "slug": "bokjiro-central-장기복무제대군인수업료지원",
+    "title": "장기복무제대군인수업료지원",
+    "category": "교육",
+    "source": "복지로 중앙부처 API",
+    "agency": "국가보훈부",
+    "region": "전국",
+    "amount": "장기복무 제대군인에 대한 교육비 지원으로 생활안정을 도모합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장기복무제대군인수업료지원",
+      "교육",
+      "전국",
+      "국가보훈부",
+      "확인필요",
+      "일반",
+      "장기복무",
+      "제대군인에",
+      "대한",
+      "교육비",
+      "지원으로",
+      "생활안정을",
+      "도모합니다."
+    ],
+    "summary": "장기복무 제대군인에 대한 교육비 지원으로 생활안정을 도모합니다.",
+    "audience": "보훈대상자",
+    "benefits": [
+      "장기복무 제대군인에 대한 교육비 지원으로 생활안정을 도모합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001073&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001073&wlfareInfoReldBztpCd=01",
+    "contact": "1577-0606",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "보훈대상자",
+      "benefit": "장기복무 제대군인에 대한 교육비 지원으로 생활안정을 도모합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-0606"
+    }
+  },
+  {
+    "slug": "bokjiro-central-재해보상금",
+    "title": "재해보상금",
+    "category": "복지",
+    "source": "복지로 중앙부처 API",
+    "agency": "국가보훈부",
+    "region": "전국",
+    "amount": "의무경찰, 의무소방대원, 교정시설 경비교도대원이 복무중 사망하거나 상이를 입고 퇴직한 경우 재해보상금을 지급하여 국가의 책임을 강화합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "source category is missing; central welfare service mapped to 복지 for review",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "재해보상금",
+      "복지",
+      "전국",
+      "국가보훈부",
+      "확인필요",
+      "일반",
+      "의무경찰,",
+      "의무소방대원,",
+      "교정시설",
+      "경비교도대원이",
+      "복무중",
+      "사망하거나",
+      "상이를",
+      "입고"
+    ],
+    "summary": "의무경찰, 의무소방대원, 교정시설 경비교도대원이 복무중 사망하거나 상이를 입고 퇴직한 경우 재해보상금을 지급하여 국가의 책임을 강화합니다.",
+    "audience": "보훈대상자",
+    "benefits": [
+      "의무경찰, 의무소방대원, 교정시설 경비교도대원이 복무중 사망하거나 상이를 입고 퇴직한 경우 재해보상금을 지급하여 국가의 책임을 강화합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001074&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001074&wlfareInfoReldBztpCd=01",
+    "contact": "1577-0606",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "보훈대상자",
+      "benefit": "의무경찰, 의무소방대원, 교정시설 경비교도대원이 복무중 사망하거나 상이를 입고 퇴직한 경우 재해보상금을 지급하여 국가의 책임을 강화합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-0606"
+    }
+  },
+  {
+    "slug": "bokjiro-central-장애학생-정보격차-해소-지원",
+    "title": "장애학생 정보격차 해소 지원",
+    "category": "교육",
+    "source": "복지로 중앙부처 API",
+    "agency": "교육부",
+    "region": "전국",
+    "amount": "특수교육대상자를 위한 교수-학습 지원 콘텐츠 개발 및 사이트를 운영하여 정보격차 해소를 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애학생 정보격차 해소 지원",
+      "교육",
+      "전국",
+      "교육부",
+      "확인필요",
+      "장애인",
+      "특수교육대상자를",
+      "위한",
+      "교수-학습",
+      "지원",
+      "콘텐츠",
+      "개발",
+      "및",
+      "사이트를"
+    ],
+    "summary": "특수교육대상자를 위한 교수-학습 지원 콘텐츠 개발 및 사이트를 운영하여 정보격차 해소를 지원합니다.",
+    "audience": "장애인",
+    "benefits": [
+      "특수교육대상자를 위한 교수-학습 지원 콘텐츠 개발 및 사이트를 운영하여 정보격차 해소를 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001075&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001075&wlfareInfoReldBztpCd=01",
+    "contact": "041-537-1485",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인",
+      "benefit": "특수교육대상자를 위한 교수-학습 지원 콘텐츠 개발 및 사이트를 운영하여 정보격차 해소를 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "041-537-1485"
+    }
+  },
+  {
+    "slug": "bokjiro-central-서민금융-활성화-지원-햇살론youth-보증사업",
+    "title": "서민금융 활성화 지원(햇살론youth 보증사업)",
+    "category": "청년",
+    "source": "복지로 중앙부처 API",
+    "agency": "금융위원회",
+    "region": null,
+    "amount": "금융취약계층인 대학생, 청년의 금융애로를 해소하여 학업 및 취업에 전념, 향후 제도권 금융으로 안착할 수 있도록 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "청년, 구직자, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "서민금융 활성화 지원(햇살론youth 보증사업)",
+      "청년",
+      "금융위원회",
+      "확인필요",
+      "구직자",
+      "취약계층",
+      "금융취약계층인",
+      "대학생,",
+      "청년의",
+      "금융애로를",
+      "해소하여",
+      "학업",
+      "및",
+      "취업에"
+    ],
+    "summary": "금융취약계층인 대학생, 청년의 금융애로를 해소하여 학업 및 취업에 전념, 향후 제도권 금융으로 안착할 수 있도록 지원합니다.",
+    "audience": "청년",
+    "benefits": [
+      "금융취약계층인 대학생, 청년의 금융애로를 해소하여 학업 및 취업에 전념, 향후 제도권 금융으로 안착할 수 있도록 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001076&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001076&wlfareInfoReldBztpCd=01",
+    "contact": "1397",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "청년",
+      "benefit": "금융취약계층인 대학생, 청년의 금융애로를 해소하여 학업 및 취업에 전념, 향후 제도권 금융으로 안착할 수 있도록 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1397"
+    }
+  },
+  {
+    "slug": "bokjiro-central-가정폭력상담소-운영지원",
+    "title": "가정폭력상담소 운영지원",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "성평등가족부",
+    "region": null,
+    "amount": "가정폭력·스토킹, 교제폭력의 피해자를 상담하고 임시보호하며, 의료기관, 법률기관, 피해자 보호시설로 인도합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "가정폭력상담소 운영지원",
+      "보건의료",
+      "성평등가족부",
+      "확인필요",
+      "일반",
+      "가정폭력·스토킹,",
+      "교제폭력의",
+      "피해자를",
+      "상담하고",
+      "임시보호하며,",
+      "의료기관,",
+      "법률기관,",
+      "피해자"
+    ],
+    "summary": "가정폭력·스토킹, 교제폭력의 피해자를 상담하고 임시보호하며, 의료기관, 법률기관, 피해자 보호시설로 인도합니다.",
+    "audience": "세부 자격은 공식 공고에서 확인하세요.",
+    "benefits": [
+      "가정폭력·스토킹, 교제폭력의 피해자를 상담하고 임시보호하며, 의료기관, 법률기관, 피해자 보호시설로 인도합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001077&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001077&wlfareInfoReldBztpCd=01",
+    "contact": "1366",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세부 자격은 공식 공고에서 확인하세요.",
+      "benefit": "가정폭력·스토킹, 교제폭력의 피해자를 상담하고 임시보호하며, 의료기관, 법률기관, 피해자 보호시설로 인도합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1366"
+    }
+  },
+  {
+    "slug": "bokjiro-central-주거안정-월세대출-보증",
+    "title": "주거안정 월세대출 보증",
+    "category": "주거",
+    "source": "복지로 중앙부처 API",
+    "agency": "금융위원회",
+    "region": null,
+    "amount": "자력은 부족하지만 장래 소득발생이 예상되고 자활의지가 있는 저소득 계층의 주거안정을 위해 월세대출을 보증합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "주거안정 월세대출 보증",
+      "주거",
+      "금융위원회",
+      "확인필요",
+      "취약계층",
+      "자력은",
+      "부족하지만",
+      "장래",
+      "소득발생이",
+      "예상되고",
+      "자활의지가",
+      "있는",
+      "저소득"
+    ],
+    "summary": "자력은 부족하지만 장래 소득발생이 예상되고 자활의지가 있는 저소득 계층의 주거안정을 위해 월세대출을 보증합니다.",
+    "audience": "세부 자격은 공식 공고에서 확인하세요.",
+    "benefits": [
+      "자력은 부족하지만 장래 소득발생이 예상되고 자활의지가 있는 저소득 계층의 주거안정을 위해 월세대출을 보증합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001079&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001079&wlfareInfoReldBztpCd=01",
+    "contact": "1688-8114",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세부 자격은 공식 공고에서 확인하세요.",
+      "benefit": "자력은 부족하지만 장래 소득발생이 예상되고 자활의지가 있는 저소득 계층의 주거안정을 위해 월세대출을 보증합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1688-8114"
+    }
+  },
+  {
+    "slug": "bokjiro-central-산재근로자-생활안정자금융자",
+    "title": "산재근로자 생활안정자금융자",
+    "category": "고용",
+    "source": "복지로 중앙부처 API",
+    "agency": "고용노동부",
+    "region": "전국",
+    "amount": "산재노동자에게 생활안정 자금 융자를 통해 필요한 자금을 신속하게 지원하고 안정된 생활을 유지하도록 도와드립니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "산재근로자 생활안정자금융자",
+      "고용",
+      "전국",
+      "고용노동부",
+      "확인필요",
+      "구직자",
+      "산재노동자에게",
+      "생활안정",
+      "자금",
+      "융자를",
+      "통해",
+      "필요한",
+      "자금을",
+      "신속하게"
+    ],
+    "summary": "산재노동자에게 생활안정 자금 융자를 통해 필요한 자금을 신속하게 지원하고 안정된 생활을 유지하도록 도와드립니다.",
+    "audience": "세부 자격은 공식 공고에서 확인하세요.",
+    "benefits": [
+      "산재노동자에게 생활안정 자금 융자를 통해 필요한 자금을 신속하게 지원하고 안정된 생활을 유지하도록 도와드립니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001080&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001080&wlfareInfoReldBztpCd=01",
+    "contact": "1588-0075",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세부 자격은 공식 공고에서 확인하세요.",
+      "benefit": "산재노동자에게 생활안정 자금 융자를 통해 필요한 자금을 신속하게 지원하고 안정된 생활을 유지하도록 도와드립니다.",
+      "application": "공식 공고 확인",
+      "contact": "1588-0075"
+    }
+  },
+  {
+    "slug": "bokjiro-central-디지털배움터",
+    "title": "디지털배움터",
+    "category": "교육",
+    "source": "복지로 중앙부처 API",
+    "agency": "과학기술정보통신부",
+    "region": null,
+    "amount": "AI·디지털 전환에 대응하여, AI·디지털 취약계층을 대상으로 키오스크부터 생성형 AI 활용법까지 AI·디지털 역량강화 교육을 제공합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "디지털배움터",
+      "교육",
+      "과학기술정보통신부",
+      "확인필요",
+      "취약계층",
+      "AI·디지털",
+      "전환에",
+      "대응하여,",
+      "취약계층을",
+      "대상으로",
+      "키오스크부터",
+      "생성형"
+    ],
+    "summary": "AI·디지털 전환에 대응하여, AI·디지털 취약계층을 대상으로 키오스크부터 생성형 AI 활용법까지 AI·디지털 역량강화 교육을 제공합니다.",
+    "audience": "세부 자격은 공식 공고에서 확인하세요.",
+    "benefits": [
+      "AI·디지털 전환에 대응하여, AI·디지털 취약계층을 대상으로 키오스크부터 생성형 AI 활용법까지 AI·디지털 역량강화 교육을 제공합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001083&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001083&wlfareInfoReldBztpCd=01",
+    "contact": "1800-0096",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세부 자격은 공식 공고에서 확인하세요.",
+      "benefit": "AI·디지털 전환에 대응하여, AI·디지털 취약계층을 대상으로 키오스크부터 생성형 AI 활용법까지 AI·디지털 역량강화 교육을 제공합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1800-0096"
+    }
+  },
+  {
+    "slug": "bokjiro-central-여성긴급전화-1366센터-운영-지원",
+    "title": "여성긴급전화 1366센터 운영 지원",
+    "category": "복지",
+    "source": "복지로 중앙부처 API",
+    "agency": "성평등가족부",
+    "region": null,
+    "amount": "가정폭력·성폭력·스토킹 등 폭력 피해자에 대해 신고접수 및 긴급상담, 관련 기관 및 시설과의 연계, 피해자에 대해 긴급구조를 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "source category is missing; central welfare service mapped to 복지 for review",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "여성긴급전화 1366센터 운영 지원",
+      "복지",
+      "성평등가족부",
+      "확인필요",
+      "일반",
+      "가정폭력·성폭력·스토킹",
+      "등",
+      "폭력",
+      "피해자에",
+      "대해",
+      "신고접수",
+      "및",
+      "긴급상담,"
+    ],
+    "summary": "가정폭력·성폭력·스토킹 등 폭력 피해자에 대해 신고접수 및 긴급상담, 관련 기관 및 시설과의 연계, 피해자에 대해 긴급구조를 지원합니다.",
+    "audience": "세부 자격은 공식 공고에서 확인하세요.",
+    "benefits": [
+      "가정폭력·성폭력·스토킹 등 폭력 피해자에 대해 신고접수 및 긴급상담, 관련 기관 및 시설과의 연계, 피해자에 대해 긴급구조를 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001084&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001084&wlfareInfoReldBztpCd=01",
+    "contact": "1366",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세부 자격은 공식 공고에서 확인하세요.",
+      "benefit": "가정폭력·성폭력·스토킹 등 폭력 피해자에 대해 신고접수 및 긴급상담, 관련 기관 및 시설과의 연계, 피해자에 대해 긴급구조를 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1366"
+    }
+  },
+  {
+    "slug": "bokjiro-central-산재근로자원직장복귀지원",
+    "title": "산재근로자원직장복귀지원",
+    "category": "고용",
+    "source": "복지로 중앙부처 API",
+    "agency": "고용노동부",
+    "region": "전국",
+    "amount": "산업재해로 장해를 입은 근로자가 기존 직장으로 복귀할 수 있도록 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "산재근로자원직장복귀지원",
+      "고용",
+      "전국",
+      "고용노동부",
+      "확인필요",
+      "구직자",
+      "산업재해로",
+      "장해를",
+      "입은",
+      "근로자가",
+      "기존",
+      "직장으로",
+      "복귀할",
+      "수"
+    ],
+    "summary": "산업재해로 장해를 입은 근로자가 기존 직장으로 복귀할 수 있도록 지원합니다.",
+    "audience": "세부 자격은 공식 공고에서 확인하세요.",
+    "benefits": [
+      "산업재해로 장해를 입은 근로자가 기존 직장으로 복귀할 수 있도록 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001085&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001085&wlfareInfoReldBztpCd=01",
+    "contact": "1588-0075",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세부 자격은 공식 공고에서 확인하세요.",
+      "benefit": "산업재해로 장해를 입은 근로자가 기존 직장으로 복귀할 수 있도록 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1588-0075"
+    }
+  },
+  {
+    "slug": "bokjiro-central-특별현금급여-가족요양비",
+    "title": "특별현금급여(가족요양비)",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "가족등으로부터 방문요양에 상당한 장기요양급여를 받은 때 수급자에게 특별현금급여를 지급합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "특별현금급여(가족요양비)",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "일반",
+      "가족등으로부터",
+      "방문요양에",
+      "상당한",
+      "장기요양급여를",
+      "받은",
+      "때",
+      "수급자에게",
+      "특별현금급여를"
+    ],
+    "summary": "가족등으로부터 방문요양에 상당한 장기요양급여를 받은 때 수급자에게 특별현금급여를 지급합니다.",
+    "audience": "노년",
+    "benefits": [
+      "가족등으로부터 방문요양에 상당한 장기요양급여를 받은 때 수급자에게 특별현금급여를 지급합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001086&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001086&wlfareInfoReldBztpCd=01",
+    "contact": "1577-1000",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "노년",
+      "benefit": "가족등으로부터 방문요양에 상당한 장기요양급여를 받은 때 수급자에게 특별현금급여를 지급합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-1000"
+    }
+  },
+  {
+    "slug": "bokjiro-central-가사-간병-방문-지원사업",
+    "title": "가사·간병 방문 지원사업",
+    "category": "고용",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "일상생활이 어려운 저소득층 가정에 간병·가사 서비스를 지원하여 취약계층의 생활 안정을 도모하고 가사·간병 방문 제공인력의 사회적 일자리를 창출합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모, 장애인, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "가사·간병 방문 지원사업",
+      "고용",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "가구·부모",
+      "장애인",
+      "취약계층",
+      "일상생활이",
+      "어려운",
+      "저소득층",
+      "가정에",
+      "간병·가사",
+      "서비스를"
+    ],
+    "summary": "일상생활이 어려운 저소득층 가정에 간병·가사 서비스를 지원하여 취약계층의 생활 안정을 도모하고 가사·간병 방문 제공인력의 사회적 일자리를 창출합니다.",
+    "audience": "장애인,저소득,한부모·조손",
+    "benefits": [
+      "일상생활이 어려운 저소득층 가정에 간병·가사 서비스를 지원하여 취약계층의 생활 안정을 도모하고 가사·간병 방문 제공인력의 사회적 일자리를 창출합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001087&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001087&wlfareInfoReldBztpCd=01",
+    "contact": "129",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인,저소득,한부모·조손",
+      "benefit": "일상생활이 어려운 저소득층 가정에 간병·가사 서비스를 지원하여 취약계층의 생활 안정을 도모하고 가사·간병 방문 제공인력의 사회적 일자리를 창출합니다.",
+      "application": "공식 공고 확인",
+      "contact": "129"
+    }
+  },
+  {
+    "slug": "bokjiro-central-고위험-임산부-의료비-지원",
+    "title": "고위험 임산부 의료비 지원",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "고위험 임신의 적정 치료와 관리에 필요한 진료비를 지원하여 경제적 부담을 줄이고, 건강한 출산을 보장합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "고위험 임산부 의료비 지원",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "가구·부모",
+      "고위험",
+      "임신의",
+      "적정",
+      "치료와",
+      "관리에",
+      "필요한",
+      "진료비를",
+      "지원하여"
+    ],
+    "summary": "고위험 임신의 적정 치료와 관리에 필요한 진료비를 지원하여 경제적 부담을 줄이고, 건강한 출산을 보장합니다.",
+    "audience": "임신 · 출산",
+    "benefits": [
+      "고위험 임신의 적정 치료와 관리에 필요한 진료비를 지원하여 경제적 부담을 줄이고, 건강한 출산을 보장합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001088&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001088&wlfareInfoReldBztpCd=01",
+    "contact": "129",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "임신 · 출산",
+      "benefit": "고위험 임신의 적정 치료와 관리에 필요한 진료비를 지원하여 경제적 부담을 줄이고, 건강한 출산을 보장합니다.",
+      "application": "공식 공고 확인",
+      "contact": "129"
+    }
+  },
+  {
+    "slug": "bokjiro-central-교육급여-맞춤형-급여",
+    "title": "교육급여(맞춤형 급여)",
+    "category": "교육",
+    "source": "복지로 중앙부처 API",
+    "agency": "교육부",
+    "region": "전국",
+    "amount": "생계유지 능력이 없거나 생활이 어려운 자에게 필요한 교육급여를 지급하여 빈곤층 교육비 부담을 경감하고 실질적인 교육기회를 보장합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "교육급여(맞춤형 급여)",
+      "교육",
+      "전국",
+      "교육부",
+      "확인필요",
+      "취약계층",
+      "생계유지",
+      "능력이",
+      "없거나",
+      "생활이",
+      "어려운",
+      "자에게",
+      "필요한",
+      "교육급여를"
+    ],
+    "summary": "생계유지 능력이 없거나 생활이 어려운 자에게 필요한 교육급여를 지급하여 빈곤층 교육비 부담을 경감하고 실질적인 교육기회를 보장합니다.",
+    "audience": "저소득",
+    "benefits": [
+      "생계유지 능력이 없거나 생활이 어려운 자에게 필요한 교육급여를 지급하여 빈곤층 교육비 부담을 경감하고 실질적인 교육기회를 보장합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001089&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001089&wlfareInfoReldBztpCd=01",
+    "contact": "1599-2000",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "저소득",
+      "benefit": "생계유지 능력이 없거나 생활이 어려운 자에게 필요한 교육급여를 지급하여 빈곤층 교육비 부담을 경감하고 실질적인 교육기회를 보장합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1599-2000"
+    }
+  },
+  {
+    "slug": "bokjiro-central-장애인고용장려금",
+    "title": "장애인고용장려금",
+    "category": "고용",
+    "source": "복지로 중앙부처 API",
+    "agency": "고용노동부",
+    "region": "전국",
+    "amount": "장애인 의무고용률을 초과하여 장애인을 고용하는 사업주에게 고용장려금을 지급하여 장애인 근로자의 직업생활 안정을 도모합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "구직자, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인고용장려금",
+      "고용",
+      "전국",
+      "고용노동부",
+      "확인필요",
+      "구직자",
+      "장애인",
+      "의무고용률을",
+      "초과하여",
+      "장애인을",
+      "고용하는",
+      "사업주에게",
+      "고용장려금을",
+      "지급하여"
+    ],
+    "summary": "장애인 의무고용률을 초과하여 장애인을 고용하는 사업주에게 고용장려금을 지급하여 장애인 근로자의 직업생활 안정을 도모합니다.",
+    "audience": "장애인",
+    "benefits": [
+      "장애인 의무고용률을 초과하여 장애인을 고용하는 사업주에게 고용장려금을 지급하여 장애인 근로자의 직업생활 안정을 도모합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001090&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001090&wlfareInfoReldBztpCd=01",
+    "contact": "1588-1519",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인",
+      "benefit": "장애인 의무고용률을 초과하여 장애인을 고용하는 사업주에게 고용장려금을 지급하여 장애인 근로자의 직업생활 안정을 도모합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1588-1519"
+    }
+  },
+  {
+    "slug": "bokjiro-central-국가유공자의료급여증발급",
+    "title": "국가유공자의료급여증발급",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "국가보훈부",
+    "region": "전국",
+    "amount": "저소득 국가유공자와 가족들의 의료비 부담 경감을 위해 국가유공자 의료급여증을 발급합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "국가유공자의료급여증발급",
+      "보건의료",
+      "전국",
+      "국가보훈부",
+      "확인필요",
+      "취약계층",
+      "저소득",
+      "국가유공자와",
+      "가족들의",
+      "의료비",
+      "부담",
+      "경감을",
+      "위해",
+      "국가유공자"
+    ],
+    "summary": "저소득 국가유공자와 가족들의 의료비 부담 경감을 위해 국가유공자 의료급여증을 발급합니다.",
+    "audience": "보훈대상자,저소득",
+    "benefits": [
+      "저소득 국가유공자와 가족들의 의료비 부담 경감을 위해 국가유공자 의료급여증을 발급합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001091&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001091&wlfareInfoReldBztpCd=01",
+    "contact": "1577-0606",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "보훈대상자,저소득",
+      "benefit": "저소득 국가유공자와 가족들의 의료비 부담 경감을 위해 국가유공자 의료급여증을 발급합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-0606"
+    }
+  },
+  {
+    "slug": "bokjiro-central-요양급여-보조기-산재보험급여",
+    "title": "요양급여(보조기)-산재보험급여",
+    "category": "고용",
+    "source": "복지로 중앙부처 API",
+    "agency": "고용노동부",
+    "region": "전국",
+    "amount": "근로자의 업무상 사유에 의한 부상 및 질병에 대한 재활보조기구 비용(요양급여)을 지급하여 근로자의 재활 및 사회 복귀를 촉진합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "요양급여(보조기)-산재보험급여",
+      "고용",
+      "전국",
+      "고용노동부",
+      "확인필요",
+      "구직자",
+      "근로자의",
+      "업무상",
+      "사유에",
+      "의한",
+      "부상",
+      "및",
+      "질병에",
+      "대한"
+    ],
+    "summary": "근로자의 업무상 사유에 의한 부상 및 질병에 대한 재활보조기구 비용(요양급여)을 지급하여 근로자의 재활 및 사회 복귀를 촉진합니다.",
+    "audience": "세부 자격은 공식 공고에서 확인하세요.",
+    "benefits": [
+      "근로자의 업무상 사유에 의한 부상 및 질병에 대한 재활보조기구 비용(요양급여)을 지급하여 근로자의 재활 및 사회 복귀를 촉진합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001092&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001092&wlfareInfoReldBztpCd=01",
+    "contact": "1588-0075",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세부 자격은 공식 공고에서 확인하세요.",
+      "benefit": "근로자의 업무상 사유에 의한 부상 및 질병에 대한 재활보조기구 비용(요양급여)을 지급하여 근로자의 재활 및 사회 복귀를 촉진합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1588-0075"
+    }
+  },
+  {
+    "slug": "bokjiro-central-독거노인-장애인-응급안전안심서비스",
+    "title": "독거노인·장애인 응급안전안심서비스",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "안전의 사각지대에 있는 노인과 장애인이 응급상황을 인지하고 응급상황에 대처할 수 있도록 안전대책을 마련하여 지역사회 예방적 돌봄을 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모, 어르신, 장애인, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "독거노인·장애인 응급안전안심서비스",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "가구·부모",
+      "어르신",
+      "장애인",
+      "취약계층",
+      "안전의",
+      "사각지대에",
+      "있는",
+      "노인과",
+      "장애인이"
+    ],
+    "summary": "안전의 사각지대에 있는 노인과 장애인이 응급상황을 인지하고 응급상황에 대처할 수 있도록 안전대책을 마련하여 지역사회 예방적 돌봄을 지원합니다.",
+    "audience": "장애인,저소득,한부모·조손",
+    "benefits": [
+      "안전의 사각지대에 있는 노인과 장애인이 응급상황을 인지하고 응급상황에 대처할 수 있도록 안전대책을 마련하여 지역사회 예방적 돌봄을 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001093&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001093&wlfareInfoReldBztpCd=01",
+    "contact": "129",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인,저소득,한부모·조손",
+      "benefit": "안전의 사각지대에 있는 노인과 장애인이 응급상황을 인지하고 응급상황에 대처할 수 있도록 안전대책을 마련하여 지역사회 예방적 돌봄을 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "129"
+    }
+  },
+  {
+    "slug": "bokjiro-central-어린이집지원-교사근무환경개선비-교사겸직원장지원비",
+    "title": "어린이집지원(교사근무환경개선비,교사겸직원장지원비)",
+    "category": "교육",
+    "source": "복지로 중앙부처 API",
+    "agency": "교육부",
+    "region": "전국",
+    "amount": "어린이집 보육교사와 교사를 겸직하는 원장의 근로여건개선을 위해 근무환경 개선비를 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "구직자, 가구·부모",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "어린이집지원(교사근무환경개선비,교사겸직원장지원비)",
+      "교육",
+      "전국",
+      "교육부",
+      "확인필요",
+      "구직자",
+      "가구·부모",
+      "어린이집",
+      "보육교사와",
+      "교사를",
+      "겸직하는",
+      "원장의",
+      "근로여건개선을",
+      "위해"
+    ],
+    "summary": "어린이집 보육교사와 교사를 겸직하는 원장의 근로여건개선을 위해 근무환경 개선비를 지원합니다.",
+    "audience": "세부 자격은 공식 공고에서 확인하세요.",
+    "benefits": [
+      "어린이집 보육교사와 교사를 겸직하는 원장의 근로여건개선을 위해 근무환경 개선비를 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001094&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001094&wlfareInfoReldBztpCd=01",
+    "contact": "02-6222-6060",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세부 자격은 공식 공고에서 확인하세요.",
+      "benefit": "어린이집 보육교사와 교사를 겸직하는 원장의 근로여건개선을 위해 근무환경 개선비를 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "02-6222-6060"
+    }
+  },
+  {
+    "slug": "bokjiro-central-농촌출신대학생학자금융자",
+    "title": "농촌출신대학생학자금융자",
+    "category": "청년",
+    "source": "복지로 중앙부처 API",
+    "agency": "농림축산식품부",
+    "region": null,
+    "amount": "농어촌출신 대학생에게 등록금 전액을 무이자로 대출해줌으로써 농어업인 자녀에게 균등한 교육기회를 제공합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "청년, 농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "농촌출신대학생학자금융자",
+      "청년",
+      "농림축산식품부",
+      "확인필요",
+      "농어업인",
+      "농어촌출신",
+      "대학생에게",
+      "등록금",
+      "전액을",
+      "무이자로",
+      "대출해줌으로써",
+      "자녀에게"
+    ],
+    "summary": "농어촌출신 대학생에게 등록금 전액을 무이자로 대출해줌으로써 농어업인 자녀에게 균등한 교육기회를 제공합니다.",
+    "audience": "청년,중장년,노년",
+    "benefits": [
+      "농어촌출신 대학생에게 등록금 전액을 무이자로 대출해줌으로써 농어업인 자녀에게 균등한 교육기회를 제공합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001096&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001096&wlfareInfoReldBztpCd=01",
+    "contact": "1599-2000",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "청년,중장년,노년",
+      "benefit": "농어촌출신 대학생에게 등록금 전액을 무이자로 대출해줌으로써 농어업인 자녀에게 균등한 교육기회를 제공합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1599-2000"
+    }
+  },
+  {
+    "slug": "bokjiro-central-농업인연금보험료지원",
+    "title": "농업인연금보험료지원",
+    "category": "농림어업",
+    "source": "복지로 중앙부처 API",
+    "agency": "농림축산식품부",
+    "region": null,
+    "amount": "농산물 수입개방 확대로 인한 농업인의 경제적 부담을 경감하기 위해 연금 보험료 일부를 지원하여 안정적인 노후생활을 도모하고, 노후소득을 보장합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "농업인연금보험료지원",
+      "농림어업",
+      "농림축산식품부",
+      "확인필요",
+      "농어업인",
+      "농산물",
+      "수입개방",
+      "확대로",
+      "인한",
+      "농업인의",
+      "경제적",
+      "부담을",
+      "경감하기"
+    ],
+    "summary": "농산물 수입개방 확대로 인한 농업인의 경제적 부담을 경감하기 위해 연금 보험료 일부를 지원하여 안정적인 노후생활을 도모하고, 노후소득을 보장합니다.",
+    "audience": "세부 자격은 공식 공고에서 확인하세요.",
+    "benefits": [
+      "농산물 수입개방 확대로 인한 농업인의 경제적 부담을 경감하기 위해 연금 보험료 일부를 지원하여 안정적인 노후생활을 도모하고, 노후소득을 보장합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001097&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001097&wlfareInfoReldBztpCd=01",
+    "contact": "1355",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세부 자격은 공식 공고에서 확인하세요.",
+      "benefit": "농산물 수입개방 확대로 인한 농업인의 경제적 부담을 경감하기 위해 연금 보험료 일부를 지원하여 안정적인 노후생활을 도모하고, 노후소득을 보장합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1355"
+    }
+  },
+  {
+    "slug": "bokjiro-central-온가족보듬사업",
+    "title": "온가족보듬사업",
+    "category": "문화생활",
+    "source": "복지로 중앙부처 API",
+    "agency": "성평등가족부",
+    "region": null,
+    "amount": "취약가족 및 긴급·위기가족이 가족 기능을 회복하고 정서적, 경제적 자립역량을 강화할 수 있도록 합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "온가족보듬사업",
+      "문화생활",
+      "성평등가족부",
+      "확인필요",
+      "가구·부모",
+      "취약계층",
+      "취약가족",
+      "및",
+      "긴급·위기가족이",
+      "가족",
+      "기능을",
+      "회복하고",
+      "정서적,",
+      "경제적"
+    ],
+    "summary": "취약가족 및 긴급·위기가족이 가족 기능을 회복하고 정서적, 경제적 자립역량을 강화할 수 있도록 합니다.",
+    "audience": "다문화·탈북민,저소득,한부모·조손",
+    "benefits": [
+      "취약가족 및 긴급·위기가족이 가족 기능을 회복하고 정서적, 경제적 자립역량을 강화할 수 있도록 합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001098&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001098&wlfareInfoReldBztpCd=01",
+    "contact": "1577-9337",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "다문화·탈북민,저소득,한부모·조손",
+      "benefit": "취약가족 및 긴급·위기가족이 가족 기능을 회복하고 정서적, 경제적 자립역량을 강화할 수 있도록 합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-9337"
+    }
+  },
+  {
+    "slug": "bokjiro-central-농업인건강보험료지원",
+    "title": "농업인건강보험료지원",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "농림축산식품부",
+    "region": null,
+    "amount": "의료 이용 접근성이 낮은 농어촌 거주 농업인에 대해 건강보험료 일부를 지원하여 생활안정과 복지증진을 도모합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "농업인건강보험료지원",
+      "보건의료",
+      "농림축산식품부",
+      "확인필요",
+      "농어업인",
+      "의료",
+      "이용",
+      "접근성이",
+      "낮은",
+      "농어촌",
+      "거주",
+      "농업인에",
+      "대해"
+    ],
+    "summary": "의료 이용 접근성이 낮은 농어촌 거주 농업인에 대해 건강보험료 일부를 지원하여 생활안정과 복지증진을 도모합니다.",
+    "audience": "세부 자격은 공식 공고에서 확인하세요.",
+    "benefits": [
+      "의료 이용 접근성이 낮은 농어촌 거주 농업인에 대해 건강보험료 일부를 지원하여 생활안정과 복지증진을 도모합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001099&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001099&wlfareInfoReldBztpCd=01",
+    "contact": "1577-1000",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세부 자격은 공식 공고에서 확인하세요.",
+      "benefit": "의료 이용 접근성이 낮은 농어촌 거주 농업인에 대해 건강보험료 일부를 지원하여 생활안정과 복지증진을 도모합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-1000"
+    }
+  },
+  {
+    "slug": "bokjiro-central-큰글자책-보급-지원",
+    "title": "큰글자책 보급 지원",
+    "category": "문화생활",
+    "source": "복지로 중앙부처 API",
+    "agency": "문화체육관광부",
+    "region": null,
+    "amount": "공공도서관에 큰글자책을 보급하여 노년층, 저시력자 등 독서 취약계층의 도서 접근성을 강화하고 장서개발을 확대합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "큰글자책 보급 지원",
+      "문화생활",
+      "문화체육관광부",
+      "확인필요",
+      "취약계층",
+      "공공도서관에",
+      "큰글자책을",
+      "보급하여",
+      "노년층,",
+      "저시력자",
+      "등",
+      "독서",
+      "취약계층의"
+    ],
+    "summary": "공공도서관에 큰글자책을 보급하여 노년층, 저시력자 등 독서 취약계층의 도서 접근성을 강화하고 장서개발을 확대합니다.",
+    "audience": "중장년,노년",
+    "benefits": [
+      "공공도서관에 큰글자책을 보급하여 노년층, 저시력자 등 독서 취약계층의 도서 접근성을 강화하고 장서개발을 확대합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001100&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001100&wlfareInfoReldBztpCd=01",
+    "contact": "044-203-2628",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "중장년,노년",
+      "benefit": "공공도서관에 큰글자책을 보급하여 노년층, 저시력자 등 독서 취약계층의 도서 접근성을 강화하고 장서개발을 확대합니다.",
+      "application": "공식 공고 확인",
+      "contact": "044-203-2628"
+    }
+  },
+  {
+    "slug": "bokjiro-central-폭력피해자-주거지원-사업",
+    "title": "폭력피해자 주거지원 사업",
+    "category": "주거",
+    "source": "복지로 중앙부처 API",
+    "agency": "성평등가족부",
+    "region": null,
+    "amount": "가정폭력, 성폭력 등 폭력피해자들의 자립을 지원하고 사회 적응 여건을 조성하고자, 폭력 피해여성과 그 가족들이 공동으로 생활할 수 있는 주거 공간을 제공합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "폭력피해자 주거지원 사업",
+      "주거",
+      "성평등가족부",
+      "확인필요",
+      "장애인",
+      "가정폭력,",
+      "성폭력",
+      "등",
+      "폭력피해자들의",
+      "자립을",
+      "지원하고",
+      "사회",
+      "적응"
+    ],
+    "summary": "가정폭력, 성폭력 등 폭력피해자들의 자립을 지원하고 사회 적응 여건을 조성하고자, 폭력 피해여성과 그 가족들이 공동으로 생활할 수 있는 주거 공간을 제공합니다.",
+    "audience": "장애인",
+    "benefits": [
+      "가정폭력, 성폭력 등 폭력피해자들의 자립을 지원하고 사회 적응 여건을 조성하고자, 폭력 피해여성과 그 가족들이 공동으로 생활할 수 있는 주거 공간을 제공합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001101&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001101&wlfareInfoReldBztpCd=01",
+    "contact": "1366",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인",
+      "benefit": "가정폭력, 성폭력 등 폭력피해자들의 자립을 지원하고 사회 적응 여건을 조성하고자, 폭력 피해여성과 그 가족들이 공동으로 생활할 수 있는 주거 공간을 제공합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1366"
+    }
+  },
+  {
+    "slug": "bokjiro-central-초중고-교육비-지원사업-고교학비-지원",
+    "title": "초중고 교육비 지원사업(고교학비 지원)",
+    "category": "교육",
+    "source": "복지로 중앙부처 API",
+    "agency": "교육부",
+    "region": "전국",
+    "amount": "형편이 어려운 저소득층 가정의 자녀에게 교육의 기회를 보장하기 위해서 학비를 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "초중고 교육비 지원사업(고교학비 지원)",
+      "교육",
+      "전국",
+      "교육부",
+      "확인필요",
+      "가구·부모",
+      "취약계층",
+      "형편이",
+      "어려운",
+      "저소득층",
+      "가정의",
+      "자녀에게",
+      "교육의",
+      "기회를"
+    ],
+    "summary": "형편이 어려운 저소득층 가정의 자녀에게 교육의 기회를 보장하기 위해서 학비를 지원합니다.",
+    "audience": "저소득,한부모·조손",
+    "benefits": [
+      "형편이 어려운 저소득층 가정의 자녀에게 교육의 기회를 보장하기 위해서 학비를 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001103&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001103&wlfareInfoReldBztpCd=01",
+    "contact": "1544-9654",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "저소득,한부모·조손",
+      "benefit": "형편이 어려운 저소득층 가정의 자녀에게 교육의 기회를 보장하기 위해서 학비를 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1544-9654"
+    }
+  },
+  {
+    "slug": "bokjiro-central-한부모가족자녀-교육비-지원",
+    "title": "한부모가족자녀 교육비 지원",
+    "category": "교육",
+    "source": "복지로 중앙부처 API",
+    "agency": "교육부",
+    "region": "전국",
+    "amount": "한부모가족보호대상자에게 고교비(학비)를 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "한부모가족자녀 교육비 지원",
+      "교육",
+      "전국",
+      "교육부",
+      "확인필요",
+      "가구·부모",
+      "취약계층",
+      "한부모가족보호대상자에게",
+      "고교비(학비)를",
+      "지원합니다."
+    ],
+    "summary": "한부모가족보호대상자에게 고교비(학비)를 지원합니다.",
+    "audience": "저소득,한부모·조손",
+    "benefits": [
+      "한부모가족보호대상자에게 고교비(학비)를 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001104&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00001104&wlfareInfoReldBztpCd=01",
+    "contact": "1544-9654",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "저소득,한부모·조손",
+      "benefit": "한부모가족보호대상자에게 고교비(학비)를 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1544-9654"
+    }
+  },
+  {
+    "slug": "bokjiro-central-고용복지플러스센터",
+    "title": "고용복지플러스센터",
+    "category": "고용",
+    "source": "복지로 중앙부처 API",
+    "agency": "고용노동부",
+    "region": "전국",
+    "amount": "국민들이 한 곳만 방문하면 다양한 고용과 복지, 금융 서비스 등을 받을 수 있도록 고용센터를 중심으로 고용, 복지,금융 등 서비스 기관이 한 공간에서 서비스를 제공합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "고용복지플러스센터",
+      "고용",
+      "전국",
+      "고용노동부",
+      "확인필요",
+      "일반",
+      "국민들이",
+      "한",
+      "곳만",
+      "방문하면",
+      "다양한",
+      "고용과",
+      "복지,",
+      "금융"
+    ],
+    "summary": "국민들이 한 곳만 방문하면 다양한 고용과 복지, 금융 서비스 등을 받을 수 있도록 고용센터를 중심으로 고용, 복지,금융 등 서비스 기관이 한 공간에서 서비스를 제공합니다.",
+    "audience": "세부 자격은 공식 공고에서 확인하세요.",
+    "benefits": [
+      "국민들이 한 곳만 방문하면 다양한 고용과 복지, 금융 서비스 등을 받을 수 있도록 고용센터를 중심으로 고용, 복지,금융 등 서비스 기관이 한 공간에서 서비스를 제공합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003239&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003239&wlfareInfoReldBztpCd=01",
+    "contact": "1350",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세부 자격은 공식 공고에서 확인하세요.",
+      "benefit": "국민들이 한 곳만 방문하면 다양한 고용과 복지, 금융 서비스 등을 받을 수 있도록 고용센터를 중심으로 고용, 복지,금융 등 서비스 기관이 한 공간에서 서비스를 제공합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1350"
+    }
+  },
+  {
+    "slug": "bokjiro-central-평생교육이용권-지원",
+    "title": "평생교육이용권 지원",
+    "category": "교육",
+    "source": "복지로 중앙부처 API",
+    "agency": "교육부",
+    "region": "전국",
+    "amount": "사회적 취약계층(저소득층, 장애인)을 대상으로 바우처를 제공하여 실질적인 평생교육 기회를 제공합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모, 장애인, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "평생교육이용권 지원",
+      "교육",
+      "전국",
+      "교육부",
+      "확인필요",
+      "가구·부모",
+      "장애인",
+      "취약계층",
+      "사회적",
+      "취약계층(저소득층,",
+      "장애인)을",
+      "대상으로",
+      "바우처를",
+      "제공하여"
+    ],
+    "summary": "사회적 취약계층(저소득층, 장애인)을 대상으로 바우처를 제공하여 실질적인 평생교육 기회를 제공합니다.",
+    "audience": "저소득,한부모·조손",
+    "benefits": [
+      "사회적 취약계층(저소득층, 장애인)을 대상으로 바우처를 제공하여 실질적인 평생교육 기회를 제공합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003240&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003240&wlfareInfoReldBztpCd=01",
+    "contact": "1600-3005",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "저소득,한부모·조손",
+      "benefit": "사회적 취약계층(저소득층, 장애인)을 대상으로 바우처를 제공하여 실질적인 평생교육 기회를 제공합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1600-3005"
+    }
+  },
+  {
+    "slug": "bokjiro-central-노후긴급자금-대부사업",
+    "title": "노후긴급자금 대부사업",
+    "category": "주거",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "만 60세 이상의 국민연금 연금수급자에게 전월세보증금, 의료비(배우자 포함),배우자 장제비 및 재해복구비 용도의 긴급한 생활안정자금을 저리로 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "노후긴급자금 대부사업",
+      "주거",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "일반",
+      "만",
+      "60세",
+      "이상의",
+      "국민연금",
+      "연금수급자에게",
+      "전월세보증금,",
+      "의료비(배우자",
+      "포함),배우자"
+    ],
+    "summary": "만 60세 이상의 국민연금 연금수급자에게 전월세보증금, 의료비(배우자 포함),배우자 장제비 및 재해복구비 용도의 긴급한 생활안정자금을 저리로 지원합니다.",
+    "audience": "중장년,노년",
+    "benefits": [
+      "만 60세 이상의 국민연금 연금수급자에게 전월세보증금, 의료비(배우자 포함),배우자 장제비 및 재해복구비 용도의 긴급한 생활안정자금을 저리로 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003241&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003241&wlfareInfoReldBztpCd=01",
+    "contact": "1355",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "중장년,노년",
+      "benefit": "만 60세 이상의 국민연금 연금수급자에게 전월세보증금, 의료비(배우자 포함),배우자 장제비 및 재해복구비 용도의 긴급한 생활안정자금을 저리로 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1355"
+    }
+  },
+  {
+    "slug": "bokjiro-central-국가예방접종-사업",
+    "title": "국가예방접종 사업",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "질병관리청",
+    "region": null,
+    "amount": "국가예방접종 비용을 지원하여 경제적 부담을 경감하고 예방접종 대상 감염병 퇴치 기반 마련 및 건강증진에 기여합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "국가예방접종 사업",
+      "보건의료",
+      "질병관리청",
+      "확인필요",
+      "가구·부모",
+      "국가예방접종",
+      "비용을",
+      "지원하여",
+      "경제적",
+      "부담을",
+      "경감하고",
+      "예방접종",
+      "대상"
+    ],
+    "summary": "국가예방접종 비용을 지원하여 경제적 부담을 경감하고 예방접종 대상 감염병 퇴치 기반 마련 및 건강증진에 기여합니다.",
+    "audience": "영유아,아동",
+    "benefits": [
+      "국가예방접종 비용을 지원하여 경제적 부담을 경감하고 예방접종 대상 감염병 퇴치 기반 마련 및 건강증진에 기여합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003242&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003242&wlfareInfoReldBztpCd=01",
+    "contact": "043-719-8398~8399",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "영유아,아동",
+      "benefit": "국가예방접종 비용을 지원하여 경제적 부담을 경감하고 예방접종 대상 감염병 퇴치 기반 마련 및 건강증진에 기여합니다.",
+      "application": "공식 공고 확인",
+      "contact": "043-719-8398~8399"
+    }
+  },
+  {
+    "slug": "bokjiro-central-보훈요양원-이용지원",
+    "title": "보훈요양원 이용지원",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "국가보훈부",
+    "region": "전국",
+    "amount": "장기요양이 필요한 국가유공자 등이 보훈요양원을 이용할 시, 본인부담금의 일부를 지원함으로써 경제적인 부담을 덜고 안락한 노후생활을 할 수 있도록 보장합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "보훈요양원 이용지원",
+      "보건의료",
+      "전국",
+      "국가보훈부",
+      "확인필요",
+      "일반",
+      "장기요양이",
+      "필요한",
+      "국가유공자",
+      "등이",
+      "보훈요양원을",
+      "이용할",
+      "시,",
+      "본인부담금의"
+    ],
+    "summary": "장기요양이 필요한 국가유공자 등이 보훈요양원을 이용할 시, 본인부담금의 일부를 지원함으로써 경제적인 부담을 덜고 안락한 노후생활을 할 수 있도록 보장합니다.",
+    "audience": "보훈대상자",
+    "benefits": [
+      "장기요양이 필요한 국가유공자 등이 보훈요양원을 이용할 시, 본인부담금의 일부를 지원함으로써 경제적인 부담을 덜고 안락한 노후생활을 할 수 있도록 보장합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003243&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003243&wlfareInfoReldBztpCd=01",
+    "contact": "1577-0606",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "보훈대상자",
+      "benefit": "장기요양이 필요한 국가유공자 등이 보훈요양원을 이용할 시, 본인부담금의 일부를 지원함으로써 경제적인 부담을 덜고 안락한 노후생활을 할 수 있도록 보장합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-0606"
+    }
+  },
+  {
+    "slug": "bokjiro-central-국민임대주택공급",
+    "title": "국민임대주택공급",
+    "category": "주거",
+    "source": "복지로 중앙부처 API",
+    "agency": "국토교통부",
+    "region": "전국",
+    "amount": "무주택 저소득층(소득 1~4분위 계층)의 주거안정을 위해 국민임대주택을 공급합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모, 장애인, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "국민임대주택공급",
+      "주거",
+      "전국",
+      "국토교통부",
+      "확인필요",
+      "가구·부모",
+      "장애인",
+      "취약계층",
+      "무주택",
+      "저소득층(소득",
+      "1~4분위",
+      "계층)의",
+      "주거안정을",
+      "위해"
+    ],
+    "summary": "무주택 저소득층(소득 1~4분위 계층)의 주거안정을 위해 국민임대주택을 공급합니다.",
+    "audience": "다문화·탈북민,다자녀,보훈대상자,장애인,저소득,한부모·조손",
+    "benefits": [
+      "무주택 저소득층(소득 1~4분위 계층)의 주거안정을 위해 국민임대주택을 공급합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003244&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003244&wlfareInfoReldBztpCd=01",
+    "contact": "1600-1004",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "다문화·탈북민,다자녀,보훈대상자,장애인,저소득,한부모·조손",
+      "benefit": "무주택 저소득층(소득 1~4분위 계층)의 주거안정을 위해 국민임대주택을 공급합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1600-1004"
+    }
+  },
+  {
+    "slug": "bokjiro-central-청소년산모-임신-출산-의료비-지원",
+    "title": "청소년산모 임신·출산 의료비 지원",
+    "category": "청년",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "청소년산모에게 임신 및 출산에 필요한 의료비를 지원하여 청소년산모와 태아의 건강증진을 돕습니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "청년, 가구·부모",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "청소년산모 임신·출산 의료비 지원",
+      "청년",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "가구·부모",
+      "청소년산모에게",
+      "임신",
+      "및",
+      "출산에",
+      "필요한",
+      "의료비를",
+      "지원하여",
+      "청소년산모와"
+    ],
+    "summary": "청소년산모에게 임신 및 출산에 필요한 의료비를 지원하여 청소년산모와 태아의 건강증진을 돕습니다.",
+    "audience": "청소년,임신 · 출산",
+    "benefits": [
+      "청소년산모에게 임신 및 출산에 필요한 의료비를 지원하여 청소년산모와 태아의 건강증진을 돕습니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003246&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003246&wlfareInfoReldBztpCd=01",
+    "contact": "1566-3232(단축번호4)",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "청소년,임신 · 출산",
+      "benefit": "청소년산모에게 임신 및 출산에 필요한 의료비를 지원하여 청소년산모와 태아의 건강증진을 돕습니다.",
+      "application": "공식 공고 확인",
+      "contact": "1566-3232(단축번호4)"
+    }
+  },
+  {
+    "slug": "bokjiro-central-재난적의료비-지원-사업",
+    "title": "재난적의료비 지원 사업",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "질병‧부상 등으로 가구의 부담능력을 넘어서는 과도한 의료비로 인한 경제적 부담을 겪는 가구에 의료비를 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "재난적의료비 지원 사업",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "취약계층",
+      "질병‧부상",
+      "등으로",
+      "가구의",
+      "부담능력을",
+      "넘어서는",
+      "과도한",
+      "의료비로",
+      "인한"
+    ],
+    "summary": "질병‧부상 등으로 가구의 부담능력을 넘어서는 과도한 의료비로 인한 경제적 부담을 겪는 가구에 의료비를 지원합니다.",
+    "audience": "저소득",
+    "benefits": [
+      "질병‧부상 등으로 가구의 부담능력을 넘어서는 과도한 의료비로 인한 경제적 부담을 겪는 가구에 의료비를 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003247&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003247&wlfareInfoReldBztpCd=01",
+    "contact": "1577-1000",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "저소득",
+      "benefit": "질병‧부상 등으로 가구의 부담능력을 넘어서는 과도한 의료비로 인한 경제적 부담을 겪는 가구에 의료비를 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-1000"
+    }
+  },
+  {
+    "slug": "bokjiro-central-재가급여",
+    "title": "재가급여",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "독립적인 일상 생활이 어려운 노인과, 노인부양가정에 필요한 각종 서비스를 제공하여 건강하고 안정된 생활을 돕고 부양에 대한 부담을 줄여줍니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "재가급여",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "어르신",
+      "독립적인",
+      "일상",
+      "생활이",
+      "어려운",
+      "노인과,",
+      "노인부양가정에",
+      "필요한",
+      "각종"
+    ],
+    "summary": "독립적인 일상 생활이 어려운 노인과, 노인부양가정에 필요한 각종 서비스를 제공하여 건강하고 안정된 생활을 돕고 부양에 대한 부담을 줄여줍니다.",
+    "audience": "노년",
+    "benefits": [
+      "독립적인 일상 생활이 어려운 노인과, 노인부양가정에 필요한 각종 서비스를 제공하여 건강하고 안정된 생활을 돕고 부양에 대한 부담을 줄여줍니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003248&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003248&wlfareInfoReldBztpCd=01",
+    "contact": "1577-1000",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "노년",
+      "benefit": "독립적인 일상 생활이 어려운 노인과, 노인부양가정에 필요한 각종 서비스를 제공하여 건강하고 안정된 생활을 돕고 부양에 대한 부담을 줄여줍니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-1000"
+    }
+  },
+  {
+    "slug": "bokjiro-central-영유아보육료-지원",
+    "title": "영유아보육료 지원",
+    "category": "교육",
+    "source": "복지로 중앙부처 API",
+    "agency": "교육부",
+    "region": "전국",
+    "amount": "어린이집 이용 영유아에 대한 보육료 지원을 통해 부모의 자녀양육 부담경감 및 원활한 경제활동을 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "영유아보육료 지원",
+      "교육",
+      "전국",
+      "교육부",
+      "확인필요",
+      "가구·부모",
+      "어린이집",
+      "이용",
+      "영유아에",
+      "대한",
+      "보육료",
+      "지원을",
+      "통해",
+      "부모의"
+    ],
+    "summary": "어린이집 이용 영유아에 대한 보육료 지원을 통해 부모의 자녀양육 부담경감 및 원활한 경제활동을 지원합니다.",
+    "audience": "영유아",
+    "benefits": [
+      "어린이집 이용 영유아에 대한 보육료 지원을 통해 부모의 자녀양육 부담경감 및 원활한 경제활동을 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003250&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003250&wlfareInfoReldBztpCd=01",
+    "contact": "02-6222-6060",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "영유아",
+      "benefit": "어린이집 이용 영유아에 대한 보육료 지원을 통해 부모의 자녀양육 부담경감 및 원활한 경제활동을 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "02-6222-6060"
+    }
+  },
+  {
+    "slug": "bokjiro-central-산림보호지원단",
+    "title": "산림보호지원단",
+    "category": "고용",
+    "source": "복지로 중앙부처 API",
+    "agency": "산림청",
+    "region": null,
+    "amount": "산림보호 분야의 안정적인 일자리 창출로 취업 취약계층을 지원하고, 불법산림훼손 계도, 감시 및 산림정화활동을 통해 건전한 산림생태계를 유지합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "구직자, 장애인, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "산림보호지원단",
+      "고용",
+      "산림청",
+      "확인필요",
+      "구직자",
+      "장애인",
+      "취약계층",
+      "산림보호",
+      "분야의",
+      "안정적인",
+      "일자리",
+      "창출로",
+      "취업",
+      "취약계층을"
+    ],
+    "summary": "산림보호 분야의 안정적인 일자리 창출로 취업 취약계층을 지원하고, 불법산림훼손 계도, 감시 및 산림정화활동을 통해 건전한 산림생태계를 유지합니다.",
+    "audience": "장애인,저소득",
+    "benefits": [
+      "산림보호 분야의 안정적인 일자리 창출로 취업 취약계층을 지원하고, 불법산림훼손 계도, 감시 및 산림정화활동을 통해 건전한 산림생태계를 유지합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003251&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003251&wlfareInfoReldBztpCd=01",
+    "contact": "042-481-4067",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인,저소득",
+      "benefit": "산림보호 분야의 안정적인 일자리 창출로 취업 취약계층을 지원하고, 불법산림훼손 계도, 감시 및 산림정화활동을 통해 건전한 산림생태계를 유지합니다.",
+      "application": "공식 공고 확인",
+      "contact": "042-481-4067"
+    }
+  },
+  {
+    "slug": "bokjiro-central-노인보호전문기관",
+    "title": "노인보호전문기관",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "학대피해 노인에게 일시보호, 법률지원, 전문 상담 등의 서비스를 제공합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "노인보호전문기관",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "어르신",
+      "학대피해",
+      "노인에게",
+      "일시보호,",
+      "법률지원,",
+      "전문",
+      "상담",
+      "등의",
+      "서비스를"
+    ],
+    "summary": "학대피해 노인에게 일시보호, 법률지원, 전문 상담 등의 서비스를 제공합니다.",
+    "audience": "노년",
+    "benefits": [
+      "학대피해 노인에게 일시보호, 법률지원, 전문 상담 등의 서비스를 제공합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003252&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003252&wlfareInfoReldBztpCd=01",
+    "contact": "1577-1389",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "노년",
+      "benefit": "학대피해 노인에게 일시보호, 법률지원, 전문 상담 등의 서비스를 제공합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-1389"
+    }
+  },
+  {
+    "slug": "bokjiro-central-가정양육수당-지원사업",
+    "title": "가정양육수당 지원사업",
+    "category": "교육",
+    "source": "복지로 중앙부처 API",
+    "agency": "교육부",
+    "region": "전국",
+    "amount": "가정에서 아이를 돌보는 가정 양육 시, 부모의 자녀 양육에 대한 부담을 줄이고 보육 서비스에 대한 선택권을 보장합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "가정양육수당 지원사업",
+      "교육",
+      "전국",
+      "교육부",
+      "확인필요",
+      "가구·부모",
+      "가정에서",
+      "아이를",
+      "돌보는",
+      "가정",
+      "양육",
+      "시,",
+      "부모의",
+      "자녀"
+    ],
+    "summary": "가정에서 아이를 돌보는 가정 양육 시, 부모의 자녀 양육에 대한 부담을 줄이고 보육 서비스에 대한 선택권을 보장합니다.",
+    "audience": "영유아,아동",
+    "benefits": [
+      "가정에서 아이를 돌보는 가정 양육 시, 부모의 자녀 양육에 대한 부담을 줄이고 보육 서비스에 대한 선택권을 보장합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003253&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003253&wlfareInfoReldBztpCd=01",
+    "contact": "02-6222-6060",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "영유아,아동",
+      "benefit": "가정에서 아이를 돌보는 가정 양육 시, 부모의 자녀 양육에 대한 부담을 줄이고 보육 서비스에 대한 선택권을 보장합니다.",
+      "application": "공식 공고 확인",
+      "contact": "02-6222-6060"
+    }
+  },
+  {
+    "slug": "bokjiro-central-청소년방과후아카데미운영지원",
+    "title": "청소년방과후아카데미운영지원",
+    "category": "청년",
+    "source": "복지로 중앙부처 API",
+    "agency": "성평등가족부",
+    "region": null,
+    "amount": "방과후 돌봄이 필요한 취약계층 청소년에게 체험활동, 학습지원, 급식, 상담 등 종합서비스 제공을 통한 건강한 성장과 자립을 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "청년, 가구·부모, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "청소년방과후아카데미운영지원",
+      "청년",
+      "성평등가족부",
+      "확인필요",
+      "가구·부모",
+      "취약계층",
+      "방과후",
+      "돌봄이",
+      "필요한",
+      "청소년에게",
+      "체험활동,",
+      "학습지원,",
+      "급식,"
+    ],
+    "summary": "방과후 돌봄이 필요한 취약계층 청소년에게 체험활동, 학습지원, 급식, 상담 등 종합서비스 제공을 통한 건강한 성장과 자립을 지원합니다.",
+    "audience": "아동,청소년",
+    "benefits": [
+      "방과후 돌봄이 필요한 취약계층 청소년에게 체험활동, 학습지원, 급식, 상담 등 종합서비스 제공을 통한 건강한 성장과 자립을 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003254&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003254&wlfareInfoReldBztpCd=01",
+    "contact": "02-330-2831~4",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "아동,청소년",
+      "benefit": "방과후 돌봄이 필요한 취약계층 청소년에게 체험활동, 학습지원, 급식, 상담 등 종합서비스 제공을 통한 건강한 성장과 자립을 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "02-330-2831~4"
+    }
+  },
+  {
+    "slug": "bokjiro-central-외국인근로자-등-의료지원",
+    "title": "외국인근로자 등 의료지원",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "건강보험, 의료급여 등 각종 의료보장 제도에 의해 지원을 받을 수 없는 외국인근로자 등을 대상으로 입원·수술이 필요한 경우에 의료비를 지원하여 최소한의 건강한 삶의 질 보장합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "외국인근로자 등 의료지원",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "구직자",
+      "건강보험,",
+      "의료급여",
+      "등",
+      "각종",
+      "의료보장",
+      "제도에",
+      "의해",
+      "지원을"
+    ],
+    "summary": "건강보험, 의료급여 등 각종 의료보장 제도에 의해 지원을 받을 수 없는 외국인근로자 등을 대상으로 입원·수술이 필요한 경우에 의료비를 지원하여 최소한의 건강한 삶의 질 보장합니다.",
+    "audience": "세부 자격은 공식 공고에서 확인하세요.",
+    "benefits": [
+      "건강보험, 의료급여 등 각종 의료보장 제도에 의해 지원을 받을 수 없는 외국인근로자 등을 대상으로 입원·수술이 필요한 경우에 의료비를 지원하여 최소한의 건강한 삶의 질 보장합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003256&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003256&wlfareInfoReldBztpCd=01",
+    "contact": "02-6362-3754",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세부 자격은 공식 공고에서 확인하세요.",
+      "benefit": "건강보험, 의료급여 등 각종 의료보장 제도에 의해 지원을 받을 수 없는 외국인근로자 등을 대상으로 입원·수술이 필요한 경우에 의료비를 지원하여 최소한의 건강한 삶의 질 보장합니다.",
+      "application": "공식 공고 확인",
+      "contact": "02-6362-3754"
+    }
+  },
+  {
+    "slug": "bokjiro-central-이동통신요금감면",
+    "title": "이동통신요금감면",
+    "category": "복지",
+    "source": "복지로 중앙부처 API",
+    "agency": "과학기술정보통신부",
+    "region": null,
+    "amount": "사회적 취약계층을 대상으로 가계통신비 부담완화를 위해 통신요금을 감면합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모, 장애인, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "이동통신요금감면",
+      "복지",
+      "과학기술정보통신부",
+      "확인필요",
+      "가구·부모",
+      "장애인",
+      "취약계층",
+      "사회적",
+      "취약계층을",
+      "대상으로",
+      "가계통신비",
+      "부담완화를",
+      "위해",
+      "통신요금을"
+    ],
+    "summary": "사회적 취약계층을 대상으로 가계통신비 부담완화를 위해 통신요금을 감면합니다.",
+    "audience": "보훈대상자,장애인,저소득,한부모·조손",
+    "benefits": [
+      "사회적 취약계층을 대상으로 가계통신비 부담완화를 위해 통신요금을 감면합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003257&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003257&wlfareInfoReldBztpCd=01",
+    "contact": "(이동전화) 국번없이 1523",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "보훈대상자,장애인,저소득,한부모·조손",
+      "benefit": "사회적 취약계층을 대상으로 가계통신비 부담완화를 위해 통신요금을 감면합니다.",
+      "application": "공식 공고 확인",
+      "contact": "(이동전화) 국번없이 1523"
+    }
+  },
+  {
+    "slug": "bokjiro-central-아동발달지원계좌-디딤씨앗통장-지원",
+    "title": "아동발달지원계좌(디딤씨앗통장)지원",
+    "category": "주거",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "취약계층 아동의 사회진출 시 학자금･취업･창업･주거마련 등에 소요되는 초기비용 마련을 위한 자산형성을 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "구직자, 가구·부모, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "아동발달지원계좌(디딤씨앗통장)지원",
+      "주거",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "구직자",
+      "가구·부모",
+      "취약계층",
+      "아동의",
+      "사회진출",
+      "시",
+      "학자금･취업･창업･주거마련",
+      "등에",
+      "소요되는"
+    ],
+    "summary": "취약계층 아동의 사회진출 시 학자금･취업･창업･주거마련 등에 소요되는 초기비용 마련을 위한 자산형성을 지원합니다.",
+    "audience": "저소득",
+    "benefits": [
+      "취약계층 아동의 사회진출 시 학자금･취업･창업･주거마련 등에 소요되는 초기비용 마련을 위한 자산형성을 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003258&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003258&wlfareInfoReldBztpCd=01",
+    "contact": "129",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "저소득",
+      "benefit": "취약계층 아동의 사회진출 시 학자금･취업･창업･주거마련 등에 소요되는 초기비용 마련을 위한 자산형성을 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "129"
+    }
+  },
+  {
+    "slug": "bokjiro-central-중증장애인지원고용",
+    "title": "중증장애인지원고용",
+    "category": "고용",
+    "source": "복지로 중앙부처 API",
+    "agency": "고용노동부",
+    "region": "전국",
+    "amount": "독립적인 직업생활영위가 어려운 중증장애인의 고용 증진을 위해 직무수행에 필요한 기술과 직장적응을 취업 전 사업체 현장에서 지도하여 취업으로 연계합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "구직자, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "중증장애인지원고용",
+      "고용",
+      "전국",
+      "고용노동부",
+      "확인필요",
+      "구직자",
+      "장애인",
+      "독립적인",
+      "직업생활영위가",
+      "어려운",
+      "중증장애인의",
+      "증진을",
+      "위해",
+      "직무수행에"
+    ],
+    "summary": "독립적인 직업생활영위가 어려운 중증장애인의 고용 증진을 위해 직무수행에 필요한 기술과 직장적응을 취업 전 사업체 현장에서 지도하여 취업으로 연계합니다.",
+    "audience": "장애인",
+    "benefits": [
+      "독립적인 직업생활영위가 어려운 중증장애인의 고용 증진을 위해 직무수행에 필요한 기술과 직장적응을 취업 전 사업체 현장에서 지도하여 취업으로 연계합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003259&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003259&wlfareInfoReldBztpCd=01",
+    "contact": "1588-1519",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인",
+      "benefit": "독립적인 직업생활영위가 어려운 중증장애인의 고용 증진을 위해 직무수행에 필요한 기술과 직장적응을 취업 전 사업체 현장에서 지도하여 취업으로 연계합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1588-1519"
+    }
+  },
+  {
+    "slug": "bokjiro-central-장애인활동지원",
+    "title": "장애인활동지원",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "혼자서 일상생활과 사회생활을 하기 어려운 장애인에게 활동보조서비스를 제공하여 자립생활을 지원하고 사회참여를 도모합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인활동지원",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "장애인",
+      "혼자서",
+      "일상생활과",
+      "사회생활을",
+      "하기",
+      "어려운",
+      "장애인에게",
+      "활동보조서비스를",
+      "제공하여"
+    ],
+    "summary": "혼자서 일상생활과 사회생활을 하기 어려운 장애인에게 활동보조서비스를 제공하여 자립생활을 지원하고 사회참여를 도모합니다.",
+    "audience": "장애인",
+    "benefits": [
+      "혼자서 일상생활과 사회생활을 하기 어려운 장애인에게 활동보조서비스를 제공하여 자립생활을 지원하고 사회참여를 도모합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003260&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003260&wlfareInfoReldBztpCd=01",
+    "contact": "129",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인",
+      "benefit": "혼자서 일상생활과 사회생활을 하기 어려운 장애인에게 활동보조서비스를 제공하여 자립생활을 지원하고 사회참여를 도모합니다.",
+      "application": "공식 공고 확인",
+      "contact": "129"
+    }
+  },
+  {
+    "slug": "bokjiro-central-고엽제특별지원",
+    "title": "고엽제특별지원",
+    "category": "복지",
+    "source": "복지로 중앙부처 API",
+    "agency": "국가보훈부",
+    "region": "전국",
+    "amount": "생계가 곤란한 고엽제 후유증 환자 중 장애인 자녀가 있는 가정에 특별지원을 하여 재활의욕을 고취하고 격려합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "고엽제특별지원",
+      "복지",
+      "전국",
+      "국가보훈부",
+      "확인필요",
+      "장애인",
+      "생계가",
+      "곤란한",
+      "고엽제",
+      "후유증",
+      "환자",
+      "중",
+      "자녀가"
+    ],
+    "summary": "생계가 곤란한 고엽제 후유증 환자 중 장애인 자녀가 있는 가정에 특별지원을 하여 재활의욕을 고취하고 격려합니다.",
+    "audience": "보훈대상자,장애인",
+    "benefits": [
+      "생계가 곤란한 고엽제 후유증 환자 중 장애인 자녀가 있는 가정에 특별지원을 하여 재활의욕을 고취하고 격려합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003261&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003261&wlfareInfoReldBztpCd=01",
+    "contact": "1577-0606",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "보훈대상자,장애인",
+      "benefit": "생계가 곤란한 고엽제 후유증 환자 중 장애인 자녀가 있는 가정에 특별지원을 하여 재활의욕을 고취하고 격려합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-0606"
+    }
+  },
+  {
+    "slug": "bokjiro-central-장애아가족양육지원",
+    "title": "장애아가족양육지원",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "장애아동 가족의 일상적인 돌봄 부담을 경감하고 보호자의 사회활동을 돕기 위하여 돌봄 및 일시적 휴식지원 서비스를 제공합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애아가족양육지원",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "가구·부모",
+      "장애인",
+      "장애아동",
+      "가족의",
+      "일상적인",
+      "돌봄",
+      "부담을",
+      "경감하고",
+      "보호자의"
+    ],
+    "summary": "장애아동 가족의 일상적인 돌봄 부담을 경감하고 보호자의 사회활동을 돕기 위하여 돌봄 및 일시적 휴식지원 서비스를 제공합니다.",
+    "audience": "장애인",
+    "benefits": [
+      "장애아동 가족의 일상적인 돌봄 부담을 경감하고 보호자의 사회활동을 돕기 위하여 돌봄 및 일시적 휴식지원 서비스를 제공합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003262&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003262&wlfareInfoReldBztpCd=01",
+    "contact": "129",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인",
+      "benefit": "장애아동 가족의 일상적인 돌봄 부담을 경감하고 보호자의 사회활동을 돕기 위하여 돌봄 및 일시적 휴식지원 서비스를 제공합니다.",
+      "application": "공식 공고 확인",
+      "contact": "129"
+    }
+  },
+  {
+    "slug": "bokjiro-central-wee-클래스-상담지원",
+    "title": "WEE 클래스 상담지원",
+    "category": "청년",
+    "source": "복지로 중앙부처 API",
+    "agency": "교육부",
+    "region": "전국",
+    "amount": "초중고 학교부적응 학생 및 위기학생, 일반학생에 대한 학교생활 적응 및 치유를 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "청년, 가구·부모",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "WEE 클래스 상담지원",
+      "청년",
+      "전국",
+      "교육부",
+      "확인필요",
+      "가구·부모",
+      "초중고",
+      "학교부적응",
+      "학생",
+      "및",
+      "위기학생,",
+      "일반학생에",
+      "대한",
+      "학교생활"
+    ],
+    "summary": "초중고 학교부적응 학생 및 위기학생, 일반학생에 대한 학교생활 적응 및 치유를 지원합니다.",
+    "audience": "아동,청소년",
+    "benefits": [
+      "초중고 학교부적응 학생 및 위기학생, 일반학생에 대한 학교생활 적응 및 치유를 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003263&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003263&wlfareInfoReldBztpCd=01",
+    "contact": "043-5309-182, 184",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "아동,청소년",
+      "benefit": "초중고 학교부적응 학생 및 위기학생, 일반학생에 대한 학교생활 적응 및 치유를 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "043-5309-182, 184"
+    }
+  },
+  {
+    "slug": "bokjiro-central-통합건강증진사업",
+    "title": "통합건강증진사업",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "지역사회를 기반으로 다양한 건강증진사업을 내실 있게 추진하여 지자체 건강수준 향상, 국가 건강수명 및 삶의 질 증대를 도모합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "통합건강증진사업",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "일반",
+      "지역사회를",
+      "기반으로",
+      "다양한",
+      "건강증진사업을",
+      "내실",
+      "있게",
+      "추진하여",
+      "지자체"
+    ],
+    "summary": "지역사회를 기반으로 다양한 건강증진사업을 내실 있게 추진하여 지자체 건강수준 향상, 국가 건강수명 및 삶의 질 증대를 도모합니다.",
+    "audience": "세부 자격은 공식 공고에서 확인하세요.",
+    "benefits": [
+      "지역사회를 기반으로 다양한 건강증진사업을 내실 있게 추진하여 지자체 건강수준 향상, 국가 건강수명 및 삶의 질 증대를 도모합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003264&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003264&wlfareInfoReldBztpCd=01",
+    "contact": "129",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세부 자격은 공식 공고에서 확인하세요.",
+      "benefit": "지역사회를 기반으로 다양한 건강증진사업을 내실 있게 추진하여 지자체 건강수준 향상, 국가 건강수명 및 삶의 질 증대를 도모합니다.",
+      "application": "공식 공고 확인",
+      "contact": "129"
+    }
+  },
+  {
+    "slug": "bokjiro-central-장애수당",
+    "title": "장애수당",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "장애인연금 비수급 경증장애인을 대상으로 장애로 인한 추가적 비용을 보전하여 저소득 장애인 가구의 생활 안정을 도모합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애수당",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "장애인",
+      "취약계층",
+      "장애인연금",
+      "비수급",
+      "경증장애인을",
+      "대상으로",
+      "장애로",
+      "인한",
+      "추가적"
+    ],
+    "summary": "장애인연금 비수급 경증장애인을 대상으로 장애로 인한 추가적 비용을 보전하여 저소득 장애인 가구의 생활 안정을 도모합니다.",
+    "audience": "장애인,저소득",
+    "benefits": [
+      "장애인연금 비수급 경증장애인을 대상으로 장애로 인한 추가적 비용을 보전하여 저소득 장애인 가구의 생활 안정을 도모합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003265&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003265&wlfareInfoReldBztpCd=01",
+    "contact": "129",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인,저소득",
+      "benefit": "장애인연금 비수급 경증장애인을 대상으로 장애로 인한 추가적 비용을 보전하여 저소득 장애인 가구의 생활 안정을 도모합니다.",
+      "application": "공식 공고 확인",
+      "contact": "129"
+    }
+  },
+  {
+    "slug": "bokjiro-central-직업훈련생계비대부",
+    "title": "직업훈련생계비대부",
+    "category": "고용",
+    "source": "복지로 중앙부처 API",
+    "agency": "고용노동부",
+    "region": "전국",
+    "amount": "근로 취약계층이 생계비에 대한 부담없이 장기간 체계적인 훈련을 받고 더 나은 일자리로 취업할 수 있도록 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "구직자, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "직업훈련생계비대부",
+      "고용",
+      "전국",
+      "고용노동부",
+      "확인필요",
+      "구직자",
+      "취약계층",
+      "근로",
+      "취약계층이",
+      "생계비에",
+      "대한",
+      "부담없이",
+      "장기간",
+      "체계적인"
+    ],
+    "summary": "근로 취약계층이 생계비에 대한 부담없이 장기간 체계적인 훈련을 받고 더 나은 일자리로 취업할 수 있도록 지원합니다.",
+    "audience": "저소득",
+    "benefits": [
+      "근로 취약계층이 생계비에 대한 부담없이 장기간 체계적인 훈련을 받고 더 나은 일자리로 취업할 수 있도록 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003266&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003266&wlfareInfoReldBztpCd=01",
+    "contact": "1588-0075",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "저소득",
+      "benefit": "근로 취약계층이 생계비에 대한 부담없이 장기간 체계적인 훈련을 받고 더 나은 일자리로 취업할 수 있도록 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1588-0075"
+    }
+  },
+  {
+    "slug": "bokjiro-central-장제급여",
+    "title": "장제급여",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "수급자가 사망하였을 경우 사체의 검안, 운반, 화장 또는 매장 등의 기타 장례를 하는데 필요한 금품을 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장제급여",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "취약계층",
+      "수급자가",
+      "사망하였을",
+      "경우",
+      "사체의",
+      "검안,",
+      "운반,",
+      "화장",
+      "또는"
+    ],
+    "summary": "수급자가 사망하였을 경우 사체의 검안, 운반, 화장 또는 매장 등의 기타 장례를 하는데 필요한 금품을 지원합니다.",
+    "audience": "저소득",
+    "benefits": [
+      "수급자가 사망하였을 경우 사체의 검안, 운반, 화장 또는 매장 등의 기타 장례를 하는데 필요한 금품을 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003267&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003267&wlfareInfoReldBztpCd=01",
+    "contact": "129",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "저소득",
+      "benefit": "수급자가 사망하였을 경우 사체의 검안, 운반, 화장 또는 매장 등의 기타 장례를 하는데 필요한 금품을 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "129"
+    }
+  },
+  {
+    "slug": "bokjiro-central-가정위탁아동-상해보험료-지원",
+    "title": "가정위탁아동 상해보험료 지원",
+    "category": "청년",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "가정위탁아동에 대해 상해보험을 가입하여 아동의 보호를 증진하고 위탁가정의 심리적, 경제적 부담을 완화합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "청년, 가구·부모",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "가정위탁아동 상해보험료 지원",
+      "청년",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "가구·부모",
+      "가정위탁아동에",
+      "대해",
+      "상해보험을",
+      "가입하여",
+      "아동의",
+      "보호를",
+      "증진하고",
+      "위탁가정의"
+    ],
+    "summary": "가정위탁아동에 대해 상해보험을 가입하여 아동의 보호를 증진하고 위탁가정의 심리적, 경제적 부담을 완화합니다.",
+    "audience": "아동,청소년,청년",
+    "benefits": [
+      "가정위탁아동에 대해 상해보험을 가입하여 아동의 보호를 증진하고 위탁가정의 심리적, 경제적 부담을 완화합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003268&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003268&wlfareInfoReldBztpCd=01",
+    "contact": "1577-1406",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "아동,청소년,청년",
+      "benefit": "가정위탁아동에 대해 상해보험을 가입하여 아동의 보호를 증진하고 위탁가정의 심리적, 경제적 부담을 완화합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-1406"
+    }
+  },
+  {
+    "slug": "bokjiro-central-기존주택-전세임대주택-지원사업",
+    "title": "기존주택 전세임대주택 지원사업",
+    "category": "주거",
+    "source": "복지로 중앙부처 API",
+    "agency": "국토교통부",
+    "region": "전국",
+    "amount": "도심 내 저소득층이 현 생활권에서 안정적으로 거주할 수 있도록 임대료가 저렴한 임대주택을 지원하여 주거안정을 도모합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모, 장애인, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "기존주택 전세임대주택 지원사업",
+      "주거",
+      "전국",
+      "국토교통부",
+      "확인필요",
+      "가구·부모",
+      "장애인",
+      "취약계층",
+      "도심",
+      "내",
+      "저소득층이",
+      "현",
+      "생활권에서",
+      "안정적으로"
+    ],
+    "summary": "도심 내 저소득층이 현 생활권에서 안정적으로 거주할 수 있도록 임대료가 저렴한 임대주택을 지원하여 주거안정을 도모합니다.",
+    "audience": "다자녀,장애인,저소득,한부모·조손",
+    "benefits": [
+      "도심 내 저소득층이 현 생활권에서 안정적으로 거주할 수 있도록 임대료가 저렴한 임대주택을 지원하여 주거안정을 도모합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003269&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003269&wlfareInfoReldBztpCd=01",
+    "contact": "1600-1004",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "다자녀,장애인,저소득,한부모·조손",
+      "benefit": "도심 내 저소득층이 현 생활권에서 안정적으로 거주할 수 있도록 임대료가 저렴한 임대주택을 지원하여 주거안정을 도모합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1600-1004"
+    }
+  },
+  {
+    "slug": "bokjiro-central-입양-가정위탁아동-심리치료-지원",
+    "title": "입양·가정위탁아동 심리치료 지원",
+    "category": "청년",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "국내입양, 가정위탁아동 중 과잉행동장애(ADHD), 정서불안장애 등으로 인해 상담, 치료가 필요한 아동의 심리정서 검사, 치료비를 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "청년, 가구·부모, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "입양·가정위탁아동 심리치료 지원",
+      "청년",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "가구·부모",
+      "장애인",
+      "국내입양,",
+      "가정위탁아동",
+      "중",
+      "과잉행동장애(ADHD),",
+      "정서불안장애",
+      "등으로",
+      "인해"
+    ],
+    "summary": "국내입양, 가정위탁아동 중 과잉행동장애(ADHD), 정서불안장애 등으로 인해 상담, 치료가 필요한 아동의 심리정서 검사, 치료비를 지원합니다.",
+    "audience": "영유아,아동,청소년,청년",
+    "benefits": [
+      "국내입양, 가정위탁아동 중 과잉행동장애(ADHD), 정서불안장애 등으로 인해 상담, 치료가 필요한 아동의 심리정서 검사, 치료비를 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003270&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003270&wlfareInfoReldBztpCd=01",
+    "contact": "1577-1406",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "영유아,아동,청소년,청년",
+      "benefit": "국내입양, 가정위탁아동 중 과잉행동장애(ADHD), 정서불안장애 등으로 인해 상담, 치료가 필요한 아동의 심리정서 검사, 치료비를 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-1406"
+    }
+  },
+  {
+    "slug": "bokjiro-central-내집마련-디딤돌-대출",
+    "title": "내집마련 디딤돌 대출",
+    "category": "주거",
+    "source": "복지로 중앙부처 API",
+    "agency": "국토교통부",
+    "region": "전국",
+    "amount": "무주택 세대주가 주택구입 자금을 빌릴 수 있도록 지원하여 주거 안정을 돕습니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "내집마련 디딤돌 대출",
+      "주거",
+      "전국",
+      "국토교통부",
+      "확인필요",
+      "일반",
+      "무주택",
+      "세대주가",
+      "주택구입",
+      "자금을",
+      "빌릴",
+      "수",
+      "있도록",
+      "지원하여"
+    ],
+    "summary": "무주택 세대주가 주택구입 자금을 빌릴 수 있도록 지원하여 주거 안정을 돕습니다.",
+    "audience": "다자녀",
+    "benefits": [
+      "무주택 세대주가 주택구입 자금을 빌릴 수 있도록 지원하여 주거 안정을 돕습니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003271&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003271&wlfareInfoReldBztpCd=01",
+    "contact": "1566-9009",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "다자녀",
+      "benefit": "무주택 세대주가 주택구입 자금을 빌릴 수 있도록 지원하여 주거 안정을 돕습니다.",
+      "application": "공식 공고 확인",
+      "contact": "1566-9009"
+    }
+  },
+  {
+    "slug": "bokjiro-central-의사상자지원",
+    "title": "의사상자지원",
+    "category": "청년",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "본인의 직무와는 상관없이 타인의 생명이나 신체 또는 재산을 구하다가 사망하거나 부상을 입은 사람, 그 유족 또는 가족을 예우하고 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "의사상자지원",
+      "청년",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "본인의",
+      "직무와는",
+      "상관없이",
+      "타인의",
+      "생명이나",
+      "신체",
+      "또는",
+      "재산을"
+    ],
+    "summary": "본인의 직무와는 상관없이 타인의 생명이나 신체 또는 재산을 구하다가 사망하거나 부상을 입은 사람, 그 유족 또는 가족을 예우하고 지원합니다.",
+    "audience": "청년,중장년,노년",
+    "benefits": [
+      "본인의 직무와는 상관없이 타인의 생명이나 신체 또는 재산을 구하다가 사망하거나 부상을 입은 사람, 그 유족 또는 가족을 예우하고 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003272&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003272&wlfareInfoReldBztpCd=01",
+    "contact": "129",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "청년,중장년,노년",
+      "benefit": "본인의 직무와는 상관없이 타인의 생명이나 신체 또는 재산을 구하다가 사망하거나 부상을 입은 사람, 그 유족 또는 가족을 예우하고 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "129"
+    }
+  },
+  {
+    "slug": "bokjiro-central-의료급여-본인부담-보상금",
+    "title": "의료급여(본인부담 보상금)",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "의료급여 수급권자에 대한 의료비를 지원하여 저소득층 국민보건 향상과 사회복지 증진에 기여합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "의료급여(본인부담 보상금)",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "취약계층",
+      "의료급여",
+      "수급권자에",
+      "대한",
+      "의료비를",
+      "지원하여",
+      "저소득층",
+      "국민보건",
+      "향상과"
+    ],
+    "summary": "의료급여 수급권자에 대한 의료비를 지원하여 저소득층 국민보건 향상과 사회복지 증진에 기여합니다.",
+    "audience": "다문화·탈북민,보훈대상자,저소득",
+    "benefits": [
+      "의료급여 수급권자에 대한 의료비를 지원하여 저소득층 국민보건 향상과 사회복지 증진에 기여합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003273&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003273&wlfareInfoReldBztpCd=01",
+    "contact": "129",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "다문화·탈북민,보훈대상자,저소득",
+      "benefit": "의료급여 수급권자에 대한 의료비를 지원하여 저소득층 국민보건 향상과 사회복지 증진에 기여합니다.",
+      "application": "공식 공고 확인",
+      "contact": "129"
+    }
+  },
+  {
+    "slug": "bokjiro-central-국가유공자보철구지급",
+    "title": "국가유공자보철구지급",
+    "category": "복지",
+    "source": "복지로 중앙부처 API",
+    "agency": "국가보훈부",
+    "region": "전국",
+    "amount": "국가유공상이자에게 신체 기능 장애나 활동력이 상실된 부분을 보충하거나 보완해 주는 보철구를 지급하여 생활의 편의를 돕습니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "국가유공자보철구지급",
+      "복지",
+      "전국",
+      "국가보훈부",
+      "확인필요",
+      "장애인",
+      "국가유공상이자에게",
+      "신체",
+      "기능",
+      "장애나",
+      "활동력이",
+      "상실된",
+      "부분을",
+      "보충하거나"
+    ],
+    "summary": "국가유공상이자에게 신체 기능 장애나 활동력이 상실된 부분을 보충하거나 보완해 주는 보철구를 지급하여 생활의 편의를 돕습니다.",
+    "audience": "보훈대상자",
+    "benefits": [
+      "국가유공상이자에게 신체 기능 장애나 활동력이 상실된 부분을 보충하거나 보완해 주는 보철구를 지급하여 생활의 편의를 돕습니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003274&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003274&wlfareInfoReldBztpCd=01",
+    "contact": "1577-0606",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "보훈대상자",
+      "benefit": "국가유공상이자에게 신체 기능 장애나 활동력이 상실된 부분을 보충하거나 보완해 주는 보철구를 지급하여 생활의 편의를 돕습니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-0606"
+    }
+  },
+  {
+    "slug": "bokjiro-central-범죄피해자에-대한-경제적-지원-사업",
+    "title": "범죄피해자에 대한 경제적 지원 사업",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "대검찰청",
+    "region": null,
+    "amount": "범죄피해자자에 대해 치료, 생계비, 학자금, 긴급생활안정비, 장례비 지급 등을 통해 범죄피해자의 피해회복 및 재활에 기여합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "범죄피해자에 대한 경제적 지원 사업",
+      "보건의료",
+      "대검찰청",
+      "확인필요",
+      "일반",
+      "범죄피해자자에",
+      "대해",
+      "치료,",
+      "생계비,",
+      "학자금,",
+      "긴급생활안정비,",
+      "장례비",
+      "지급"
+    ],
+    "summary": "범죄피해자자에 대해 치료, 생계비, 학자금, 긴급생활안정비, 장례비 지급 등을 통해 범죄피해자의 피해회복 및 재활에 기여합니다.",
+    "audience": "세부 자격은 공식 공고에서 확인하세요.",
+    "benefits": [
+      "범죄피해자자에 대해 치료, 생계비, 학자금, 긴급생활안정비, 장례비 지급 등을 통해 범죄피해자의 피해회복 및 재활에 기여합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003275&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003275&wlfareInfoReldBztpCd=01",
+    "contact": "1577-2584",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "세부 자격은 공식 공고에서 확인하세요.",
+      "benefit": "범죄피해자자에 대해 치료, 생계비, 학자금, 긴급생활안정비, 장례비 지급 등을 통해 범죄피해자의 피해회복 및 재활에 기여합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-2584"
+    }
+  },
+  {
+    "slug": "bokjiro-central-일반-상환-학자금대출",
+    "title": "일반 상환 학자금대출",
+    "category": "청년",
+    "source": "복지로 중앙부처 API",
+    "agency": "교육부",
+    "region": "전국",
+    "amount": "학자금이 필요한 대학(원)생 및 학점은행제 학습자에게 저리로 학자금대출을 지원하여 균등한 고등교육 기회를 제공합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "일반 상환 학자금대출",
+      "청년",
+      "전국",
+      "교육부",
+      "확인필요",
+      "학자금이",
+      "필요한",
+      "대학(원)생",
+      "및",
+      "학점은행제",
+      "학습자에게",
+      "저리로",
+      "학자금대출을"
+    ],
+    "summary": "학자금이 필요한 대학(원)생 및 학점은행제 학습자에게 저리로 학자금대출을 지원하여 균등한 고등교육 기회를 제공합니다.",
+    "audience": "청년,중장년",
+    "benefits": [
+      "학자금이 필요한 대학(원)생 및 학점은행제 학습자에게 저리로 학자금대출을 지원하여 균등한 고등교육 기회를 제공합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003276&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003276&wlfareInfoReldBztpCd=01",
+    "contact": "1599-2000",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "청년,중장년",
+      "benefit": "학자금이 필요한 대학(원)생 및 학점은행제 학습자에게 저리로 학자금대출을 지원하여 균등한 고등교육 기회를 제공합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1599-2000"
+    }
+  },
+  {
+    "slug": "bokjiro-central-취업-후-상환-학자금대출",
+    "title": "취업 후 상환 학자금대출",
+    "category": "고용",
+    "source": "복지로 중앙부처 API",
+    "agency": "교육부",
+    "region": "전국",
+    "amount": "대학 학자금 마련에 어려움을 겪는 학생들에게 저리의 학자금대출을 지원하여 취업 후 일정기준의 소득이 발생한 때부터 상환할 수 있도록 합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "구직자, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "취업 후 상환 학자금대출",
+      "고용",
+      "전국",
+      "교육부",
+      "확인필요",
+      "구직자",
+      "취약계층",
+      "대학",
+      "학자금",
+      "마련에",
+      "어려움을",
+      "겪는",
+      "학생들에게",
+      "저리의"
+    ],
+    "summary": "대학 학자금 마련에 어려움을 겪는 학생들에게 저리의 학자금대출을 지원하여 취업 후 일정기준의 소득이 발생한 때부터 상환할 수 있도록 합니다.",
+    "audience": "저소득",
+    "benefits": [
+      "대학 학자금 마련에 어려움을 겪는 학생들에게 저리의 학자금대출을 지원하여 취업 후 일정기준의 소득이 발생한 때부터 상환할 수 있도록 합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003277&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003277&wlfareInfoReldBztpCd=01",
+    "contact": "1599-2000",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "저소득",
+      "benefit": "대학 학자금 마련에 어려움을 겪는 학생들에게 저리의 학자금대출을 지원하여 취업 후 일정기준의 소득이 발생한 때부터 상환할 수 있도록 합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1599-2000"
+    }
+  },
+  {
+    "slug": "bokjiro-central-여성장애인-출산비용지원",
+    "title": "여성장애인 출산비용지원",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "임신과 출산에 대한 비용이 추가로 발생하는 여성장애인에게 출산비용을 지원하여 경제적 부담을 경감하고 모성권 보호에 기여합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "여성장애인 출산비용지원",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "가구·부모",
+      "장애인",
+      "임신과",
+      "출산에",
+      "대한",
+      "비용이",
+      "추가로",
+      "발생하는",
+      "여성장애인에게"
+    ],
+    "summary": "임신과 출산에 대한 비용이 추가로 발생하는 여성장애인에게 출산비용을 지원하여 경제적 부담을 경감하고 모성권 보호에 기여합니다.",
+    "audience": "장애인",
+    "benefits": [
+      "임신과 출산에 대한 비용이 추가로 발생하는 여성장애인에게 출산비용을 지원하여 경제적 부담을 경감하고 모성권 보호에 기여합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003278&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003278&wlfareInfoReldBztpCd=01",
+    "contact": "129",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인",
+      "benefit": "임신과 출산에 대한 비용이 추가로 발생하는 여성장애인에게 출산비용을 지원하여 경제적 부담을 경감하고 모성권 보호에 기여합니다.",
+      "application": "공식 공고 확인",
+      "contact": "129"
+    }
+  },
+  {
+    "slug": "bokjiro-central-언어발달지원사업",
+    "title": "언어발달지원사업",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "장애인 부모의 자녀에게 필요한 언어발달지원서비스를 제공하여 아동의 건강한 성장을 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모, 장애인, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "언어발달지원사업",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "가구·부모",
+      "장애인",
+      "취약계층",
+      "부모의",
+      "자녀에게",
+      "필요한",
+      "언어발달지원서비스를",
+      "제공하여",
+      "아동의"
+    ],
+    "summary": "장애인 부모의 자녀에게 필요한 언어발달지원서비스를 제공하여 아동의 건강한 성장을 지원합니다.",
+    "audience": "장애인,저소득",
+    "benefits": [
+      "장애인 부모의 자녀에게 필요한 언어발달지원서비스를 제공하여 아동의 건강한 성장을 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003279&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003279&wlfareInfoReldBztpCd=01",
+    "contact": "129",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인,저소득",
+      "benefit": "장애인 부모의 자녀에게 필요한 언어발달지원서비스를 제공하여 아동의 건강한 성장을 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "129"
+    }
+  },
+  {
+    "slug": "bokjiro-central-전립선등-노인성질환-예방관리",
+    "title": "전립선등 노인성질환 예방관리",
+    "category": "교육",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "고령화와 함께 급증하고 있는 전립선 질환 등을 조기에 진단하고, 예방과 관리를 위한 교육 및 홍보를 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "전립선등 노인성질환 예방관리",
+      "교육",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "어르신",
+      "고령화와",
+      "함께",
+      "급증하고",
+      "있는",
+      "전립선",
+      "질환",
+      "등을",
+      "조기에"
+    ],
+    "summary": "고령화와 함께 급증하고 있는 전립선 질환 등을 조기에 진단하고, 예방과 관리를 위한 교육 및 홍보를 지원합니다.",
+    "audience": "중장년,노년",
+    "benefits": [
+      "고령화와 함께 급증하고 있는 전립선 질환 등을 조기에 진단하고, 예방과 관리를 위한 교육 및 홍보를 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003280&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003280&wlfareInfoReldBztpCd=01",
+    "contact": "02-534-2214",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "중장년,노년",
+      "benefit": "고령화와 함께 급증하고 있는 전립선 질환 등을 조기에 진단하고, 예방과 관리를 위한 교육 및 홍보를 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "02-534-2214"
+    }
+  },
+  {
+    "slug": "bokjiro-central-국가보훈대상자-취업능력개발지원",
+    "title": "국가보훈대상자 취업능력개발지원",
+    "category": "고용",
+    "source": "복지로 중앙부처 API",
+    "agency": "국가보훈부",
+    "region": "전국",
+    "amount": "취업지원대상자의 취업경쟁력 향상을 통한 취업촉진을 위하여 취업능력개발비용을 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "국가보훈대상자 취업능력개발지원",
+      "고용",
+      "전국",
+      "국가보훈부",
+      "확인필요",
+      "구직자",
+      "취업지원대상자의",
+      "취업경쟁력",
+      "향상을",
+      "통한",
+      "취업촉진을",
+      "위하여",
+      "취업능력개발비용을",
+      "지원합니다."
+    ],
+    "summary": "취업지원대상자의 취업경쟁력 향상을 통한 취업촉진을 위하여 취업능력개발비용을 지원합니다.",
+    "audience": "보훈대상자",
+    "benefits": [
+      "취업지원대상자의 취업경쟁력 향상을 통한 취업촉진을 위하여 취업능력개발비용을 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003281&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003281&wlfareInfoReldBztpCd=01",
+    "contact": "1577-0606",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "보훈대상자",
+      "benefit": "취업지원대상자의 취업경쟁력 향상을 통한 취업촉진을 위하여 취업능력개발비용을 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-0606"
+    }
+  },
+  {
+    "slug": "bokjiro-central-다문화가족-자녀-언어발달지원서비스",
+    "title": "다문화가족 자녀 언어발달지원서비스",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "성평등가족부",
+    "region": null,
+    "amount": "다문화가정의 자녀가 건강한 사회구성원, 글로벌 인재로 성장할 수 있도록 체계적인 언어발달을 돕습니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "다문화가족 자녀 언어발달지원서비스",
+      "보건의료",
+      "성평등가족부",
+      "확인필요",
+      "가구·부모",
+      "취약계층",
+      "다문화가정의",
+      "자녀가",
+      "건강한",
+      "사회구성원,",
+      "글로벌",
+      "인재로",
+      "성장할",
+      "수"
+    ],
+    "summary": "다문화가정의 자녀가 건강한 사회구성원, 글로벌 인재로 성장할 수 있도록 체계적인 언어발달을 돕습니다.",
+    "audience": "다문화·탈북민,저소득,한부모·조손",
+    "benefits": [
+      "다문화가정의 자녀가 건강한 사회구성원, 글로벌 인재로 성장할 수 있도록 체계적인 언어발달을 돕습니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003282&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003282&wlfareInfoReldBztpCd=01",
+    "contact": "1577-1366",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "다문화·탈북민,저소득,한부모·조손",
+      "benefit": "다문화가정의 자녀가 건강한 사회구성원, 글로벌 인재로 성장할 수 있도록 체계적인 언어발달을 돕습니다.",
+      "application": "공식 공고 확인",
+      "contact": "1577-1366"
+    }
+  },
+  {
+    "slug": "bokjiro-central-아동통합서비스지원-드림스타트사업",
+    "title": "아동통합서비스지원(드림스타트사업)",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "취약계층 아동에게 맞춤형 통합서비스를 제공하여 아동의 건강한 성장과 발달을 도모합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "아동통합서비스지원(드림스타트사업)",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "가구·부모",
+      "취약계층",
+      "아동에게",
+      "맞춤형",
+      "통합서비스를",
+      "제공하여",
+      "아동의",
+      "건강한",
+      "성장과"
+    ],
+    "summary": "취약계층 아동에게 맞춤형 통합서비스를 제공하여 아동의 건강한 성장과 발달을 도모합니다.",
+    "audience": "다문화·탈북민,저소득,한부모·조손",
+    "benefits": [
+      "취약계층 아동에게 맞춤형 통합서비스를 제공하여 아동의 건강한 성장과 발달을 도모합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003283&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00003283&wlfareInfoReldBztpCd=01",
+    "contact": "02-6454-8500",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "다문화·탈북민,저소득,한부모·조손",
+      "benefit": "취약계층 아동에게 맞춤형 통합서비스를 제공하여 아동의 건강한 성장과 발달을 도모합니다.",
+      "application": "공식 공고 확인",
+      "contact": "02-6454-8500"
+    }
+  },
+  {
+    "slug": "bokjiro-central-tv수신료-면제",
+    "title": "TV수신료 면제",
+    "category": "복지",
+    "source": "복지로 중앙부처 API",
+    "agency": "방송통신위원회",
+    "region": null,
+    "amount": "기초생활수급자, 차상위계층, 장애인, 국가유공자 등의 TV수신료 요금을 감면 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "TV수신료 면제",
+      "복지",
+      "방송통신위원회",
+      "확인필요",
+      "장애인",
+      "취약계층",
+      "기초생활수급자,",
+      "차상위계층,",
+      "장애인,",
+      "국가유공자",
+      "등의",
+      "TV수신료",
+      "요금을",
+      "감면"
+    ],
+    "summary": "기초생활수급자, 차상위계층, 장애인, 국가유공자 등의 TV수신료 요금을 감면 지원합니다.",
+    "audience": "보훈대상자,장애인,저소득",
+    "benefits": [
+      "기초생활수급자, 차상위계층, 장애인, 국가유공자 등의 TV수신료 요금을 감면 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004637&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004637&wlfareInfoReldBztpCd=01",
+    "contact": "1588",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "보훈대상자,장애인,저소득",
+      "benefit": "기초생활수급자, 차상위계층, 장애인, 국가유공자 등의 TV수신료 요금을 감면 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1588"
+    }
+  },
+  {
+    "slug": "bokjiro-central-가스요금할인",
+    "title": "가스요금할인",
+    "category": "복지",
+    "source": "복지로 중앙부처 API",
+    "agency": "산업통상자원부",
+    "region": null,
+    "amount": "기초생활수급자, 차상위계층, 장애인, 국가유공자 등 사회적배려대상자가 사용하는 도시가스요금을 감액하여 요금 감면을 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "가스요금할인",
+      "복지",
+      "산업통상자원부",
+      "확인필요",
+      "장애인",
+      "취약계층",
+      "기초생활수급자,",
+      "차상위계층,",
+      "장애인,",
+      "국가유공자",
+      "등",
+      "사회적배려대상자가",
+      "사용하는",
+      "도시가스요금을"
+    ],
+    "summary": "기초생활수급자, 차상위계층, 장애인, 국가유공자 등 사회적배려대상자가 사용하는 도시가스요금을 감액하여 요금 감면을 지원합니다.",
+    "audience": "다자녀,보훈대상자,장애인,저소득",
+    "benefits": [
+      "기초생활수급자, 차상위계층, 장애인, 국가유공자 등 사회적배려대상자가 사용하는 도시가스요금을 감액하여 요금 감면을 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004638&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004638&wlfareInfoReldBztpCd=01",
+    "contact": "053-670-0114",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "다자녀,보훈대상자,장애인,저소득",
+      "benefit": "기초생활수급자, 차상위계층, 장애인, 국가유공자 등 사회적배려대상자가 사용하는 도시가스요금을 감액하여 요금 감면을 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "053-670-0114"
+    }
+  },
+  {
+    "slug": "bokjiro-central-전기요금-복지할인",
+    "title": "전기요금 복지할인",
+    "category": "복지",
+    "source": "복지로 중앙부처 API",
+    "agency": "기후에너지환경부",
+    "region": null,
+    "amount": "기초생활수급자, 차상위계층, 기초연금수급자, 장애인, 국가유공자의 전기요금 부담을 경감하고자 요금감면을 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not provided by Bokjiro central fields",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "전기요금 복지할인",
+      "복지",
+      "기후에너지환경부",
+      "확인필요",
+      "장애인",
+      "취약계층",
+      "기초생활수급자,",
+      "차상위계층,",
+      "기초연금수급자,",
+      "장애인,",
+      "국가유공자의",
+      "전기요금",
+      "부담을",
+      "경감하고자"
+    ],
+    "summary": "기초생활수급자, 차상위계층, 기초연금수급자, 장애인, 국가유공자의 전기요금 부담을 경감하고자 요금감면을 지원합니다.",
+    "audience": "보훈대상자,장애인,저소득",
+    "benefits": [
+      "기초생활수급자, 차상위계층, 기초연금수급자, 장애인, 국가유공자의 전기요금 부담을 경감하고자 요금감면을 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004639&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004639&wlfareInfoReldBztpCd=01",
+    "contact": "129",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "보훈대상자,장애인,저소득",
+      "benefit": "기초생활수급자, 차상위계층, 기초연금수급자, 장애인, 국가유공자의 전기요금 부담을 경감하고자 요금감면을 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "129"
+    }
+  },
+  {
+    "slug": "bokjiro-central-국민연금-출산크레딧",
+    "title": "국민연금 출산크레딧",
+    "category": "보건의료",
+    "source": "복지로 중앙부처 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "출산에 대해 연금 가입기간을 추가로 인정하여 출산 친화 환경을 조성하고 여성의 연금 수급 기회를 확대합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "가구·부모",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "국민연금 출산크레딧",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "확인필요",
+      "가구·부모",
+      "출산에",
+      "대해",
+      "연금",
+      "가입기간을",
+      "추가로",
+      "인정하여",
+      "출산",
+      "친화"
+    ],
+    "summary": "출산에 대해 연금 가입기간을 추가로 인정하여 출산 친화 환경을 조성하고 여성의 연금 수급 기회를 확대합니다.",
+    "audience": "노년",
+    "benefits": [
+      "출산에 대해 연금 가입기간을 추가로 인정하여 출산 친화 환경을 조성하고 여성의 연금 수급 기회를 확대합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004647&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004647&wlfareInfoReldBztpCd=01",
+    "contact": "1355",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "노년",
+      "benefit": "출산에 대해 연금 가입기간을 추가로 인정하여 출산 친화 환경을 조성하고 여성의 연금 수급 기회를 확대합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1355"
+    }
+  },
+  {
+    "slug": "bokjiro-central-산재근로자-케어센터지원",
+    "title": "(산재근로자)케어센터지원",
+    "category": "고용",
+    "source": "복지로 중앙부처 API",
+    "agency": "고용노동부",
+    "region": "전국",
+    "amount": "고령·중증의 산재장해인 대상 전문적 간병서비스 제공으로 안정된 생활 유지와 가족 간병부담 완화를 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "구직자, 어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(산재근로자)케어센터지원",
+      "고용",
+      "전국",
+      "고용노동부",
+      "확인필요",
+      "구직자",
+      "어르신",
+      "고령·중증의",
+      "산재장해인",
+      "대상",
+      "전문적",
+      "간병서비스",
+      "제공으로",
+      "안정된"
+    ],
+    "summary": "고령·중증의 산재장해인 대상 전문적 간병서비스 제공으로 안정된 생활 유지와 가족 간병부담 완화를 지원합니다.",
+    "audience": "중장년,노년",
+    "benefits": [
+      "고령·중증의 산재장해인 대상 전문적 간병서비스 제공으로 안정된 생활 유지와 가족 간병부담 완화를 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004648&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004648&wlfareInfoReldBztpCd=01",
+    "contact": "031-359-0515",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "중장년,노년",
+      "benefit": "고령·중증의 산재장해인 대상 전문적 간병서비스 제공으로 안정된 생활 유지와 가족 간병부담 완화를 지원합니다.",
+      "application": "공식 공고 확인",
+      "contact": "031-359-0515"
+    }
+  },
+  {
+    "slug": "bokjiro-central-행복주택-공급",
+    "title": "행복주택 공급",
+    "category": "청년",
+    "source": "복지로 중앙부처 API",
+    "agency": "국토교통부",
+    "region": "전국",
+    "amount": "청년, (예비)신혼부부, 한부모가족, 대학생 등 젊은층의 주거 안정을 위해 대중교통이 편리하거나 직주근접이 가능한 부지에 주변 시세보다 저렴하게 공공임대주택을 공급합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in Bokjiro fields",
+      "date range is not explicit in Bokjiro fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "청년, 가구·부모, 취약계층",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "행복주택 공급",
+      "청년",
+      "전국",
+      "국토교통부",
+      "확인필요",
+      "가구·부모",
+      "취약계층",
+      "청년,",
+      "(예비)신혼부부,",
+      "한부모가족,",
+      "대학생",
+      "등",
+      "젊은층의",
+      "주거"
+    ],
+    "summary": "청년, (예비)신혼부부, 한부모가족, 대학생 등 젊은층의 주거 안정을 위해 대중교통이 편리하거나 직주근접이 가능한 부지에 주변 시세보다 저렴하게 공공임대주택을 공급합니다.",
+    "audience": "저소득,한부모·조손",
+    "benefits": [
+      "청년, (예비)신혼부부, 한부모가족, 대학생 등 젊은층의 주거 안정을 위해 대중교통이 편리하거나 직주근접이 가능한 부지에 주변 시세보다 저렴하게 공공임대주택을 공급합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "복지로 또는 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004649&wlfareInfoReldBztpCd=01",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004649&wlfareInfoReldBztpCd=01",
+    "contact": "1599-0001",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "복지로 중앙부처 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 복지로 또는 담당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "저소득,한부모·조손",
+      "benefit": "청년, (예비)신혼부부, 한부모가족, 대학생 등 젊은층의 주거 안정을 위해 대중교통이 편리하거나 직주근접이 가능한 부지에 주변 시세보다 저렴하게 공공임대주택을 공급합니다.",
+      "application": "공식 공고 확인",
+      "contact": "1599-0001"
+    }
+  }
+];
+
+policies.push(...bokjiroCentralPromotionPolicies);
+
 policies.push(...welfareApiPolicies);
 policies.push(...localWelfareApiPolicies);
 policies.push(...publicServiceApiPolicies);

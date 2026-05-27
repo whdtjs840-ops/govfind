@@ -699,3 +699,64 @@ Add future sources one at a time:
 - Bizinfo support programs
 - K-Startup startup programs
 - OnTongYouth youth policies
+
+## Bokjiro Central Dry-Run
+
+The Bokjiro central welfare importer is a staging-only importer for the Korea Social Security Information Service central welfare API. Its purpose is to inspect welfare-specialized official data before any public GovFind promotion.
+
+Run a small dry-run batch:
+
+```powershell
+npm.cmd run import:bokjiro-central:dry-run -- --limit=20 --save
+```
+
+Run page-sampled discovery without applying data:
+
+```powershell
+npm.cmd run discover:bokjiro-central -- --pages=2,5,10 --limit=50 --save --resume
+```
+
+Supported discovery options:
+
+- `--pages=2,5,10` for explicit page sampling
+- `--page=2 --max-pages=3` for a sequential page range
+- `--limit=50` for `numOfRows`
+- `--save` to write raw/staging/report artifacts
+- `--resume` to reuse matching saved reports instead of calling the API again
+- `--no-cache` to force a new call
+
+Required environment variables:
+
+- `GOVFIND_BOKJIRO_CENTRAL_API_KEY`
+- `GOVFIND_BOKJIRO_CENTRAL_PAGE` optional, default `1`
+- `GOVFIND_BOKJIRO_CENTRAL_PER_PAGE` optional, default `20`
+
+Compatibility fallback:
+
+- `GOVFIND_WELFARE_API_KEY` is also accepted for local compatibility with the older generated welfare script.
+
+Generated dry-run artifacts:
+
+```text
+data/imports/bokjiro-central/raw/
+data/imports/bokjiro-central/staging/
+data/imports/bokjiro-central/reports/
+data/staging/bokjiro-central/dry-run-report.json
+data/staging/bokjiro-central/discovery-report.json
+```
+
+The dry-run does not:
+
+- edit `src/data/policies.ts`
+- edit `src/data/*.generated.ts`
+- write to Prisma or any database
+- apply or promote policies
+- call Gov24
+
+Bokjiro mapping cautions:
+
+- Missing region is not treated as `전국` unless the source text explicitly supports a nationwide interpretation.
+- Missing or ambiguous application period becomes `dateConfidence: "unknown"` and `applicationPeriodLabel: "공식 공고 확인"`.
+- Ambiguous status stays `확인필요`; it is not rewritten to `모집중` or `상시`.
+- Category gaps are held in `needsReview` because incorrect welfare category mapping can damage category pages and SEO.
+- Duplicate candidates are previewed against existing public policies by source item id, official URL, title plus agency, title similarity plus agency, and title plus support-content similarity.
