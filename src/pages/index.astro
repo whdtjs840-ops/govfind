@@ -30,20 +30,27 @@ const categoryRoute = (label: string) => {
   return `/support/?q=${encodeURIComponent(label)}`;
 };
 
+const categoryIcons: Record<string, string> = {
+  "청년": "👨‍🎓",
+  "복지": "🤝",
+  "주거": "🏠",
+  "고용": "💼",
+  "창업": "🚀",
+  "교육": "📚",
+  "보건의료": "🏥",
+  "문화생활": "🎨",
+  "농림어업": "🌾",
+  "소상공인": "🏪"
+};
+
 const categoryCards = [
   { icon: "📋", label: "전체", count: counts.all },
-  { icon: "👨‍🎓", label: "청년", count: categoryCount("청년") },
-  { icon: "🤝", label: "복지", count: categoryCount("복지") },
-  { icon: "🏠", label: "주거", count: categoryCount("주거") },
-  { icon: "💼", label: "고용", count: categoryCount("고용") },
-  { icon: "🚀", label: "창업", count: categoryCount("창업") },
-  { icon: "📚", label: "교육", count: categoryCount("교육") },
-  { icon: "🏥", label: "보건의료", count: categoryCount("보건의료") },
-  { icon: "🎨", label: "문화생활", count: categoryCount("문화생활") },
-  { icon: "🌾", label: "농림어업", count: categoryCount("농림어업") },
-  { icon: "📌", label: "기타", count: categoryCount("기타") },
-  { icon: "🧾", label: "채용", count: categoryCount("채용") }
-];
+  ...categoryGroups.map((category) => ({
+    icon: categoryIcons[category.label] ?? "📌",
+    label: category.label,
+    count: categoryCount(category.label)
+  }))
+].filter((category) => category.count > 0);
 
 const popularKeywords = ["청년", "창업", "주거", "채용", "복지", "소상공인", "교육", "의료"];
 ---

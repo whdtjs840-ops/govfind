@@ -29,6 +29,7 @@ const counts = {
   youth: publicDisplayPolicies.filter((policy) => `${policy.title} ${policy.tags.join(" ")}`.includes("청년")).length,
   smallBusiness: publicDisplayPolicies.filter((policy) => `${policy.title} ${policy.tags.join(" ")}`.includes("소상공인")).length
 };
+const activeCategories = categories.filter((category) => (policyCounts.byCategory[category] ?? 0) > 0);
 
 function supportHref(next: Record<string, string>) {
   const query = new URLSearchParams();
@@ -49,7 +50,7 @@ const quickTabs = [
   { label: "소상공인", count: counts.smallBusiness, href: supportHref({ q: "소상공인" }), active: selectedQ === "소상공인" }
 ];
 
-const topCategories = categoryGroups.slice(0, 7);
+const topCategories = categoryGroups.filter((category) => (policyCounts.byCategory[category.label] ?? 0) > 0).slice(0, 7);
 const actionKeywords = [
   "근로장려금 신청방법",
   "근로장려금 대상조회",
@@ -95,7 +96,7 @@ const intentCards = [
         <div class="support-search-selects">
           <select class="input" name="category" aria-label="카테고리">
             <option value="">전체 카테고리</option>
-            {categories.map((item) => <option value={item} selected={selectedCategory === item}>{item}</option>)}
+            {activeCategories.map((item) => <option value={item} selected={selectedCategory === item}>{item}</option>)}
           </select>
           <select class="input" name="region" aria-label="지역">
             <option value="">전체 지역</option>
