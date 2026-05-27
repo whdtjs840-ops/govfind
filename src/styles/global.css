@@ -759,6 +759,35 @@ dd {
   margin-top: 10px;
 }
 
+.doc-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.doc-highlight-card {
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fbfa;
+}
+
+.doc-highlight-card span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.doc-highlight-card strong {
+  display: block;
+  color: var(--ink);
+  line-height: 1.45;
+}
+
 .doc-info-table {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1979,7 +2008,7 @@ dd {
   .hero { min-height: auto; padding: 42px 0 34px; }
   .hero::after { background: rgba(246, 252, 250, 0.9); }
   .hero::before { display: none; }
-  .hero-inner, .home-hero-grid, .split, .split.wide, .footer-grid, .detail-grid, .policy-doc-section .doc-wrap, .doc-info-table, .results-layout, .search-toolbar, .checker-grid, .profile-lite, .profile-lite-form { grid-template-columns: 1fr; }
+  .hero-inner, .home-hero-grid, .split, .split.wide, .footer-grid, .detail-grid, .policy-doc-section .doc-wrap, .doc-info-table, .doc-highlight-grid, .results-layout, .search-toolbar, .checker-grid, .profile-lite, .profile-lite-form { grid-template-columns: 1fr; }
   .search-row { grid-template-columns: 1fr; }
   .support-search-selects, .support-summary-grid, .support-results-layout, .support-result-list .support-card, .support-result-list .card-facts, .home-filter-row, .home-stat-grid, .category-tile-grid, .home-two-column, .policy-strip-grid, .guide-card-grid, .home-source-note .wrap, .stats, .grid.cols-2, .grid.cols-3, .flow-grid, .metric-grid, .category-rail, .two-lists, .ranking-grid, .landing-link-grid, .notification-grid, .detail-actions, .progress-steps, .dashboard-grid, .dashboard-summary, .schema-grid, .integration-grid, .condition-row, .home-service-flow, .doc-apply-path { grid-template-columns: 1fr; }
   .condition-footer { align-items: stretch; flex-direction: column; }

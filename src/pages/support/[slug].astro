@@ -61,6 +61,25 @@ const targetLines = lines(detailTarget, 10);
 const benefitLines = lines(detailBenefit, 10);
 const applyLines = lines(detailApply, 10);
 const criteriaLines = lines(detailCriteria, 8);
+const summaryText = cleanSummary(policy.summary);
+const documentLines = policy.documents.map((item) => item.trim()).filter(Boolean);
+const faqItems = policy.faq.filter((item) => item.q?.trim() && item.a?.trim());
+const warningLines = (policy.warnings ?? []).map((item) => item.trim()).filter(Boolean);
+const contentHighlights = [
+  { label: "지원 대상", value: policy.targetGroup || targetLines[0] || policy.audience },
+  { label: "지원 내용", value: cleanSummary(policy.amount || benefitLines[0] || "") },
+  { label: "신청 방법", value: applyLines[0] || policy.apply },
+  { label: "공식 출처", value: `${sourceLabel(policy.source)} · ${policy.agency}` }
+].filter((item) => item.value);
+const anchorItems = [
+  { href: "#summary", label: "요약" },
+  { href: "#target", label: "지원대상" },
+  { href: "#benefit", label: "지원내용" },
+  { href: "#apply", label: "신청방법" },
+  ...(documentLines.length ? [{ href: "#documents", label: "필요서류" }] : []),
+  ...(faqItems.length ? [{ href: "#faq", label: "FAQ" }] : []),
+  { href: "#official-check", label: "공식확인" }
+];
 const categorySlug =
   policy.category === "복지" ? "welfare" :
   policy.category === "주거" ? "housing" :
@@ -164,13 +183,7 @@ const seoDescription = truncateMeta(
       </div>
 
       <nav class="doc-anchor-nav" aria-label="상세 섹션 이동">
-        <a href="#summary">요약</a>
-        <a href="#target">지원대상</a>
-        <a href="#benefit">지원내용</a>
-        <a href="#apply">신청방법</a>
-        <a href="#documents">필요서류</a>
-        <a href="#faq">FAQ</a>
-        <a href="#official-check">공식확인</a>
+        {anchorItems.map((item) => <a href={item.href}>{item.label}</a>)}
       </nav>
     </div>
   </section>
@@ -180,10 +193,15 @@ const seoDescription = truncateMeta(
       <article class="policy-doc">
         <section class="doc-block" id="summary">
           <h2>핵심 요약</h2>
-          <p>
-            이 정책은 {policy.targetGroup} 대상자가 {policy.amount} 지원을 검토할 때 확인할 수 있는 {policy.category} 지원 정보입니다.
-            {policy.agency}에서 운영하며, 신청 기간은 {policy.deadline}입니다. 최종 자격과 접수 가능 여부는 공식 신청처에서 다시 확인해야 합니다.
-          </p>
+          <p>{summaryText}</p>
+          <div class="doc-highlight-grid" aria-label="핵심 정보 요약">
+            {contentHighlights.map((item) => (
+              <div class="doc-highlight-card">
+                <span>{item.label}</span>
+                <strong>{item.value}</strong>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section class="doc-block">
@@ -209,10 +227,14 @@ const seoDescription = truncateMeta(
           <p class="notice">GovFind는 원문 출처, 기관명, 신청 링크, 마지막 확인일을 함께 보여주어 사용자가 공식 신청 전 빠르게 검토할 수 있도록 돕습니다.</p>
         </section>
 
-        <section class="doc-block">
-          <h3>정책 요약</h3>
-          <p>{cleanSummary(policy.summary)}</p>
-        </section>
+        {warningLines.length > 0 && (
+          <section class="doc-block">
+            <h3>확인 안내</h3>
+            <ul class="doc-list">
+              {warningLines.map((item) => <li>{item}</li>)}
+            </ul>
+          </section>
+        )}
 
         <section class="doc-block">
           <h3>근거 요약</h3>
@@ -262,24 +284,28 @@ const seoDescription = truncateMeta(
           <p class="notice">GovFind는 자격을 단정하지 않고 조건 확인을 돕습니다. 신청 전 기관명, 제출 서류, 접수 기간을 공식 페이지에서 다시 확인하세요.</p>
         </section>
 
-        <section class="doc-block" id="documents">
-          <h3>필요 서류</h3>
-          <ul class="doc-list">
-            {policy.documents.map((item) => <li>{item}</li>)}
-          </ul>
-        </section>
+        {documentLines.length > 0 && (
+          <section class="doc-block" id="documents">
+            <h3>필요 서류</h3>
+            <ul class="doc-list">
+              {documentLines.map((item) => <li>{item}</li>)}
+            </ul>
+          </section>
+        )}
 
-        <section class="doc-block" id="faq">
-          <h3>자주 묻는 질문</h3>
-          <div class="faq-list doc-faq">
-            {policy.faq.map((item) => (
-              <details>
-                <summary>{item.q}</summary>
-                <p>{item.a}</p>
-              </details>
-            ))}
-          </div>
-        </section>
+        {faqItems.length > 0 && (
+          <section class="doc-block" id="faq">
+            <h3>자주 묻는 질문</h3>
+            <div class="faq-list doc-faq">
+              {faqItems.map((item) => (
+                <details>
+                  <summary>{item.q}</summary>
+                  <p>{item.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+        )}
 
         <section class="doc-block" id="official-check">
           <h3>신청 전 확인사항</h3>
