@@ -13476,6 +13476,9276 @@ const gov24PromotionPoliciesBatch2: Policy[] = [
 
 policies.push(...gov24PromotionPoliciesBatch2);
 
+const gov24PromotionPoliciesBatch3: Policy[] = [
+  {
+    "slug": "gov24-신재생에너지설비-설치-보조금-지원",
+    "title": "신재생에너지설비 설치 보조금 지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 가평군",
+    "region": "경기",
+    "amount": "군민이 신재생에너지 설비(태양광, 태양열, 지열) 설치 시 보조금 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "신재생에너지설비 설치 보조금 지원",
+      "주거",
+      "경기",
+      "경기도 가평군",
+      "상시",
+      "일반",
+      "전체",
+      "군민이",
+      "신재생에너지",
+      "설비(태양광,",
+      "태양열,",
+      "지열)"
+    ],
+    "summary": "군민이 신재생에너지 설비(태양광, 태양열, 지열) 설치 시 보조금 지급",
+    "audience": "○ 가평군민이 가평관내 신재생에너지 설비(태양광, 태양열, 지열) 설치 시 보조금 지급",
+    "benefits": [
+      "군민이 신재생에너지 설비(태양광, 태양열, 지열) 설치 시 보조금 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 시군구 : 관할 군청 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/416000000113",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/416000000113",
+    "contact": "경기도 가평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 가평군민이 가평관내 신재생에너지 설비(태양광, 태양열, 지열) 설치 시 보조금 지급",
+      "benefit": "군민이 신재생에너지 설비(태양광, 태양열, 지열) 설치 시 보조금 지급",
+      "application": "○ 방문 신청\n - 시군구 : 관할 군청 방문",
+      "contact": "경기도 가평군"
+    }
+  },
+  {
+    "slug": "gov24-가평군-난임부부-시술비-약제비-지원-난임시술-이후-원외-약제비-청구",
+    "title": "[가평군] 난임부부 시술비 약제비 지원(난임시술 이후 원외 약제비 청구)",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 가평군",
+    "region": "경기",
+    "amount": "난임부부 시술과 직접적 관련 있는 원외처방 약제비에 대해 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "[가평군] 난임부부 시술비 약제비 지원(난임시술 이후 원외 약제비 청구)",
+      "복지",
+      "경기",
+      "경기도 가평군",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "난임부부",
+      "시술과",
+      "직접적",
+      "관련"
+    ],
+    "summary": "난임부부 시술과 직접적 관련 있는 원외처방 약제비에 대해 지원",
+    "audience": "○ 난임부부 시술비 지원사업 관련, 난임부부 시술과 직접적 관련 있는 원외처방 약제비에 대해 정부 지원금액 한도 내에서 지원\n지원범위 → [정부지원금] - [시술확인서에 청구된 비용]의 차액\n\n* 지원결정통지서 발급일 이후부터 해당 시술 차수 시갈 기간 내에 발생한 약제비만 청구 가능\n* 크리논겔, 싸이클로제스트, 루티너스질정 등 프로게스테론 호르몬 종류가 포함된 영수증만 청구 가능\n* 시술 종료일로부터 1개월 이내 청구",
+    "benefits": [
+      "난임부부 시술과 직접적 관련 있는 원외처방 약제비에 대해 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 시술 완료 후 관련 서류를 첨부하여 시술 완료 후 1개월 이내 보건소로 청구(지원결정통지서 발급 보건소)\n \n- 방문신청: 가평군보건소 2층 건강증진과 생명사랑팀\n- 온라인신청: 정부24 온라인 신청\n- e보건소로 난임시술비 지원 신청하였을 경우, 약제비도 e보건소로 청구 가능 \n\n○ 지급 시기\n- 청구일로부터 1개월 이내 지급",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/416000000267",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/416000000267",
+    "contact": "경기도 가평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 난임부부 시술비 지원사업 관련, 난임부부 시술과 직접적 관련 있는 원외처방 약제비에 대해 정부 지원금액 한도 내에서 지원\n지원범위 → [정부지원금] - [시술확인서에 청구된 비용]의 차액\n\n* 지원결정통지서 발급일 이후부터 해당 시술 차수 시갈 기간 내에 발생한 약제비만 청구 가능\n* 크리논겔, 싸이클로제스트, 루티너스질정 등 프로게스테론 호르몬 종류가 포함된 영수증만 청구 가능\n* 시술 종료일로부터 1개월 이내 청구",
+      "benefit": "난임부부 시술과 직접적 관련 있는 원외처방 약제비에 대해 지원",
+      "application": "○ 시술 완료 후 관련 서류를 첨부하여 시술 완료 후 1개월 이내 보건소로 청구(지원결정통지서 발급 보건소)\n \n- 방문신청: 가평군보건소 2층 건강증진과 생명사랑팀\n- 온라인신청: 정부24 온라인 신청\n- e보건소로 난임시술비 지원 신청하였을 경우, 약제비도 e보건소로 청구 가능 \n\n○ 지급 시기\n- 청구일로부터 1개월 이내 지급",
+      "contact": "경기도 가평군"
+    }
+  },
+  {
+    "slug": "gov24-주거위기가구-임시주거지원",
+    "title": "주거위기가구 임시주거지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양평군",
+    "region": "경기",
+    "amount": "주거위기가구를 위해 임시주거지 제공 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거·복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "주거위기가구 임시주거지원",
+      "주거",
+      "경기",
+      "경기도 양평군",
+      "상시",
+      "일반",
+      "전체",
+      "복지",
+      "주거위기가구를",
+      "위해",
+      "임시주거지",
+      "제공"
+    ],
+    "summary": "주거위기가구를 위해 임시주거지 제공 지원",
+    "audience": "○ 주거위기가구를 대상으로 공공임대주택 지원 이전에 임시주거지 제공",
+    "benefits": [
+      "주거위기가구를 위해 임시주거지 제공 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 거주지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 양평군청 건축과 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000120",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000120",
+    "contact": "경기도 양평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 주거위기가구를 대상으로 공공임대주택 지원 이전에 임시주거지 제공",
+      "benefit": "주거위기가구를 위해 임시주거지 제공 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 거주지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 양평군청 건축과 방문",
+      "contact": "경기도 양평군"
+    }
+  },
+  {
+    "slug": "gov24-특별교통수단-운영지원",
+    "title": "특별교통수단 운영지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 경산시",
+    "region": "경북",
+    "amount": "장애 및 고령으로 인하여 대중교통 이용이 제한되는 교통약자에 대한 이동지원 서비스 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "특별교통수단 운영지원",
+      "보건의료",
+      "경북",
+      "경상북도 경산시",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "복지",
+      "장애",
+      "및",
+      "고령으로"
+    ],
+    "summary": "장애 및 고령으로 인하여 대중교통 이용이 제한되는 교통약자에 대한 이동지원 서비스 제공",
+    "audience": "장애 및 고령으로 인하여 대중교통 이용이 제한되는 교통약자에 대한 이동지원 서비스 제공",
+    "benefits": [
+      "장애 및 고령으로 인하여 대중교통 이용이 제한되는 교통약자에 대한 이동지원 서비스 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "광역이동지원센터 및 경산교통 유선 신청\n\n - 최초 이용자 등록 관련 경산교통 : 053-802-1700\n\n - 이용자 등록 후 배차 관련 경북 광역이동지원센터 : http://www.brmcall.co.kr/main.do 또는 연락처 1899-7770",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/513000000360",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/513000000360",
+    "contact": "경상북도 경산시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애 및 고령으로 인하여 대중교통 이용이 제한되는 교통약자에 대한 이동지원 서비스 제공",
+      "benefit": "장애 및 고령으로 인하여 대중교통 이용이 제한되는 교통약자에 대한 이동지원 서비스 제공",
+      "application": "광역이동지원센터 및 경산교통 유선 신청\n\n - 최초 이용자 등록 관련 경산교통 : 053-802-1700\n\n - 이용자 등록 후 배차 관련 경북 광역이동지원센터 : http://www.brmcall.co.kr/main.do 또는 연락처 1899-7770",
+      "contact": "경상북도 경산시"
+    }
+  },
+  {
+    "slug": "gov24-대학생-학습멘토링-프로그램-운영",
+    "title": "대학생 학습멘토링 프로그램 운영",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "서울시 소재 대학 및 동대문구 기숙학사 대학생을 동대문구 학생들과 매칭하여 수업을 진행",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·청년",
+    "targetGroup": "청년, 부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "대학생 학습멘토링 프로그램 운영",
+      "청년",
+      "서울",
+      "서울특별시 동대문구",
+      "모집중",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "서울시",
+      "소재",
+      "대학",
+      "및"
+    ],
+    "summary": "서울시 소재 대학 및 동대문구 기숙학사 대학생을 동대문구 학생들과 매칭하여 수업을 진행",
+    "audience": "○ 서울시 대학생들과 동대문구 초중고교, 지역아동센터 및 우리동네키움센터 소속 학생들을 연계하여 학습 서비스 제공\n - 상반기, 하반기 연 2회 운영",
+    "benefits": [
+      "서울시 소재 대학 및 동대문구 기숙학사 대학생을 동대문구 학생들과 매칭하여 수업을 진행"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 모집기간 중 동대문구 초중고교, 지역아동센터 및 우리동네키움센터의 추천을 통한 멘티학생 선정",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000152",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000152",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 서울시 대학생들과 동대문구 초중고교, 지역아동센터 및 우리동네키움센터 소속 학생들을 연계하여 학습 서비스 제공\n - 상반기, 하반기 연 2회 운영",
+      "benefit": "서울시 소재 대학 및 동대문구 기숙학사 대학생을 동대문구 학생들과 매칭하여 수업을 진행",
+      "application": "○ 모집기간 중 동대문구 초중고교, 지역아동센터 및 우리동네키움센터의 추천을 통한 멘티학생 선정",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-1차진료-내과-서비스",
+    "title": "1차진료(내과) 서비스",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "1차진료 및 검사 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "1차진료(내과) 서비스",
+      "보건의료",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "복지",
+      "1차진료",
+      "및",
+      "검사"
+    ],
+    "summary": "1차진료 및 검사 지원",
+    "audience": "ㅇ만성질환, 성인병 중심 진료\n - 고혈압, 고지혈증, 당뇨 등 만성질환\n - 관절염, 요통 등에 대한 약·물리치료 처방 : 정형외과적 검사 제외\n - 급성 인후두염(감기), 소화장애 등 경증 질환 : 전문 검사 제외\n - 일반적인 임상병리 검사(혈액, 소변검사) : 암검사 제외\n\nㅇ 진료비\n - 의료급여수급자, 국가유공자, 독립유공자, 5·18민주유공자, 고엽제후유증 환자 : 진료비 무료\n - 65세 이상 서울시민: 진료비 무료 (단, 일반 검사 및 제증명 발급 수수료는 유료)\n - 65세 이하 서울시민: 진료비 500원~6,090원\n\nㅇ진료시간 : 평일 09:00~18:00(점심시간 12:00~13:00)",
+    "benefits": [
+      "1차진료 및 검사 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문신청\n - 보건소 민원실 방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000290",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000290",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "ㅇ만성질환, 성인병 중심 진료\n - 고혈압, 고지혈증, 당뇨 등 만성질환\n - 관절염, 요통 등에 대한 약·물리치료 처방 : 정형외과적 검사 제외\n - 급성 인후두염(감기), 소화장애 등 경증 질환 : 전문 검사 제외\n - 일반적인 임상병리 검사(혈액, 소변검사) : 암검사 제외\n\nㅇ 진료비\n - 의료급여수급자, 국가유공자, 독립유공자, 5·18민주유공자, 고엽제후유증 환자 : 진료비 무료\n - 65세 이상 서울시민: 진료비 무료 (단, 일반 검사 및 제증명 발급 수수료는 유료)\n - 65세 이하 서울시민: 진료비 500원~6,090원\n\nㅇ진료시간 : 평일 09:00~18:00(점심시간 12:00~13:00)",
+      "benefit": "1차진료 및 검사 지원",
+      "application": "○ 방문신청\n - 보건소 민원실 방문신청",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-보건소-한방진료-지원",
+    "title": "보건소 한방진료 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "만 15세 이상 전 구민에게 한방진료 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "보건소 한방진료 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "복지",
+      "만",
+      "15세",
+      "이상"
+    ],
+    "summary": "만 15세 이상 전 구민에게 한방진료 제공",
+    "audience": "ㅇ진료내용 : 한방건강상담 및 한방보험약제 처방 침, 부항 등 한방요법 진료\n * 보험에 해당하지 않는 첩약 처방, 조제는 진료내용 범위에 포함되지 않음\nㅇ진료시간 : 매주 월요일 ~ 금요일(오전 9시~오후 6시)\nㅇ대상 : 만 15세이상 전 주민\nㅇ무료진료 : 만 65세 이상 서울시민 및 의료급여수급권자,장애인 1~3급, 국가유공자 본인 등.\nㅇ유료진료 : 65세 미만 주민 1,100원~ (약 처방 일수에 따라 추가)\nㅇ진료예약 : 방문 및 전화로 사전예약(신분증 및 관련서류 지참)",
+    "benefits": [
+      "만 15세 이상 전 구민에게 한방진료 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문 및 전화로 사전예약(신분증 및 관련서류 지참)\n- 장소 : 동대문구청 2층 한방과(세무과와 다목적강당 사이)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000291",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000291",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "ㅇ진료내용 : 한방건강상담 및 한방보험약제 처방 침, 부항 등 한방요법 진료\n * 보험에 해당하지 않는 첩약 처방, 조제는 진료내용 범위에 포함되지 않음\nㅇ진료시간 : 매주 월요일 ~ 금요일(오전 9시~오후 6시)\nㅇ대상 : 만 15세이상 전 주민\nㅇ무료진료 : 만 65세 이상 서울시민 및 의료급여수급권자,장애인 1~3급, 국가유공자 본인 등.\nㅇ유료진료 : 65세 미만 주민 1,100원~ (약 처방 일수에 따라 추가)\nㅇ진료예약 : 방문 및 전화로 사전예약(신분증 및 관련서류 지참)",
+      "benefit": "만 15세 이상 전 구민에게 한방진료 제공",
+      "application": "방문 및 전화로 사전예약(신분증 및 관련서류 지참)\n- 장소 : 동대문구청 2층 한방과(세무과와 다목적강당 사이)",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-보제원-한방이동진료실-운영",
+    "title": "보제원 한방이동진료실 운영",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "한방진료 및 상담 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "보제원 한방이동진료실 운영",
+      "보건의료",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "복지",
+      "한방진료",
+      "및",
+      "상담"
+    ],
+    "summary": "한방진료 및 상담 지원",
+    "audience": "ㅇ진료내용 : 한방건강상담 및 한방보험약제 처방 침, 부항 등 한방요법 진료\nㅇ진료시간 : 매주 화요일~토요일(오전 9시~오후 6시)\nㅇ대상\n - 무료진료 : 만 65세 이상 서울시민 및 의료급여수급권자,장애인 1~3급, 국가유공자 본인 등.\n - 무료상담 : 일반 내 · 외국인 누구나 가능\nㅇ진료예약 : 방문 및 전화로 사전예약(신분증 및 관련서류 지참)",
+    "benefits": [
+      "한방진료 및 상담 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문 및 전화로 사전예약 후 진료\n - 주소 : 동대문구 약령중앙로 26 서울한방진흥센터 3층 보제원 한방이동진료실\n(제기역 2번출구 약령시장 방면으로 직진)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000292",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000292",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "ㅇ진료내용 : 한방건강상담 및 한방보험약제 처방 침, 부항 등 한방요법 진료\nㅇ진료시간 : 매주 화요일~토요일(오전 9시~오후 6시)\nㅇ대상\n - 무료진료 : 만 65세 이상 서울시민 및 의료급여수급권자,장애인 1~3급, 국가유공자 본인 등.\n - 무료상담 : 일반 내 · 외국인 누구나 가능\nㅇ진료예약 : 방문 및 전화로 사전예약(신분증 및 관련서류 지참)",
+      "benefit": "한방진료 및 상담 지원",
+      "application": "방문 및 전화로 사전예약 후 진료\n - 주소 : 동대문구 약령중앙로 26 서울한방진흥센터 3층 보제원 한방이동진료실\n(제기역 2번출구 약령시장 방면으로 직진)",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-구강보건서비스",
+    "title": "구강보건서비스",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "아동,청소년, 노인, 장애인 등에게 구강보건서비스 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아, 어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "구강보건서비스",
+      "청년",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "부모/육아",
+      "어르신",
+      "장애인",
+      "아동",
+      "청소년",
+      "임신·출산·육아",
+      "복지"
+    ],
+    "summary": "아동,청소년, 노인, 장애인 등에게 구강보건서비스 지원",
+    "audience": "ㅇ대상 : 동대문구 거주 만 4세이상 주민\nㅇ진료내용\n - 치아홈메우기(관내 초등학생 건전한 영구치 큰 어금니)\n - 급성 치주질환 치료\n - 치아마모증 치료(보험재료)\n - 초기 충치치료(보험재료)\n - 단순발치)\n\n*진료제외 : 신경치료, 스케일링, 난발치(사랑니, 뿌리만 남은 치아 등), 비보험치료(레진, 보철)\n\nㅇ진료비\n - 만65세 이상 서울시민 및 국가유공자, 의료급여대상자, 장애인 1~3급 : 무료\n - 만65세 미만 서울시민 : 진료비 500원~6,090원",
+    "benefits": [
+      "아동,청소년, 노인, 장애인 등에게 구강보건서비스 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 거주지 관할 보건소 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000293",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000293",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "ㅇ대상 : 동대문구 거주 만 4세이상 주민\nㅇ진료내용\n - 치아홈메우기(관내 초등학생 건전한 영구치 큰 어금니)\n - 급성 치주질환 치료\n - 치아마모증 치료(보험재료)\n - 초기 충치치료(보험재료)\n - 단순발치)\n\n*진료제외 : 신경치료, 스케일링, 난발치(사랑니, 뿌리만 남은 치아 등), 비보험치료(레진, 보철)\n\nㅇ진료비\n - 만65세 이상 서울시민 및 국가유공자, 의료급여대상자, 장애인 1~3급 : 무료\n - 만65세 미만 서울시민 : 진료비 500원~6,090원",
+      "benefit": "아동,청소년, 노인, 장애인 등에게 구강보건서비스 지원",
+      "application": "○ 방문 신청\n - 보건소 : 거주지 관할 보건소 방문",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-장애인-보장구-수리-지원",
+    "title": "장애인 보장구 수리 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양평군",
+    "region": "경기",
+    "amount": "보조기기 수리 및 부품교체 지원 - 기초수급자 : 연 20만원 /일반 연10만원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인 보장구 수리 지원",
+      "보건의료",
+      "경기",
+      "경기도 양평군",
+      "상시",
+      "장애인",
+      "전체",
+      "복지",
+      "보조기기",
+      "수리",
+      "및",
+      "부품교체"
+    ],
+    "summary": "보조기기 수리 및 부품교체 지원 - 기초수급자 : 연 20만원 /일반 연10만원",
+    "audience": "○ 장애인 보조기기(수동, 자동 휠체어 및 스쿠터 등) 단순수리 및 부품교체",
+    "benefits": [
+      "보조기기 수리 및 부품교체 지원 - 기초수급자 : 연 20만원 /일반 연10만원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 거주지 읍면사무소 방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000106",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000106",
+    "contact": "경기도 양평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 장애인 보조기기(수동, 자동 휠체어 및 스쿠터 등) 단순수리 및 부품교체",
+      "benefit": "보조기기 수리 및 부품교체 지원 - 기초수급자 : 연 20만원 /일반 연10만원",
+      "application": "○ 거주지 읍면사무소 방문신청",
+      "contact": "경기도 양평군"
+    }
+  },
+  {
+    "slug": "gov24-장애인-자립생활-정착금-지원",
+    "title": "장애인 자립생활 정착금 지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양평군",
+    "region": "경기",
+    "amount": "시설퇴소 장애인에게 자립생활 정착금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거·복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인 자립생활 정착금 지원",
+      "주거",
+      "경기",
+      "경기도 양평군",
+      "상시",
+      "장애인",
+      "전체",
+      "복지",
+      "시설퇴소",
+      "장애인에게",
+      "자립생활",
+      "정착금"
+    ],
+    "summary": "시설퇴소 장애인에게 자립생활 정착금 지원",
+    "audience": "○ 장애인 거주시설 및 체험 수료 장애인을 대상으로 자립을 위해 시설에서 퇴소 시 초기 거주비용(임대보증금, 월세), 편의시설 설치, 생활용품 구입 등 정착금 지원",
+    "benefits": [
+      "시설퇴소 장애인에게 자립생활 정착금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 시군구 : 양평군청 가족복지과 방문\n - 각 읍면 : 각읍면 복지팀 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000107",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000107",
+    "contact": "경기도 양평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 장애인 거주시설 및 체험 수료 장애인을 대상으로 자립을 위해 시설에서 퇴소 시 초기 거주비용(임대보증금, 월세), 편의시설 설치, 생활용품 구입 등 정착금 지원",
+      "benefit": "시설퇴소 장애인에게 자립생활 정착금 지원",
+      "application": "○ 방문 신청\n - 시군구 : 양평군청 가족복지과 방문\n - 각 읍면 : 각읍면 복지팀 방문",
+      "contact": "경기도 양평군"
+    }
+  },
+  {
+    "slug": "gov24-유기질비료-지원-및-팔당댐-상류지역-영농비-지원",
+    "title": "유기질비료 지원 및 팔당댐 상류지역 영농비 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양평군",
+    "region": "경기",
+    "amount": "농가에 혼합유박 및 가축분퇴비 등 비료구입비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "유기질비료 지원 및 팔당댐 상류지역 영농비 지원",
+      "농림어업",
+      "경기",
+      "경기도 양평군",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "농가에",
+      "혼합유박",
+      "및",
+      "가축분퇴비",
+      "등"
+    ],
+    "summary": "농가에 혼합유박 및 가축분퇴비 등 비료구입비 지원",
+    "audience": "○ 농업인을 대상으로 혼합유박 및 가축분퇴비 등 비료구입비 지원",
+    "benefits": [
+      "농가에 혼합유박 및 가축분퇴비 등 비료구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 읍.면사무소 : 주소지 관할 읍·면·사무소",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000110",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000110",
+    "contact": "경기도 양평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 농업인을 대상으로 혼합유박 및 가축분퇴비 등 비료구입비 지원",
+      "benefit": "농가에 혼합유박 및 가축분퇴비 등 비료구입비 지원",
+      "application": "○ 방문 신청\n - 읍.면사무소 : 주소지 관할 읍·면·사무소",
+      "contact": "경기도 양평군"
+    }
+  },
+  {
+    "slug": "gov24-친환경-인증-농가-농업생산자재-지원",
+    "title": "친환경 인증 농가 농업생산자재 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양평군",
+    "region": "경기",
+    "amount": "친환경인증농지를 보유한 농가에 유기농업자재 구입비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "친환경 인증 농가 농업생산자재 지원",
+      "농림어업",
+      "경기",
+      "경기도 양평군",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "친환경인증농지를",
+      "보유한",
+      "농가에",
+      "유기농업자재",
+      "구입비"
+    ],
+    "summary": "친환경인증농지를 보유한 농가에 유기농업자재 구입비 지원",
+    "audience": "○ 친환경인증농가를 대상으로 영농에 필요한 유기농업자재 구입비 지원\n\n ※ 친환경인증 면적에 따라 보조금액 산정",
+    "benefits": [
+      "친환경인증농지를 보유한 농가에 유기농업자재 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면사무소방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000118",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000118",
+    "contact": "경기도 양평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 친환경인증농가를 대상으로 영농에 필요한 유기농업자재 구입비 지원\n\n ※ 친환경인증 면적에 따라 보조금액 산정",
+      "benefit": "친환경인증농지를 보유한 농가에 유기농업자재 구입비 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면사무소방문",
+      "contact": "경기도 양평군"
+    }
+  },
+  {
+    "slug": "gov24-로컬푸드-직매장-및-농가-생산-및-가공-지원",
+    "title": "로컬푸드 직매장 및 농가 생산 및 가공 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양평군",
+    "region": "경기",
+    "amount": "경기도 로컬푸드 납품농가 등에 생산 및 가공시설 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "로컬푸드 직매장 및 농가 생산 및 가공 지원",
+      "농림어업",
+      "경기",
+      "경기도 양평군",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "경기도",
+      "로컬푸드",
+      "납품농가",
+      "등에",
+      "생산"
+    ],
+    "summary": "경기도 로컬푸드 납품농가 등에 생산 및 가공시설 지원",
+    "audience": "○ 서비스 내용\n - 로컬푸드 직매장 및 납품농가를 대상으로 생산 및 가공시설 지원\n - 비닐하우스, 난방기, 다겹보온커튼,자동개폐시설, 이동식저류조, 저온저장고, 기타 생산시설 지원\n\n○ 서비스 금액\n - 보조금 50% / 자부담 50%",
+    "benefits": [
+      "경기도 로컬푸드 납품농가 등에 생산 및 가공시설 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 거주지 관할 읍면 주민센터에 방문 신청\n - 기타 : 양평군 농업기술센터 친환경농업과 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000124",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000124",
+    "contact": "경기도 양평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 서비스 내용\n - 로컬푸드 직매장 및 납품농가를 대상으로 생산 및 가공시설 지원\n - 비닐하우스, 난방기, 다겹보온커튼,자동개폐시설, 이동식저류조, 저온저장고, 기타 생산시설 지원\n\n○ 서비스 금액\n - 보조금 50% / 자부담 50%",
+      "benefit": "경기도 로컬푸드 납품농가 등에 생산 및 가공시설 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 거주지 관할 읍면 주민센터에 방문 신청\n - 기타 : 양평군 농업기술센터 친환경농업과 방문",
+      "contact": "경기도 양평군"
+    }
+  },
+  {
+    "slug": "gov24-농작물-재해보험료-지원",
+    "title": "농작물 재해보험료 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "대구광역시 군위군",
+    "region": "대구",
+    "amount": "농작물 재해보험 가입 시 총보험료의 10%만 개인 부담",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "농작물 재해보험료 지원",
+      "농림어업",
+      "대구",
+      "대구광역시 군위군",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "농작물",
+      "재해보험",
+      "가입",
+      "시",
+      "총보험료의"
+    ],
+    "summary": "농작물 재해보험 가입 시 총보험료의 10%만 개인 부담",
+    "audience": "지원대상: 관내 거주하고 관내 농지를 소유한 보험 가입 농가(경작지는 1,000㎡ 이상)\n\n지원내용: 총 보험료의 10%만 개인 부담\n\n접수처: 농협중앙회 군위군지부, 지역조합, 품목조합",
+    "benefits": [
+      "농작물 재해보험 가입 시 총보험료의 10%만 개인 부담"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514100000002",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514100000002",
+    "contact": "대구광역시 군위군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "지원대상: 관내 거주하고 관내 농지를 소유한 보험 가입 농가(경작지는 1,000㎡ 이상)\n\n지원내용: 총 보험료의 10%만 개인 부담\n\n접수처: 농협중앙회 군위군지부, 지역조합, 품목조합",
+      "benefit": "농작물 재해보험 가입 시 총보험료의 10%만 개인 부담",
+      "application": "방문 신청",
+      "contact": "대구광역시 군위군"
+    }
+  },
+  {
+    "slug": "gov24-장애인-인플루엔자-백신-및-접종-지원",
+    "title": "(장애인)인플루엔자 백신 및 접종 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "장애인 인플루엔자 예방접종 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(장애인)인플루엔자 백신 및 접종 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 동대문구",
+      "모집중",
+      "장애인",
+      "아동",
+      "복지",
+      "인플루엔자",
+      "예방접종",
+      "지원"
+    ],
+    "summary": "장애인 인플루엔자 예방접종 지원",
+    "audience": "장애인 인플루엔자 예방접종",
+    "benefits": [
+      "장애인 인플루엔자 예방접종 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "장애인복지카드 등 지참 후 관내 위탁의료기관에서 접종",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000282",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000282",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장애인 인플루엔자 예방접종",
+      "benefit": "장애인 인플루엔자 예방접종 지원",
+      "application": "장애인복지카드 등 지참 후 관내 위탁의료기관에서 접종",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-국가유공자-인플루엔자-백신-및-접종-지원",
+    "title": "(국가유공자)인플루엔자 백신 및 접종 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "국가유공자 인플루엔자 예방접종 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(국가유공자)인플루엔자 백신 및 접종 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 동대문구",
+      "모집중",
+      "일반",
+      "전체",
+      "국가유공자",
+      "인플루엔자",
+      "예방접종",
+      "지원"
+    ],
+    "summary": "국가유공자 인플루엔자 예방접종 지원",
+    "audience": "국가유공자 인플루엔자 예방접종",
+    "benefits": [
+      "국가유공자 인플루엔자 예방접종 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "해당 신분증(국가유공자증 등)을 지참 후 관내 위탁의료기관에서 접종",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000283",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000283",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "국가유공자 인플루엔자 예방접종",
+      "benefit": "국가유공자 인플루엔자 예방접종 지원",
+      "application": "해당 신분증(국가유공자증 등)을 지참 후 관내 위탁의료기관에서 접종",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-기초생활수급자-인플루엔자-백신-및-접종-지원",
+    "title": "(기초생활수급자)인플루엔자 백신 및 접종 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "기초생활수급자 인플루엔자 예방접종 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "(기초생활수급자)인플루엔자 백신 및 접종 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 동대문구",
+      "모집중",
+      "일반",
+      "아동",
+      "복지",
+      "기초생활수급자",
+      "인플루엔자",
+      "예방접종",
+      "지원"
+    ],
+    "summary": "기초생활수급자 인플루엔자 예방접종 지원",
+    "audience": "15세~64세 동대문구민 중 기초생활수급자 인플루엔자 예방접종",
+    "benefits": [
+      "기초생활수급자 인플루엔자 예방접종 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신분증, 수급자증명서 등을 지참 후 관내 위탁의료기관에서 접종",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000284",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000284",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "15세~64세 동대문구민 중 기초생활수급자 인플루엔자 예방접종",
+      "benefit": "기초생활수급자 인플루엔자 예방접종 지원",
+      "application": "신분증, 수급자증명서 등을 지참 후 관내 위탁의료기관에서 접종",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-대상포진-예방접종-지원",
+    "title": "대상포진 예방접종 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "대상포진 예방접종 1회 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "대상포진 예방접종 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "어르신",
+      "아동",
+      "복지",
+      "대상포진",
+      "예방접종",
+      "1회",
+      "지원"
+    ],
+    "summary": "대상포진 예방접종 1회 지원",
+    "audience": "접종일 현재 동대문구에 주민등록을 두고 있는\n65세 이상 구민 중 기초생활수급자 및 차상위계층 대상포진 예방접종 1회 지원",
+    "benefits": [
+      "대상포진 예방접종 1회 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "보건소에 전화로 백신잔량 확인 후 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000285",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000285",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "접종일 현재 동대문구에 주민등록을 두고 있는\n65세 이상 구민 중 기초생활수급자 및 차상위계층 대상포진 예방접종 1회 지원",
+      "benefit": "대상포진 예방접종 1회 지원",
+      "application": "보건소에 전화로 백신잔량 확인 후 방문",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-b형간염-유료-예방접종-지원",
+    "title": "B형간염 유료 예방접종 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "항원항체검사 결과 음성인 접종희망자를 대상으로 B형간염 예방접종 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "B형간염 유료 예방접종 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "일반",
+      "전체",
+      "항원항체검사",
+      "결과",
+      "음성인",
+      "접종희망자를",
+      "대상으로"
+    ],
+    "summary": "항원항체검사 결과 음성인 접종희망자를 대상으로 B형간염 예방접종 제공",
+    "audience": "○ 항원항체검사 결과 음성인 접종희망자를 대상으로 유료 B형간염 예방접종 제공\n\n○ 접종방법: 0~1~6개월(총3회 접종)\n\n○ 수수료 : 회당 6,900원\n ※ 접종 수수료 변동 가능",
+    "benefits": [
+      "항원항체검사 결과 음성인 접종희망자를 대상으로 B형간염 예방접종 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문 전 백신잔량 확인 후 보건소 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000287",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000287",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 항원항체검사 결과 음성인 접종희망자를 대상으로 유료 B형간염 예방접종 제공\n\n○ 접종방법: 0~1~6개월(총3회 접종)\n\n○ 수수료 : 회당 6,900원\n ※ 접종 수수료 변동 가능",
+      "benefit": "항원항체검사 결과 음성인 접종희망자를 대상으로 B형간염 예방접종 제공",
+      "application": "방문 전 백신잔량 확인 후 보건소 방문 신청",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-친환경농산물-직접지불금-지원",
+    "title": "친환경농산물 직접지불금 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 김포시",
+    "region": "경기",
+    "amount": "친환경인증 농가에 직불금 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "친환경농산물 직접지불금 지원",
+      "농림어업",
+      "경기",
+      "경기도 김포시",
+      "모집중",
+      "농어업인",
+      "전체",
+      "친환경인증",
+      "농가에",
+      "직불금",
+      "지급"
+    ],
+    "summary": "친환경인증 농가에 직불금 지급",
+    "audience": "친환경 인증 농업인에게 직불금 지급\n - 유기농인증(곡류) : 2,150천원/ha, 무농약인증(쌀) : 1,500천원/ha\n - 유기농인증(채소류) : 3,950천원/ha, 무농약인증(채소) : 2,950천원/ha\n - 유기농인증(과실류) : 4,950천원/ha, 무농약인증(과실류) : 3,950천원/ha",
+    "benefits": [
+      "친환경인증 농가에 직불금 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문 신청\n - 주민센터 : 농지소재지 관할 행정복지센터에 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/409000000121",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/409000000121",
+    "contact": "경기도 김포시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "친환경 인증 농업인에게 직불금 지급\n - 유기농인증(곡류) : 2,150천원/ha, 무농약인증(쌀) : 1,500천원/ha\n - 유기농인증(채소류) : 3,950천원/ha, 무농약인증(채소) : 2,950천원/ha\n - 유기농인증(과실류) : 4,950천원/ha, 무농약인증(과실류) : 3,950천원/ha",
+      "benefit": "친환경인증 농가에 직불금 지급",
+      "application": "방문 신청\n - 주민센터 : 농지소재지 관할 행정복지센터에 방문 신청",
+      "contact": "경기도 김포시"
+    }
+  },
+  {
+    "slug": "gov24-유기질비료-지원-사업",
+    "title": "유기질비료 지원 사업",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 김포시",
+    "region": "경기",
+    "amount": "유기질비료 및 부숙유기질비료 구입 비용 일부 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "유기질비료 지원 사업",
+      "농림어업",
+      "경기",
+      "경기도 김포시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "유기질비료",
+      "및",
+      "부숙유기질비료",
+      "구입",
+      "비용"
+    ],
+    "summary": "유기질비료 및 부숙유기질비료 구입 비용 일부 지원",
+    "audience": "유기질비료 및 부숙유기질비료 구입 비용 일부 지원",
+    "benefits": [
+      "유기질비료 및 부숙유기질비료 구입 비용 일부 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문신청\n - 읍면동 행정복지센터",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/409000000151",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/409000000151",
+    "contact": "경기도 김포시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "유기질비료 및 부숙유기질비료 구입 비용 일부 지원",
+      "benefit": "유기질비료 및 부숙유기질비료 구입 비용 일부 지원",
+      "application": "○ 방문신청\n - 읍면동 행정복지센터",
+      "contact": "경기도 김포시"
+    }
+  },
+  {
+    "slug": "gov24-친환경-농산물-인증비-지원-사업",
+    "title": "친환경 농산물 인증비 지원 사업",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 김포시",
+    "region": "경기",
+    "amount": "친환경농산물 인증 검사비 수수료 지원(30%, 최대15만원)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "친환경 농산물 인증비 지원 사업",
+      "농림어업",
+      "경기",
+      "경기도 김포시",
+      "상시",
+      "농어업인",
+      "전체",
+      "친환경농산물",
+      "인증",
+      "검사비",
+      "수수료",
+      "지원(30%,"
+    ],
+    "summary": "친환경농산물 인증 검사비 수수료 지원(30%, 최대15만원)",
+    "audience": "친환경농산물 인증 검사비 수수료 지원",
+    "benefits": [
+      "친환경농산물 인증 검사비 수수료 지원(30%, 최대15만원)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문신청\n - 농지소재지 읍면동 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/409000000152",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/409000000152",
+    "contact": "경기도 김포시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "친환경농산물 인증 검사비 수수료 지원",
+      "benefit": "친환경농산물 인증 검사비 수수료 지원(30%, 최대15만원)",
+      "application": "○ 방문신청\n - 농지소재지 읍면동 방문 신청",
+      "contact": "경기도 김포시"
+    }
+  },
+  {
+    "slug": "gov24-김포금쌀밥집-육성-지원",
+    "title": "김포금쌀밥집 육성 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 김포시",
+    "region": "경기",
+    "amount": "인증간판 및 지정증 제공, 쌀 구매차액 지원, 홍보지원, 김포맛집 가산점 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "김포금쌀밥집 육성 지원",
+      "농림어업",
+      "경기",
+      "경기도 김포시",
+      "상시",
+      "농어업인",
+      "전체",
+      "인증간판",
+      "및",
+      "지정증",
+      "제공,",
+      "쌀"
+    ],
+    "summary": "인증간판 및 지정증 제공, 쌀 구매차액 지원, 홍보지원, 김포맛집 가산점 제공",
+    "audience": "- 김포금쌀밥집 인증간판 및 지정증(케이스 포함) 제공\n- 김포금쌀 구매 차액 지원\n- 홍보 지원 : 김포시청 홈페이지, SNS 등 홍보\n- 김포맛집 인증신청 시 가산점 제공",
+    "benefits": [
+      "인증간판 및 지정증 제공, 쌀 구매차액 지원, 홍보지원, 김포맛집 가산점 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청 : 김포시농업기술센터 농업정책과 유통팀\n우편접수 : 경기도 김포시 월곶면 오리정로 13(농업기술센터), 본관 2층 농업정책과 유통팀",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/409000000158",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/409000000158",
+    "contact": "경기도 김포시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "- 김포금쌀밥집 인증간판 및 지정증(케이스 포함) 제공\n- 김포금쌀 구매 차액 지원\n- 홍보 지원 : 김포시청 홈페이지, SNS 등 홍보\n- 김포맛집 인증신청 시 가산점 제공",
+      "benefit": "인증간판 및 지정증 제공, 쌀 구매차액 지원, 홍보지원, 김포맛집 가산점 제공",
+      "application": "방문신청 : 김포시농업기술센터 농업정책과 유통팀\n우편접수 : 경기도 김포시 월곶면 오리정로 13(농업기술센터), 본관 2층 농업정책과 유통팀",
+      "contact": "경기도 김포시"
+    }
+  },
+  {
+    "slug": "gov24-치매환자-조호물품-기저귀-지원",
+    "title": "치매환자 조호물품(기저귀) 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 가평군",
+    "region": "경기",
+    "amount": "치매환자에게 연 한도 내의 조호물품 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "치매환자 조호물품(기저귀) 지원",
+      "보건의료",
+      "경기",
+      "경기도 가평군",
+      "상시",
+      "일반",
+      "전체",
+      "치매환자에게",
+      "연",
+      "한도",
+      "내의",
+      "조호물품"
+    ],
+    "summary": "치매환자에게 연 한도 내의 조호물품 제공",
+    "audience": "○ 치매환자에게 연 한도 내의 조호물품 제공",
+    "benefits": [
+      "치매환자에게 연 한도 내의 조호물품 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 관할 보건소 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/416000000101",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/416000000101",
+    "contact": "경기도 가평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 치매환자에게 연 한도 내의 조호물품 제공",
+      "benefit": "치매환자에게 연 한도 내의 조호물품 제공",
+      "application": "○ 방문 신청\n - 보건소 : 관할 보건소 방문",
+      "contact": "경기도 가평군"
+    }
+  },
+  {
+    "slug": "gov24-가평군-장학생-선발-및-장학금-지원",
+    "title": "가평군 장학생 선발 및 장학금 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 가평군",
+    "region": "경기",
+    "amount": "중·고교생 및 대학생에게 장학금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·청년",
+    "targetGroup": "청년, 부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "가평군 장학생 선발 및 장학금 지원",
+      "청년",
+      "경기",
+      "경기도 가평군",
+      "확인필요",
+      "부모/육아",
+      "청소년",
+      "임신·출산·육아",
+      "중·고교생",
+      "및",
+      "대학생에게",
+      "장학금"
+    ],
+    "summary": "중·고교생 및 대학생에게 장학금 지원",
+    "audience": "○ 가평군의 우수한 인재양성을 위하여 가평군 장학기금을 재원으로 장학생 선발 지원\n - 지원금액(1, 2학기 50%씩 나누어 지급)\n · 중학생 : 600,000원\n · 고등학생 : 900,000원\n · 대학생 :최대 3,000,000원\n - 지급일 : 상반기분 5월, 하반기분 9월\n ※ 부득이한 사정이 있는 경우, 지급 시기 조정 가능",
+    "benefits": [
+      "중·고교생 및 대학생에게 장학금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 신청방법: 거주지 관할 읍면 행정복지센터에 방문하여 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/416000000115",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/416000000115",
+    "contact": "경기도 가평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 가평군의 우수한 인재양성을 위하여 가평군 장학기금을 재원으로 장학생 선발 지원\n - 지원금액(1, 2학기 50%씩 나누어 지급)\n · 중학생 : 600,000원\n · 고등학생 : 900,000원\n · 대학생 :최대 3,000,000원\n - 지급일 : 상반기분 5월, 하반기분 9월\n ※ 부득이한 사정이 있는 경우, 지급 시기 조정 가능",
+      "benefit": "중·고교생 및 대학생에게 장학금 지원",
+      "application": "○ 신청방법: 거주지 관할 읍면 행정복지센터에 방문하여 신청",
+      "contact": "경기도 가평군"
+    }
+  },
+  {
+    "slug": "gov24-출산축하금-지원",
+    "title": "출산축하금 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 가평군",
+    "region": "경기",
+    "amount": "출산부모에게 출산축하금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "출산축하금 지원",
+      "복지",
+      "경기",
+      "경기도 가평군",
+      "확인필요",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "출산부모에게",
+      "출산축하금",
+      "지원"
+    ],
+    "summary": "출산부모에게 출산축하금 지원",
+    "audience": "○ 출생순위에 따른 출산축하금 지급(50%는 지역화폐로 지급)\n - 첫째아 100만원\n - 둘째아 400만원(200만원씩 2년 분할)\n - 셋째야 1,000만원(200만원씩 5년분할)\n - 넷째아 이상 2,000만원(200만원씩 10년분할)",
+    "benefits": [
+      "출산부모에게 출산축하금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 거주지 관할 읍면동 주민센터에 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/416000000117",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/416000000117",
+    "contact": "경기도 가평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 출생순위에 따른 출산축하금 지급(50%는 지역화폐로 지급)\n - 첫째아 100만원\n - 둘째아 400만원(200만원씩 2년 분할)\n - 셋째야 1,000만원(200만원씩 5년분할)\n - 넷째아 이상 2,000만원(200만원씩 10년분할)",
+      "benefit": "출산부모에게 출산축하금 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 거주지 관할 읍면동 주민센터에 방문 신청",
+      "contact": "경기도 가평군"
+    }
+  },
+  {
+    "slug": "gov24-시설아동-하계수련비-지원",
+    "title": "시설아동 하계수련비 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "아동양육시설아동의 하계수련비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "시설아동 하계수련비 지원",
+      "교육",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "아동양육시설아동의",
+      "하계수련비",
+      "지원"
+    ],
+    "summary": "아동양육시설아동의 하계수련비 지원",
+    "audience": "○ 아동양육시설아동 하계수련비 지원\n - 1인 7만원, 체험활동 등",
+    "benefits": [
+      "아동양육시설아동의 하계수련비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 개인 신청절차 없음\n - 시설에서 관리",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000105",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000105",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 아동양육시설아동 하계수련비 지원\n - 1인 7만원, 체험활동 등",
+      "benefit": "아동양육시설아동의 하계수련비 지원",
+      "application": "○ 개인 신청절차 없음\n - 시설에서 관리",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-시설아동-교육자재비-지원",
+    "title": "시설아동 교육자재비 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "아동양육시설아동의 교육자재비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "시설아동 교육자재비 지원",
+      "교육",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "아동양육시설아동의",
+      "교육자재비",
+      "지원"
+    ],
+    "summary": "아동양육시설아동의 교육자재비 지원",
+    "audience": "○ 아동양육시설아동 교육자재비 지원\n - 1인 5만원, 취학아동 서적, 학용품비 구입",
+    "benefits": [
+      "아동양육시설아동의 교육자재비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 개인 신청절차 없음\n - 시설에서 관리",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000106",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000106",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 아동양육시설아동 교육자재비 지원\n - 1인 5만원, 취학아동 서적, 학용품비 구입",
+      "benefit": "아동양육시설아동의 교육자재비 지원",
+      "application": "○ 개인 신청절차 없음\n - 시설에서 관리",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-인삼생약산업-육성-지원",
+    "title": "인삼생약산업 육성 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "오미자재배 농업인 등에게 농기계, 설비 등 농자재 구입비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "인삼생약산업 육성 지원",
+      "농림어업",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "농어업인",
+      "전체",
+      "오미자재배",
+      "농업인",
+      "등에게",
+      "농기계,",
+      "설비"
+    ],
+    "summary": "오미자재배 농업인 등에게 농기계, 설비 등 농자재 구입비 지원",
+    "audience": "○ 농기계, 설비 등 영농에 필요한 농자재 구입비 지원",
+    "benefits": [
+      "오미자재배 농업인 등에게 농기계, 설비 등 농자재 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 시청 농정과 문의 및 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000107",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000107",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 농기계, 설비 등 영농에 필요한 농자재 구입비 지원",
+      "benefit": "오미자재배 농업인 등에게 농기계, 설비 등 농자재 구입비 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 시청 농정과 문의 및 방문",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-지역아동센터-등-급식-지원",
+    "title": "지역아동센터 등 급식 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "지역아동센터에 급식비 보조금 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "지역아동센터 등 급식 지원",
+      "교육",
+      "경북",
+      "경상북도 문경시",
+      "모집중",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "지역아동센터에",
+      "급식비",
+      "보조금",
+      "지급"
+    ],
+    "summary": "지역아동센터에 급식비 보조금 지급",
+    "audience": "○ 지역아동센터에 급식비 보조금 지급",
+    "benefits": [
+      "지역아동센터에 급식비 보조금 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 개인 신청절차 없음",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000108",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000108",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 지역아동센터에 급식비 보조금 지급",
+      "benefit": "지역아동센터에 급식비 보조금 지급",
+      "application": "○ 개인 신청절차 없음",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-과수농가-지원",
+    "title": "과수농가 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "과수재배 농업인 등에게 농업용 자재 구입비용 일부 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "과수농가 지원",
+      "농림어업",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "농어업인",
+      "전체",
+      "과수재배",
+      "농업인",
+      "등에게",
+      "농업용",
+      "자재"
+    ],
+    "summary": "과수재배 농업인 등에게 농업용 자재 구입비용 일부 지원",
+    "audience": "○ 문경시에 주소를 두고 농업경영체를 등록한 농업인, 농업법인, 생산자 단체 등에 과수재배에 필요한 농기계, 포장재 등 농업용 자재 구입비용 일부 지원",
+    "benefits": [
+      "과수재배 농업인 등에게 농업용 자재 구입비용 일부 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 시청 농정과 문의 및 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000109",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000109",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 문경시에 주소를 두고 농업경영체를 등록한 농업인, 농업법인, 생산자 단체 등에 과수재배에 필요한 농기계, 포장재 등 농업용 자재 구입비용 일부 지원",
+      "benefit": "과수재배 농업인 등에게 농업용 자재 구입비용 일부 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 시청 농정과 문의 및 방문",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-농산물-유통기반-조성-지원",
+    "title": "농산물 유통기반 조성 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "농업 경영체에 장기저장 처리제, 소형 선별기 등 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "농산물 유통기반 조성 지원",
+      "농림어업",
+      "경북",
+      "경상북도 문경시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "농업",
+      "경영체에",
+      "장기저장",
+      "처리제,",
+      "소형"
+    ],
+    "summary": "농업 경영체에 장기저장 처리제, 소형 선별기 등 지원",
+    "audience": "○ 상품 장기저장 처리제 지원 : 관내 산지유통시설에 출하되는 문경사과의 장기저장에 따른 처리비용 일부지원\n\n○ 농가형 소형 선별기 지원 : 농가용 소형 사과선별기 지원\n\n○ 소규모 농식품 가공산업 육성지원 : 지역 농산물을 이용, 제조가공하는 농업경영체에 기계 및 관련 장비 지원",
+    "benefits": [
+      "농업 경영체에 장기저장 처리제, 소형 선별기 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 시군구 : 해당 시군 홈페이지 공고내용 확인 후 시군 유통관련 부서 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000110",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000110",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 상품 장기저장 처리제 지원 : 관내 산지유통시설에 출하되는 문경사과의 장기저장에 따른 처리비용 일부지원\n\n○ 농가형 소형 선별기 지원 : 농가용 소형 사과선별기 지원\n\n○ 소규모 농식품 가공산업 육성지원 : 지역 농산물을 이용, 제조가공하는 농업경영체에 기계 및 관련 장비 지원",
+      "benefit": "농업 경영체에 장기저장 처리제, 소형 선별기 등 지원",
+      "application": "○ 방문 신청\n - 시군구 : 해당 시군 홈페이지 공고내용 확인 후 시군 유통관련 부서 방문 신청",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-문경-약돌한우-브랜드-육성-지원",
+    "title": "문경 약돌한우 브랜드 육성 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "문경약돌한우 브랜드 사육농가 등에 유통활성화, 출하장려금, 기타 첨가제 등 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "문경 약돌한우 브랜드 육성 지원",
+      "농림어업",
+      "경북",
+      "경상북도 문경시",
+      "모집중",
+      "농어업인",
+      "전체",
+      "문경약돌한우",
+      "브랜드",
+      "사육농가",
+      "등에",
+      "유통활성화,"
+    ],
+    "summary": "문경약돌한우 브랜드 사육농가 등에 유통활성화, 출하장려금, 기타 첨가제 등 지원",
+    "audience": "○ 약돌한우 고급육 출하 장려금 : 문경약돌한우 브랜드 농가에서 생산한 한우를 상표권 사용업체로 출하하여 1++AB, 1+AB등급을 받은 농가\n\n○ 약돌한우 입식장려금 : 문경약돌한우 브랜드 지정농가에서 생산된 송아지를 문경축협전자경매시장통해 구입할 경우 입식장려금 지급\n\n○ 문경약돌한우 사료첨가제 및 약돌분말 지원 : 약돌한우 사육간 사료첨가제 및 약돌분말가루 지원",
+    "benefits": [
+      "문경약돌한우 브랜드 사육농가 등에 유통활성화, 출하장려금, 기타 첨가제 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 시군구 : 해당 시군 홈페이지 공고내용 확인 후 읍면동 및 시군 유통관련 부서 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000111",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000111",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 약돌한우 고급육 출하 장려금 : 문경약돌한우 브랜드 농가에서 생산한 한우를 상표권 사용업체로 출하하여 1++AB, 1+AB등급을 받은 농가\n\n○ 약돌한우 입식장려금 : 문경약돌한우 브랜드 지정농가에서 생산된 송아지를 문경축협전자경매시장통해 구입할 경우 입식장려금 지급\n\n○ 문경약돌한우 사료첨가제 및 약돌분말 지원 : 약돌한우 사육간 사료첨가제 및 약돌분말가루 지원",
+      "benefit": "문경약돌한우 브랜드 사육농가 등에 유통활성화, 출하장려금, 기타 첨가제 등 지원",
+      "application": "○ 방문 신청\n - 시군구 : 해당 시군 홈페이지 공고내용 확인 후 읍면동 및 시군 유통관련 부서 방문 신청",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-신혼부부-주택자금-대출이자-지원",
+    "title": "신혼부부 주택자금 대출이자 지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "결혼 2년이내 부부에게 주택구입 또는 전세자금 대출이자 지원(100만원 한도)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거",
+    "targetGroup": "신혼부부",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "신혼부부 주택자금 대출이자 지원",
+      "주거",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "신혼부부",
+      "전체",
+      "결혼",
+      "2년이내",
+      "부부에게",
+      "주택구입",
+      "또는"
+    ],
+    "summary": "결혼 2년이내 부부에게 주택구입 또는 전세자금 대출이자 지원(100만원 한도)",
+    "audience": "○ 주택구입 또는 전세자금 대출이자 연 100만원 한도 지원",
+    "benefits": [
+      "결혼 2년이내 부부에게 주택구입 또는 전세자금 대출이자 지원(100만원 한도)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 구비서류 : 이자납입 증명서, 주민등록초본(부부 각 1부), 혼인관계증명서, 대출증명서, 지방세 세목별 과세증명서(부부 각 1부),가족관계증명서",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000112",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000112",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 주택구입 또는 전세자금 대출이자 연 100만원 한도 지원",
+      "benefit": "결혼 2년이내 부부에게 주택구입 또는 전세자금 대출이자 지원(100만원 한도)",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 구비서류 : 이자납입 증명서, 주민등록초본(부부 각 1부), 혼인관계증명서, 대출증명서, 지방세 세목별 과세증명서(부부 각 1부),가족관계증명서",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-임산물-생산기반-지원",
+    "title": "임산물 생산기반 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "각 임산물별 농가를 대상으로 원목, 배지, 묘목, 종자 등 구입 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "임산물 생산기반 지원",
+      "농림어업",
+      "경북",
+      "경상북도 문경시",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "각",
+      "임산물별",
+      "농가를",
+      "대상으로",
+      "원목,"
+    ],
+    "summary": "각 임산물별 농가를 대상으로 원목, 배지, 묘목, 종자 등 구입 지원",
+    "audience": "○ 표고 원목 구입비 지원\n - 지원내용 : 표고 원목 구입비 지원(2025년도 신목 구입자)\n - 지원기준\n ㆍ기준금액 : 원목(자가벌채 제외) 본당 5,000원\n ㆍ지원비율 : 보조 50%, 자부담 50%(예산범위 내 조정 가능)\n ㆍ지 원 량 : 330㎡ 당 1,000본 \n\n○ 표고 톱밥배지 구입비 지원\n - 지원내용 : 표고 톱밥배지 구입비 지원\n - 지원기준\n ㆍ기준금액 : 접종배지 680원/kg, 갈변(접종·배양)배지 900원/kg\n ㆍ지원비율 : 보조 50%, 자부담 50%(예산범위 내 조정 가능)\n ㆍ지 원 량 : 원통형(10,000봉/330㎡), 봉형(6,000봉/330㎡), 사각(8,000봉/330㎡) \n ※ 국내산 배지 및 종자산업법에 따른 종자업 등록업체에서 구입한 표고 톱밥배지만 지원\n\n○ 호두 묘목 구입비 지원\n - 대 상 지 : 관내 일원\n - 지원내용 : 호두 묘목 구입비 지원\n - 지원기준\n - 지원단가\n 1본당 15,000원\n ㆍ지원비율 : 보조 50%, 자부담 50%(예산범위 내 조정가능)\n ※ 총 사업비 1,000천원 이상 신청 가능\n\n○ 산양삼 종자·종묘 구입비 지원\n - 대 상 지 : 전문기관(한국임업진흥원)에서 실시하는 생산적합성 조사에 합격한 토양\n - 지원내용 : 산양삼 종자·종묘 구입비 지원\n - 지원기준\n ㆍ대상품목 : 전문기관(한국임업진흥원)에서 실시하는 생산적합성 조사에 합격한 산양삼 종자 또는 종묘(4년생 이내)\n ㆍ지원단가 : 종자 1kg당 200,000원, 종묘 4년생 기준 본당 4,000원\n ㆍ지원비율 : 보조 50%, 자부담 50%(예산범위 내 조정 가능)\n※ 종자산업법에 따른 종자업 등록업체에서 구입한 산양삼 종자 ·종묘만 지원\n\n○ 두릅단지조성 지원\n - 대 상 지 : 관내 일원\n - 지원내용 : 참두릅 묘목 구입비 지원\n - 지원기준\n ㆍ대상품목 : 참두릅 묘목\n ㆍ지원단가 : 1본당 3,000원 \n ㆍ지원비율 : 보조 50%, 자부담 50%(예산범위 내 조정가능)\n ※ 총 사업비 1,000천원 이상 신청 가능\n\n○ 음나무 묘목 구입비 지원\n - 대 상 지 : 관내 일원\n - 지원내용 : 음나무 묘목 구입비 지원\n - 지원기준\n ㆍ대상품목 : 음나무 묘목\n ㆍ지원단가 : 1본당 5,000원 \n ㆍ지원비율 : 보조 50%, 자부담 50%(예산범위 내 조정가능)\n ※ 총 사업비 1,000천원 이상 신청 가능\n\n○ 복분자 묘목 구입비 지원\n - 대 상 지 : 관내 일원\n - 지원내용 : 복분자 묘목 구입비 지원\n - 지원기준\n ㆍ대상품목 : 복분자 묘목\n ㆍ지원단가 : 1본당 700원\n ㆍ지원비율 : 보조 50%, 자부담 50%(예산범위 내 조정가능)\n ※ 총 사업비 1,000천원 이상 신청 가능",
+    "benefits": [
+      "각 임산물별 농가를 대상으로 원목, 배지, 묘목, 종자 등 구입 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 사업대상지 소재 관할 읍·면·동 행정복지센터(주민센터)에 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000113",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000113",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 표고 원목 구입비 지원\n - 지원내용 : 표고 원목 구입비 지원(2025년도 신목 구입자)\n - 지원기준\n ㆍ기준금액 : 원목(자가벌채 제외) 본당 5,000원\n ㆍ지원비율 : 보조 50%, 자부담 50%(예산범위 내 조정 가능)\n ㆍ지 원 량 : 330㎡ 당 1,000본 \n\n○ 표고 톱밥배지 구입비 지원\n - 지원내용 : 표고 톱밥배지 구입비 지원\n - 지원기준\n ㆍ기준금액 : 접종배지 680원/kg, 갈변(접종·배양)배지 900원/kg\n ㆍ지원비율 : 보조 50%, 자부담 50%(예산범위 내 조정 가능)\n ㆍ지 원 량 : 원통형(10,000봉/330㎡), 봉형(6,000봉/330㎡), 사각(8,000봉/330㎡) \n ※ 국내산 배지 및 종자산업법에 따른 종자업 등록업체에서 구입한 표고 톱밥배지만 지원\n\n○ 호두 묘목 구입비 지원\n - 대 상 지 : 관내 일원\n - 지원내용 : 호두 묘목 구입비 지원\n - 지원기준\n - 지원단가\n 1본당 15,000원\n ㆍ지원비율 : 보조 50%, 자부담 50%(예산범위 내 조정가능)\n ※ 총 사업비 1,000천원 이상 신청 가능\n\n○ 산양삼 종자·종묘 구입비 지원\n - 대 상 지 : 전문기관(한국임업진흥원)에서 실시하는 생산적합성 조사에 합격한 토양\n - 지원내용 : 산양삼 종자·종묘 구입비 지원\n - 지원기준\n ㆍ대상품목 : 전문기관(한국임업진흥원)에서 실시하는 생산적합성 조사에 합격한 산양삼 종자 또는 종묘(4년생 이내)\n ㆍ지원단가 : 종자 1kg당 200,000원, 종묘 4년생 기준 본당 4,000원\n ㆍ지원비율 : 보조 50%, 자부담 50%(예산범위 내 조정 가능)\n※ 종자산업법에 따른 종자업 등록업체에서 구입한 산양삼 종자 ·종묘만 지원\n\n○ 두릅단지조성 지원\n - 대 상 지 : 관내 일원\n - 지원내용 : 참두릅 묘목 구입비 지원\n - 지원기준\n ㆍ대상품목 : 참두릅 묘목\n ㆍ지원단가 : 1본당 3,000원 \n ㆍ지원비율 : 보조 50%, 자부담 50%(예산범위 내 조정가능)\n ※ 총 사업비 1,000천원 이상 신청 가능\n\n○ 음나무 묘목 구입비 지원\n - 대 상 지 : 관내 일원\n - 지원내용 : 음나무 묘목 구입비 지원\n - 지원기준\n ㆍ대상품목 : 음나무 묘목\n ㆍ지원단가 : 1본당 5,000원 \n ㆍ지원비율 : 보조 50%, 자부담 50%(예산범위 내 조정가능)\n ※ 총 사업비 1,000천원 이상 신청 가능\n\n○ 복분자 묘목 구입비 지원\n - 대 상 지 : 관내 일원\n - 지원내용 : 복분자 묘목 구입비 지원\n - 지원기준\n ㆍ대상품목 : 복분자 묘목\n ㆍ지원단가 : 1본당 700원\n ㆍ지원비율 : 보조 50%, 자부담 50%(예산범위 내 조정가능)\n ※ 총 사업비 1,000천원 이상 신청 가능",
+      "benefit": "각 임산물별 농가를 대상으로 원목, 배지, 묘목, 종자 등 구입 지원",
+      "application": "○ 방문 신청\n - 사업대상지 소재 관할 읍·면·동 행정복지센터(주민센터)에 방문 신청",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-축산업-환경개선-관리",
+    "title": "축산업 환경개선 관리",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "축산농가에 분뇨처리용 톱밥, 축산환경개선제 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "축산업 환경개선 관리",
+      "농림어업",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "농어업인",
+      "전체",
+      "축산농가에",
+      "분뇨처리용",
+      "톱밥,",
+      "축산환경개선제",
+      "지원"
+    ],
+    "summary": "축산농가에 분뇨처리용 톱밥, 축산환경개선제 지원",
+    "audience": "○ 축산분뇨 처리용 톱밥 지원 : 축사 내 깔짚 대용 축분처리용 수분조절제(톱밥, 왕겨 등) 구입비 지원\n\n○ 축산환경개선제 지원 : 축사악취제거를 목적으로 하는 사료첨가제 또는 살포용 제품 구입비 지원",
+    "benefits": [
+      "축산농가에 분뇨처리용 톱밥, 축산환경개선제 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 시군구 : 해당시군 축산부서 문의 및 신청 (홈페이지 공고내용 확인)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000114",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000114",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 축산분뇨 처리용 톱밥 지원 : 축사 내 깔짚 대용 축분처리용 수분조절제(톱밥, 왕겨 등) 구입비 지원\n\n○ 축산환경개선제 지원 : 축사악취제거를 목적으로 하는 사료첨가제 또는 살포용 제품 구입비 지원",
+      "benefit": "축산농가에 분뇨처리용 톱밥, 축산환경개선제 지원",
+      "application": "○ 방문 신청\n - 시군구 : 해당시군 축산부서 문의 및 신청 (홈페이지 공고내용 확인)",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-국가유공자-보훈명예수당",
+    "title": "국가유공자 보훈명예수당",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "국가유공자를 위해 보훈명예수당 및 사망위로금 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "국가유공자 보훈명예수당",
+      "복지",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "일반",
+      "전체",
+      "국가유공자를",
+      "위해",
+      "보훈명예수당",
+      "및",
+      "사망위로금"
+    ],
+    "summary": "국가유공자를 위해 보훈명예수당 및 사망위로금 지급",
+    "audience": "○ 지원대상 : 국가유공자 등 예우 및 지원에 관한 법률 제4조 제1호부터 제18호까지의 규정에 해당하는 국가유공자 및 그 유족으로 지급일 현재 문경시에 주소를 둔 사람\n\n○ 지원내용\n - 매월 15일 보훈명예수당 지급(월 15만원)\n - 국가유공자 사망위로금 지급(30만원) : 사망일 기준 1년 이내 신청 가능",
+    "benefits": [
+      "국가유공자를 위해 보훈명예수당 및 사망위로금 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 구비서류 : 신청서, 국가유공자증, 통장사본 등",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000115",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000115",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 지원대상 : 국가유공자 등 예우 및 지원에 관한 법률 제4조 제1호부터 제18호까지의 규정에 해당하는 국가유공자 및 그 유족으로 지급일 현재 문경시에 주소를 둔 사람\n\n○ 지원내용\n - 매월 15일 보훈명예수당 지급(월 15만원)\n - 국가유공자 사망위로금 지급(30만원) : 사망일 기준 1년 이내 신청 가능",
+      "benefit": "국가유공자를 위해 보훈명예수당 및 사망위로금 지급",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 구비서류 : 신청서, 국가유공자증, 통장사본 등",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-어르신-목욕-및-이미용비-지원사업",
+    "title": "어르신 목욕 및 이·미용비 지원사업",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "문경시 관내 거주 70세 이상 노인을 대상으로 목욕 및 이·미용비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "어르신 목욕 및 이·미용비 지원사업",
+      "보건의료",
+      "경북",
+      "경상북도 문경시",
+      "모집중",
+      "어르신",
+      "아동",
+      "복지",
+      "문경시",
+      "관내",
+      "거주",
+      "70세"
+    ],
+    "summary": "문경시 관내 거주 70세 이상 노인을 대상으로 목욕 및 이·미용비 지원",
+    "audience": "○ 지원인원 : 17,400여명\n\n○ 지원대상 : 70세 이상 노인(단, 노인의료복지시설 입소자 제외)\n\n○ 지원기준 : 1인 연간 6만원 \n\n○ 지원방법 : 전자바우처카드에 충전하여 지원",
+    "benefits": [
+      "문경시 관내 거주 70세 이상 노인을 대상으로 목욕 및 이·미용비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 별도의 신청없이 주소지 관할 읍·면·동 행정복지센터에서 대상자에 연1회 일괄 배부",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000116",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000116",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 지원인원 : 17,400여명\n\n○ 지원대상 : 70세 이상 노인(단, 노인의료복지시설 입소자 제외)\n\n○ 지원기준 : 1인 연간 6만원 \n\n○ 지원방법 : 전자바우처카드에 충전하여 지원",
+      "benefit": "문경시 관내 거주 70세 이상 노인을 대상으로 목욕 및 이·미용비 지원",
+      "application": "○ 별도의 신청없이 주소지 관할 읍·면·동 행정복지센터에서 대상자에 연1회 일괄 배부",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-시설아동-간식비-지원",
+    "title": "시설아동 간식비 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "아동양육시설아동을 위해 간식비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "시설아동 간식비 지원",
+      "교육",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "아동양육시설아동을",
+      "위해",
+      "간식비",
+      "지원"
+    ],
+    "summary": "아동양육시설아동을 위해 간식비 지원",
+    "audience": "○ 아동양육시설아동 간식비 지원\n - 1일 1인 800원",
+    "benefits": [
+      "아동양육시설아동을 위해 간식비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 개인 신청절차 없음\n - 시설에서 관리",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000120",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000120",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 아동양육시설아동 간식비 지원\n - 1일 1인 800원",
+      "benefit": "아동양육시설아동을 위해 간식비 지원",
+      "application": "○ 개인 신청절차 없음\n - 시설에서 관리",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-셋째아-이상-출생아-건강보험료-지원",
+    "title": "셋째아 이상 출생아 건강보험료 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "셋째 이상 출산가정에 보장성 건강보험료 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "셋째아 이상 출생아 건강보험료 지원",
+      "보건의료",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "셋째",
+      "이상",
+      "출산가정에",
+      "보장성"
+    ],
+    "summary": "셋째 이상 출산가정에 보장성 건강보험료 지원",
+    "audience": "○ 지원대상 : 신생아 출산일 기준 부 또는 모가 문경시에 주소를 둔 셋째아 이상 자녀(전입자 제외)\n\n○ 지원내용 : 세자녀 이상 보장성 건강보험료 5만원 이내(3년납/10년보장)",
+    "benefits": [
+      "셋째 이상 출산가정에 보장성 건강보험료 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청\n - 정부24 : 출산 서비스 통합처리 신청 시 자동으로 신청됨\n\n○ 방문 신청\n - 행정복지센터 : 출산 서비스 통합처리 신청 시 자동으로 신청됨",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000121",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000121",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 지원대상 : 신생아 출산일 기준 부 또는 모가 문경시에 주소를 둔 셋째아 이상 자녀(전입자 제외)\n\n○ 지원내용 : 세자녀 이상 보장성 건강보험료 5만원 이내(3년납/10년보장)",
+      "benefit": "셋째 이상 출산가정에 보장성 건강보험료 지원",
+      "application": "○ 온라인 신청\n - 정부24 : 출산 서비스 통합처리 신청 시 자동으로 신청됨\n\n○ 방문 신청\n - 행정복지센터 : 출산 서비스 통합처리 신청 시 자동으로 신청됨",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-시설아동-부식비-및-김장비-지원",
+    "title": "시설아동 부식비 및 김장비 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "아동양육시설아동의 부식비 및 김장비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "시설아동 부식비 및 김장비 지원",
+      "교육",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "아동양육시설아동의",
+      "부식비",
+      "및",
+      "김장비"
+    ],
+    "summary": "아동양육시설아동의 부식비 및 김장비 지원",
+    "audience": "○ 아동양육시설아동 부식비 및 김장비 지원\n - 1인 5만원",
+    "benefits": [
+      "아동양육시설아동의 부식비 및 김장비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 개인 신청절차 없음\n - 시설에서 관리",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000122",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000122",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 아동양육시설아동 부식비 및 김장비 지원\n - 1인 5만원",
+      "benefit": "아동양육시설아동의 부식비 및 김장비 지원",
+      "application": "○ 개인 신청절차 없음\n - 시설에서 관리",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-시설아동-건강검진비-지원",
+    "title": "시설아동 건강검진비 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "아동양육시설아동을 위해 건강검진비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "시설아동 건강검진비 지원",
+      "보건의료",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "아동양육시설아동을",
+      "위해",
+      "건강검진비",
+      "지원"
+    ],
+    "summary": "아동양육시설아동을 위해 건강검진비 지원",
+    "audience": "○ 아동양육시설아동 건강검진비 지원\n - 1인 25,000원",
+    "benefits": [
+      "아동양육시설아동을 위해 건강검진비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 개인 신청절차 없음\n - 시설에서 관리",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000123",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000123",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 아동양육시설아동 건강검진비 지원\n - 1인 25,000원",
+      "benefit": "아동양육시설아동을 위해 건강검진비 지원",
+      "application": "○ 개인 신청절차 없음\n - 시설에서 관리",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-양식장첨단기자재공급-지원",
+    "title": "양식장첨단기자재공급 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "양식어업 어가에 양식장 기자재 구입비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "양식장첨단기자재공급 지원",
+      "농림어업",
+      "경북",
+      "경상북도 문경시",
+      "모집중",
+      "농어업인",
+      "전체",
+      "양식어업",
+      "어가에",
+      "양식장",
+      "기자재",
+      "구입비"
+    ],
+    "summary": "양식어업 어가에 양식장 기자재 구입비 지원",
+    "audience": "○ 양식장첨단기자재 지원 : 내수면 양식장 첨단 기자재, 액화산소 등 구입비 지원",
+    "benefits": [
+      "양식어업 어가에 양식장 기자재 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 시군구 : 해당시군 축산부서 문의 및 신청 (홈페이지 공고내용 확인)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000124",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000124",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 양식장첨단기자재 지원 : 내수면 양식장 첨단 기자재, 액화산소 등 구입비 지원",
+      "benefit": "양식어업 어가에 양식장 기자재 구입비 지원",
+      "application": "○ 방문 신청\n - 시군구 : 해당시군 축산부서 문의 및 신청 (홈페이지 공고내용 확인)",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-시설아동-기능교육비-지원",
+    "title": "시설아동 기능교육비 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "아동양육시설아동의 기능교육비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "시설아동 기능교육비 지원",
+      "교육",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "아동양육시설아동의",
+      "기능교육비",
+      "지원"
+    ],
+    "summary": "아동양육시설아동의 기능교육비 지원",
+    "audience": "○ 아동양육시설아동 기능교육비 지원\n - 1인 50만원, 컴퓨터교육, 요리교육, 제빵교육 등",
+    "benefits": [
+      "아동양육시설아동의 기능교육비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 개인 신청절차 없음\n - 시설에서 관리",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000126",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000126",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 아동양육시설아동 기능교육비 지원\n - 1인 50만원, 컴퓨터교육, 요리교육, 제빵교육 등",
+      "benefit": "아동양육시설아동의 기능교육비 지원",
+      "application": "○ 개인 신청절차 없음\n - 시설에서 관리",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-오미자-사업-지원",
+    "title": "오미자 사업 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "오미자 재배농가 등에 자재 구입비용 일부 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "오미자 사업 지원",
+      "농림어업",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "농어업인",
+      "전체",
+      "오미자",
+      "재배농가",
+      "등에",
+      "자재",
+      "구입비용"
+    ],
+    "summary": "오미자 재배농가 등에 자재 구입비용 일부 지원",
+    "audience": "○ 오미자 재배 농가, 작목반, 생산자 단체 등에 재배에 필요한 자재 구입비용 일부 지원",
+    "benefits": [
+      "오미자 재배농가 등에 자재 구입비용 일부 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 시청 농정과 문의 및 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000129",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000129",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 오미자 재배 농가, 작목반, 생산자 단체 등에 재배에 필요한 자재 구입비용 일부 지원",
+      "benefit": "오미자 재배농가 등에 자재 구입비용 일부 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 시청 농정과 문의 및 방문",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-원예-특작-사업-지원",
+    "title": "원예 특작 사업 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "채소특작 재배농가 등에 자재 구입비용 일부 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "원예 특작 사업 지원",
+      "농림어업",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "농어업인",
+      "전체",
+      "채소특작",
+      "재배농가",
+      "등에",
+      "자재",
+      "구입비용"
+    ],
+    "summary": "채소특작 재배농가 등에 자재 구입비용 일부 지원",
+    "audience": "○ 채소특작 재배농가, 작목반 등에 재배에 필요한 농업용 자재 구입비용 일부 지원",
+    "benefits": [
+      "채소특작 재배농가 등에 자재 구입비용 일부 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 시청 농정과 문의 및 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000130",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000130",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 채소특작 재배농가, 작목반 등에 재배에 필요한 농업용 자재 구입비용 일부 지원",
+      "benefit": "채소특작 재배농가 등에 자재 구입비용 일부 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 시청 농정과 문의 및 방문",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-과수재배-농기계-자재-구입비용-지원",
+    "title": "과수재배 농기계 자재 구입비용 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "과수재배농업인 등에게 농업용 자재 구입비용 일부 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "과수재배 농기계 자재 구입비용 지원",
+      "농림어업",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "농어업인",
+      "전체",
+      "과수재배농업인",
+      "등에게",
+      "농업용",
+      "자재",
+      "구입비용"
+    ],
+    "summary": "과수재배농업인 등에게 농업용 자재 구입비용 일부 지원",
+    "audience": "○ 문경시에 주소를 두고 농업경영체를 등록한 농업인, 농업법인, 생산자 단체 등에 과수재배에 필요한 농기계 등 농업용 자재 구입비용 일부 지원",
+    "benefits": [
+      "과수재배농업인 등에게 농업용 자재 구입비용 일부 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 시청 농정과 문의 및 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000131",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000131",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 문경시에 주소를 두고 농업경영체를 등록한 농업인, 농업법인, 생산자 단체 등에 과수재배에 필요한 농기계 등 농업용 자재 구입비용 일부 지원",
+      "benefit": "과수재배농업인 등에게 농업용 자재 구입비용 일부 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 시청 농정과 문의 및 방문",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-당뇨-합병증-검진-쿠폰-지급",
+    "title": "당뇨 합병증 검진 쿠폰 지급",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "당뇨환자에게 당뇨합병증 검진 쿠폰 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "당뇨 합병증 검진 쿠폰 지급",
+      "보건의료",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "일반",
+      "전체",
+      "당뇨환자에게",
+      "당뇨합병증",
+      "검진",
+      "쿠폰",
+      "지원"
+    ],
+    "summary": "당뇨환자에게 당뇨합병증 검진 쿠폰 지원",
+    "audience": "○ 대상 : 당뇨병환자(약 복용 또는 치료중인 자)\n\n○ 기관 : 협력의료기관(삼성안과, 성모안과)\n\n○ 기간 : 2024년 2월 ~ 예산소진시까지\n\n○ 내용 : 안저검사(연 1회)",
+    "benefits": [
+      "당뇨환자에게 당뇨합병증 검진 쿠폰 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 관할 보건소 방문\n - 보건소 방문하여 당뇨합병증 검진 쿠폰 발급",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000133",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000133",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 대상 : 당뇨병환자(약 복용 또는 치료중인 자)\n\n○ 기관 : 협력의료기관(삼성안과, 성모안과)\n\n○ 기간 : 2024년 2월 ~ 예산소진시까지\n\n○ 내용 : 안저검사(연 1회)",
+      "benefit": "당뇨환자에게 당뇨합병증 검진 쿠폰 지원",
+      "application": "○ 방문 신청\n - 보건소 : 관할 보건소 방문\n - 보건소 방문하여 당뇨합병증 검진 쿠폰 발급",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-우수모돈-농가보급사업",
+    "title": "우수모돈 농가보급사업",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "양돈농가에 모돈 도태실시 후 신규 후보돈 구입 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "우수모돈 농가보급사업",
+      "농림어업",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "농어업인",
+      "전체",
+      "양돈농가에",
+      "모돈",
+      "도태실시",
+      "후",
+      "신규"
+    ],
+    "summary": "양돈농가에 모돈 도태실시 후 신규 후보돈 구입 지원",
+    "audience": "생산능력이 부진한 모돈 도태실시 후 신규 후보돈 구입 시 지원",
+    "benefits": [
+      "양돈농가에 모돈 도태실시 후 신규 후보돈 구입 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 시군구 : 해당 시군 홈페이지 공고내용 확인 후 시군 유통관련 부서 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000134",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000134",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "생산능력이 부진한 모돈 도태실시 후 신규 후보돈 구입 시 지원",
+      "benefit": "양돈농가에 모돈 도태실시 후 신규 후보돈 구입 지원",
+      "application": "○ 방문 신청\n - 시군구 : 해당 시군 홈페이지 공고내용 확인 후 시군 유통관련 부서 방문 신청",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-원예-소득-작목-육성-지원",
+    "title": "원예 소득 작목 육성 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "농업인 등에게 농자재 구입비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "원예 소득 작목 육성 지원",
+      "농림어업",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "농어업인",
+      "전체",
+      "농업인",
+      "등에게",
+      "농자재",
+      "구입비",
+      "지원"
+    ],
+    "summary": "농업인 등에게 농자재 구입비 지원",
+    "audience": "○ 농기계, 설비 등 영농에 필요한 농자재 구입비 지원",
+    "benefits": [
+      "농업인 등에게 농자재 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 시청 농정과 문의 및 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000135",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000135",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 농기계, 설비 등 영농에 필요한 농자재 구입비 지원",
+      "benefit": "농업인 등에게 농자재 구입비 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 시청 농정과 문의 및 방문",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-농업-신기술-보급-시범사업",
+    "title": "농업 신기술 보급 시범사업",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "지역 신소득원 발굴 및 현장애로기술 등 신기술을 보급을 위한 시범사업 추진",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인, 농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "농업 신기술 보급 시범사업",
+      "농림어업",
+      "경북",
+      "경상북도 문경시",
+      "확인필요",
+      "장애인",
+      "농어업인",
+      "전체",
+      "복지",
+      "지역",
+      "신소득원",
+      "발굴"
+    ],
+    "summary": "지역 신소득원 발굴 및 현장애로기술 등 신기술을 보급을 위한 시범사업 추진",
+    "audience": "지역 신소득원 발굴 및 현장애로기술 등 신기술을 보급을 위한 시범사업 추진",
+    "benefits": [
+      "지역 신소득원 발굴 및 현장애로기술 등 신기술을 보급을 위한 시범사업 추진"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문 신청 (문경시농업기술센터 및 각읍면동 농업인상담소)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000138",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000138",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "지역 신소득원 발굴 및 현장애로기술 등 신기술을 보급을 위한 시범사업 추진",
+      "benefit": "지역 신소득원 발굴 및 현장애로기술 등 신기술을 보급을 위한 시범사업 추진",
+      "application": "방문 신청 (문경시농업기술센터 및 각읍면동 농업인상담소)",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-문경시-시민민안전보험",
+    "title": "문경시 시민민안전보험",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "경상북도 문경시",
+    "region": "경북",
+    "amount": "재난이나 각종 사고로 피해 발생 시, 보상을 위해 자치단체가 제공하는 손해배상 보험",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "문경시 시민민안전보험",
+      "복지",
+      "경북",
+      "경상북도 문경시",
+      "상시",
+      "어르신",
+      "아동",
+      "재난이나",
+      "각종",
+      "사고로",
+      "피해",
+      "발생"
+    ],
+    "summary": "재난이나 각종 사고로 피해 발생 시, 보상을 위해 자치단체가 제공하는 손해배상 보험",
+    "audience": "자연재해(일사병, 열사병, 저체온증 포함)로 사망한 경우(단, 15세 미만자 제외) 3000\n시민이 폭발, 화재, 붕괴, 산사태 사고로 상해 사망한 경우(만15세 미만자 제외) 2500\n시민이 폭발, 화재, 붕괴, 산사태 사고로 3~100%의 상해 후유장해가 발생한 경우 2500\n시민이 가스 사고에 의해 발생한 상해의 직접적인 결과로 사망한 경우(15세 미만자 제외) 2000\n시민이 가스 사고에 의해 발생한 상해의 직접적인 결과로 3~100% 상해 후유장해가 발생한 경우 2000\n시민이 대중교통 이용 중 상해 사망한 경우(만15세미만자 제외) 3000\n시민이 대중교통 이용 중 3~10% 상해 후유장해가 발생한 경우 3000\n시민(만12세 이하)이 어린이보호구역으로 지정한 지역에서 교통상해를 입은 경우(1~5등급) 1000\n시민(만65세 이상)이 노인보호구역으로 지정한 지역 내에서 교통상해로 인한 부상시 부상등급에 따라 치료비 지급(1~5등급) 1000\n시민이 익사사고로 사망한 경우 2000\n시민이 농기게사고에 의해 발생한 상해의 직접적인 결과로 사망한 경우 3000\n시민이 농기게사고에 의해 발생한 상해의 직접적인 결과로 3~100% 상해 후유장해가 발생한 경우 3000\n살인, 폭행, 강간, 강도 등 강력범죄에 의해 상해를 입었을 경우(1개월 초과 치료) 500\n시민이 형법 등에서 정하는 성폭력 범죄로 피해를 입은 경우 1000\n시민이 직무외 행위로 타인의 생명, 신체 또는 재산의 급박한 피해를 구제하다 신체상해를 입어 의사상자로 인정된 경우 10000\n시민이 공제기간 중에 사회재난(감염병 제외)으로 인하여 사망한 경우 1000\n개물림 사고에 의한 응급실 내원을 한 경우 50",
+    "benefits": [
+      "재난이나 각종 사고로 피해 발생 시, 보상을 위해 자치단체가 제공하는 손해배상 보험"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000144",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/512000000144",
+    "contact": "경상북도 문경시",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "자연재해(일사병, 열사병, 저체온증 포함)로 사망한 경우(단, 15세 미만자 제외) 3000\n시민이 폭발, 화재, 붕괴, 산사태 사고로 상해 사망한 경우(만15세 미만자 제외) 2500\n시민이 폭발, 화재, 붕괴, 산사태 사고로 3~100%의 상해 후유장해가 발생한 경우 2500\n시민이 가스 사고에 의해 발생한 상해의 직접적인 결과로 사망한 경우(15세 미만자 제외) 2000\n시민이 가스 사고에 의해 발생한 상해의 직접적인 결과로 3~100% 상해 후유장해가 발생한 경우 2000\n시민이 대중교통 이용 중 상해 사망한 경우(만15세미만자 제외) 3000\n시민이 대중교통 이용 중 3~10% 상해 후유장해가 발생한 경우 3000\n시민(만12세 이하)이 어린이보호구역으로 지정한 지역에서 교통상해를 입은 경우(1~5등급) 1000\n시민(만65세 이상)이 노인보호구역으로 지정한 지역 내에서 교통상해로 인한 부상시 부상등급에 따라 치료비 지급(1~5등급) 1000\n시민이 익사사고로 사망한 경우 2000\n시민이 농기게사고에 의해 발생한 상해의 직접적인 결과로 사망한 경우 3000\n시민이 농기게사고에 의해 발생한 상해의 직접적인 결과로 3~100% 상해 후유장해가 발생한 경우 3000\n살인, 폭행, 강간, 강도 등 강력범죄에 의해 상해를 입었을 경우(1개월 초과 치료) 500\n시민이 형법 등에서 정하는 성폭력 범죄로 피해를 입은 경우 1000\n시민이 직무외 행위로 타인의 생명, 신체 또는 재산의 급박한 피해를 구제하다 신체상해를 입어 의사상자로 인정된 경우 10000\n시민이 공제기간 중에 사회재난(감염병 제외)으로 인하여 사망한 경우 1000\n개물림 사고에 의한 응급실 내원을 한 경우 50",
+      "benefit": "재난이나 각종 사고로 피해 발생 시, 보상을 위해 자치단체가 제공하는 손해배상 보험",
+      "application": "방문신청",
+      "contact": "경상북도 문경시"
+    }
+  },
+  {
+    "slug": "gov24-저소득-보훈회원-위문-설-추석",
+    "title": "저소득 보훈회원 위문(설, 추석)",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 연천군",
+    "region": "경기",
+    "amount": "저소득 국가유공자에게 현금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "저소득 보훈회원 위문(설, 추석)",
+      "복지",
+      "경기",
+      "경기도 연천군",
+      "확인필요",
+      "일반",
+      "전체",
+      "저소득",
+      "국가유공자에게",
+      "현금",
+      "지원"
+    ],
+    "summary": "저소득 국가유공자에게 현금 지원",
+    "audience": "○ (설,추석) 저소득 보훈 단체 회원 현금 5만원 지원",
+    "benefits": [
+      "저소득 국가유공자에게 현금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 신청 불필요\n - 시군구 : 각 보훈단체 추천",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000102",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000102",
+    "contact": "경기도 연천군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ (설,추석) 저소득 보훈 단체 회원 현금 5만원 지원",
+      "benefit": "저소득 국가유공자에게 현금 지원",
+      "application": "○ 신청 불필요\n - 시군구 : 각 보훈단체 추천",
+      "contact": "경기도 연천군"
+    }
+  },
+  {
+    "slug": "gov24-홀로사는노인-생필품-지원서비스",
+    "title": "홀로사는노인 생필품 지원서비스",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 연천군",
+    "region": "경기",
+    "amount": "홀로사는 수급자 노인에게 상품권 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "홀로사는노인 생필품 지원서비스",
+      "보건의료",
+      "경기",
+      "경기도 연천군",
+      "확인필요",
+      "어르신",
+      "아동",
+      "복지",
+      "홀로사는",
+      "수급자",
+      "노인에게",
+      "상품권"
+    ],
+    "summary": "홀로사는 수급자 노인에게 상품권 지급",
+    "audience": "○ 설, 추석시 홀로 사는 노인 국민기초수급자 상품권 지급",
+    "benefits": [
+      "홀로사는 수급자 노인에게 상품권 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 별도의 신청 절차 없으며, 읍면동 맞춤형복지팀에서 지원대상자 직접발굴하여 지원",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000107",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000107",
+    "contact": "경기도 연천군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 설, 추석시 홀로 사는 노인 국민기초수급자 상품권 지급",
+      "benefit": "홀로사는 수급자 노인에게 상품권 지급",
+      "application": "○ 별도의 신청 절차 없으며, 읍면동 맞춤형복지팀에서 지원대상자 직접발굴하여 지원",
+      "contact": "경기도 연천군"
+    }
+  },
+  {
+    "slug": "gov24-노인용보조보행차-본인부담비용지원",
+    "title": "노인용보조보행차 본인부담비용지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 연천군",
+    "region": "경기",
+    "amount": "저소득보행불편자에게 보행보조기 구입비 50% 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "노인용보조보행차 본인부담비용지원",
+      "보건의료",
+      "경기",
+      "경기도 연천군",
+      "상시",
+      "어르신",
+      "아동",
+      "복지",
+      "저소득보행불편자에게",
+      "보행보조기",
+      "구입비",
+      "50%"
+    ],
+    "summary": "저소득보행불편자에게 보행보조기 구입비 50% 지원",
+    "audience": "○ 보행보조기 구입시 50% 지원(15만원 이내)",
+    "benefits": [
+      "저소득보행불편자에게 보행보조기 구입비 50% 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000108",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000108",
+    "contact": "경기도 연천군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 보행보조기 구입시 50% 지원(15만원 이내)",
+      "benefit": "저소득보행불편자에게 보행보조기 구입비 50% 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+      "contact": "경기도 연천군"
+    }
+  },
+  {
+    "slug": "gov24-임산부-산전검사-신혼부부검진",
+    "title": "임산부 산전검사(신혼부부검진)",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 연천군",
+    "region": "경기",
+    "amount": "신혼부부 임신 전 검사 및 임산부 산전검사 등 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·주거",
+    "targetGroup": "신혼부부, 부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "임산부 산전검사(신혼부부검진)",
+      "보건의료",
+      "경기",
+      "경기도 연천군",
+      "상시",
+      "신혼부부",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "주거",
+      "임신",
+      "전"
+    ],
+    "summary": "신혼부부 임신 전 검사 및 임산부 산전검사 등 지원",
+    "audience": "○ 임산부산전검사(풍진,기형아쿼드, 빈혈)\n\n○ 예비부부검진(여 6종:B형간염항체,빈혈, 혈당,풍진, 매독,에이즈/ 남 3종:B형간염항체,매독,에이즈 )",
+    "benefits": [
+      "신혼부부 임신 전 검사 및 임산부 산전검사 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 관할 보건소 방문\n - 임산부등록시 서류지참\n - 구비서류 : 임신확인서, 등본, 청첩장",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000117",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000117",
+    "contact": "경기도 연천군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 임산부산전검사(풍진,기형아쿼드, 빈혈)\n\n○ 예비부부검진(여 6종:B형간염항체,빈혈, 혈당,풍진, 매독,에이즈/ 남 3종:B형간염항체,매독,에이즈 )",
+      "benefit": "신혼부부 임신 전 검사 및 임산부 산전검사 등 지원",
+      "application": "○ 방문 신청\n - 보건소 : 관할 보건소 방문\n - 임산부등록시 서류지참\n - 구비서류 : 임신확인서, 등본, 청첩장",
+      "contact": "경기도 연천군"
+    }
+  },
+  {
+    "slug": "gov24-장애인-보조기구-수리비용-지원",
+    "title": "장애인 보조기구 수리비용 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 연천군",
+    "region": "경기",
+    "amount": "수급자 또는 차상위계층 장애인에게 보조기구 수리비용 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인 보조기구 수리비용 지원",
+      "보건의료",
+      "경기",
+      "경기도 연천군",
+      "상시",
+      "장애인",
+      "전체",
+      "복지",
+      "수급자",
+      "또는",
+      "차상위계층",
+      "장애인에게"
+    ],
+    "summary": "수급자 또는 차상위계층 장애인에게 보조기구 수리비용 지원",
+    "audience": "○ 「국민기초생활보장법」에 따른 수급자 및 「의료급여법」에 따른 수급자에 해당하는 장애인에 대한 수리비용 : 연간 20만원 이내 \n\n○ 「국민기초생활보장법」에 따른 차상위계층 장애인에 대한 수리비용 : 연간 10만원 이내(수리비용의 2분의1)",
+    "benefits": [
+      "수급자 또는 차상위계층 장애인에게 보조기구 수리비용 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문\n\n○ 연천장애인수리지원센터\n -경기도 연천군 전곡읍 전곡로 13",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000119",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000119",
+    "contact": "경기도 연천군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 「국민기초생활보장법」에 따른 수급자 및 「의료급여법」에 따른 수급자에 해당하는 장애인에 대한 수리비용 : 연간 20만원 이내 \n\n○ 「국민기초생활보장법」에 따른 차상위계층 장애인에 대한 수리비용 : 연간 10만원 이내(수리비용의 2분의1)",
+      "benefit": "수급자 또는 차상위계층 장애인에게 보조기구 수리비용 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문\n\n○ 연천장애인수리지원센터\n -경기도 연천군 전곡읍 전곡로 13",
+      "contact": "경기도 연천군"
+    }
+  },
+  {
+    "slug": "gov24-장수수당-지급",
+    "title": "장수수당 지급",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 연천군",
+    "region": "경기",
+    "amount": "장수수당 : 만 80세이상 연천군 거주자 중 신청자에 한하여 월 2만원 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장수수당 지급",
+      "복지",
+      "경기",
+      "경기도 연천군",
+      "상시",
+      "일반",
+      "아동",
+      "전체",
+      "장수수당",
+      ":",
+      "만",
+      "80세이상"
+    ],
+    "summary": "장수수당 : 만 80세이상 연천군 거주자 중 신청자에 한하여 월 2만원 지급",
+    "audience": "장수수당 : 만 80세이상 연천군 거주자 중 신청자에 한하여 월 2만원 지급",
+    "benefits": [
+      "장수수당 : 만 80세이상 연천군 거주자 중 신청자에 한하여 월 2만원 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 신청방법: 방문(주소지 읍면동 행정복지센터)\n○ 신청시기: 상시\n○ 지급시기: 신청자가 주민등록상 만80세가 되는 날이 속하는 달부터",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000426",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000426",
+    "contact": "경기도 연천군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장수수당 : 만 80세이상 연천군 거주자 중 신청자에 한하여 월 2만원 지급",
+      "benefit": "장수수당 : 만 80세이상 연천군 거주자 중 신청자에 한하여 월 2만원 지급",
+      "application": "○ 신청방법: 방문(주소지 읍면동 행정복지센터)\n○ 신청시기: 상시\n○ 지급시기: 신청자가 주민등록상 만80세가 되는 날이 속하는 달부터",
+      "contact": "경기도 연천군"
+    }
+  },
+  {
+    "slug": "gov24-외국인여성-출산가사-돌보미-지원",
+    "title": "외국인여성 출산가사 돌보미 지원",
+    "category": "문화생활",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 연천군",
+    "region": "경기",
+    "amount": "관내 거주하는 외국인주민(다문화가정)으로 자녀를 출생한 자에게 출생아 1인당 60만원 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "외국인여성 출산가사 돌보미 지원",
+      "문화생활",
+      "경기",
+      "경기도 연천군",
+      "확인필요",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "관내",
+      "거주하는",
+      "외국인주민(다문화가정)으로",
+      "자녀를"
+    ],
+    "summary": "관내 거주하는 외국인주민(다문화가정)으로 자녀를 출생한 자에게 출생아 1인당 60만원 지원",
+    "audience": "관내 거주하는 외국인주민(다문화가정)으로 자녀를 출생한 자에게 출생아 1인당 60만원 지원",
+    "benefits": [
+      "관내 거주하는 외국인주민(다문화가정)으로 자녀를 출생한 자에게 출생아 1인당 60만원 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "출생일로부터 180일 이내 부 또는 모가 거주지 읍·면 사무소에 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000428",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000428",
+    "contact": "경기도 연천군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "관내 거주하는 외국인주민(다문화가정)으로 자녀를 출생한 자에게 출생아 1인당 60만원 지원",
+      "benefit": "관내 거주하는 외국인주민(다문화가정)으로 자녀를 출생한 자에게 출생아 1인당 60만원 지원",
+      "application": "출생일로부터 180일 이내 부 또는 모가 거주지 읍·면 사무소에 방문 신청",
+      "contact": "경기도 연천군"
+    }
+  },
+  {
+    "slug": "gov24-연천군-군민안전보험",
+    "title": "연천군 군민안전보험",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 연천군",
+    "region": "경기",
+    "amount": "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거·복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "연천군 군민안전보험",
+      "주거",
+      "경기",
+      "경기도 연천군",
+      "상시",
+      "어르신",
+      "아동",
+      "복지",
+      "재난이나",
+      "그밖의",
+      "각종",
+      "사고로"
+    ],
+    "summary": "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상",
+    "audience": "자연재해(열사병, 일사병, 저체온증 포함)로 인하여 사망한 경우(질병제외) 2000\n폭발·화재·붕괴사태(땅꺼짐 포함) 사고로 상해 사망한 경우 2000\n상해의 직접결과로써 화상분류표에서 정한 화상(심재성 2도 이상)을 입고 그 치료를 목적으로 수술을 받은 경우 100\n폭발·화재·붕괴사태(땅꺼짐 포함) 사고로 상해 후유장해가 발생한 경우 2000\n대중교통 이용 중 상해 사망한 경우 2000\n대중교통 이용 중 상해 후유장해가 발생한 경우 2000\n전세버스 이용 중 상해 사망한 경우 2000\n전세버스 이용 중 상해 후유장해가 발생한 경우 2000\n만12세 이하인 자가 스쿨존 교통사고로 인해 부상시 부상등급에 따라 치료비 지급(부상등급1~14등급) 2000\n만65세 이상인 자가 노인보호구역으로 지정한 지역 내에서 교통사고로 인해 부상시 부상등급에 따라 치료비 지급(부상등급1~14등급) 2000\n뺑소니사고 또는 무보험자동차에 의한 사고로 사망한 경우 2000\n뺑소니사고 또는 무보험자동차에 의한 사고로 상해 후유장해가 발생한 경우 2000\n급격하고도 우연한 익사사고로 인해 상해의 직접결과로써 사망한 경우(질병 제외) 1000\n농기계사고에 의해 발생한 상해의 직접적인 결과로 사망한 경우 2000\n농기계사고에 의해 발생한 상해의 직접적인 결과로 상해 후유장해가 발생한 경우 2000\n강도에 의해 발생한 사고의 직접적인 결과로 사망한 경우 2000\n강도에 의해 발생한 사고의 직접적인 결과로 상해 후유장해가 발생한 경우 2000\n사회재난(감염병 제외)으로 인하여 사망한 경우 1000\n국내에서 발생한 개물림 사고의 직접결과로써 응급실에 내원하여 진료를 받은 경우 50\n자연재난(열사병, 일사병, 저체온증 포함)로 발생한 상해의 직접결과로써 장해상태가 되었을 때 2000\n사회재난(감염병 제외)으로 발생한 상해의 직접결과로써 장해상태가 되었을 때 2000\n국내에서 발생한 개물림, 개부딪힘 사고로 진단받은 경우 10\n직무 외 행위로 타인의 생명, 신체 또는 재산의 급박한 피해를 구제하다가 신체 상해를 입어 의사상자로 인정된 경우 1000\n개인형 이동장치 사고로 입은 상해의 직접결과로써 사망한 경우(질병 제외) 1,000\n개인형 이동장치 사고로 입은 상해의 직접결과로써 장해상태가 되었을 때 1,000",
+    "benefits": [
+      "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "콜센터 전화 문의 후 우편, 방문 등 접수",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000434",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000434",
+    "contact": "경기도 연천군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "자연재해(열사병, 일사병, 저체온증 포함)로 인하여 사망한 경우(질병제외) 2000\n폭발·화재·붕괴사태(땅꺼짐 포함) 사고로 상해 사망한 경우 2000\n상해의 직접결과로써 화상분류표에서 정한 화상(심재성 2도 이상)을 입고 그 치료를 목적으로 수술을 받은 경우 100\n폭발·화재·붕괴사태(땅꺼짐 포함) 사고로 상해 후유장해가 발생한 경우 2000\n대중교통 이용 중 상해 사망한 경우 2000\n대중교통 이용 중 상해 후유장해가 발생한 경우 2000\n전세버스 이용 중 상해 사망한 경우 2000\n전세버스 이용 중 상해 후유장해가 발생한 경우 2000\n만12세 이하인 자가 스쿨존 교통사고로 인해 부상시 부상등급에 따라 치료비 지급(부상등급1~14등급) 2000\n만65세 이상인 자가 노인보호구역으로 지정한 지역 내에서 교통사고로 인해 부상시 부상등급에 따라 치료비 지급(부상등급1~14등급) 2000\n뺑소니사고 또는 무보험자동차에 의한 사고로 사망한 경우 2000\n뺑소니사고 또는 무보험자동차에 의한 사고로 상해 후유장해가 발생한 경우 2000\n급격하고도 우연한 익사사고로 인해 상해의 직접결과로써 사망한 경우(질병 제외) 1000\n농기계사고에 의해 발생한 상해의 직접적인 결과로 사망한 경우 2000\n농기계사고에 의해 발생한 상해의 직접적인 결과로 상해 후유장해가 발생한 경우 2000\n강도에 의해 발생한 사고의 직접적인 결과로 사망한 경우 2000\n강도에 의해 발생한 사고의 직접적인 결과로 상해 후유장해가 발생한 경우 2000\n사회재난(감염병 제외)으로 인하여 사망한 경우 1000\n국내에서 발생한 개물림 사고의 직접결과로써 응급실에 내원하여 진료를 받은 경우 50\n자연재난(열사병, 일사병, 저체온증 포함)로 발생한 상해의 직접결과로써 장해상태가 되었을 때 2000\n사회재난(감염병 제외)으로 발생한 상해의 직접결과로써 장해상태가 되었을 때 2000\n국내에서 발생한 개물림, 개부딪힘 사고로 진단받은 경우 10\n직무 외 행위로 타인의 생명, 신체 또는 재산의 급박한 피해를 구제하다가 신체 상해를 입어 의사상자로 인정된 경우 1000\n개인형 이동장치 사고로 입은 상해의 직접결과로써 사망한 경우(질병 제외) 1,000\n개인형 이동장치 사고로 입은 상해의 직접결과로써 장해상태가 되었을 때 1,000",
+      "benefit": "재난이나 그밖의 각종 사고로 피해가 발생한 경우 그 피해를 보상",
+      "application": "콜센터 전화 문의 후 우편, 방문 등 접수",
+      "contact": "경기도 연천군"
+    }
+  },
+  {
+    "slug": "gov24-신생아-출산용품-지원",
+    "title": "신생아 출산용품 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 연천군",
+    "region": "경기",
+    "amount": "연천군 관내 출생아에게 신생아 출산용품을 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "신생아 출산용품 지원",
+      "복지",
+      "경기",
+      "경기도 연천군",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "연천군",
+      "관내",
+      "출생아에게",
+      "신생아"
+    ],
+    "summary": "연천군 관내 출생아에게 신생아 출산용품을 지원",
+    "audience": "○ 신생아 출산용품 지원",
+    "benefits": [
+      "연천군 관내 출생아에게 신생아 출산용품을 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○방문신청\n-보건소: 관할 보건소 방문\n-구비서류: 주민등록 등본(출생아가 등록된 등본)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000436",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000436",
+    "contact": "경기도 연천군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 신생아 출산용품 지원",
+      "benefit": "연천군 관내 출생아에게 신생아 출산용품을 지원",
+      "application": "○방문신청\n-보건소: 관할 보건소 방문\n-구비서류: 주민등록 등본(출생아가 등록된 등본)",
+      "contact": "경기도 연천군"
+    }
+  },
+  {
+    "slug": "gov24-유축기-대여-서비스",
+    "title": "유축기 대여 서비스",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 연천군",
+    "region": "경기",
+    "amount": "모유수유를 원하는 가정에 유축기를 대여",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "유축기 대여 서비스",
+      "복지",
+      "경기",
+      "경기도 연천군",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "모유수유를",
+      "원하는",
+      "가정에",
+      "유축기를"
+    ],
+    "summary": "모유수유를 원하는 가정에 유축기를 대여",
+    "audience": "○ 유축기 대여 서비스",
+    "benefits": [
+      "모유수유를 원하는 가정에 유축기를 대여"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 관할 보건소 방문\n - 구비서류 : 등본, 출생증명서(출생아가 등본에 미등록된 경우 필요한 추가서류)\n※관내 임산부 등록된 가정은 제출서류 생략 가능",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000437",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000437",
+    "contact": "경기도 연천군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 유축기 대여 서비스",
+      "benefit": "모유수유를 원하는 가정에 유축기를 대여",
+      "application": "○ 방문 신청\n - 보건소 : 관할 보건소 방문\n - 구비서류 : 등본, 출생증명서(출생아가 등본에 미등록된 경우 필요한 추가서류)\n※관내 임산부 등록된 가정은 제출서류 생략 가능",
+      "contact": "경기도 연천군"
+    }
+  },
+  {
+    "slug": "gov24-임산부-등록-지원",
+    "title": "임산부 등록 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 연천군",
+    "region": "경기",
+    "amount": "관내 임산부에게 튼살크림 및 영양제 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "임산부 등록 지원",
+      "복지",
+      "경기",
+      "경기도 연천군",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "관내",
+      "임산부에게",
+      "튼살크림",
+      "및"
+    ],
+    "summary": "관내 임산부에게 튼살크림 및 영양제 지원",
+    "audience": "○임산부 등록사업\n-튼살크림 지원\n-영양제 지원(철분, 엽산)",
+    "benefits": [
+      "관내 임산부에게 튼살크림 및 영양제 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 관할 보건소 방문\n - 임산부등록시 서류지참\n - 구비서류 : 임신확인서, 등본, 신분증",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000438",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000438",
+    "contact": "경기도 연천군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○임산부 등록사업\n-튼살크림 지원\n-영양제 지원(철분, 엽산)",
+      "benefit": "관내 임산부에게 튼살크림 및 영양제 지원",
+      "application": "○ 방문 신청\n - 보건소 : 관할 보건소 방문\n - 임산부등록시 서류지참\n - 구비서류 : 임신확인서, 등본, 신분증",
+      "contact": "경기도 연천군"
+    }
+  },
+  {
+    "slug": "gov24-100세-이상-장수어르신-생필품-지원",
+    "title": "100세 이상 장수어르신 생필품 지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 연천군",
+    "region": "경기",
+    "amount": "연천군에 거주하는 만 100세 이상 장수노인에게 연 1회 생필품 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "100세 이상 장수어르신 생필품 지원",
+      "복지",
+      "경기",
+      "경기도 연천군",
+      "상시",
+      "어르신",
+      "아동",
+      "연천군에",
+      "거주하는",
+      "만",
+      "100세",
+      "이상"
+    ],
+    "summary": "연천군에 거주하는 만 100세 이상 장수노인에게 연 1회 생필품 지원",
+    "audience": "=연천군에 거주하는 만 100세 이상 장수노인에게 연 1회 10만원 상당의 생필품 지원",
+    "benefits": [
+      "연천군에 거주하는 만 100세 이상 장수노인에게 연 1회 생필품 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "해당 서비스는 신청없이 자격대상자에게 자동적으로 제공됩니다.",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000439",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000439",
+    "contact": "경기도 연천군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "=연천군에 거주하는 만 100세 이상 장수노인에게 연 1회 10만원 상당의 생필품 지원",
+      "benefit": "연천군에 거주하는 만 100세 이상 장수노인에게 연 1회 생필품 지원",
+      "application": "해당 서비스는 신청없이 자격대상자에게 자동적으로 제공됩니다.",
+      "contact": "경기도 연천군"
+    }
+  },
+  {
+    "slug": "gov24-농작물-병해충-방제약제-지원-대상작물-벼-콩-배추무-과수",
+    "title": "농작물 병해충 방제약제 지원(대상작물: 벼, 콩, 배추·무, 과수)",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 연천군",
+    "region": "경기",
+    "amount": "방제약제 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "농작물 병해충 방제약제 지원(대상작물: 벼, 콩, 배추·무, 과수)",
+      "농림어업",
+      "경기",
+      "경기도 연천군",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "방제약제",
+      "지원"
+    ],
+    "summary": "방제약제 지원",
+    "audience": "○ 벼 병해충 방제약제 지원\n○ 콩 노린재 방제약제 지원\n○ 무·배추 뿌리혹병 방제약제 지원\n○ 과수 돌발해충(미국선녀벌레 등)방제약제 지원\n○ 사과·배 과수화상병 방제약제 지원",
+    "benefits": [
+      "방제약제 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "관할 읍면 행정복지센터에 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000443",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000443",
+    "contact": "경기도 연천군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 벼 병해충 방제약제 지원\n○ 콩 노린재 방제약제 지원\n○ 무·배추 뿌리혹병 방제약제 지원\n○ 과수 돌발해충(미국선녀벌레 등)방제약제 지원\n○ 사과·배 과수화상병 방제약제 지원",
+      "benefit": "방제약제 지원",
+      "application": "관할 읍면 행정복지센터에 신청",
+      "contact": "경기도 연천군"
+    }
+  },
+  {
+    "slug": "gov24-연천군민-65세-이상-및-장애인-진료비-감면",
+    "title": "연천군민 65세 이상 및 장애인 진료비 감면",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 연천군",
+    "region": "경기",
+    "amount": "65세 이상 노인 및 장애정도가 심한 장애인을 위한 진료비 (본인부담금 중 1,500원)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "어르신, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "연천군민 65세 이상 및 장애인 진료비 감면",
+      "보건의료",
+      "경기",
+      "경기도 연천군",
+      "상시",
+      "어르신",
+      "장애인",
+      "아동",
+      "복지",
+      "65세",
+      "이상",
+      "노인"
+    ],
+    "summary": "65세 이상 노인 및 장애정도가 심한 장애인을 위한 진료비 (본인부담금 중 1,500원)",
+    "audience": "연천군보건의료원 및 보건지소·진료소 내원 환자로서 진료 당시 연천군 관내에 주민등록상 주소를 둔 65세 이상 노인 및 장애정도가 심한 장애인을 위한 진료비 (본인부담금 중 1,500원) 감면",
+    "benefits": [
+      "65세 이상 노인 및 장애정도가 심한 장애인을 위한 진료비 (본인부담금 중 1,500원)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n-주소를 확인할 수 있는 관련 증명서 지참",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000446",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000446",
+    "contact": "경기도 연천군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "연천군보건의료원 및 보건지소·진료소 내원 환자로서 진료 당시 연천군 관내에 주민등록상 주소를 둔 65세 이상 노인 및 장애정도가 심한 장애인을 위한 진료비 (본인부담금 중 1,500원) 감면",
+      "benefit": "65세 이상 노인 및 장애정도가 심한 장애인을 위한 진료비 (본인부담금 중 1,500원)",
+      "application": "○ 방문 신청\n-주소를 확인할 수 있는 관련 증명서 지참",
+      "contact": "경기도 연천군"
+    }
+  },
+  {
+    "slug": "gov24-국공립-어린이집-시설개선공사",
+    "title": "국공립 어린이집 시설개선공사",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 연천군",
+    "region": "경기",
+    "amount": "국공립어린이집 시설개선 공사(개보수)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "국공립 어린이집 시설개선공사",
+      "교육",
+      "경기",
+      "경기도 연천군",
+      "확인필요",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "국공립어린이집",
+      "시설개선",
+      "공사(개보수)"
+    ],
+    "summary": "국공립어린이집 시설개선 공사(개보수)",
+    "audience": "국공립 어린이집 시설개선 공사",
+    "benefits": [
+      "국공립어린이집 시설개선 공사(개보수)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "사회복지과 방문)\n연천군 관내 국공립어린이집 개보수 신청 (구비서류: 개보수사업비 요청서, 견적서, 어린이집사업자등록증 등)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000457",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/414000000457",
+    "contact": "경기도 연천군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "국공립 어린이집 시설개선 공사",
+      "benefit": "국공립어린이집 시설개선 공사(개보수)",
+      "application": "사회복지과 방문)\n연천군 관내 국공립어린이집 개보수 신청 (구비서류: 개보수사업비 요청서, 견적서, 어린이집사업자등록증 등)",
+      "contact": "경기도 연천군"
+    }
+  },
+  {
+    "slug": "gov24-장애인-스포츠강좌이용권-지원-사업",
+    "title": "장애인 스포츠강좌이용권 지원 사업",
+    "category": "문화생활",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "○ 장애인 스포츠강좌이용권 지원 사업 - 1인당 매월 9만5천원 범위 내 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "장애인 스포츠강좌이용권 지원 사업",
+      "문화생활",
+      "서울",
+      "서울특별시 동대문구",
+      "확인필요",
+      "장애인",
+      "아동",
+      "청년",
+      "복지",
+      "○",
+      "스포츠강좌이용권",
+      "지원"
+    ],
+    "summary": "○ 장애인 스포츠강좌이용권 지원 사업 - 1인당 매월 9만5천원 범위 내 지원",
+    "audience": "○ 장애인 스포츠강좌이용권 지원 사업\n - 1인당 매월 9만5천원 범위 내 스포츠강좌 수강료 지원",
+    "benefits": [
+      "○ 장애인 스포츠강좌이용권 지원 사업 - 1인당 매월 9만5천원 범위 내 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청, 방문 신청\n○ 온라인 신청(https://svoucher.kspo.or.kr/main.do)\n○ 온라인 신청기간 도과 시 방문 신청(구청 또는 동 주민센터)\n\n온라인: https://svoucher.kspo.or.kr/main.do",
+    "officialUrl": "https://svoucher.kspo.or.kr/main.do",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000126",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 장애인 스포츠강좌이용권 지원 사업\n - 1인당 매월 9만5천원 범위 내 스포츠강좌 수강료 지원",
+      "benefit": "○ 장애인 스포츠강좌이용권 지원 사업 - 1인당 매월 9만5천원 범위 내 지원",
+      "application": "○ 온라인 신청, 방문 신청\n○ 온라인 신청(https://svoucher.kspo.or.kr/main.do)\n○ 온라인 신청기간 도과 시 방문 신청(구청 또는 동 주민센터)\n\n온라인: https://svoucher.kspo.or.kr/main.do",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-취약계층-반려동물-의료비-지원",
+    "title": "취약계층 반려동물 의료비 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "관내 수급자, 차상위계층, 한부모가족 반려동물 의료비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "취약계층 반려동물 의료비 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 동대문구",
+      "확인필요",
+      "일반",
+      "전체",
+      "복지",
+      "관내",
+      "수급자,",
+      "차상위계층,",
+      "한부모가족"
+    ],
+    "summary": "관내 수급자, 차상위계층, 한부모가족 반려동물 의료비 지원",
+    "audience": "지원대상 : 관내 주민등록을 두고 개와 고양이를 기르는 기초생활수급자, 차상위계층 및 한부모가족(가구당 2마리까지 신청 가능)\n\n사업기간 : ~ 예산소진시까지\n\n신청방법 : 동물등록자 본인이 반려동물과 함께 준비서류를 준비하여 관내 지정 동물병원에 방문하여 신청\n *준비서류 : 신분증, 취약계층 증빙서류(수급자 증명서, 차상위계층, 한부모가족 확인서)-3개월이내 발급/ 반려견,반려묘의 경우 동물등록증\n\n지원내용\n \n 1. 필수진료 : 반려동물 필수 동물의료지원(정해진 진료 항목만 지원가능)\n - 기초건강검진, 필수예방접종, 심장사상충 예방약\n - 마리당 20만원 이내 지원, 보호자 1만원 부담\n 2. 선택진료 : 필수진료 후 추가 진료 요청시 지원\n - 기초검진과정 중 발견된 증상, 질병에 대해 치료 또는 중성화 수술\n - 진료 후 치료가 필요한 진료 항목만을 지원하며, 미용, 심장사상충 예방약, 영양제 등 단순 처방은 제외\n - 마리당 20만원 이내 지원(초과하는 진료비는 보호자 부담)",
+    "benefits": [
+      "관내 수급자, 차상위계층, 한부모가족 반려동물 의료비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "본인이 반려동물과 함께 준비서류를 준비하여 관내 지정 동물병원에 방문하여 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000130",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000130",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "지원대상 : 관내 주민등록을 두고 개와 고양이를 기르는 기초생활수급자, 차상위계층 및 한부모가족(가구당 2마리까지 신청 가능)\n\n사업기간 : ~ 예산소진시까지\n\n신청방법 : 동물등록자 본인이 반려동물과 함께 준비서류를 준비하여 관내 지정 동물병원에 방문하여 신청\n *준비서류 : 신분증, 취약계층 증빙서류(수급자 증명서, 차상위계층, 한부모가족 확인서)-3개월이내 발급/ 반려견,반려묘의 경우 동물등록증\n\n지원내용\n \n 1. 필수진료 : 반려동물 필수 동물의료지원(정해진 진료 항목만 지원가능)\n - 기초건강검진, 필수예방접종, 심장사상충 예방약\n - 마리당 20만원 이내 지원, 보호자 1만원 부담\n 2. 선택진료 : 필수진료 후 추가 진료 요청시 지원\n - 기초검진과정 중 발견된 증상, 질병에 대해 치료 또는 중성화 수술\n - 진료 후 치료가 필요한 진료 항목만을 지원하며, 미용, 심장사상충 예방약, 영양제 등 단순 처방은 제외\n - 마리당 20만원 이내 지원(초과하는 진료비는 보호자 부담)",
+      "benefit": "관내 수급자, 차상위계층, 한부모가족 반려동물 의료비 지원",
+      "application": "본인이 반려동물과 함께 준비서류를 준비하여 관내 지정 동물병원에 방문하여 신청",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-동대문구-유기동물-입양비-지원",
+    "title": "동대문구 유기동물 입양비 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "관내 유실,유기동물을 반려 목적의 입양 후 소요된 소유자 부담 비용 지원/1마리당 25만원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "동대문구 유기동물 입양비 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "일반",
+      "전체",
+      "관내",
+      "유실,유기동물을",
+      "반려",
+      "목적의",
+      "입양"
+    ],
+    "summary": "관내 유실,유기동물을 반려 목적의 입양 후 소요된 소유자 부담 비용 지원/1마리당 25만원",
+    "audience": "1. 지원대상 : 우리 구 보호중인 유기동물을 반려 목적으로 입양하려는 자로써 동물등록 완료 입양자\n - 유기돔물 입양 후 6개월 이내 신청 건에 한하여 지급\n2. 신청방법 : 입양자 본인이 유기동물 입양관련 비용 지출 후 서류 준비하여 신청(방문, 이메일) 검토 후 지급\n - 준비서류 : 입양비 신청서, 입양자 신분증, 입양확인서 사본, 등물등록증 사본, 입양비 지출 관련 증빙서류(지출영수증, 병원진료내역서, 기타 입양관련 지출내역 등)\n 입양자 본인명의 통장사본\n3. 지원내용 : 질병질단비, 치료비, 예방접종, 중성화수술비, 내장형 동물 등록비, 미용비, 펫보험 가입비(신청일 기준 유효한 것) \n 중 입양 시 지출한 비용 중 마리당 최대 25 만원까지 지원",
+    "benefits": [
+      "관내 유실,유기동물을 반려 목적의 입양 후 소요된 소유자 부담 비용 지원/1마리당 25만원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "입양자가 유기동물 입양시 관련 비용 지출 후 신청 준비서류 준비하여 방문 혹은 이메일로 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000132",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000132",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "1. 지원대상 : 우리 구 보호중인 유기동물을 반려 목적으로 입양하려는 자로써 동물등록 완료 입양자\n - 유기돔물 입양 후 6개월 이내 신청 건에 한하여 지급\n2. 신청방법 : 입양자 본인이 유기동물 입양관련 비용 지출 후 서류 준비하여 신청(방문, 이메일) 검토 후 지급\n - 준비서류 : 입양비 신청서, 입양자 신분증, 입양확인서 사본, 등물등록증 사본, 입양비 지출 관련 증빙서류(지출영수증, 병원진료내역서, 기타 입양관련 지출내역 등)\n 입양자 본인명의 통장사본\n3. 지원내용 : 질병질단비, 치료비, 예방접종, 중성화수술비, 내장형 동물 등록비, 미용비, 펫보험 가입비(신청일 기준 유효한 것) \n 중 입양 시 지출한 비용 중 마리당 최대 25 만원까지 지원",
+      "benefit": "관내 유실,유기동물을 반려 목적의 입양 후 소요된 소유자 부담 비용 지원/1마리당 25만원",
+      "application": "입양자가 유기동물 입양시 관련 비용 지출 후 신청 준비서류 준비하여 방문 혹은 이메일로 신청",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-동대문구형-산모신생아-건강관리-본인부담금-지원-사업",
+    "title": "동대문구형 산모신생아 건강관리 본인부담금 지원 사업",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "산모신생아 건강관리 서비스 본인부담금의 90%를 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "동대문구형 산모신생아 건강관리 본인부담금 지원 사업",
+      "보건의료",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "부모/육아",
+      "장애인",
+      "전체",
+      "임신·출산·육아",
+      "복지",
+      "산모신생아",
+      "건강관리"
+    ],
+    "summary": "산모신생아 건강관리 서비스 본인부담금의 90%를 지원",
+    "audience": "○ 동대문구 취약계층 출산가정에 산모신생아 건강관리 서비스 본인부담금 지원\n- 산모신생아 건강관리 서비스 본인부담금의 90% 지원",
+    "benefits": [
+      "산모신생아 건강관리 서비스 본인부담금의 90%를 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 산모신생아 건강관리 서비스 종료 후 3개월이내에 보건소에 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000136",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000136",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 동대문구 취약계층 출산가정에 산모신생아 건강관리 서비스 본인부담금 지원\n- 산모신생아 건강관리 서비스 본인부담금의 90% 지원",
+      "benefit": "산모신생아 건강관리 서비스 본인부담금의 90%를 지원",
+      "application": "○ 산모신생아 건강관리 서비스 종료 후 3개월이내에 보건소에 신청",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-중소기업육성기금-융자",
+    "title": "중소기업육성기금 융자",
+    "category": "소상공인",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "동대문구 내에서 6개월 이상 사업한 소상공인 및 중소기업 융자",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "사업",
+    "targetGroup": "소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "중소기업육성기금 융자",
+      "소상공인",
+      "서울",
+      "서울특별시 동대문구",
+      "모집중",
+      "전체",
+      "사업",
+      "동대문구",
+      "내에서",
+      "6개월",
+      "이상",
+      "사업한"
+    ],
+    "summary": "동대문구 내에서 6개월 이상 사업한 소상공인 및 중소기업 융자",
+    "audience": "동대문구 내에서 6개월 이상 사업한 소상공인 및 중소기업 융자\n- 소상공인 : 최대3천만원\n- 중소기업 : 최대1억원 \n- 상환조건 : 1년거치 4년균등분할상환\n- 금 리 : 1.5%",
+    "benefits": [
+      "동대문구 내에서 6개월 이상 사업한 소상공인 및 중소기업 융자"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "동대문구청 지하2층 소상공인 지원반 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000146",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000146",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "동대문구 내에서 6개월 이상 사업한 소상공인 및 중소기업 융자\n- 소상공인 : 최대3천만원\n- 중소기업 : 최대1억원 \n- 상환조건 : 1년거치 4년균등분할상환\n- 금 리 : 1.5%",
+      "benefit": "동대문구 내에서 6개월 이상 사업한 소상공인 및 중소기업 융자",
+      "application": "동대문구청 지하2층 소상공인 지원반 방문 신청",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-1인가구-안심장비-지원사업",
+    "title": "1인가구 안심장비 지원사업",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "동대문구 거주 단독세대주 및 범죄피해자 안심홈4종세트 지원 사업",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년·주거",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "1인가구 안심장비 지원사업",
+      "청년",
+      "서울",
+      "서울특별시 동대문구",
+      "확인필요",
+      "중장년",
+      "주거",
+      "동대문구",
+      "거주",
+      "단독세대주",
+      "및",
+      "범죄피해자"
+    ],
+    "summary": "동대문구 거주 단독세대주 및 범죄피해자 안심홈4종세트 지원 사업",
+    "audience": "◎ 신청기간 : 별도공지\n\n◎ 지원물품 : 현관문안전고리, 창문잠금장치, 스마트 초인종, 가정용CCTV 총 4종세트\n\n◎ 신청방법 \n ① QR코드로 신청서 제출 ② 전·월세계약서 이메일 제출 \n ※ 이메일주소 : ddmfc@daum.net\n\n◎ 지원대상 : 동대문구에 거주하는 1인가구(1인단독 세대주)\n ※ 청년·중장년 여성 1인가구, 범죄피해를 경험한 남성 1인가구(증빙자료 필수) 우선지원\n\n◎ 필수조건 : 전·월세 보증금(전세환산가액) 1억 5천만원 이하\n ※ 아파트 거주자, 자가 소유자 제외\n ※ 전세환산가액 계산법 : 보증금 +(월세×12)\n\n◎ 진행절차 \n ① 서류제출 완료자 대상 선정심의회\n ②선정결과 발표\n ③임대인 및 건물주 설치동의서 제출\n ④선정된 가구 대상 설치 지원\n\n ◎ 문의전화 : 동대문구1인가구지원센터 ☎ 070-7459-3301~3",
+    "benefits": [
+      "동대문구 거주 단독세대주 및 범죄피해자 안심홈4종세트 지원 사업"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "◎ 신청방법 \n ① QR코드로 신청서 제출 또는 https://docs.google.com/forms/d/19orxfvtlP5vwhSjnGyUjN1K1ZKtCVSbl4I0mQVW6oqk/edit \n ② 전·월세계약서 이메일 제출 \n ※ 이메일주소 : ddmfc@daum.net",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000147",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000147",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "◎ 신청기간 : 별도공지\n\n◎ 지원물품 : 현관문안전고리, 창문잠금장치, 스마트 초인종, 가정용CCTV 총 4종세트\n\n◎ 신청방법 \n ① QR코드로 신청서 제출 ② 전·월세계약서 이메일 제출 \n ※ 이메일주소 : ddmfc@daum.net\n\n◎ 지원대상 : 동대문구에 거주하는 1인가구(1인단독 세대주)\n ※ 청년·중장년 여성 1인가구, 범죄피해를 경험한 남성 1인가구(증빙자료 필수) 우선지원\n\n◎ 필수조건 : 전·월세 보증금(전세환산가액) 1억 5천만원 이하\n ※ 아파트 거주자, 자가 소유자 제외\n ※ 전세환산가액 계산법 : 보증금 +(월세×12)\n\n◎ 진행절차 \n ① 서류제출 완료자 대상 선정심의회\n ②선정결과 발표\n ③임대인 및 건물주 설치동의서 제출\n ④선정된 가구 대상 설치 지원\n\n ◎ 문의전화 : 동대문구1인가구지원센터 ☎ 070-7459-3301~3",
+      "benefit": "동대문구 거주 단독세대주 및 범죄피해자 안심홈4종세트 지원 사업",
+      "application": "◎ 신청방법 \n ① QR코드로 신청서 제출 또는 https://docs.google.com/forms/d/19orxfvtlP5vwhSjnGyUjN1K1ZKtCVSbl4I0mQVW6oqk/edit \n ② 전·월세계약서 이메일 제출 \n ※ 이메일주소 : ddmfc@daum.net",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-광견병-예방접종-실시",
+    "title": "광견병 예방접종 실시",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "*반려동물 광견병 예방접종 실시",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "광견병 예방접종 실시",
+      "보건의료",
+      "서울",
+      "서울특별시 동대문구",
+      "모집중",
+      "농어업인",
+      "전체",
+      "*반려동물",
+      "광견병",
+      "예방접종",
+      "실시"
+    ],
+    "summary": "*반려동물 광견병 예방접종 실시",
+    "audience": "*광견병 예방접종 실시(연 2회/봄,가을)\n- 접종장소 : 동대문구 소재 동물병원 27개소\n- 접종대상 : 생후 3개월 이상 된 모든 개, 고양이\n- 예방접종 시술료 : 10,000원(소유자 부담) / 예방백신 약품비용 무료",
+    "benefits": [
+      "*반려동물 광견병 예방접종 실시"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "병원방문후 예방접종",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000148",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000148",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "*광견병 예방접종 실시(연 2회/봄,가을)\n- 접종장소 : 동대문구 소재 동물병원 27개소\n- 접종대상 : 생후 3개월 이상 된 모든 개, 고양이\n- 예방접종 시술료 : 10,000원(소유자 부담) / 예방백신 약품비용 무료",
+      "benefit": "*반려동물 광견병 예방접종 실시",
+      "application": "병원방문후 예방접종",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-양봉농가-구제약품지원",
+    "title": "양봉농가 구제약품지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "*양봉농가 구제약품 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "양봉농가 구제약품지원",
+      "농림어업",
+      "서울",
+      "서울특별시 동대문구",
+      "모집중",
+      "농어업인",
+      "전체",
+      "*양봉농가",
+      "구제약품",
+      "지원"
+    ],
+    "summary": "*양봉농가 구제약품 지원",
+    "audience": "*양봉농가 구제약품 지원\n-응애류, 노제마병, 낭충봉아부패병 구제 약품 지원",
+    "benefits": [
+      "*양봉농가 구제약품 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "해당 서비스는 신청없이 자격대상자에게 자동적으로 제공됩니다.",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000149",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000149",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "*양봉농가 구제약품 지원\n-응애류, 노제마병, 낭충봉아부패병 구제 약품 지원",
+      "benefit": "*양봉농가 구제약품 지원",
+      "application": "해당 서비스는 신청없이 자격대상자에게 자동적으로 제공됩니다.",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-1인-가구-고독사-예방-안부확인-서비스",
+    "title": "1인 가구 고독사 예방 안부확인 서비스",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "- 전력, 통신데이터 사용 패턴 분석으로 대상가구 상시 안부 확인",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "1인 가구 고독사 예방 안부확인 서비스",
+      "복지",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "일반",
+      "아동",
+      "중장년",
+      "-",
+      "전력,",
+      "통신데이터",
+      "사용"
+    ],
+    "summary": "- 전력, 통신데이터 사용 패턴 분석으로 대상가구 상시 안부 확인",
+    "audience": "ㅇ1인 가구 고독사 예방을 위한 안부살핌 서비스\n- 지원대상 : 중장년(50~64세) 1인 고독사 위험가구 \n- 전력, 통신데이터 사용 패턴 분석으로 1인 가구의 사용패턴을 인공지능 등으로 분석, 평상시와 다른 사용 패넡 감지시 동복지플래너에게 알림 전송하여 대상자의 안부확인 서비스\n- 별도의 기기, 센서 설치 없이 기설치된 전력 및 통신 인프라 활용",
+    "benefits": [
+      "- 전력, 통신데이터 사용 패턴 분석으로 대상가구 상시 안부 확인"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "- 방문신청 : 주민등록지 동주민센터(신분증 지참)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000150",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000150",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "ㅇ1인 가구 고독사 예방을 위한 안부살핌 서비스\n- 지원대상 : 중장년(50~64세) 1인 고독사 위험가구 \n- 전력, 통신데이터 사용 패턴 분석으로 1인 가구의 사용패턴을 인공지능 등으로 분석, 평상시와 다른 사용 패넡 감지시 동복지플래너에게 알림 전송하여 대상자의 안부확인 서비스\n- 별도의 기기, 센서 설치 없이 기설치된 전력 및 통신 인프라 활용",
+      "benefit": "- 전력, 통신데이터 사용 패턴 분석으로 대상가구 상시 안부 확인",
+      "application": "- 방문신청 : 주민등록지 동주민센터(신분증 지참)",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-한국외국어대학교-영어체험교실",
+    "title": "한국외국어대학교 영어체험교실",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "관내 초등학생 3~6학년을 대상으로 방학기간 중 원어민과 함께하는 영어체험교실 운영",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "한국외국어대학교 영어체험교실",
+      "교육",
+      "서울",
+      "서울특별시 동대문구",
+      "확인필요",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "관내",
+      "초등학생",
+      "3~6학년을",
+      "대상으로"
+    ],
+    "summary": "관내 초등학생 3~6학년을 대상으로 방학기간 중 원어민과 함께하는 영어체험교실 운영",
+    "audience": "○ 원어민과 함께하는 여름방학, 겨울방학 영어체험교실\n - 대상 : 관내 초등학생 3~6학년 \n - 장소 : 한국외국어대학교 서울캠퍼스(이문동)\n - 기간 : 여름방학, 겨울방학 중 12일 \n - 비용 : 1인당 80만원(구 지원40만원, 자부담 40만원)\n - 내용 : 회화 및 체험형 중심의 영어 학습",
+    "benefits": [
+      "관내 초등학생 3~6학년을 대상으로 방학기간 중 원어민과 함께하는 영어체험교실 운영"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온라인 신청\n\n온라인: https://hufsportal.hufs.ac.kr/tesol/student.php",
+    "officialUrl": "https://hufsportal.hufs.ac.kr/tesol/student.php",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000151",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 원어민과 함께하는 여름방학, 겨울방학 영어체험교실\n - 대상 : 관내 초등학생 3~6학년 \n - 장소 : 한국외국어대학교 서울캠퍼스(이문동)\n - 기간 : 여름방학, 겨울방학 중 12일 \n - 비용 : 1인당 80만원(구 지원40만원, 자부담 40만원)\n - 내용 : 회화 및 체험형 중심의 영어 학습",
+      "benefit": "관내 초등학생 3~6학년을 대상으로 방학기간 중 원어민과 함께하는 영어체험교실 운영",
+      "application": "온라인 신청\n\n온라인: https://hufsportal.hufs.ac.kr/tesol/student.php",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-부동산-상담관-제도",
+    "title": "부동산 상담관 제도",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "개업공인중개사를 상담관으로 위촉하여 부동산 매매 및 임대차 관련 분쟁, 부동산거래관련 상담",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "부동산 상담관 제도",
+      "주거",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "일반",
+      "전체",
+      "복지",
+      "개업공인중개사를",
+      "상담관으로",
+      "위촉하여",
+      "부동산"
+    ],
+    "summary": "개업공인중개사를 상담관으로 위촉하여 부동산 매매 및 임대차 관련 분쟁, 부동산거래관련 상담",
+    "audience": "※ 부동산 상담관 제도\n - 부동산 전문가인 공인중개사를 부동산 상담관으로 위촉하여 부동산 매매,임대차 관련 분쟁 등에 대해 무료상담 해줌으로써 주민 불편사항을 해소하고, 개업공인중개사의 사회공헌 활동을 통한 민관 네트워크를 구성하여 맞춤형 복지서비스를 제공\n - 주1회 매주 화요일 상담 서비스 제공 (시간 14:00 ~ 17:00)",
+    "benefits": [
+      "개업공인중개사를 상담관으로 위촉하여 부동산 매매 및 임대차 관련 분쟁, 부동산거래관련 상담"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문, 유선신청 가능\n - 장소 : 동대문구 부동산정보과 (1층)\n - 전화 : 02-2127-4215",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000155",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000155",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "※ 부동산 상담관 제도\n - 부동산 전문가인 공인중개사를 부동산 상담관으로 위촉하여 부동산 매매,임대차 관련 분쟁 등에 대해 무료상담 해줌으로써 주민 불편사항을 해소하고, 개업공인중개사의 사회공헌 활동을 통한 민관 네트워크를 구성하여 맞춤형 복지서비스를 제공\n - 주1회 매주 화요일 상담 서비스 제공 (시간 14:00 ~ 17:00)",
+      "benefit": "개업공인중개사를 상담관으로 위촉하여 부동산 매매 및 임대차 관련 분쟁, 부동산거래관련 상담",
+      "application": "○ 방문, 유선신청 가능\n - 장소 : 동대문구 부동산정보과 (1층)\n - 전화 : 02-2127-4215",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-아파트-공동체-활성화-사업",
+    "title": "아파트 공동체 활성화 사업",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "아파트 단지 내 주민이 제안한 활동 프로그램을 지원함으로써 이웃간 소통을 활성화",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "아파트 공동체 활성화 사업",
+      "주거",
+      "서울",
+      "서울특별시 동대문구",
+      "확인필요",
+      "일반",
+      "전체",
+      "아파트",
+      "단지",
+      "내",
+      "주민이",
+      "제안한"
+    ],
+    "summary": "아파트 단지 내 주민이 제안한 활동 프로그램을 지원함으로써 이웃간 소통을 활성화",
+    "audience": "아파트 단지 내 주민이 제안한 다양한 활동 프로그램을 지원함으로써 이웃간 소통을 활성화 하고 공동체 의식 함양\n\no 사업내용 : 친환경제품만들기, 녹색장터, 텃밭가꾸기, 재능기부, 나눔행사 등\no 지원금액 : 00,000천원 : 매칭사업(시비 40%, 구비 60%)\no 신청자격 : 입주자(임차인)대표회의, 공동체활성화단체, 관리주체의 3자 공동명의 신청\n - 공동체 활성화 단체 구성 : 아파트 내외 주민 10명 이상\n (아파트 단지 내 자부담이 있는 사업입니다.)\no 지원방법 : 공동주택지원 심의위원회 심의 및 결정",
+    "benefits": [
+      "아파트 단지 내 주민이 제안한 활동 프로그램을 지원함으로써 이웃간 소통을 활성화"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "o 신청방법 : 신청 구비서류를 지참 방문 접수( 동대문구청 주택과 2127-4664)\n - 접수 하기 전 사전에 구청에 공모사업에 필요한 제반 사항을 상담하시기 바랍니다. \n (커뮤니티 전문가 선생님 컨설팅 상담 문의)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000156",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000156",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "아파트 단지 내 주민이 제안한 다양한 활동 프로그램을 지원함으로써 이웃간 소통을 활성화 하고 공동체 의식 함양\n\no 사업내용 : 친환경제품만들기, 녹색장터, 텃밭가꾸기, 재능기부, 나눔행사 등\no 지원금액 : 00,000천원 : 매칭사업(시비 40%, 구비 60%)\no 신청자격 : 입주자(임차인)대표회의, 공동체활성화단체, 관리주체의 3자 공동명의 신청\n - 공동체 활성화 단체 구성 : 아파트 내외 주민 10명 이상\n (아파트 단지 내 자부담이 있는 사업입니다.)\no 지원방법 : 공동주택지원 심의위원회 심의 및 결정",
+      "benefit": "아파트 단지 내 주민이 제안한 활동 프로그램을 지원함으로써 이웃간 소통을 활성화",
+      "application": "o 신청방법 : 신청 구비서류를 지참 방문 접수( 동대문구청 주택과 2127-4664)\n - 접수 하기 전 사전에 구청에 공모사업에 필요한 제반 사항을 상담하시기 바랍니다. \n (커뮤니티 전문가 선생님 컨설팅 상담 문의)",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-장애인-로봇재활-시범사업",
+    "title": "장애인 로봇재활 시범사업",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "로봇재활기기를 공공의료에 도입하여 장애인의 건강능력향상 도모",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인 로봇재활 시범사업",
+      "교육",
+      "서울",
+      "서울특별시 동대문구",
+      "모집중",
+      "장애인",
+      "전체",
+      "복지",
+      "로봇재활기기를",
+      "공공의료에",
+      "도입하여",
+      "장애인의"
+    ],
+    "summary": "로봇재활기기를 공공의료에 도입하여 장애인의 건강능력향상 도모",
+    "audience": "❍ 로봇재활 운동교실 운영\n - 상하지 관절에 로봇재활기기를 적용하여 관절가동범위 향상, 관절구축예방\n - 로봇재활기기를 이용한 근력강화\n - 대상 : 뇌병변 및 지체장애 \n\n❍ 장애인 복지관 대여 및 재활서비스\n - 관내 장애인 복지관 2개소에 대여하여 복지관 이용 장애인을 대상으로 프로그램 운영\n\n❍ 가정대여 및 찾아가는 로봇재활 서비스\n - 가정에 로봇재활기기를 대여하여 스스로 기기를 사용하여 재활운동 시행. 정기적인 모니터링 및 필요시 재교육\n\n❍ 지역 참여기관과의 간담회 및 운영 회의 실시",
+    "benefits": [
+      "로봇재활기기를 공공의료에 도입하여 장애인의 건강능력향상 도모"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "❍ 방문 및 전화 접수\n - 02)2127-5185",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000161",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000161",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "❍ 로봇재활 운동교실 운영\n - 상하지 관절에 로봇재활기기를 적용하여 관절가동범위 향상, 관절구축예방\n - 로봇재활기기를 이용한 근력강화\n - 대상 : 뇌병변 및 지체장애 \n\n❍ 장애인 복지관 대여 및 재활서비스\n - 관내 장애인 복지관 2개소에 대여하여 복지관 이용 장애인을 대상으로 프로그램 운영\n\n❍ 가정대여 및 찾아가는 로봇재활 서비스\n - 가정에 로봇재활기기를 대여하여 스스로 기기를 사용하여 재활운동 시행. 정기적인 모니터링 및 필요시 재교육\n\n❍ 지역 참여기관과의 간담회 및 운영 회의 실시",
+      "benefit": "로봇재활기기를 공공의료에 도입하여 장애인의 건강능력향상 도모",
+      "application": "❍ 방문 및 전화 접수\n - 02)2127-5185",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-장애인-활동지원-구비추가사업",
+    "title": "장애인 활동지원(구비추가사업)",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "장애인 활동지원 서비스 월30시간 구비 추가시간 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "장애인 활동지원(구비추가사업)",
+      "복지",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "장애인",
+      "전체",
+      "활동지원",
+      "서비스",
+      "월30시간",
+      "구비",
+      "추가시간"
+    ],
+    "summary": "장애인 활동지원 서비스 월30시간 구비 추가시간 제공",
+    "audience": "활동지원 서비스 월 30시간의 구비 추가시간 제공",
+    "benefits": [
+      "장애인 활동지원 서비스 월30시간 구비 추가시간 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청(신분증 지참)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000162",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000162",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "활동지원 서비스 월 30시간의 구비 추가시간 제공",
+      "benefit": "장애인 활동지원 서비스 월30시간 구비 추가시간 제공",
+      "application": "방문신청(신분증 지참)",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-어린이-한의약-건강관리사업",
+    "title": "어린이 한의약 건강관리사업",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "동대문구 관내 아동센터 이용 취약계층 아동을 대상으로 건강 상담 및 첩약을 지원하여 사업",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "어린이 한의약 건강관리사업",
+      "교육",
+      "서울",
+      "서울특별시 동대문구",
+      "마감",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "동대문구",
+      "관내",
+      "아동센터",
+      "이용"
+    ],
+    "summary": "동대문구 관내 아동센터 이용 취약계층 아동을 대상으로 건강 상담 및 첩약을 지원하여 사업",
+    "audience": "대 상 : 참여를 희망하는 관내 지역아동센터 아동(초등학교 1~6학년)\n 내 용 \n - 지역아동센터 아동 대상 한의사 진료 및 상담 서비스\n - 허약아동에 대한 첩약지원(년 2회, 2년 연속 지원)\n ※ 첩약 총 2재 지원[1재(성인기준 20첩), 아동 몸무게에 따라 20일~40일분]",
+    "benefits": [
+      "동대문구 관내 아동센터 이용 취약계층 아동을 대상으로 건강 상담 및 첩약을 지원하여 사업"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "관내 지역아동센터 중 사업 참여 신청 개소 및 참여자 모집",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000163",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000163",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "대 상 : 참여를 희망하는 관내 지역아동센터 아동(초등학교 1~6학년)\n 내 용 \n - 지역아동센터 아동 대상 한의사 진료 및 상담 서비스\n - 허약아동에 대한 첩약지원(년 2회, 2년 연속 지원)\n ※ 첩약 총 2재 지원[1재(성인기준 20첩), 아동 몸무게에 따라 20일~40일분]",
+      "benefit": "동대문구 관내 아동센터 이용 취약계층 아동을 대상으로 건강 상담 및 첩약을 지원하여 사업",
+      "application": "관내 지역아동센터 중 사업 참여 신청 개소 및 참여자 모집",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-북한이탈주민-취업역량-강화-교육비-지원",
+    "title": "북한이탈주민 취업역량 강화 교육비 지원",
+    "category": "창업",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "북한이탈주민의 취업역량 강화를 위하여 교육비를 지원해주는 사업",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "취업·사업",
+    "targetGroup": "구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "북한이탈주민 취업역량 강화 교육비 지원",
+      "창업",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "구직자",
+      "전체",
+      "취업",
+      "사업",
+      "북한이탈주민의",
+      "취업역량",
+      "강화를"
+    ],
+    "summary": "북한이탈주민의 취업역량 강화를 위하여 교육비를 지원해주는 사업",
+    "audience": "북한이탈주민 취업역량 강화를 위한 교육비 지원사업으로 출석율 90% 이상 등 성실히 교육에 임하여야 하며, 90% 미만시 교육비 지원 금액 50% 본인환불의무가 있음\n-바리스타, 요양보호사, 컴퓨터, 메이크업, 요리, 미용 등",
+    "benefits": [
+      "북한이탈주민의 취업역량 강화를 위하여 교육비를 지원해주는 사업"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "동대문구청 자치행정과로 전화문의(02-2127-4057) 후 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000165",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000165",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "북한이탈주민 취업역량 강화를 위한 교육비 지원사업으로 출석율 90% 이상 등 성실히 교육에 임하여야 하며, 90% 미만시 교육비 지원 금액 50% 본인환불의무가 있음\n-바리스타, 요양보호사, 컴퓨터, 메이크업, 요리, 미용 등",
+      "benefit": "북한이탈주민의 취업역량 강화를 위하여 교육비를 지원해주는 사업",
+      "application": "동대문구청 자치행정과로 전화문의(02-2127-4057) 후 방문 신청",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-재건축-재개발-정비사업-법률상담센터-운영",
+    "title": "재건축,재개발 정비사업 법률상담센터 운영",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "재건축,재개발 관련한 법률 상담",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "재건축,재개발 정비사업 법률상담센터 운영",
+      "주거",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "일반",
+      "전체",
+      "재건축,재개발",
+      "관련한",
+      "법률",
+      "상담"
+    ],
+    "summary": "재건축,재개발 관련한 법률 상담",
+    "audience": "○ 정비사업 관련 법률 상담\n\n○ 재건축,재개발과 관련한 분쟁 민원 상담\n\n○ 정비사업 소송서류 심사 및 법령해석, 제도개선 발굴 등 지원\n\n○ 주거정비과 재건축,재개발 업무지원(도시분쟁조정위원회 운영) 등",
+    "benefits": [
+      "재건축,재개발 관련한 법률 상담"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문신청: 정비사업 법률상담센터",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000166",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000166",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 정비사업 관련 법률 상담\n\n○ 재건축,재개발과 관련한 분쟁 민원 상담\n\n○ 정비사업 소송서류 심사 및 법령해석, 제도개선 발굴 등 지원\n\n○ 주거정비과 재건축,재개발 업무지원(도시분쟁조정위원회 운영) 등",
+      "benefit": "재건축,재개발 관련한 법률 상담",
+      "application": "○ 방문신청: 정비사업 법률상담센터",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-저소득층-중개보수-지원",
+    "title": "저소득층 중개보수 지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "관내 기초생활수급자 등 경제적으로 어려운 주민에게 주택임대차 중개보수를 지원해 드립니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거·복지",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "저소득층 중개보수 지원",
+      "주거",
+      "서울",
+      "서울특별시 동대문구",
+      "확인필요",
+      "어르신",
+      "복지",
+      "관내",
+      "기초생활수급자",
+      "등",
+      "경제적으로",
+      "어려운"
+    ],
+    "summary": "관내 기초생활수급자 등 경제적으로 어려운 주민에게 주택임대차 중개보수를 지원해 드립니다.",
+    "audience": "저소득층 중개보수 지원\n\n관내 기초생활수급자, 소년·소녀가장, 홀몸어르신 등 경제적으로 어려운 주민에게 주택임대차 중개보수를 지원해 드립니다.\n\n❍지원대상 \n  관내 기초생활 수급자, 홀몸어르신, 소년·소녀가장, 한부모가정 등\n - 전입 장소가 건축물대장 용도상 주거용에 한함 (공공임대주택 및 고시원 등 제외)\n ❍지원금액: 최대 30만원 (부가세 제외)\n  임차보증금 1억원 이하\n ※ 월세 환산보증금 : 월세보증액 + (한달월세액 × 100)\n❍지원신청: 동대문구청 부동산정보과 및 동주민센터\n ❍제출서류 \n  지원신청서, 주택임대차 계약서, 주민등록등본, 통장사본, 중개보수 영수증, 대상자 증빙자료(기초생활수급자증명서, 한부모가정증명서, 기초연금수급자확인서 중 택1)",
+    "benefits": [
+      "관내 기초생활수급자 등 경제적으로 어려운 주민에게 주택임대차 중개보수를 지원해 드립니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000170",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000170",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "저소득층 중개보수 지원\n\n관내 기초생활수급자, 소년·소녀가장, 홀몸어르신 등 경제적으로 어려운 주민에게 주택임대차 중개보수를 지원해 드립니다.\n\n❍지원대상 \n  관내 기초생활 수급자, 홀몸어르신, 소년·소녀가장, 한부모가정 등\n - 전입 장소가 건축물대장 용도상 주거용에 한함 (공공임대주택 및 고시원 등 제외)\n ❍지원금액: 최대 30만원 (부가세 제외)\n  임차보증금 1억원 이하\n ※ 월세 환산보증금 : 월세보증액 + (한달월세액 × 100)\n❍지원신청: 동대문구청 부동산정보과 및 동주민센터\n ❍제출서류 \n  지원신청서, 주택임대차 계약서, 주민등록등본, 통장사본, 중개보수 영수증, 대상자 증빙자료(기초생활수급자증명서, 한부모가정증명서, 기초연금수급자확인서 중 택1)",
+      "benefit": "관내 기초생활수급자 등 경제적으로 어려운 주민에게 주택임대차 중개보수를 지원해 드립니다.",
+      "application": "방문신청",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-라돈측정기-대여",
+    "title": "라돈측정기 대여",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "간이 라돈측정기를 대여하여 생활환경의 오염을 확인하고 건강피해를 예방",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "라돈측정기 대여",
+      "보건의료",
+      "서울",
+      "서울특별시 동대문구",
+      "확인필요",
+      "일반",
+      "전체",
+      "간이",
+      "라돈측정기를",
+      "대여하여",
+      "생활환경의",
+      "오염을"
+    ],
+    "summary": "간이 라돈측정기를 대여하여 생활환경의 오염을 확인하고 건강피해를 예방",
+    "audience": "○ 동대문구민을 위한 간이 라돈측정기 대여 서비스\n - 주민등록 기준 동대문구 구민이라면 누구나 대여가능\n - 구청 기후환경과, 각 동주민센터 (사전 전화문의)\n - 신분증 지참\n - 대여기간 : 3일\n - 대여비용 : 무료",
+    "benefits": [
+      "간이 라돈측정기를 대여하여 생활환경의 오염을 확인하고 건강피해를 예방"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 신분증 필수 지참\n - 방문 전 전화 문의",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000174",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000174",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 동대문구민을 위한 간이 라돈측정기 대여 서비스\n - 주민등록 기준 동대문구 구민이라면 누구나 대여가능\n - 구청 기후환경과, 각 동주민센터 (사전 전화문의)\n - 신분증 지참\n - 대여기간 : 3일\n - 대여비용 : 무료",
+      "benefit": "간이 라돈측정기를 대여하여 생활환경의 오염을 확인하고 건강피해를 예방",
+      "application": "○ 방문 신청\n - 신분증 필수 지참\n - 방문 전 전화 문의",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-임신부-백일해-예방접종-지원",
+    "title": "임신부 백일해 예방접종 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "임신부 백일해 예방접종 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "임신부 백일해 예방접종 지원",
+      "보건의료",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "임신부",
+      "백일해",
+      "예방접종",
+      "지원"
+    ],
+    "summary": "임신부 백일해 예방접종 지원",
+    "audience": "접종일 현재 동대문구에 주민등록을 두고 있는\n임신 27주 이상 36주 이내의 임신부 및\n임신기간에 접종하지 않은 분만 2주 이내 산모에게 백일해 백신 접종",
+    "benefits": [
+      "임신부 백일해 예방접종 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문 전 백신잔량 확인 후 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000286",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000286",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "접종일 현재 동대문구에 주민등록을 두고 있는\n임신 27주 이상 36주 이내의 임신부 및\n임신기간에 접종하지 않은 분만 2주 이내 산모에게 백일해 백신 접종",
+      "benefit": "임신부 백일해 예방접종 지원",
+      "application": "방문 전 백신잔량 확인 후 방문",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-물리치료-제공",
+    "title": "물리치료 제공",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "1차 진료실(내과)에서 진찰 후 처방에 의한 물리치료 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "어르신",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "물리치료 제공",
+      "보건의료",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "어르신",
+      "아동",
+      "전체",
+      "1차",
+      "진료실(내과)에서",
+      "진찰",
+      "후"
+    ],
+    "summary": "1차 진료실(내과)에서 진찰 후 처방에 의한 물리치료 제공",
+    "audience": "1차 진료실(내과)에서 진찰 후 처방에 의한 물리치료 제공\n - 65세 이상, 의료보호대상자 무료\n - 그외 : 진찰+물리치료 1,600",
+    "benefits": [
+      "1차 진료실(내과)에서 진찰 후 처방에 의한 물리치료 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 거주지 관할 보건소 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000289",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000289",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "1차 진료실(내과)에서 진찰 후 처방에 의한 물리치료 제공\n - 65세 이상, 의료보호대상자 무료\n - 그외 : 진찰+물리치료 1,600",
+      "benefit": "1차 진료실(내과)에서 진찰 후 처방에 의한 물리치료 제공",
+      "application": "○ 방문 신청\n - 보건소 : 거주지 관할 보건소 방문",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-전세보증금반환보증-보증료-지원",
+    "title": "전세보증금반환보증 보증료 지원",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 가평군",
+    "region": "경기",
+    "amount": "청년, 청년 외, 신혼부부 등의 전세보증금반환보증 가입 경우 보증수수료 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년·주거",
+    "targetGroup": "청년, 신혼부부",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "전세보증금반환보증 보증료 지원",
+      "청년",
+      "경기",
+      "경기도 가평군",
+      "상시",
+      "신혼부부",
+      "주거",
+      "청년,",
+      "외,",
+      "등의",
+      "전세보증금반환보증",
+      "가입"
+    ],
+    "summary": "청년, 청년 외, 신혼부부 등의 전세보증금반환보증 가입 경우 보증수수료 지원",
+    "audience": "전세보증금반환보증 보증료 최대 30만원 지원(2년에 한번 지원)",
+    "benefits": [
+      "청년, 청년 외, 신혼부부 등의 전세보증금반환보증 가입 경우 보증수수료 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "- 신청방법: 읍, 면 행정복지센터에 방문하여 신청 또는 민원24로 신청 가능",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/416000000264",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/416000000264",
+    "contact": "경기도 가평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "전세보증금반환보증 보증료 최대 30만원 지원(2년에 한번 지원)",
+      "benefit": "청년, 청년 외, 신혼부부 등의 전세보증금반환보증 가입 경우 보증수수료 지원",
+      "application": "- 신청방법: 읍, 면 행정복지센터에 방문하여 신청 또는 민원24로 신청 가능",
+      "contact": "경기도 가평군"
+    }
+  },
+  {
+    "slug": "gov24-초중고-입학준비금-지원",
+    "title": "초중고 입학준비금 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "관내 초·중·고등학교에 입학하는 신입생에게 입학 준비에 필요한 물품 등 구입비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "초중고 입학준비금 지원",
+      "교육",
+      "서울",
+      "서울특별시 동대문구",
+      "모집중",
+      "부모/육아",
+      "청소년",
+      "임신·출산·육아",
+      "관내",
+      "초·중·고등학교에",
+      "입학하는",
+      "신입생에게"
+    ],
+    "summary": "관내 초·중·고등학교에 입학하는 신입생에게 입학 준비에 필요한 물품 등 구입비 지원",
+    "audience": "○ 초중고 입학준비금 지원\n - 대 상 : 관내 초·중·고에 입학하는 신입생\n - 지 원 액 : 1인당 20만원, 1인당 30만원\n - 사용범위 : 의류(교복 등), 도서(학교권장도서 등)\n - 지원방법 : 학교 주관 교복 구매 또는 모바일 포인트(제로페이) 중 선택",
+    "benefits": [
+      "관내 초·중·고등학교에 입학하는 신입생에게 입학 준비에 필요한 물품 등 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "학교 또는 온라인 사이트 신청\n\n온라인: https://start.sen.go.kr/",
+    "officialUrl": "https://start.sen.go.kr/",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000133",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 초중고 입학준비금 지원\n - 대 상 : 관내 초·중·고에 입학하는 신입생\n - 지 원 액 : 1인당 20만원, 1인당 30만원\n - 사용범위 : 의류(교복 등), 도서(학교권장도서 등)\n - 지원방법 : 학교 주관 교복 구매 또는 모바일 포인트(제로페이) 중 선택",
+      "benefit": "관내 초·중·고등학교에 입학하는 신입생에게 입학 준비에 필요한 물품 등 구입비 지원",
+      "application": "학교 또는 온라인 사이트 신청\n\n온라인: https://start.sen.go.kr/",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-저소득-공영장례-지원",
+    "title": "저소득 공영장례 지원",
+    "category": "주거",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "장제급여 대상 무연고 사망자에 대하여 고인모심 및 공영 장례서비스 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "주거·복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "저소득 공영장례 지원",
+      "주거",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "일반",
+      "전체",
+      "복지",
+      "장제급여",
+      "대상",
+      "무연고",
+      "사망자에"
+    ],
+    "summary": "장제급여 대상 무연고 사망자에 대하여 고인모심 및 공영 장례서비스 제공",
+    "audience": "장제급여 대상 무연고 사망자 공영장례 지원 \n- 고인모심, 공영 장례서비스",
+    "benefits": [
+      "장제급여 대상 무연고 사망자에 대하여 고인모심 및 공영 장례서비스 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "대상자 주민등록지 관할 동주민센터",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000139",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000139",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "장제급여 대상 무연고 사망자 공영장례 지원 \n- 고인모심, 공영 장례서비스",
+      "benefit": "장제급여 대상 무연고 사망자에 대하여 고인모심 및 공영 장례서비스 제공",
+      "application": "대상자 주민등록지 관할 동주민센터",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-it-희망나눔-사랑의-pc-지원",
+    "title": "IT 희망나눔 사랑의 PC 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "중고 PC 정비 후 정보소외 계층에 보급하여 정보접근성 향상 및 정보활용능력 제고",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아, 장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "IT 희망나눔 사랑의 PC 지원",
+      "교육",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "부모/육아",
+      "장애인",
+      "아동",
+      "임신·출산·육아",
+      "복지",
+      "중고",
+      "PC"
+    ],
+    "summary": "중고 PC 정비 후 정보소외 계층에 보급하여 정보접근성 향상 및 정보활용능력 제고",
+    "audience": "○ IT 희망나눔 사랑의 PC 보급\n - 내용연수가 경과된 행정업무용 PC를 정비하여 정보소외 계층에 무상 보급\n - 보급장비 : PC, 모니터, 키보드, 마우스, 스피커, 멀티탭",
+    "benefits": [
+      "중고 PC 정비 후 정보소외 계층에 보급하여 정보접근성 향상 및 정보활용능력 제고"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문신청 : 가까운 동주민센터(신분증, 보급대상 증명서류 지참)",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000158",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000158",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ IT 희망나눔 사랑의 PC 보급\n - 내용연수가 경과된 행정업무용 PC를 정비하여 정보소외 계층에 무상 보급\n - 보급장비 : PC, 모니터, 키보드, 마우스, 스피커, 멀티탭",
+      "benefit": "중고 PC 정비 후 정보소외 계층에 보급하여 정보접근성 향상 및 정보활용능력 제고",
+      "application": "○ 방문신청 : 가까운 동주민센터(신분증, 보급대상 증명서류 지참)",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-동대문구-보건소-내소자-결핵검진",
+    "title": "동대문구 보건소 내소자 결핵검진",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "지역주민 및 학생을 위한 결핵 검진 및 관리 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "동대문구 보건소 내소자 결핵검진",
+      "교육",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "일반",
+      "전체",
+      "지역주민",
+      "및",
+      "학생을",
+      "위한",
+      "결핵"
+    ],
+    "summary": "지역주민 및 학생을 위한 결핵 검진 및 관리 지원",
+    "audience": "ㅇ 결핵검진 대상\n - 호흡기 계통의 증상이 있는 분(2주 이상 기침, 객담, 혈담이나 객혈)\n - 결핵환자 가족 및 동거가족\n - 병무청 및 민간 병·의원에서 결핵 유소견자로 통보된 분\n - 기타 결핵검진을 희망하는 분\n\nㅇ검사방법\n보건소에 내소하여 흉부엑스선 검사 및 객담검사\n\nㅇ검사수수료\n제증명 서류 발급 시 수수료 있음\n\nㅇ환자등록\n결핵치료는 무료(산정특례)이며, 의료기관으로 연계",
+    "benefits": [
+      "지역주민 및 학생을 위한 결핵 검진 및 관리 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 보건소 방문신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000294",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000294",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "ㅇ 결핵검진 대상\n - 호흡기 계통의 증상이 있는 분(2주 이상 기침, 객담, 혈담이나 객혈)\n - 결핵환자 가족 및 동거가족\n - 병무청 및 민간 병·의원에서 결핵 유소견자로 통보된 분\n - 기타 결핵검진을 희망하는 분\n\nㅇ검사방법\n보건소에 내소하여 흉부엑스선 검사 및 객담검사\n\nㅇ검사수수료\n제증명 서류 발급 시 수수료 있음\n\nㅇ환자등록\n결핵치료는 무료(산정특례)이며, 의료기관으로 연계",
+      "benefit": "지역주민 및 학생을 위한 결핵 검진 및 관리 지원",
+      "application": "○ 방문 신청\n - 보건소 : 보건소 방문신청",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-저소득층-아동-체험행사",
+    "title": "저소득층 아동 체험행사",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "관내 저소득층 아동을 대상으로 다양한 체험행사 실시",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "저소득층 아동 체험행사",
+      "교육",
+      "서울",
+      "서울특별시 동대문구",
+      "확인필요",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "복지",
+      "관내",
+      "저소득층",
+      "아동을"
+    ],
+    "summary": "관내 저소득층 아동을 대상으로 다양한 체험행사 실시",
+    "audience": "○ 저소득층 아동 체험행사\n - 관내 저소득층 아동을 대상으로 다양한 체험행사 실시",
+    "benefits": [
+      "관내 저소득층 아동을 대상으로 다양한 체험행사 실시"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 유선 문의",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000173",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000173",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 저소득층 아동 체험행사\n - 관내 저소득층 아동을 대상으로 다양한 체험행사 실시",
+      "benefit": "관내 저소득층 아동을 대상으로 다양한 체험행사 실시",
+      "application": "○ 유선 문의",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-한의약-치매-건강증진사업",
+    "title": "한의약 치매 건강증진사업",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "총명침시술(16~20회) 및 한약 처방, 건강상담",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "한의약 치매 건강증진사업",
+      "보건의료",
+      "서울",
+      "서울특별시 동대문구",
+      "마감",
+      "장애인",
+      "아동",
+      "복지",
+      "총명침시술(16~20회)",
+      "및",
+      "한약",
+      "처방,"
+    ],
+    "summary": "총명침시술(16~20회) 및 한약 처방, 건강상담",
+    "audience": "? 대 상 : 동대문구민 60세 이상 참여 희망자 \n ※ 단, 치매환자 및 치매안심센터 서비스 이용자 제외 \n \n? 모집인원 : 45명(선착순)\n\n? 지원기준 : 선정검사 후 인지장애 위험군으로 분류된 자 \n\n? 지원내용 : 총명침시술(16~20회) 및 한약 처방, 건강상담\n ※ 최소 16회 침 치료 진행해야 함. \n 중독 탈락 시 추후 선정에 어려움 있음\n\n? 비 용 : 무료",
+    "benefits": [
+      "총명침시술(16~20회) 및 한약 처방, 건강상담"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온라인 , 전화 및 방문 접수\n\n온라인: https://www.ddm.go.kr/health/index.do",
+    "officialUrl": "https://www.ddm.go.kr/health/index.do",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000277",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "? 대 상 : 동대문구민 60세 이상 참여 희망자 \n ※ 단, 치매환자 및 치매안심센터 서비스 이용자 제외 \n \n? 모집인원 : 45명(선착순)\n\n? 지원기준 : 선정검사 후 인지장애 위험군으로 분류된 자 \n\n? 지원내용 : 총명침시술(16~20회) 및 한약 처방, 건강상담\n ※ 최소 16회 침 치료 진행해야 함. \n 중독 탈락 시 추후 선정에 어려움 있음\n\n? 비 용 : 무료",
+      "benefit": "총명침시술(16~20회) 및 한약 처방, 건강상담",
+      "application": "온라인 , 전화 및 방문 접수\n\n온라인: https://www.ddm.go.kr/health/index.do",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-동대문구-1인가구-청년-건강검진",
+    "title": "동대문구 1인가구 청년 건강검진",
+    "category": "청년",
+    "source": "정부24 공공서비스 API",
+    "agency": "서울특별시 동대문구",
+    "region": "서울",
+    "amount": "건강관리에 소홀하기 쉬운 청년층 1인 가구 건강검진 무료지원(동대문구에 주민등록을 둔 자)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "동대문구 1인가구 청년 건강검진",
+      "청년",
+      "서울",
+      "서울특별시 동대문구",
+      "상시",
+      "건강관리에",
+      "소홀하기",
+      "쉬운",
+      "청년층",
+      "1인",
+      "가구",
+      "건강검진"
+    ],
+    "summary": "건강관리에 소홀하기 쉬운 청년층 1인 가구 건강검진 무료지원(동대문구에 주민등록을 둔 자)",
+    "audience": "ㅇ검진대상 : 동대문구에 주민등록이 되어있는 19~39세 1인 가구 청년\n*연나이 기준, 당해연도 국가건강검진 대상자 제외\nㅇ운영시간 : 평일 09:00~11:00\nㅇ검진비용 : 무료\nㅇ검진장소 : 동대문구보건소(접수처 : 보건소 1층 감염병진료실)\nㅇ준비사항\n - 검사 전일 22시부터 금식(최소 10시간 이상)\n - 신분증, 주민등록등본(검사일 기준 1개월 이내) 지참\nㅇ결과확인 : 검진일로부터 7일 이후 온라인 또는 방문 확인",
+    "benefits": [
+      "건강관리에 소홀하기 쉬운 청년층 1인 가구 건강검진 무료지원(동대문구에 주민등록을 둔 자)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "ㅇ접수장소:동대문구보건소 1층 감염병진료실\n- 운영시간: 평일 09:00 ~ 11:00\n- 준비사항: 신분증, 주민등록등본(검사일기준1개월이내 발급)\n · 검진 전일 22시부터 금식 후 보건소 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000288",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000288",
+    "contact": "서울특별시 동대문구",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "ㅇ검진대상 : 동대문구에 주민등록이 되어있는 19~39세 1인 가구 청년\n*연나이 기준, 당해연도 국가건강검진 대상자 제외\nㅇ운영시간 : 평일 09:00~11:00\nㅇ검진비용 : 무료\nㅇ검진장소 : 동대문구보건소(접수처 : 보건소 1층 감염병진료실)\nㅇ준비사항\n - 검사 전일 22시부터 금식(최소 10시간 이상)\n - 신분증, 주민등록등본(검사일 기준 1개월 이내) 지참\nㅇ결과확인 : 검진일로부터 7일 이후 온라인 또는 방문 확인",
+      "benefit": "건강관리에 소홀하기 쉬운 청년층 1인 가구 건강검진 무료지원(동대문구에 주민등록을 둔 자)",
+      "application": "ㅇ접수장소:동대문구보건소 1층 감염병진료실\n- 운영시간: 평일 09:00 ~ 11:00\n- 준비사항: 신분증, 주민등록등본(검사일기준1개월이내 발급)\n · 검진 전일 22시부터 금식 후 보건소 방문",
+      "contact": "서울특별시 동대문구"
+    }
+  },
+  {
+    "slug": "gov24-예방접종-서비스",
+    "title": "예방접종 서비스",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "대구광역시 군위군",
+    "region": "대구",
+    "amount": "수급자, 장애인 등에게 예방접종 서비스 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "장애인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "예방접종 서비스",
+      "보건의료",
+      "대구",
+      "대구광역시 군위군",
+      "상시",
+      "장애인",
+      "아동",
+      "복지",
+      "수급자,",
+      "등에게",
+      "예방접종",
+      "서비스"
+    ],
+    "summary": "수급자, 장애인 등에게 예방접종 서비스 지원",
+    "audience": "○ 군위에 주소지를 둔 군위군민 대상 예방접종 서비스",
+    "benefits": [
+      "수급자, 장애인 등에게 예방접종 서비스 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 군위군 보건소 예방접종실로 문의\n\n○ 기타\n - 전화 : 054-380-7453~4",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000101",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000101",
+    "contact": "대구광역시 군위군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 군위에 주소지를 둔 군위군민 대상 예방접종 서비스",
+      "benefit": "수급자, 장애인 등에게 예방접종 서비스 지원",
+      "application": "○ 방문 신청\n - 보건소 : 군위군 보건소 예방접종실로 문의\n\n○ 기타\n - 전화 : 054-380-7453~4",
+      "contact": "대구광역시 군위군"
+    }
+  },
+  {
+    "slug": "gov24-과수농가-자재-지원",
+    "title": "과수농가 자재 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "대구광역시 군위군",
+    "region": "대구",
+    "amount": "관내 과수농가에 대한 자재 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "ambiguous status",
+      "status requires official confirmation"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "과수농가 자재 지원",
+      "농림어업",
+      "대구",
+      "대구광역시 군위군",
+      "확인필요",
+      "농어업인",
+      "전체",
+      "관내",
+      "과수농가에",
+      "대한",
+      "자재",
+      "지원"
+    ],
+    "summary": "관내 과수농가에 대한 자재 지원",
+    "audience": "○ 군위군에 주소를 두고 농업경영체를 등록한 과수농가에게 농자재 지원",
+    "benefits": [
+      "관내 과수농가에 대한 자재 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 읍면 사무소 및 소재지 농협, 작물 농협 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000104",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000104",
+    "contact": "대구광역시 군위군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 군위군에 주소를 두고 농업경영체를 등록한 과수농가에게 농자재 지원",
+      "benefit": "관내 과수농가에 대한 자재 지원",
+      "application": "○ 방문 신청\n - 읍면 사무소 및 소재지 농협, 작물 농협 방문",
+      "contact": "대구광역시 군위군"
+    }
+  },
+  {
+    "slug": "gov24-난임부부-지원",
+    "title": "난임부부 지원",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "대구광역시 군위군",
+    "region": "대구",
+    "amount": "난임부부에게 정부지원금 외 본인부담금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아·복지",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "난임부부 지원",
+      "보건의료",
+      "대구",
+      "대구광역시 군위군",
+      "모집중",
+      "부모/육아",
+      "아동",
+      "임신·출산·육아",
+      "복지",
+      "난임부부에게",
+      "정부지원금",
+      "외"
+    ],
+    "summary": "난임부부에게 정부지원금 외 본인부담금 지원",
+    "audience": "○ 체외수정(신선배아, 동결배아), 인공수정 및 비급여(배아동결비, 유산방지제, 착상유도제, 그 밖에 사항) 시술비 중 정부지원금을 제외한 본임부담금 90% 1회당 최대 100만원 지원",
+    "benefits": [
+      "난임부부에게 정부지원금 외 본인부담금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 관할 보건소 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000105",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000105",
+    "contact": "대구광역시 군위군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 체외수정(신선배아, 동결배아), 인공수정 및 비급여(배아동결비, 유산방지제, 착상유도제, 그 밖에 사항) 시술비 중 정부지원금을 제외한 본임부담금 90% 1회당 최대 100만원 지원",
+      "benefit": "난임부부에게 정부지원금 외 본인부담금 지원",
+      "application": "○ 방문 신청\n - 보건소 : 관할 보건소 방문",
+      "contact": "대구광역시 군위군"
+    }
+  },
+  {
+    "slug": "gov24-학교급식-후식-지원",
+    "title": "학교급식 후식 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "대구광역시 군위군",
+    "region": "대구",
+    "amount": "관내 학교 학생 대상으로 후식 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "학교급식 후식 지원",
+      "교육",
+      "대구",
+      "대구광역시 군위군",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "관내",
+      "학교",
+      "학생",
+      "대상으로"
+    ],
+    "summary": "관내 학교 학생 대상으로 후식 지원",
+    "audience": "○ 관내학교 후식지원\n\n○ 후식지원사업\n - 지원대상 : 관내10개교(초,중,고학교)학생 전원\n - 후식용 제철과일 주2회 공급",
+    "benefits": [
+      "관내 학교 학생 대상으로 후식 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 시군구 : 군위 농업기술센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000116",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000116",
+    "contact": "대구광역시 군위군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 관내학교 후식지원\n\n○ 후식지원사업\n - 지원대상 : 관내10개교(초,중,고학교)학생 전원\n - 후식용 제철과일 주2회 공급",
+      "benefit": "관내 학교 학생 대상으로 후식 지원",
+      "application": "○ 방문 신청\n - 시군구 : 군위 농업기술센터 방문",
+      "contact": "대구광역시 군위군"
+    }
+  },
+  {
+    "slug": "gov24-고품질-과수-생산-지원",
+    "title": "고품질 과수 생산 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "대구광역시 군위군",
+    "region": "대구",
+    "amount": "과수농가에 반사필름, 착색봉지 등 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "모집중",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "모집중",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "고품질 과수 생산 지원",
+      "농림어업",
+      "대구",
+      "대구광역시 군위군",
+      "모집중",
+      "농어업인",
+      "전체",
+      "과수농가에",
+      "반사필름,",
+      "착색봉지",
+      "등",
+      "지원"
+    ],
+    "summary": "과수농가에 반사필름, 착색봉지 등 지원",
+    "audience": "○ 군위군에 주소를 두고 농업경영체를 등록한 과수농가에게 반사필름, 착색봉지, 수정촉진제, 친환경자재 지원\n - 지원기준 : 보조 50%, 자부담 50%",
+    "benefits": [
+      "과수농가에 반사필름, 착색봉지 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000121",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000121",
+    "contact": "대구광역시 군위군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 군위군에 주소를 두고 농업경영체를 등록한 과수농가에게 반사필름, 착색봉지, 수정촉진제, 친환경자재 지원\n - 지원기준 : 보조 50%, 자부담 50%",
+      "benefit": "과수농가에 반사필름, 착색봉지 등 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청",
+      "contact": "대구광역시 군위군"
+    }
+  },
+  {
+    "slug": "gov24-출산양육비-지원",
+    "title": "출산양육비 지원",
+    "category": "교육",
+    "source": "정부24 공공서비스 API",
+    "agency": "대구광역시 군위군",
+    "region": "대구",
+    "amount": "출생아에게 양육지원금 및 초·중·고 입학생에게 입학금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "출산양육비 지원",
+      "교육",
+      "대구",
+      "대구광역시 군위군",
+      "상시",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "출생아에게",
+      "양육지원금",
+      "및",
+      "초·중·고"
+    ],
+    "summary": "출생아에게 양육지원금 및 초·중·고 입학생에게 입학금 지원",
+    "audience": "○ 출생양육지원금 및 입학생, 중3 재학생 지원금",
+    "benefits": [
+      "출생아에게 양육지원금 및 초·중·고 입학생에게 입학금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 온라인 신청 \n - 정부24 : www.gov.kr\n\n○ 방문 신청\n - 보건소 : 관할 보건소 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000122",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000122",
+    "contact": "대구광역시 군위군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 출생양육지원금 및 입학생, 중3 재학생 지원금",
+      "benefit": "출생아에게 양육지원금 및 초·중·고 입학생에게 입학금 지원",
+      "application": "○ 온라인 신청 \n - 정부24 : www.gov.kr\n\n○ 방문 신청\n - 보건소 : 관할 보건소 방문",
+      "contact": "대구광역시 군위군"
+    }
+  },
+  {
+    "slug": "gov24-한우분야-지원",
+    "title": "한우분야 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "대구광역시 군위군",
+    "region": "대구",
+    "amount": "가축인공수정사 등에게 한우거세, 인공수정액 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "한우분야 지원",
+      "농림어업",
+      "대구",
+      "대구광역시 군위군",
+      "상시",
+      "농어업인",
+      "전체",
+      "가축인공수정사",
+      "등에게",
+      "한우거세,",
+      "인공수정액",
+      "지원"
+    ],
+    "summary": "가축인공수정사 등에게 한우거세, 인공수정액 지원",
+    "audience": "○ 군위군에 인공수정소를 개설한 수의사 및 가축인공수정사",
+    "benefits": [
+      "가축인공수정사 등에게 한우거세, 인공수정액 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 관할 군청 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000102",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000102",
+    "contact": "대구광역시 군위군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 군위군에 인공수정소를 개설한 수의사 및 가축인공수정사",
+      "benefit": "가축인공수정사 등에게 한우거세, 인공수정액 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 관할 군청 방문",
+      "contact": "대구광역시 군위군"
+    }
+  },
+  {
+    "slug": "gov24-임산부-건강관리-서비스",
+    "title": "임산부 건강관리 서비스",
+    "category": "보건의료",
+    "source": "정부24 공공서비스 API",
+    "agency": "대구광역시 군위군",
+    "region": "대구",
+    "amount": "출산가구에 산모 및 신생아 건강관리 서비스 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "마감",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "마감",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "임신·출산·육아",
+    "targetGroup": "부모/육아",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "임산부 건강관리 서비스",
+      "보건의료",
+      "대구",
+      "대구광역시 군위군",
+      "마감",
+      "부모/육아",
+      "전체",
+      "임신·출산·육아",
+      "출산가구에",
+      "산모",
+      "및",
+      "신생아"
+    ],
+    "summary": "출산가구에 산모 및 신생아 건강관리 서비스 지원",
+    "audience": "○ 산모 건강관리 : 유방관리, 부종관리, 영양관리, 좌욕지원, 산후 위생관리\n\n○ 신생아 건강관리 : 신생아 청결·위생관리(목욕, 배꼽관리, 기저귀교체, 용품소독), 수유 및 예방접종 지원\n\n○ 산모·신생아 가사지원 : 산모 식사준비, 산모 및 신생아 주 생활공간 청소, 산모 및 신생아 의류 세탁\n\n○ 산모 정보제공 및 정서지원 : 응급상황 발견 및 대응, 감염 예방 및 관리, 정서 상태 이해 및 지지\n\n ※ 산모·신생아 외 다른 가족 돌봄이나 일반 가사활동영역은 표준 서비스에 포함되지 않는 부가 서비스이므로 원하는 경우 별도로 추가구매가 필요함",
+    "benefits": [
+      "출산가구에 산모 및 신생아 건강관리 서비스 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 보건소 : 관할 보건소 방문\n - 신청기한: 서비스 종료후 3개월 이내\n - 구비서류: 신분증, 산모수첩, 출생증명서(출산 후 신청 시) 등",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000113",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000113",
+    "contact": "대구광역시 군위군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 산모 건강관리 : 유방관리, 부종관리, 영양관리, 좌욕지원, 산후 위생관리\n\n○ 신생아 건강관리 : 신생아 청결·위생관리(목욕, 배꼽관리, 기저귀교체, 용품소독), 수유 및 예방접종 지원\n\n○ 산모·신생아 가사지원 : 산모 식사준비, 산모 및 신생아 주 생활공간 청소, 산모 및 신생아 의류 세탁\n\n○ 산모 정보제공 및 정서지원 : 응급상황 발견 및 대응, 감염 예방 및 관리, 정서 상태 이해 및 지지\n\n ※ 산모·신생아 외 다른 가족 돌봄이나 일반 가사활동영역은 표준 서비스에 포함되지 않는 부가 서비스이므로 원하는 경우 별도로 추가구매가 필요함",
+      "benefit": "출산가구에 산모 및 신생아 건강관리 서비스 지원",
+      "application": "○ 방문 신청\n - 보건소 : 관할 보건소 방문\n - 신청기한: 서비스 종료후 3개월 이내\n - 구비서류: 신분증, 산모수첩, 출생증명서(출산 후 신청 시) 등",
+      "contact": "대구광역시 군위군"
+    }
+  },
+  {
+    "slug": "gov24-양돈분야-지원",
+    "title": "양돈분야 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "대구광역시 군위군",
+    "region": "대구",
+    "amount": "축산농가에 돼지인공수정 및 톱밥 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "양돈분야 지원",
+      "농림어업",
+      "대구",
+      "대구광역시 군위군",
+      "상시",
+      "농어업인",
+      "전체",
+      "축산농가에",
+      "돼지인공수정",
+      "및",
+      "톱밥",
+      "지원"
+    ],
+    "summary": "축산농가에 돼지인공수정 및 톱밥 지원",
+    "audience": "○ 관내 주소를 둔 돼지 사육 및 축산농가에 돼지 인공수정 및 톱밥 지원",
+    "benefits": [
+      "축산농가에 돼지인공수정 및 톱밥 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 관할 군청 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000114",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000114",
+    "contact": "대구광역시 군위군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 관내 주소를 둔 돼지 사육 및 축산농가에 돼지 인공수정 및 톱밥 지원",
+      "benefit": "축산농가에 돼지인공수정 및 톱밥 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 관할 군청 방문",
+      "contact": "대구광역시 군위군"
+    }
+  },
+  {
+    "slug": "gov24-친환경-농업자재-지원",
+    "title": "친환경 농업자재 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "대구광역시 군위군",
+    "region": "대구",
+    "amount": "○ 친환경 농업을 하는 농가에게 친환경 유기농업자재 구입비 일부 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "친환경 농업자재 지원",
+      "농림어업",
+      "대구",
+      "대구광역시 군위군",
+      "상시",
+      "농어업인",
+      "전체",
+      "○",
+      "친환경",
+      "농업을",
+      "하는",
+      "농가에게"
+    ],
+    "summary": "○ 친환경 농업을 하는 농가에게 친환경 유기농업자재 구입비 일부 지원",
+    "audience": "○ 국립농산물품질관리원 유기농업자재 공시된 제품 구입비의 일부 보조",
+    "benefits": [
+      "○ 친환경 농업을 하는 농가에게 친환경 유기농업자재 구입비 일부 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 주소지 읍면 행정복지센터에 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000117",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000117",
+    "contact": "대구광역시 군위군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 국립농산물품질관리원 유기농업자재 공시된 제품 구입비의 일부 보조",
+      "benefit": "○ 친환경 농업을 하는 농가에게 친환경 유기농업자재 구입비 일부 지원",
+      "application": "○ 주소지 읍면 행정복지센터에 방문 신청",
+      "contact": "대구광역시 군위군"
+    }
+  },
+  {
+    "slug": "gov24-양봉분야-지원",
+    "title": "양봉분야 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "대구광역시 군위군",
+    "region": "대구",
+    "amount": "양봉농가에 채밀기, 벌통 등 양봉기자재 등 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "양봉분야 지원",
+      "농림어업",
+      "대구",
+      "대구광역시 군위군",
+      "상시",
+      "농어업인",
+      "전체",
+      "양봉농가에",
+      "채밀기,",
+      "벌통",
+      "등",
+      "양봉기자재"
+    ],
+    "summary": "양봉농가에 채밀기, 벌통 등 양봉기자재 등 지원",
+    "audience": "○ 관내 양봉농가를 대상으로 양봉분야 전반적인 지원\n - 채밀기지원, 토종벌종보전지원, 벌통지원, 화분지원, 양봉산물저온저장고 지원, 벌통전기가온장치 지원",
+    "benefits": [
+      "양봉농가에 채밀기, 벌통 등 양봉기자재 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 관할 군청 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000118",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/514000000118",
+    "contact": "대구광역시 군위군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 관내 양봉농가를 대상으로 양봉분야 전반적인 지원\n - 채밀기지원, 토종벌종보전지원, 벌통지원, 화분지원, 양봉산물저온저장고 지원, 벌통전기가온장치 지원",
+      "benefit": "양봉농가에 채밀기, 벌통 등 양봉기자재 등 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍면동 주민센터에 방문 신청\n - 시군구 : 관할 군청 방문",
+      "contact": "대구광역시 군위군"
+    }
+  },
+  {
+    "slug": "gov24-양평군-보훈대상자-수당지원",
+    "title": "양평군 보훈대상자 수당지원",
+    "category": "복지",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양평군",
+    "region": "경기",
+    "amount": "국가보훈대상자에 대한 보훈명예수당, 참전유공자에 대한 참전명예수당 등 지급(중복지원 불가)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "복지",
+    "targetGroup": "일반",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "양평군 보훈대상자 수당지원",
+      "복지",
+      "경기",
+      "경기도 양평군",
+      "상시",
+      "일반",
+      "전체",
+      "국가보훈대상자에",
+      "대한",
+      "보훈명예수당,",
+      "참전유공자에",
+      "참전명예수당"
+    ],
+    "summary": "국가보훈대상자에 대한 보훈명예수당, 참전유공자에 대한 참전명예수당 등 지급(중복지원 불가)",
+    "audience": "○ 서비스 내용 : 양평군 국가보훈대상자를 대상으로 수당 지원\n\n○ 서비스 금액\n - 보훈명예수당 : 월 15만원\n - 참전명예수당 : 월 25만원\n - 배우자복지수당 : 월 15만원\n - 6.25전몰군경유자녀복지수당 : 월 15만원\n ※ 위 수당별 중복지급 안됨\n\n - 독립유공자 광복절기념 위문금 : 연 30만원\n - 사망위로금 : 일시금 30만원",
+    "benefits": [
+      "국가보훈대상자에 대한 보훈명예수당, 참전유공자에 대한 참전명예수당 등 지급(중복지원 불가)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000115",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000115",
+    "contact": "경기도 양평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 서비스 내용 : 양평군 국가보훈대상자를 대상으로 수당 지원\n\n○ 서비스 금액\n - 보훈명예수당 : 월 15만원\n - 참전명예수당 : 월 25만원\n - 배우자복지수당 : 월 15만원\n - 6.25전몰군경유자녀복지수당 : 월 15만원\n ※ 위 수당별 중복지급 안됨\n\n - 독립유공자 광복절기념 위문금 : 연 30만원\n - 사망위로금 : 일시금 30만원",
+      "benefit": "국가보훈대상자에 대한 보훈명예수당, 참전유공자에 대한 참전명예수당 등 지급(중복지원 불가)",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+      "contact": "경기도 양평군"
+    }
+  },
+  {
+    "slug": "gov24-양돈농가-모돈-갱신-지원",
+    "title": "양돈농가 모돈 갱신 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양평군",
+    "region": "경기",
+    "amount": "축산농가에 폐모돈 조기 도태 등 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "양돈농가 모돈 갱신 지원",
+      "농림어업",
+      "경기",
+      "경기도 양평군",
+      "상시",
+      "농어업인",
+      "전체",
+      "축산농가에",
+      "폐모돈",
+      "조기",
+      "도태",
+      "등"
+    ],
+    "summary": "축산농가에 폐모돈 조기 도태 등 지원",
+    "audience": "○ 양돈농가를 대상으로 폐모돈 조기 도태 등 고품질 규격돈 생산기반 서비스 지원",
+    "benefits": [
+      "축산농가에 폐모돈 조기 도태 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 기타 : 대한한돈협회 양평군지부",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000102",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000102",
+    "contact": "경기도 양평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 양돈농가를 대상으로 폐모돈 조기 도태 등 고품질 규격돈 생산기반 서비스 지원",
+      "benefit": "축산농가에 폐모돈 조기 도태 등 지원",
+      "application": "○ 방문 신청\n - 기타 : 대한한돈협회 양평군지부",
+      "contact": "경기도 양평군"
+    }
+  },
+  {
+    "slug": "gov24-양봉장비-보급-지원",
+    "title": "양봉장비 보급 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양평군",
+    "region": "경기",
+    "amount": "양봉농가에 양봉장비 구입비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "양봉장비 보급 지원",
+      "농림어업",
+      "경기",
+      "경기도 양평군",
+      "상시",
+      "농어업인",
+      "전체",
+      "양봉농가에",
+      "양봉장비",
+      "구입비",
+      "지원"
+    ],
+    "summary": "양봉농가에 양봉장비 구입비 지원",
+    "audience": "○ 양봉장비 구입비 지원",
+    "benefits": [
+      "양봉농가에 양봉장비 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 거주지 관할 읍면동 주민센터에 방문 신청",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000103",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000103",
+    "contact": "경기도 양평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 양봉장비 구입비 지원",
+      "benefit": "양봉농가에 양봉장비 구입비 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 거주지 관할 읍면동 주민센터에 방문 신청",
+      "contact": "경기도 양평군"
+    }
+  },
+  {
+    "slug": "gov24-가축분뇨-퇴비살포기-등-지원",
+    "title": "가축분뇨 퇴비살포기 등 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양평군",
+    "region": "경기",
+    "amount": "가축 사육농가에 가축분뇨 처리장비 구입비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "가축분뇨 퇴비살포기 등 지원",
+      "농림어업",
+      "경기",
+      "경기도 양평군",
+      "상시",
+      "농어업인",
+      "전체",
+      "가축",
+      "사육농가에",
+      "가축분뇨",
+      "처리장비",
+      "구입비"
+    ],
+    "summary": "가축 사육농가에 가축분뇨 처리장비 구입비 지원",
+    "audience": "○ 축산농가를 대상으로 가축분뇨 처리장비(퇴비살포기 등) 구입비 지원",
+    "benefits": [
+      "가축 사육농가에 가축분뇨 처리장비 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000109",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000109",
+    "contact": "경기도 양평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 축산농가를 대상으로 가축분뇨 처리장비(퇴비살포기 등) 구입비 지원",
+      "benefit": "가축 사육농가에 가축분뇨 처리장비 구입비 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 주소지 관할 읍·면·동 주민센터 방문",
+      "contact": "경기도 양평군"
+    }
+  },
+  {
+    "slug": "gov24-젖소-개체-관리장비-지원",
+    "title": "젖소 개체 관리장비 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양평군",
+    "region": "경기",
+    "amount": "젖소 사육농가에 젖소 개체 관리 장비 구입비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "젖소 개체 관리장비 지원",
+      "농림어업",
+      "경기",
+      "경기도 양평군",
+      "상시",
+      "농어업인",
+      "전체",
+      "젖소",
+      "사육농가에",
+      "개체",
+      "관리",
+      "장비"
+    ],
+    "summary": "젖소 사육농가에 젖소 개체 관리 장비 구입비 지원",
+    "audience": "○ 자동급이기, 보정목걸이, 착유펌프 등 젖소 개체 관리 장비 구입비 지원",
+    "benefits": [
+      "젖소 사육농가에 젖소 개체 관리 장비 구입비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 관할 읍·면사무소 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000113",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000113",
+    "contact": "경기도 양평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 자동급이기, 보정목걸이, 착유펌프 등 젖소 개체 관리 장비 구입비 지원",
+      "benefit": "젖소 사육농가에 젖소 개체 관리 장비 구입비 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 관할 읍·면사무소 방문",
+      "contact": "경기도 양평군"
+    }
+  },
+  {
+    "slug": "gov24-축사-환기시설-환풍기-등-설치-지원",
+    "title": "축사 환기시설(환풍기 등) 설치 지원",
+    "category": "농림어업",
+    "source": "정부24 공공서비스 API",
+    "agency": "경기도 양평군",
+    "region": "경기",
+    "amount": "축산농가에 축사 환기시설 설치비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "상시",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "상시",
+    "statusConfidence": "known",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": true,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "전체",
+    "targetGroup": "농어업인",
+    "income": "공식 공고 확인",
+    "applyOnline": false,
+    "tags": [
+      "축사 환기시설(환풍기 등) 설치 지원",
+      "농림어업",
+      "경기",
+      "경기도 양평군",
+      "상시",
+      "농어업인",
+      "전체",
+      "축산농가에",
+      "축사",
+      "환기시설",
+      "설치비",
+      "지원"
+    ],
+    "summary": "축산농가에 축사 환기시설 설치비 지원",
+    "audience": "○ 축산농가를 대상으로 축사 환기시설 설치비 지원",
+    "benefits": [
+      "축산농가에 축사 환기시설 설치비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 방문 신청\n - 주민센터 : 관할 읍·면사무소 방문",
+    "officialUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000123",
+    "officialSourceUrl": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/417000000123",
+    "contact": "경기도 양평군",
+    "views": 0,
+    "updatedAt": "2026.05.27",
+    "matchReasons": [
+      "Gov24 공식 공공서비스 원문 기준",
+      "공식 신청처 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아니요. 최종 자격과 신청 가능 여부는 공식 기관에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 축산농가를 대상으로 축사 환기시설 설치비 지원",
+      "benefit": "축산농가에 축사 환기시설 설치비 지원",
+      "application": "○ 방문 신청\n - 주민센터 : 관할 읍·면사무소 방문",
+      "contact": "경기도 양평군"
+    }
+  }
+];
+
+policies.push(...gov24PromotionPoliciesBatch3);
+
 policies.push(...welfareApiPolicies);
 policies.push(...localWelfareApiPolicies);
 policies.push(...publicServiceApiPolicies);

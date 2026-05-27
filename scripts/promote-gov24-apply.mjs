@@ -80,8 +80,18 @@ async function main() {
   const policiesPath = "src/data/policies.ts";
   const dryRunReportPath = "data/staging/gov24/apply-dry-run-report.json";
   const generatedPreviewPath = "data/staging/gov24/promotion-generated-preview.json";
-  const hasBatch1 = (await readFile(policiesPath, "utf8")).includes("const gov24PromotionPolicies: Policy[]");
-  const batch = hasBatch1 ? 2 : 1;
+  const existingSourceText = await readFile(policiesPath, "utf8");
+  const requestedBatch = argValue("batch");
+  const existingBatchMatches = [...existingSourceText.matchAll(/const gov24PromotionPolicies(?:Batch(\d+))?: Policy\[\]/g)];
+  const existingBatches = existingBatchMatches.map((match) => (match[1] ? Number(match[1]) : 1));
+  const batch = requestedBatch
+    ? Number.parseInt(requestedBatch, 10)
+    : existingBatches.length
+      ? Math.max(...existingBatches) + 1
+      : 1;
+  if (!Number.isInteger(batch) || batch < 1) {
+    throw new Error(`Invalid batch value: ${requestedBatch}`);
+  }
   const blockName = batch === 1 ? "gov24PromotionPolicies" : `gov24PromotionPoliciesBatch${batch}`;
   const applyReportPath = batch === 1 ? "data/staging/gov24/apply-report.json" : `data/staging/gov24/apply-report-batch-${batch}.json`;
 
