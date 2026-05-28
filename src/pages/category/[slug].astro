@@ -50,18 +50,18 @@ const categoryPaginationPages = paginationItems(categoryCurrentPage, categoryTot
 ---
 
 <BaseLayout title={categorySeoTitle} description={categorySeoDescription} canonical={`/category/${category.slug}/`}>
-  <section class="page-head">
+  <section class="page-head category-hero">
     <div class="wrap">
       <p class="eyebrow">카테고리</p>
       <h1>{category.label} 정부지원금</h1>
-      <p class="lead">{category.label} 분야의 대표 지원사업 {categoryPolicies.length}개를 공식 출처 기준으로 정리했습니다.</p>
+      <p class="lead">{category.label} 분야의 지원사업 {categoryPolicies.length.toLocaleString("ko-KR")}개를 공식 출처 기준으로 정리했습니다. 목록에서 조건을 비교하고 상세 페이지에서 신청 방법과 공식 신청처를 확인하세요.</p>
       <div class="quick-tags">
         {category.keywords.map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
       </div>
     </div>
   </section>
 
-  <section class="section tight benchmark-dashboard">
+  <section class="section tight benchmark-dashboard category-metrics">
     <div class="wrap metric-grid">
       <div><strong>{categoryPolicies.length}</strong><span>대표 정책</span></div>
       <div><strong>{urgent.length}</strong><span>모집·마감 확인</span></div>
@@ -72,7 +72,7 @@ const categoryPaginationPages = paginationItems(categoryCurrentPage, categoryTot
 
   <section class="section">
     <div class="wrap">
-      <div class="result-head">
+      <div class="result-head category-list-head">
         <div>
           <p class="eyebrow">{category.label} 목록</p>
           <h2>신청 조건과 공식 신청처를 함께 확인하세요</h2>

@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { Search } from "@lucide/astro";
 import { policies, categoryGroups } from "../data/policies";
+import { sourceLabel } from "../utils/sourceNames";
 import { deadlineDisplay, getPolicyCounts, getPublicPolicies, urgentPolicies } from "../utils/policyUtils";
 
 const publicPolicies = getPublicPolicies(policies);
@@ -53,6 +54,15 @@ const categoryCards = [
 ].filter((category) => category.count > 0);
 
 const popularKeywords = ["청년", "창업", "주거", "채용", "복지", "소상공인", "교육", "의료"];
+const sourceStats = ["정부24", "복지로", "기업마당", "온통청년", "K-Startup"].map((label) => ({
+  label,
+  count: publicPolicies.filter((policy) => sourceLabel(policy.source) === label).length
+})).filter((item) => item.count > 0);
+const trustSteps = [
+  { title: "공식 출처 수집", desc: "정부24, 복지로, 기업마당, 온통청년, K-Startup 데이터를 기준으로 정리합니다." },
+  { title: "조건별 탐색", desc: "대상, 지역, 카테고리, 출처를 조합해 필요한 지원사업만 빠르게 좁힙니다." },
+  { title: "공식 신청처 확인", desc: "상세 페이지에서 요약을 확인한 뒤 최종 신청은 공식 기관에서 진행합니다." }
+];
 ---
 
 <BaseLayout
@@ -62,26 +72,38 @@ const popularKeywords = ["청년", "창업", "주거", "채용", "복지", "소�
   <section class="home-portal-hero">
     <div class="wrap">
       <div class="home-portal-hero-inner">
-        <h1>나에게 맞는 지원금을 찾아보세요</h1>
-        <p>청년, 소상공인, 주거, 복지, 고용 지원사업을 한 곳에서 검색하세요.</p>
+        <p class="home-hero-kicker">공식 출처 기반 지원사업 포털</p>
+        <h1>나에게 맞는 정부지원사업을 한 번에 찾으세요</h1>
+        <p>복지, 청년, 창업, 소상공인, 고용 지원사업 {counts.all.toLocaleString("ko-KR")}개를 공식 출처 기준으로 정리했습니다.</p>
         <form class="home-portal-search" action="/support/" method="get" aria-label="지원사업 검색">
           <Search size={24} aria-hidden="true" />
-          <input name="q" type="search" placeholder="지원금, 지역, 대상, 키워드로 검색" autocomplete="off" />
+          <input name="q" type="search" placeholder="예: 청년, 창업, 소상공인, 주거, 정책자금" autocomplete="off" />
           <button type="submit">검색</button>
         </form>
         <div class="home-portal-stats" aria-label="서비스 요약">
-          <span>공식 출처로 선별한 핵심 지원정책 {counts.all.toLocaleString("ko-KR")}개</span>
-          <span>매일 업데이트</span>
-          <span>맞춤형 카테고리 탐색</span>
+          <span>공식 출처 기반 {counts.all.toLocaleString("ko-KR")}개</span>
+          <span>검색·필터·카테고리 탐색</span>
+          <span>상세 페이지 공식 신청처 연결</span>
         </div>
         <div class="home-source-line" aria-label="주요 공식 출처">
           <strong>공식 출처</strong>
-          <span>정부24</span>
-          <span>복지로</span>
-          <span>기업마당</span>
-          <span>온통청년</span>
+          {sourceStats.map((source) => (
+            <span>{source.label} {source.count.toLocaleString("ko-KR")}건</span>
+          ))}
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="home-portal-section home-trust-section">
+    <div class="wrap home-trust-panel">
+      {trustSteps.map((step, index) => (
+        <div>
+          <span>{index + 1}</span>
+          <strong>{step.title}</strong>
+          <p>{step.desc}</p>
+        </div>
+      ))}
     </div>
   </section>
 
@@ -100,6 +122,7 @@ const popularKeywords = ["청년", "창업", "주거", "채용", "복지", "소�
     <div class="wrap">
       <div class="home-portal-section-head">
         <h2>카테고리별 지원사업</h2>
+        <p>결과가 있는 분야만 보여주며, 각 카테고리에서 30개씩 나누어 탐색할 수 있습니다.</p>
       </div>
       <div class="home-category-grid">
         {categoryCards.map((category) => (
