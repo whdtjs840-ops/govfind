@@ -8,10 +8,12 @@ import {
 const UPDATE_REPORT_PATH = "data/staging/automation/update-report.json";
 const OUT_PATH = "data/staging/automation/update-apply-dry-run-report.json";
 const GOV24_CHECK_REPORT_PATH = "data/staging/automation/update-gov24-check-report.json";
-const DEFAULT_MIN_SELECTED_FOR_MANUAL_APPLY = 10;
+const BOKJIRO_CHECK_REPORT_PATH = "data/staging/automation/update-bokjiro-central-check-report.json";
+const DEFAULT_MIN_SELECTED_FOR_MANUAL_APPLY = 30;
 
 const sourceRunners = {
-  gov24: runGov24DryRun
+  gov24: runGov24DryRun,
+  "bokjiro-central": runBokjiroCentralDryRun
 };
 
 function npxCommand() {
@@ -77,7 +79,7 @@ function aggregateReasonCounts(items = []) {
   return counts;
 }
 
-function traceCandidates(preliminaryCandidates = [], applyReport = {}) {
+function traceCandidates(preliminaryCandidates = [], applyReport = {}, sourceName = "gov24") {
   const skippedItems = applyReport.skippedItemSummaries ?? [];
   const selectedItems = applyReport.selectedItemSummaries ?? applyReport.selectedItems ?? [];
 
@@ -94,7 +96,7 @@ function traceCandidates(preliminaryCandidates = [], applyReport = {}) {
     ));
 
     return {
-      sourceName: "gov24",
+      sourceName,
       sourceItemId: candidate.sourceItemId ?? null,
       title: candidate.title ?? null,
       slug: candidate.slug ?? null,
@@ -110,6 +112,30 @@ function traceCandidates(preliminaryCandidates = [], applyReport = {}) {
       }))
     };
   });
+}
+
+async function nextBatchNumber(sourceName) {
+  const { readdir } = await import("node:fs/promises");
+  const directory = sourceName === "gov24" ? "data/staging/gov24" : "data/staging/bokjiro-central";
+  const pattern = sourceName === "gov24"
+    ? /^apply-report-batch-(\d+)\.json$/
+    : /^apply-report-bokjiro-central-batch-(\d+)\.json$/;
+  const entries = await readdir(directory).catch(() => []);
+  const maxBatch = entries.reduce((max, entry) => {
+    const match = entry.match(pattern);
+    return match ? Math.max(max, Number.parseInt(match[1], 10)) : max;
+  }, 0);
+  return maxBatch + 1;
+}
+
+function manualApplyCommand(sourceName, selectedCount, nextBatch) {
+  if (sourceName === "gov24") {
+    return `npm.cmd run promote:gov24:apply -- --limit=${selectedCount} --batch=${nextBatch} --confirm`;
+  }
+  if (sourceName === "bokjiro-central") {
+    return `npm.cmd run promote:bokjiro-central:apply -- --limit=${selectedCount} --batch=${nextBatch} --confirm`;
+  }
+  return null;
 }
 
 async function runGov24DryRun({ limit }) {
@@ -146,7 +172,7 @@ async function runGov24DryRun({ limit }) {
   const applyReport = await readJson(applyReportPath);
   const checkReport = await readJson(GOV24_CHECK_REPORT_PATH).catch(() => ({ safeToApply: [] }));
   const preliminaryCandidates = (checkReport.safeToApply ?? []).slice(0, limit);
-  const candidateTrace = traceCandidates(preliminaryCandidates, applyReport);
+  const candidateTrace = traceCandidates(preliminaryCandidates, applyReport, "gov24");
   const skippedAfterFinalValidation = applyReport.skippedItemSummaries ?? [];
   const compatibilityIssues = [
     ...(generatorReport.validation?.errors ?? []),
@@ -154,6 +180,8 @@ async function runGov24DryRun({ limit }) {
     ...(applyReport.pageGenerationPreview?.valid === false ? [{ type: "page-generation-preview", details: applyReport.pageGenerationPreview }] : []),
     ...(applyReport.guardValidation?.valid === false ? [{ type: "guard-validation", details: applyReport.guardValidation }] : [])
   ];
+
+  const nextBatch = await nextBatchNumber("gov24");
 
   return {
     sourceName: "gov24",
@@ -179,6 +207,85 @@ async function runGov24DryRun({ limit }) {
     pageGenerationPreview: applyReport.pageGenerationPreview,
     guardValidation: applyReport.guardValidation,
     applyReadiness: applyReport.applyReadiness,
+    suggestedManualApplyCommand: manualApplyCommand("gov24", applyReport.selectedCount, nextBatch),
+    nextBatch,
+    reportPaths: {
+      promotionPreview: promotionPreviewPath,
+      generatorReport: generatorReportPath,
+      applyDryRunReport: applyReportPath,
+      mergedTemp: applyMergedPath
+    }
+  };
+}
+
+async function runBokjiroCentralDryRun({ limit }) {
+  const prefix = "data/staging/automation/update-bokjiro-central";
+  const promotionPreviewPath = `${prefix}-promotion-preview.json`;
+  const generatorReportPath = `${prefix}-promotion-generator-report.json`;
+  const generatedPreviewPath = `${prefix}-promotion-generated-preview.json`;
+  const applyReportPath = `${prefix}-apply-dry-run-report.json`;
+  const applyMergedPath = `${prefix}-apply-dry-run-merged.tmp.json`;
+
+  runTsxScript("scripts/promote-bokjiro-central-dry-run.mjs", [
+    `--limit=${limit}`,
+    `--out=${promotionPreviewPath}`
+  ]);
+  runTsxScript("scripts/promote-bokjiro-central-generate.mjs", [
+    `--limit=${limit}`,
+    `--preview=${promotionPreviewPath}`,
+    `--out=${generatorReportPath}`,
+    `--generated=${generatedPreviewPath}`
+  ]);
+  runTsxScript("scripts/promote-bokjiro-central-apply-dry-run.mjs", [
+    `--limit=${limit}`,
+    `--generated=${generatedPreviewPath}`,
+    `--out=${applyReportPath}`,
+    `--merged=${applyMergedPath}`
+  ]);
+
+  const promotionPreview = await readJson(promotionPreviewPath);
+  const generatorReport = await readJson(generatorReportPath);
+  const applyReport = await readJson(applyReportPath);
+  const checkReport = await readJson(BOKJIRO_CHECK_REPORT_PATH).catch(() => ({ safeToApply: [] }));
+  const preliminaryCandidates = (checkReport.safeToApply ?? []).slice(0, limit);
+  const candidateTrace = traceCandidates(preliminaryCandidates, applyReport, "bokjiro-central");
+  const selectedCount = applyReport.selectedCount ?? 0;
+  const compatibilityIssues = [
+    ...(generatorReport.compatibilityIssues ?? []),
+    ...(generatorReport.validation?.errors ?? []),
+    ...(applyReport.compatibilityIssues ?? []),
+    ...(applyReport.searchIndexPreview?.valid === false ? [{ type: "search-index-preview", details: applyReport.searchIndexPreview }] : []),
+    ...(applyReport.pageGenerationPreview?.valid === false ? [{ type: "page-generation-preview", details: applyReport.pageGenerationPreview }] : []),
+    ...(applyReport.guardValidation?.valid === false ? [{ type: "guard-validation", details: applyReport.guardValidation }] : [])
+  ];
+  const nextBatch = await nextBatchNumber("bokjiro-central");
+
+  return {
+    sourceName: "bokjiro-central",
+    selectedCount,
+    preliminarySafeToApplyCount: preliminaryCandidates.length,
+    finalSelectedCount: selectedCount,
+    excludedAfterFinalValidationCount: Math.max(preliminaryCandidates.length - selectedCount, 0),
+    excludedAfterFinalValidationReasons: aggregateReasonCounts(applyReport.skippedItemSummaries ?? []),
+    candidateTrace,
+    finalApplyAllowed: selectedCount > 0,
+    finalPolicyCountPreview: applyReport.finalPolicyCountPreview,
+    expectedPolicyIncrease: applyReport.expectedPolicyIncrease,
+    skippedDuplicateCount: promotionPreview.skippedDuplicateCount ?? 0,
+    skippedAlreadyAppliedCount: promotionPreview.skippedAlreadyAppliedCount ?? 0,
+    skippedCategoryMappingGapCount: promotionPreview.skippedCategoryMappingGapCount ?? 0,
+    skippedAfterGeneratorCount: Math.max((promotionPreview.selectedCount ?? 0) - (generatorReport.finalPromotableCount ?? selectedCount), 0),
+    skippedAfterGeneratorSummaries: [],
+    genericOfficialUrlConflicts: [],
+    downgradedOfficialUrlConflicts: [],
+    officialUrlConflictDetails: [],
+    compatibilityIssues,
+    searchIndexPreview: applyReport.searchIndexPreview,
+    pageGenerationPreview: applyReport.pageGenerationPreview,
+    guardValidation: applyReport.guardValidation,
+    applyReadiness: applyReport.applyReadiness,
+    suggestedManualApplyCommand: manualApplyCommand("bokjiro-central", selectedCount, nextBatch),
+    nextBatch,
     reportPaths: {
       promotionPreview: promotionPreviewPath,
       generatorReport: generatorReportPath,
@@ -190,7 +297,7 @@ async function runGov24DryRun({ limit }) {
 
 function aggregateReadiness(sourceResults, skippedSources, totalSelectedCount, minimumSelectedForManualApply) {
   if (!sourceResults.length) {
-    return skippedSources.some((source) => source.reason === "fetch_required") ? "fetch_required" : "needs_review";
+    return "not_ready_no_selected_candidates";
   }
   if (totalSelectedCount <= 0) return "not_ready_no_selected_candidates";
   if (totalSelectedCount < minimumSelectedForManualApply) return "not_ready_insufficient_candidates";
@@ -206,8 +313,8 @@ function aggregateReadiness(sourceResults, skippedSources, totalSelectedCount, m
 
 function recommendedActionForReadiness(applyReadiness, skippedSources) {
   if (applyReadiness === "ready_for_manual_apply") return "ready_for_manual_apply";
-  if (applyReadiness === "not_ready_no_selected_candidates") return "need_more_discovery";
-  if (applyReadiness === "not_ready_insufficient_candidates") return "need_more_discovery";
+  if (applyReadiness === "not_ready_no_selected_candidates") return skippedSources.some((source) => source.reason === "fetch_required") ? "need_more_discovery" : "no_action";
+  if (applyReadiness === "not_ready_insufficient_candidates") return "small_batch_review";
   if (applyReadiness === "fetch_required") return "fetch_required";
   if (skippedSources.some((source) => source.reason === "fetch_required")) return "need_more_discovery";
   return "needs_review";
@@ -258,11 +365,10 @@ async function main() {
   const compatibilityIssues = sourceResults.flatMap((source) => source.compatibilityIssues ?? []);
   const applyReadiness = aggregateReadiness(sourceResults, skippedSources, totalSelectedCount, minimumSelectedForManualApply);
   const recommendedNextAction = recommendedActionForReadiness(applyReadiness, skippedSources);
-  const finalApplyAllowed = applyReadiness === "ready_for_manual_apply" && totalSelectedCount > 0;
+  const finalApplyAllowed = applyReadiness === "ready_for_manual_apply" && totalSelectedCount >= minimumSelectedForManualApply && compatibilityIssues.length === 0;
   const suggestedManualApplyCommands = finalApplyAllowed ? sourceResults.map((source) => {
     if ((source.selectedCount ?? 0) <= 0 || source.finalApplyAllowed === false) return null;
-    if (source.sourceName === "gov24") return `npm.cmd run promote:gov24:apply -- --limit=${source.selectedCount} --batch=6 --confirm`;
-    return null;
+    return source.suggestedManualApplyCommand ?? null;
   }).filter(Boolean) : [];
 
   const report = {
@@ -273,6 +379,7 @@ async function main() {
     minimumSelectedForManualApply,
     selectedSources,
     skippedSources,
+    totalPreliminarySafeToApplyCount: preliminarySafeToApplyCount,
     preliminarySafeToApplyCount,
     totalSelectedCount,
     finalSelectedCount: totalSelectedCount,

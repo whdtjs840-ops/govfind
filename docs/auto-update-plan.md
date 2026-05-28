@@ -411,3 +411,40 @@ Strong duplicate evidence should come from at least one of these:
 - high title and support-content similarity.
 
 `update:apply:dry-run` also uses a small-batch safety guard. If the final selected count is non-zero but below the minimum manual apply threshold, the report should recommend more discovery instead of immediate apply.
+
+## Step 35 Weekly Integrated Dry-Run
+
+`update:apply:dry-run` supports both current automatic update sources:
+
+- `gov24`
+- `bokjiro-central`
+
+The command reads `data/staging/automation/update-report.json` and processes only sources listed in `readyForApplyDryRunSources`. A source marked `fetch_required`, `no_action`, or with zero safe candidates is skipped and kept in `skippedSources`.
+
+Supported source selection:
+
+```bash
+npm.cmd run update:apply:dry-run
+npm.cmd run update:apply:dry-run -- --source=gov24
+npm.cmd run update:apply:dry-run -- --source=bokjiro-central
+npm.cmd run update:apply:dry-run -- --source=all
+npm.cmd run update:apply:dry-run -- --source=all --limit=50
+```
+
+`update:report` remains a preliminary routing report. It answers which source should be checked next. `update:apply:dry-run` is the final pre-apply decision report because it runs the source promotion dry-run, generator dry-run, temp merge, search index preview, page generation preview, and guard validation.
+
+Final apply safety rules:
+
+- `finalSelectedCount === 0`: do not apply. Run more discovery or review blocked candidates.
+- `finalSelectedCount > 0` and `< 30`: treat as `small_batch_review`; do not apply unless a human explicitly decides a tiny batch is worth it.
+- `finalSelectedCount >= 30` with no compatibility issues: `finalApplyAllowed` may be `true`.
+- Any compatibility issue, invalid search index preview, invalid page generation preview, or invalid guard validation blocks apply.
+
+The integrated dry-run may write suggested manual commands into the report, for example:
+
+```bash
+npm.cmd run promote:gov24:apply -- --limit=<selectedCount> --batch=<nextBatch> --confirm
+npm.cmd run promote:bokjiro-central:apply -- --limit=<selectedCount> --batch=<nextBatch> --confirm
+```
+
+These commands are suggestions only. They must not be run until a person reviews `data/staging/automation/update-apply-dry-run-report.json` and explicitly approves the source-specific apply. After any real apply, the required sequence is local QA, validation, build, production deploy, and production QA.

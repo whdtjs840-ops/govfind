@@ -12,7 +12,7 @@ const sourceConfigs = [
   {
     sourceName: "bokjiro-central",
     reportPath: "data/staging/automation/update-bokjiro-central-check-report.json",
-    applyDryRunCommand: (count) => `npm.cmd run promote:bokjiro-central:apply:dry-run -- --limit=${count}`,
+    applyDryRunCommand: (count) => `npm.cmd run update:apply:dry-run -- --source=bokjiro-central --limit=${count}`,
     fetchCommand: "npm.cmd run discover:bokjiro-central -- --pages=<page> --limit=50 --save --resume"
   }
 ];
