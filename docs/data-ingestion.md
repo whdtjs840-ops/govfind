@@ -874,3 +874,64 @@ Local mapping cautions:
 - Unknown local categories are held in `needsReview` rather than being published as `기타`.
 - Duplicate candidates are previewed against existing public policies by source item id, official URL, title plus organization, title similarity plus organization, and title plus region plus support-content similarity.
 - The Local importer does not apply data. Promotion must go through a separate candidate dry-run, apply dry-run, human approval, QA, and deployment flow.
+
+## Bizinfo Dry-Run
+
+The Bizinfo importer is a staging-only importer for 기업마당 지원사업정보 API. It is intended to evaluate small-business, SME, startup, export, finance, technology, workforce, domestic-market, and management-support programs before any source-of-truth changes.
+
+Run a small dry-run batch:
+
+```powershell
+npm.cmd run import:bizinfo:dry-run -- --limit=50 --save
+```
+
+Run page discovery:
+
+```powershell
+npm.cmd run discover:bizinfo -- --pages=1,2,3,4,5 --limit=100 --save --resume
+```
+
+If at least 200 safe candidates are available, run candidate promotion previews:
+
+```powershell
+npm.cmd run promote:bizinfo:dry-run -- --limit=500
+npm.cmd run promote:bizinfo:generate -- --limit=500
+npm.cmd run promote:bizinfo:apply:dry-run -- --limit=500
+```
+
+Supported discovery options:
+
+- `--pages=1,2`
+- `--page=1 --max-pages=2`
+- `--limit=100`
+- `--save`
+- `--resume`
+- `--no-cache`
+
+Required environment variables:
+
+- `GOVFIND_BIZINFO_API_KEY`
+- `GOVFIND_BIZINFO_CRTFC_KEY` is also accepted because the upstream API parameter is named `crtfcKey`.
+- `GOVFIND_BIZINFO_PAGE` optional, default `1`
+- `GOVFIND_BIZINFO_PER_PAGE` optional, default `50`
+
+Generated dry-run artifacts:
+
+```text
+data/imports/bizinfo/raw/
+data/imports/bizinfo/staging/
+data/imports/bizinfo/reports/
+data/staging/bizinfo/dry-run-report.json
+data/staging/bizinfo/bizinfo-discovery-and-candidate-report.json
+data/staging/bizinfo/bizinfo-candidate-dry-run-report.json
+```
+
+Bizinfo mapping cautions:
+
+- `창업` source category or startup text maps to GovFind `창업`.
+- `금융`, `경영`, `수출`, `내수`, `기술`, and broad SME support are mapped conservatively to `소상공인`; ambiguous mappings remain visible in the report.
+- Explicit region hashtags or source text map to GovFind regions. Missing region is not treated as nationwide unless the source explicitly supports it.
+- Clear application periods map to `startDate` and `endDate`; ambiguous periods become `dateConfidence: "unknown"` and `applicationPeriodLabel: "공식 공고 확인"`.
+- Ambiguous status stays `확인필요`; it is not rewritten to `모집중` or `상시`.
+- Official announcement URLs are preserved. Generic list or homepage URLs are weak duplicate evidence only.
+- The Bizinfo importer does not apply data. Promotion must go through candidate dry-run, generator dry-run, apply dry-run, human approval, QA, and deployment.
