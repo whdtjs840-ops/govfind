@@ -760,3 +760,63 @@ Bokjiro mapping cautions:
 - Ambiguous status stays `확인필요`; it is not rewritten to `모집중` or `상시`.
 - Category gaps are held in `needsReview` because incorrect welfare category mapping can damage category pages and SEO.
 - Duplicate candidates are previewed against existing public policies by source item id, official URL, title plus agency, title similarity plus agency, and title plus support-content similarity.
+
+## Bokjiro Local Dry-Run
+
+The Bokjiro local welfare importer is a staging-only importer for local-government welfare services. It is intended for regional welfare discovery after Gov24 and Bokjiro Central have already been reviewed.
+
+Run a small local dry-run batch:
+
+```powershell
+npm.cmd run import:bokjiro-local:dry-run -- --limit=20 --save
+```
+
+Run local page discovery:
+
+```powershell
+npm.cmd run discover:bokjiro-local -- --pages=1 --limit=50 --save --resume
+```
+
+Supported discovery options:
+
+- `--pages=1,2`
+- `--page=1 --max-pages=2`
+- `--limit=50`
+- `--save`
+- `--resume`
+- `--no-cache`
+
+Required environment variables:
+
+- `GOVFIND_BOKJIRO_LOCAL_API_KEY`
+- `GOVFIND_BOKJIRO_LOCAL_PAGE` optional, default `1`
+- `GOVFIND_BOKJIRO_LOCAL_PER_PAGE` optional, default `20`
+
+Compatibility fallback:
+
+- `GOVFIND_WELFARE_API_KEY` is also accepted for local compatibility with older welfare scripts.
+
+Generated dry-run artifacts:
+
+```text
+data/imports/bokjiro-local/raw/
+data/imports/bokjiro-local/staging/
+data/imports/bokjiro-local/reports/
+data/staging/bokjiro-local/dry-run-report.json
+data/staging/bokjiro-local/bokjiro-local-discovery-report.json
+```
+
+Central and Local differences:
+
+- Bokjiro Central uses national welfare service endpoints and often lacks a local region.
+- Bokjiro Local uses local-government welfare endpoints and may contain explicit city/province or municipality fields.
+- Local region mapping should use explicit source fields such as `ctpvNm`, `sggNm`, local agency names, or source text.
+- If the local region is unclear, keep `region: null`; do not assume `전국`.
+
+Local mapping cautions:
+
+- Missing or ambiguous application period becomes `dateConfidence: "unknown"` and `applicationPeriodLabel: "공식 공고 확인"`.
+- Ambiguous status stays `확인필요`; it is not rewritten to `모집중` or `상시`.
+- Unknown local categories are held in `needsReview` rather than being published as `기타`.
+- Duplicate candidates are previewed against existing public policies by source item id, official URL, title plus organization, title similarity plus organization, and title plus region plus support-content similarity.
+- The Local importer does not apply data. Promotion must go through a separate candidate dry-run, apply dry-run, human approval, QA, and deployment flow.
