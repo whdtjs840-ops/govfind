@@ -4,6 +4,7 @@ import PolicyCard from "../../components/PolicyCard.astro";
 import QuickConditionSearch from "../../components/QuickConditionSearch.astro";
 import { CheckCircle2, Search, SlidersHorizontal } from "@lucide/astro";
 import { categories, categoryGroups, lifeStages, policies, regions } from "../../data/policies";
+import { derivePolicyTags, supportedPolicyTags } from "../../utils/derivedTags";
 import { publicSourceOptions, sourceLabel } from "../../utils/sourceNames";
 import {
   cleanSummary,
@@ -35,6 +36,7 @@ const selectedRegion = params.get("region") ?? "";
 const selectedSource = sourceLabel(params.get("source") ?? "");
 const selectedStatus = params.get("status") ?? "";
 const selectedLife = params.get("lifeStage") ?? "";
+const selectedTag = params.get("tag") ?? "";
 const selectedOnline = params.get("online") === "true";
 const selectedApplyOnline = params.get("applyOnline") === "true";
 const selectedSort = (params.get("sort") ?? "recommended") as PolicySort;
@@ -62,6 +64,7 @@ const filteredPolicies = sortPolicies(
     online: selectedOnline || selectedApplyOnline
   }).filter((policy) => (
     (!selectedLife || `${policy.lifeStage} ${policy.tags.join(" ")}`.includes(selectedLife)) &&
+    (!selectedTag || derivePolicyTags(policy).includes(selectedTag)) &&
     matchesCondition(policy, selectedProfile) &&
     matchesCondition(policy, selectedTarget) &&
     matchesCondition(policy, selectedPurpose)
@@ -177,6 +180,13 @@ const quickTabs = [
 ];
 
 const topCategories = categoryGroups.filter((category) => (policyCounts.byCategory[category.label] ?? 0) > 0).slice(0, 7);
+const primaryTags = ["정책자금", "창업", "사업화", "기술지원", "수출", "소상공인", "청년취업", "청년주거", "긴급복지"];
+const tagCounts = Object.fromEntries(
+  supportedPolicyTags.map((tag) => [
+    tag,
+    publicDisplayPolicies.filter((policy) => derivePolicyTags(policy).includes(tag)).length
+  ])
+) as Record<string, number>;
 const actionKeywords = [
   "근로장려금 신청방법",
   "근로장려금 대상조회",
@@ -214,6 +224,7 @@ const intentCards = [
       <QuickConditionSearch />
 
       <form class="support-search-form" action="/support/" method="get">
+        {selectedTag && <input type="hidden" name="tag" value={selectedTag} />}
         <div class="support-search-main">
           <Search size={21} aria-hidden="true" />
           <input name="q" type="search" value={selectedQ} placeholder="근로장려금, 청년월세, 환급금, 소상공인 정책자금 검색" />
@@ -327,6 +338,15 @@ const intentCards = [
           {actionKeywords.map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
         </div>
 
+        <div class="support-keyword-row support-tag-row" aria-label="세부 태그">
+          {primaryTags.filter((tag) => (tagCounts[tag] ?? 0) > 0).map((tag) => (
+            <a class={`chip ${selectedTag === tag ? "active" : ""}`} href={supportHref({ tag }, true)}>
+              {tag}
+              <span>{tagCounts[tag].toLocaleString("ko-KR")}</span>
+            </a>
+          ))}
+        </div>
+
         <div class="support-result-progress" aria-live="polite">
           <strong>{resultRangeLabel}</strong>
           <span>/</span>
@@ -426,6 +446,7 @@ const intentCards = [
       lifeStage: '\uC0DD\uC560\uC8FC\uAE30',
       status: '\uC0C1\uD0DC',
       source: '\uCD9C\uCC98',
+      tag: '\uD0DC\uADF8',
       purpose: '\uBAA9\uC801',
       currentCondition: '\uD604\uC7AC \uAC80\uC0C9 \uC870\uAC74',
       conditionRemoved: '\uC870\uAC74 \uC81C\uAC70',
@@ -493,6 +514,7 @@ const intentCards = [
       const title = normalizeSearch(policy.title);
       const category = normalizeSearch(policy.category);
       const keywords = normalizeSearch((policy.keywords || []).join(' '));
+      const tags = normalizeSearch((policy.tags || []).join(' '));
       const source = normalizeSearch(policy.source);
       const agency = normalizeSearch(policy.agency);
       const text = normalizeSearch(policy.searchText || '');
@@ -502,12 +524,14 @@ const intentCards = [
       else if (title.includes(query)) score += 280;
       if (category === query || category.includes(query)) score += 220;
       if (keywords.includes(query)) score += 150;
+      if (tags.includes(query)) score += 130;
       if (text.includes(query)) score += 80;
       for (const term of terms) {
         if (!term) continue;
         if (title.includes(term)) score += term === query ? 90 : 55;
         if (category.includes(term)) score += term === query ? 75 : 45;
         if (keywords.includes(term)) score += term === query ? 55 : 32;
+        if (tags.includes(term)) score += term === query ? 60 : 36;
         if (text.includes(term)) score += term === query ? 24 : 12;
         if (agency.includes(term) || source.includes(term)) score += term === query ? 10 : 5;
       }
@@ -521,24 +545,26 @@ const intentCards = [
     function statusMatches(policy, filterStatus) { if (!filterStatus) return true; const normalized = ['deadlineSoon', 'closingSoon', 'closing'].includes(filterStatus) ? labels.deadlineSoon : filterStatus; if (normalized === labels.deadlineSoon) return policy.status === labels.deadlineSoon || isDeadlineSoonDday(policy.dday); return policy.status === normalized; }
     function readState() {
       const params = currentParams();
-      return { keyword: params.get('q')?.trim() || '', category: params.get('category')?.trim() || '', region: params.get('region')?.trim() || '', lifeStage: params.get('lifeStage')?.trim() || '', status: params.get('status')?.trim() || '', source: params.get('source')?.trim() || '', profile: params.get('profile')?.trim() || '', target: params.get('target')?.trim() || '', purpose: params.get('purpose')?.trim() || '', online: params.get('online') === 'true' || params.get('applyOnline') === 'true', sort: params.get('sort')?.trim() || 'recommended', page: Math.max(1, Number.parseInt(params.get('page') || '1', 10) || 1) };
+      return { keyword: params.get('q')?.trim() || '', category: params.get('category')?.trim() || '', tag: params.get('tag')?.trim() || '', region: params.get('region')?.trim() || '', lifeStage: params.get('lifeStage')?.trim() || '', status: params.get('status')?.trim() || '', source: params.get('source')?.trim() || '', profile: params.get('profile')?.trim() || '', target: params.get('target')?.trim() || '', purpose: params.get('purpose')?.trim() || '', online: params.get('online') === 'true' || params.get('applyOnline') === 'true', sort: params.get('sort')?.trim() || 'recommended', page: Math.max(1, Number.parseInt(params.get('page') || '1', 10) || 1) };
     }
     function filterAndSortPolicies(items, state) {
-      const matched = items.filter((policy) => { const text = policy.searchText || ''; return (!state.keyword || cardQueryScore(policy, state.keyword) > 0) && (!state.category || policy.category === state.category) && (!state.region || policy.region === state.region || policy.region === labels.nationwide || policy.region === labels.regional) && (!state.lifeStage || text.includes(state.lifeStage)) && statusMatches(policy, state.status) && (!state.source || policy.source === state.source) && (!state.online || policy.applyOnline) && (!state.profile || text.includes(state.profile)) && (!state.target || text.includes(state.target)) && (!state.purpose || text.includes(state.purpose)); });
+      const matched = items.filter((policy) => { const text = policy.searchText || ''; return (!state.keyword || cardQueryScore(policy, state.keyword) > 0) && (!state.category || policy.category === state.category) && (!state.tag || (policy.tags || []).includes(state.tag)) && (!state.region || policy.region === state.region || policy.region === labels.nationwide || policy.region === labels.regional) && (!state.lifeStage || text.includes(state.lifeStage)) && statusMatches(policy, state.status) && (!state.source || policy.source === state.source) && (!state.online || policy.applyOnline) && (!state.profile || text.includes(state.profile)) && (!state.target || text.includes(state.target)) && (!state.purpose || text.includes(state.purpose)); });
       return matched.sort((a, b) => { const scoreDiff = cardQueryScore(b, state.keyword) - cardQueryScore(a, state.keyword); if (state.keyword && scoreDiff !== 0) return scoreDiff; if (state.sort === 'deadline' || state.status === labels.deadlineSoon) return ddayRank(a.dday) - ddayRank(b.dday); if (state.sort === 'online') return Number(b.applyOnline) - Number(a.applyOnline); if (state.sort === 'updated') return String(b.updatedAt || '').localeCompare(String(a.updatedAt || '')); return scoreDiff; });
     }
     function renderCard(policy) {
       const statusClass = isDeadlineSoonDday(policy.dday) ? 'badge deadline' : 'badge warn'; const url = policy.url || '/support/' + encodeURIComponent(policy.id) + '/'; const deadline = policy.dday || policy.status || labels.officialCheck; const applyLabel = policy.applyOnline ? labels.onlineAvailable : labels.agencyCheck;
-      return '<article class="card policy-card support-card"><div class="meta policy-card-topline"><span class="' + statusClass + '">' + escapeHtml(policy.status || labels.officialBadge) + '</span><span class="badge">' + escapeHtml(policy.category) + '</span><span class="badge soft">' + escapeHtml(policy.source) + '</span></div><div class="policy-card-main"><h3><a href="' + escapeHtml(url) + '">' + escapeHtml(policy.title) + '</a></h3><p class="policy-card-summary">' + escapeHtml(compactSummary(policy)) + '</p><p class="policy-quick-line"><strong>' + labels.target + '</strong> ' + labels.officialCheck + ' <span>?</span> <strong>' + labels.region + '</strong> ' + escapeHtml(policy.region || labels.officialCheck) + '</p></div><dl class="card-facts"><div><dt>' + labels.apply + '</dt><dd>' + escapeHtml(applyLabel) + '</dd></div><div><dt>' + labels.deadline + '</dt><dd>' + escapeHtml(deadline) + '</dd></div><div><dt>' + labels.agency + '</dt><dd>' + escapeHtml(policy.agency || labels.officialCheck) + '</dd></div><div><dt>' + labels.support + '</dt><dd>' + labels.officialCheck + '</dd></div></dl><div class="card-actions"><a class="button" href="' + escapeHtml(url) + '" data-event="policy_click" data-policy="' + escapeHtml(policy.id) + '">' + labels.detail + ' <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a><a class="button secondary official-link" href="' + escapeHtml(policy.officialUrl || url) + '" target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy="' + escapeHtml(policy.id) + '"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>' + labels.officialApply + '</a></div></article>';
+      const tagMarkup = (policy.tags || []).slice(0, 3).map((tag) => '<span class="policy-tag-pill">' + escapeHtml(tag) + '</span>').join('');
+      return '<article class="card policy-card support-card"><div class="meta policy-card-topline"><span class="' + statusClass + '">' + escapeHtml(policy.status || labels.officialBadge) + '</span><span class="badge">' + escapeHtml(policy.category) + '</span><span class="badge soft">' + escapeHtml(policy.source) + '</span></div><div class="policy-card-main"><h3><a href="' + escapeHtml(url) + '">' + escapeHtml(policy.title) + '</a></h3><p class="policy-card-summary">' + escapeHtml(compactSummary(policy)) + '</p>' + (tagMarkup ? '<div class="policy-tag-row">' + tagMarkup + '</div>' : '') + '<p class="policy-quick-line"><strong>' + labels.target + '</strong> ' + labels.officialCheck + ' <span>?</span> <strong>' + labels.region + '</strong> ' + escapeHtml(policy.region || labels.officialCheck) + '</p></div><dl class="card-facts"><div><dt>' + labels.apply + '</dt><dd>' + escapeHtml(applyLabel) + '</dd></div><div><dt>' + labels.deadline + '</dt><dd>' + escapeHtml(deadline) + '</dd></div><div><dt>' + labels.agency + '</dt><dd>' + escapeHtml(policy.agency || labels.officialCheck) + '</dd></div><div><dt>' + labels.support + '</dt><dd>' + labels.officialCheck + '</dd></div></dl><div class="card-actions"><a class="button" href="' + escapeHtml(url) + '" data-event="policy_click" data-policy="' + escapeHtml(policy.id) + '">' + labels.detail + ' <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a><a class="button secondary official-link" href="' + escapeHtml(policy.officialUrl || url) + '" target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy="' + escapeHtml(policy.id) + '"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>' + labels.officialApply + '</a></div></article>';
     }
     function formatCount(value) { return Number(value).toLocaleString('ko-KR'); }
     function paginationItems(current, total) { if (total <= 7) return Array.from({ length: total }, (_, index) => index + 1); const pages = new Set([1, total]); for (let page = current - 2; page <= current + 2; page += 1) if (page > 1 && page < total) pages.add(page); const sorted = [...pages].sort((a, b) => a - b); const entries = []; for (const page of sorted) { const previous = entries[entries.length - 1]; if (typeof previous === 'number' && page - previous > 1) entries.push('ellipsis'); entries.push(page); } return entries; }
     function pageHref(page) { const params = currentParams(); if (page <= 1) params.delete('page'); else params.set('page', String(page)); return supportUrl(params, true); }
-    function filterChips(state) { const chips = []; if (state.keyword) chips.push({ label: labels.keyword + ': ' + state.keyword, keys: ['q'] }); if (state.category) chips.push({ label: labels.category + ': ' + state.category, keys: ['category'] }); if (state.region) chips.push({ label: labels.region + ': ' + state.region, keys: ['region'] }); if (state.profile) chips.push({ label: labels.target + ': ' + state.profile, keys: ['profile'] }); if (state.target) chips.push({ label: labels.target + ': ' + state.target, keys: ['target'] }); if (state.purpose) chips.push({ label: labels.purpose + ': ' + state.purpose, keys: ['purpose'] }); if (state.lifeStage) chips.push({ label: labels.lifeStage + ': ' + state.lifeStage, keys: ['lifeStage'] }); if (state.status) chips.push({ label: labels.status + ': ' + state.status, keys: ['status'] }); if (state.source) chips.push({ label: labels.source + ': ' + state.source, keys: ['source'] }); if (state.online) chips.push({ label: labels.onlineAvailable, keys: ['online', 'applyOnline'] }); return chips; }
+    function filterChips(state) { const chips = []; if (state.keyword) chips.push({ label: labels.keyword + ': ' + state.keyword, keys: ['q'] }); if (state.category) chips.push({ label: labels.category + ': ' + state.category, keys: ['category'] }); if (state.tag) chips.push({ label: labels.tag + ': ' + state.tag, keys: ['tag'] }); if (state.region) chips.push({ label: labels.region + ': ' + state.region, keys: ['region'] }); if (state.profile) chips.push({ label: labels.target + ': ' + state.profile, keys: ['profile'] }); if (state.target) chips.push({ label: labels.target + ': ' + state.target, keys: ['target'] }); if (state.purpose) chips.push({ label: labels.purpose + ': ' + state.purpose, keys: ['purpose'] }); if (state.lifeStage) chips.push({ label: labels.lifeStage + ': ' + state.lifeStage, keys: ['lifeStage'] }); if (state.status) chips.push({ label: labels.status + ': ' + state.status, keys: ['status'] }); if (state.source) chips.push({ label: labels.source + ': ' + state.source, keys: ['source'] }); if (state.online) chips.push({ label: labels.onlineAvailable, keys: ['online', 'applyOnline'] }); return chips; }
     function removeHref(keys) { const params = currentParams(); params.delete('page'); for (const key of keys) params.delete(key); return supportUrl(params, true); }
     function renderSummary(state, total, start, end) { const chips = filterChips(state); const countLabel = formatCount(total) + labels.resultSuffix; const title = state.keyword && state.category ? '\u2018' + state.keyword + '\u2019 ' + labels.searchResult + ' ? ' + state.category + ' ' + labels.filterApplied + ' ? ' + countLabel : state.keyword ? '\u2018' + state.keyword + '\u2019 ' + labels.searchResult + ' ' + countLabel : state.category ? state.category + ' ' + labels.categoryPrograms + ' ' + countLabel : chips.length > 0 ? chips.map((item) => item.label).join(' ? ') + ' ? ' + countLabel : labels.allResults + ' ' + countLabel; if (resultCount) resultCount.textContent = formatCount(total); if (resultSummaryTitle) resultSummaryTitle.textContent = title; if (resultSummaryDetail) resultSummaryDetail.textContent = chips.length > 0 ? labels.appliedConditions + ': ' + chips.map((item) => item.label).join(' ? ') : labels.defaultDetail; if (progress) progress.innerHTML = '<strong>' + (total === 0 ? labels.emptyDisplay : formatCount(start) + '-' + formatCount(end) + labels.display) + '</strong><span>/</span><span>' + labels.total + ' ' + formatCount(total) + labels.resultSuffix + '</span>'; if (noResultContext) noResultContext.textContent = chips.length > 0 ? chips.map((item) => item.label).join(' ? ') : labels.currentCondition; if (!activeFilterChips) return; activeFilterChips.hidden = chips.length === 0; activeFilterChips.innerHTML = chips.map((chip) => '<a class="active-filter-chip" href="' + escapeHtml(removeHref(chip.keys)) + '" aria-label="' + escapeHtml(chip.label) + ' ' + labels.conditionRemoved + '">' + escapeHtml(chip.label) + ' ?</a>').join(''); }
     function renderPagination(totalPages, currentPage, total) { if (!pagination) return; if (total <= pageSize) { pagination.hidden = true; pagination.innerHTML = ''; return; } pagination.hidden = false; const previous = '<a class="page-control ' + (currentPage === 1 ? 'disabled' : '') + '" href="' + escapeHtml(currentPage === 1 ? pageHref(1) : pageHref(currentPage - 1)) + '" aria-disabled="' + (currentPage === 1 ? 'true' : 'false') + '">' + labels.previous + '</a>'; const next = '<a class="page-control ' + (currentPage === totalPages ? 'disabled' : '') + '" href="' + escapeHtml(currentPage === totalPages ? pageHref(totalPages) : pageHref(currentPage + 1)) + '" aria-disabled="' + (currentPage === totalPages ? 'true' : 'false') + '">' + labels.next + '</a>'; const pages = paginationItems(currentPage, totalPages).map((item) => item === 'ellipsis' ? '<span class="page-ellipsis" aria-hidden="true">...</span>' : '<a class="page-number ' + (item === currentPage ? 'active' : '') + '" href="' + escapeHtml(pageHref(item)) + '" ' + (item === currentPage ? 'aria-current="page"' : '') + '>' + item + '</a>').join(''); pagination.innerHTML = previous + pages + next; }
-    async function renderSupportResultsFromIndex() { const response = await fetch('/search-index.json'); if (!response.ok) throw new Error('search-index fetch failed'); const index = await response.json(); const state = readState(); const matched = filterAndSortPolicies(index.items || [], state); const total = matched.length; const totalPages = Math.max(1, Math.ceil(total / pageSize)); const currentPage = Math.min(state.page, totalPages); const startIndex = total === 0 ? 0 : (currentPage - 1) * pageSize + 1; const endIndex = Math.min(currentPage * pageSize, total); const pageItems = matched.slice((currentPage - 1) * pageSize, currentPage * pageSize); if (resultGrid) resultGrid.innerHTML = pageItems.map(renderCard).join(''); if (noResults) noResults.hidden = total > 0; renderSummary(state, total, startIndex, endIndex); renderPagination(totalPages, currentPage, total); }
+    function syncTagChips(state) { document.querySelectorAll('.support-tag-row .chip').forEach((chip) => { const tag = new URL(chip.href, window.location.href).searchParams.get('tag') || ''; chip.classList.toggle('active', Boolean(state.tag && tag === state.tag)); }); }
+    async function renderSupportResultsFromIndex() { const response = await fetch('/search-index.json'); if (!response.ok) throw new Error('search-index fetch failed'); const index = await response.json(); const state = readState(); const matched = filterAndSortPolicies(index.items || [], state); const total = matched.length; const totalPages = Math.max(1, Math.ceil(total / pageSize)); const currentPage = Math.min(state.page, totalPages); const startIndex = total === 0 ? 0 : (currentPage - 1) * pageSize + 1; const endIndex = Math.min(currentPage * pageSize, total); const pageItems = matched.slice((currentPage - 1) * pageSize, currentPage * pageSize); if (resultGrid) resultGrid.innerHTML = pageItems.map(renderCard).join(''); if (noResults) noResults.hidden = total > 0; syncTagChips(state); renderSummary(state, total, startIndex, endIndex); renderPagination(totalPages, currentPage, total); }
     function setParamAndNavigate(key, value) { const next = currentParams(); next.delete('page'); if (value === true) next.set(key, 'true'); else if (value) next.set(key, String(value)); else next.delete(key); window.location.href = supportUrl(next, true); }
     searchForms.forEach((form) => { form.addEventListener('submit', (event) => { event.preventDefault(); const next = new URLSearchParams(new FormData(form)); for (const [key, value] of Array.from(next.entries())) if (!String(value).trim()) next.delete(key); window.location.href = supportUrl(next, true); }); });
     filterControls.forEach((control) => { control.addEventListener('change', () => { const key = control.dataset.filter || (control.hasAttribute('data-sort') ? 'sort' : ''); if (!key) return; if (control instanceof HTMLInputElement && control.type === 'checkbox') { setParamAndNavigate(key, control.checked); return; } setParamAndNavigate(key, control.value); }); });

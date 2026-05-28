@@ -1,10 +1,14 @@
 import { policies } from "../data/policies";
+import { derivePolicyTags } from "../utils/derivedTags";
 import { getDisplayRegion, getDisplayStatus, getPublicPolicies } from "../utils/policyUtils";
 import { sourceLabel } from "../utils/sourceNames";
 
 export function GET() {
   const items = getPublicPolicies(policies)
-    .map((policy) => ({
+    .map((policy) => {
+      const tags = derivePolicyTags(policy);
+
+      return {
       id: policy.slug,
       title: policy.title,
       category: policy.category,
@@ -18,6 +22,7 @@ export function GET() {
       officialUrl: policy.officialUrl,
       url: `/support/${policy.slug}/`,
       keywords: policy.tags,
+      tags,
       searchText: [
         policy.title,
         policy.category,
@@ -29,9 +34,11 @@ export function GET() {
         policy.amount,
         policy.benefits.join(" "),
         policy.documents.join(" "),
-        policy.tags.join(" ")
+        policy.tags.join(" "),
+        tags.join(" ")
       ].join(" ")
-    }));
+      };
+    });
 
   return new Response(
     JSON.stringify(

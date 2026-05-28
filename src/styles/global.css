@@ -251,6 +251,7 @@ h3 {
 .chip {
   display: inline-flex;
   align-items: center;
+  gap: 6px;
   min-height: 32px;
   padding: 0 10px;
   border-radius: 999px;
@@ -258,6 +259,19 @@ h3 {
   background: white;
   color: #334448;
   font-size: 0.9rem;
+}
+
+.chip.active,
+.support-tag-row .chip.active {
+  border-color: rgba(0, 107, 91, 0.28);
+  background: #eaf7f3;
+  color: var(--brand-dark);
+}
+
+.chip span {
+  color: var(--muted);
+  font-size: 0.82em;
+  font-weight: 850;
 }
 
 .stats {
@@ -1898,6 +1912,39 @@ dd {
   flex-wrap: wrap;
   gap: 8px;
   margin: 0 0 18px;
+}
+
+.support-tag-row {
+  margin-top: -6px;
+}
+
+.policy-derived-tags,
+.policy-tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.policy-derived-tags {
+  margin-top: -4px;
+}
+
+.policy-tag-row {
+  margin: 10px 0 0;
+}
+
+.policy-tag-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 9px;
+  border: 1px solid #d9e6e3;
+  border-radius: 999px;
+  background: #f6fbfa;
+  color: var(--brand-dark);
+  font-size: 0.82rem;
+  font-weight: 850;
+  text-decoration: none;
 }
 
 .support-result-progress {

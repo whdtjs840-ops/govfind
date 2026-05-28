@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { ExternalLink } from "@lucide/astro";
 import { policies } from "../../data/policies";
+import { derivePolicyTags } from "../../utils/derivedTags";
 import { sourceLabel } from "../../utils/sourceNames";
 import {
   cleanSummary,
@@ -48,6 +49,7 @@ const relatedPolicies = policies
   .filter((item) => !isSearchOnlyPolicy(item) && item.slug !== policy.slug && (item.category === policy.category || (policy.region && item.region === policy.region) || item.tags.some((tag) => policy.tags.includes(tag))))
   .slice(0, 4);
 const comparisonRows = relatedPolicies.slice(0, 3);
+const derivedTags = derivePolicyTags(policy).slice(0, 6);
 
 function lines(value?: string, max = 12) {
   return (value ?? "")
@@ -142,6 +144,13 @@ const seoDescription = truncateMeta(
         </div>
         <h1>{policy.title}</h1>
         <p class="doc-meta">업데이트 {policy.updatedAt} · {policy.agency}</p>
+        {derivedTags.length > 0 && (
+          <div class="policy-derived-tags" aria-label="세부 태그">
+            {derivedTags.map((tag) => (
+              <a class="policy-tag-pill" href={`/support/?tag=${encodeURIComponent(tag)}`}>{tag}</a>
+            ))}
+          </div>
+        )}
         <div class="doc-primary-actions">
           <a class="button doc-primary" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
             <ExternalLink size={18} />공식 신청처 보기
