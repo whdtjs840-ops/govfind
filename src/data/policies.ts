@@ -186875,7 +186875,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경북-2026년-중소기업-해외세일즈-개별-출장-지원-참가-업체-모집-변경-공고",
     "title": "[경북] 2026년 중소기업 해외세일즈 개별 출장 지원 참가 업체 모집 변경 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "경상북도",
     "region": "경북",
@@ -187133,7 +187133,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-인천-2026년-지역상품-공공-조달정보-지원사업-인천지역기업-신용평가-지원사업-참여기업-모집-공고",
     "title": "[인천] 2026년 지역상품 공공 조달정보 지원사업 인천지역기업 신용평가 지원사업 참여기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "인천광역시",
     "region": "인천",
@@ -187306,7 +187306,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경기-안산시-2026년-해외지사화-지원사업-참가기업-모집-공고",
     "title": "[경기] 안산시 2026년 해외지사화 지원사업 참가기업 모집 공고",
-    "category": "주거",
+    "category": "창업",
     "source": "기업마당 API",
     "agency": "경기도",
     "region": "경기",
@@ -187903,7 +187903,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경기-시흥시-2026년-ip-기술-사업화-지원-사업-참여기업-추가-모집-공고",
     "title": "[경기] 시흥시 2026년 IP 기술 사업화 지원 사업 참여기업 추가 모집 공고",
-    "category": "주거",
+    "category": "창업",
     "source": "기업마당 API",
     "agency": "경기도",
     "region": "경기",
@@ -188073,7 +188073,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경기-용인시-2026년-용인ip지원센터-ip전략수립-지원사업-모집-공고",
     "title": "[경기] 용인시 2026년 용인IP지원센터 IP전략수립 지원사업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "경기도",
     "region": "경기",
@@ -188156,7 +188156,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-2026년-2차-융합바이오소재기업-경쟁력-강화사업-수혜기업-모집-공고",
     "title": "2026년 2차 융합바이오소재기업 경쟁력 강화사업 수혜기업 모집 공고",
-    "category": "주거",
+    "category": "창업",
     "source": "기업마당 API",
     "agency": "산업통상부",
     "region": null,
@@ -188326,7 +188326,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-충북-2026년-알리바바닷컴-온라인-플랫폼-b2b-입점-지원사업-참가기업-모집-공고",
     "title": "[충북] 2026년 알리바바닷컴 온라인 플랫폼(B2B) 입점 지원사업 참가기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "충청북도",
     "region": "충북",
@@ -188409,7 +188409,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-충북-충주시-제2회-대한민국-중소기업-박람회-홍보-부스-참가기업-모집-공고",
     "title": "[충북] 충주시 제2회 대한민국 중소기업 박람회 홍보 부스 참가기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "충청북도",
     "region": "충북",
@@ -189086,7 +189086,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경북-2026년-3차-푸드테크-스마트-제조-기반-구축-사업-재공고",
     "title": "[경북] 2026년 3차 푸드테크 스마트 제조 기반 구축 사업 재공고",
-    "category": "주거",
+    "category": "창업",
     "source": "기업마당 API",
     "agency": "경상북도",
     "region": "경북",
@@ -189169,7 +189169,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-강원-원주시-2026년-중소기업-우수제품-박람회-참가기업-모집-공고",
     "title": "[강원] 원주시 2026년 중소기업 우수제품 박람회 참가기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "강원특별자치도",
     "region": "강원",
@@ -189337,7 +189337,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-인천-2026년-6차-중소기업육성자금-경영안정자금-이자차액보전-지원-공고",
     "title": "[인천] 2026년 6차 중소기업육성자금 경영안정자금(이자차액보전) 지원 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "인천광역시",
     "region": "인천",
@@ -189423,7 +189423,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-인천-2027년-ces-미국-라스베가스-소비재전자-전시회-참가업체-모집-공고",
     "title": "[인천] 2027년 CES 미국 라스베가스 소비재전자 전시회 참가업체 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "인천광역시",
     "region": "인천",
@@ -189505,7 +189505,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경남-진주시-2026년-상반기-중소기업육성기금-지원계획-변경-2차-공고",
     "title": "[경남] 진주시 2026년 상반기 중소기업육성기금 지원계획 변경 2차 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "경상남도",
     "region": "경남",
@@ -189760,7 +189760,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-대전-2026년-2차-바이오-혁신신약-특화단지-운영사업-지원기업-모집-공고",
     "title": "[대전] 2026년 2차 바이오 혁신신약 특화단지 운영사업 지원기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "대전광역시",
     "region": "대전",
@@ -190015,7 +190015,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경기-2026년-드론산업-육성-지원사업-드론기업-수요맞춤형-지원-모집-공고",
     "title": "[경기] 2026년 드론산업 육성 지원사업 드론기업 수요맞춤형 지원 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "경기도",
     "region": "경기",
@@ -190098,7 +190098,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-2026년-경남-우주산업-혁신생태계-조성-지원-사업-수혜기업-추가-모집-공고",
     "title": "2026년 경남 우주산업 혁신생태계 조성 지원 사업 수혜기업 추가 모집 공고",
-    "category": "주거",
+    "category": "창업",
     "source": "기업마당 API",
     "agency": "경상남도",
     "region": "경남",
@@ -190516,7 +190516,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경남-진주시-2026년-상반기-중소기업-단체-수출보험료-지원사업-공고",
     "title": "[경남] 진주시 2026년 상반기 중소기업 단체 수출보험료 지원사업 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "경상남도",
     "region": "경남",
@@ -190682,7 +190682,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-인천-2026년-해외바이어-초청-수출상담회-참가업체-모집-공고",
     "title": "[인천] 2026년 해외바이어 초청 수출상담회 참가업체 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "인천광역시",
     "region": "인천",
@@ -191357,7 +191357,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경북-경주시-2026년-중소기업-수출-지원사업-참여업체-추가모집-공고",
     "title": "[경북] 경주시 2026년 중소기업 수출 지원사업 참여업체 추가모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "경상북도",
     "region": "경북",
@@ -191698,7 +191698,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-2026년-2차-대경권-지역혁신클러스터육성-비r-d-수혜기업-모집-공고",
     "title": "2026년 2차 대경권 지역혁신클러스터육성(비R&D) 수혜기업 모집 공고",
-    "category": "주거",
+    "category": "창업",
     "source": "기업마당 API",
     "agency": "산업통상부",
     "region": "경북",
@@ -191949,7 +191949,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-2026년-대전-인간친화형-로봇-스케일업-밸리-혁신-생태계-기반-구축사업-지원기업-추가-모집-공고",
     "title": "2026년 대전 인간친화형 로봇 스케일업 밸리 혁신 생태계 기반 구축사업 지원기업 추가 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "대전광역시",
     "region": "대전",
@@ -192032,7 +192032,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-인천-2026년-멕시코-멕시코시티-해외시장개척단-수요조사-모집-공고",
     "title": "[인천] 2026년 멕시코(멕시코시티) 해외시장개척단 수요조사 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "인천광역시",
     "region": "인천",
@@ -192200,7 +192200,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경북-포항시-2026년-중소기업-국내외-박람회-지원사업-참여기업-모집-공고",
     "title": "[경북] 포항시 2026년 중소기업 국내외 박람회 지원사업 참여기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "경상북도",
     "region": "경북",
@@ -193051,7 +193051,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경북-2026년-국제-aiㆍ메타버스-영상제-gamff-2026-b2b-전시관-참가기업-모집-공고",
     "title": "[경북] 2026년 국제 AIㆍ메타버스 영상제(GAMFF 2026) B2B 전시관 참가기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "경상북도",
     "region": "경북",
@@ -193134,7 +193134,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-충북-2026년-의료기기-수출기업-국내외-학회-개별-참가기업-추가모집-공고",
     "title": "[충북] 2026년 의료기기 수출기업 국내외 학회 개별 참가기업 추가모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "충청북도",
     "region": "충북",
@@ -194074,7 +194074,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-강원-캐나다-밴쿠버-수출로드쇼-참가기업-모집-공고",
     "title": "[강원] 캐나다(밴쿠버) 수출로드쇼 참가기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "강원특별자치도",
     "region": "강원",
@@ -194326,7 +194326,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경기-남양주시-2026년-기술이전-및-사업화-지원-참여기업-모집-연장-공고-국가기술거래플랫폼서비스사업",
     "title": "[경기] 남양주시 2026년 기술이전 및 사업화 지원 참여기업 모집 연장 공고(국가기술거래플랫폼서비스사업)",
-    "category": "주거",
+    "category": "창업",
     "source": "기업마당 API",
     "agency": "경기도",
     "region": "경기",
@@ -194579,7 +194579,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-강원-철원군-2026년-중소기업-맞춤형-지원사업-추가모집-공고",
     "title": "[강원] 철원군 2026년 중소기업 맞춤형 지원사업 추가모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "강원특별자치도",
     "region": "강원",
@@ -194662,7 +194662,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경기-부천시-2026년-한국전자전-kes-2026-참가기업-모집-추가-공고",
     "title": "[경기] 부천시 2026년 한국전자전(KES 2026) 참가기업 모집 추가 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "경기도",
     "region": "경기",
@@ -195172,7 +195172,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-충북-2026년-향기연구소-운영-및-제품개발-지원사업-사업화-지원-분야-수혜기업-모집-공고-충북-향기연구소-운영-및-제품개발지원사업",
     "title": "[충북] 2026년 향기연구소 운영 및 제품개발 지원사업 사업화 지원 분야 수혜기업 모집 공고(충북 향기연구소 운영 및 제품개발지원사업)",
-    "category": "주거",
+    "category": "창업",
     "source": "기업마당 API",
     "agency": "충청북도",
     "region": "충북",
@@ -195427,7 +195427,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-대구-2026년-수출초보기업-해외진출-지원사업-참여기업-모집-공고",
     "title": "[대구] 2026년 수출초보기업 해외진출 지원사업 참여기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "대구광역시",
     "region": "대구",
@@ -195510,7 +195510,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경기-부천시-2026년-동남아-해외시장개척단-참가기업-모집-공고",
     "title": "[경기] 부천시 2026년 동남아 해외시장개척단 참가기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "경기도",
     "region": "경기",
@@ -195762,7 +195762,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경북-2026년-서남아-소비재-무역사절단-참가기업-모집-공고",
     "title": "[경북] 2026년 서남아 소비재 무역사절단 참가기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "경상북도",
     "region": "대구",
@@ -196268,7 +196268,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-충북-2026년-무역플랫폼-활용-화상상담회-지원사업-참여기업-모집-공고",
     "title": "[충북] 2026년 무역플랫폼 활용 화상상담회 지원사업 참여기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "충청북도",
     "region": "충북",
@@ -196695,7 +196695,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-인천-2026년-바이오플러스-인터펙스-코리아-2026-바이오산업-홍보관-참가기업-모집-공고",
     "title": "[인천] 2026년 바이오플러스 인터펙스 코리아 2026 바이오산업 홍보관 참가기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "인천광역시",
     "region": "인천",
@@ -197200,7 +197200,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-2026년-국제방송영상마켓-bcww-부스-참가기업-모집-공고",
     "title": "2026년 국제방송영상마켓(BCWW) 부스 참가기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "문화체육관광부",
     "region": null,
@@ -197285,7 +197285,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-전남-2026년-유망-중소기업-지정-계획-재공고",
     "title": "[전남] 2026년 유망 중소기업 지정 계획 재공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "전라남도",
     "region": "전남",
@@ -197455,7 +197455,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경북-2026년-메디엑스포-및-수출상담회-참가기업-모집-공고",
     "title": "[경북] 2026년 메디엑스포 및 수출상담회 참가기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "경상북도",
     "region": "경북",
@@ -197795,7 +197795,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-서울-2026년-해외-전시ㆍ판로-지원사업-모집공고-밀라노-mipel130-공동브랜드관-참여-모집-공고",
     "title": "[서울] 2026년 해외 전시ㆍ판로 지원사업 모집공고 밀라노 Mipel130 공동브랜드관 참여 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "서울특별시",
     "region": "서울",
@@ -197878,7 +197878,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-충북-청주시-2026년-서유럽-독일-무역사절단-참가-모집-공고",
     "title": "[충북] 청주시 2026년 서유럽(독일) 무역사절단 참가 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "충청북도",
     "region": "충북",
@@ -198046,7 +198046,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-인천-2026년-2차-기술이전-사업화-지원사업-모집-공고",
     "title": "[인천] 2026년 2차 기술이전 사업화 지원사업 모집 공고",
-    "category": "주거",
+    "category": "창업",
     "source": "기업마당 API",
     "agency": "인천광역시",
     "region": "인천",
@@ -198301,7 +198301,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-충남-2026년-2차-소기업형-스마트공장-구축-지원사업-공고",
     "title": "[충남] 2026년 2차 소기업형 스마트공장 구축 지원사업 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "충청남도",
     "region": "충남",
@@ -198384,7 +198384,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-부산-2026년-프랑스-메종ㆍ오브제-한국디자인관-참가기업-모집-공고-중소기업-디자인개발-지원사업",
     "title": "[부산] 2026년 프랑스 메종ㆍ오브제 한국디자인관 참가기업 모집 공고(중소기업 디자인개발 지원사업)",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "부산광역시",
     "region": "부산",
@@ -198552,7 +198552,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-전남-2026년-대한민국-중소기업-박람회-참가기업-모집-공고",
     "title": "[전남] 2026년 대한민국 중소기업 박람회 참가기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "전라남도",
     "region": "전남",
@@ -198635,7 +198635,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경북-포항시-2026년-2차-탄소중립기술-신산업-육성사업-중소기업-탄소저감-지원-기업-모집-공고",
     "title": "[경북] 포항시 2026년 2차 탄소중립기술 신산업 육성사업 중소기업 탄소저감 지원 기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "경상북도",
     "region": "경북",
@@ -198802,7 +198802,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경북-2026년-미국-포틀랜드-추계-아웃도어스포츠-기능성섬유박람회-fff-공동관-참가기업-모집-공고",
     "title": "[경북] 2026년 미국 포틀랜드 추계 아웃도어스포츠 기능성섬유박람회(FFF) 공동관 참가기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "경상북도",
     "region": "경북",
@@ -199057,7 +199057,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-강원-2026년-지역특화형-바이오헬스ㆍ식품-스마트공장-구축사업-공고",
     "title": "[강원] 2026년 지역특화형(바이오헬스ㆍ식품) 스마트공장 구축사업 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "강원특별자치도",
     "region": "강원",
@@ -199397,7 +199397,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-충북-2026년-대한민국-국제-의약품-전시회-cphi-korea-2026-참가기업-모집-공고",
     "title": "[충북] 2026년 대한민국 국제 의약품 전시회(CPHI KOREA 2026) 참가기업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "충청북도",
     "region": "충북",
@@ -199480,7 +199480,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-충남-아산시-2026년-착한가격업소-소규모-시설개선-지원사업-공고",
     "title": "[충남] 아산시 2026년 착한가격업소 소규모 시설개선 지원사업 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "충청남도",
     "region": "충남",
@@ -199650,7 +199650,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-울산-2026년-기술이전-혁신생태계-조성-지원사업-이전기술-사업화지원-프로그램-지원기업-모집-공고",
     "title": "[울산] 2026년 기술이전 혁신생태계 조성 지원사업 이전기술 사업화지원 프로그램 지원기업 모집 공고",
-    "category": "주거",
+    "category": "창업",
     "source": "기업마당 API",
     "agency": "울산광역시",
     "region": "울산",
@@ -199733,7 +199733,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-울산-북구-2026년-3차-중소기업-성장지원사업-모집-공고-미래차-부품전환ㆍ해외판로개척-지원",
     "title": "[울산] 북구 2026년 3차 중소기업 성장지원사업 모집 공고(미래차 부품전환ㆍ해외판로개척 지원)",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "울산광역시",
     "region": "울산",
@@ -199985,7 +199985,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-경기-포천시-2026년-현장기술돌봄이-지원사업-모집-공고",
     "title": "[경기] 포천시 2026년 현장기술돌봄이 지원사업 모집 공고",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "경기도",
     "region": "경기",
@@ -200071,7 +200071,7 @@ const bizinfoPromotionPolicies: Policy[] = [
   {
     "slug": "bizinfo-2026년-뿌리산업-dx-디지털전환-기술지원사업-수혜기업-모집-공고-뿌리산업-제조공정혁신-지원을-위한-dx-기반구축",
     "title": "2026년 뿌리산업 DX(디지털전환) 기술지원사업 수혜기업 모집 공고(뿌리산업 제조공정혁신 지원을 위한 DX 기반구축)",
-    "category": "주거",
+    "category": "소상공인",
     "source": "기업마당 API",
     "agency": "산업통상부",
     "region": "전국",
