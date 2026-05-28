@@ -143882,6 +143882,16048 @@ policies.push(...bokjiroLocalPromotionPolicies);
 policies.push(...localWelfareApiPolicies);
 policies.push(...publicServiceApiPolicies);
 policies.push(...kstartupApiPolicies);
+const ontongYouthPromotionPolicies: Policy[] = [
+  {
+    "slug": "ontong-youth-청년-예비작가-작품-전시-지원",
+    "title": "청년 예비작가 작품 전시 지원",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "청년정책과",
+    "region": null,
+    "amount": "예비작가 작품 전시 기회 제공으로 경력계발 지원 및 청년인구 유입 도모",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년 예비작가 작품 전시 지원",
+      "문화생활",
+      "청년정책과",
+      "모집중",
+      "청년",
+      "예비작가",
+      "작품",
+      "전시",
+      "기회",
+      "제공으로",
+      "경력계발",
+      "지원",
+      "및",
+      "확인필요"
+    ],
+    "summary": "예비작가 작품 전시 기회 제공으로 경력계발 지원 및 청년인구 유입 도모",
+    "audience": "해당없음",
+    "benefits": [
+      "예비작가 작품 전시 기회 제공으로 경력계발 지원 및 청년인구 유입 도모"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "이메일 접수",
+    "officialUrl": "https://www.ch2030youth.kr",
+    "officialSourceUrl": "https://www.ch2030youth.kr",
+    "contact": "청년정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "예비작가 작품 전시 기회 제공으로 경력계발 지원 및 청년인구 유입 도모",
+      "application": "이메일 접수",
+      "contact": "청년정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년내일저축계좌",
+    "title": "청년내일저축계좌",
+    "category": "보건의료",
+    "source": "온통청년 API",
+    "agency": "보건복지부",
+    "region": "전국",
+    "amount": "근로빈곤층 청년의 생계수급자 등으로의 하락을 사전에 예방하고, 일하는 중간계층 청년이 사회에 안착할 수 있도록 자산형성을 지원합니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "application text implies open status but needs official confirmation",
+      "date range is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 가구/부모",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년내일저축계좌",
+      "보건의료",
+      "전국",
+      "보건복지부",
+      "모집중",
+      "청년",
+      "가구/부모",
+      "근로빈곤층",
+      "청년의",
+      "생계수급자",
+      "등으로의",
+      "하락을",
+      "사전에",
+      "예방하고,"
+    ],
+    "summary": "근로빈곤층 청년의 생계수급자 등으로의 하락을 사전에 예방하고, 일하는 중간계층 청년이 사회에 안착할 수 있도록 자산형성을 지원합니다.",
+    "audience": "□ 연령·소득기준·가구소득 3가지를 모두 충족한 청년을 지원합니다. 1. 가입연령 : 신청 당시 만 15세~만 39세 ※ 신청 월의 전월에 만 15세가 된 자 ~ 신청 월에 만 40세가 되는 자 2. 근로·사업소득 : 근로, 사업소득이 월 10만원 이상 발생 3. 가구소득 : 소득인정액 기준 중위소득 100% 이하",
+    "benefits": [
+      "근로빈곤층 청년의 생계수급자 등으로의 하락을 사전에 예방하고, 일하는 중간계층 청년이 사회에 안착할 수 있도록 자산형성을 지원합니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "□ 읍면동 주민센터 방문접수 및 복지로(www.bokjiro.go.kr)를 통한 온라인 신청이 가능합니다. ○ 복지로 온라인 신청 경로: 복지로 로그인 > 서비스 신청 > 복지서비스 신청 > 복지급여 신청 > 저소득층 > 자산형성지원(청년내일저축계좌) ○ 주소지가 아니더라도, 동일 시군구내 모든 주민센터에서 접수 가능",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000060",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000060",
+    "contact": "보건복지부",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "□ 연령·소득기준·가구소득 3가지를 모두 충족한 청년을 지원합니다. 1. 가입연령 : 신청 당시 만 15세~만 39세 ※ 신청 월의 전월에 만 15세가 된 자 ~ 신청 월에 만 40세가 되는 자 2. 근로·사업소득 : 근로, 사업소득이 월 10만원 이상 발생 3. 가구소득 : 소득인정액 기준 중위소득 100% 이하",
+      "benefit": "근로빈곤층 청년의 생계수급자 등으로의 하락을 사전에 예방하고, 일하는 중간계층 청년이 사회에 안착할 수 있도록 자산형성을 지원합니다.",
+      "application": "□ 읍면동 주민센터 방문접수 및 복지로(www.bokjiro.go.kr)를 통한 온라인 신청이 가능합니다. ○ 복지로 온라인 신청 경로: 복지로 로그인 > 서비스 신청 > 복지서비스 신청 > 복지급여 신청 > 저소득층 > 자산형성지원(청년내일저축계좌) ○ 주소지가 아니더라도, 동일 시군구내 모든 주민센터에서 접수 가능",
+      "contact": "보건복지부"
+    }
+  },
+  {
+    "slug": "ontong-youth-창작스튜디오-운영",
+    "title": "창작스튜디오 운영",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "문화예술과",
+    "region": null,
+    "amount": "스토리 특화 교육을 통한 전문 창작자 양성",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "date range is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "창작스튜디오 운영",
+      "교육",
+      "문화예술과",
+      "모집중",
+      "청년",
+      "스토리",
+      "특화",
+      "교육을",
+      "통한",
+      "전문",
+      "창작자",
+      "양성",
+      "확인필요"
+    ],
+    "summary": "문화예술과에서 스토리 분야 창작자 양성을 위해 운영하는 교육 지원 정책입니다. 세부 자격과 신청기간은 공식 공고에서 확인하세요.",
+    "audience": "고급반 수강의 경우 관련학과 및 현업작가 우대",
+    "benefits": [
+      "스토리 특화 교육을 통한 전문 창작자 양성"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "구글 폼 온라인 접수",
+    "officialUrl": "https://cckl.kr/program/program.do",
+    "officialSourceUrl": "https://cckl.kr/program/program.do",
+    "contact": "문화예술과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "고급반 수강의 경우 관련학과 및 현업작가 우대",
+      "benefit": "스토리 특화 교육을 통한 전문 창작자 양성",
+      "application": "구글 폼 온라인 접수",
+      "contact": "문화예술과"
+    }
+  },
+  {
+    "slug": "ontong-youth-남산문화창작소-운영",
+    "title": "남산문화창작소 운영",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "청년정책과",
+    "region": null,
+    "amount": "지역 예술인 성장 기반 조성",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "date range is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "남산문화창작소 운영",
+      "문화생활",
+      "청년정책과",
+      "모집중",
+      "청년",
+      "지역",
+      "예술인",
+      "성장",
+      "기반",
+      "조성",
+      "확인필요"
+    ],
+    "summary": "청년정책과에서 지역 예술인의 성장 기반을 마련하기 위해 제공하는 문화 창작 지원 정책입니다. 세부 내용은 공식 공고에서 확인하세요.",
+    "audience": "해당없음",
+    "benefits": [
+      "지역 예술인 성장 기반 조성"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청서 및 증빙서류 이메일 접수",
+    "officialUrl": "https://www.cfac.or.kr",
+    "officialSourceUrl": "https://www.cfac.or.kr",
+    "contact": "문화예술과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "지역 예술인 성장 기반 조성",
+      "application": "신청서 및 증빙서류 이메일 접수",
+      "contact": "문화예술과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년정책제안-아이디어-공모",
+    "title": "청년정책제안 아이디어 공모",
+    "category": "청년",
+    "source": "온통청년 API",
+    "agency": "청년정책과",
+    "region": null,
+    "amount": "지역 청년들에게 실질적으로 필요한 정책사업을 발굴하기 위한 사업",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년정책제안 아이디어 공모",
+      "청년",
+      "청년정책과",
+      "확인필요",
+      "지역",
+      "청년들에게",
+      "실질적으로",
+      "필요한",
+      "정책사업을",
+      "발굴하기",
+      "위한",
+      "사업"
+    ],
+    "summary": "지역 청년들에게 실질적으로 필요한 정책사업을 발굴하기 위한 사업",
+    "audience": "해당없음",
+    "benefits": [
+      "지역 청년들에게 실질적으로 필요한 정책사업을 발굴하기 위한 사업"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "해당없음",
+    "officialUrl": "https://www.cheonan.go.kr",
+    "officialSourceUrl": "https://www.cheonan.go.kr",
+    "contact": "청년정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "지역 청년들에게 실질적으로 필요한 정책사업을 발굴하기 위한 사업",
+      "application": "해당없음",
+      "contact": "청년정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-천안형-청년도전-프로젝트",
+    "title": "천안형 청년도전 프로젝트",
+    "category": "청년",
+    "source": "온통청년 API",
+    "agency": "청년정책과",
+    "region": null,
+    "amount": "지역 청년들에게 필요한 아이디어 사업을 제안 받아 제안자가 실행하는 공모사업",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "천안형 청년도전 프로젝트",
+      "청년",
+      "청년정책과",
+      "모집중",
+      "지역",
+      "청년들에게",
+      "필요한",
+      "아이디어",
+      "사업을",
+      "제안",
+      "받아",
+      "제안자가",
+      "확인필요"
+    ],
+    "summary": "지역 청년들에게 필요한 아이디어 사업을 제안 받아 제안자가 실행하는 공모사업",
+    "audience": "해당없음",
+    "benefits": [
+      "지역 청년들에게 필요한 아이디어 사업을 제안 받아 제안자가 실행하는 공모사업"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "전자우편 접수",
+    "officialUrl": "https://m.blog.naver.com/fastcheonan/224151981081",
+    "officialSourceUrl": "https://m.blog.naver.com/fastcheonan/224151981081",
+    "contact": "청년정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "지역 청년들에게 필요한 아이디어 사업을 제안 받아 제안자가 실행하는 공모사업",
+      "application": "전자우편 접수",
+      "contact": "청년정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년구직자-면접비-지원사업",
+    "title": "청년구직자 면접비 지원사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "경제과",
+    "region": "대전",
+    "amount": "공주시 거주 만18~45세 구직자로 충남,세종,대전 소재기업(공공기관 등)의 면접에 실제 응시한 자에 대하여 면접비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년구직자 면접비 지원사업",
+      "고용",
+      "대전",
+      "경제과",
+      "모집중",
+      "청년",
+      "구직자",
+      "공주시",
+      "거주",
+      "만18~45세",
+      "구직자로",
+      "충남,세종,대전",
+      "소재기업(공공기관",
+      "등)의"
+    ],
+    "summary": "공주시 거주 만18~45세 구직자로 충남,세종,대전 소재기업(공공기관 등)의 면접에 실제 응시한 자에 대하여 면접비 지원",
+    "audience": "주 30시간 이상, 근무 기간 6개월 이상의 일자리(채용공고기준)",
+    "benefits": [
+      "공주시 거주 만18~45세 구직자로 충남,세종,대전 소재기업(공공기관 등)의 면접에 실제 응시한 자에 대하여 면접비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "본인 직접 방문 또는 온라인 접수(담당자 이메일)",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260418LC000000000003213",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260418LC000000000003213",
+    "contact": "경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "주 30시간 이상, 근무 기간 6개월 이상의 일자리(채용공고기준)",
+      "benefit": "공주시 거주 만18~45세 구직자로 충남,세종,대전 소재기업(공공기관 등)의 면접에 실제 응시한 자에 대하여 면접비 지원",
+      "application": "본인 직접 방문 또는 온라인 접수(담당자 이메일)",
+      "contact": "경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년신규창업자-발굴육성사업",
+    "title": "청년신규창업자 발굴육성사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "청년인구정책과",
+    "region": null,
+    "amount": "공주시 거주하는 만 18~45세 청년(예비)창업자에게 창업지원비 및 멘토링,인건비,컨설팅,맞춤교육 등 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년신규창업자 발굴육성사업",
+      "고용",
+      "청년인구정책과",
+      "모집중",
+      "청년",
+      "소상공인",
+      "공주시",
+      "거주하는",
+      "만",
+      "18~45세",
+      "청년(예비)창업자에게",
+      "창업지원비",
+      "및",
+      "멘토링,인건비,컨설팅,맞춤교육"
+    ],
+    "summary": "공주시 거주하는 만 18~45세 청년(예비)창업자에게 창업지원비 및 멘토링,인건비,컨설팅,맞춤교육 등 지원",
+    "audience": "해당없음",
+    "benefits": [
+      "공주시 거주하는 만 18~45세 청년(예비)창업자에게 창업지원비 및 멘토링,인건비,컨설팅,맞춤교육 등 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "공고문 확인후 신청서 접수",
+    "officialUrl": "https://www.kongju.ac.kr/KNU/index.do#",
+    "officialSourceUrl": "https://www.kongju.ac.kr/KNU/index.do#",
+    "contact": "청년인구정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "공주시 거주하는 만 18~45세 청년(예비)창업자에게 창업지원비 및 멘토링,인건비,컨설팅,맞춤교육 등 지원",
+      "application": "공고문 확인후 신청서 접수",
+      "contact": "청년인구정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-대학생-학습지원단-운영",
+    "title": "대학생 학습지원단 운영",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "교육체육과",
+    "region": null,
+    "amount": "관내 대학생과 초·중·고등학생 매칭 학습지도(기초학습,독서지도 등)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "대학생 학습지원단 운영",
+      "교육",
+      "교육체육과",
+      "모집중",
+      "청년",
+      "관내",
+      "대학생과",
+      "초·중·고등학생",
+      "매칭",
+      "학습지도(기초학습,독서지도",
+      "등)",
+      "확인필요"
+    ],
+    "summary": "관내 대학생과 초·중·고등학생 매칭 학습지도(기초학습,독서지도 등)",
+    "audience": "학습지원단의 성격상 교원양성전문대학에 가산점 적용",
+    "benefits": [
+      "관내 대학생과 초·중·고등학생 매칭 학습지도(기초학습,독서지도 등)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "공고문 확인 후 참가신청서 제출",
+    "officialUrl": "https://www.gongju.go.kr",
+    "officialSourceUrl": "https://www.gongju.go.kr",
+    "contact": "교육체육과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "학습지원단의 성격상 교원양성전문대학에 가산점 적용",
+      "benefit": "관내 대학생과 초·중·고등학생 매칭 학습지도(기초학습,독서지도 등)",
+      "application": "공고문 확인 후 참가신청서 제출",
+      "contact": "교육체육과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년공유주택-운영",
+    "title": "청년공유주택 운영",
+    "category": "주거",
+    "source": "온통청년 API",
+    "agency": "청년인구정책과",
+    "region": null,
+    "amount": "노후건물을 새롭게 리모델링하여 다양한 형태의 청년공유주택을 조성하여 청년의 주거비 부담 완화",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년공유주택 운영",
+      "주거",
+      "청년인구정책과",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "노후건물을",
+      "새롭게",
+      "리모델링하여",
+      "다양한",
+      "형태의",
+      "청년공유주택을",
+      "조성하여",
+      "청년의"
+    ],
+    "summary": "노후건물을 새롭게 리모델링하여 다양한 형태의 청년공유주택을 조성하여 청년의 주거비 부담 완화",
+    "audience": "대학생 및 직장인, 사업자등록을 한 청년창업자 및 예비사업자 등",
+    "benefits": [
+      "노후건물을 새롭게 리모델링하여 다양한 형태의 청년공유주택을 조성하여 청년의 주거비 부담 완화"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문 및 우편접수",
+    "officialUrl": "https://www.gongju.go.kr/prog/saeolGosi/GOSI_01/sub04_03_01/list.do",
+    "officialSourceUrl": "https://www.gongju.go.kr/prog/saeolGosi/GOSI_01/sub04_03_01/list.do",
+    "contact": "청년인구정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "대학생 및 직장인, 사업자등록을 한 청년창업자 및 예비사업자 등",
+      "benefit": "노후건물을 새롭게 리모델링하여 다양한 형태의 청년공유주택을 조성하여 청년의 주거비 부담 완화",
+      "application": "방문 및 우편접수",
+      "contact": "청년인구정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-공주시-결혼장려금-지원사업",
+    "title": "공주시 결혼장려금 지원사업",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "청년인구정책과",
+    "region": null,
+    "amount": "25.1.1.이후 혼인신고하는 만18~45세 청년 신혼부부에게 결혼장려금 지원(※혼인신고일로부터 1년 이내 신청 가능)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 가구/부모",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "공주시 결혼장려금 지원사업",
+      "문화생활",
+      "청년인구정책과",
+      "확인필요",
+      "청년",
+      "가구/부모",
+      "25.1.1.이후",
+      "혼인신고하는",
+      "만18~45세",
+      "신혼부부에게",
+      "결혼장려금",
+      "지원(※혼인신고일로부터",
+      "1년"
+    ],
+    "summary": "25.1.1.이후 혼인신고하는 만18~45세 청년 신혼부부에게 결혼장려금 지원(※혼인신고일로부터 1년 이내 신청 가능)",
+    "audience": "해당없음",
+    "benefits": [
+      "25.1.1.이후 혼인신고하는 만18~45세 청년 신혼부부에게 결혼장려금 지원(※혼인신고일로부터 1년 이내 신청 가능)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "해당없음",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/bbs/cnyouth_notice/291",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/bbs/cnyouth_notice/291",
+    "contact": "청년인구정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "25.1.1.이후 혼인신고하는 만18~45세 청년 신혼부부에게 결혼장려금 지원(※혼인신고일로부터 1년 이내 신청 가능)",
+      "application": "해당없음",
+      "contact": "청년인구정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-군복무-청년-상해보험",
+    "title": "군복무 청년 상해보험",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "청년인구정책과",
+    "region": null,
+    "amount": "공주시에 주민등록을 둔 군복무청년 상해보험 자동가입",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "군복무 청년 상해보험",
+      "문화생활",
+      "청년인구정책과",
+      "확인필요",
+      "청년",
+      "공주시에",
+      "주민등록을",
+      "둔",
+      "군복무청년",
+      "상해보험",
+      "자동가입"
+    ],
+    "summary": "공주시에 주민등록을 둔 군복무청년 상해보험 자동가입",
+    "audience": "해당없음",
+    "benefits": [
+      "공주시에 주민등록을 둔 군복무청년 상해보험 자동가입"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "본인 직접 청구(메리츠화재해상보험주식회사)",
+    "officialUrl": "https://www.gongju.go.kr/kr/sub06_01_09_04_06.do",
+    "officialSourceUrl": "https://www.gongju.go.kr/kr/sub06_01_09_04_06.do",
+    "contact": "청년인구정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "공주시에 주민등록을 둔 군복무청년 상해보험 자동가입",
+      "application": "본인 직접 청구(메리츠화재해상보험주식회사)",
+      "contact": "청년인구정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-공주시-청년센터-운영",
+    "title": "공주시 청년센터 운영",
+    "category": "청년",
+    "source": "온통청년 API",
+    "agency": "청년인구정책과",
+    "region": null,
+    "amount": "공주시 청년센터 운영(민간위탁)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "공주시 청년센터 운영",
+      "청년",
+      "청년인구정책과",
+      "확인필요",
+      "공주시",
+      "청년센터",
+      "운영(민간위탁)"
+    ],
+    "summary": "공주시 청년센터를 통해 청년 활동과 정책 참여를 지원하는 사업입니다. 이용 조건과 운영 내용은 공식 안내를 기준으로 확인하세요.",
+    "audience": "해당없음",
+    "benefits": [
+      "공주시 청년센터 운영(민간위탁)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "해당없음",
+    "officialUrl": "https://gongju.go.kr/youthcenter/index.do",
+    "officialSourceUrl": "https://gongju.go.kr/youthcenter/index.do",
+    "contact": "청년인구정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "공주시 청년센터 운영(민간위탁)",
+      "application": "해당없음",
+      "contact": "청년인구정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-공주시-청년네트워크-운영",
+    "title": "공주시 청년네트워크 운영",
+    "category": "청년",
+    "source": "온통청년 API",
+    "agency": "청년인구정책과",
+    "region": null,
+    "amount": "청년들의 참신한 정책제안과 정보교류, 시정참여기회 확대 등을 통한 청년중심의 정책 실현을 위한 정책제안기구",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "공주시 청년네트워크 운영",
+      "청년",
+      "청년인구정책과",
+      "확인필요",
+      "청년들의",
+      "참신한",
+      "정책제안과",
+      "정보교류,",
+      "시정참여기회",
+      "확대",
+      "등을",
+      "통한"
+    ],
+    "summary": "청년들의 참신한 정책제안과 정보교류, 시정참여기회 확대 등을 통한 청년중심의 정책 실현을 위한 정책제안기구",
+    "audience": "해당없음",
+    "benefits": [
+      "청년들의 참신한 정책제안과 정보교류, 시정참여기회 확대 등을 통한 청년중심의 정책 실현을 위한 정책제안기구"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "모집 공고시 신청서 제출",
+    "officialUrl": "https://www.gongju.go.kr/kr/sub06_01_09_04_04.do",
+    "officialSourceUrl": "https://www.gongju.go.kr/kr/sub06_01_09_04_04.do",
+    "contact": "청년인구정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "청년들의 참신한 정책제안과 정보교류, 시정참여기회 확대 등을 통한 청년중심의 정책 실현을 위한 정책제안기구",
+      "application": "모집 공고시 신청서 제출",
+      "contact": "청년인구정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년일자리-창출을-위한-민관학-협력네트워크-청춘동행-운영",
+    "title": "청년일자리 창출을 위한 민관학 협력네트워크「청춘동행」 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "청년정책과",
+    "region": null,
+    "amount": "기업의 인력수요와 대학의 인재공급을 유기적으로 연결하는 민-관-학 협력네트워크 구축으로 청년일자리 창출 도모",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년일자리 창출을 위한 민관학 협력네트워크「청춘동행」 운영",
+      "고용",
+      "청년정책과",
+      "확인필요",
+      "청년",
+      "기업의",
+      "인력수요와",
+      "대학의",
+      "인재공급을",
+      "유기적으로",
+      "연결하는",
+      "민-관-학",
+      "협력네트워크"
+    ],
+    "summary": "기업의 인력수요와 대학의 인재공급을 유기적으로 연결하는 민-관-학 협력네트워크 구축으로 청년일자리 창출 도모",
+    "audience": "천안시 소재 지역대학 및 유관기관, 단체, 지역우수기업, 직업계고교 등",
+    "benefits": [
+      "기업의 인력수요와 대학의 인재공급을 유기적으로 연결하는 민-관-학 협력네트워크 구축으로 청년일자리 창출 도모"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "해당 없음",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A20260415LC000000000003192",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A20260415LC000000000003192",
+    "contact": "청년정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "천안시 소재 지역대학 및 유관기관, 단체, 지역우수기업, 직업계고교 등",
+      "benefit": "기업의 인력수요와 대학의 인재공급을 유기적으로 연결하는 민-관-학 협력네트워크 구축으로 청년일자리 창출 도모",
+      "application": "해당 없음",
+      "contact": "청년정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-천안시-일자리종합지원센터-운영",
+    "title": "천안시 일자리종합지원센터 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "청년정책과",
+    "region": null,
+    "amount": "구인정보 및 구직정보 제공 및 구인기업과 구직자 취업알선",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "천안시 일자리종합지원센터 운영",
+      "고용",
+      "청년정책과",
+      "확인필요",
+      "청년",
+      "구직자",
+      "구인정보",
+      "및",
+      "구직정보",
+      "제공",
+      "구인기업과",
+      "취업알선"
+    ],
+    "summary": "구인정보 및 구직정보 제공 및 구인기업과 구직자 취업알선",
+    "audience": "해당없음",
+    "benefits": [
+      "구인정보 및 구직정보 제공 및 구인기업과 구직자 취업알선"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문상담 및 전화상담(041-568-9002~6)",
+    "officialUrl": "https://www.cheonan.go.kr/job.do",
+    "officialSourceUrl": "https://www.cheonan.go.kr/job.do",
+    "contact": "청년정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "구인정보 및 구직정보 제공 및 구인기업과 구직자 취업알선",
+      "application": "방문상담 및 전화상담(041-568-9002~6)",
+      "contact": "청년정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년정책-서포터즈",
+    "title": "청년정책 서포터즈",
+    "category": "청년",
+    "source": "온통청년 API",
+    "agency": "지역경제과",
+    "region": null,
+    "amount": "청년정책에 대한 의견 및 방안 제시 등 시정에 참여",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년정책 서포터즈",
+      "청년",
+      "지역경제과",
+      "모집중",
+      "청년정책에",
+      "대한",
+      "의견",
+      "및",
+      "방안",
+      "제시",
+      "등",
+      "시정에",
+      "확인필요"
+    ],
+    "summary": "청년정책에 대한 의견 및 방안 제시 등 시정에 참여",
+    "audience": "해당없음",
+    "benefits": [
+      "청년정책에 대한 의견 및 방안 제시 등 시정에 참여"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "이메일 및 현장 접수",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-10/view?bizId=A20260406LC000000000003191",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-10/view?bizId=A20260406LC000000000003191",
+    "contact": "지역경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "청년정책에 대한 의견 및 방안 제시 등 시정에 참여",
+      "application": "이메일 및 현장 접수",
+      "contact": "지역경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년창업농-디딤돌-사업",
+    "title": "청년창업농 디딤돌 사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "농촌진흥과",
+    "region": null,
+    "amount": "청년농업인 영농․정착 지원금",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년창업농 디딤돌 사업",
+      "고용",
+      "농촌진흥과",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "청년농업인",
+      "영농․정착",
+      "지원금"
+    ],
+    "summary": "농촌진흥과에서 청년농업인의 영농 정착을 돕기 위해 제공하는 지원 정책입니다. 지원 조건과 신청기간은 공식 공고에서 확인하세요.",
+    "audience": "해당없음",
+    "benefits": [
+      "청년농업인 영농․정착 지원금"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "당진시 농업기술센터 방문",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-07/view?bizId=A20260406LC000000000003189",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-07/view?bizId=A20260406LC000000000003189",
+    "contact": "농업기술센터",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "청년농업인 영농․정착 지원금",
+      "application": "당진시 농업기술센터 방문",
+      "contact": "농업기술센터"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년정책위원회",
+    "title": "청년정책위원회",
+    "category": "청년",
+    "source": "온통청년 API",
+    "agency": "지역경제과",
+    "region": null,
+    "amount": "청년정책의 논의를 위한 위원회 운영",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년정책위원회",
+      "청년",
+      "지역경제과",
+      "모집중",
+      "청년정책의",
+      "논의를",
+      "위한",
+      "위원회",
+      "운영",
+      "확인필요"
+    ],
+    "summary": "지역경제과에서 청년정책 논의와 의견 수렴을 위해 운영하는 위원회 관련 정책입니다. 참여 조건은 공식 안내를 확인하세요.",
+    "audience": "제한없음",
+    "benefits": [
+      "청년정책의 논의를 위한 위원회 운영"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "이메일 및 현장 접수",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-11/view?bizId=A20260401LC000000000003128",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-11/view?bizId=A20260401LC000000000003128",
+    "contact": "지역경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "제한없음",
+      "benefit": "청년정책의 논의를 위한 위원회 운영",
+      "application": "이메일 및 현장 접수",
+      "contact": "지역경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년창업농-임대형-스마트팜-운영",
+    "title": "청년창업농 임대형 스마트팜 운영",
+    "category": "주거",
+    "source": "온통청년 API",
+    "agency": "농업기술과",
+    "region": null,
+    "amount": "❍ 영농 경험이 부족한 청년에게 스마트팜을 대부하여 시설 운영 및 재배기술 습득과 창업 기반 제공 ❍ 교육·실습 중심의 스마트팜 운영으로 청년농업인의 재배 역량을 단계적 향상 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년창업농 임대형 스마트팜 운영",
+      "주거",
+      "농업기술과",
+      "모집중",
+      "청년",
+      "소상공인",
+      "❍",
+      "영농",
+      "경험이",
+      "부족한",
+      "청년에게",
+      "스마트팜을",
+      "대부하여",
+      "시설"
+    ],
+    "summary": "❍ 영농 경험이 부족한 청년에게 스마트팜을 대부하여 시설 운영 및 재배기술 습득과 창업 기반 제공 ❍ 교육·실습 중심의 스마트팜 운영으로 청년농업인의 재배 역량을 단계적 향상 지원",
+    "audience": "해당없음",
+    "benefits": [
+      "❍ 영농 경험이 부족한 청년에게 스마트팜을 대부하여 시설 운영 및 재배기술 습득과 창업 기반 제공 ❍ 교육·실습 중심의 스마트팜 운영으로 청년농업인의 재배 역량을 단계적 향상 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "서류 지참 후 방문신청",
+    "officialUrl": "https://www.dangjin.go.kr/atc.do",
+    "officialSourceUrl": "https://www.dangjin.go.kr/atc.do",
+    "contact": "농업기술센터",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "❍ 영농 경험이 부족한 청년에게 스마트팜을 대부하여 시설 운영 및 재배기술 습득과 창업 기반 제공 ❍ 교육·실습 중심의 스마트팜 운영으로 청년농업인의 재배 역량을 단계적 향상 지원",
+      "application": "서류 지참 후 방문신청",
+      "contact": "농업기술센터"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년-창업농-주거지원-사업",
+    "title": "청년 창업농 주거지원 사업",
+    "category": "주거",
+    "source": "온통청년 API",
+    "agency": "농업정책과",
+    "region": null,
+    "amount": "스마트팜 청년농 주거비 경감으로 당진시에 안정적 정착 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년 창업농 주거지원 사업",
+      "주거",
+      "농업정책과",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "스마트팜",
+      "청년농",
+      "주거비",
+      "경감으로",
+      "당진시에",
+      "안정적",
+      "정착",
+      "지원"
+    ],
+    "summary": "스마트팜 청년농 주거비 경감으로 당진시에 안정적 정착 지원",
+    "audience": "해당없음",
+    "benefits": [
+      "스마트팜 청년농 주거비 경감으로 당진시에 안정적 정착 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "개별신청(신청서 및 기타첨부서류",
+    "officialUrl": "https://dangjin.go.kr",
+    "officialSourceUrl": "https://dangjin.go.kr",
+    "contact": "농업정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "스마트팜 청년농 주거비 경감으로 당진시에 안정적 정착 지원",
+      "application": "개별신청(신청서 및 기타첨부서류",
+      "contact": "농업정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년-취업지원-프로그램-운영",
+    "title": "청년 취업지원 프로그램 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "지역경제과",
+    "region": null,
+    "amount": "지역 기업 수요 맞춤 인재 육성으로 취업시장 경쟁력 확보",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년 취업지원 프로그램 운영",
+      "고용",
+      "지역경제과",
+      "상시",
+      "청년",
+      "구직자",
+      "지역",
+      "기업",
+      "수요",
+      "맞춤",
+      "인재",
+      "육성으로",
+      "취업시장",
+      "경쟁력"
+    ],
+    "summary": "지역 기업 수요 맞춤 인재 육성으로 취업시장 경쟁력 확보",
+    "audience": "해당없음",
+    "benefits": [
+      "지역 기업 수요 맞춤 인재 육성으로 취업시장 경쟁력 확보"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "수시",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260406LC000000000003186",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260406LC000000000003186",
+    "contact": "지역경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "지역 기업 수요 맞춤 인재 육성으로 취업시장 경쟁력 확보",
+      "application": "수시",
+      "contact": "지역경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년-취-창업-활성화-지원-사업",
+    "title": "청년 취·창업 활성화 지원 사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "지역경제과",
+    "region": null,
+    "amount": "청년의 취업 및 창업을 위한 교육 프로그램 등 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년 취·창업 활성화 지원 사업",
+      "고용",
+      "지역경제과",
+      "확인필요",
+      "청년",
+      "구직자",
+      "소상공인",
+      "청년의",
+      "취업",
+      "및",
+      "창업을",
+      "위한",
+      "교육",
+      "프로그램"
+    ],
+    "summary": "청년의 취업 및 창업을 위한 교육 프로그램 등 제공",
+    "audience": "해당없음",
+    "benefits": [
+      "청년의 취업 및 창업을 위한 교육 프로그램 등 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "구글 폼 등 온라인 신청",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260406LC000000000003180",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260406LC000000000003180",
+    "contact": "지역경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "청년의 취업 및 창업을 위한 교육 프로그램 등 제공",
+      "application": "구글 폼 등 온라인 신청",
+      "contact": "지역경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년-셰어하우스-운영",
+    "title": "청년 셰어하우스 운영",
+    "category": "주거",
+    "source": "온통청년 API",
+    "agency": "지역경제과",
+    "region": null,
+    "amount": "무주택 청년타운 관외 입주자 및 스마트팜 청년창업농에 주거 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년 셰어하우스 운영",
+      "주거",
+      "지역경제과",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "무주택",
+      "청년타운",
+      "관외",
+      "입주자",
+      "및",
+      "스마트팜",
+      "청년창업농에"
+    ],
+    "summary": "무주택 청년타운 관외 입주자 및 스마트팜 청년창업농에 주거 지원",
+    "audience": "해당없음",
+    "benefits": [
+      "무주택 청년타운 관외 입주자 및 스마트팜 청년창업농에 주거 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "입주신청서 제출",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-05/view?bizId=A20260406LC000000000003187",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-05/view?bizId=A20260406LC000000000003187",
+    "contact": "지역경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "무주택 청년타운 관외 입주자 및 스마트팜 청년창업농에 주거 지원",
+      "application": "입주신청서 제출",
+      "contact": "지역경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년농업인-육성-종합체계-구축",
+    "title": "청년농업인 육성 종합체계 구축",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "농촌진흥과",
+    "region": null,
+    "amount": "청년농업인 화합 행사 등 활동비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년농업인 육성 종합체계 구축",
+      "고용",
+      "농촌진흥과",
+      "확인필요",
+      "청년",
+      "청년농업인",
+      "화합",
+      "행사",
+      "등",
+      "활동비",
+      "지원"
+    ],
+    "summary": "농촌진흥과에서 청년농업인의 교류와 활동을 지원하기 위해 운영하는 사업입니다. 구체적인 지원 범위는 공식 공고에서 확인하세요.",
+    "audience": "해당없음",
+    "benefits": [
+      "청년농업인 화합 행사 등 활동비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "당진시 농업기술센터 방문",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-07/view?bizId=A20260406LC000000000003184",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-07/view?bizId=A20260406LC000000000003184",
+    "contact": "농업기술센터",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "청년농업인 화합 행사 등 활동비 지원",
+      "application": "당진시 농업기술센터 방문",
+      "contact": "농업기술센터"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년농업인-국제농업연수",
+    "title": "청년농업인 국제농업연수",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "농촌진흥과",
+    "region": null,
+    "amount": "국외 연수비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년농업인 국제농업연수",
+      "고용",
+      "농촌진흥과",
+      "확인필요",
+      "청년",
+      "국외",
+      "연수비",
+      "지원"
+    ],
+    "summary": "농촌진흥과에서 청년농업인의 국제농업 연수 참여를 지원하는 정책입니다. 지원 범위와 신청 조건은 공식 공고에서 확인하세요.",
+    "audience": "해당없음",
+    "benefits": [
+      "국외 연수비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "당진시 농업기술센터 방문",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-07/view?bizId=A20260406LC000000000003183",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-07/view?bizId=A20260406LC000000000003183",
+    "contact": "농업기술센터",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "국외 연수비 지원",
+      "application": "당진시 농업기술센터 방문",
+      "contact": "농업기술센터"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년농업인-후원결연-멘토링-지원-시범",
+    "title": "청년농업인 후원결연 멘토링 지원 시범",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "농촌진흥과",
+    "region": null,
+    "amount": "현장 실습교육비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년농업인 후원결연 멘토링 지원 시범",
+      "고용",
+      "농촌진흥과",
+      "확인필요",
+      "청년",
+      "현장",
+      "실습교육비",
+      "지원"
+    ],
+    "summary": "농촌진흥과에서 청년농업인의 현장 실습과 멘토링을 돕기 위해 교육비를 지원하는 사업입니다. 세부 기준은 공식 공고를 확인하세요.",
+    "audience": "해당없음",
+    "benefits": [
+      "현장 실습교육비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "당진시 농업기술센터 방문",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-07/view?bizId=A20260406LC000000000003182",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-07/view?bizId=A20260406LC000000000003182",
+    "contact": "농업기술센터",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "현장 실습교육비 지원",
+      "application": "당진시 농업기술센터 방문",
+      "contact": "농업기술센터"
+    }
+  },
+  {
+    "slug": "ontong-youth-창의융합형-인재육성-사업",
+    "title": "창의융합형 인재육성 사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "지역경제과",
+    "region": null,
+    "amount": "4차 산업혁명에 발맞춘 첨단 장비 및 미디어 인재 육성",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "창의융합형 인재육성 사업",
+      "고용",
+      "지역경제과",
+      "확인필요",
+      "청년",
+      "4차",
+      "산업혁명에",
+      "발맞춘",
+      "첨단",
+      "장비",
+      "및",
+      "미디어",
+      "인재"
+    ],
+    "summary": "4차 산업혁명에 발맞춘 첨단 장비 및 미디어 인재 육성",
+    "audience": "프로그램 별도 확인",
+    "benefits": [
+      "4차 산업혁명에 발맞춘 첨단 장비 및 미디어 인재 육성"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온라인, 오프라인 신청",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260406LC000000000003181",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260406LC000000000003181",
+    "contact": "지역경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "프로그램 별도 확인",
+      "benefit": "4차 산업혁명에 발맞춘 첨단 장비 및 미디어 인재 육성",
+      "application": "온라인, 오프라인 신청",
+      "contact": "지역경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년창업가-입주공간-제공",
+    "title": "청년창업가 입주공간 제공",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "지역경제과",
+    "region": null,
+    "amount": "청년 창업가에 사무공간 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년창업가 입주공간 제공",
+      "고용",
+      "지역경제과",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "창업가에",
+      "사무공간",
+      "지원"
+    ],
+    "summary": "지역경제과에서 청년 창업가의 초기 활동을 돕기 위해 입주공간을 제공하는 지원 정책입니다. 입주 조건은 공식 안내를 확인하세요.",
+    "audience": "해당없음",
+    "benefits": [
+      "청년 창업가에 사무공간 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "담당자 이메일 접수",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-03/view?bizId=A20260403LC000000000003173",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-03/view?bizId=A20260403LC000000000003173",
+    "contact": "지역경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "청년 창업가에 사무공간 지원",
+      "application": "담당자 이메일 접수",
+      "contact": "지역경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년도전지원사업",
+    "title": "청년도전지원사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "지역경제과",
+    "region": null,
+    "amount": "구직단념청년 등을 대상으로 맞춤형 프로그램 제공하여 청년의 구직의욕 고취, 노동시장 참여 촉진 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년도전지원사업",
+      "고용",
+      "지역경제과",
+      "확인필요",
+      "청년",
+      "구직자",
+      "구직단념청년",
+      "등을",
+      "대상으로",
+      "맞춤형",
+      "프로그램",
+      "제공하여",
+      "청년의",
+      "구직의욕"
+    ],
+    "summary": "구직단념청년 등을 대상으로 맞춤형 프로그램 제공하여 청년의 구직의욕 고취, 노동시장 참여 촉진 지원",
+    "audience": "해당없음",
+    "benefits": [
+      "구직단념청년 등을 대상으로 맞춤형 프로그램 제공하여 청년의 구직의욕 고취, 노동시장 참여 촉진 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "고용24 홈페이지를 통한 온러인 등 신청",
+    "officialUrl": "https://www.dangjin.go.kr/narae.do",
+    "officialSourceUrl": "https://www.dangjin.go.kr/narae.do",
+    "contact": "지역경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "구직단념청년 등을 대상으로 맞춤형 프로그램 제공하여 청년의 구직의욕 고취, 노동시장 참여 촉진 지원",
+      "application": "고용24 홈페이지를 통한 온러인 등 신청",
+      "contact": "지역경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-아산시-지역우수인재-고용촉진사업",
+    "title": "아산시 지역우수인재 고용촉진사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "일자리경제과",
+    "region": null,
+    "amount": "협약 체결 후, 지역 청년 채용일로부터 6개월 이상 고용 유지 중인 기업에 청년 1인당 360만원 고용인센티브 지급(매년 최대 2명)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "아산시 지역우수인재 고용촉진사업",
+      "고용",
+      "일자리경제과",
+      "확인필요",
+      "청년",
+      "구직자",
+      "협약",
+      "체결",
+      "후,",
+      "지역",
+      "채용일로부터",
+      "6개월",
+      "이상"
+    ],
+    "summary": "협약 체결 후, 지역 청년 채용일로부터 6개월 이상 고용 유지 중인 기업에 청년 1인당 360만원 고용인센티브 지급(매년 최대 2명)",
+    "audience": "해당없음",
+    "benefits": [
+      "협약 체결 후, 지역 청년 채용일로부터 6개월 이상 고용 유지 중인 기업에 청년 1인당 360만원 고용인센티브 지급(매년 최대 2명)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "전자우편",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A20260403LC000000000003176",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A20260403LC000000000003176",
+    "contact": "일자리경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "협약 체결 후, 지역 청년 채용일로부터 6개월 이상 고용 유지 중인 기업에 청년 1인당 360만원 고용인센티브 지급(매년 최대 2명)",
+      "application": "전자우편",
+      "contact": "일자리경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-도민리포터-운영-청년-분야",
+    "title": "도민리포터 운영(청년 분야)",
+    "category": "청년",
+    "source": "온통청년 API",
+    "agency": "디지털소통담당관",
+    "region": null,
+    "amount": "청년들의 참여 활동으로, 지역 콘텐츠 발굴과 주요 정책 홍보",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "도민리포터 운영(청년 분야)",
+      "청년",
+      "디지털소통담당관",
+      "확인필요",
+      "청년들의",
+      "참여",
+      "활동으로,",
+      "지역",
+      "콘텐츠",
+      "발굴과",
+      "주요",
+      "정책"
+    ],
+    "summary": "청년들의 참여 활동으로, 지역 콘텐츠 발굴과 주요 정책 홍보",
+    "audience": "해당 없음",
+    "benefits": [
+      "청년들의 참여 활동으로, 지역 콘텐츠 발굴과 주요 정책 홍보"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "누리집 회원가입 -> 도민리포터 신청 -> 양식 메일발송",
+    "officialUrl": "https://www.chungnam.go.kr/cnportal/main/contents.do?menuNo=500163",
+    "officialSourceUrl": "https://www.chungnam.go.kr/cnportal/main/contents.do?menuNo=500163",
+    "contact": "디지털소통담당관",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "청년들의 참여 활동으로, 지역 콘텐츠 발굴과 주요 정책 홍보",
+      "application": "누리집 회원가입 -> 도민리포터 신청 -> 양식 메일발송",
+      "contact": "디지털소통담당관"
+    }
+  },
+  {
+    "slug": "ontong-youth-컨설턴트-파견-및-취업지원프로그램-운영",
+    "title": "컨설턴트 파견 및 취업지원프로그램 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "취업지원처",
+    "region": "충남",
+    "amount": "충남도립대학교 본교 재학생(프로그램에 따라 졸업생 포함) 대상 컨설팅, 취업역량 강화 프로그램 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "컨설턴트 파견 및 취업지원프로그램 운영",
+      "고용",
+      "충남",
+      "취업지원처",
+      "확인필요",
+      "청년",
+      "구직자",
+      "충남도립대학교",
+      "본교",
+      "재학생(프로그램에",
+      "따라",
+      "졸업생",
+      "포함)",
+      "대상"
+    ],
+    "summary": "충남도립대학교 본교 재학생(프로그램에 따라 졸업생 포함) 대상 컨설팅, 취업역량 강화 프로그램 제공",
+    "audience": "해당없음",
+    "benefits": [
+      "충남도립대학교 본교 재학생(프로그램에 따라 졸업생 포함) 대상 컨설팅, 취업역량 강화 프로그램 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260324CT000000000003067",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260324CT000000000003067",
+    "contact": "취업지원처",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "충남도립대학교 본교 재학생(프로그램에 따라 졸업생 포함) 대상 컨설팅, 취업역량 강화 프로그램 제공",
+      "application": "별도 문의",
+      "contact": "취업지원처"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년-정신건강-관리-협력-홍보체계-구축-운영",
+    "title": "청년 정신건강 관리 협력·홍보체계 구축·운영",
+    "category": "보건의료",
+    "source": "온통청년 API",
+    "agency": "건강증진식품과",
+    "region": null,
+    "amount": "정신질환에 대한 인식 개선 홍보사업을 통해 서비스 접근성 제고 및 지역사회 정신건강 관계기관 협력체계 구축",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년 정신건강 관리 협력·홍보체계 구축·운영",
+      "보건의료",
+      "건강증진식품과",
+      "확인필요",
+      "청년",
+      "정신질환에",
+      "대한",
+      "인식",
+      "개선",
+      "홍보사업을",
+      "통해",
+      "서비스",
+      "접근성"
+    ],
+    "summary": "정신질환에 대한 인식 개선 홍보사업을 통해 서비스 접근성 제고 및 지역사회 정신건강 관계기관 협력체계 구축",
+    "audience": "해당 없음",
+    "benefits": [
+      "정신질환에 대한 인식 개선 홍보사업을 통해 서비스 접근성 제고 및 지역사회 정신건강 관계기관 협력체계 구축"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260310CT000000000003066",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260310CT000000000003066",
+    "contact": "건강증진식품과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "정신질환에 대한 인식 개선 홍보사업을 통해 서비스 접근성 제고 및 지역사회 정신건강 관계기관 협력체계 구축",
+      "application": "별도 문의",
+      "contact": "건강증진식품과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년-자살예방-조기검진-및-심리지원",
+    "title": "청년 자살예방 조기검진 및 심리지원",
+    "category": "보건의료",
+    "source": "온통청년 API",
+    "agency": "건강증진식품과",
+    "region": null,
+    "amount": "도내 청년 대상 자살예방 조기검진 통한 심리지원 및 자원 연계",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년 자살예방 조기검진 및 심리지원",
+      "보건의료",
+      "건강증진식품과",
+      "확인필요",
+      "청년",
+      "도내",
+      "대상",
+      "자살예방",
+      "조기검진",
+      "통한",
+      "심리지원",
+      "및"
+    ],
+    "summary": "도내 청년 대상 자살예방 조기검진 통한 심리지원 및 자원 연계",
+    "audience": "해당 없음",
+    "benefits": [
+      "도내 청년 대상 자살예방 조기검진 통한 심리지원 및 자원 연계"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260309CT000000000003050",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260309CT000000000003050",
+    "contact": "건강증진식품과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "도내 청년 대상 자살예방 조기검진 통한 심리지원 및 자원 연계",
+      "application": "별도 문의",
+      "contact": "건강증진식품과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년-등-생애주기별-마음건강사업",
+    "title": "청년 등 생애주기별 마음건강사업",
+    "category": "보건의료",
+    "source": "온통청년 API",
+    "agency": "건강증진식품과",
+    "region": null,
+    "amount": "정신건강 고위험군 청년을 조기발견·개입하여 청년 정신건강 개선 및 청년 정신질환의 적절한 치료·관리를 통해 회복지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년 등 생애주기별 마음건강사업",
+      "보건의료",
+      "건강증진식품과",
+      "확인필요",
+      "청년",
+      "정신건강",
+      "고위험군",
+      "청년을",
+      "조기발견·개입하여",
+      "개선",
+      "및"
+    ],
+    "summary": "정신건강 고위험군 청년을 조기발견·개입하여 청년 정신건강 개선 및 청년 정신질환의 적절한 치료·관리를 통해 회복지원",
+    "audience": "해당 없음",
+    "benefits": [
+      "정신건강 고위험군 청년을 조기발견·개입하여 청년 정신건강 개선 및 청년 정신질환의 적절한 치료·관리를 통해 회복지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20250416CT000000000002241",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20250416CT000000000002241",
+    "contact": "건강증진식품과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "정신건강 고위험군 청년을 조기발견·개입하여 청년 정신건강 개선 및 청년 정신질환의 적절한 치료·관리를 통해 회복지원",
+      "application": "별도 문의",
+      "contact": "건강증진식품과"
+    }
+  },
+  {
+    "slug": "ontong-youth-지역기반형-콘텐츠코리아랩-운영",
+    "title": "지역기반형 콘텐츠코리아랩 운영",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "문화정책과",
+    "region": "충남",
+    "amount": "충남도 내 콘텐츠 창작문화 확산 및 지역 신규 창·제작자 발굴 및 육성을 통한 지역 콘텐츠 전문인력 양성, 콘텐츠 기업 육성",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "지역기반형 콘텐츠코리아랩 운영",
+      "문화생활",
+      "충남",
+      "문화정책과",
+      "확인필요",
+      "청년",
+      "충남도",
+      "내",
+      "콘텐츠",
+      "창작문화",
+      "확산",
+      "및",
+      "지역",
+      "신규"
+    ],
+    "summary": "충남도 내 콘텐츠 창작문화 확산 및 지역 신규 창·제작자 발굴 및 육성을 통한 지역 콘텐츠 전문인력 양성, 콘텐츠 기업 육성",
+    "audience": "해당 없음",
+    "benefits": [
+      "충남도 내 콘텐츠 창작문화 확산 및 지역 신규 창·제작자 발굴 및 육성을 통한 지역 콘텐츠 전문인력 양성, 콘텐츠 기업 육성"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-09/view?bizId=A20260309CT000000000003061",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-09/view?bizId=A20260309CT000000000003061",
+    "contact": "재단법인충남콘텐츠진흥원",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "충남도 내 콘텐츠 창작문화 확산 및 지역 신규 창·제작자 발굴 및 육성을 통한 지역 콘텐츠 전문인력 양성, 콘텐츠 기업 육성",
+      "application": "별도 문의",
+      "contact": "재단법인충남콘텐츠진흥원"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년농업인-지원정책-홍보",
+    "title": "청년농업인 지원정책 홍보",
+    "category": "농림어업",
+    "source": "온통청년 API",
+    "agency": "청년정책관",
+    "region": null,
+    "amount": "청년농 주요 지원 정책사업 홍보 및 우수청년농 성공사례 공유로 ‘청년이 살고 싶은 농촌’ 분위기 조성",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년농업인 지원정책 홍보",
+      "농림어업",
+      "청년정책관",
+      "확인필요",
+      "청년",
+      "청년농",
+      "주요",
+      "지원",
+      "정책사업",
+      "홍보",
+      "및",
+      "우수청년농",
+      "성공사례"
+    ],
+    "summary": "청년농 주요 지원 정책사업 홍보 및 우수청년농 성공사례 공유로 ‘청년이 살고 싶은 농촌’ 분위기 조성",
+    "audience": "별도 문의",
+    "benefits": [
+      "청년농 주요 지원 정책사업 홍보 및 우수청년농 성공사례 공유로 ‘청년이 살고 싶은 농촌’ 분위기 조성"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-08/view?bizId=A20260309CT000000000003005",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-08/view?bizId=A20260309CT000000000003005",
+    "contact": "청년정책관",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "별도 문의",
+      "benefit": "청년농 주요 지원 정책사업 홍보 및 우수청년농 성공사례 공유로 ‘청년이 살고 싶은 농촌’ 분위기 조성",
+      "application": "별도 문의",
+      "contact": "청년정책관"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년농-미디어커머스-지원",
+    "title": "청년농 미디어커머스 지원",
+    "category": "청년",
+    "source": "온통청년 API",
+    "agency": "농식품유통과",
+    "region": null,
+    "amount": "농산물 유통환경 변화에 대응하고, 청년농의 미디어커머스 채널을 활용한 온라인 직거래 판로 확대",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년농 미디어커머스 지원",
+      "청년",
+      "농식품유통과",
+      "확인필요",
+      "농산물",
+      "유통환경",
+      "변화에",
+      "대응하고,",
+      "청년농의",
+      "미디어커머스",
+      "채널을",
+      "활용한"
+    ],
+    "summary": "농산물 유통환경 변화에 대응하고, 청년농의 미디어커머스 채널을 활용한 온라인 직거래 판로 확대",
+    "audience": "별도문의",
+    "benefits": [
+      "농산물 유통환경 변화에 대응하고, 청년농의 미디어커머스 채널을 활용한 온라인 직거래 판로 확대"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-07/view?bizId=A20260309CT000000000003009",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-07/view?bizId=A20260309CT000000000003009",
+    "contact": "농식품유통과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "별도문의",
+      "benefit": "농산물 유통환경 변화에 대응하고, 청년농의 미디어커머스 채널을 활용한 온라인 직거래 판로 확대",
+      "application": "별도문의",
+      "contact": "농식품유통과"
+    }
+  },
+  {
+    "slug": "ontong-youth-전세보증금반환보증-보증료-지원",
+    "title": "전세보증금반환보증 보증료 지원",
+    "category": "주거",
+    "source": "온통청년 API",
+    "agency": "주택도시과",
+    "region": null,
+    "amount": "전세사기, 역전세 현상 등 임대차 계약 종료 이후에도 보증금을 반환받지 못하는 저소득층의 피해가 증가함에 따라, 전세보증금반환보증 가입 유도 및 전세사기 피해 예방",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 가구/부모",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "전세보증금반환보증 보증료 지원",
+      "주거",
+      "주택도시과",
+      "확인필요",
+      "청년",
+      "가구/부모",
+      "전세사기,",
+      "역전세",
+      "현상",
+      "등",
+      "임대차",
+      "계약",
+      "종료",
+      "이후에도"
+    ],
+    "summary": "전세사기, 역전세 현상 등 임대차 계약 종료 이후에도 보증금을 반환받지 못하는 저소득층의 피해가 증가함에 따라, 전세보증금반환보증 가입 유도 및 전세사기 피해 예방",
+    "audience": "연소득 (청년) 5천만원, (청년 외) 6천만원, (신혼부부) 7.5천만원 이하",
+    "benefits": [
+      "전세사기, 역전세 현상 등 임대차 계약 종료 이후에도 보증금을 반환받지 못하는 저소득층의 피해가 증가함에 따라, 전세보증금반환보증 가입 유도 및 전세사기 피해 예방"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "(신청인)읍면동 행정복지센터 내방 신청 또는 온라인 신청(안심전세포털) → (시군) 지원여부 조사 및 지원결정",
+    "officialUrl": "https://plus.gov.kr",
+    "officialSourceUrl": "https://plus.gov.kr",
+    "contact": "주택도시과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "연소득 (청년) 5천만원, (청년 외) 6천만원, (신혼부부) 7.5천만원 이하",
+      "benefit": "전세사기, 역전세 현상 등 임대차 계약 종료 이후에도 보증금을 반환받지 못하는 저소득층의 피해가 증가함에 따라, 전세보증금반환보증 가입 유도 및 전세사기 피해 예방",
+      "application": "(신청인)읍면동 행정복지센터 내방 신청 또는 온라인 신청(안심전세포털) → (시군) 지원여부 조사 및 지원결정",
+      "contact": "주택도시과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년농업인-창농-신성장-활동",
+    "title": "청년농업인 창농 신성장 활동",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "지도정책과",
+    "region": "충남",
+    "amount": "- 농고·농대 재학·졸업생 창농 교육 - 충남 우수 청년농업인 선발 운영",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년농업인 창농 신성장 활동",
+      "교육",
+      "충남",
+      "지도정책과",
+      "모집중",
+      "청년",
+      "-",
+      "농고·농대",
+      "재학·졸업생",
+      "창농",
+      "우수",
+      "확인필요"
+    ],
+    "summary": "- 농고·농대 재학·졸업생 창농 교육 - 충남 우수 청년농업인 선발 운영",
+    "audience": "- 만 18세 이상~만 45세 미만 청년농업인(충청남도 거주) - 시군 농업계고등학교",
+    "benefits": [
+      "- 농고·농대 재학·졸업생 창농 교육 - 충남 우수 청년농업인 선발 운영"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청(신청자)→접수(시·군)→대상자 결정(시·군)→추진",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003011",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003011",
+    "contact": "지도정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "- 만 18세 이상~만 45세 미만 청년농업인(충청남도 거주) - 시군 농업계고등학교",
+      "benefit": "- 농고·농대 재학·졸업생 창농 교육 - 충남 우수 청년농업인 선발 운영",
+      "application": "신청(신청자)→접수(시·군)→대상자 결정(시·군)→추진",
+      "contact": "지도정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-그린스타트업타운-운영",
+    "title": "그린스타트업타운 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "AI육성과",
+    "region": null,
+    "amount": "신성장·친환경·ICT 분야 스타트업 발굴/육성사업",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "그린스타트업타운 운영",
+      "고용",
+      "AI육성과",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "신성장·친환경·ICT",
+      "분야",
+      "스타트업",
+      "발굴/육성사업"
+    ],
+    "summary": "신성장·친환경·ICT 분야 스타트업 발굴/육성사업",
+    "audience": "그린스타트업타운 입주 후 지원사업 신청 가능",
+    "benefits": [
+      "신성장·친환경·ICT 분야 스타트업 발굴/육성사업"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "사업별 모집공고 확인 → 신청/접수 → 선정평가 → 최종선정 대상자별 협약체결 후 지원",
+    "officialUrl": "https://www.ccon.kr/",
+    "officialSourceUrl": "https://www.ccon.kr/",
+    "contact": "재단법인충남콘텐츠진흥원",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "그린스타트업타운 입주 후 지원사업 신청 가능",
+      "benefit": "신성장·친환경·ICT 분야 스타트업 발굴/육성사업",
+      "application": "사업별 모집공고 확인 → 신청/접수 → 선정평가 → 최종선정 대상자별 협약체결 후 지원",
+      "contact": "재단법인충남콘텐츠진흥원"
+    }
+  },
+  {
+    "slug": "ontong-youth-창업보육센터-및-기업지원",
+    "title": "창업보육센터 및 기업지원",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "AI육성과",
+    "region": null,
+    "amount": "창업보육센터 내 입주기업 운영지원, 창업경진대회를 통한 사업화 자금 지원 등",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "창업보육센터 및 기업지원",
+      "고용",
+      "AI육성과",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "창업보육센터",
+      "내",
+      "입주기업",
+      "운영지원,",
+      "창업경진대회를",
+      "통한",
+      "사업화",
+      "자금"
+    ],
+    "summary": "창업보육센터 내 입주기업 운영지원, 창업경진대회를 통한 사업화 자금 지원 등",
+    "audience": "예비창업자 및 5년미만 창업기업",
+    "benefits": [
+      "창업보육센터 내 입주기업 운영지원, 창업경진대회를 통한 사업화 자금 지원 등"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "각 대학별 보육센터 개별 진행",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-03/view?bizId=A20260309CT000000000003013",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-03/view?bizId=A20260309CT000000000003013",
+    "contact": "(재)충남테크노파크",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "예비창업자 및 5년미만 창업기업",
+      "benefit": "창업보육센터 내 입주기업 운영지원, 창업경진대회를 통한 사업화 자금 지원 등",
+      "application": "각 대학별 보육센터 개별 진행",
+      "contact": "(재)충남테크노파크"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년친화도시-확산",
+    "title": "청년친화도시 확산",
+    "category": "청년",
+    "source": "온통청년 API",
+    "agency": "청년정책관",
+    "region": null,
+    "amount": "청년의 참여를 바탕으로 청년이 살기 좋은 환경과 혁신 성장 동력을 갖춘 ‘청년친화도시’를 조성하고 타 지역으로 확산",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년친화도시 확산",
+      "청년",
+      "청년정책관",
+      "확인필요",
+      "청년의",
+      "참여를",
+      "바탕으로",
+      "청년이",
+      "살기",
+      "좋은",
+      "환경과",
+      "혁신"
+    ],
+    "summary": "청년의 참여를 바탕으로 청년이 살기 좋은 환경과 혁신 성장 동력을 갖춘 ‘청년친화도시’를 조성하고 타 지역으로 확산",
+    "audience": "별도 문의",
+    "benefits": [
+      "청년의 참여를 바탕으로 청년이 살기 좋은 환경과 혁신 성장 동력을 갖춘 ‘청년친화도시’를 조성하고 타 지역으로 확산"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-08/view?bizId=A20260309CT000000000003012",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-08/view?bizId=A20260309CT000000000003012",
+    "contact": "청년정책관",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "별도 문의",
+      "benefit": "청년의 참여를 바탕으로 청년이 살기 좋은 환경과 혁신 성장 동력을 갖춘 ‘청년친화도시’를 조성하고 타 지역으로 확산",
+      "application": "별도 문의",
+      "contact": "청년정책관"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년내일저축계좌-지원",
+    "title": "청년내일저축계좌 지원",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "복지보훈정책과",
+    "region": null,
+    "amount": "- 저소득 청년이 사회에 안착할 수 있도록 자산형성 지원 및 자립 촉진",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년내일저축계좌 지원",
+      "문화생활",
+      "복지보훈정책과",
+      "확인필요",
+      "청년",
+      "-",
+      "저소득",
+      "청년이",
+      "사회에",
+      "안착할",
+      "수",
+      "있도록",
+      "자산형성"
+    ],
+    "summary": "- 저소득 청년이 사회에 안착할 수 있도록 자산형성 지원 및 자립 촉진",
+    "audience": "해당 없음",
+    "benefits": [
+      "- 저소득 청년이 사회에 안착할 수 있도록 자산형성 지원 및 자립 촉진"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260309CT000000000003015",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260309CT000000000003015",
+    "contact": "복지보훈정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "- 저소득 청년이 사회에 안착할 수 있도록 자산형성 지원 및 자립 촉진",
+      "application": "별도 문의",
+      "contact": "복지보훈정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-충남-천안아산-강소연구개발특구-육성",
+    "title": "충남 천안아산 강소연구개발특구 육성",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "미래산업과",
+    "region": "충남",
+    "amount": "입주기관의 활발한 신기술 창출 및 사업화를 촉진할 수 있는 환경 조성으로, 특화분야(미래모빌리티 전장기술) 업종기업 중심 양질의 일자리 창출",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "충남 천안아산 강소연구개발특구 육성",
+      "고용",
+      "충남",
+      "미래산업과",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "입주기관의",
+      "활발한",
+      "신기술",
+      "창출",
+      "및",
+      "사업화를",
+      "촉진할"
+    ],
+    "summary": "입주기관의 활발한 신기술 창출 및 사업화를 촉진할 수 있는 환경 조성으로, 특화분야(미래모빌리티 전장기술) 업종기업 중심 양질의 일자리 창출",
+    "audience": "미래차 전장부품 중심 스타트업-스케일업 기업",
+    "benefits": [
+      "입주기관의 활발한 신기술 창출 및 사업화를 촉진할 수 있는 환경 조성으로, 특화분야(미래모빌리티 전장기술) 업종기업 중심 양질의 일자리 창출"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A20260309CT000000000003022",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A20260309CT000000000003022",
+    "contact": "청년정책관",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "미래차 전장부품 중심 스타트업-스케일업 기업",
+      "benefit": "입주기관의 활발한 신기술 창출 및 사업화를 촉진할 수 있는 환경 조성으로, 특화분야(미래모빌리티 전장기술) 업종기업 중심 양질의 일자리 창출",
+      "application": "별도 문의",
+      "contact": "청년정책관"
+    }
+  },
+  {
+    "slug": "ontong-youth-스마트팜-청년-창업-교육",
+    "title": "스마트팜 청년 창업 교육",
+    "category": "창업",
+    "source": "온통청년 API",
+    "agency": "스마트교육센터",
+    "region": null,
+    "amount": "- 스마트팜 청년 창업 입문교육 - 스마트팜 청년 창업 재배실습 교육 - 스마트팜 선도 농가 현장실습 교육",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "스마트팜 청년 창업 교육",
+      "창업",
+      "스마트교육센터",
+      "모집중",
+      "청년",
+      "소상공인",
+      "-",
+      "스마트팜",
+      "입문교육",
+      "확인필요"
+    ],
+    "summary": "- 스마트팜 청년 창업 입문교육 - 스마트팜 청년 창업 재배실습 교육 - 스마트팜 선도 농가 현장실습 교육",
+    "audience": "청년농업인 18세 이상~45세 미만",
+    "benefits": [
+      "- 스마트팜 청년 창업 입문교육 - 스마트팜 청년 창업 재배실습 교육 - 스마트팜 선도 농가 현장실습 교육"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청(신청자)→접수(시·군)→대상자 결정(도원)→추진",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003016",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003016",
+    "contact": "스마트교육센터",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "청년농업인 18세 이상~45세 미만",
+      "benefit": "- 스마트팜 청년 창업 입문교육 - 스마트팜 청년 창업 재배실습 교육 - 스마트팜 선도 농가 현장실습 교육",
+      "application": "신청(신청자)→접수(시·군)→대상자 결정(도원)→추진",
+      "contact": "스마트교육센터"
+    }
+  },
+  {
+    "slug": "ontong-youth-창업어가-멘토링",
+    "title": "창업어가 멘토링",
+    "category": "창업",
+    "source": "온통청년 API",
+    "agency": "수산자원연구소",
+    "region": null,
+    "amount": "창업어가와 후견인을 1:1 매칭하여, 후견인의 교육 및 지도에 필요한 비용 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "창업어가 멘토링",
+      "창업",
+      "수산자원연구소",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "창업어가와",
+      "후견인을",
+      "1:1",
+      "매칭하여,",
+      "후견인의",
+      "교육",
+      "및",
+      "지도에"
+    ],
+    "summary": "창업어가와 후견인을 1:1 매칭하여, 후견인의 교육 및 지도에 필요한 비용 지원",
+    "audience": "1. 창업어가 : 어업인 후계자로 선정된 지 3년 이내인 자, 귀어한 지 3년 이내인 자, 당해연도 귀어 창업자금 지원(예정)자 2. 후 견 인 : 우수경영인, 수산 신지식인, 수산 퇴직공무원, 대학교수 등 수산 분야 전문가로 어업 분야에 10년 이상 종사한 자",
+    "benefits": [
+      "창업어가와 후견인을 1:1 매칭하여, 후견인의 교육 및 지도에 필요한 비용 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-08/view?bizId=A20260309CT000000000003017",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-08/view?bizId=A20260309CT000000000003017",
+    "contact": "수산자원연구소",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "1. 창업어가 : 어업인 후계자로 선정된 지 3년 이내인 자, 귀어한 지 3년 이내인 자, 당해연도 귀어 창업자금 지원(예정)자 2. 후 견 인 : 우수경영인, 수산 신지식인, 수산 퇴직공무원, 대학교수 등 수산 분야 전문가로 어업 분야에 10년 이상 종사한 자",
+      "benefit": "창업어가와 후견인을 1:1 매칭하여, 후견인의 교육 및 지도에 필요한 비용 지원",
+      "application": "별도 문의",
+      "contact": "수산자원연구소"
+    }
+  },
+  {
+    "slug": "ontong-youth-자립지원-사업비",
+    "title": "자립지원 사업비",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "인구정책과",
+    "region": null,
+    "amount": "자립준비청년(보호종료아동)의 안정적인 사회 정착 도모",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "자립지원 사업비",
+      "문화생활",
+      "인구정책과",
+      "확인필요",
+      "청년",
+      "자립준비청년(보호종료아동)의",
+      "안정적인",
+      "사회",
+      "정착",
+      "도모"
+    ],
+    "summary": "자립준비청년(보호종료아동)의 안정적인 사회 정착 도모",
+    "audience": "보호 종료 5년 이내 자립준비청년",
+    "benefits": [
+      "자립준비청년(보호종료아동)의 안정적인 사회 정착 도모"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 안내",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260309CT000000000003018",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260309CT000000000003018",
+    "contact": "인구정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "보호 종료 5년 이내 자립준비청년",
+      "benefit": "자립준비청년(보호종료아동)의 안정적인 사회 정착 도모",
+      "application": "별도 안내",
+      "contact": "인구정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-첨단산업-인재양성-부트캠프",
+    "title": "첨단산업 인재양성 부트캠프",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "고등교육정책담당관",
+    "region": null,
+    "amount": "반도체·디스플레이 산업수요 맞춤형 전문인력 양성",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "첨단산업 인재양성 부트캠프",
+      "교육",
+      "고등교육정책담당관",
+      "확인필요",
+      "청년",
+      "반도체·디스플레이",
+      "산업수요",
+      "맞춤형",
+      "전문인력",
+      "양성"
+    ],
+    "summary": "반도체·디스플레이 산업수요 맞춤형 전문인력 양성",
+    "audience": "반도체·디스플레이 관련 공과계열 대학생 2~4학년 - 선문대(반도체) : 전자공학, 반도체소재공학, 스마트정보통신공학 - 순천향대(디스플레이) : 디스플레이신소재공학, 전자정보공학, 나노화학공학, 기계공학",
+    "benefits": [
+      "반도체·디스플레이 산업수요 맞춤형 전문인력 양성"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003021",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003021",
+    "contact": "고등교육정책담당관",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "반도체·디스플레이 관련 공과계열 대학생 2~4학년 - 선문대(반도체) : 전자공학, 반도체소재공학, 스마트정보통신공학 - 순천향대(디스플레이) : 디스플레이신소재공학, 전자정보공학, 나노화학공학, 기계공학",
+      "benefit": "반도체·디스플레이 산업수요 맞춤형 전문인력 양성",
+      "application": "별도 문의",
+      "contact": "고등교육정책담당관"
+    }
+  },
+  {
+    "slug": "ontong-youth-충청남도-친화형-pilot-프로그램-프로젝트-인턴십",
+    "title": "충청남도 친화형 PILOT 프로그램 (프로젝트 인턴십)",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "청년정책관",
+    "region": "충남",
+    "amount": "청년의 실무 능력을 강화하고 기업의 채용 가능성 제고",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "충청남도 친화형 PILOT 프로그램 (프로젝트 인턴십)",
+      "고용",
+      "충남",
+      "청년정책관",
+      "확인필요",
+      "청년",
+      "구직자",
+      "청년의",
+      "실무",
+      "능력을",
+      "강화하고",
+      "기업의",
+      "채용",
+      "가능성"
+    ],
+    "summary": "청년의 실무 능력을 강화하고 기업의 채용 가능성 제고",
+    "audience": "제한없음",
+    "benefits": [
+      "청년의 실무 능력을 강화하고 기업의 채용 가능성 제고"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003023",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003023",
+    "contact": "재단법인충남경제진흥원",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "제한없음",
+      "benefit": "청년의 실무 능력을 강화하고 기업의 채용 가능성 제고",
+      "application": "별도 문의",
+      "contact": "재단법인충남경제진흥원"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년수산인단체-역량강화-지원",
+    "title": "청년수산인단체 역량강화 지원",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "어촌산업과",
+    "region": "충남",
+    "amount": "청년수산인 역량강화 교육 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년수산인단체 역량강화 지원",
+      "교육",
+      "충남",
+      "어촌산업과",
+      "확인필요",
+      "청년",
+      "청년수산인",
+      "역량강화",
+      "지원"
+    ],
+    "summary": "어촌산업과에서 청년수산인의 역량 강화를 위해 교육을 지원하는 정책입니다. 대상과 신청 방법은 공식 공고에서 확인하세요.",
+    "audience": "만 18세 이상~만 45세 미만 청년수산인(충청남도 거주)",
+    "benefits": [
+      "청년수산인 역량강화 교육 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003025",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003025",
+    "contact": "어촌산업과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "만 18세 이상~만 45세 미만 청년수산인(충청남도 거주)",
+      "benefit": "청년수산인 역량강화 교육 지원",
+      "application": "별도 문의",
+      "contact": "어촌산업과"
+    }
+  },
+  {
+    "slug": "ontong-youth-반도체-특성화-대학",
+    "title": "반도체 특성화 대학",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "산업육성과",
+    "region": null,
+    "amount": "4년간(선정 연도 포함) 반도체 인재양성 및 R&D 자율 수행",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "반도체 특성화 대학",
+      "교육",
+      "산업육성과",
+      "확인필요",
+      "청년",
+      "4년간(선정",
+      "연도",
+      "포함)",
+      "반도체",
+      "인재양성",
+      "및",
+      "R&D",
+      "자율"
+    ],
+    "summary": "4년간(선정 연도 포함) 반도체 인재양성 및 R&D 자율 수행",
+    "audience": "도내 3개 대학(한기대, 호서대, 공주대) 반도체 관련 학과 재학생",
+    "benefits": [
+      "4년간(선정 연도 포함) 반도체 인재양성 및 R&D 자율 수행"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "교육부 공모사업 선정 → 도비 보조금 교부 → 사업 추진",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003029",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003029",
+    "contact": "산업육성과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "도내 3개 대학(한기대, 호서대, 공주대) 반도체 관련 학과 재학생",
+      "benefit": "4년간(선정 연도 포함) 반도체 인재양성 및 R&D 자율 수행",
+      "application": "교육부 공모사업 선정 → 도비 보조금 교부 → 사업 추진",
+      "contact": "산업육성과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년-브릿지-온",
+    "title": "청년 브릿지 온",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "청년정책관",
+    "region": null,
+    "amount": "취업에 어려움을 겪는 청년에 대한 일경험 등 고용지원서비스 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년 브릿지 온",
+      "고용",
+      "청년정책관",
+      "확인필요",
+      "청년",
+      "구직자",
+      "취업에",
+      "어려움을",
+      "겪는",
+      "청년에",
+      "대한",
+      "일경험",
+      "등",
+      "고용지원서비스"
+    ],
+    "summary": "취업에 어려움을 겪는 청년에 대한 일경험 등 고용지원서비스 제공",
+    "audience": "제한 없음",
+    "benefits": [
+      "취업에 어려움을 겪는 청년에 대한 일경험 등 고용지원서비스 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003027",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003027",
+    "contact": "재단법인충남경제진흥원",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "제한 없음",
+      "benefit": "취업에 어려움을 겪는 청년에 대한 일경험 등 고용지원서비스 제공",
+      "application": "별도 문의",
+      "contact": "재단법인충남경제진흥원"
+    }
+  },
+  {
+    "slug": "ontong-youth-청소년-한부모-복지급여-지원",
+    "title": "청소년 한부모 복지급여 지원",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "여성가족정책과",
+    "region": null,
+    "amount": "저소득 청소년 한부모에게 양육비 등 지원을 통한 양육부담 경감 및 생활안정 도모",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 가구/부모",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청소년 한부모 복지급여 지원",
+      "문화생활",
+      "여성가족정책과",
+      "확인필요",
+      "청년",
+      "가구/부모",
+      "저소득",
+      "청소년",
+      "한부모에게",
+      "양육비",
+      "등",
+      "지원을",
+      "통한",
+      "양육부담"
+    ],
+    "summary": "저소득 청소년 한부모에게 양육비 등 지원을 통한 양육부담 경감 및 생활안정 도모",
+    "audience": "해당 없음",
+    "benefits": [
+      "저소득 청소년 한부모에게 양육비 등 지원을 통한 양육부담 경감 및 생활안정 도모"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "관할 주소지 읍면동 행정복지센터 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260309CT000000000003030",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260309CT000000000003030",
+    "contact": "여성가족정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "저소득 청소년 한부모에게 양육비 등 지원을 통한 양육부담 경감 및 생활안정 도모",
+      "application": "관할 주소지 읍면동 행정복지센터 문의",
+      "contact": "여성가족정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-공동훈련센터-운영-지원",
+    "title": "공동훈련센터 운영 지원",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "일자리기업지원과",
+    "region": null,
+    "amount": "- 지역 산업·기업 수요를 반영한 청년 중심 맞춤형 직업훈련 과정 운영 - 취업 연계형·현장 중심 교육을 통한 청년 고용 가능성 제고",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "공동훈련센터 운영 지원",
+      "고용",
+      "일자리기업지원과",
+      "확인필요",
+      "청년",
+      "구직자",
+      "-",
+      "지역",
+      "산업·기업",
+      "수요를",
+      "반영한",
+      "중심",
+      "맞춤형"
+    ],
+    "summary": "- 지역 산업·기업 수요를 반영한 청년 중심 맞춤형 직업훈련 과정 운영 - 취업 연계형·현장 중심 교육을 통한 청년 고용 가능성 제고",
+    "audience": "도내 미취업 청년 및 구직자, 지역 중소기업 재직자",
+    "benefits": [
+      "- 지역 산업·기업 수요를 반영한 청년 중심 맞춤형 직업훈련 과정 운영 - 취업 연계형·현장 중심 교육을 통한 청년 고용 가능성 제고"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003032",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003032",
+    "contact": "일자리기업지원과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "도내 미취업 청년 및 구직자, 지역 중소기업 재직자",
+      "benefit": "- 지역 산업·기업 수요를 반영한 청년 중심 맞춤형 직업훈련 과정 운영 - 취업 연계형·현장 중심 교육을 통한 청년 고용 가능성 제고",
+      "application": "별도 문의",
+      "contact": "일자리기업지원과"
+    }
+  },
+  {
+    "slug": "ontong-youth-안서동-목조-커뮤니티시설-및-전망대-설치",
+    "title": "안서동 목조 커뮤니티시설 및 전망대 설치",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "산림자원과",
+    "region": null,
+    "amount": "국산 목재를 활용한 전망대 및 목재 특화 거리 조성을 통한 탄소중립 실현 및 지역 경제 활성화",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "안서동 목조 커뮤니티시설 및 전망대 설치",
+      "문화생활",
+      "산림자원과",
+      "확인필요",
+      "청년",
+      "국산",
+      "목재를",
+      "활용한",
+      "전망대",
+      "및",
+      "목재",
+      "특화",
+      "거리"
+    ],
+    "summary": "국산 목재를 활용한 전망대 및 목재 특화 거리 조성을 통한 탄소중립 실현 및 지역 경제 활성화",
+    "audience": "제한없음",
+    "benefits": [
+      "국산 목재를 활용한 전망대 및 목재 특화 거리 조성을 통한 탄소중립 실현 및 지역 경제 활성화"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260309CT000000000003033",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260309CT000000000003033",
+    "contact": "공원녹지사업본부",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "제한없음",
+      "benefit": "국산 목재를 활용한 전망대 및 목재 특화 거리 조성을 통한 탄소중립 실현 및 지역 경제 활성화",
+      "application": "별도문의",
+      "contact": "공원녹지사업본부"
+    }
+  },
+  {
+    "slug": "ontong-youth-자립준비청년-지원",
+    "title": "자립준비청년 지원",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "인구정책과",
+    "region": null,
+    "amount": "자립준비청년(보호종료아동)의 안정적인 사회 정착을 위한 자립수당 및 자립정착금 등 초기비용 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "자립준비청년 지원",
+      "문화생활",
+      "인구정책과",
+      "확인필요",
+      "청년",
+      "자립준비청년(보호종료아동)의",
+      "안정적인",
+      "사회",
+      "정착을",
+      "위한",
+      "자립수당",
+      "및",
+      "자립정착금"
+    ],
+    "summary": "자립준비청년(보호종료아동)의 안정적인 사회 정착을 위한 자립수당 및 자립정착금 등 초기비용 지원",
+    "audience": "해당 없음",
+    "benefits": [
+      "자립준비청년(보호종료아동)의 안정적인 사회 정착을 위한 자립수당 및 자립정착금 등 초기비용 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260309CT000000000003035",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260309CT000000000003035",
+    "contact": "인구정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "자립준비청년(보호종료아동)의 안정적인 사회 정착을 위한 자립수당 및 자립정착금 등 초기비용 지원",
+      "application": "별도 문의",
+      "contact": "인구정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-주력산업-일자리-지원사업",
+    "title": "주력산업 일자리 지원사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "일자리기업지원과",
+    "region": null,
+    "amount": "자동차·반도체 등 도 주력산업 취업 장려를 통해 도 청년인재의 수도권 유출을 방지하고 지역 내 정착 및 장기근속 기반 마련",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "주력산업 일자리 지원사업",
+      "고용",
+      "일자리기업지원과",
+      "확인필요",
+      "청년",
+      "구직자",
+      "자동차·반도체",
+      "등",
+      "도",
+      "주력산업",
+      "취업",
+      "장려를",
+      "통해"
+    ],
+    "summary": "자동차·반도체 등 도 주력산업 취업 장려를 통해 도 청년인재의 수도권 유출을 방지하고 지역 내 정착 및 장기근속 기반 마련",
+    "audience": "제한 없음",
+    "benefits": [
+      "자동차·반도체 등 도 주력산업 취업 장려를 통해 도 청년인재의 수도권 유출을 방지하고 지역 내 정착 및 장기근속 기반 마련"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003037",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003037",
+    "contact": "일자리기업지원과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "제한 없음",
+      "benefit": "자동차·반도체 등 도 주력산업 취업 장려를 통해 도 청년인재의 수도권 유출을 방지하고 지역 내 정착 및 장기근속 기반 마련",
+      "application": "별도 문의",
+      "contact": "일자리기업지원과"
+    }
+  },
+  {
+    "slug": "ontong-youth-충남도립대학교-취업역량-강화-사업",
+    "title": "충남도립대학교 취업역량 강화 사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "취업지원처",
+    "region": "충남",
+    "amount": "충남도립대학교 본교 재학생․졸업생 대상 컨설팅, 취업역량 강화 프로그램 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "충남도립대학교 취업역량 강화 사업",
+      "고용",
+      "충남",
+      "취업지원처",
+      "확인필요",
+      "청년",
+      "구직자",
+      "충남도립대학교",
+      "본교",
+      "재학생․졸업생",
+      "대상",
+      "컨설팅,",
+      "취업역량",
+      "강화"
+    ],
+    "summary": "충남도립대학교 본교 재학생․졸업생 대상 컨설팅, 취업역량 강화 프로그램 제공",
+    "audience": "충남도립대학교 재학생․졸업생",
+    "benefits": [
+      "충남도립대학교 본교 재학생․졸업생 대상 컨설팅, 취업역량 강화 프로그램 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003036",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003036",
+    "contact": "취업지원처",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "충남도립대학교 재학생․졸업생",
+      "benefit": "충남도립대학교 본교 재학생․졸업생 대상 컨설팅, 취업역량 강화 프로그램 제공",
+      "application": "별도 문의",
+      "contact": "취업지원처"
+    }
+  },
+  {
+    "slug": "ontong-youth-예비청년-현장중심-진로체험-프로그램-운영",
+    "title": "예비청년 현장중심 진로체험 프로그램 운영",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "고등교육정책담당관",
+    "region": null,
+    "amount": "도내 학교에 재학 중인 예비청년 대상 - 지역사회 내 다양한 진로체험처 발굴, 관리 지원 - 예비청년 대상 진로직업체험 프로그램 운영 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "예비청년 현장중심 진로체험 프로그램 운영",
+      "교육",
+      "고등교육정책담당관",
+      "확인필요",
+      "청년",
+      "도내",
+      "학교에",
+      "재학",
+      "중인",
+      "예비청년",
+      "대상",
+      "-",
+      "지역사회"
+    ],
+    "summary": "도내 학교에 재학 중인 예비청년 대상 - 지역사회 내 다양한 진로체험처 발굴, 관리 지원 - 예비청년 대상 진로직업체험 프로그램 운영 지원",
+    "audience": "도내 학교에 재학 중인 예비청년 만13~18세",
+    "benefits": [
+      "도내 학교에 재학 중인 예비청년 대상 - 지역사회 내 다양한 진로체험처 발굴, 관리 지원 - 예비청년 대상 진로직업체험 프로그램 운영 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "교부(도) → 교육기관 보조(시군) → 사업추진(교육청)",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003039",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003039",
+    "contact": "고등교육정책담당관",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "도내 학교에 재학 중인 예비청년 만13~18세",
+      "benefit": "도내 학교에 재학 중인 예비청년 대상 - 지역사회 내 다양한 진로체험처 발굴, 관리 지원 - 예비청년 대상 진로직업체험 프로그램 운영 지원",
+      "application": "교부(도) → 교육기관 보조(시군) → 사업추진(교육청)",
+      "contact": "고등교육정책담당관"
+    }
+  },
+  {
+    "slug": "ontong-youth-대학생-연합설계-지원-건축역량-강화",
+    "title": "대학생 연합설계 지원(건축역량 강화)",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "건축디자인과",
+    "region": "충남",
+    "amount": "도내 건축학과 대학생들이 연합하여 건축설계를 할 수 있도록 대학교 경계를 허무는 프로그램을 운영하고, 충남건축디자인문화제 행사기간 동안 작품 전시 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "대학생 연합설계 지원(건축역량 강화)",
+      "교육",
+      "충남",
+      "건축디자인과",
+      "확인필요",
+      "청년",
+      "도내",
+      "건축학과",
+      "대학생들이",
+      "연합하여",
+      "건축설계를",
+      "할",
+      "수",
+      "있도록"
+    ],
+    "summary": "도내 건축학과 대학생들이 연합하여 건축설계를 할 수 있도록 대학교 경계를 허무는 프로그램을 운영하고, 충남건축디자인문화제 행사기간 동안 작품 전시 지원",
+    "audience": "도내 건축학과 대학생",
+    "benefits": [
+      "도내 건축학과 대학생들이 연합하여 건축설계를 할 수 있도록 대학교 경계를 허무는 프로그램을 운영하고, 충남건축디자인문화제 행사기간 동안 작품 전시 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "연합설계 추진(대학교) ⇨ 작품전시 지원(도)",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003044",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003044",
+    "contact": "건축디자인과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "도내 건축학과 대학생",
+      "benefit": "도내 건축학과 대학생들이 연합하여 건축설계를 할 수 있도록 대학교 경계를 허무는 프로그램을 운영하고, 충남건축디자인문화제 행사기간 동안 작품 전시 지원",
+      "application": "연합설계 추진(대학교) ⇨ 작품전시 지원(도)",
+      "contact": "건축디자인과"
+    }
+  },
+  {
+    "slug": "ontong-youth-충남도립대-등록금-장학금-지급",
+    "title": "충남도립대 등록금 장학금 지급",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "교무학생처",
+    "region": "충남",
+    "amount": "2022학년도 이후 입학자 중, 국가장학금을 신청했으나 수혜를 받지 못한 재학생으로서 직전학기 성적이 70점(C0) 이상인 자 ※ 학자금 지원구간이 0~3구간인 학생은 D0(60점) 이상 - (1단계) 2022학년도 신입생(1학년) 전학기 전액 장학금 지급 - (2단계) 2023학년도 1~2학년 전액 장학금 지급 - (3단계) 2024학년도 1~3학년 전액 장학금 지급 - (4단계) 2025학년도 1~4학년 전액 장학금 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "충남도립대 등록금 장학금 지급",
+      "교육",
+      "충남",
+      "교무학생처",
+      "모집중",
+      "청년",
+      "2022학년도",
+      "이후",
+      "입학자",
+      "중,",
+      "국가장학금을",
+      "신청했으나",
+      "수혜를",
+      "받지"
+    ],
+    "summary": "2022학년도 이후 입학자 중, 국가장학금을 신청했으나 수혜를 받지 못한 재학생으로서 직전학기 성적이 70점(C0) 이상인 자 ※ 학자금 지원구간이 0~3구간인 학생은 D0(60점) 이상 - (1단계) 2022학년도 신입생(1학년) 전학기 전액 장학금 지급 - (2단계) 2023학년도 1~2학년 전액 장학금 지급 - (3단계) 2024학년도 1~3학년 전액 장학금 지급 - (4단계) 2025학년도 1~4학년 전액 장학금 지급",
+    "audience": "2022학년도 이후 입학자 중, 국가장학금을 신청했으나 수혜를 받지 못한 재학생으로서 직전학기 성적이 70점(C0) 이상인 자 ※ 학자금 지원구간이 0~3구간인 학생은 D0(60점) 이상",
+    "benefits": [
+      "2022학년도 이후 입학자 중, 국가장학금을 신청했으나 수혜를 받지 못한 재학생으로서 직전학기 성적이 70점(C0) 이상인 자 ※ 학자금 지원구간이 0~3구간인 학생은 D0(60점) 이상 - (1단계) 2022학년도 신입생(1학년) 전학기 전액 장학금 지급 - (2단계) 2023학년도 1~2학년 전액 장학금 지급 - (3단계) 2024학년도 1~3학년 전액 장학금 지급 - (4단계) 2025학년도 1~4학년 전액 장학금 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "국가장학금 신청→국가·등록금성 장학금 지급→ 미수혜자조사→대상자 장학금 지원",
+    "officialUrl": "https://www.cnsu.ac.kr/univ/bachelor/scholarship/type.do",
+    "officialSourceUrl": "https://www.cnsu.ac.kr/univ/bachelor/scholarship/type.do",
+    "contact": "교무학생처",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "2022학년도 이후 입학자 중, 국가장학금을 신청했으나 수혜를 받지 못한 재학생으로서 직전학기 성적이 70점(C0) 이상인 자 ※ 학자금 지원구간이 0~3구간인 학생은 D0(60점) 이상",
+      "benefit": "2022학년도 이후 입학자 중, 국가장학금을 신청했으나 수혜를 받지 못한 재학생으로서 직전학기 성적이 70점(C0) 이상인 자 ※ 학자금 지원구간이 0~3구간인 학생은 D0(60점) 이상 - (1단계) 2022학년도 신입생(1학년) 전학기 전액 장학금 지급 - (2단계) 2023학년도 1~2학년 전액 장학금 지급 - (3단계) 2024학년도 1~3학년 전액 장학금 지급 - (4단계) 2025학년도 1~4학년 전액 장학금 지급",
+      "application": "국가장학금 신청→국가·등록금성 장학금 지급→ 미수혜자조사→대상자 장학금 지원",
+      "contact": "교무학생처"
+    }
+  },
+  {
+    "slug": "ontong-youth-광역이음-충청권-연계-일자리사업",
+    "title": "광역이음(충청권 연계) 일자리사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "일자리기업지원과",
+    "region": null,
+    "amount": "충청권 전략산업(첨단바이오, 미래모빌리티) 종사 노동자에 대한 집중지원을 통해 청년 인재의 수도권 유출을 방지하고 지역 정착을 유도",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "광역이음(충청권 연계) 일자리사업",
+      "고용",
+      "일자리기업지원과",
+      "확인필요",
+      "청년",
+      "충청권",
+      "전략산업(첨단바이오,",
+      "미래모빌리티)",
+      "종사",
+      "노동자에",
+      "대한",
+      "집중지원을",
+      "통해"
+    ],
+    "summary": "충청권 전략산업(첨단바이오, 미래모빌리티) 종사 노동자에 대한 집중지원을 통해 청년 인재의 수도권 유출을 방지하고 지역 정착을 유도",
+    "audience": "제한 없음",
+    "benefits": [
+      "충청권 전략산업(첨단바이오, 미래모빌리티) 종사 노동자에 대한 집중지원을 통해 청년 인재의 수도권 유출을 방지하고 지역 정착을 유도"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A20260309CT000000000003041",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A20260309CT000000000003041",
+    "contact": "일자리기업지원과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "제한 없음",
+      "benefit": "충청권 전략산업(첨단바이오, 미래모빌리티) 종사 노동자에 대한 집중지원을 통해 청년 인재의 수도권 유출을 방지하고 지역 정착을 유도",
+      "application": "별도 문의",
+      "contact": "일자리기업지원과"
+    }
+  },
+  {
+    "slug": "ontong-youth-지역사회서비스-청년사업단",
+    "title": "지역사회서비스 청년사업단",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "복지보훈정책과",
+    "region": null,
+    "amount": "청년 수요에 맞는 사회서비스(신체·정신건강 분야) 개발 ·제공 및 청년 일자리 창출",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "지역사회서비스 청년사업단",
+      "고용",
+      "복지보훈정책과",
+      "확인필요",
+      "청년",
+      "수요에",
+      "맞는",
+      "사회서비스(신체·정신건강",
+      "분야)",
+      "개발",
+      "·제공",
+      "및"
+    ],
+    "summary": "청년 수요에 맞는 사회서비스(신체·정신건강 분야) 개발 ·제공 및 청년 일자리 창출",
+    "audience": "해당 없음",
+    "benefits": [
+      "청년 수요에 맞는 사회서비스(신체·정신건강 분야) 개발 ·제공 및 청년 일자리 창출"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260309CT000000000003043",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260309CT000000000003043",
+    "contact": "복지보훈정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "청년 수요에 맞는 사회서비스(신체·정신건강 분야) 개발 ·제공 및 청년 일자리 창출",
+      "application": "별도 문의",
+      "contact": "복지보훈정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-인재육성사업-추진",
+    "title": "인재육성사업 추진",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "고등교육정책담당관",
+    "region": "충남",
+    "amount": "충남도민 및 그 자녀 - (연령 기준) 장학사업별 연령기준 다름 - (소득 기준) 장학사업별 소득기준 다름 ㅇ (사업 내용) 학자금대출이자지원사업 외 8종 - 학자금대출이자지원, 충남형공공간호, 충남사랑, 재능키움, 아름드리, 거주비지원, 지역인재육성간호 예체능특기생, 해외유학장학사업",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "인재육성사업 추진",
+      "교육",
+      "충남",
+      "고등교육정책담당관",
+      "확인필요",
+      "청년",
+      "충남도민",
+      "및",
+      "그",
+      "자녀",
+      "-",
+      "(연령",
+      "기준)",
+      "장학사업별"
+    ],
+    "summary": "충남도민 및 그 자녀 - (연령 기준) 장학사업별 연령기준 다름 - (소득 기준) 장학사업별 소득기준 다름 ㅇ (사업 내용) 학자금대출이자지원사업 외 8종 - 학자금대출이자지원, 충남형공공간호, 충남사랑, 재능키움, 아름드리, 거주비지원, 지역인재육성간호 예체능특기생, 해외유학장학사업",
+    "audience": "충남도민 및 그 자녀 - (연령 기준) 장학사업별 연령기준 다름 - (소득 기준) 장학사업별 소득기준 다름",
+    "benefits": [
+      "충남도민 및 그 자녀 - (연령 기준) 장학사업별 연령기준 다름 - (소득 기준) 장학사업별 소득기준 다름 ㅇ (사업 내용) 학자금대출이자지원사업 외 8종 - 학자금대출이자지원, 충남형공공간호, 충남사랑, 재능키움, 아름드리, 거주비지원, 지역인재육성간호 예체능특기생, 해외유학장학사업"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의(충남평생교육진흥원)",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-04/view?bizId=A20260309CT000000000003045",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-04/view?bizId=A20260309CT000000000003045",
+    "contact": "고등교육정책담당관",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "충남도민 및 그 자녀 - (연령 기준) 장학사업별 연령기준 다름 - (소득 기준) 장학사업별 소득기준 다름",
+      "benefit": "충남도민 및 그 자녀 - (연령 기준) 장학사업별 연령기준 다름 - (소득 기준) 장학사업별 소득기준 다름 ㅇ (사업 내용) 학자금대출이자지원사업 외 8종 - 학자금대출이자지원, 충남형공공간호, 충남사랑, 재능키움, 아름드리, 거주비지원, 지역인재육성간호 예체능특기생, 해외유학장학사업",
+      "application": "별도 문의(충남평생교육진흥원)",
+      "contact": "고등교육정책담당관"
+    }
+  },
+  {
+    "slug": "ontong-youth-정신건강-심리상담-바우처-사업",
+    "title": "정신건강 심리상담 바우처 사업",
+    "category": "보건의료",
+    "source": "온통청년 API",
+    "agency": "건강증진식품과",
+    "region": null,
+    "amount": "도민의 마음건강 돌봄 및 자살 예방·정신질환 조기 발견",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "정신건강 심리상담 바우처 사업",
+      "보건의료",
+      "건강증진식품과",
+      "확인필요",
+      "청년",
+      "도민의",
+      "마음건강",
+      "돌봄",
+      "및",
+      "자살",
+      "예방·정신질환",
+      "조기",
+      "발견"
+    ],
+    "summary": "도민의 마음건강 돌봄 및 자살 예방·정신질환 조기 발견",
+    "audience": "해당 없음",
+    "benefits": [
+      "도민의 마음건강 돌봄 및 자살 예방·정신질환 조기 발견"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00005567",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00005567",
+    "contact": "건강증진식품과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "도민의 마음건강 돌봄 및 자살 예방·정신질환 조기 발견",
+      "application": "별도 문의",
+      "contact": "건강증진식품과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년-사회초년생을-위한-필수-교육-운영",
+    "title": "청년·사회초년생을 위한 필수 교육 운영",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "청년정책관",
+    "region": null,
+    "amount": "19세 ~ 39세 경제교육이 필요한 청년 누구나 자산관리, 투자 기초지식, 올바른 투자법 등 대상과 여건에 맞는 주제로 맞춤형 경제교육 시행",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년·사회초년생을 위한 필수 교육 운영",
+      "교육",
+      "청년정책관",
+      "확인필요",
+      "청년",
+      "19세",
+      "~",
+      "39세",
+      "경제교육이",
+      "필요한",
+      "누구나",
+      "자산관리,"
+    ],
+    "summary": "19세 ~ 39세 경제교육이 필요한 청년 누구나 자산관리, 투자 기초지식, 올바른 투자법 등 대상과 여건에 맞는 주제로 맞춤형 경제교육 시행",
+    "audience": "제한 없음",
+    "benefits": [
+      "19세 ~ 39세 경제교육이 필요한 청년 누구나 자산관리, 투자 기초지식, 올바른 투자법 등 대상과 여건에 맞는 주제로 맞춤형 경제교육 시행"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "반기별 수요조사(시군·교육기관 등) → 일정 조정 → 교육 제공",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003051",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260309CT000000000003051",
+    "contact": "청년정책관",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "제한 없음",
+      "benefit": "19세 ~ 39세 경제교육이 필요한 청년 누구나 자산관리, 투자 기초지식, 올바른 투자법 등 대상과 여건에 맞는 주제로 맞춤형 경제교육 시행",
+      "application": "반기별 수요조사(시군·교육기관 등) → 일정 조정 → 교육 제공",
+      "contact": "청년정책관"
+    }
+  },
+  {
+    "slug": "ontong-youth-산업단지-청년문화센터-건립",
+    "title": "산업단지 청년문화센터 건립",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "산업입지과",
+    "region": null,
+    "amount": "산단 내 부족한 문화·복지·편의시설 확충을 위해 청년문화센터를 건립하여 청년 유입 기능강화 및 근로자 복지환경 개선",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "산업단지 청년문화센터 건립",
+      "문화생활",
+      "산업입지과",
+      "확인필요",
+      "청년",
+      "산단",
+      "내",
+      "부족한",
+      "문화·복지·편의시설",
+      "확충을",
+      "위해",
+      "청년문화센터를",
+      "건립하여"
+    ],
+    "summary": "산단 내 부족한 문화·복지·편의시설 확충을 위해 청년문화센터를 건립하여 청년 유입 기능강화 및 근로자 복지환경 개선",
+    "audience": "제한없음",
+    "benefits": [
+      "산단 내 부족한 문화·복지·편의시설 확충을 위해 청년문화센터를 건립하여 청년 유입 기능강화 및 근로자 복지환경 개선"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-09/view?bizId=A20260309CT000000000003054",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-09/view?bizId=A20260309CT000000000003054",
+    "contact": "산업입지과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "제한없음",
+      "benefit": "산단 내 부족한 문화·복지·편의시설 확충을 위해 청년문화센터를 건립하여 청년 유입 기능강화 및 근로자 복지환경 개선",
+      "application": "별도문의",
+      "contact": "산업입지과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년농업인-역량강화-지원",
+    "title": "청년농업인 역량강화 지원",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "지도정책과",
+    "region": "충남",
+    "amount": "- 청년농업인 역량강화 지원 - 청년농부되기 진로교육 - 청년농업인 온라인 마케팅 기술시범 - 청년농업인 품목별 연구동아리 육성지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년농업인 역량강화 지원",
+      "교육",
+      "충남",
+      "지도정책과",
+      "모집중",
+      "청년",
+      "-",
+      "청년농업인",
+      "역량강화",
+      "지원",
+      "청년농부되기",
+      "진로교육",
+      "확인필요"
+    ],
+    "summary": "- 청년농업인 역량강화 지원 - 청년농부되기 진로교육 - 청년농업인 온라인 마케팅 기술시범 - 청년농업인 품목별 연구동아리 육성지원",
+    "audience": "- 만 18세 이상~만 45세 미만 청년농업인(충청남도 거주) - 시군 농업계고등학교",
+    "benefits": [
+      "- 청년농업인 역량강화 지원 - 청년농부되기 진로교육 - 청년농업인 온라인 마케팅 기술시범 - 청년농업인 품목별 연구동아리 육성지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청(신청자)→접수(시·군)→대상자 결정(시·군)→추진",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A20260309CT000000000003014",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A20260309CT000000000003014",
+    "contact": "지도정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "- 만 18세 이상~만 45세 미만 청년농업인(충청남도 거주) - 시군 농업계고등학교",
+      "benefit": "- 청년농업인 역량강화 지원 - 청년농부되기 진로교육 - 청년농업인 온라인 마케팅 기술시범 - 청년농업인 품목별 연구동아리 육성지원",
+      "application": "신청(신청자)→접수(시·군)→대상자 결정(시·군)→추진",
+      "contact": "지도정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-공공형-축산-스마트팜-인큐베이터-운영",
+    "title": "공공형 축산 스마트팜 인큐베이터 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "축산기술연구소",
+    "region": null,
+    "amount": "사양관리 및 경영관리 등 스마트 축산 ICT 기술 습득 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "공공형 축산 스마트팜 인큐베이터 운영",
+      "고용",
+      "축산기술연구소",
+      "확인필요",
+      "청년",
+      "사양관리",
+      "및",
+      "경영관리",
+      "등",
+      "스마트",
+      "축산",
+      "ICT",
+      "기술"
+    ],
+    "summary": "사양관리 및 경영관리 등 스마트 축산 ICT 기술 습득 지원",
+    "audience": "18세 이상 50세 미만",
+    "benefits": [
+      "사양관리 및 경영관리 등 스마트 축산 ICT 기술 습득 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "시군 축산부서에 신청서 및 증빙서류 제출",
+    "officialUrl": "https://www.chungnam.go.kr/liveStock.do",
+    "officialSourceUrl": "https://www.chungnam.go.kr/liveStock.do",
+    "contact": "축산기술연구소",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "18세 이상 50세 미만",
+      "benefit": "사양관리 및 경영관리 등 스마트 축산 ICT 기술 습득 지원",
+      "application": "시군 축산부서에 신청서 및 증빙서류 제출",
+      "contact": "축산기술연구소"
+    }
+  },
+  {
+    "slug": "ontong-youth-지역문화-전문인력-양성",
+    "title": "지역문화 전문인력 양성",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "문화정책과",
+    "region": null,
+    "amount": "지역 문화예술 생태계 자생력 강화를 위한 문화예술교육 전문인력 양성",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "지역문화 전문인력 양성",
+      "교육",
+      "문화정책과",
+      "확인필요",
+      "청년",
+      "지역",
+      "문화예술",
+      "생태계",
+      "자생력",
+      "강화를",
+      "위한",
+      "문화예술교육",
+      "전문인력"
+    ],
+    "summary": "지역 문화예술 생태계 자생력 강화를 위한 문화예술교육 전문인력 양성",
+    "audience": "해당 없음",
+    "benefits": [
+      "지역 문화예술 생태계 자생력 강화를 위한 문화예술교육 전문인력 양성"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://www.cacf.or.kr/site/index-hub.php",
+    "officialSourceUrl": "https://www.cacf.or.kr/site/index-hub.php",
+    "contact": "재단법인충남문화관광재단",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "지역 문화예술 생태계 자생력 강화를 위한 문화예술교육 전문인력 양성",
+      "application": "별도 문의",
+      "contact": "재단법인충남문화관광재단"
+    }
+  },
+  {
+    "slug": "ontong-youth-워케이션-충남-프로그램-운영",
+    "title": "워케이션 충남 프로그램 운영",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "관광진흥과",
+    "region": "충남",
+    "amount": "일과 휴양을 연계한 체류형 관광객 유치 및 관광산업 육성",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "워케이션 충남 프로그램 운영",
+      "문화생활",
+      "충남",
+      "관광진흥과",
+      "확인필요",
+      "청년",
+      "일과",
+      "휴양을",
+      "연계한",
+      "체류형",
+      "관광객",
+      "유치",
+      "및",
+      "관광산업"
+    ],
+    "summary": "일과 휴양을 연계한 체류형 관광객 유치 및 관광산업 육성",
+    "audience": "해당 없음",
+    "benefits": [
+      "일과 휴양을 연계한 체류형 관광객 유치 및 관광산업 육성"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://www.cacf.or.kr/site/",
+    "officialSourceUrl": "https://www.cacf.or.kr/site/",
+    "contact": "재단법인충남문화관광재단",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "일과 휴양을 연계한 체류형 관광객 유치 및 관광산업 육성",
+      "application": "별도 문의",
+      "contact": "재단법인충남문화관광재단"
+    }
+  },
+  {
+    "slug": "ontong-youth-충남콘텐츠기업지원센터-운영",
+    "title": "충남콘텐츠기업지원센터 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "문화정책과",
+    "region": "충남",
+    "amount": "- 지역 콘텐츠 기업의 체계적 발굴·육성을 통한 기업역량 강화 및 성장 견인 - 지역 콘텐츠 기업 맞춤형 성장 지원을 통한 기업 및 콘텐츠 경쟁력 제고 - 콘텐츠 분야 신규 일자리 창출 및 지역 청년 인재 고용 촉진",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "충남콘텐츠기업지원센터 운영",
+      "고용",
+      "충남",
+      "문화정책과",
+      "확인필요",
+      "청년",
+      "-",
+      "지역",
+      "콘텐츠",
+      "기업의",
+      "체계적",
+      "발굴·육성을",
+      "통한",
+      "기업역량"
+    ],
+    "summary": "- 지역 콘텐츠 기업의 체계적 발굴·육성을 통한 기업역량 강화 및 성장 견인 - 지역 콘텐츠 기업 맞춤형 성장 지원을 통한 기업 및 콘텐츠 경쟁력 제고 - 콘텐츠 분야 신규 일자리 창출 및 지역 청년 인재 고용 촉진",
+    "audience": "해당 없음",
+    "benefits": [
+      "- 지역 콘텐츠 기업의 체계적 발굴·육성을 통한 기업역량 강화 및 성장 견인 - 지역 콘텐츠 기업 맞춤형 성장 지원을 통한 기업 및 콘텐츠 경쟁력 제고 - 콘텐츠 분야 신규 일자리 창출 및 지역 청년 인재 고용 촉진"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://ccon.kr/",
+    "officialSourceUrl": "https://ccon.kr/",
+    "contact": "재단법인충남콘텐츠진흥원",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "- 지역 콘텐츠 기업의 체계적 발굴·육성을 통한 기업역량 강화 및 성장 견인 - 지역 콘텐츠 기업 맞춤형 성장 지원을 통한 기업 및 콘텐츠 경쟁력 제고 - 콘텐츠 분야 신규 일자리 창출 및 지역 청년 인재 고용 촉진",
+      "application": "별도 문의",
+      "contact": "재단법인충남콘텐츠진흥원"
+    }
+  },
+  {
+    "slug": "ontong-youth-충남-음악창작소운영",
+    "title": "충남 음악창작소운영",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "문화정책과",
+    "region": "충남",
+    "amount": "- 충남 지역 청년 뮤지션의 창작·제작·유통·무대경험·산업진입까지 연계하는 통합 음악창작 생태계 구축 - 지역기반 신규 뮤지션 발굴 및 음반 제작·홍보·쇼케이스 지원을 통해 청년의 문화예술 진입장벽 완화 및 자립 기반 마련",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "충남 음악창작소운영",
+      "문화생활",
+      "충남",
+      "문화정책과",
+      "확인필요",
+      "청년",
+      "-",
+      "지역",
+      "뮤지션의",
+      "창작·제작·유통·무대경험·산업진입까지",
+      "연계하는",
+      "통합"
+    ],
+    "summary": "- 충남 지역 청년 뮤지션의 창작·제작·유통·무대경험·산업진입까지 연계하는 통합 음악창작 생태계 구축 - 지역기반 신규 뮤지션 발굴 및 음반 제작·홍보·쇼케이스 지원을 통해 청년의 문화예술 진입장벽 완화 및 자립 기반 마련",
+    "audience": "해당 없음",
+    "benefits": [
+      "- 충남 지역 청년 뮤지션의 창작·제작·유통·무대경험·산업진입까지 연계하는 통합 음악창작 생태계 구축 - 지역기반 신규 뮤지션 발굴 및 음반 제작·홍보·쇼케이스 지원을 통해 청년의 문화예술 진입장벽 완화 및 자립 기반 마련"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://www.cnmusicfactory.com/",
+    "officialSourceUrl": "https://www.cnmusicfactory.com/",
+    "contact": "재단법인충남콘텐츠진흥원",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "- 충남 지역 청년 뮤지션의 창작·제작·유통·무대경험·산업진입까지 연계하는 통합 음악창작 생태계 구축 - 지역기반 신규 뮤지션 발굴 및 음반 제작·홍보·쇼케이스 지원을 통해 청년의 문화예술 진입장벽 완화 및 자립 기반 마련",
+      "application": "별도 문의",
+      "contact": "재단법인충남콘텐츠진흥원"
+    }
+  },
+  {
+    "slug": "ontong-youth-충남-청년-뮤직-페스타",
+    "title": "충남 청년 뮤직 페스타",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "문화정책과",
+    "region": "충남",
+    "amount": "청년 예술인 지원을 위한 충남의 젊은 문화 활성화 및 도민 문화예술향유 기회 확대",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "충남 청년 뮤직 페스타",
+      "문화생활",
+      "충남",
+      "문화정책과",
+      "확인필요",
+      "청년",
+      "예술인",
+      "지원을",
+      "위한",
+      "충남의",
+      "젊은",
+      "문화",
+      "활성화"
+    ],
+    "summary": "청년 예술인 지원을 위한 충남의 젊은 문화 활성화 및 도민 문화예술향유 기회 확대",
+    "audience": "해당 없음",
+    "benefits": [
+      "청년 예술인 지원을 위한 충남의 젊은 문화 활성화 및 도민 문화예술향유 기회 확대"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://www.chungnam.go.kr/cnportal/province/province/view.do?nttId=2176260&menuNo=500487&pageIndex=1&sdate=2025-04-27&edate=2026-04-27",
+    "officialSourceUrl": "https://www.chungnam.go.kr/cnportal/province/province/view.do?nttId=2176260&menuNo=500487&pageIndex=1&sdate=2025-04-27&edate=2026-04-27",
+    "contact": "문화정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "청년 예술인 지원을 위한 충남의 젊은 문화 활성화 및 도민 문화예술향유 기회 확대",
+      "application": "별도 문의",
+      "contact": "문화정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년성장-프로젝트",
+    "title": "청년성장 프로젝트",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "청년정책관",
+    "region": null,
+    "amount": "미취업 청년 등의 구직단념 예방 및 ’쉬었음‘ 전환 방지",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년성장 프로젝트",
+      "고용",
+      "청년정책관",
+      "확인필요",
+      "청년",
+      "구직자",
+      "미취업",
+      "등의",
+      "구직단념",
+      "예방",
+      "및",
+      "’쉬었음‘",
+      "전환"
+    ],
+    "summary": "미취업 청년 등의 구직단념 예방 및 ’쉬었음‘ 전환 방지",
+    "audience": "15세~39세 이하 청년 ※ 35세∼39세 청년은 전체 사업량의 30% 이내 참여",
+    "benefits": [
+      "미취업 청년 등의 구직단념 예방 및 ’쉬었음‘ 전환 방지"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth-up.kr/growth",
+    "officialSourceUrl": "https://youth-up.kr/growth",
+    "contact": "재단법인충청남도평생교육진흥원",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "15세~39세 이하 청년 ※ 35세∼39세 청년은 전체 사업량의 30% 이내 참여",
+      "benefit": "미취업 청년 등의 구직단념 예방 및 ’쉬었음‘ 전환 방지",
+      "application": "별도 문의",
+      "contact": "재단법인충청남도평생교육진흥원"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년예술인-해외-공연",
+    "title": "청년예술인 해외 공연",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "문화정책과",
+    "region": null,
+    "amount": "청년예술인의 국제무대 경험을 통해 역량강화 및 경력확장 도모",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년예술인 해외 공연",
+      "교육",
+      "문화정책과",
+      "확인필요",
+      "청년",
+      "청년예술인의",
+      "국제무대",
+      "경험을",
+      "통해",
+      "역량강화",
+      "및",
+      "경력확장",
+      "도모"
+    ],
+    "summary": "청년예술인의 국제무대 경험을 통해 역량강화 및 경력확장 도모",
+    "audience": "해당 사항 없음",
+    "benefits": [
+      "청년예술인의 국제무대 경험을 통해 역량강화 및 경력확장 도모"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/bbs/cnyouth_notice/545?cp=1&sortOrder=BA_REGDATE&sortDirection=DESC&bcId=cnyouth_notice&baNotice=false&baCommSelec=false&baOpenDay=false&baUse=true",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/bbs/cnyouth_notice/545?cp=1&sortOrder=BA_REGDATE&sortDirection=DESC&bcId=cnyouth_notice&baNotice=false&baCommSelec=false&baOpenDay=false&baUse=true",
+    "contact": "문화정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 사항 없음",
+      "benefit": "청년예술인의 국제무대 경험을 통해 역량강화 및 경력확장 도모",
+      "application": "별도 문의",
+      "contact": "문화정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-2026-충남-창업마루-나비-starup-navi",
+    "title": "2026 충남 창업마루 나비(Starup-NAvi)",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "AI육성과",
+    "region": "충남",
+    "amount": "도내 유망 스타트업 발굴 및 육성을 위한 공간 조성, 지속가능한 지역 일자리 토대 마련을 위한 충남 창업의 중심(HUB) 역할 수행",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "2026 충남 창업마루 나비(Starup-NAvi)",
+      "고용",
+      "충남",
+      "AI육성과",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "도내",
+      "유망",
+      "스타트업",
+      "발굴",
+      "및",
+      "육성을",
+      "위한"
+    ],
+    "summary": "도내 유망 스타트업 발굴 및 육성을 위한 공간 조성, 지속가능한 지역 일자리 토대 마련을 위한 충남 창업의 중심(HUB) 역할 수행",
+    "audience": "제조+4차산업(AI, Big Data, Robotics 등) 융합 item, 미래자동차, 차세대 디스플레이, 반도체, 에너지신산업 등 제조분야(부품·소재 포함),스마트 플랫폼 분야(업종제한 없음), 친환경-기후변화 대응 분야(미세먼지·온실가스 저감, 친환경제품 및 서비스), 바이오, 그 외 디지털·그린 뉴딜 연계분야",
+    "benefits": [
+      "도내 유망 스타트업 발굴 및 육성을 위한 공간 조성, 지속가능한 지역 일자리 토대 마련을 위한 충남 창업의 중심(HUB) 역할 수행"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "① 모집공고(공개모집) → ② 요건검토 → ③ 1차평가(서면평가) → ④ 2차평가(발표평가) → ⑤ 면담(심층면담) → ⑥ 계약",
+    "officialUrl": "http://www.ccceicontest.or.kr/contest/list.php",
+    "officialSourceUrl": "http://www.ccceicontest.or.kr/contest/list.php",
+    "contact": "충남창조경제혁신센터",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "제조+4차산업(AI, Big Data, Robotics 등) 융합 item, 미래자동차, 차세대 디스플레이, 반도체, 에너지신산업 등 제조분야(부품·소재 포함),스마트 플랫폼 분야(업종제한 없음), 친환경-기후변화 대응 분야(미세먼지·온실가스 저감, 친환경제품 및 서비스), 바이오, 그 외 디지털·그린 뉴딜 연계분야",
+      "benefit": "도내 유망 스타트업 발굴 및 육성을 위한 공간 조성, 지속가능한 지역 일자리 토대 마련을 위한 충남 창업의 중심(HUB) 역할 수행",
+      "application": "① 모집공고(공개모집) → ② 요건검토 → ③ 1차평가(서면평가) → ④ 2차평가(발표평가) → ⑤ 면담(심층면담) → ⑥ 계약",
+      "contact": "충남창조경제혁신센터"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년과-함께하는-자치경찰제-운영-충남자치경찰-청년-서포터즈",
+    "title": "청년과 함께하는 자치경찰제 운영(충남자치경찰 청년 서포터즈)",
+    "category": "청년",
+    "source": "온통청년 API",
+    "agency": "자치경찰협력과",
+    "region": "충남",
+    "amount": "충남형 치안 의제 발굴, 범죄예방 활동 및 홍보, 캠페인 등 추진",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년과 함께하는 자치경찰제 운영(충남자치경찰 청년 서포터즈)",
+      "청년",
+      "충남",
+      "자치경찰협력과",
+      "모집중",
+      "충남형",
+      "치안",
+      "의제",
+      "발굴,",
+      "범죄예방",
+      "활동",
+      "및",
+      "홍보,",
+      "확인필요"
+    ],
+    "summary": "충남형 치안 의제 발굴, 범죄예방 활동 및 홍보, 캠페인 등 추진",
+    "audience": "해당 없음",
+    "benefits": [
+      "충남형 치안 의제 발굴, 범죄예방 활동 및 홍보, 캠페인 등 추진"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청서 및 구비서류 담당자 이메일(plusyou@korea.kr)로 제출",
+    "officialUrl": "https://www.chungnam.go.kr/cnapc/main/contents.do?menuNo=1900043",
+    "officialSourceUrl": "https://www.chungnam.go.kr/cnapc/main/contents.do?menuNo=1900043",
+    "contact": "자치경찰협력과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "충남형 치안 의제 발굴, 범죄예방 활동 및 홍보, 캠페인 등 추진",
+      "application": "신청서 및 구비서류 담당자 이메일(plusyou@korea.kr)로 제출",
+      "contact": "자치경찰협력과"
+    }
+  },
+  {
+    "slug": "ontong-youth-창의융합형-공학인재양성지원",
+    "title": "창의융합형 공학인재양성지원",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "미래산업과",
+    "region": null,
+    "amount": "산업계 수요에 부합하는 교육 프로그램 개발·운영을 통한 공학교육의 글로벌 경쟁력 제고 및 창의융합형 공학인재 양성",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "창의융합형 공학인재양성지원",
+      "고용",
+      "미래산업과",
+      "확인필요",
+      "청년",
+      "산업계",
+      "수요에",
+      "부합하는",
+      "교육",
+      "프로그램",
+      "개발·운영을",
+      "통한",
+      "공학교육의"
+    ],
+    "summary": "산업계 수요에 부합하는 교육 프로그램 개발·운영을 통한 공학교육의 글로벌 경쟁력 제고 및 창의융합형 공학인재 양성",
+    "audience": "해당 없음",
+    "benefits": [
+      "산업계 수요에 부합하는 교육 프로그램 개발·운영을 통한 공학교육의 글로벌 경쟁력 제고 및 창의융합형 공학인재 양성"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20250415CT000000000002199",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20250415CT000000000002199",
+    "contact": "건양대, 공주대, 선문대, 신성대, 순천향대, 한기대, 호서대",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "산업계 수요에 부합하는 교육 프로그램 개발·운영을 통한 공학교육의 글로벌 경쟁력 제고 및 창의융합형 공학인재 양성",
+      "application": "별도 문의",
+      "contact": "건양대, 공주대, 선문대, 신성대, 순천향대, 한기대, 호서대"
+    }
+  },
+  {
+    "slug": "ontong-youth-sw미래채움",
+    "title": "SW미래채움",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "AI육성과",
+    "region": null,
+    "amount": "지역 내 미취업 청년 등을 SW교육 전문강사로 양성하고 SW교육 지원을 통한 SW미래인재 양성",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "SW미래채움",
+      "고용",
+      "AI육성과",
+      "확인필요",
+      "청년",
+      "구직자",
+      "지역",
+      "내",
+      "미취업",
+      "등을",
+      "SW교육",
+      "전문강사로",
+      "양성하고"
+    ],
+    "summary": "지역 내 미취업 청년 등을 SW교육 전문강사로 양성하고 SW교육 지원을 통한 SW미래인재 양성",
+    "audience": "해당 없음",
+    "benefits": [
+      "지역 내 미취업 청년 등을 SW교육 전문강사로 양성하고 SW교육 지원을 통한 SW미래인재 양성"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20250415CT000000000002222",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20250415CT000000000002222",
+    "contact": "[전담]정보통신산업진흥원(NIPA), [주관]남서울대학교 산학협력단",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "지역 내 미취업 청년 등을 SW교육 전문강사로 양성하고 SW교육 지원을 통한 SW미래인재 양성",
+      "application": "별도 문의",
+      "contact": "[전담]정보통신산업진흥원(NIPA), [주관]남서울대학교 산학협력단"
+    }
+  },
+  {
+    "slug": "ontong-youth-sw중심대학-지원",
+    "title": "SW중심대학 지원",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "AI육성과",
+    "region": null,
+    "amount": "대학 SW교육 혁신을 통한 국가·기업·학생의 경쟁력 강화 및 소프트웨어 가치 확산 선도 대학 육성",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "SW중심대학 지원",
+      "교육",
+      "AI육성과",
+      "확인필요",
+      "청년",
+      "대학",
+      "SW교육",
+      "혁신을",
+      "통한",
+      "국가·기업·학생의",
+      "경쟁력",
+      "강화",
+      "및"
+    ],
+    "summary": "대학 SW교육 혁신을 통한 국가·기업·학생의 경쟁력 강화 및 소프트웨어 가치 확산 선도 대학 육성",
+    "audience": "해당 없음",
+    "benefits": [
+      "대학 SW교육 혁신을 통한 국가·기업·학생의 경쟁력 강화 및 소프트웨어 가치 확산 선도 대학 육성"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20250415CT000000000002223",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20250415CT000000000002223",
+    "contact": "(사업 주체) 과학기술정보통신부 / 충청남도 (사업 수행) 공주대학교·건양대학교·선문대학교 산학협력단",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "대학 SW교육 혁신을 통한 국가·기업·학생의 경쟁력 강화 및 소프트웨어 가치 확산 선도 대학 육성",
+      "application": "별도 문의",
+      "contact": "(사업 주체) 과학기술정보통신부 / 충청남도 (사업 수행) 공주대학교·건양대학교·선문대학교 산학협력단"
+    }
+  },
+  {
+    "slug": "ontong-youth-다문화청년-취-창업지원-사업",
+    "title": "다문화청년 취᭼창업지원 사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "외국인정책과",
+    "region": null,
+    "amount": "다문화청년이 취᭼창업을 통한 주체적 역량으로서 성장이 필요함에 따라 취᭼창업 교육을 통해 현실적᭼경제적 자립 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "다문화청년 취᭼창업지원 사업",
+      "고용",
+      "외국인정책과",
+      "모집중",
+      "청년",
+      "소상공인",
+      "다문화청년이",
+      "취᭼창업을",
+      "통한",
+      "주체적",
+      "역량으로서",
+      "성장이",
+      "필요함에",
+      "따라"
+    ],
+    "summary": "다문화청년이 취᭼창업을 통한 주체적 역량으로서 성장이 필요함에 따라 취᭼창업 교육을 통해 현실적᭼경제적 자립 지원",
+    "audience": "해당사항 없음",
+    "benefits": [
+      "다문화청년이 취᭼창업을 통한 주체적 역량으로서 성장이 필요함에 따라 취᭼창업 교육을 통해 현실적᭼경제적 자립 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청(신청자)→접수(읍면동)→조사(시군 조사팀)→지원결정(시군 사업팀) ※ 전문자격증(간호조무사, 보육교사, 조리사등)은 관련 여성인력개발센터, 여성새로일하기센터 연계지원",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A2024021500300201100001197",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A2024021500300201100001197",
+    "contact": "15개 시군 다문화가족지원센터",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당사항 없음",
+      "benefit": "다문화청년이 취᭼창업을 통한 주체적 역량으로서 성장이 필요함에 따라 취᭼창업 교육을 통해 현실적᭼경제적 자립 지원",
+      "application": "신청(신청자)→접수(읍면동)→조사(시군 조사팀)→지원결정(시군 사업팀) ※ 전문자격증(간호조무사, 보육교사, 조리사등)은 관련 여성인력개발센터, 여성새로일하기센터 연계지원",
+      "contact": "15개 시군 다문화가족지원센터"
+    }
+  },
+  {
+    "slug": "ontong-youth-6월-1일-10-00-오픈예정-2026년-구직청년-자격증-취득지원-사업-5월-접수마감",
+    "title": "[6월 1일 10:00 오픈예정] 2026년 구직청년 자격증 취득지원 사업(5월 접수마감)",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "광주시청",
+    "region": "광주",
+    "amount": "구직활동에 필요한 어학(능력)·자격증 시험 응시료 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "[6월 1일 10:00 오픈예정] 2026년 구직청년 자격증 취득지원 사업(5월 접수마감)",
+      "고용",
+      "광주",
+      "광주시청",
+      "확인필요",
+      "청년",
+      "구직자",
+      "구직활동에",
+      "필요한",
+      "어학(능력)·자격증",
+      "시험",
+      "응시료",
+      "지원"
+    ],
+    "summary": "구직활동에 필요한 어학(능력)·자격증 시험 응시료 지원",
+    "audience": "구직활동에 필요한 어학(능력)·자격증 시험 응시료 지원",
+    "benefits": [
+      "구직활동에 필요한 어학(능력)·자격증 시험 응시료 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "시험 응시 → 광주청년통합플랫폼 접수 → 제출 서류 확인 (자격심사 및 중복지원여부 조회) → 선정안내 및 만족도조사 → 지원금 지급",
+    "officialUrl": "https://youth.gwangju.go.kr/www/50?formSeq=91&mapngColumn=policy_id&mapngId=1358&url=%2Fwww%2Fform%2FapplFormView",
+    "officialSourceUrl": "https://youth.gwangju.go.kr/www/50?formSeq=91&mapngColumn=policy_id&mapngId=1358&url=%2Fwww%2Fform%2FapplFormView",
+    "contact": "광주시청",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "구직활동에 필요한 어학(능력)·자격증 시험 응시료 지원",
+      "benefit": "구직활동에 필요한 어학(능력)·자격증 시험 응시료 지원",
+      "application": "시험 응시 → 광주청년통합플랫폼 접수 → 제출 서류 확인 (자격심사 및 중복지원여부 조회) → 선정안내 및 만족도조사 → 지원금 지급",
+      "contact": "광주시청"
+    }
+  },
+  {
+    "slug": "ontong-youth-전남형-청년창업사관학교",
+    "title": "전남형 청년창업사관학교",
+    "category": "주거",
+    "source": "온통청년 API",
+    "agency": "전라남도 동부지역본부 일자리투자유치국 중소벤처기업과",
+    "region": "전남",
+    "amount": "전라남도는 대학생과 청년들의 우수한 아이디어를 바탕으로 창업기술개발 사업화 지원을 통해 기업 성장 촉진 및 벤처창업 활성화를 위해 「전남형청년창업사관학교」를 운영하고자 지원자를 모집하니 많은 참여 바랍니다.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "전남형 청년창업사관학교",
+      "주거",
+      "전남",
+      "전라남도 동부지역본부 일자리투자유치국 중소벤처기업과",
+      "모집중",
+      "청년",
+      "소상공인",
+      "전라남도는",
+      "대학생과",
+      "청년들의",
+      "우수한",
+      "아이디어를",
+      "바탕으로",
+      "창업기술개발"
+    ],
+    "summary": "전라남도는 대학생과 청년들의 우수한 아이디어를 바탕으로 창업기술개발 사업화 지원을 통해 기업 성장 촉진 및 벤처창업 활성화를 위해 「전남형청년창업사관학교」를 운영하고자 지원자를 모집하니 많은 참여 바랍니다.",
+    "audience": "신청자격 ❍ 아래 요건을 모두 충족해야 신청이 가능하며, ① 창업경력 : 예비 또는 5년 이내 창업자 - 창업 5년 이내 기업은 선정일 기준 창업 5년 전 해당연도* * 2021. 1. 1. 이후 창업 기업 ② 연 령 : 18세 이상 ~ 45세 이하 ③ 주 소 지 : 전라남도 거주자, 전입 예정자 및 타 시·도 거주자 - 전라남도 거주자 및 전입 예정자는 평가 시 우대 ※ 단, 전입 예정자는 선발일 기준 30일 이내 주민등록 주소지를 전라남도로 변경 ④ 사 무 실 : 전라남도 16개 보육기관(｢참고 1｣)에 입주한 기업 ※ 각 보육기관 입주 시, 입주사무실에 대한 임대료가 발생할 수 있으며, 임대료는 학생(기업) 직접 부담 원칙임",
+    "benefits": [
+      "전라남도는 대학생과 청년들의 우수한 아이디어를 바탕으로 창업기술개발 사업화 지원을 통해 기업 성장 촉진 및 벤처창업 활성화를 위해 「전남형청년창업사관학교」를 운영하고자 지원자를 모집하니 많은 참여 바랍니다."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온라인 신청 - 온라인 : 회원가입 후 제출서류 업로드(https://jnchangup.ezwel.com) ※ 온라인 신청 시 각 서류는 PDF 파일로 변환(스캔 등)하여 업로드 - 입주 희망 보육기관 : 1순위, 2순위, 3순위까지 기재 필요 ※ 보육기관 선정규모, 보육기관 전문성 등을 고려하여 배정되므로 신중한 선택필요",
+    "officialUrl": "https://www.jeonnam.go.kr/J0203/boardView.do?seq=23864&infoReturn=&menuId=jeonnam0203000000&displayHeader=&searchType=0&searchText=%EC%B2%AD%EB%85%84&searchStDate=&searchEnDate=&pageIndex=1&boardId=J0203&displayHeader=",
+    "officialSourceUrl": "https://www.jeonnam.go.kr/J0203/boardView.do?seq=23864&infoReturn=&menuId=jeonnam0203000000&displayHeader=&searchType=0&searchText=%EC%B2%AD%EB%85%84&searchStDate=&searchEnDate=&pageIndex=1&boardId=J0203&displayHeader=",
+    "contact": "전라남도 동부지역본부 일자리투자유치국 중소벤처기업과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "신청자격 ❍ 아래 요건을 모두 충족해야 신청이 가능하며, ① 창업경력 : 예비 또는 5년 이내 창업자 - 창업 5년 이내 기업은 선정일 기준 창업 5년 전 해당연도* * 2021. 1. 1. 이후 창업 기업 ② 연 령 : 18세 이상 ~ 45세 이하 ③ 주 소 지 : 전라남도 거주자, 전입 예정자 및 타 시·도 거주자 - 전라남도 거주자 및 전입 예정자는 평가 시 우대 ※ 단, 전입 예정자는 선발일 기준 30일 이내 주민등록 주소지를 전라남도로 변경 ④ 사 무 실 : 전라남도 16개 보육기관(｢참고 1｣)에 입주한 기업 ※ 각 보육기관 입주 시, 입주사무실에 대한 임대료가 발생할 수 있으며, 임대료는 학생(기업) 직접 부담 원칙임",
+      "benefit": "전라남도는 대학생과 청년들의 우수한 아이디어를 바탕으로 창업기술개발 사업화 지원을 통해 기업 성장 촉진 및 벤처창업 활성화를 위해 「전남형청년창업사관학교」를 운영하고자 지원자를 모집하니 많은 참여 바랍니다.",
+      "application": "온라인 신청 - 온라인 : 회원가입 후 제출서류 업로드(https://jnchangup.ezwel.com) ※ 온라인 신청 시 각 서류는 PDF 파일로 변환(스캔 등)하여 업로드 - 입주 희망 보육기관 : 1순위, 2순위, 3순위까지 기재 필요 ※ 보육기관 선정규모, 보육기관 전문성 등을 고려하여 배정되므로 신중한 선택필요",
+      "contact": "전라남도 동부지역본부 일자리투자유치국 중소벤처기업과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년이어드림-dream-지원금",
+    "title": "청년이어드림(Dream) 지원금",
+    "category": "보건의료",
+    "source": "온통청년 API",
+    "agency": "제주청년센터",
+    "region": "제주",
+    "amount": "- 청년들의 정책 참여를 높여 제주형 청년보장제의 빈 공간을 채우는 청년 맞춤형 정책 전달체계 - (오프라인) 청년과 정책을 이어주는 1:1 맞춤형 정책 상담 / 1~3단계 운영, 각 단계별 참여시 지원금 지급 - (온라인) 청년정책 및 청년소식 전달 제주청년플랫폼 운영",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년이어드림(Dream) 지원금",
+      "보건의료",
+      "제주",
+      "제주청년센터",
+      "확인필요",
+      "청년",
+      "-",
+      "청년들의",
+      "정책",
+      "참여를",
+      "높여",
+      "제주형",
+      "청년보장제의",
+      "빈"
+    ],
+    "summary": "- 청년들의 정책 참여를 높여 제주형 청년보장제의 빈 공간을 채우는 청년 맞춤형 정책 전달체계 - (오프라인) 청년과 정책을 이어주는 1:1 맞춤형 정책 상담 / 1~3단계 운영, 각 단계별 참여시 지원금 지급 - (온라인) 청년정책 및 청년소식 전달 제주청년플랫폼 운영",
+    "audience": "- 청년들의 정책 참여를 높여 제주형 청년보장제의 빈 공간을 채우는 청년 맞춤형 정책 전달체계 - (오프라인) 청년과 정책을 이어주는 1:1 맞춤형 정책 상담 / 1~3단계 운영, 각 단계별 참여시 지원금 지급 - (온라인) 청년정책 및 청년소식 전달 제주청년플랫폼 운영",
+    "benefits": [
+      "- 청년들의 정책 참여를 높여 제주형 청년보장제의 빈 공간을 채우는 청년 맞춤형 정책 전달체계 - (오프라인) 청년과 정책을 이어주는 1:1 맞춤형 정책 상담 / 1~3단계 운영, 각 단계별 참여시 지원금 지급 - (온라인) 청년정책 및 청년소식 전달 제주청년플랫폼 운영"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "- 청년이어드림 플랫폼을 통한 신청 - 회원가입 후 상담 오픈일에 맞춰 선착순 신청 - 상담오픈일 공지사항 별도 공지",
+    "officialUrl": "https://jejuyouthdream.com/",
+    "officialSourceUrl": "https://jejuyouthdream.com/",
+    "contact": "제주청년센터",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "- 청년들의 정책 참여를 높여 제주형 청년보장제의 빈 공간을 채우는 청년 맞춤형 정책 전달체계 - (오프라인) 청년과 정책을 이어주는 1:1 맞춤형 정책 상담 / 1~3단계 운영, 각 단계별 참여시 지원금 지급 - (온라인) 청년정책 및 청년소식 전달 제주청년플랫폼 운영",
+      "benefit": "- 청년들의 정책 참여를 높여 제주형 청년보장제의 빈 공간을 채우는 청년 맞춤형 정책 전달체계 - (오프라인) 청년과 정책을 이어주는 1:1 맞춤형 정책 상담 / 1~3단계 운영, 각 단계별 참여시 지원금 지급 - (온라인) 청년정책 및 청년소식 전달 제주청년플랫폼 운영",
+      "application": "- 청년이어드림 플랫폼을 통한 신청 - 회원가입 후 상담 오픈일에 맞춰 선착순 신청 - 상담오픈일 공지사항 별도 공지",
+      "contact": "제주청년센터"
+    }
+  },
+  {
+    "slug": "ontong-youth-아산시-ai-디스플레이-인력양성사업",
+    "title": "아산시 AI-디스플레이 인력양성사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "일자리경제과",
+    "region": null,
+    "amount": "기업 맞춤형 교육을 통한 전문인력 양성으로 청년 취업 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "아산시 AI-디스플레이 인력양성사업",
+      "고용",
+      "일자리경제과",
+      "모집중",
+      "청년",
+      "구직자",
+      "기업",
+      "맞춤형",
+      "교육을",
+      "통한",
+      "전문인력",
+      "양성으로",
+      "취업",
+      "확인필요"
+    ],
+    "summary": "기업 맞춤형 교육을 통한 전문인력 양성으로 청년 취업 지원",
+    "audience": "아산시 거주자",
+    "benefits": [
+      "기업 맞춤형 교육을 통한 전문인력 양성으로 청년 취업 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "(사)충남디스플레이산업기업협의회 메일접수",
+    "officialUrl": "http://www.cdica.or.kr/",
+    "officialSourceUrl": "http://www.cdica.or.kr/",
+    "contact": "일자리경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "아산시 거주자",
+      "benefit": "기업 맞춤형 교육을 통한 전문인력 양성으로 청년 취업 지원",
+      "application": "(사)충남디스플레이산업기업협의회 메일접수",
+      "contact": "일자리경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-아산시-청년정장-대여사업",
+    "title": "아산시 청년정장 대여사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "일자리경제과",
+    "region": null,
+    "amount": "사회진입 과정에서 정장이 필요한 청년 대상으로 정장 대여 지원 및 정쟁 구매 부담 완화",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "아산시 청년정장 대여사업",
+      "고용",
+      "일자리경제과",
+      "모집중",
+      "청년",
+      "사회진입",
+      "과정에서",
+      "정장이",
+      "필요한",
+      "대상으로",
+      "정장",
+      "대여",
+      "확인필요"
+    ],
+    "summary": "사회진입 과정에서 정장이 필요한 청년 대상으로 정장 대여 지원 및 정쟁 구매 부담 완화",
+    "audience": "해당없음",
+    "benefits": [
+      "사회진입 과정에서 정장이 필요한 청년 대상으로 정장 대여 지원 및 정쟁 구매 부담 완화"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "① 청년아지트 나와유 홈페이지 정장대여 신청 ② 관리자 승인 및 승인 문자 발송 ③ 방문예약일에 대여 매장 방문",
+    "officialUrl": "https://www.asan.go.kr/naeil/suit_rental/?m_mode=write",
+    "officialSourceUrl": "https://www.asan.go.kr/naeil/suit_rental/?m_mode=write",
+    "contact": "일자리경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "사회진입 과정에서 정장이 필요한 청년 대상으로 정장 대여 지원 및 정쟁 구매 부담 완화",
+      "application": "① 청년아지트 나와유 홈페이지 정장대여 신청 ② 관리자 승인 및 승인 문자 발송 ③ 방문예약일에 대여 매장 방문",
+      "contact": "일자리경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-홍성-청년-4-h회원-역량-강화-교육",
+    "title": "홍성 청년 4-H회원 역량 강화 교육",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "농업기술센터",
+    "region": null,
+    "amount": "청년농업인 역량 강화 교육",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "홍성 청년 4-H회원 역량 강화 교육",
+      "교육",
+      "농업기술센터",
+      "확인필요",
+      "청년",
+      "청년농업인",
+      "역량",
+      "강화"
+    ],
+    "summary": "농업기술센터에서 홍성 청년 4-H회원의 역량 강화를 위해 운영하는 교육 지원 정책입니다. 세부 일정은 공식 안내를 확인하세요.",
+    "audience": "해당 없음",
+    "benefits": [
+      "청년농업인 역량 강화 교육"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "해당 없음",
+    "officialUrl": "https://www.hongseong.go.kr/farm/",
+    "officialSourceUrl": "https://www.hongseong.go.kr/farm/",
+    "contact": "농업기술센터",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "청년농업인 역량 강화 교육",
+      "application": "해당 없음",
+      "contact": "농업기술센터"
+    }
+  },
+  {
+    "slug": "ontong-youth-서산시-청년어촌정착지원사업",
+    "title": "서산시 청년어촌정착지원사업",
+    "category": "주거",
+    "source": "온통청년 API",
+    "agency": "해양수산과",
+    "region": null,
+    "amount": "창업 초기 청년 수산업 경영인의 안정적인 어촌 정착을 지원하여 어촌 이탈을 방지하고 우수한 청년인력의 어촌 유치",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "서산시 청년어촌정착지원사업",
+      "주거",
+      "해양수산과",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "창업",
+      "초기",
+      "수산업",
+      "경영인의",
+      "안정적인",
+      "어촌",
+      "정착을"
+    ],
+    "summary": "창업 초기 청년 수산업 경영인의 안정적인 어촌 정착을 지원하여 어촌 이탈을 방지하고 우수한 청년인력의 어촌 유치",
+    "audience": "만 18세 이상 ~ 40세 미만 25년 건강보험료 중위소득 150% 미만 어업 및 양식업 경력 3년이하의 독립경영자",
+    "benefits": [
+      "창업 초기 청년 수산업 경영인의 안정적인 어촌 정착을 지원하여 어촌 이탈을 방지하고 우수한 청년인력의 어촌 유치"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "접수-심의-면접-선정",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-08/view?bizId=A20260402LC000000000003153",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-08/view?bizId=A20260402LC000000000003153",
+    "contact": "해양수산과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "만 18세 이상 ~ 40세 미만 25년 건강보험료 중위소득 150% 미만 어업 및 양식업 경력 3년이하의 독립경영자",
+      "benefit": "창업 초기 청년 수산업 경영인의 안정적인 어촌 정착을 지원하여 어촌 이탈을 방지하고 우수한 청년인력의 어촌 유치",
+      "application": "접수-심의-면접-선정",
+      "contact": "해양수산과"
+    }
+  },
+  {
+    "slug": "ontong-youth-아산시-청년아지트-나와유-청년-클래스",
+    "title": "아산시 청년아지트 나와유 청년 클래스",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "일자리경제과",
+    "region": null,
+    "amount": "청년의 취향과 관심을 반영한 트렌디한 자기계발 프로그램을 운영하여 청년들의 삶의 만족도를 높이고 청년센터 공간을 활성화하고자 하는 프로그램",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "아산시 청년아지트 나와유 청년 클래스",
+      "고용",
+      "일자리경제과",
+      "확인필요",
+      "청년",
+      "청년의",
+      "취향과",
+      "관심을",
+      "반영한",
+      "트렌디한",
+      "자기계발",
+      "프로그램을",
+      "운영하여"
+    ],
+    "summary": "청년의 취향과 관심을 반영한 트렌디한 자기계발 프로그램을 운영하여 청년들의 삶의 만족도를 높이고 청년센터 공간을 활성화하고자 하는 프로그램",
+    "audience": "해당없음",
+    "benefits": [
+      "청년의 취향과 관심을 반영한 트렌디한 자기계발 프로그램을 운영하여 청년들의 삶의 만족도를 높이고 청년센터 공간을 활성화하고자 하는 프로그램"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "홈페이지 공개모집",
+    "officialUrl": "https://www.asan.go.kr/naeil/program/?m_mode=list",
+    "officialSourceUrl": "https://www.asan.go.kr/naeil/program/?m_mode=list",
+    "contact": "일자리경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "청년의 취향과 관심을 반영한 트렌디한 자기계발 프로그램을 운영하여 청년들의 삶의 만족도를 높이고 청년센터 공간을 활성화하고자 하는 프로그램",
+      "application": "홈페이지 공개모집",
+      "contact": "일자리경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-서산시-청년-신혼부부-주택-전세자금-대출이자-지원사업",
+    "title": "서산시 청년 신혼부부 주택 전세자금 대출이자 지원사업",
+    "category": "주거",
+    "source": "온통청년 API",
+    "agency": "주택과",
+    "region": null,
+    "amount": "청년 신혼부부의 전세자금 대출이자를 지원하여 주거비 경감을 통한 결혼 및 출산 장려",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 가구/부모",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "서산시 청년 신혼부부 주택 전세자금 대출이자 지원사업",
+      "주거",
+      "주택과",
+      "확인필요",
+      "청년",
+      "가구/부모",
+      "신혼부부의",
+      "전세자금",
+      "대출이자를",
+      "지원하여",
+      "주거비",
+      "경감을",
+      "통한"
+    ],
+    "summary": "청년 신혼부부의 전세자금 대출이자를 지원하여 주거비 경감을 통한 결혼 및 출산 장려",
+    "audience": "부부 중 1명이 만 19~39세 부부합산 기준중위소득 180%이하",
+    "benefits": [
+      "청년 신혼부부의 전세자금 대출이자를 지원하여 주거비 경감을 통한 결혼 및 출산 장려"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "주소지 행정복지센터 방문 신청",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-05/view?bizId=A20260402LC000000000003154",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-05/view?bizId=A20260402LC000000000003154",
+    "contact": "주택과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "부부 중 1명이 만 19~39세 부부합산 기준중위소득 180%이하",
+      "benefit": "청년 신혼부부의 전세자금 대출이자를 지원하여 주거비 경감을 통한 결혼 및 출산 장려",
+      "application": "주소지 행정복지센터 방문 신청",
+      "contact": "주택과"
+    }
+  },
+  {
+    "slug": "ontong-youth-아산시-2026년-청년-취업아카데미",
+    "title": "아산시 2026년 청년 취업아카데미",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "일자리경제과",
+    "region": null,
+    "amount": "장기 미취업자 및 구직 단념자 증가에 따라 취업 의지를 고취하고 취업 역량을 강화하는 프로그램을 단계별로 운영하여 청년 구직 지원 안전망을 구축하고 함",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "아산시 2026년 청년 취업아카데미",
+      "고용",
+      "일자리경제과",
+      "확인필요",
+      "청년",
+      "구직자",
+      "장기",
+      "미취업자",
+      "및",
+      "구직",
+      "단념자",
+      "증가에",
+      "따라",
+      "취업"
+    ],
+    "summary": "장기 미취업자 및 구직 단념자 증가에 따라 취업 의지를 고취하고 취업 역량을 강화하는 프로그램을 단계별로 운영하여 청년 구직 지원 안전망을 구축하고 함",
+    "audience": "해당없음",
+    "benefits": [
+      "장기 미취업자 및 구직 단념자 증가에 따라 취업 의지를 고취하고 취업 역량을 강화하는 프로그램을 단계별로 운영하여 청년 구직 지원 안전망을 구축하고 함"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "홈페이지 통한 신청",
+    "officialUrl": "https://www.asan.go.kr/naeil/",
+    "officialSourceUrl": "https://www.asan.go.kr/naeil/",
+    "contact": "일자리경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "장기 미취업자 및 구직 단념자 증가에 따라 취업 의지를 고취하고 취업 역량을 강화하는 프로그램을 단계별로 운영하여 청년 구직 지원 안전망을 구축하고 함",
+      "application": "홈페이지 통한 신청",
+      "contact": "일자리경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-아산시-청년-생활물품-대여",
+    "title": "아산시 청년 생활물품 대여",
+    "category": "주거",
+    "source": "온통청년 API",
+    "agency": "일자리경제과",
+    "region": null,
+    "amount": "청년의 주거와 생활안정",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "아산시 청년 생활물품 대여",
+      "주거",
+      "일자리경제과",
+      "확인필요",
+      "청년",
+      "청년의",
+      "주거와",
+      "생활안정"
+    ],
+    "summary": "일자리경제과에서 아산시 청년의 생활 안정을 돕기 위해 생활물품 대여를 지원하는 사업입니다. 이용 기준은 공식 안내를 확인하세요.",
+    "audience": "해당없음",
+    "benefits": [
+      "청년의 주거와 생활안정"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온라인 접수",
+    "officialUrl": "https://www.asan.go.kr/naeil/page/?page=040200",
+    "officialSourceUrl": "https://www.asan.go.kr/naeil/page/?page=040200",
+    "contact": "일자리경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "청년의 주거와 생활안정",
+      "application": "온라인 접수",
+      "contact": "일자리경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-아산시-청년위원회-운영",
+    "title": "아산시 청년위원회 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "일자리경제과",
+    "region": null,
+    "amount": "청년이 만들어가는 아산’실현을 위해 대표 청년 소통 기구인 청년위원회를 구성, 현장 의견 수렴 및 청년정책 제안을 통해 청년의 시정 참여 확대",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "아산시 청년위원회 운영",
+      "고용",
+      "일자리경제과",
+      "모집중",
+      "청년",
+      "청년이",
+      "만들어가는",
+      "아산’실현을",
+      "위해",
+      "대표",
+      "소통",
+      "기구인",
+      "확인필요"
+    ],
+    "summary": "청년이 만들어가는 아산’실현을 위해 대표 청년 소통 기구인 청년위원회를 구성, 현장 의견 수렴 및 청년정책 제안을 통해 청년의 시정 참여 확대",
+    "audience": "공고일 기준 아산시 거주 청년 및 생활권(대학교·직장·개인사업장 등)이 아산인 만 18세 ~ 39세 이하 청년",
+    "benefits": [
+      "청년이 만들어가는 아산’실현을 위해 대표 청년 소통 기구인 청년위원회를 구성, 현장 의견 수렴 및 청년정책 제안을 통해 청년의 시정 참여 확대"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청서 및 기타증빙서류 이메일 제출",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-10/view?bizId=A20260402LC000000000003162",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-10/view?bizId=A20260402LC000000000003162",
+    "contact": "일자리경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "공고일 기준 아산시 거주 청년 및 생활권(대학교·직장·개인사업장 등)이 아산인 만 18세 ~ 39세 이하 청년",
+      "benefit": "청년이 만들어가는 아산’실현을 위해 대표 청년 소통 기구인 청년위원회를 구성, 현장 의견 수렴 및 청년정책 제안을 통해 청년의 시정 참여 확대",
+      "application": "신청서 및 기타증빙서류 이메일 제출",
+      "contact": "일자리경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년이-일하기-좋은-청년친화적-기업-지원",
+    "title": "청년이 일하기 좋은 청년친화적 기업 지원",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "청년정책과",
+    "region": null,
+    "amount": "재직 청년들이 지역에서 함께 성장・정주・동행할 수 있도록 지속적으로 청년친화적 기업 문화 확산 촉진",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년이 일하기 좋은 청년친화적 기업 지원",
+      "고용",
+      "청년정책과",
+      "확인필요",
+      "청년",
+      "재직",
+      "청년들이",
+      "지역에서",
+      "함께",
+      "성장・정주・동행할",
+      "수",
+      "있도록",
+      "지속적으로"
+    ],
+    "summary": "재직 청년들이 지역에서 함께 성장・정주・동행할 수 있도록 지속적으로 청년친화적 기업 문화 확산 촉진",
+    "audience": "천안형 청년친화기업 9개사 및 재직 청년",
+    "benefits": [
+      "재직 청년들이 지역에서 함께 성장・정주・동행할 수 있도록 지속적으로 청년친화적 기업 문화 확산 촉진"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "기업별 상이",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A20260402LC000000000003164",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A20260402LC000000000003164",
+    "contact": "청년정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "천안형 청년친화기업 9개사 및 재직 청년",
+      "benefit": "재직 청년들이 지역에서 함께 성장・정주・동행할 수 있도록 지속적으로 청년친화적 기업 문화 확산 촉진",
+      "application": "기업별 상이",
+      "contact": "청년정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-서산시-임신축하금-지원",
+    "title": "서산시 임신축하금 지원",
+    "category": "보건의료",
+    "source": "온통청년 API",
+    "agency": "건강증진과",
+    "region": null,
+    "amount": "임신축하금 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "서산시 임신축하금 지원",
+      "보건의료",
+      "건강증진과",
+      "모집중",
+      "청년",
+      "임신축하금",
+      "지원",
+      "확인필요"
+    ],
+    "summary": "건강증진과에서 임신 가정을 대상으로 축하금 지원을 안내하는 정책입니다. 대상과 신청 조건은 공식 공고에서 확인하세요.",
+    "audience": "신청일 이전부터 서산시에 주민등록 3개월 거주한 서산시보건소 등록 임산부(※ 출산 후 신청불가) 서산시보건소 등록 임산부",
+    "benefits": [
+      "임신축하금 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "보건소 방문 신청",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260402LC000000000003157",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260402LC000000000003157",
+    "contact": "건강증진과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "신청일 이전부터 서산시에 주민등록 3개월 거주한 서산시보건소 등록 임산부(※ 출산 후 신청불가) 서산시보건소 등록 임산부",
+      "benefit": "임신축하금 지원",
+      "application": "보건소 방문 신청",
+      "contact": "건강증진과"
+    }
+  },
+  {
+    "slug": "ontong-youth-서산시-청년농-미디어커머스-지원",
+    "title": "서산시 청년농 미디어커머스 지원",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "농식품유통과",
+    "region": null,
+    "amount": "청년농에 미디어커머스를 활용한 온라인 콘텐츠 제작·홍보 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "서산시 청년농 미디어커머스 지원",
+      "문화생활",
+      "농식품유통과",
+      "모집중",
+      "청년",
+      "청년농에",
+      "미디어커머스를",
+      "활용한",
+      "온라인",
+      "콘텐츠",
+      "제작·홍보",
+      "지원",
+      "확인필요"
+    ],
+    "summary": "청년농에 미디어커머스를 활용한 온라인 콘텐츠 제작·홍보 지원",
+    "audience": "만18세 이상 ~ 만45세 미만(1981.1.2. ~ 2008.1.1. 출생자) 관내 주소 및 경영체 등록된 만45세 미만 청년농업인 관내에서 직접 생산한 1차 농산물 및 가공품 대상",
+    "benefits": [
+      "청년농에 미디어커머스를 활용한 온라인 콘텐츠 제작·홍보 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청기간 내 읍·면·동 행정복지센터에 신청",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-09/view?bizId=A20260402LC000000000003155",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-09/view?bizId=A20260402LC000000000003155",
+    "contact": "농식품유통과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "만18세 이상 ~ 만45세 미만(1981.1.2. ~ 2008.1.1. 출생자) 관내 주소 및 경영체 등록된 만45세 미만 청년농업인 관내에서 직접 생산한 1차 농산물 및 가공품 대상",
+      "benefit": "청년농에 미디어커머스를 활용한 온라인 콘텐츠 제작·홍보 지원",
+      "application": "신청기간 내 읍·면·동 행정복지센터에 신청",
+      "contact": "농식품유통과"
+    }
+  },
+  {
+    "slug": "ontong-youth-아산시-청년-마음상담-서비스-토닥토닥",
+    "title": "아산시 청년 마음상담 서비스 토닥토닥",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "일자리경제과",
+    "region": null,
+    "amount": "다양한 문제로 걱정과 고민을 안고 있는 청년들에게 마음상담 서비스를 제공하여 청년의 일상 회복을 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "아산시 청년 마음상담 서비스 토닥토닥",
+      "고용",
+      "일자리경제과",
+      "확인필요",
+      "청년",
+      "다양한",
+      "문제로",
+      "걱정과",
+      "고민을",
+      "안고",
+      "있는",
+      "청년들에게",
+      "마음상담"
+    ],
+    "summary": "다양한 문제로 걱정과 고민을 안고 있는 청년들에게 마음상담 서비스를 제공하여 청년의 일상 회복을 지원",
+    "audience": "2026년 신규 신청자 우선 선정",
+    "benefits": [
+      "다양한 문제로 걱정과 고민을 안고 있는 청년들에게 마음상담 서비스를 제공하여 청년의 일상 회복을 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "상담신청 ▷ 사전검사 및 상담 희망 내용 작성 ▷ 상담사 배정 ▷ 초기상담(1회기) ▷ 상담 진행 여부 결정 ▷ 상담진행(6회기) ▷ 만족도조사",
+    "officialUrl": "https://www.asan.go.kr/naeil/regular_programs/?m_mode=view&pds_no=2026022115223850152",
+    "officialSourceUrl": "https://www.asan.go.kr/naeil/regular_programs/?m_mode=view&pds_no=2026022115223850152",
+    "contact": "일자리경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "2026년 신규 신청자 우선 선정",
+      "benefit": "다양한 문제로 걱정과 고민을 안고 있는 청년들에게 마음상담 서비스를 제공하여 청년의 일상 회복을 지원",
+      "application": "상담신청 ▷ 사전검사 및 상담 희망 내용 작성 ▷ 상담사 배정 ▷ 초기상담(1회기) ▷ 상담 진행 여부 결정 ▷ 상담진행(6회기) ▷ 만족도조사",
+      "contact": "일자리경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-서산시-청년농어업인-행복바우처-지원사업",
+    "title": "서산시 청년농어업인 행복바우처 지원사업",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "농업정책과",
+    "region": null,
+    "amount": "청년농업인 문화.복지 증진 등 삶의 질 향상을 위하여 행복바우처 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "서산시 청년농어업인 행복바우처 지원사업",
+      "문화생활",
+      "농업정책과",
+      "확인필요",
+      "청년",
+      "청년농업인",
+      "문화.복지",
+      "증진",
+      "등",
+      "삶의",
+      "질",
+      "향상을",
+      "위하여"
+    ],
+    "summary": "청년농업인 문화.복지 증진 등 삶의 질 향상을 위하여 행복바우처 지원",
+    "audience": "해당없음",
+    "benefits": [
+      "청년농업인 문화.복지 증진 등 삶의 질 향상을 위하여 행복바우처 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "읍면동 행정복지센터 방문 신청",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-09/view?bizId=A20260402LC000000000003158",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-09/view?bizId=A20260402LC000000000003158",
+    "contact": "농업정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "청년농업인 문화.복지 증진 등 삶의 질 향상을 위하여 행복바우처 지원",
+      "application": "읍면동 행정복지센터 방문 신청",
+      "contact": "농업정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-아산시-청년-재무상담-서비스-영앤리치",
+    "title": "아산시 청년 재무상담 서비스 「영앤리치」",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "일자리경제과",
+    "region": null,
+    "amount": "청년의 실용적이고 체계적인 자산 형성과 건전한 소비 습관을 위해 재무 진단 상담, 소득‧지출 관리에 대한 전문가 1:1 재무 컨설팅 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "아산시 청년 재무상담 서비스 「영앤리치」",
+      "고용",
+      "일자리경제과",
+      "확인필요",
+      "청년",
+      "청년의",
+      "실용적이고",
+      "체계적인",
+      "자산",
+      "형성과",
+      "건전한",
+      "소비",
+      "습관을"
+    ],
+    "summary": "청년의 실용적이고 체계적인 자산 형성과 건전한 소비 습관을 위해 재무 진단 상담, 소득‧지출 관리에 대한 전문가 1:1 재무 컨설팅 지원",
+    "audience": "아산시를 생활권으로 하는 18~39세 청년",
+    "benefits": [
+      "청년의 실용적이고 체계적인 자산 형성과 건전한 소비 습관을 위해 재무 진단 상담, 소득‧지출 관리에 대한 전문가 1:1 재무 컨설팅 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청서 및 증빙서류 이메일 제출",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260402LC000000000003165",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260402LC000000000003165",
+    "contact": "일자리경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "아산시를 생활권으로 하는 18~39세 청년",
+      "benefit": "청년의 실용적이고 체계적인 자산 형성과 건전한 소비 습관을 위해 재무 진단 상담, 소득‧지출 관리에 대한 전문가 1:1 재무 컨설팅 지원",
+      "application": "신청서 및 증빙서류 이메일 제출",
+      "contact": "일자리경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-아산시-청년정책조정위원회-운영",
+    "title": "아산시 청년정책조정위원회 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "일자리경제과",
+    "region": null,
+    "amount": "청년정책 심의·의결",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "아산시 청년정책조정위원회 운영",
+      "고용",
+      "일자리경제과",
+      "확인필요",
+      "청년",
+      "청년정책",
+      "심의·의결"
+    ],
+    "summary": "일자리경제과에서 청년정책 심의와 의견 조정을 위해 운영하는 위원회 관련 정책입니다. 구성과 운영 기준은 공식 안내를 확인하세요.",
+    "audience": "거주·생활권이 아산시 만 18세 ~ 39세 이하 지역 청년 및 청년 정책에 관한 학식과 전문성을 보유한 자",
+    "benefits": [
+      "청년정책 심의·의결"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "해당없음",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-10/view?bizId=A20260402LC000000000003161",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-10/view?bizId=A20260402LC000000000003161",
+    "contact": "일자리경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "거주·생활권이 아산시 만 18세 ~ 39세 이하 지역 청년 및 청년 정책에 관한 학식과 전문성을 보유한 자",
+      "benefit": "청년정책 심의·의결",
+      "application": "해당없음",
+      "contact": "일자리경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-아산시-쉼표청년-지원사업",
+    "title": "아산시 쉼표청년 지원사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "일자리경제과",
+    "region": null,
+    "amount": "고립·은둔 청년의 사회 복귀 및 자립을 지원하기 위한 단계별 맞춤형 프로그램 운영",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "아산시 쉼표청년 지원사업",
+      "고용",
+      "일자리경제과",
+      "모집중",
+      "청년",
+      "구직자",
+      "고립·은둔",
+      "청년의",
+      "사회",
+      "복귀",
+      "및",
+      "자립을",
+      "지원하기",
+      "위한"
+    ],
+    "summary": "고립·은둔 청년의 사회 복귀 및 자립을 지원하기 위한 단계별 맞춤형 프로그램 운영",
+    "audience": "아산시에 거주하는 만 18~34세 청년 3개월 이상 ‘쉼’ 상태에 있는 청년(최근 3개월 이상 구직·경제활동을 하지 않은 경우)",
+    "benefits": [
+      "고립·은둔 청년의 사회 복귀 및 자립을 지원하기 위한 단계별 맞춤형 프로그램 운영"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "청년아지트 나와유 홈페이지 신청 →검사 링크 발송 → 건강보험자격득실확인서, 고용보험 자격이력내역서 확인 → 쉼표 청년 참여",
+    "officialUrl": "https://www.asan.go.kr/naeil/page/?page=commayouth",
+    "officialSourceUrl": "https://www.asan.go.kr/naeil/page/?page=commayouth",
+    "contact": "일자리경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "아산시에 거주하는 만 18~34세 청년 3개월 이상 ‘쉼’ 상태에 있는 청년(최근 3개월 이상 구직·경제활동을 하지 않은 경우)",
+      "benefit": "고립·은둔 청년의 사회 복귀 및 자립을 지원하기 위한 단계별 맞춤형 프로그램 운영",
+      "application": "청년아지트 나와유 홈페이지 신청 →검사 링크 발송 → 건강보험자격득실확인서, 고용보험 자격이력내역서 확인 → 쉼표 청년 참여",
+      "contact": "일자리경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-서산시-대학생-아르바이트-운영",
+    "title": "서산시 대학생 아르바이트 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "자치행정국",
+    "region": null,
+    "amount": "- 대학생 일자리 제공을 통한 행정업무 체험 및 시정 홍보 - 봉사와 근로를 통한 건전한 가치관을 지닌 인재 육성",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "서산시 대학생 아르바이트 운영",
+      "고용",
+      "자치행정국",
+      "모집중",
+      "청년",
+      "-",
+      "대학생",
+      "일자리",
+      "제공을",
+      "통한",
+      "행정업무",
+      "체험",
+      "및",
+      "확인필요"
+    ],
+    "summary": "- 대학생 일자리 제공을 통한 행정업무 체험 및 시정 홍보 - 봉사와 근로를 통한 건전한 가치관을 지닌 인재 육성",
+    "audience": "만 19세 이상 대학생",
+    "benefits": [
+      "- 대학생 일자리 제공을 통한 행정업무 체험 및 시정 홍보 - 봉사와 근로를 통한 건전한 가치관을 지닌 인재 육성"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "내부계획 수립 및 모집공고 게시 후 신청자 접수",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A20260401LC000000000003107",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A20260401LC000000000003107",
+    "contact": "자치행정국",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "만 19세 이상 대학생",
+      "benefit": "- 대학생 일자리 제공을 통한 행정업무 체험 및 시정 홍보 - 봉사와 근로를 통한 건전한 가치관을 지닌 인재 육성",
+      "application": "내부계획 수립 및 모집공고 게시 후 신청자 접수",
+      "contact": "자치행정국"
+    }
+  },
+  {
+    "slug": "ontong-youth-홍성-4-h회-활동-지원",
+    "title": "홍성 4-H회 활동 지원",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "농업기술센터",
+    "region": null,
+    "amount": "청년농업인 역량 강화 교육",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "홍성 4-H회 활동 지원",
+      "교육",
+      "농업기술센터",
+      "확인필요",
+      "청년",
+      "청년농업인",
+      "역량",
+      "강화"
+    ],
+    "summary": "농업기술센터에서 홍성 4-H회 활동과 청년농업인 역량 강화를 지원하는 사업입니다. 세부 내용은 공식 공고에서 확인하세요.",
+    "audience": "해당 없음",
+    "benefits": [
+      "청년농업인 역량 강화 교육"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "해당 없음",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-07/view?bizId=A20260401LC000000000003103",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-07/view?bizId=A20260401LC000000000003103",
+    "contact": "기획운영과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "청년농업인 역량 강화 교육",
+      "application": "해당 없음",
+      "contact": "기획운영과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년의-날-행사",
+    "title": "청년의 날 행사",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "경제산업과",
+    "region": null,
+    "amount": "청년의 날 특별 프로그램 및 행사 등을 진행하여 청년의 날을 기념, 문화 경험 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년의 날 행사",
+      "문화생활",
+      "경제산업과",
+      "모집중",
+      "청년",
+      "청년의",
+      "날",
+      "특별",
+      "프로그램",
+      "및",
+      "행사",
+      "등을",
+      "진행하여",
+      "확인필요"
+    ],
+    "summary": "청년의 날 특별 프로그램 및 행사 등을 진행하여 청년의 날을 기념, 문화 경험 제공",
+    "audience": "해당없음",
+    "benefits": [
+      "청년의 날 특별 프로그램 및 행사 등을 진행하여 청년의 날을 기념, 문화 경험 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도 신청 절차 없이 청년의 날 행사에 참여 가능",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-11/view?bizId=A20260401LC000000000003102",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-11/view?bizId=A20260401LC000000000003102",
+    "contact": "경제산업과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "청년의 날 특별 프로그램 및 행사 등을 진행하여 청년의 날을 기념, 문화 경험 제공",
+      "application": "별도 신청 절차 없이 청년의 날 행사에 참여 가능",
+      "contact": "경제산업과"
+    }
+  },
+  {
+    "slug": "ontong-youth-서산시-출산지원금-및-둘째-이후-영유아-양육비-지원",
+    "title": "서산시 출산지원금 및 둘째 이후 영유아 양육비 지원",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "기획예산담당관",
+    "region": null,
+    "amount": "출산지원금(첫째 50, 둘째 100, 셋째 500, 넷째 이상 1,000만원) 둘째 이후 영유아 양육비 (만 3세까지 매달 10만원)",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "서산시 출산지원금 및 둘째 이후 영유아 양육비 지원",
+      "문화생활",
+      "기획예산담당관",
+      "확인필요",
+      "청년",
+      "출산지원금(첫째",
+      "50,",
+      "둘째",
+      "100,",
+      "셋째",
+      "500,",
+      "넷째",
+      "이상"
+    ],
+    "summary": "출산지원금(첫째 50, 둘째 100, 셋째 500, 넷째 이상 1,000만원) 둘째 이후 영유아 양육비 (만 3세까지 매달 10만원)",
+    "audience": "해당 없음",
+    "benefits": [
+      "출산지원금(첫째 50, 둘째 100, 셋째 500, 넷째 이상 1,000만원) 둘째 이후 영유아 양육비 (만 3세까지 매달 10만원)"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "출생신고 시 일괄 접수",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260401LC000000000003101",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260401LC000000000003101",
+    "contact": "기획예산담당관",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "출산지원금(첫째 50, 둘째 100, 셋째 500, 넷째 이상 1,000만원) 둘째 이후 영유아 양육비 (만 3세까지 매달 10만원)",
+      "application": "출생신고 시 일괄 접수",
+      "contact": "기획예산담당관"
+    }
+  },
+  {
+    "slug": "ontong-youth-홍성-신혼부부-주거자금-대출이자-지원",
+    "title": "홍성 신혼부부 주거자금 대출이자 지원",
+    "category": "주거",
+    "source": "온통청년 API",
+    "agency": "건축허가과",
+    "region": null,
+    "amount": "「홍성군 신혼부부 주거자금 대출이자 지원에 관한 조례」에 따라 관내 신혼부부의 주거비 부담 경감",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 가구/부모",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "홍성 신혼부부 주거자금 대출이자 지원",
+      "주거",
+      "건축허가과",
+      "모집중",
+      "청년",
+      "가구/부모",
+      "「홍성군",
+      "신혼부부",
+      "주거자금",
+      "대출이자",
+      "지원에",
+      "관한",
+      "조례」에",
+      "따라"
+    ],
+    "summary": "「홍성군 신혼부부 주거자금 대출이자 지원에 관한 조례」에 따라 관내 신혼부부의 주거비 부담 경감",
+    "audience": "해당 없음",
+    "benefits": [
+      "「홍성군 신혼부부 주거자금 대출이자 지원에 관한 조례」에 따라 관내 신혼부부의 주거비 부담 경감"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "주소지 읍면 방문신청",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-05/view?bizId=A20260401LC000000000003098",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-05/view?bizId=A20260401LC000000000003098",
+    "contact": "경제정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "「홍성군 신혼부부 주거자금 대출이자 지원에 관한 조례」에 따라 관내 신혼부부의 주거비 부담 경감",
+      "application": "주소지 읍면 방문신청",
+      "contact": "경제정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년-문화시설-관람비-지원",
+    "title": "청년 문화시설 관람비 지원",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "경제산업과",
+    "region": null,
+    "amount": "20대 청년들에게 보다 넓은 문화 향유의 기회 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년 문화시설 관람비 지원",
+      "문화생활",
+      "경제산업과",
+      "모집중",
+      "청년",
+      "20대",
+      "청년들에게",
+      "보다",
+      "넓은",
+      "문화",
+      "향유의",
+      "기회",
+      "제공",
+      "확인필요"
+    ],
+    "summary": "20대 청년들에게 보다 넓은 문화 향유의 기회 제공",
+    "audience": "해당없음",
+    "benefits": [
+      "20대 청년들에게 보다 넓은 문화 향유의 기회 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청서 및 구비서류를 이메일 또는 청년센터 방문 신청",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-10/view?bizId=A20260401LC000000000003097",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-10/view?bizId=A20260401LC000000000003097",
+    "contact": "경제산업과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "20대 청년들에게 보다 넓은 문화 향유의 기회 제공",
+      "application": "신청서 및 구비서류를 이메일 또는 청년센터 방문 신청",
+      "contact": "경제산업과"
+    }
+  },
+  {
+    "slug": "ontong-youth-인생-설계-프로그램",
+    "title": "인생 설계 프로그램",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "경제산업과",
+    "region": null,
+    "amount": "청년들의 진로, 적성 탐색 프로그램 운영",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "인생 설계 프로그램",
+      "문화생활",
+      "경제산업과",
+      "상시",
+      "청년",
+      "청년들의",
+      "진로,",
+      "적성",
+      "탐색",
+      "프로그램",
+      "운영",
+      "확인필요"
+    ],
+    "summary": "경제산업과에서 청년의 진로와 적성 탐색을 돕기 위해 운영하는 프로그램입니다. 참여 조건과 일정은 공식 안내를 확인하세요.",
+    "audience": "해당없음",
+    "benefits": [
+      "청년들의 진로, 적성 탐색 프로그램 운영"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "연중 인생설계 프로그램 신청 기간에 홈페이지를 통해 신청 접수",
+    "officialUrl": "https://gyeryong.go.kr/kr/html/sub05/05100302.html",
+    "officialSourceUrl": "https://gyeryong.go.kr/kr/html/sub05/05100302.html",
+    "contact": "경제산업과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "청년들의 진로, 적성 탐색 프로그램 운영",
+      "application": "연중 인생설계 프로그램 신청 기간에 홈페이지를 통해 신청 접수",
+      "contact": "경제산업과"
+    }
+  },
+  {
+    "slug": "ontong-youth-서산시-군복무-청년-상해보험-가입",
+    "title": "서산시 군복무 청년 상해보험 가입",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "기획예산담당관",
+    "region": null,
+    "amount": "군복무 청년 대상 상해 보험 가입",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "서산시 군복무 청년 상해보험 가입",
+      "문화생활",
+      "기획예산담당관",
+      "모집중",
+      "청년",
+      "군복무",
+      "대상",
+      "상해",
+      "보험",
+      "가입",
+      "확인필요"
+    ],
+    "summary": "기획예산담당관에서 서산시 군복무 청년을 대상으로 상해보험 가입을 지원하는 정책입니다. 보장 범위는 공식 안내를 확인하세요.",
+    "audience": "군복무 청년",
+    "benefits": [
+      "군복무 청년 대상 상해 보험 가입"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "전용 콜센터 신청",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260401LC000000000003092",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260401LC000000000003092",
+    "contact": "기획예산담당관",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "군복무 청년",
+      "benefit": "군복무 청년 대상 상해 보험 가입",
+      "application": "전용 콜센터 신청",
+      "contact": "기획예산담당관"
+    }
+  },
+  {
+    "slug": "ontong-youth-홍성청년네트워크-운영",
+    "title": "홍성청년네트워크 운영",
+    "category": "청년",
+    "source": "온통청년 API",
+    "agency": "경제정책과",
+    "region": null,
+    "amount": "군 청년정책의 수립과 시행에 청년의 다양한 목소리 반영 당사자 중심의 청년정책 실현 및 청년 참여 소통 활성화",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "홍성청년네트워크 운영",
+      "청년",
+      "경제정책과",
+      "모집중",
+      "군",
+      "청년정책의",
+      "수립과",
+      "시행에",
+      "청년의",
+      "다양한",
+      "목소리",
+      "반영",
+      "확인필요"
+    ],
+    "summary": "군 청년정책의 수립과 시행에 청년의 다양한 목소리 반영 당사자 중심의 청년정책 실현 및 청년 참여 소통 활성화",
+    "audience": "해당 없음",
+    "benefits": [
+      "군 청년정책의 수립과 시행에 청년의 다양한 목소리 반영 당사자 중심의 청년정책 실현 및 청년 참여 소통 활성화"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "홍성군 홈페이지 공고/고시 확인 후 방문·이메일 신청",
+    "officialUrl": "https://www.hongseong.go.kr/",
+    "officialSourceUrl": "https://www.hongseong.go.kr/",
+    "contact": "경제정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "군 청년정책의 수립과 시행에 청년의 다양한 목소리 반영 당사자 중심의 청년정책 실현 및 청년 참여 소통 활성화",
+      "application": "홍성군 홈페이지 공고/고시 확인 후 방문·이메일 신청",
+      "contact": "경제정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-홍성-청년의-날-기념행사",
+    "title": "홍성 청년의 날 기념행사",
+    "category": "청년",
+    "source": "온통청년 API",
+    "agency": "경제정책과",
+    "region": null,
+    "amount": "홍성 청년들의 다양성을 표출하고, 소통과 어울림의 장을 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "홍성 청년의 날 기념행사",
+      "청년",
+      "경제정책과",
+      "확인필요",
+      "홍성",
+      "청년들의",
+      "다양성을",
+      "표출하고,",
+      "소통과",
+      "어울림의",
+      "장을",
+      "제공"
+    ],
+    "summary": "홍성 청년들의 다양성을 표출하고, 소통과 어울림의 장을 제공",
+    "audience": "해당 없음",
+    "benefits": [
+      "홍성 청년들의 다양성을 표출하고, 소통과 어울림의 장을 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "해당 없음",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-09/view?bizId=A20260401LC000000000003088",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-09/view?bizId=A20260401LC000000000003088",
+    "contact": "경제정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "홍성 청년들의 다양성을 표출하고, 소통과 어울림의 장을 제공",
+      "application": "해당 없음",
+      "contact": "경제정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-글로벌-탐방-연수",
+    "title": "글로벌 탐방 연수",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "평생교육과",
+    "region": null,
+    "amount": "자기주도 해외 문화탐방으로 창의 인재 양성",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "글로벌 탐방 연수",
+      "교육",
+      "평생교육과",
+      "모집중",
+      "청년",
+      "자기주도",
+      "해외",
+      "문화탐방으로",
+      "창의",
+      "인재",
+      "양성",
+      "확인필요"
+    ],
+    "summary": "평생교육과에서 청년의 자기주도 해외 문화탐방과 역량 성장을 지원하는 연수 프로그램입니다. 신청 기준은 공식 공고를 확인하세요.",
+    "audience": "해당없음",
+    "benefits": [
+      "자기주도 해외 문화탐방으로 창의 인재 양성"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청서 및 구비서류를 계룡시청 평생교육과에 방문 및 우편 신청",
+    "officialUrl": "https://gyeryong.go.kr/kr/",
+    "officialSourceUrl": "https://gyeryong.go.kr/kr/",
+    "contact": "평생교육과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "자기주도 해외 문화탐방으로 창의 인재 양성",
+      "application": "신청서 및 구비서류를 계룡시청 평생교육과에 방문 및 우편 신청",
+      "contact": "평생교육과"
+    }
+  },
+  {
+    "slug": "ontong-youth-서산시-청년정책네트워크-구성-운영",
+    "title": "서산시 청년정책네트워크 구성·운영",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "기획예산담당관",
+    "region": null,
+    "amount": "청년정책 발굴을 위한 회의 개최 및 청년 관련 각종 행사 등 시정 참여",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "서산시 청년정책네트워크 구성·운영",
+      "문화생활",
+      "기획예산담당관",
+      "모집중",
+      "청년",
+      "청년정책",
+      "발굴을",
+      "위한",
+      "회의",
+      "개최",
+      "및",
+      "관련",
+      "확인필요"
+    ],
+    "summary": "청년정책 발굴을 위한 회의 개최 및 청년 관련 각종 행사 등 시정 참여",
+    "audience": "서산시에서 거주 및 활동하는 청년",
+    "benefits": [
+      "청년정책 발굴을 위한 회의 개최 및 청년 관련 각종 행사 등 시정 참여"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청기간 내 서류 제출(이메일, 방문)",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-09/view?bizId=A20260401LC000000000003081",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-09/view?bizId=A20260401LC000000000003081",
+    "contact": "기획예산담당관",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "서산시에서 거주 및 활동하는 청년",
+      "benefit": "청년정책 발굴을 위한 회의 개최 및 청년 관련 각종 행사 등 시정 참여",
+      "application": "신청기간 내 서류 제출(이메일, 방문)",
+      "contact": "기획예산담당관"
+    }
+  },
+  {
+    "slug": "ontong-youth-홍성형일자리-군민채용제",
+    "title": "홍성형일자리 군민채용제",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "경제정책과",
+    "region": null,
+    "amount": "군민채용제 기업선발 및 근로자 매칭하여 근속지원금 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "홍성형일자리 군민채용제",
+      "고용",
+      "경제정책과",
+      "모집중",
+      "청년",
+      "구직자",
+      "군민채용제",
+      "기업선발",
+      "및",
+      "근로자",
+      "매칭하여",
+      "근속지원금",
+      "지급",
+      "확인필요"
+    ],
+    "summary": "군민채용제 기업선발 및 근로자 매칭하여 근속지원금 지급",
+    "audience": "해당 없음",
+    "benefits": [
+      "군민채용제 기업선발 및 근로자 매칭하여 근속지원금 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "이메일 접수",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-04/view?bizId=A20260401LC000000000003074",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-04/view?bizId=A20260401LC000000000003074",
+    "contact": "경제정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "군민채용제 기업선발 및 근로자 매칭하여 근속지원금 지급",
+      "application": "이메일 접수",
+      "contact": "경제정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-부여군-군복무-청년-상해보험-가입-지원",
+    "title": "부여군 군복무 청년 상해보험 가입 지원",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "안전총괄과",
+    "region": null,
+    "amount": "군 복무 중 불의의 사고 대비 위한 상해보험 가입 및 운영",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "부여군 군복무 청년 상해보험 가입 지원",
+      "문화생활",
+      "안전총괄과",
+      "모집중",
+      "청년",
+      "군",
+      "복무",
+      "중",
+      "불의의",
+      "사고",
+      "대비",
+      "위한",
+      "상해보험",
+      "확인필요"
+    ],
+    "summary": "군 복무 중 불의의 사고 대비 위한 상해보험 가입 및 운영",
+    "audience": "해당 없음",
+    "benefits": [
+      "군 복무 중 불의의 사고 대비 위한 상해보험 가입 및 운영"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "상해 발생 시 보험사(농협손해보험(1644-9666)) 직접 신청",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260401LC000000000003072",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260401LC000000000003072",
+    "contact": "안전총괄과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "군 복무 중 불의의 사고 대비 위한 상해보험 가입 및 운영",
+      "application": "상해 발생 시 보험사(농협손해보험(1644-9666)) 직접 신청",
+      "contact": "안전총괄과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년-면접용-정장-대여비-지원",
+    "title": "청년 면접용 정장 대여비 지원",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "경제산업과",
+    "region": null,
+    "amount": "미취업(또는 계약직 근무) 청년이 취업 면접을 위해 지정된 정장 대여업체에서 3박 4일간 정장 무료 대여 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년 면접용 정장 대여비 지원",
+      "고용",
+      "경제산업과",
+      "확인필요",
+      "청년",
+      "구직자",
+      "미취업(또는",
+      "계약직",
+      "근무)",
+      "청년이",
+      "취업",
+      "면접을",
+      "위해",
+      "지정된"
+    ],
+    "summary": "미취업(또는 계약직 근무) 청년이 취업 면접을 위해 지정된 정장 대여업체에서 3박 4일간 정장 무료 대여 지원",
+    "audience": "해당없음",
+    "benefits": [
+      "미취업(또는 계약직 근무) 청년이 취업 면접을 위해 지정된 정장 대여업체에서 3박 4일간 정장 무료 대여 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "정장 대여업체 방문 2일 전까지 신청서 및 구비서류 첨부하여 이메일 또는 청년센터 방문 신청",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260401LC000000000003073",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-02/view?bizId=A20260401LC000000000003073",
+    "contact": "경제산업과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "미취업(또는 계약직 근무) 청년이 취업 면접을 위해 지정된 정장 대여업체에서 3박 4일간 정장 무료 대여 지원",
+      "application": "정장 대여업체 방문 2일 전까지 신청서 및 구비서류 첨부하여 이메일 또는 청년센터 방문 신청",
+      "contact": "경제산업과"
+    }
+  },
+  {
+    "slug": "ontong-youth-서산시-공동육아나눔터-장난감도서관-운영",
+    "title": "서산시 공동육아나눔터(장난감도서관) 운영",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "가족지원과",
+    "region": null,
+    "amount": "- 공동육아나눔터 품앗이 활동 및 프로그램 운영 - 장난감도서관을 통한 장난감 대여 서비스 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "서산시 공동육아나눔터(장난감도서관) 운영",
+      "문화생활",
+      "가족지원과",
+      "확인필요",
+      "청년",
+      "-",
+      "공동육아나눔터",
+      "품앗이",
+      "활동",
+      "및",
+      "프로그램",
+      "운영"
+    ],
+    "summary": "- 공동육아나눔터 품앗이 활동 및 프로그램 운영 - 장난감도서관을 통한 장난감 대여 서비스 지원",
+    "audience": "해당없음",
+    "benefits": [
+      "- 공동육아나눔터 품앗이 활동 및 프로그램 운영 - 장난감도서관을 통한 장난감 대여 서비스 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "- 품앗이 활동 및 장난감 대여 직접 방문 후 신청",
+    "officialUrl": "https://seosan.familynet.or.kr",
+    "officialSourceUrl": "https://seosan.familynet.or.kr",
+    "contact": "가족지원과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "- 공동육아나눔터 품앗이 활동 및 프로그램 운영 - 장난감도서관을 통한 장난감 대여 서비스 지원",
+      "application": "- 품앗이 활동 및 장난감 대여 직접 방문 후 신청",
+      "contact": "가족지원과"
+    }
+  },
+  {
+    "slug": "ontong-youth-태안-청년-이사비-지원",
+    "title": "태안 청년 이사비 지원",
+    "category": "주거",
+    "source": "온통청년 API",
+    "agency": "신속허가과",
+    "region": null,
+    "amount": "전입청년들의 이사비용(운송비, 부동산중개보수비) 지원 사업",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "태안 청년 이사비 지원",
+      "주거",
+      "신속허가과",
+      "확인필요",
+      "청년",
+      "전입청년들의",
+      "이사비용(운송비,",
+      "부동산중개보수비)",
+      "지원",
+      "사업"
+    ],
+    "summary": "전입청년들의 이사비용(운송비, 부동산중개보수비) 지원 사업",
+    "audience": "해당 없음",
+    "benefits": [
+      "전입청년들의 이사비용(운송비, 부동산중개보수비) 지원 사업"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신속허가과 방문신청",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260401LC000000000003132",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260401LC000000000003132",
+    "contact": "신속허가과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "전입청년들의 이사비용(운송비, 부동산중개보수비) 지원 사업",
+      "application": "신속허가과 방문신청",
+      "contact": "신속허가과"
+    }
+  },
+  {
+    "slug": "ontong-youth-홍성복합문화창업공간-잇슈창고-운영",
+    "title": "홍성복합문화창업공간 잇슈창고 운영",
+    "category": "창업",
+    "source": "온통청년 API",
+    "agency": "경제정책과",
+    "region": null,
+    "amount": "청년창업가 양성을 위한 전문교육기관의 교육·컨설팅 및 실습기관으로 활용",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "홍성복합문화창업공간 잇슈창고 운영",
+      "창업",
+      "경제정책과",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "청년창업가",
+      "양성을",
+      "위한",
+      "전문교육기관의",
+      "교육·컨설팅",
+      "및",
+      "실습기관으로",
+      "활용"
+    ],
+    "summary": "청년창업가 양성을 위한 전문교육기관의 교육·컨설팅 및 실습기관으로 활용",
+    "audience": "해당 없음",
+    "benefits": [
+      "청년창업가 양성을 위한 전문교육기관의 교육·컨설팅 및 실습기관으로 활용"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "홍성군 홈페이지 공지사항 공고 게시",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-09/view?bizId=A20260401LC000000000003071",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-09/view?bizId=A20260401LC000000000003071",
+    "contact": "경제정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "청년창업가 양성을 위한 전문교육기관의 교육·컨설팅 및 실습기관으로 활용",
+      "application": "홍성군 홈페이지 공지사항 공고 게시",
+      "contact": "경제정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-공공근로-일자리-청년-우선-선발",
+    "title": "공공근로 일자리(청년 우선 선발)",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "경제산업과",
+    "region": null,
+    "amount": "공공일자리를 제공하여 청년들의 고용시장 진입을 위한 완충 역할 및 생활 안정 도모",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "공공근로 일자리(청년 우선 선발)",
+      "고용",
+      "경제산업과",
+      "모집중",
+      "청년",
+      "공공일자리를",
+      "제공하여",
+      "청년들의",
+      "고용시장",
+      "진입을",
+      "위한",
+      "완충",
+      "역할",
+      "확인필요"
+    ],
+    "summary": "공공일자리를 제공하여 청년들의 고용시장 진입을 위한 완충 역할 및 생활 안정 도모",
+    "audience": "해당없음",
+    "benefits": [
+      "공공일자리를 제공하여 청년들의 고용시장 진입을 위한 완충 역할 및 생활 안정 도모"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청서 및 구비서류 주소지 면동사무소에 제출",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A20260401LC000000000003070",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A20260401LC000000000003070",
+    "contact": "경제산업과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "공공일자리를 제공하여 청년들의 고용시장 진입을 위한 완충 역할 및 생활 안정 도모",
+      "application": "신청서 및 구비서류 주소지 면동사무소에 제출",
+      "contact": "경제산업과"
+    }
+  },
+  {
+    "slug": "ontong-youth-서산시-자립준비청년-운전면허-취득지원-사업",
+    "title": "서산시 자립준비청년 운전면허 취득지원 사업",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "가족지원과",
+    "region": null,
+    "amount": "가정위탁보호, 시설보호 종료 또는 연장된 청소년에게 운전면허 취득지원으로 실질적이고 안정적인 사회정착 및 성공적 자립에 기여코자 함.",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "서산시 자립준비청년 운전면허 취득지원 사업",
+      "교육",
+      "가족지원과",
+      "모집중",
+      "청년",
+      "가정위탁보호,",
+      "시설보호",
+      "종료",
+      "또는",
+      "연장된",
+      "청소년에게",
+      "운전면허",
+      "취득지원으로",
+      "확인필요"
+    ],
+    "summary": "가정위탁보호, 시설보호 종료 또는 연장된 청소년에게 운전면허 취득지원으로 실질적이고 안정적인 사회정착 및 성공적 자립에 기여코자 함.",
+    "audience": "등록된 보호대상 청소년",
+    "benefits": [
+      "가정위탁보호, 시설보호 종료 또는 연장된 청소년에게 운전면허 취득지원으로 실질적이고 안정적인 사회정착 및 성공적 자립에 기여코자 함."
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "시청 가족지원과에 신청",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-09/view?bizId=A20260401LC000000000003150",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-09/view?bizId=A20260401LC000000000003150",
+    "contact": "가족지원과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "등록된 보호대상 청소년",
+      "benefit": "가정위탁보호, 시설보호 종료 또는 연장된 청소년에게 운전면허 취득지원으로 실질적이고 안정적인 사회정착 및 성공적 자립에 기여코자 함.",
+      "application": "시청 가족지원과에 신청",
+      "contact": "가족지원과"
+    }
+  },
+  {
+    "slug": "ontong-youth-태안-청년-신혼부부-주택자금-대출이자-지원",
+    "title": "태안 청년 신혼부부 주택자금 대출이자 지원",
+    "category": "주거",
+    "source": "온통청년 API",
+    "agency": "신속허가과",
+    "region": null,
+    "amount": "주택자금(매매, 전세) 대출을 받고 납입한 이자 지원 사업",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 가구/부모",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "태안 청년 신혼부부 주택자금 대출이자 지원",
+      "주거",
+      "신속허가과",
+      "확인필요",
+      "청년",
+      "가구/부모",
+      "주택자금(매매,",
+      "전세)",
+      "대출을",
+      "받고",
+      "납입한",
+      "이자",
+      "지원",
+      "사업"
+    ],
+    "summary": "주택자금(매매, 전세) 대출을 받고 납입한 이자 지원 사업",
+    "audience": "해당 없음",
+    "benefits": [
+      "주택자금(매매, 전세) 대출을 받고 납입한 이자 지원 사업"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신속허가과 방문신청",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-05/view?bizId=A20260401LC000000000003135",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-05/view?bizId=A20260401LC000000000003135",
+    "contact": "신속허가과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "주택자금(매매, 전세) 대출을 받고 납입한 이자 지원 사업",
+      "application": "신속허가과 방문신청",
+      "contact": "신속허가과"
+    }
+  },
+  {
+    "slug": "ontong-youth-태안-사회복무요원-보상-및-배상책임-보험",
+    "title": "태안 사회복무요원 보상 및 배상책임 보험",
+    "category": "보건의료",
+    "source": "온통청년 API",
+    "agency": "안전관리과",
+    "region": null,
+    "amount": "공무상 의료비·재해보상금 보험/ 대인대물배상책임 보험",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "태안 사회복무요원 보상 및 배상책임 보험",
+      "보건의료",
+      "안전관리과",
+      "확인필요",
+      "청년",
+      "공무상",
+      "의료비·재해보상금",
+      "보험/",
+      "대인대물배상책임",
+      "보험"
+    ],
+    "summary": "공무상 의료비·재해보상금 보험/ 대인대물배상책임 보험",
+    "audience": "해당 없음",
+    "benefits": [
+      "공무상 의료비·재해보상금 보험/ 대인대물배상책임 보험"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "태안군 소속 사회복무요원 자동 가입",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-04/view?bizId=A20260401LC000000000003139",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M030-04/view?bizId=A20260401LC000000000003139",
+    "contact": "안전관리과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "공무상 의료비·재해보상금 보험/ 대인대물배상책임 보험",
+      "application": "태안군 소속 사회복무요원 자동 가입",
+      "contact": "안전관리과"
+    }
+  },
+  {
+    "slug": "ontong-youth-서산시-성연청소년문화의집-운영",
+    "title": "서산시 성연청소년문화의집 운영",
+    "category": "보건의료",
+    "source": "온통청년 API",
+    "agency": "가족지원과",
+    "region": null,
+    "amount": "청소년의 건강하고 행복한 성장을 돕기 위한 청소년전용시설 운영",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "서산시 성연청소년문화의집 운영",
+      "보건의료",
+      "가족지원과",
+      "확인필요",
+      "청년",
+      "청소년의",
+      "건강하고",
+      "행복한",
+      "성장을",
+      "돕기",
+      "위한",
+      "청소년전용시설",
+      "운영"
+    ],
+    "summary": "청소년의 건강하고 행복한 성장을 돕기 위한 청소년전용시설 운영",
+    "audience": "해당없음",
+    "benefits": [
+      "청소년의 건강하고 행복한 성장을 돕기 위한 청소년전용시설 운영"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "프로그램 별 상이, 홈페이지 참고",
+    "officialUrl": "https://www.s3youth.or.kr/",
+    "officialSourceUrl": "https://www.s3youth.or.kr/",
+    "contact": "가족지원과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "청소년의 건강하고 행복한 성장을 돕기 위한 청소년전용시설 운영",
+      "application": "프로그램 별 상이, 홈페이지 참고",
+      "contact": "가족지원과"
+    }
+  },
+  {
+    "slug": "ontong-youth-태안-군-복무-태안-청년-상해-보험-가입",
+    "title": "태안 군 복무 태안 청년 상해 보험 가입",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "안전관리과",
+    "region": null,
+    "amount": "군 복무 태안 청년 단체 상해보험 가입",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "태안 군 복무 태안 청년 상해 보험 가입",
+      "문화생활",
+      "안전관리과",
+      "확인필요",
+      "청년",
+      "군",
+      "복무",
+      "태안",
+      "단체",
+      "상해보험",
+      "가입"
+    ],
+    "summary": "안전관리과에서 군 복무 중인 태안 청년을 대상으로 단체 상해보험 가입을 지원하는 정책입니다. 보장 조건은 공식 안내를 확인하세요.",
+    "audience": "해당 없음",
+    "benefits": [
+      "군 복무 태안 청년 단체 상해보험 가입"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "담당자 문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260401LC000000000003140",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260401LC000000000003140",
+    "contact": "안전관리과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "군 복무 태안 청년 단체 상해보험 가입",
+      "application": "담당자 문의",
+      "contact": "안전관리과"
+    }
+  },
+  {
+    "slug": "ontong-youth-태안-청년네트워크-운영",
+    "title": "태안 청년네트워크 운영",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "기획예산담당관",
+    "region": null,
+    "amount": "청년 문제 해결을 위한 의제와 정책을 발굴하고 실현하기 위해 청년 참여를 기반으로 한 청년 네트워크 운영",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "태안 청년네트워크 운영",
+      "문화생활",
+      "기획예산담당관",
+      "모집중",
+      "청년",
+      "문제",
+      "해결을",
+      "위한",
+      "의제와",
+      "정책을",
+      "발굴하고",
+      "실현하기",
+      "확인필요"
+    ],
+    "summary": "청년 문제 해결을 위한 의제와 정책을 발굴하고 실현하기 위해 청년 참여를 기반으로 한 청년 네트워크 운영",
+    "audience": "해당 없음",
+    "benefits": [
+      "청년 문제 해결을 위한 의제와 정책을 발굴하고 실현하기 위해 청년 참여를 기반으로 한 청년 네트워크 운영"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "태안군 홈페이지 공고(공개모집)",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-10/view?bizId=A20260401LC000000000003142",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-10/view?bizId=A20260401LC000000000003142",
+    "contact": "기획예산담당관",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "청년 문제 해결을 위한 의제와 정책을 발굴하고 실현하기 위해 청년 참여를 기반으로 한 청년 네트워크 운영",
+      "application": "태안군 홈페이지 공고(공개모집)",
+      "contact": "기획예산담당관"
+    }
+  },
+  {
+    "slug": "ontong-youth-서산시-창업보육센터-지원",
+    "title": "서산시 창업보육센터 지원",
+    "category": "창업",
+    "source": "온통청년 API",
+    "agency": "투자유치과",
+    "region": null,
+    "amount": "창업기업 육성 및 지원을 위한 창업보육센터 활성화 촉진",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "서산시 창업보육센터 지원",
+      "창업",
+      "투자유치과",
+      "모집중",
+      "청년",
+      "소상공인",
+      "창업기업",
+      "육성",
+      "및",
+      "지원을",
+      "위한",
+      "창업보육센터",
+      "활성화",
+      "촉진"
+    ],
+    "summary": "창업기업 육성 및 지원을 위한 창업보육센터 활성화 촉진",
+    "audience": "창업을 희망하는 예비창업자 또는 창업 3년 미만인 기업",
+    "benefits": [
+      "창업기업 육성 및 지원을 위한 창업보육센터 활성화 촉진"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "방문접수/ 우편접수/ 팩스/ 이메일",
+    "officialUrl": "http://www.habi.or.kr/main/index.action",
+    "officialSourceUrl": "http://www.habi.or.kr/main/index.action",
+    "contact": "투자유치과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "창업을 희망하는 예비창업자 또는 창업 3년 미만인 기업",
+      "benefit": "창업기업 육성 및 지원을 위한 창업보육센터 활성화 촉진",
+      "application": "방문접수/ 우편접수/ 팩스/ 이메일",
+      "contact": "투자유치과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년농업인-인큐베이팅-기술지원",
+    "title": "청년농업인 인큐베이팅 기술지원",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "기술지원과",
+    "region": null,
+    "amount": "미래농업의 주역인 청년농업인들의 소득기반 구축",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년농업인 인큐베이팅 기술지원",
+      "고용",
+      "기술지원과",
+      "모집중",
+      "청년",
+      "미래농업의",
+      "주역인",
+      "청년농업인들의",
+      "소득기반",
+      "구축",
+      "확인필요"
+    ],
+    "summary": "미래농업의 주역인 청년농업인들의 소득기반 구축",
+    "audience": "해당 없음",
+    "benefits": [
+      "미래농업의 주역인 청년농업인들의 소득기반 구축"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "농업기술센터 신청서류 제출",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-07/view?bizId=A20260401LC000000000003126",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M050-07/view?bizId=A20260401LC000000000003126",
+    "contact": "기술지원과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "미래농업의 주역인 청년농업인들의 소득기반 구축",
+      "application": "농업기술센터 신청서류 제출",
+      "contact": "기술지원과"
+    }
+  },
+  {
+    "slug": "ontong-youth-서산시-전입-대학생-생활안정-지원",
+    "title": "서산시 전입 대학생 생활안정 지원",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "자치행정국",
+    "region": null,
+    "amount": "관내 소재 대학교(한서대학교) 재(휴)학생 중, 전입신고를 한 대학생을 대상으로 생활안정 지원금 10만원 지급",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "서산시 전입 대학생 생활안정 지원",
+      "교육",
+      "자치행정국",
+      "모집중",
+      "청년",
+      "관내",
+      "소재",
+      "대학교(한서대학교)",
+      "재(휴)학생",
+      "중,",
+      "전입신고를",
+      "한",
+      "대학생을",
+      "확인필요"
+    ],
+    "summary": "관내 소재 대학교(한서대학교) 재(휴)학생 중, 전입신고를 한 대학생을 대상으로 생활안정 지원금 10만원 지급",
+    "audience": "만 19세 이상 대학생",
+    "benefits": [
+      "관내 소재 대학교(한서대학교) 재(휴)학생 중, 전입신고를 한 대학생을 대상으로 생활안정 지원금 10만원 지급"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청 접수(공문 등) 후, 지원",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260401LC000000000003120",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260401LC000000000003120",
+    "contact": "자치행정국",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "만 19세 이상 대학생",
+      "benefit": "관내 소재 대학교(한서대학교) 재(휴)학생 중, 전입신고를 한 대학생을 대상으로 생활안정 지원금 10만원 지급",
+      "application": "신청 접수(공문 등) 후, 지원",
+      "contact": "자치행정국"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년정책네트워크",
+    "title": "청년정책네트워크",
+    "category": "청년",
+    "source": "온통청년 API",
+    "agency": "경제산업과",
+    "region": null,
+    "amount": "청년정책을 청년 스스로 발굴하여 시정에 반영, 수요자 중심 정책 실현",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년정책네트워크",
+      "청년",
+      "경제산업과",
+      "모집중",
+      "청년정책을",
+      "스스로",
+      "발굴하여",
+      "시정에",
+      "반영,",
+      "수요자",
+      "중심",
+      "확인필요"
+    ],
+    "summary": "청년정책을 청년 스스로 발굴하여 시정에 반영, 수요자 중심 정책 실현",
+    "audience": "해당없음",
+    "benefits": [
+      "청년정책을 청년 스스로 발굴하여 시정에 반영, 수요자 중심 정책 실현"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "신청서 작성 후 이메일로 신청",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-10/view?bizId=A20260401LC000000000003125",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M060-10/view?bizId=A20260401LC000000000003125",
+    "contact": "경제산업과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당없음",
+      "benefit": "청년정책을 청년 스스로 발굴하여 시정에 반영, 수요자 중심 정책 실현",
+      "application": "신청서 작성 후 이메일로 신청",
+      "contact": "경제산업과"
+    }
+  },
+  {
+    "slug": "ontong-youth-태안학사-운영",
+    "title": "태안학사 운영",
+    "category": "주거",
+    "source": "온통청년 API",
+    "agency": "교육체육과",
+    "region": null,
+    "amount": "우리군 출신 수도권지역 대학생들의 주거비 부담 완화 및 안정된 학업 환경 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "태안학사 운영",
+      "주거",
+      "교육체육과",
+      "모집중",
+      "청년",
+      "우리군",
+      "출신",
+      "수도권지역",
+      "대학생들의",
+      "주거비",
+      "부담",
+      "완화",
+      "및",
+      "확인필요"
+    ],
+    "summary": "우리군 출신 수도권지역 대학생들의 주거비 부담 완화 및 안정된 학업 환경 제공",
+    "audience": "해당 없음",
+    "benefits": [
+      "우리군 출신 수도권지역 대학생들의 주거비 부담 완화 및 안정된 학업 환경 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "우편 또는 방문접수",
+    "officialUrl": "https://www.taean.go.kr/kor/sub02_03_01.do",
+    "officialSourceUrl": "https://www.taean.go.kr/kor/sub02_03_01.do",
+    "contact": "교육체육과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "해당 없음",
+      "benefit": "우리군 출신 수도권지역 대학생들의 주거비 부담 완화 및 안정된 학업 환경 제공",
+      "application": "우편 또는 방문접수",
+      "contact": "교육체육과"
+    }
+  },
+  {
+    "slug": "ontong-youth-생활권-보행환경-종합정비사업-안서동-청년안심-탄소중립-보행환경-개선",
+    "title": "생활권 보행환경 종합정비사업 (안서동 청년안심 탄소중립 보행환경 개선)",
+    "category": "주거",
+    "source": "온통청년 API",
+    "agency": "시장",
+    "region": null,
+    "amount": "민선 8기 공약사업 ‘대학로 조성’ 관련 대학로 특화거리 조성 및 보행안전도로 조성",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "생활권 보행환경 종합정비사업 (안서동 청년안심 탄소중립 보행환경 개선)",
+      "주거",
+      "시장",
+      "확인필요",
+      "청년",
+      "민선",
+      "8기",
+      "공약사업",
+      "‘대학로",
+      "조성’",
+      "관련",
+      "대학로",
+      "특화거리"
+    ],
+    "summary": "민선 8기 공약사업 ‘대학로 조성’ 관련 대학로 특화거리 조성 및 보행안전도로 조성",
+    "audience": "제한없음",
+    "benefits": [
+      "민선 8기 공약사업 ‘대학로 조성’ 관련 대학로 특화거리 조성 및 보행안전도로 조성"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "별도문의",
+    "officialUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260309LC000000000003065",
+    "officialSourceUrl": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260309LC000000000003065",
+    "contact": "교통정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "제한없음",
+      "benefit": "민선 8기 공약사업 ‘대학로 조성’ 관련 대학로 특화거리 조성 및 보행안전도로 조성",
+      "application": "별도문의",
+      "contact": "교통정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년-해외진출기지-지원",
+    "title": "청년 해외진출기지 지원",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 미래산업국 산업창업정책과",
+    "region": "인천",
+    "amount": "해외진출 역량이 있으나, 자원이 부족한 청년 창업가를 발굴하여 체계적인 지원으로 지역 청년 창업기업 해외진출 도모",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년 해외진출기지 지원",
+      "고용",
+      "인천",
+      "인천광역시 미래산업국 산업창업정책과",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "해외진출",
+      "역량이",
+      "있으나,",
+      "자원이",
+      "부족한",
+      "창업가를",
+      "발굴하여"
+    ],
+    "summary": "해외진출 역량이 있으나, 자원이 부족한 청년 창업가를 발굴하여 체계적인 지원으로 지역 청년 창업기업 해외진출 도모",
+    "audience": "-",
+    "benefits": [
+      "해외진출 역량이 있으나, 자원이 부족한 청년 창업가를 발굴하여 체계적인 지원으로 지역 청년 창업기업 해외진출 도모"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://ccei.creativekorea.or.kr/incheon/",
+    "officialSourceUrl": "https://ccei.creativekorea.or.kr/incheon/",
+    "contact": "(재)인천창조경제혁신센터",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-",
+      "benefit": "해외진출 역량이 있으나, 자원이 부족한 청년 창업가를 발굴하여 체계적인 지원으로 지역 청년 창업기업 해외진출 도모",
+      "application": "공식 공고 확인",
+      "contact": "(재)인천창조경제혁신센터"
+    }
+  },
+  {
+    "slug": "ontong-youth-대학생-학자금대출-이자-지원",
+    "title": "대학생 학자금대출 이자 지원",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "인천광역시 기획조정실 교육협력담당관",
+    "region": "인천",
+    "amount": "인천시 대학생에게 학자금대출 이자를 지원하여 균등한 고등교육 기회 제공 및 지역인재 육성에 기여",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "대학생 학자금대출 이자 지원",
+      "교육",
+      "인천",
+      "인천광역시 기획조정실 교육협력담당관",
+      "확인필요",
+      "청년",
+      "인천시",
+      "대학생에게",
+      "학자금대출",
+      "이자를",
+      "지원하여",
+      "균등한",
+      "고등교육",
+      "기회"
+    ],
+    "summary": "인천시 대학생에게 학자금대출 이자를 지원하여 균등한 고등교육 기회 제공 및 지역인재 육성에 기여",
+    "audience": "-○지원시기 : 2026년 12월말(예정) ○결과확인 : 한국장학재단 홈페이지 → 학자금대출 → 학자금뱅킹 → 학자금대출상환지원 → 지자체 이자지원 지급내역 조회",
+    "benefits": [
+      "인천시 대학생에게 학자금대출 이자를 지원하여 균등한 고등교육 기회 제공 및 지역인재 육성에 기여"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "인천시 홈페이지 > 시민참여 > 대학생 학자금대출 이자지원 신청",
+    "officialUrl": "https://www.kosaf.go.kr/ko/main.do",
+    "officialSourceUrl": "https://www.kosaf.go.kr/ko/main.do",
+    "contact": "인천광역시 기획조정실 교육협력담당관",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-○지원시기 : 2026년 12월말(예정) ○결과확인 : 한국장학재단 홈페이지 → 학자금대출 → 학자금뱅킹 → 학자금대출상환지원 → 지자체 이자지원 지급내역 조회",
+      "benefit": "인천시 대학생에게 학자금대출 이자를 지원하여 균등한 고등교육 기회 제공 및 지역인재 육성에 기여",
+      "application": "인천시 홈페이지 > 시민참여 > 대학생 학자금대출 이자지원 신청",
+      "contact": "인천광역시 기획조정실 교육협력담당관"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년농업인4-h-연합회-활동지원",
+    "title": "청년농업인4-H 연합회 활동지원",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "인천광역시 농업기술센터 농촌자원과",
+    "region": "인천",
+    "amount": "인천광역시 청년농업인4-H연합회 교육·행사지원 및 조직활성화",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년농업인4-H 연합회 활동지원",
+      "교육",
+      "인천",
+      "인천광역시 농업기술센터 농촌자원과",
+      "확인필요",
+      "청년",
+      "인천광역시",
+      "청년농업인4-H연합회",
+      "교육·행사지원",
+      "및",
+      "조직활성화"
+    ],
+    "summary": "인천광역시 청년농업인4-H연합회 교육·행사지원 및 조직활성화",
+    "audience": "-",
+    "benefits": [
+      "인천광역시 청년농업인4-H연합회 교육·행사지원 및 조직활성화"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=299",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=299",
+    "contact": "인천광역시 농업기술센터 농촌자원과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-",
+      "benefit": "인천광역시 청년농업인4-H연합회 교육·행사지원 및 조직활성화",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 농업기술센터 농촌자원과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년어업인-영어정착지원",
+    "title": "청년어업인 영어정착지원",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 수산기술지원센터",
+    "region": "인천",
+    "amount": "창업 초기 청년어업인의 안정적인 어촌 정착 지원을 통한 우수한 청년인력의 어촌 유치",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년어업인 영어정착지원",
+      "고용",
+      "인천",
+      "인천광역시 수산기술지원센터",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "창업",
+      "초기",
+      "청년어업인의",
+      "안정적인",
+      "어촌",
+      "정착",
+      "지원을"
+    ],
+    "summary": "창업 초기 청년어업인의 안정적인 어촌 정착 지원을 통한 우수한 청년인력의 어촌 유치",
+    "audience": "(소득기준) 상근고용, 어업과 무관한 사업체 경영 금지 (기타조건) 수산업 경영기반 해당 시·군·구에 실제 거주(주민등록포함), 어업 및 양식업 경력 3년 이하 독립경영, 병역필 또는 병역면제자",
+    "benefits": [
+      "창업 초기 청년어업인의 안정적인 어촌 정착 지원을 통한 우수한 청년인력의 어촌 유치"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=298",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=298",
+    "contact": "인천광역시 수산기술지원센터",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "(소득기준) 상근고용, 어업과 무관한 사업체 경영 금지 (기타조건) 수산업 경영기반 해당 시·군·구에 실제 거주(주민등록포함), 어업 및 양식업 경력 3년 이하 독립경영, 병역필 또는 병역면제자",
+      "benefit": "창업 초기 청년어업인의 안정적인 어촌 정착 지원을 통한 우수한 청년인력의 어촌 유치",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 수산기술지원센터"
+    }
+  },
+  {
+    "slug": "ontong-youth-인천콘텐츠코리아랩-운영",
+    "title": "인천콘텐츠코리아랩 운영",
+    "category": "창업",
+    "source": "온통청년 API",
+    "agency": "인천광역시 문화체육국 문화정책과",
+    "region": "인천",
+    "amount": "콘텐츠 비즈니스 모델 발굴 및 사업화 지원을 통해 스타트업의 성장 지원 기반 마련 확대",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "인천콘텐츠코리아랩 운영",
+      "창업",
+      "인천",
+      "인천광역시 문화체육국 문화정책과",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "콘텐츠",
+      "비즈니스",
+      "모델",
+      "발굴",
+      "및",
+      "사업화",
+      "지원을"
+    ],
+    "summary": "콘텐츠 비즈니스 모델 발굴 및 사업화 지원을 통해 스타트업의 성장 지원 기반 마련 확대",
+    "audience": "-",
+    "benefits": [
+      "콘텐츠 비즈니스 모델 발굴 및 사업화 지원을 통해 스타트업의 성장 지원 기반 마련 확대"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.inckl.or.kr/user/main.do",
+    "officialSourceUrl": "https://www.inckl.or.kr/user/main.do",
+    "contact": "인천테크노파크",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-",
+      "benefit": "콘텐츠 비즈니스 모델 발굴 및 사업화 지원을 통해 스타트업의 성장 지원 기반 마련 확대",
+      "application": "공식 공고 확인",
+      "contact": "인천테크노파크"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년농업인-영농-스타트업-지원",
+    "title": "청년농업인 영농 스타트업 지원",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 농수산식품국 농축산과",
+    "region": "인천",
+    "amount": "농촌 고령화에 대응하여 청년농업인들을 새롭게 유입시키고 안정적으로 정착할 수 있도록 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년농업인 영농 스타트업 지원",
+      "고용",
+      "인천",
+      "인천광역시 농수산식품국 농축산과",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "농촌",
+      "고령화에",
+      "대응하여",
+      "청년농업인들을",
+      "새롭게",
+      "유입시키고",
+      "안정적으로"
+    ],
+    "summary": "농촌 고령화에 대응하여 청년농업인들을 새롭게 유입시키고 안정적으로 정착할 수 있도록 지원",
+    "audience": "-",
+    "benefits": [
+      "농촌 고령화에 대응하여 청년농업인들을 새롭게 유입시키고 안정적으로 정착할 수 있도록 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=296",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=296",
+    "contact": "인천광역시 농수산식품국 농축산과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-",
+      "benefit": "농촌 고령화에 대응하여 청년농업인들을 새롭게 유입시키고 안정적으로 정착할 수 있도록 지원",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 농수산식품국 농축산과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년농업인-영농정착지원",
+    "title": "청년농업인 영농정착지원",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "농림축산식품부 농식품인재개발원",
+    "region": null,
+    "amount": "젊고 유능한 인재의 농업분야 진출을 촉진을 통한 농가 고령화 완화 및 농업인력구조 개선",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "unknown region",
+      "application method requires official confirmation",
+      "region is not explicit in OnTongYouth fields",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년농업인 영농정착지원",
+      "고용",
+      "농림축산식품부 농식품인재개발원",
+      "확인필요",
+      "청년",
+      "젊고",
+      "유능한",
+      "인재의",
+      "농업분야",
+      "진출을",
+      "촉진을",
+      "통한",
+      "농가"
+    ],
+    "summary": "젊고 유능한 인재의 농업분야 진출을 촉진을 통한 농가 고령화 완화 및 농업인력구조 개선",
+    "audience": "-",
+    "benefits": [
+      "젊고 유능한 인재의 농업분야 진출을 촉진을 통한 농가 고령화 완화 및 농업인력구조 개선"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=295",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=295",
+    "contact": "인천광역시 농수산식품국 농축산과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-",
+      "benefit": "젊고 유능한 인재의 농업분야 진출을 촉진을 통한 농가 고령화 완화 및 농업인력구조 개선",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 농수산식품국 농축산과"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년-소셜벤처기업-육성-사업",
+    "title": "청년 소셜벤처기업 육성 사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 미래산업국 산업창업정책과",
+    "region": "인천",
+    "amount": "관내 대학과 연계하여 원도심재생ㆍ복지ㆍ환경 등 사회 현안문제에 대한 청년들의 참신한 아이디어를 발굴하고 지원함으로써 지역 청년 사업가 육성",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년 소셜벤처기업 육성 사업",
+      "고용",
+      "인천",
+      "인천광역시 미래산업국 산업창업정책과",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "관내",
+      "대학과",
+      "연계하여",
+      "원도심재생ㆍ복지ㆍ환경",
+      "등",
+      "사회",
+      "현안문제에"
+    ],
+    "summary": "관내 대학과 연계하여 원도심재생ㆍ복지ㆍ환경 등 사회 현안문제에 대한 청년들의 참신한 아이디어를 발굴하고 지원함으로써 지역 청년 사업가 육성",
+    "audience": "-",
+    "benefits": [
+      "관내 대학과 연계하여 원도심재생ㆍ복지ㆍ환경 등 사회 현안문제에 대한 청년들의 참신한 아이디어를 발굴하고 지원함으로써 지역 청년 사업가 육성"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=291",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=291",
+    "contact": "(재)인천창조경제혁신센터",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-",
+      "benefit": "관내 대학과 연계하여 원도심재생ㆍ복지ㆍ환경 등 사회 현안문제에 대한 청년들의 참신한 아이디어를 발굴하고 지원함으로써 지역 청년 사업가 육성",
+      "application": "공식 공고 확인",
+      "contact": "(재)인천창조경제혁신센터"
+    }
+  },
+  {
+    "slug": "ontong-youth-인천혁신모펀드-조성-운영-청년벤처-창업기업-투자유치-펀드-지원사업",
+    "title": "인천혁신모펀드 조성·운영(청년벤처·창업기업 투자유치 펀드 지원사업)",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 미래산업국 산업창업정책과",
+    "region": "인천",
+    "amount": "청년벤처·창업기업 투자유치 펀드 지원사업",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "인천혁신모펀드 조성·운영(청년벤처·창업기업 투자유치 펀드 지원사업)",
+      "고용",
+      "인천",
+      "인천광역시 미래산업국 산업창업정책과",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "청년벤처·창업기업",
+      "투자유치",
+      "펀드",
+      "지원사업"
+    ],
+    "summary": "인천광역시에서 청년벤처와 창업기업의 투자유치 기반 마련을 위해 운영하는 펀드 지원 정책입니다. 세부 조건은 공식 공고에서 확인하세요.",
+    "audience": "-",
+    "benefits": [
+      "청년벤처·창업기업 투자유치 펀드 지원사업"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=290",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=290",
+    "contact": "(재)인천창조경제혁신센터",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-",
+      "benefit": "청년벤처·창업기업 투자유치 펀드 지원사업",
+      "application": "공식 공고 확인",
+      "contact": "(재)인천창조경제혁신센터"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년고용-우수기업-근로환경-개선",
+    "title": "청년고용 우수기업 근로환경 개선",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 청년정책담당관",
+    "region": "인천",
+    "amount": "청년고용 우수기업에 근로환경 개선 인센티브를 제공하여 중소기업 인식개선 및 일하고 싶은 직장 환경 조성",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년고용 우수기업 근로환경 개선",
+      "고용",
+      "인천",
+      "인천광역시 청년정책담당관",
+      "확인필요",
+      "청년",
+      "청년고용",
+      "우수기업에",
+      "근로환경",
+      "개선",
+      "인센티브를",
+      "제공하여",
+      "중소기업",
+      "인식개선"
+    ],
+    "summary": "청년고용 우수기업에 근로환경 개선 인센티브를 제공하여 중소기업 인식개선 및 일하고 싶은 직장 환경 조성",
+    "audience": "청년고용 우수기업에 근로환경 개선 인센티브를 제공하여 중소기업 인식개선 및 일하고 싶은 직장 환경 조성",
+    "benefits": [
+      "청년고용 우수기업에 근로환경 개선 인센티브를 제공하여 중소기업 인식개선 및 일하고 싶은 직장 환경 조성"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://itp.or.kr/intro.asp?tmid=527",
+    "officialSourceUrl": "https://itp.or.kr/intro.asp?tmid=527",
+    "contact": "인천테크노파크",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "청년고용 우수기업에 근로환경 개선 인센티브를 제공하여 중소기업 인식개선 및 일하고 싶은 직장 환경 조성",
+      "benefit": "청년고용 우수기업에 근로환경 개선 인센티브를 제공하여 중소기업 인식개선 및 일하고 싶은 직장 환경 조성",
+      "application": "공식 공고 확인",
+      "contact": "인천테크노파크"
+    }
+  },
+  {
+    "slug": "ontong-youth-인천시-일자리센터-운영",
+    "title": "인천시 일자리센터 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 경제산업본부 경제정책과",
+    "region": "인천",
+    "amount": "인천시 일자리지원 허브 기관으로 시민에 대한 입체적 취업지원 및 기업에 대한 적기 인재채용 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "인천시 일자리센터 운영",
+      "고용",
+      "인천",
+      "인천광역시 경제산업본부 경제정책과",
+      "확인필요",
+      "청년",
+      "구직자",
+      "인천시",
+      "일자리지원",
+      "허브",
+      "기관으로",
+      "시민에",
+      "대한",
+      "입체적"
+    ],
+    "summary": "인천시 일자리지원 허브 기관으로 시민에 대한 입체적 취업지원 및 기업에 대한 적기 인재채용 지원",
+    "audience": "-",
+    "benefits": [
+      "인천시 일자리지원 허브 기관으로 시민에 대한 입체적 취업지원 및 기업에 대한 적기 인재채용 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://incheon.work.go.kr/main.do/main.do",
+    "officialSourceUrl": "https://incheon.work.go.kr/main.do/main.do",
+    "contact": "인천테크노파크",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-",
+      "benefit": "인천시 일자리지원 허브 기관으로 시민에 대한 입체적 취업지원 및 기업에 대한 적기 인재채용 지원",
+      "application": "공식 공고 확인",
+      "contact": "인천테크노파크"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년-취업설명회-공기업-및-우수기업",
+    "title": "청년 취업설명회(공기업 및 우수기업)",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 강화군 경제산업국 일자리경제과",
+    "region": "인천",
+    "amount": "공기업·우수기업 취업설명회를 통한 청년 구직자 취업정보 제공 및 취업 촉진",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년 취업설명회(공기업 및 우수기업)",
+      "고용",
+      "인천",
+      "인천광역시 강화군 경제산업국 일자리경제과",
+      "확인필요",
+      "청년",
+      "구직자",
+      "공기업·우수기업",
+      "취업설명회를",
+      "통한",
+      "취업정보",
+      "제공",
+      "및"
+    ],
+    "summary": "공기업·우수기업 취업설명회를 통한 청년 구직자 취업정보 제공 및 취업 촉진",
+    "audience": "-",
+    "benefits": [
+      "공기업·우수기업 취업설명회를 통한 청년 구직자 취업정보 제공 및 취업 촉진"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=285",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=285",
+    "contact": "인천광역시 강화군 경제산업국 일자리경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-",
+      "benefit": "공기업·우수기업 취업설명회를 통한 청년 구직자 취업정보 제공 및 취업 촉진",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 강화군 경제산업국 일자리경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-서구-청년e음-청년스타트업지원사업",
+    "title": "(서구) 청년e음 청년스타트업지원사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 서구 경제국 청년정책일자리과",
+    "region": "인천",
+    "amount": "청년e음 스타트업지원사업 「정서진 아라뱃길 청년창업공간 운영」",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(서구) 청년e음 청년스타트업지원사업",
+      "고용",
+      "인천",
+      "인천광역시 서구 경제국 청년정책일자리과",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "청년e음",
+      "스타트업지원사업",
+      "「정서진",
+      "아라뱃길",
+      "청년창업공간",
+      "운영」"
+    ],
+    "summary": "청년e음 스타트업지원사업 「정서진 아라뱃길 청년창업공간 운영」",
+    "audience": "인천 거주 또는 사업자 등록한 예비 또는 3년이하 청년창업가",
+    "benefits": [
+      "청년e음 스타트업지원사업 「정서진 아라뱃길 청년창업공간 운영」"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=283",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=283",
+    "contact": "인천광역시 서구 경제국 청년정책일자리과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "인천 거주 또는 사업자 등록한 예비 또는 3년이하 청년창업가",
+      "benefit": "청년e음 스타트업지원사업 「정서진 아라뱃길 청년창업공간 운영」",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 서구 경제국 청년정책일자리과"
+    }
+  },
+  {
+    "slug": "ontong-youth-옹진군-인천시-청년월세-지원사업",
+    "title": "(옹진군) 인천시 청년월세 지원사업",
+    "category": "주거",
+    "source": "온통청년 API",
+    "agency": "인천광역시 청년정책담당관",
+    "region": "인천",
+    "amount": "경제적 어려움을 겪는 청년들의 주거비용 부담 경감",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 가구/부모",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(옹진군) 인천시 청년월세 지원사업",
+      "주거",
+      "인천",
+      "인천광역시 청년정책담당관",
+      "확인필요",
+      "청년",
+      "가구/부모",
+      "경제적",
+      "어려움을",
+      "겪는",
+      "청년들의",
+      "주거비용",
+      "부담",
+      "경감"
+    ],
+    "summary": "경제적 어려움을 겪는 청년들의 주거비용 부담 경감",
+    "audience": "◎ 청약통장 가입 필수(종류무관) ◎ 소득 : (청년독립가구) 기준 중위소득 60%이하 (원가구) 기준 중위소득 100% 이하 ◎ 재산 : (청년독립가구) 재산 122백만원 이하 (원가구) 재산 470백만원 이하 ◎ 주택 : 전입신고 필수 ※ 월세 임차보증금 5천만원 및 월세 70만원 이하 요건 폐지(2024.4.12.~시행)] ※ 제출된 신청서를 토대로 공적자료 조회(조사시점 기준 적용) (청년독립가구) 청년 + 배우자 + 직계비속 + 동일 주소지에 거주하는 그 외 「민법」상 가족* (원가구) 청년독립가구 + 1촌 이내 직계혈족(부,모) * (가족의 범위, 민법§779) ❶배우자, 직계혈족 및 형제자매, ❷직계혈족의 배우자, 배우자의 직계혈족 및 배우자의 형제자매(생계를 같이하는 경우에 한함) ※ 원가구(부모님) 소득·재산 미고려 : ①30세 이상 ②혼인 ③미혼부·모 ④30세 미만 미혼 청년의 소득이 중위 50% 이상으로 생계를 달리한다고 군수·구청장이 인정하는 경우자가진단서비스 사전 실시(개통예정) - 복지로(www.bokjiro.go.kr) > 복지서비스 > 모의계산 > 청년월",
+    "benefits": [
+      "경제적 어려움을 겪는 청년들의 주거비용 부담 경감"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "(19세 ~ 34세) 복지로를 통한 온라인신청 및 관할 행정복지센터 방문 신청 (35세 ~ 39세) 인천청년포털을 통한 온라인신청 또는 관할 행정복지센터 방문 신청",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=267",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=267",
+    "contact": "인천광역시 옹진군 경제산업국 경제정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "◎ 청약통장 가입 필수(종류무관) ◎ 소득 : (청년독립가구) 기준 중위소득 60%이하 (원가구) 기준 중위소득 100% 이하 ◎ 재산 : (청년독립가구) 재산 122백만원 이하 (원가구) 재산 470백만원 이하 ◎ 주택 : 전입신고 필수 ※ 월세 임차보증금 5천만원 및 월세 70만원 이하 요건 폐지(2024.4.12.~시행)] ※ 제출된 신청서를 토대로 공적자료 조회(조사시점 기준 적용) (청년독립가구) 청년 + 배우자 + 직계비속 + 동일 주소지에 거주하는 그 외 「민법」상 가족* (원가구) 청년독립가구 + 1촌 이내 직계혈족(부,모) * (가족의 범위, 민법§779) ❶배우자, 직계혈족 및 형제자매, ❷직계혈족의 배우자, 배우자의 직계혈족 및 배우자의 형제자매(생계를 같이하는 경우에 한함) ※ 원가구(부모님) 소득·재산 미고려 : ①30세 이상 ②혼인 ③미혼부·모 ④30세 미만 미혼 청년의 소득이 중위 50% 이상으로 생계를 달리한다고 군수·구청장이 인정하는 경우자가진단서비스 사전 실시(개통예정) - 복지로(www.bokjiro.go.kr) > 복지서비스 > 모의계산 > 청년월",
+      "benefit": "경제적 어려움을 겪는 청년들의 주거비용 부담 경감",
+      "application": "(19세 ~ 34세) 복지로를 통한 온라인신청 및 관할 행정복지센터 방문 신청 (35세 ~ 39세) 인천청년포털을 통한 온라인신청 또는 관할 행정복지센터 방문 신청",
+      "contact": "인천광역시 옹진군 경제산업국 경제정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-인천형-천원의-아침밥-지원",
+    "title": "인천형 천원의 아침밥 지원",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "인천광역시 농수산식품국 농축산과",
+    "region": "인천",
+    "amount": "대학생 대상 아침밥 먹는 문화 확산 및 쌀 소비 촉진",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "인천형 천원의 아침밥 지원",
+      "교육",
+      "인천",
+      "인천광역시 농수산식품국 농축산과",
+      "확인필요",
+      "청년",
+      "대학생",
+      "대상",
+      "아침밥",
+      "먹는",
+      "문화",
+      "확산",
+      "및",
+      "쌀"
+    ],
+    "summary": "대학생 대상 아침밥 먹는 문화 확산 및 쌀 소비 촉진",
+    "audience": "인천시 관내 소재 대학의 재학생",
+    "benefits": [
+      "대학생 대상 아침밥 먹는 문화 확산 및 쌀 소비 촉진"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=282",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=282",
+    "contact": "인천광역시 농수산식품국 농축산과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "인천시 관내 소재 대학의 재학생",
+      "benefit": "대학생 대상 아침밥 먹는 문화 확산 및 쌀 소비 촉진",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 농수산식품국 농축산과"
+    }
+  },
+  {
+    "slug": "ontong-youth-인천광역시-청년미래센터-운영",
+    "title": "인천광역시 청년미래센터 운영",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "인천광역시 외로움돌봄국 외로움정책과",
+    "region": "인천",
+    "amount": "복지사각지대에 있는 위기청년 지원을 위한 전담기관 운영",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "인천광역시 청년미래센터 운영",
+      "문화생활",
+      "인천",
+      "인천광역시 외로움돌봄국 외로움정책과",
+      "확인필요",
+      "청년",
+      "복지사각지대에",
+      "있는",
+      "위기청년",
+      "지원을",
+      "위한",
+      "전담기관",
+      "운영"
+    ],
+    "summary": "복지사각지대에 있는 위기청년 지원을 위한 전담기관 운영",
+    "audience": "가족돌봄청년(13~34세), 고립은둔청년(19~39세)",
+    "benefits": [
+      "복지사각지대에 있는 위기청년 지원을 위한 전담기관 운영"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "http://www.mohw2030.co.kr/panel.asp",
+    "officialSourceUrl": "http://www.mohw2030.co.kr/panel.asp",
+    "contact": "인천광역시 외로움돌봄국 외로움정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "가족돌봄청년(13~34세), 고립은둔청년(19~39세)",
+      "benefit": "복지사각지대에 있는 위기청년 지원을 위한 전담기관 운영",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 외로움돌봄국 외로움정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-계양구-계양청년마당-청년센터-운영",
+    "title": "(계양구) 계양청년마당 청년센터 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 계양구 재정경제국 일자리정책과",
+    "region": "인천",
+    "amount": "청년공간 조성을 통한 청년의 참여화 소통 활성화",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(계양구) 계양청년마당 청년센터 운영",
+      "고용",
+      "인천",
+      "인천광역시 계양구 재정경제국 일자리정책과",
+      "확인필요",
+      "청년",
+      "청년공간",
+      "조성을",
+      "통한",
+      "청년의",
+      "참여화",
+      "소통",
+      "활성화"
+    ],
+    "summary": "청년공간 조성을 통한 청년의 참여화 소통 활성화",
+    "audience": "-",
+    "benefits": [
+      "청년공간 조성을 통한 청년의 참여화 소통 활성화"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/space/gyeyang/",
+    "officialSourceUrl": "https://youth.incheon.go.kr/space/gyeyang/",
+    "contact": "인천광역시 계양구 재정경제국 일자리정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-",
+      "benefit": "청년공간 조성을 통한 청년의 참여화 소통 활성화",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 계양구 재정경제국 일자리정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-연수구-청년-정신건강-조기중재사업",
+    "title": "(연수구) 청년 정신건강 조기중재사업",
+    "category": "보건의료",
+    "source": "온통청년 API",
+    "agency": "인천광역시 연수구 보건소 치매정신건강과",
+    "region": "인천",
+    "amount": "청년 정신질환을 조기 발견 및 개입하여 청년층의 정신질환 발병 예방 및 만성화 방지",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(연수구) 청년 정신건강 조기중재사업",
+      "보건의료",
+      "인천",
+      "인천광역시 연수구 보건소 치매정신건강과",
+      "확인필요",
+      "청년",
+      "정신질환을",
+      "조기",
+      "발견",
+      "및",
+      "개입하여",
+      "청년층의",
+      "정신질환"
+    ],
+    "summary": "청년 정신질환을 조기 발견 및 개입하여 청년층의 정신질환 발병 예방 및 만성화 방지",
+    "audience": "-",
+    "benefits": [
+      "청년 정신질환을 조기 발견 및 개입하여 청년층의 정신질환 발병 예방 및 만성화 방지"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=196",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=196",
+    "contact": "인천광역시 연수구 보건소 치매정신건강과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-",
+      "benefit": "청년 정신질환을 조기 발견 및 개입하여 청년층의 정신질환 발병 예방 및 만성화 방지",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 연수구 보건소 치매정신건강과"
+    }
+  },
+  {
+    "slug": "ontong-youth-연수구-연수청년자리-청년센터-운영",
+    "title": "(연수구) 연수청년자리 청년센터 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 연수구 송도행정지원국 일자리정책과",
+    "region": "인천",
+    "amount": "청년의 일,쉼,배움을 경험하고 청년 교류 및 소통공간 운영",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(연수구) 연수청년자리 청년센터 운영",
+      "고용",
+      "인천",
+      "인천광역시 연수구 송도행정지원국 일자리정책과",
+      "확인필요",
+      "청년",
+      "청년의",
+      "일,쉼,배움을",
+      "경험하고",
+      "교류",
+      "및",
+      "소통공간",
+      "운영"
+    ],
+    "summary": "청년의 일,쉼,배움을 경험하고 청년 교류 및 소통공간 운영",
+    "audience": "-",
+    "benefits": [
+      "청년의 일,쉼,배움을 경험하고 청년 교류 및 소통공간 운영"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=194",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=194",
+    "contact": "인천광역시 연수구 송도행정지원국 일자리정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-",
+      "benefit": "청년의 일,쉼,배움을 경험하고 청년 교류 및 소통공간 운영",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 연수구 송도행정지원국 일자리정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-중구-청년정책조정위원회-운영",
+    "title": "(중구) 청년정책조정위원회 운영",
+    "category": "복지",
+    "source": "온통청년 API",
+    "agency": "인천광역시 중구 주민생활국 경제산업과",
+    "region": "인천",
+    "amount": "정책참여와 소통의 창구역할",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(중구) 청년정책조정위원회 운영",
+      "복지",
+      "인천",
+      "인천광역시 중구 주민생활국 경제산업과",
+      "확인필요",
+      "청년",
+      "정책참여와",
+      "소통의",
+      "창구역할"
+    ],
+    "summary": "인천 중구에서 청년정책 참여와 소통을 위해 운영하는 청년정책조정위원회 관련 정책입니다. 참여 방식은 공식 안내를 확인하세요.",
+    "audience": "-",
+    "benefits": [
+      "정책참여와 소통의 창구역할"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=188",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=188",
+    "contact": "인천광역시 중구 주민생활국 경제산업과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-",
+      "benefit": "정책참여와 소통의 창구역할",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 중구 주민생활국 경제산업과"
+    }
+  },
+  {
+    "slug": "ontong-youth-강화군-창업일자리센터-운영",
+    "title": "(강화군) 창업일자리센터 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 강화군 경제산업국 일자리경제과",
+    "region": "인천",
+    "amount": "취·창업 지원 프로그램 운영 및 구인·구직자 취업 연계 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(강화군) 창업일자리센터 운영",
+      "고용",
+      "인천",
+      "인천광역시 강화군 경제산업국 일자리경제과",
+      "확인필요",
+      "청년",
+      "구직자",
+      "소상공인",
+      "취·창업",
+      "지원",
+      "프로그램",
+      "운영",
+      "및",
+      "구인·구직자"
+    ],
+    "summary": "취·창업 지원 프로그램 운영 및 구인·구직자 취업 연계 지원",
+    "audience": "-",
+    "benefits": [
+      "취·창업 지원 프로그램 운영 및 구인·구직자 취업 연계 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "강화군 창업일자리센터 방문 또는 홈페이지 인터넷 접수",
+    "officialUrl": "https://www.ganghwajob.kr/",
+    "officialSourceUrl": "https://www.ganghwajob.kr/",
+    "contact": "인천광역시 강화군 경제산업국 일자리경제과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-",
+      "benefit": "취·창업 지원 프로그램 운영 및 구인·구직자 취업 연계 지원",
+      "application": "강화군 창업일자리센터 방문 또는 홈페이지 인터넷 접수",
+      "contact": "인천광역시 강화군 경제산업국 일자리경제과"
+    }
+  },
+  {
+    "slug": "ontong-youth-인천-청년공간-운영-및-확대-구축",
+    "title": "인천 청년공간 운영 및 확대 구축",
+    "category": "청년",
+    "source": "온통청년 API",
+    "agency": "인천광역시 청년정책담당관",
+    "region": "인천",
+    "amount": "인천 청년들의 쉼과 소통‧교류의 장 제공을 통한 도약 기반 마련",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "인천 청년공간 운영 및 확대 구축",
+      "청년",
+      "인천",
+      "인천광역시 청년정책담당관",
+      "확인필요",
+      "청년들의",
+      "쉼과",
+      "소통‧교류의",
+      "장",
+      "제공을",
+      "통한",
+      "도약"
+    ],
+    "summary": "인천 청년들의 쉼과 소통‧교류의 장 제공을 통한 도약 기반 마련",
+    "audience": "-",
+    "benefits": [
+      "인천 청년들의 쉼과 소통‧교류의 장 제공을 통한 도약 기반 마련"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=178",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=178",
+    "contact": "인천테크노파크",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-",
+      "benefit": "인천 청년들의 쉼과 소통‧교류의 장 제공을 통한 도약 기반 마련",
+      "application": "공식 공고 확인",
+      "contact": "인천테크노파크"
+    }
+  },
+  {
+    "slug": "ontong-youth-미래우주교육센터-구축",
+    "title": "미래우주교육센터 구축",
+    "category": "교육",
+    "source": "온통청년 API",
+    "agency": "인천광역시 해양항공국 항공과",
+    "region": "인천",
+    "amount": "산·학·연 컨소시엄 기반으로 미래 우주분야 문제를 해결하고 신기술을 선도할 수 있는 종합적인 전문인력 양성",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "미래우주교육센터 구축",
+      "교육",
+      "인천",
+      "인천광역시 해양항공국 항공과",
+      "확인필요",
+      "청년",
+      "산·학·연",
+      "컨소시엄",
+      "기반으로",
+      "미래",
+      "우주분야",
+      "문제를",
+      "해결하고",
+      "신기술을"
+    ],
+    "summary": "산·학·연 컨소시엄 기반으로 미래 우주분야 문제를 해결하고 신기술을 선도할 수 있는 종합적인 전문인력 양성",
+    "audience": "-",
+    "benefits": [
+      "산·학·연 컨소시엄 기반으로 미래 우주분야 문제를 해결하고 신기술을 선도할 수 있는 종합적인 전문인력 양성"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=170",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=170",
+    "contact": "인하대학교",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-",
+      "benefit": "산·학·연 컨소시엄 기반으로 미래 우주분야 문제를 해결하고 신기술을 선도할 수 있는 종합적인 전문인력 양성",
+      "application": "공식 공고 확인",
+      "contact": "인하대학교"
+    }
+  },
+  {
+    "slug": "ontong-youth-연수구-청년의-날-행사-청년축제",
+    "title": "(연수구) 청년의 날 행사(청년축제)",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 연수구 송도행정지원국 일자리정책과",
+    "region": "인천",
+    "amount": "청년 권리 보장 및 청년 발전의 중요성을 알리기 위한 청년의날 맞이 기념",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(연수구) 청년의 날 행사(청년축제)",
+      "고용",
+      "인천",
+      "인천광역시 연수구 송도행정지원국 일자리정책과",
+      "확인필요",
+      "청년",
+      "권리",
+      "보장",
+      "및",
+      "발전의",
+      "중요성을",
+      "알리기"
+    ],
+    "summary": "청년 권리 보장 및 청년 발전의 중요성을 알리기 위한 청년의날 맞이 기념",
+    "audience": "연수구 청년 누구나",
+    "benefits": [
+      "청년 권리 보장 및 청년 발전의 중요성을 알리기 위한 청년의날 맞이 기념"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=124",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=124",
+    "contact": "인천광역시 연수구 송도행정지원국 일자리정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "연수구 청년 누구나",
+      "benefit": "청년 권리 보장 및 청년 발전의 중요성을 알리기 위한 청년의날 맞이 기념",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 연수구 송도행정지원국 일자리정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-연수구-청년-정책위원회-운영",
+    "title": "(연수구) 청년 정책위원회 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 연수구 송도행정지원국 일자리정책과",
+    "region": "인천",
+    "amount": "청년들의 구정참여를 보장하고 청년정책 의제를 발굴할 수 있는 소통의 장 마련",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(연수구) 청년 정책위원회 운영",
+      "고용",
+      "인천",
+      "인천광역시 연수구 송도행정지원국 일자리정책과",
+      "확인필요",
+      "청년",
+      "청년들의",
+      "구정참여를",
+      "보장하고",
+      "청년정책",
+      "의제를",
+      "발굴할",
+      "수",
+      "있는"
+    ],
+    "summary": "청년들의 구정참여를 보장하고 청년정책 의제를 발굴할 수 있는 소통의 장 마련",
+    "audience": "연수구 청년정책 위원회",
+    "benefits": [
+      "청년들의 구정참여를 보장하고 청년정책 의제를 발굴할 수 있는 소통의 장 마련"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=122",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=122",
+    "contact": "인천광역시 연수구 송도행정지원국 일자리정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "연수구 청년정책 위원회",
+      "benefit": "청년들의 구정참여를 보장하고 청년정책 의제를 발굴할 수 있는 소통의 장 마련",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 연수구 송도행정지원국 일자리정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-연수구-청년-아카데미-운영",
+    "title": "(연수구) 청년 아카데미 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 연수구 송도행정지원국 일자리정책과",
+    "region": "인천",
+    "amount": "청년정책과정에 대한 이해도 제고 및 경제교육을 통한 청년 생활 안정 도모",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(연수구) 청년 아카데미 운영",
+      "고용",
+      "인천",
+      "인천광역시 연수구 송도행정지원국 일자리정책과",
+      "확인필요",
+      "청년",
+      "청년정책과정에",
+      "대한",
+      "이해도",
+      "제고",
+      "및",
+      "경제교육을",
+      "통한"
+    ],
+    "summary": "청년정책과정에 대한 이해도 제고 및 경제교육을 통한 청년 생활 안정 도모",
+    "audience": "-",
+    "benefits": [
+      "청년정책과정에 대한 이해도 제고 및 경제교육을 통한 청년 생활 안정 도모"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=120",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=120",
+    "contact": "인천광역시 연수구 송도행정지원국 일자리정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "-",
+      "benefit": "청년정책과정에 대한 이해도 제고 및 경제교육을 통한 청년 생활 안정 도모",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 연수구 송도행정지원국 일자리정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-연수구-청년-네트워크-운영",
+    "title": "(연수구) 청년 네트워크 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 연수구 송도행정지원국 일자리정책과",
+    "region": "인천",
+    "amount": "청년들의 구정참여를 보장하고 청년정책 의제를 발굴할 수 있는 소통의 장 마련",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(연수구) 청년 네트워크 운영",
+      "고용",
+      "인천",
+      "인천광역시 연수구 송도행정지원국 일자리정책과",
+      "확인필요",
+      "청년",
+      "청년들의",
+      "구정참여를",
+      "보장하고",
+      "청년정책",
+      "의제를",
+      "발굴할",
+      "수",
+      "있는"
+    ],
+    "summary": "청년들의 구정참여를 보장하고 청년정책 의제를 발굴할 수 있는 소통의 장 마련",
+    "audience": "공고일 기준 19세~39세 연수구 거주 또는 활동 청년",
+    "benefits": [
+      "청년들의 구정참여를 보장하고 청년정책 의제를 발굴할 수 있는 소통의 장 마련"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=119",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=119",
+    "contact": "인천광역시 연수구 송도행정지원국 일자리정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "공고일 기준 19세~39세 연수구 거주 또는 활동 청년",
+      "benefit": "청년들의 구정참여를 보장하고 청년정책 의제를 발굴할 수 있는 소통의 장 마련",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 연수구 송도행정지원국 일자리정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-중구-청년네트워크-청년불패-운영",
+    "title": "(중구) 청년네트워크(청년불패) 운영",
+    "category": "복지",
+    "source": "온통청년 API",
+    "agency": "인천광역시 중구 주민생활국 경제산업과",
+    "region": "인천",
+    "amount": "청년의 다양한 욕구와 의견을 반영한 현실적인 아이디어를 발굴하여 청년정책에 반영",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(중구) 청년네트워크(청년불패) 운영",
+      "복지",
+      "인천",
+      "인천광역시 중구 주민생활국 경제산업과",
+      "확인필요",
+      "청년",
+      "청년의",
+      "다양한",
+      "욕구와",
+      "의견을",
+      "반영한",
+      "현실적인",
+      "아이디어를",
+      "발굴하여"
+    ],
+    "summary": "청년의 다양한 욕구와 의견을 반영한 현실적인 아이디어를 발굴하여 청년정책에 반영",
+    "audience": "중구에 거주하거나 활동중인 청년",
+    "benefits": [
+      "청년의 다양한 욕구와 의견을 반영한 현실적인 아이디어를 발굴하여 청년정책에 반영"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=115",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=115",
+    "contact": "인천광역시 중구 주민생활국 경제산업과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "중구에 거주하거나 활동중인 청년",
+      "benefit": "청년의 다양한 욕구와 의견을 반영한 현실적인 아이디어를 발굴하여 청년정책에 반영",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 중구 주민생활국 경제산업과"
+    }
+  },
+  {
+    "slug": "ontong-youth-부평구-부평-청년주간행사-운영",
+    "title": "(부평구) 부평 청년주간행사 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 부평구 경제환경국 일자리창출과",
+    "region": "인천",
+    "amount": "청년의 날을 기념하여 지역청년과 교류할 수 있는 소통의 장 마련",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(부평구) 부평 청년주간행사 운영",
+      "고용",
+      "인천",
+      "인천광역시 부평구 경제환경국 일자리창출과",
+      "확인필요",
+      "청년",
+      "청년의",
+      "날을",
+      "기념하여",
+      "지역청년과",
+      "교류할",
+      "수",
+      "있는",
+      "소통의"
+    ],
+    "summary": "청년의 날을 기념하여 지역청년과 교류할 수 있는 소통의 장 마련",
+    "audience": "인천시 거주 청년",
+    "benefits": [
+      "청년의 날을 기념하여 지역청년과 교류할 수 있는 소통의 장 마련"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=111",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=111",
+    "contact": "인천광역시 부평구 경제환경국 일자리창출과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "인천시 거주 청년",
+      "benefit": "청년의 날을 기념하여 지역청년과 교류할 수 있는 소통의 장 마련",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 부평구 경제환경국 일자리창출과"
+    }
+  },
+  {
+    "slug": "ontong-youth-부평구-청년도전-지원사업",
+    "title": "(부평구) 청년도전 지원사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 부평구 경제환경국 일자리창출과",
+    "region": "인천",
+    "amount": "구직단념청년을 발굴, 노동시장 참여 촉진지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "application text implies open status but needs official confirmation",
+      "date range is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(부평구) 청년도전 지원사업",
+      "고용",
+      "인천",
+      "인천광역시 부평구 경제환경국 일자리창출과",
+      "모집중",
+      "청년",
+      "구직자",
+      "구직단념청년을",
+      "발굴,",
+      "노동시장",
+      "참여",
+      "촉진지원",
+      "확인필요"
+    ],
+    "summary": "인천 부평구에서 구직단념청년의 사회 참여와 노동시장 진입을 돕기 위해 운영하는 지원사업입니다. 세부 자격은 공식 공고에서 확인하세요.",
+    "audience": "구직단념 청년(부평구 거주자 35~39세 참여가능) 지원연령: 부평구 거주자 35~39세 참여가능",
+    "benefits": [
+      "구직단념청년을 발굴, 노동시장 참여 촉진지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 고용24(기관선택: (사협)일터와사람들) ○ 현장접수: 신청 전 전화문의 시 개별안내",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=110",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=110",
+    "contact": "인천광역시 부평구 경제환경국 일자리창출과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "구직단념 청년(부평구 거주자 35~39세 참여가능) 지원연령: 부평구 거주자 35~39세 참여가능",
+      "benefit": "구직단념청년을 발굴, 노동시장 참여 촉진지원",
+      "application": "○ 고용24(기관선택: (사협)일터와사람들) ○ 현장접수: 신청 전 전화문의 시 개별안내",
+      "contact": "인천광역시 부평구 경제환경국 일자리창출과"
+    }
+  },
+  {
+    "slug": "ontong-youth-부평구-청년-맞춤형-주거안정-지원-교육",
+    "title": "(부평구) 청년 맞춤형 주거안정 지원 교육",
+    "category": "주거",
+    "source": "온통청년 API",
+    "agency": "인천광역시 부평구 경제환경국 일자리창출과",
+    "region": "인천",
+    "amount": "청년들을 대상으로 부동산 기초지식, 금융지식 등 교육 프로그램 운영",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(부평구) 청년 맞춤형 주거안정 지원 교육",
+      "주거",
+      "인천",
+      "인천광역시 부평구 경제환경국 일자리창출과",
+      "확인필요",
+      "청년",
+      "청년들을",
+      "대상으로",
+      "부동산",
+      "기초지식,",
+      "금융지식",
+      "등",
+      "교육",
+      "프로그램"
+    ],
+    "summary": "청년들을 대상으로 부동산 기초지식, 금융지식 등 교육 프로그램 운영",
+    "audience": "인천 청년",
+    "benefits": [
+      "청년들을 대상으로 부동산 기초지식, 금융지식 등 교육 프로그램 운영"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=109",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=109",
+    "contact": "인천광역시 부평구 경제환경국 일자리창출과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "인천 청년",
+      "benefit": "청년들을 대상으로 부동산 기초지식, 금융지식 등 교육 프로그램 운영",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 부평구 경제환경국 일자리창출과"
+    }
+  },
+  {
+    "slug": "ontong-youth-부평구-청년공간-유유기지부평-운영",
+    "title": "(부평구) 청년공간 유유기지부평 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 부평구 경제환경국 일자리창출과",
+    "region": "인천",
+    "amount": "청년 취창업 역량 강화 및 발전가능성 도모하기 위해 청년들의 자율 공간, 돌봄과 상생의 기획이 가능한 창조적 공유공간인 청년공간 유유기지 부평 운영",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(부평구) 청년공간 유유기지부평 운영",
+      "고용",
+      "인천",
+      "인천광역시 부평구 경제환경국 일자리창출과",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "취창업",
+      "역량",
+      "강화",
+      "및",
+      "발전가능성",
+      "도모하기",
+      "위해"
+    ],
+    "summary": "청년 취창업 역량 강화 및 발전가능성 도모하기 위해 청년들의 자율 공간, 돌봄과 상생의 기획이 가능한 창조적 공유공간인 청년공간 유유기지 부평 운영",
+    "audience": "인천 청년",
+    "benefits": [
+      "청년 취창업 역량 강화 및 발전가능성 도모하기 위해 청년들의 자율 공간, 돌봄과 상생의 기획이 가능한 창조적 공유공간인 청년공간 유유기지 부평 운영"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://youth.incheon.go.kr/space/bupyeong/",
+    "officialSourceUrl": "https://youth.incheon.go.kr/space/bupyeong/",
+    "contact": "인천광역시 부평구 경제환경국 일자리창출과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "인천 청년",
+      "benefit": "청년 취창업 역량 강화 및 발전가능성 도모하기 위해 청년들의 자율 공간, 돌봄과 상생의 기획이 가능한 창조적 공유공간인 청년공간 유유기지 부평 운영",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 부평구 경제환경국 일자리창출과"
+    }
+  },
+  {
+    "slug": "ontong-youth-부평구-청년창업-재정지원-사업",
+    "title": "(부평구) 청년창업 재정지원 사업",
+    "category": "주거",
+    "source": "온통청년 API",
+    "agency": "인천광역시 부평구 경제환경국 일자리창출과",
+    "region": "인천",
+    "amount": "우수하고 창의적인 아이템을 가진 청년 창업자를 발굴하여 지역 우수 기업으로 성장 유도",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(부평구) 청년창업 재정지원 사업",
+      "주거",
+      "인천",
+      "인천광역시 부평구 경제환경국 일자리창출과",
+      "확인필요",
+      "청년",
+      "구직자",
+      "소상공인",
+      "우수하고",
+      "창의적인",
+      "아이템을",
+      "가진",
+      "창업자를",
+      "발굴하여"
+    ],
+    "summary": "우수하고 창의적인 아이템을 가진 청년 창업자를 발굴하여 지역 우수 기업으로 성장 유도",
+    "audience": "○ (최초지원) 예비창업자(생애최초) ○ (초기지원) 부평구에 사업장을 둔 3년 이하 창업자 ○ (성장지원) 부평구에 사업장을 청년 1명이상 채용 및 7년 이하 창업자상가 임차료는 사무공간에 한해 지원(원룸 등 주거공간 임차료 지원 불가)",
+    "benefits": [
+      "우수하고 창의적인 아이템을 가진 청년 창업자를 발굴하여 지역 우수 기업으로 성장 유도"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 신청 홈페이지에 접속하여 신청서 등 양식 다운 ○ 구비 서류 양식 작성 및 증빙서류 구비 ○ 일자리창출과 방문 또는 이메일 신청",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=106",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=106",
+    "contact": "인천광역시 부평구 경제환경국 일자리창출과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ (최초지원) 예비창업자(생애최초) ○ (초기지원) 부평구에 사업장을 둔 3년 이하 창업자 ○ (성장지원) 부평구에 사업장을 청년 1명이상 채용 및 7년 이하 창업자상가 임차료는 사무공간에 한해 지원(원룸 등 주거공간 임차료 지원 불가)",
+      "benefit": "우수하고 창의적인 아이템을 가진 청년 창업자를 발굴하여 지역 우수 기업으로 성장 유도",
+      "application": "○ 신청 홈페이지에 접속하여 신청서 등 양식 다운 ○ 구비 서류 양식 작성 및 증빙서류 구비 ○ 일자리창출과 방문 또는 이메일 신청",
+      "contact": "인천광역시 부평구 경제환경국 일자리창출과"
+    }
+  },
+  {
+    "slug": "ontong-youth-부평구-청년정책조정위원회-및-청년네트워크-구성-운영",
+    "title": "(부평구) 청년정책조정위원회 및 청년네트워크 구성·운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 부평구 경제환경국 일자리창출과",
+    "region": "인천",
+    "amount": "청년층 의견수렴 및 청년정책 발굴, 청년정책에 관한 주요사항 심의조정",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "application method requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(부평구) 청년정책조정위원회 및 청년네트워크 구성·운영",
+      "고용",
+      "인천",
+      "인천광역시 부평구 경제환경국 일자리창출과",
+      "확인필요",
+      "청년",
+      "청년층",
+      "의견수렴",
+      "및",
+      "청년정책",
+      "발굴,",
+      "청년정책에",
+      "관한",
+      "주요사항"
+    ],
+    "summary": "청년층 의견수렴 및 청년정책 발굴, 청년정책에 관한 주요사항 심의조정",
+    "audience": "부평구에 거주하거나 활동하는 청년",
+    "benefits": [
+      "청년층 의견수렴 및 청년정책 발굴, 청년정책에 관한 주요사항 심의조정"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온통청년 또는 해당 기관의 공식 안내에서 신청 방법을 확인하세요.",
+    "officialUrl": "https://www.icbp.go.kr/main/life/youth/network.jsp",
+    "officialSourceUrl": "https://www.icbp.go.kr/main/life/youth/network.jsp",
+    "contact": "인천광역시 부평구 경제환경국 일자리창출과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "부평구에 거주하거나 활동하는 청년",
+      "benefit": "청년층 의견수렴 및 청년정책 발굴, 청년정책에 관한 주요사항 심의조정",
+      "application": "공식 공고 확인",
+      "contact": "인천광역시 부평구 경제환경국 일자리창출과"
+    }
+  },
+  {
+    "slug": "ontong-youth-계양구-2026년-계양청년네트워크-위원-모집-및-운영",
+    "title": "(계양구) 2026년 계양청년네트워크 위원 모집 및 운영",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "인천광역시 계양구 재정경제국 일자리정책과",
+    "region": "인천",
+    "amount": "청년의 소통과 참여를 통해 청년의견 수렴 및 구정 참여",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(계양구) 2026년 계양청년네트워크 위원 모집 및 운영",
+      "고용",
+      "인천",
+      "인천광역시 계양구 재정경제국 일자리정책과",
+      "확인필요",
+      "청년",
+      "청년의",
+      "소통과",
+      "참여를",
+      "통해",
+      "청년의견",
+      "수렴",
+      "및",
+      "구정"
+    ],
+    "summary": "청년의 소통과 참여를 통해 청년의견 수렴 및 구정 참여",
+    "audience": "청년정책에 전문성이나 관심이 있는 사람, 청년단체 활동이 풍부한 사람 등",
+    "benefits": [
+      "청년의 소통과 참여를 통해 청년의견 수렴 및 구정 참여"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "지원신청서 다운로드하여 작성 후 이메일 제출(jsuny@korea.kr)",
+    "officialUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=104",
+    "officialSourceUrl": "https://youth.incheon.go.kr/youthpolicy/youthPolicyInfoDetail.do?poly_seq=104",
+    "contact": "인천광역시 계양구 재정경제국 일자리정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "청년정책에 전문성이나 관심이 있는 사람, 청년단체 활동이 풍부한 사람 등",
+      "benefit": "청년의 소통과 참여를 통해 청년의견 수렴 및 구정 참여",
+      "application": "지원신청서 다운로드하여 작성 후 이메일 제출(jsuny@korea.kr)",
+      "contact": "인천광역시 계양구 재정경제국 일자리정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-2026년-5월-가계부소모임-2회차",
+    "title": "2026년 5월 가계부소모임-2회차",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "광주시청",
+    "region": "광주",
+    "amount": "\"한번 더 나의 지출을 돌아볼 수 있었어요\" \"계획 된 소비를 할 수 있을 거 같아서 좋아요\" - 참여자 후기 - 돈 관리, 이렇게 하는 게 맞는 걸까? 싶을 때 이따가 해볼까? 자꾸 미루게 될 때 서로 같이, 함께 돈 관리 습관을 만들어가는 가계부 소모임에 참여해보세요!",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "date range is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "2026년 5월 가계부소모임-2회차",
+      "문화생활",
+      "광주",
+      "광주시청",
+      "마감",
+      "청년",
+      "\"한번",
+      "더",
+      "나의",
+      "지출을",
+      "돌아볼",
+      "수",
+      "있었어요\"",
+      "\"계획"
+    ],
+    "summary": "\"한번 더 나의 지출을 돌아볼 수 있었어요\" \"계획 된 소비를 할 수 있을 거 같아서 좋아요\" - 참여자 후기 - 돈 관리, 이렇게 하는 게 맞는 걸까? 싶을 때 이따가 해볼까? 자꾸 미루게 될 때 서로 같이, 함께 돈 관리 습관을 만들어가는 가계부 소모임에 참여해보세요!",
+    "audience": "\"한번 더 나의 지출을 돌아볼 수 있었어요\" \"계획 된 소비를 할 수 있을 거 같아서 좋아요\" - 참여자 후기 - 돈 관리, 이렇게 하는 게 맞는 걸까? 싶을 때 이따가 해볼까? 자꾸 미루게 될 때 서로 같이, 함께 돈 관리 습관을 만들어가는 가계부 소모임에 참여해보세요!",
+    "benefits": [
+      "\"한번 더 나의 지출을 돌아볼 수 있었어요\" \"계획 된 소비를 할 수 있을 거 같아서 좋아요\" - 참여자 후기 - 돈 관리, 이렇게 하는 게 맞는 걸까? 싶을 때 이따가 해볼까? 자꾸 미루게 될 때 서로 같이, 함께 돈 관리 습관을 만들어가는 가계부 소모임에 참여해보세요!"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "▶ 내 용 : 예산 수립, 통장 시스템, 꿈꾸는 가계부 작성법 익히기 ▶ 일 시 : 2026년 5월 20일(수) 19-21시 ▶ 대 상 : 돈 관리법을 알고 싶은 광주 청년 10명 ▶ 방 법 : 오프라인 ▶ 장 소 : 광주청년드림은행(광주광역시 북구 무등로 237,2층) ▶ 신 청: bit.ly/가계부소모임 *가계부 작성 실습과 참여자 간 이야기 나눔이 있습니다. - 2026년 5월 15일(금)까지 신청 링크를 통해 접수, 선착순 마감 *한번 강의를 들으신 분들은 참여가 취소될 수 있으며, 많은 분들의 참여을 돕고자 함이니 양해부탁드립니다.",
+    "officialUrl": "https://youth.gwangju.go.kr/www/52?siteId=www&bbsId=bbs1&postId=2052&url=%2Fwww%2Fbbs%2FpostView",
+    "officialSourceUrl": "https://youth.gwangju.go.kr/www/52?siteId=www&bbsId=bbs1&postId=2052&url=%2Fwww%2Fbbs%2FpostView",
+    "contact": "광주시청",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "\"한번 더 나의 지출을 돌아볼 수 있었어요\" \"계획 된 소비를 할 수 있을 거 같아서 좋아요\" - 참여자 후기 - 돈 관리, 이렇게 하는 게 맞는 걸까? 싶을 때 이따가 해볼까? 자꾸 미루게 될 때 서로 같이, 함께 돈 관리 습관을 만들어가는 가계부 소모임에 참여해보세요!",
+      "benefit": "\"한번 더 나의 지출을 돌아볼 수 있었어요\" \"계획 된 소비를 할 수 있을 거 같아서 좋아요\" - 참여자 후기 - 돈 관리, 이렇게 하는 게 맞는 걸까? 싶을 때 이따가 해볼까? 자꾸 미루게 될 때 서로 같이, 함께 돈 관리 습관을 만들어가는 가계부 소모임에 참여해보세요!",
+      "application": "▶ 내 용 : 예산 수립, 통장 시스템, 꿈꾸는 가계부 작성법 익히기 ▶ 일 시 : 2026년 5월 20일(수) 19-21시 ▶ 대 상 : 돈 관리법을 알고 싶은 광주 청년 10명 ▶ 방 법 : 오프라인 ▶ 장 소 : 광주청년드림은행(광주광역시 북구 무등로 237,2층) ▶ 신 청: bit.ly/가계부소모임 *가계부 작성 실습과 참여자 간 이야기 나눔이 있습니다. - 2026년 5월 15일(금)까지 신청 링크를 통해 접수, 선착순 마감 *한번 강의를 들으신 분들은 참여가 취소될 수 있으며, 많은 분들의 참여을 돕고자 함이니 양해부탁드립니다.",
+      "contact": "광주시청"
+    }
+  },
+  {
+    "slug": "ontong-youth-부산-청년내일저축계좌",
+    "title": "부산 청년내일저축계좌",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "부산광역시 사회복지국 복지정책과",
+    "region": "부산",
+    "amount": "근로빈곤층 청년의 생계수급자 등으로의 하락을 사전에 예방하고, 일하는 중간계층 청년이 사회에 안착할 수 있도록 자산형성을 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "application text implies open status but needs official confirmation",
+      "date range is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "부산 청년내일저축계좌",
+      "문화생활",
+      "부산",
+      "부산광역시 사회복지국 복지정책과",
+      "모집중",
+      "청년",
+      "근로빈곤층",
+      "청년의",
+      "생계수급자",
+      "등으로의",
+      "하락을",
+      "사전에",
+      "예방하고,",
+      "일하는"
+    ],
+    "summary": "근로빈곤층 청년의 생계수급자 등으로의 하락을 사전에 예방하고, 일하는 중간계층 청년이 사회에 안착할 수 있도록 자산형성을 지원",
+    "audience": "근로빈곤층 청년의 생계수급자 등으로의 하락을 사전에 예방하고, 일하는 중간계층 청년이 사회에 안착할 수 있도록 자산형성을 지원",
+    "benefits": [
+      "근로빈곤층 청년의 생계수급자 등으로의 하락을 사전에 예방하고, 일하는 중간계층 청년이 사회에 안착할 수 있도록 자산형성을 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온라인 신청 : 복지로 사이트 방문 신청 : 읍면동 주민센터(주소지가 아니더라도, 동일 시군구내 모든 주민센터 신청 가능)",
+    "officialUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000060",
+    "officialSourceUrl": "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00000060",
+    "contact": "부산광역시 사회복지국 복지정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "근로빈곤층 청년의 생계수급자 등으로의 하락을 사전에 예방하고, 일하는 중간계층 청년이 사회에 안착할 수 있도록 자산형성을 지원",
+      "benefit": "근로빈곤층 청년의 생계수급자 등으로의 하락을 사전에 예방하고, 일하는 중간계층 청년이 사회에 안착할 수 있도록 자산형성을 지원",
+      "application": "온라인 신청 : 복지로 사이트 방문 신청 : 읍면동 주민센터(주소지가 아니더라도, 동일 시군구내 모든 주민센터 신청 가능)",
+      "contact": "부산광역시 사회복지국 복지정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-2026-전입청년-교통비-지원",
+    "title": "2026 전입청년 교통비 지원",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "강원특별자치도 원주시",
+    "region": "강원",
+    "amount": "2023. 1. 1. 이후 원주시로 전입하여, 타지역 직장으로 출퇴근하는 18~39세 청년들의 원주시 전입 및 정착 유도를 위한 전입청년 교통비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "2026 전입청년 교통비 지원",
+      "문화생활",
+      "강원",
+      "강원특별자치도 원주시",
+      "확인필요",
+      "청년",
+      "2023.",
+      "1.",
+      "이후",
+      "원주시로",
+      "전입하여,",
+      "타지역",
+      "직장으로"
+    ],
+    "summary": "2023. 1. 1. 이후 원주시로 전입하여, 타지역 직장으로 출퇴근하는 18~39세 청년들의 원주시 전입 및 정착 유도를 위한 전입청년 교통비 지원",
+    "audience": "2023. 1. 1. 이후 원주시로 전입하여 거주하고 있는 18~39세 청년 중 관외에 직장을 두고 출퇴근하는 자 (*신청일 기준)",
+    "benefits": [
+      "2023. 1. 1. 이후 원주시로 전입하여, 타지역 직장으로 출퇴근하는 18~39세 청년들의 원주시 전입 및 정착 유도를 위한 전입청년 교통비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "온라인 -원주시 청년지원센터 홈페이지",
+    "officialUrl": "https://www.wonju.go.kr/wjyouth/viewTnWjyouthProgrmU.do?progrmNo=60&key=5942",
+    "officialSourceUrl": "https://www.wonju.go.kr/wjyouth/viewTnWjyouthProgrmU.do?progrmNo=60&key=5942",
+    "contact": "강원특별자치도 원주시",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "2023. 1. 1. 이후 원주시로 전입하여 거주하고 있는 18~39세 청년 중 관외에 직장을 두고 출퇴근하는 자 (*신청일 기준)",
+      "benefit": "2023. 1. 1. 이후 원주시로 전입하여, 타지역 직장으로 출퇴근하는 18~39세 청년들의 원주시 전입 및 정착 유도를 위한 전입청년 교통비 지원",
+      "application": "온라인 -원주시 청년지원센터 홈페이지",
+      "contact": "강원특별자치도 원주시"
+    }
+  },
+  {
+    "slug": "ontong-youth-2026년-맞춤형-예비-창업가-발굴-육성사업-청년창업기업-엑셀러레이팅-및-기업-수요기반-컨시어지-멘토단-모집",
+    "title": "2026년 맞춤형 예비 창업가 발굴·육성사업 청년창업기업 엑셀러레이팅 및 기업 수요기반 컨시어지 멘토단 모집",
+    "category": "창업",
+    "source": "온통청년 API",
+    "agency": "광주시청",
+    "region": "광주",
+    "amount": "○ 우수 역량을 보유한 액셀러레이터(AC) 및 전문가를 전담 멘토로 선발하여 창업기업의 시장 경쟁력 강화 및 투자유치 촉진 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "2026년 맞춤형 예비 창업가 발굴·육성사업 청년창업기업 엑셀러레이팅 및 기업 수요기반 컨시어지 멘토단 모집",
+      "창업",
+      "광주",
+      "광주시청",
+      "모집중",
+      "청년",
+      "소상공인",
+      "○",
+      "우수",
+      "역량을",
+      "보유한",
+      "액셀러레이터(AC)",
+      "및",
+      "전문가를"
+    ],
+    "summary": "○ 우수 역량을 보유한 액셀러레이터(AC) 및 전문가를 전담 멘토로 선발하여 창업기업의 시장 경쟁력 강화 및 투자유치 촉진 지원",
+    "audience": "○ 우수 역량을 보유한 액셀러레이터(AC) 및 전문가를 전담 멘토로 선발하여 창업기업의 시장 경쟁력 강화 및 투자유치 촉진 지원",
+    "benefits": [
+      "○ 우수 역량을 보유한 액셀러레이터(AC) 및 전문가를 전담 멘토로 선발하여 창업기업의 시장 경쟁력 강화 및 투자유치 촉진 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 이메일 접수: jjanggon@gjtp.or.kr",
+    "officialUrl": "https://www.gjtp.or.kr/home/business.cs?act=view&bsnssId=2156&ctg01=01,02,03,04,05,06,09,07,08,10,11,12&ctg02=06&ctg03=14&pageIndex=1&pageUnit=30&searchKeyword=",
+    "officialSourceUrl": "https://www.gjtp.or.kr/home/business.cs?act=view&bsnssId=2156&ctg01=01,02,03,04,05,06,09,07,08,10,11,12&ctg02=06&ctg03=14&pageIndex=1&pageUnit=30&searchKeyword=",
+    "contact": "광주시청",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 우수 역량을 보유한 액셀러레이터(AC) 및 전문가를 전담 멘토로 선발하여 창업기업의 시장 경쟁력 강화 및 투자유치 촉진 지원",
+      "benefit": "○ 우수 역량을 보유한 액셀러레이터(AC) 및 전문가를 전담 멘토로 선발하여 창업기업의 시장 경쟁력 강화 및 투자유치 촉진 지원",
+      "application": "○ 이메일 접수: jjanggon@gjtp.or.kr",
+      "contact": "광주시청"
+    }
+  },
+  {
+    "slug": "ontong-youth-2026년-청년농업인-청년창업형-후계농업경영인-영농정착지원사업-2차",
+    "title": "2026년 청년농업인(청년창업형 후계농업경영인) 영농정착지원사업(2차)",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "광주시청",
+    "region": "광주",
+    "amount": "○ 영농 초기 소득이 불안정한 청년농업인 대상, 최장 3년간 영농정착지원금 지급 및 농지·자금·교육 등 연계 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "2026년 청년농업인(청년창업형 후계농업경영인) 영농정착지원사업(2차)",
+      "고용",
+      "광주",
+      "광주시청",
+      "모집중",
+      "청년",
+      "소상공인",
+      "○",
+      "영농",
+      "초기",
+      "소득이",
+      "불안정한",
+      "청년농업인",
+      "대상,"
+    ],
+    "summary": "○ 영농 초기 소득이 불안정한 청년농업인 대상, 최장 3년간 영농정착지원금 지급 및 농지·자금·교육 등 연계 지원",
+    "audience": "○ 영농 초기 소득이 불안정한 청년농업인 대상, 최장 3년간 영농정착지원금 지급 및 농지·자금·교육 등 연계 지원",
+    "benefits": [
+      "○ 영농 초기 소득이 불안정한 청년농업인 대상, 최장 3년간 영농정착지원금 지급 및 농지·자금·교육 등 연계 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 농림사업정보시스템(농업e지) 온라인 신청",
+    "officialUrl": "https://www.nongupez.go.kr/nsm/main",
+    "officialSourceUrl": "https://www.nongupez.go.kr/nsm/main",
+    "contact": "광주시청",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 영농 초기 소득이 불안정한 청년농업인 대상, 최장 3년간 영농정착지원금 지급 및 농지·자금·교육 등 연계 지원",
+      "benefit": "○ 영농 초기 소득이 불안정한 청년농업인 대상, 최장 3년간 영농정착지원금 지급 및 농지·자금·교육 등 연계 지원",
+      "application": "○ 농림사업정보시스템(농업e지) 온라인 신청",
+      "contact": "광주시청"
+    }
+  },
+  {
+    "slug": "ontong-youth-2026년도-광주형-청년갭이어-지원사업",
+    "title": "2026년도 광주형 청년갭이어 지원사업",
+    "category": "청년",
+    "source": "온통청년 API",
+    "agency": "광주시청",
+    "region": "광주",
+    "amount": "○ 새로운 경험을 통해 하고 싶은 일을 스스로 탐색하고 지역을 탐구하여 아이디어를 발견하고 실행해 볼 수 있도록 지원함 ○ 광주광역시 거주 청년들이 광주 외 국내 1개 지역을 선택하여 다양한 활동을 경험하며 삶의 방향성을 정립함",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "2026년도 광주형 청년갭이어 지원사업",
+      "청년",
+      "광주",
+      "광주시청",
+      "모집중",
+      "○",
+      "새로운",
+      "경험을",
+      "통해",
+      "하고",
+      "싶은",
+      "일을",
+      "스스로",
+      "확인필요"
+    ],
+    "summary": "○ 새로운 경험을 통해 하고 싶은 일을 스스로 탐색하고 지역을 탐구하여 아이디어를 발견하고 실행해 볼 수 있도록 지원함 ○ 광주광역시 거주 청년들이 광주 외 국내 1개 지역을 선택하여 다양한 활동을 경험하며 삶의 방향성을 정립함",
+    "audience": "○ 새로운 경험을 통해 하고 싶은 일을 스스로 탐색하고 지역을 탐구하여 아이디어를 발견하고 실행해 볼 수 있도록 지원함 ○ 광주광역시 거주 청년들이 광주 외 국내 1개 지역을 선택하여 다양한 활동을 경험하며 삶의 방향성을 정립함",
+    "benefits": [
+      "○ 새로운 경험을 통해 하고 싶은 일을 스스로 탐색하고 지역을 탐구하여 아이디어를 발견하고 실행해 볼 수 있도록 지원함 ○ 광주광역시 거주 청년들이 광주 외 국내 1개 지역을 선택하여 다양한 활동을 경험하며 삶의 방향성을 정립함"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "○ 신청방법 : (주)아르케 홈페이지(www.big-tree.kr)를 통한 온라인 신청",
+    "officialUrl": "https://big-tree.kr/",
+    "officialSourceUrl": "https://big-tree.kr/",
+    "contact": "광주시청",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "○ 새로운 경험을 통해 하고 싶은 일을 스스로 탐색하고 지역을 탐구하여 아이디어를 발견하고 실행해 볼 수 있도록 지원함 ○ 광주광역시 거주 청년들이 광주 외 국내 1개 지역을 선택하여 다양한 활동을 경험하며 삶의 방향성을 정립함",
+      "benefit": "○ 새로운 경험을 통해 하고 싶은 일을 스스로 탐색하고 지역을 탐구하여 아이디어를 발견하고 실행해 볼 수 있도록 지원함 ○ 광주광역시 거주 청년들이 광주 외 국내 1개 지역을 선택하여 다양한 활동을 경험하며 삶의 방향성을 정립함",
+      "application": "○ 신청방법 : (주)아르케 홈페이지(www.big-tree.kr)를 통한 온라인 신청",
+      "contact": "광주시청"
+    }
+  },
+  {
+    "slug": "ontong-youth-부산-전세피해-임차인-민간주택-월세지원사업",
+    "title": "부산 전세피해 임차인 민간주택 월세지원사업",
+    "category": "주거",
+    "source": "온통청년 API",
+    "agency": "부산광역시 주택건축국 주택정책과",
+    "region": "부산",
+    "amount": "「전세사기피해자 지원 및 주거안정에 관한 특별법」과 연계하여 부산지역 전세사기 등 피해자들의 주거 불안 해소 및 주거 안정 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "부산 전세피해 임차인 민간주택 월세지원사업",
+      "주거",
+      "부산",
+      "부산광역시 주택건축국 주택정책과",
+      "확인필요",
+      "청년",
+      "「전세사기피해자",
+      "지원",
+      "및",
+      "주거안정에",
+      "관한",
+      "특별법」과",
+      "연계하여",
+      "부산지역"
+    ],
+    "summary": "「전세사기피해자 지원 및 주거안정에 관한 특별법」과 연계하여 부산지역 전세사기 등 피해자들의 주거 불안 해소 및 주거 안정 지원",
+    "audience": "ㅇ 아래 요건을 모두 충족하는 자 - 특별법에 따라 전세사기피해자(등)으로 결정된 자 * 전세사기피해자(등)으로 결정된 날부터 3년이내 신청(법14조의2) - 신청일 현재, 부산광역시에 주민등록이 되어있는 무주택자* * 분양권 및 조합원 입주권은 주택으로 산정하지 않음 ▸ 전세피해 임차인 버팀목 전세대출 조건을 따름 - 전세피해 주택이 부산광역시에 소재하면서, 부산광역시에 소재한 민간 주택에 월세 계약을 체결하여 주민등록 전입 및 실제 거주하는 자 - 피해주택 임대차계약서의 임차인과 월세주택 임대차계약서의 임차인 및 본 사업 신청자가 모두 피해자 본인일 것",
+    "benefits": [
+      "「전세사기피해자 지원 및 주거안정에 관한 특별법」과 연계하여 부산지역 전세사기 등 피해자들의 주거 불안 해소 및 주거 안정 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "① 민간월세 계약 ② 이주 ③ 월세지원 신청 및 월세납입내역 제출(매월 말까지) ④ 지원대상 적합여부 및구비서류 검토 ⑤ 월세지원 ⑥ 사후관리",
+    "officialUrl": "https://www.busan.go.kr/depart/charterdamage002",
+    "officialSourceUrl": "https://www.busan.go.kr/depart/charterdamage002",
+    "contact": "부산광역시 주택건축국 주택정책과",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "ㅇ 아래 요건을 모두 충족하는 자 - 특별법에 따라 전세사기피해자(등)으로 결정된 자 * 전세사기피해자(등)으로 결정된 날부터 3년이내 신청(법14조의2) - 신청일 현재, 부산광역시에 주민등록이 되어있는 무주택자* * 분양권 및 조합원 입주권은 주택으로 산정하지 않음 ▸ 전세피해 임차인 버팀목 전세대출 조건을 따름 - 전세피해 주택이 부산광역시에 소재하면서, 부산광역시에 소재한 민간 주택에 월세 계약을 체결하여 주민등록 전입 및 실제 거주하는 자 - 피해주택 임대차계약서의 임차인과 월세주택 임대차계약서의 임차인 및 본 사업 신청자가 모두 피해자 본인일 것",
+      "benefit": "「전세사기피해자 지원 및 주거안정에 관한 특별법」과 연계하여 부산지역 전세사기 등 피해자들의 주거 불안 해소 및 주거 안정 지원",
+      "application": "① 민간월세 계약 ② 이주 ③ 월세지원 신청 및 월세납입내역 제출(매월 말까지) ④ 지원대상 적합여부 및구비서류 검토 ⑤ 월세지원 ⑥ 사후관리",
+      "contact": "부산광역시 주택건축국 주택정책과"
+    }
+  },
+  {
+    "slug": "ontong-youth-삼척형-청년스타트업-창업지원사업",
+    "title": "삼척형 청년스타트업 창업지원사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "강원특별자치도 삼척시",
+    "region": "강원",
+    "amount": "삼척시 거주 예비 창업자 및 1년 미만 초기 창업 청년(18~49세) 대상 창업간접비 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "삼척형 청년스타트업 창업지원사업",
+      "고용",
+      "강원",
+      "강원특별자치도 삼척시",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "삼척시",
+      "거주",
+      "예비",
+      "창업자",
+      "및",
+      "1년",
+      "미만"
+    ],
+    "summary": "삼척시 거주 예비 창업자 및 1년 미만 초기 창업 청년(18~49세) 대상 창업간접비 지원",
+    "audience": "삼척시 거주 예비 창업자 및 1년 미만 초기 창업 청년(18~49세) 대상 창업간접비 지원",
+    "benefits": [
+      "삼척시 거주 예비 창업자 및 1년 미만 초기 창업 청년(18~49세) 대상 창업간접비 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "20251222 ~ 20260123",
+    "officialUrl": "https://www.samcheok.go.kr/main.web",
+    "officialSourceUrl": "https://www.samcheok.go.kr/main.web",
+    "contact": "강원특별자치도 삼척시",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "삼척시 거주 예비 창업자 및 1년 미만 초기 창업 청년(18~49세) 대상 창업간접비 지원",
+      "benefit": "삼척시 거주 예비 창업자 및 1년 미만 초기 창업 청년(18~49세) 대상 창업간접비 지원",
+      "application": "20251222 ~ 20260123",
+      "contact": "강원특별자치도 삼척시"
+    }
+  },
+  {
+    "slug": "ontong-youth-삼척형-청년인턴-지원사업",
+    "title": "삼척형 청년인턴 지원사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "강원특별자치도 삼척시",
+    "region": "강원",
+    "amount": "삼척시 거주 미취업 청년(18~49세) 공공 행정 분야 인턴 연수 기회 제공",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자, 가구/부모",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "삼척형 청년인턴 지원사업",
+      "고용",
+      "강원",
+      "강원특별자치도 삼척시",
+      "모집중",
+      "청년",
+      "구직자",
+      "가구/부모",
+      "삼척시",
+      "거주",
+      "미취업",
+      "청년(18~49세)",
+      "공공",
+      "행정"
+    ],
+    "summary": "삼척시 거주 미취업 청년(18~49세) 공공 행정 분야 인턴 연수 기회 제공",
+    "audience": "□ 선발 우선순위(모집인원 초과 시) ① 취약계층(기초생활수급자, 차상위계층, 한부모가정), 국가유공자 ② 전 단계 행복일자리(청년층) 및 행정인턴 미 참여자 ③ 선발기준표에 의한 고득점자 순 선발 ※ 동점자 발생 시 : 연령이 낮은 자 우선 선발 ※ 주소지, 근무가능지역 고려하여 고득점자 우선 배치",
+    "benefits": [
+      "삼척시 거주 미취업 청년(18~49세) 공공 행정 분야 인턴 연수 기회 제공"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "경제과 방문 접수",
+    "officialUrl": "https://www.samcheok.go.kr/specialty/00471/00480.web",
+    "officialSourceUrl": "https://www.samcheok.go.kr/specialty/00471/00480.web",
+    "contact": "강원특별자치도 삼척시",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "□ 선발 우선순위(모집인원 초과 시) ① 취약계층(기초생활수급자, 차상위계층, 한부모가정), 국가유공자 ② 전 단계 행복일자리(청년층) 및 행정인턴 미 참여자 ③ 선발기준표에 의한 고득점자 순 선발 ※ 동점자 발생 시 : 연령이 낮은 자 우선 선발 ※ 주소지, 근무가능지역 고려하여 고득점자 우선 배치",
+      "benefit": "삼척시 거주 미취업 청년(18~49세) 공공 행정 분야 인턴 연수 기회 제공",
+      "application": "경제과 방문 접수",
+      "contact": "강원특별자치도 삼척시"
+    }
+  },
+  {
+    "slug": "ontong-youth-청년-국가기술자격-응시료-지원-사업",
+    "title": "청년 국가기술자격 응시료 지원 사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "고용노동부",
+    "region": "전국",
+    "amount": "구직활동을 하거나 경력을 개발하는 청년들의 경제적 부담을 완화하고, 국가기술자격 취득을 통한 취업 경쟁력 강화를 도모",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "ambiguous date range",
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "date range is not explicit in OnTongYouth fields",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 구직자",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "청년 국가기술자격 응시료 지원 사업",
+      "고용",
+      "전국",
+      "고용노동부",
+      "확인필요",
+      "청년",
+      "구직자",
+      "구직활동을",
+      "하거나",
+      "경력을",
+      "개발하는",
+      "청년들의",
+      "경제적",
+      "부담을"
+    ],
+    "summary": "구직활동을 하거나 경력을 개발하는 청년들의 경제적 부담을 완화하고, 국가기술자격 취득을 통한 취업 경쟁력 강화를 도모",
+    "audience": "구직활동을 하거나 경력을 개발하는 청년들의 경제적 부담을 완화하고, 국가기술자격 취득을 통한 취업 경쟁력 강화를 도모",
+    "benefits": [
+      "구직활동을 하거나 경력을 개발하는 청년들의 경제적 부담을 완화하고, 국가기술자격 취득을 통한 취업 경쟁력 강화를 도모"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "한국산업인력공단 Q-Net(https://www.q-net.or.kr) 원서접수 결제 단계에서, 34세 이하 청년인 경우 별도의 신청 절차 없이 50% 할인 자동 적용",
+    "officialUrl": "https://www.q-net.or.kr/man001.do?gSite=Q&gIntro=Y",
+    "officialSourceUrl": "https://www.q-net.or.kr/man001.do?gSite=Q&gIntro=Y",
+    "contact": "한국산업인력공단",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "구직활동을 하거나 경력을 개발하는 청년들의 경제적 부담을 완화하고, 국가기술자격 취득을 통한 취업 경쟁력 강화를 도모",
+      "benefit": "구직활동을 하거나 경력을 개발하는 청년들의 경제적 부담을 완화하고, 국가기술자격 취득을 통한 취업 경쟁력 강화를 도모",
+      "application": "한국산업인력공단 Q-Net(https://www.q-net.or.kr) 원서접수 결제 단계에서, 34세 이하 청년인 경우 별도의 신청 절차 없이 50% 할인 자동 적용",
+      "contact": "한국산업인력공단"
+    }
+  },
+  {
+    "slug": "ontong-youth-2026년-청년창업자-임차료-지원사업",
+    "title": "2026년 청년창업자 임차료 지원사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "경상북도 고령군 인구정책실",
+    "region": "경북",
+    "amount": "초기 청년창업자에게 최대 5개월간 임차료 50%(월 최대 40만원) 지원",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 소상공인",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "2026년 청년창업자 임차료 지원사업",
+      "고용",
+      "경북",
+      "경상북도 고령군 인구정책실",
+      "확인필요",
+      "청년",
+      "소상공인",
+      "초기",
+      "청년창업자에게",
+      "최대",
+      "5개월간",
+      "임차료",
+      "50%(월",
+      "40만원)"
+    ],
+    "summary": "초기 청년창업자에게 최대 5개월간 임차료 50%(월 최대 40만원) 지원",
+    "audience": "초기 청년창업자에게 최대 5개월간 임차료 50%(월 최대 40만원) 지원",
+    "benefits": [
+      "초기 청년창업자에게 최대 5개월간 임차료 50%(월 최대 40만원) 지원"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "20260518 ~ 20260616",
+    "officialUrl": "https://www.goryeong.go.kr/kor/boardView.do?IDX=154&BRD_ID=1023&BOARD_IDX=41634&searchType=ALL&searchValue=%EC%9E%84%EC%B0%A8%EB%A3%8C&page=1",
+    "officialSourceUrl": "https://www.goryeong.go.kr/kor/boardView.do?IDX=154&BRD_ID=1023&BOARD_IDX=41634&searchType=ALL&searchValue=%EC%9E%84%EC%B0%A8%EB%A3%8C&page=1",
+    "contact": "경상북도 고령군 인구정책실",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "초기 청년창업자에게 최대 5개월간 임차료 50%(월 최대 40만원) 지원",
+      "benefit": "초기 청년창업자에게 최대 5개월간 임차료 50%(월 최대 40만원) 지원",
+      "application": "20260518 ~ 20260616",
+      "contact": "경상북도 고령군 인구정책실"
+    }
+  },
+  {
+    "slug": "ontong-youth-2026년-청년근로자-교통비-지원사업",
+    "title": "2026년 청년근로자 교통비 지원사업",
+    "category": "고용",
+    "source": "온통청년 API",
+    "agency": "경상북도 고령군 인구정책실",
+    "region": "경북",
+    "amount": "교통비 지원을 통해 관내 청년 이탈 방지 및 안정적인 직장생활 유도를 통한 청년 일자리 창출 기여",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "status requires official confirmation",
+      "status is not explicit in OnTongYouth fields",
+      "ambiguous date range",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "2026년 청년근로자 교통비 지원사업",
+      "고용",
+      "경북",
+      "경상북도 고령군 인구정책실",
+      "확인필요",
+      "청년",
+      "교통비",
+      "지원을",
+      "통해",
+      "관내",
+      "이탈",
+      "방지",
+      "및"
+    ],
+    "summary": "교통비 지원을 통해 관내 청년 이탈 방지 및 안정적인 직장생활 유도를 통한 청년 일자리 창출 기여",
+    "audience": "교통비 지원을 통해 관내 청년 이탈 방지 및 안정적인 직장생활 유도를 통한 청년 일자리 창출 기여",
+    "benefits": [
+      "교통비 지원을 통해 관내 청년 이탈 방지 및 안정적인 직장생활 유도를 통한 청년 일자리 창출 기여"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "20260526 ~ 20260624",
+    "officialUrl": "https://www.goryeong.go.kr/kor/boardView.do?IDX=154&BRD_ID=1023&BOARD_IDX=41670&searchType=ALL&searchValue=&page=1",
+    "officialSourceUrl": "https://www.goryeong.go.kr/kor/boardView.do?IDX=154&BRD_ID=1023&BOARD_IDX=41670&searchType=ALL&searchValue=&page=1",
+    "contact": "경상북도 고령군 인구정책실",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "교통비 지원을 통해 관내 청년 이탈 방지 및 안정적인 직장생활 유도를 통한 청년 일자리 창출 기여",
+      "benefit": "교통비 지원을 통해 관내 청년 이탈 방지 및 안정적인 직장생활 유도를 통한 청년 일자리 창출 기여",
+      "application": "20260526 ~ 20260624",
+      "contact": "경상북도 고령군 인구정책실"
+    }
+  },
+  {
+    "slug": "ontong-youth-문체부-청년예술인-예술활동-적립계좌",
+    "title": "(문체부) 청년예술인 예술활동 적립계좌",
+    "category": "문화생활",
+    "source": "온통청년 API",
+    "agency": "문화체육관광부",
+    "region": null,
+    "amount": "청년예술인에게 중장기 자산형성의 기회를 마련하여 안정적인 예술활동을 지원하는 사업",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "regionLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "unknown region",
+      "region is not explicit in OnTongYouth fields",
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": false,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(문체부) 청년예술인 예술활동 적립계좌",
+      "문화생활",
+      "문화체육관광부",
+      "모집중",
+      "청년",
+      "청년예술인에게",
+      "중장기",
+      "자산형성의",
+      "기회를",
+      "마련하여",
+      "안정적인",
+      "예술활동을",
+      "지원하는",
+      "확인필요"
+    ],
+    "summary": "청년예술인에게 중장기 자산형성의 기회를 마련하여 안정적인 예술활동을 지원하는 사업",
+    "audience": "「예술인복지법」상 예술활동증명을 완료한 예술인(신청일 기준 예술활동증명 유효자) - 일반 예술활동증명 완료자(공개 발표된 예술활동, 예술활동 수입, 경력단절예술인, 특수한 작업방식, 무형유산 관련 특례), 신진예술인 예술활동증명 완료자 - 국내 거주 내국인 및 재외국민에 한함 (외국인은 참여 불가) - 재외국민의 경우, 출입국사실증명을 통해 신청일 기준 2년간 국내 거주 사실이 확인되며 일시 출국 기간 매회 90일 이내 및 연간* 국내 체류 총합 183일 이상인 자 * 연간기준: (1차년) 2024. 2. 4. ~ 2025. 2. 3., (2차년) 2025. 2. 4. ~ 2026. 2. 3.",
+    "benefits": [
+      "청년예술인에게 중장기 자산형성의 기회를 마련하여 안정적인 예술활동을 지원하는 사업"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "1. 예술활동증명확인 예술인경력정보시스템(https://www.kawfartist.kr)을 접속하시어 경력지원 > 예술활동증명 > 신청내역 진행 상태에서 신청일 현재 예술활동증명 유효 여부를 확인합니다. 2. 구비서류 확인 상품 및 구비서류를 확인하여 준비합니다. 3. 온라인 신청 공지사항에 공지된 신청기간 내 적립계좌 신청하기를 통해 신청 정보 동의 및 인적사항, 신청자료를 입력합니다.",
+    "officialUrl": "https://www.artloan.kr/notice/savingsAccountProcess.do",
+    "officialSourceUrl": "https://www.artloan.kr/notice/savingsAccountProcess.do",
+    "contact": "문화체육관광부",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "「예술인복지법」상 예술활동증명을 완료한 예술인(신청일 기준 예술활동증명 유효자) - 일반 예술활동증명 완료자(공개 발표된 예술활동, 예술활동 수입, 경력단절예술인, 특수한 작업방식, 무형유산 관련 특례), 신진예술인 예술활동증명 완료자 - 국내 거주 내국인 및 재외국민에 한함 (외국인은 참여 불가) - 재외국민의 경우, 출입국사실증명을 통해 신청일 기준 2년간 국내 거주 사실이 확인되며 일시 출국 기간 매회 90일 이내 및 연간* 국내 체류 총합 183일 이상인 자 * 연간기준: (1차년) 2024. 2. 4. ~ 2025. 2. 3., (2차년) 2025. 2. 4. ~ 2026. 2. 3.",
+      "benefit": "청년예술인에게 중장기 자산형성의 기회를 마련하여 안정적인 예술활동을 지원하는 사업",
+      "application": "1. 예술활동증명확인 예술인경력정보시스템(https://www.kawfartist.kr)을 접속하시어 경력지원 > 예술활동증명 > 신청내역 진행 상태에서 신청일 현재 예술활동증명 유효 여부를 확인합니다. 2. 구비서류 확인 상품 및 구비서류를 확인하여 준비합니다. 3. 온라인 신청 공지사항에 공지된 신청기간 내 적립계좌 신청하기를 통해 신청 정보 동의 및 인적사항, 신청자료를 입력합니다.",
+      "contact": "문화체육관광부"
+    }
+  },
+  {
+    "slug": "ontong-youth-농식품부-농식품-바우처",
+    "title": "(농식품부) 농식품 바우처",
+    "category": "보건의료",
+    "source": "온통청년 API",
+    "agency": "농림축산식품부",
+    "region": "전국",
+    "amount": "『농업·농촌 및 식품산업 기본법』 제 23조의 2(취약계층 등에 대한 식품지원)에 근거하여 취약계층의 식품 접근성을 강화하고 균형 있는 식품 섭취를 지원하는 식품지원 제도",
+    "deadline": "공식 공고 확인",
+    "dday": "확인필요",
+    "status": "확인필요",
+    "startDate": null,
+    "endDate": null,
+    "statusLabel": "공식 공고 확인",
+    "statusConfidence": "unknown",
+    "dateConfidence": "unknown",
+    "applicationPeriodLabel": "공식 공고 확인",
+    "requiresOfficialConfirmation": true,
+    "warnings": [
+      "application text implies open status but needs official confirmation",
+      "ambiguous date range",
+      "status requires official confirmation",
+      "official confirmation required before application"
+    ],
+    "publishPolicy": {
+      "canPublish": true,
+      "includeInSearch": true,
+      "includeInAllList": true,
+      "includeInCategoryPage": true,
+      "includeInRegionPage": true,
+      "includeInStatusFilters": false,
+      "includeInDeadlineSort": false,
+      "showDday": false,
+      "requiresOfficialConfirmation": true
+    },
+    "lifeStage": "청년",
+    "targetGroup": "청년, 가구/부모",
+    "income": "공식 공고 확인",
+    "applyOnline": true,
+    "tags": [
+      "(농식품부) 농식품 바우처",
+      "보건의료",
+      "전국",
+      "농림축산식품부",
+      "모집중",
+      "청년",
+      "가구/부모",
+      "『농업·농촌",
+      "및",
+      "식품산업",
+      "기본법』",
+      "제",
+      "23조의",
+      "2(취약계층"
+    ],
+    "summary": "『농업·농촌 및 식품산업 기본법』 제 23조의 2(취약계층 등에 대한 식품지원)에 근거하여 취약계층의 식품 접근성을 강화하고 균형 있는 식품 섭취를 지원하는 식품지원 제도",
+    "audience": "생계급여 수급가구 가구원 중 「국민기초생활 보장법」상 보장시설 수급자는 가구원 수 산출에서 제외 보건복지부 영양플러스 사업 이용자는 해당 기간 동안 가구원 수 산출에서 제외",
+    "benefits": [
+      "『농업·농촌 및 식품산업 기본법』 제 23조의 2(취약계층 등에 대한 식품지원)에 근거하여 취약계층의 식품 접근성을 강화하고 균형 있는 식품 섭취를 지원하는 식품지원 제도"
+    ],
+    "documents": [
+      "공식 공고 확인"
+    ],
+    "apply": "1. 방문신청 : 주소지 관할 읍ㆍ면ㆍ동 행정복지센터 방문 2. 전화신청 : 고객지원센터 (1551-0857)를 통해 신청 3. 온라인신청 : 농식품 바우처 홈페이지에서 신청 4. 자동신청 : 2025년 농식품바우처 이용가구 중 2025. 12. 22. 기준 지원 자격을 충족하는 경우 별도 절차 없이 자동으로 승인 처리",
+    "officialUrl": "https://www.foodvoucher.go.kr/security/joinAgree",
+    "officialSourceUrl": "https://www.foodvoucher.go.kr/security/joinAgree",
+    "contact": "농림축산식품부",
+    "views": 0,
+    "updatedAt": "2026.05.28",
+    "matchReasons": [
+      "온통청년 공식 API 기준",
+      "신청기간과 자격은 공식 공고 확인 필요"
+    ],
+    "faq": [
+      {
+        "q": "GovFind에서 신청 가능 여부를 확정하나요?",
+        "a": "아닙니다. 최종 자격과 신청 가능 여부는 온통청년 또는 해당 기관의 공식 안내에서 확인해야 합니다."
+      }
+    ],
+    "apiDetails": {
+      "target": "생계급여 수급가구 가구원 중 「국민기초생활 보장법」상 보장시설 수급자는 가구원 수 산출에서 제외 보건복지부 영양플러스 사업 이용자는 해당 기간 동안 가구원 수 산출에서 제외",
+      "benefit": "『농업·농촌 및 식품산업 기본법』 제 23조의 2(취약계층 등에 대한 식품지원)에 근거하여 취약계층의 식품 접근성을 강화하고 균형 있는 식품 섭취를 지원하는 식품지원 제도",
+      "application": "1. 방문신청 : 주소지 관할 읍ㆍ면ㆍ동 행정복지센터 방문 2. 전화신청 : 고객지원센터 (1551-0857)를 통해 신청 3. 온라인신청 : 농식품 바우처 홈페이지에서 신청 4. 자동신청 : 2025년 농식품바우처 이용가구 중 2025. 12. 22. 기준 지원 자격을 충족하는 경우 별도 절차 없이 자동으로 승인 처리",
+      "contact": "농림축산식품부"
+    }
+  }
+];
+
+policies.push(...ontongYouthPromotionPolicies);
+
 policies.push(...youthApiPolicies);
 
 export const categoryGroups = [

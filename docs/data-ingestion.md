@@ -761,6 +761,60 @@ Bokjiro mapping cautions:
 - Category gaps are held in `needsReview` because incorrect welfare category mapping can damage category pages and SEO.
 - Duplicate candidates are previewed against existing public policies by source item id, official URL, title plus agency, title similarity plus agency, and title plus support-content similarity.
 
+## OntongYouth Dry-Run
+
+The OntongYouth importer is a staging-only importer for youth policies. It is intended to evaluate youth, employment, housing, startup, and education policy coverage before any source-of-truth changes.
+
+Run a small dry-run batch:
+
+```powershell
+npm.cmd run import:ontong-youth:dry-run -- --limit=20 --save
+```
+
+Run page discovery:
+
+```powershell
+npm.cmd run discover:ontong-youth -- --pages=1 --limit=50 --save --resume
+```
+
+Supported discovery options:
+
+- `--pages=1,2`
+- `--page=1 --max-pages=2`
+- `--limit=50`
+- `--save`
+- `--resume`
+- `--no-cache`
+
+Required environment variables:
+
+- `GOVFIND_ONTONG_YOUTH_API_KEY`
+- `GOVFIND_ONTONG_YOUTH_PAGE` optional, default `1`
+- `GOVFIND_ONTONG_YOUTH_PER_PAGE` optional, default `20`
+
+Compatibility fallback:
+
+- `GOVFIND_YOUTH_API_KEY` is also accepted because the existing youth API sync script uses that name.
+
+Generated dry-run artifacts:
+
+```text
+data/imports/ontong-youth/raw/
+data/imports/ontong-youth/staging/
+data/imports/ontong-youth/reports/
+data/staging/ontong-youth/dry-run-report.json
+data/staging/ontong-youth/ontong-youth-discovery-report.json
+```
+
+OntongYouth mapping cautions:
+
+- Youth policies should map conservatively into `청년`, `고용`, `주거`, `창업`, or `교육` when the source text clearly supports it.
+- Missing region is not treated as nationwide unless the source explicitly says so.
+- Missing or ambiguous application period becomes `dateConfidence: "unknown"` and `applicationPeriodLabel: "공식 공고 확인"`.
+- Ambiguous status stays `확인필요`; it is not rewritten to `모집중` or `상시`.
+- Official URL and application URL are preserved when present, but generic Youth Center URLs are treated as weak duplicate evidence only.
+- The OntongYouth importer does not apply data. Promotion must go through candidate dry-run, apply dry-run, human approval, QA, and deployment.
+
 ## Bokjiro Local Dry-Run
 
 The Bokjiro local welfare importer is a staging-only importer for local-government welfare services. It is intended for regional welfare discovery after Gov24 and Bokjiro Central have already been reviewed.
