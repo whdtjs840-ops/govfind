@@ -19,6 +19,7 @@ const categoryRequestedPage = Number.parseInt(Astro.url.searchParams.get("page")
 const categoryCurrentPage = Math.min(Math.max(Number.isFinite(categoryRequestedPage) ? categoryRequestedPage : 1, 1), categoryTotalPages);
 const categoryStartIndex = categoryTotalResults === 0 ? 0 : (categoryCurrentPage - 1) * categoryPageSize + 1;
 const categoryEndIndex = Math.min(categoryCurrentPage * categoryPageSize, categoryTotalResults);
+const categoryPagePolicies = categoryPolicies.slice((categoryCurrentPage - 1) * categoryPageSize, categoryCurrentPage * categoryPageSize);
 const categorySeoTitle = `${category.label} 지원사업 | GovFind`;
 const categorySeoDescription = `${category.label} 관련 정부지원사업과 복지서비스를 공식 출처 기준으로 확인하세요.`;
 
@@ -85,17 +86,8 @@ const categoryPaginationPages = paginationItems(categoryCurrentPage, categoryTot
         <span>/</span>
         <span>{"\uCD1D"} {categoryTotalResults.toLocaleString("ko-KR")}{"\uAC1C"}</span>
       </div>
-      <div class="grid cols-2 category-result-list" data-category-result-list>
-        {categoryPolicies.map((policy, index) => (
-          <div
-            class="category-page-item"
-            data-category-page-item
-            data-index={index}
-            hidden={index < categoryStartIndex - 1 || index >= categoryEndIndex}
-          >
-            <PolicyCard policy={policy} />
-          </div>
-        ))}
+      <div class="grid cols-2 category-result-list" data-category-result-list data-category-label={category.label}>
+        {categoryPagePolicies.map((policy) => <PolicyCard policy={policy} />)}
       </div>
       {categoryTotalResults > categoryPageSize && (
         <nav class="support-pagination" aria-label="category pagination" data-category-pagination>
@@ -126,71 +118,24 @@ const categoryPaginationPages = paginationItems(categoryCurrentPage, categoryTot
     </div>
   </section>
 
+
+
   <script>
     const pageSize = 30;
-    const items = Array.from(document.querySelectorAll<HTMLElement>("[data-category-page-item]"));
-    const progress = document.querySelector<HTMLElement>("[data-category-progress]");
-    const pagination = document.querySelector<HTMLElement>("[data-category-pagination]");
-
-    function formatCount(value: number) {
-      return value.toLocaleString("ko-KR");
-    }
-
-    function paginationItems(current: number, total: number) {
-      if (total <= 7) return Array.from({ length: total }, (_, index) => index + 1);
-      const pages = new Set([1, total]);
-      for (let page = current - 2; page <= current + 2; page += 1) {
-        if (page > 1 && page < total) pages.add(page);
-      }
-      const sorted = [...pages].sort((a, b) => a - b);
-      const entries: (number | "ellipsis")[] = [];
-      for (const page of sorted) {
-        const previous = entries[entries.length - 1];
-        if (typeof previous === "number" && page - previous > 1) entries.push("ellipsis");
-        entries.push(page);
-      }
-      return entries;
-    }
-
-    function pageHref(page: number) {
-      const url = new URL(window.location.href);
-      if (page <= 1) url.searchParams.delete("page");
-      else url.searchParams.set("page", String(page));
-      return `${url.pathname}${url.search}`;
-    }
-
-    function renderCategoryPage() {
-      const params = new URLSearchParams(window.location.search);
-      const total = items.length;
-      const totalPages = Math.max(1, Math.ceil(total / pageSize));
-      const requested = Number.parseInt(params.get("page") || "1", 10);
-      const currentPage = Math.min(Math.max(Number.isFinite(requested) ? requested : 1, 1), totalPages);
-      const startIndex = total === 0 ? 0 : (currentPage - 1) * pageSize + 1;
-      const endIndex = Math.min(currentPage * pageSize, total);
-
-      items.forEach((item, index) => {
-        item.hidden = index < startIndex - 1 || index >= endIndex;
-      });
-
-      if (progress) {
-        progress.innerHTML = `<strong>${total === 0 ? "0\uAC1C \uD45C\uC2DC" : `${formatCount(startIndex)}-${formatCount(endIndex)}\uAC1C \uD45C\uC2DC`}</strong><span>/</span><span>\uCD1D ${formatCount(total)}\uAC1C</span>`;
-      }
-
-      if (!pagination) return;
-      if (total <= pageSize) {
-        pagination.hidden = true;
-        return;
-      }
-      pagination.hidden = false;
-      const previous = `<a class="page-control ${currentPage === 1 ? "disabled" : ""}" href="${currentPage === 1 ? pageHref(1) : pageHref(currentPage - 1)}" aria-disabled="${currentPage === 1 ? "true" : "false"}">\uC774\uC804</a>`;
-      const next = `<a class="page-control ${currentPage === totalPages ? "disabled" : ""}" href="${currentPage === totalPages ? pageHref(totalPages) : pageHref(currentPage + 1)}" aria-disabled="${currentPage === totalPages ? "true" : "false"}">\uB2E4\uC74C</a>`;
-      const pages = paginationItems(currentPage, totalPages).map((item) => item === "ellipsis"
-        ? '<span class="page-ellipsis" aria-hidden="true">...</span>'
-        : `<a class="page-number ${item === currentPage ? "active" : ""}" href="${pageHref(item)}" ${item === currentPage ? 'aria-current="page"' : ""}>${item}</a>`
-      ).join("");
-      pagination.innerHTML = previous + pages + next;
-    }
-
-    renderCategoryPage();
+    const hasQueryState = window.location.search.length > 0;
+    const labels = { officialCheck: '\uACF5\uC2DD \uACF5\uACE0 \uD655\uC778', officialBadge: '\uACF5\uC2DD\uD655\uC778', onlineAvailable: '\uC628\uB77C\uC778 \uAC00\uB2A5', agencyCheck: '\uAE30\uAD00 \uD655\uC778', target: '\uB300\uC0C1', region: '\uC9C0\uC5ED', apply: '\uC2E0\uCCAD', deadline: '\uB9C8\uAC10', agency: '\uAE30\uAD00', support: '\uC9C0\uC6D0', detail: '\uC0C1\uC138 \uBE44\uAD50', officialApply: '\uACF5\uC2DD \uC2E0\uCCAD\uCC98', emptyDisplay: '0\uAC1C \uD45C\uC2DC', display: '\uAC1C \uD45C\uC2DC', total: '\uCD1D', resultSuffix: '\uAC1C', previous: '\uC774\uC804', next: '\uB2E4\uC74C' };
+    const resultGrid = document.querySelector('[data-category-result-list]');
+    const progress = document.querySelector('[data-category-progress]');
+    const pagination = document.querySelector('[data-category-pagination]');
+    const categoryLabel = resultGrid?.dataset.categoryLabel || '';
+    function escapeHtml(value) { return String(value ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;'); }
+    function compactSummary(policy) { const text = String(policy.searchText || policy.title || '').replace(/\s+/g, ' ').trim(); const withoutTitle = text.startsWith(policy.title) ? text.slice(policy.title.length).trim() : text; const source = withoutTitle || text; return source.length > 120 ? source.slice(0, 120) + '...' : source; }
+    function isDeadlineSoonDday(value) { if (value === 'D-Day') return true; const match = String(value || '').match(/^D-(\d{1,3})$/); return Boolean(match && Number(match[1]) >= 0 && Number(match[1]) <= 14); }
+    function renderCard(policy) { const statusClass = isDeadlineSoonDday(policy.dday) ? 'badge deadline' : 'badge warn'; const url = policy.url || '/support/' + encodeURIComponent(policy.id) + '/'; const deadline = policy.dday || policy.status || labels.officialCheck; const applyLabel = policy.applyOnline ? labels.onlineAvailable : labels.agencyCheck; return '<article class="card policy-card support-card"><div class="meta policy-card-topline"><span class="' + statusClass + '">' + escapeHtml(policy.status || labels.officialBadge) + '</span><span class="badge">' + escapeHtml(policy.category) + '</span><span class="badge soft">' + escapeHtml(policy.source) + '</span></div><div class="policy-card-main"><h3><a href="' + escapeHtml(url) + '">' + escapeHtml(policy.title) + '</a></h3><p class="policy-card-summary">' + escapeHtml(compactSummary(policy)) + '</p><p class="policy-quick-line"><strong>' + labels.target + '</strong> ' + labels.officialCheck + ' <span>?</span> <strong>' + labels.region + '</strong> ' + escapeHtml(policy.region || labels.officialCheck) + '</p></div><dl class="card-facts"><div><dt>' + labels.apply + '</dt><dd>' + escapeHtml(applyLabel) + '</dd></div><div><dt>' + labels.deadline + '</dt><dd>' + escapeHtml(deadline) + '</dd></div><div><dt>' + labels.agency + '</dt><dd>' + escapeHtml(policy.agency || labels.officialCheck) + '</dd></div><div><dt>' + labels.support + '</dt><dd>' + labels.officialCheck + '</dd></div></dl><div class="card-actions"><a class="button" href="' + escapeHtml(url) + '" data-event="policy_click" data-policy="' + escapeHtml(policy.id) + '">' + labels.detail + ' <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a><a class="button secondary official-link" href="' + escapeHtml(policy.officialUrl || url) + '" target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy="' + escapeHtml(policy.id) + '"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>' + labels.officialApply + '</a></div></article>'; }
+    function formatCount(value) { return Number(value).toLocaleString('ko-KR'); }
+    function paginationItems(current, total) { if (total <= 7) return Array.from({ length: total }, (_, index) => index + 1); const pages = new Set([1, total]); for (let page = current - 2; page <= current + 2; page += 1) if (page > 1 && page < total) pages.add(page); const sorted = [...pages].sort((a, b) => a - b); const entries = []; for (const page of sorted) { const previous = entries[entries.length - 1]; if (typeof previous === 'number' && page - previous > 1) entries.push('ellipsis'); entries.push(page); } return entries; }
+    function pageHref(page) { const url = new URL(window.location.href); if (page <= 1) url.searchParams.delete('page'); else url.searchParams.set('page', String(page)); return url.pathname + url.search; }
+    async function renderCategoryPageFromIndex() { if (!categoryLabel || !resultGrid) return; const response = await fetch('/search-index.json'); if (!response.ok) throw new Error('search-index fetch failed'); const index = await response.json(); const items = (index.items || []).filter((policy) => policy.category === categoryLabel); const params = new URLSearchParams(window.location.search); const total = items.length; const totalPages = Math.max(1, Math.ceil(total / pageSize)); const requested = Number.parseInt(params.get('page') || '1', 10); const currentPage = Math.min(Math.max(Number.isFinite(requested) ? requested : 1, 1), totalPages); const startIndex = total === 0 ? 0 : (currentPage - 1) * pageSize + 1; const endIndex = Math.min(currentPage * pageSize, total); resultGrid.innerHTML = items.slice((currentPage - 1) * pageSize, currentPage * pageSize).map(renderCard).join(''); if (progress) progress.innerHTML = '<strong>' + (total === 0 ? labels.emptyDisplay : formatCount(startIndex) + '-' + formatCount(endIndex) + labels.display) + '</strong><span>/</span><span>' + labels.total + ' ' + formatCount(total) + labels.resultSuffix + '</span>'; if (!pagination) return; if (total <= pageSize) { pagination.hidden = true; pagination.innerHTML = ''; return; } pagination.hidden = false; const previous = '<a class="page-control ' + (currentPage === 1 ? 'disabled' : '') + '" href="' + escapeHtml(currentPage === 1 ? pageHref(1) : pageHref(currentPage - 1)) + '" aria-disabled="' + (currentPage === 1 ? 'true' : 'false') + '">' + labels.previous + '</a>'; const next = '<a class="page-control ' + (currentPage === totalPages ? 'disabled' : '') + '" href="' + escapeHtml(currentPage === totalPages ? pageHref(totalPages) : pageHref(currentPage + 1)) + '" aria-disabled="' + (currentPage === totalPages ? 'true' : 'false') + '">' + labels.next + '</a>'; const pages = paginationItems(currentPage, totalPages).map((item) => item === 'ellipsis' ? '<span class="page-ellipsis" aria-hidden="true">...</span>' : '<a class="page-number ' + (item === currentPage ? 'active' : '') + '" href="' + escapeHtml(pageHref(item)) + '" ' + (item === currentPage ? 'aria-current="page"' : '') + '>' + item + '</a>').join(''); pagination.innerHTML = previous + pages + next; }
+    if (hasQueryState) renderCategoryPageFromIndex().catch((error) => console.warn(error));
   </script>
 </BaseLayout>
