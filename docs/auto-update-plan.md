@@ -546,3 +546,62 @@ After `update:all`, choose the next source by reading:
 - `recommendedNextAction`: the overall routing decision.
 
 API calls remain outside the default update flow. Use explicit discovery commands such as `discover:bizinfo`, `discover:kstartup`, or source-specific `--fetch` support only when a person approves that source.
+
+## Step 64 Update Plan Recommendation
+
+`update:plan` turns the latest all-source status into a short operator plan.
+
+Command:
+
+```bash
+npm.cmd run update:plan
+```
+
+Input:
+
+```text
+data/staging/automation/update-all-report.json
+```
+
+If the `update-all` report does not exist, `update:plan` runs `npm.cmd run update:all` first. Otherwise it only reads existing cache/report artifacts. It does not call external APIs, does not run discovery, does not apply policies, and does not modify source-of-truth data.
+
+Output:
+
+```text
+data/staging/automation/update-plan-report.json
+```
+
+The report summarizes every source with:
+
+- safe cache candidates,
+- fetch-required state,
+- needs-review state,
+- current source count,
+- source stability,
+- expected category impact,
+- recommended next source command.
+
+Recommendation rules:
+
+- If a source has at least 300 safe candidates and no blockers, recommend a source-specific large dry-run.
+- If no large batch is ready but a source is `fetch_required`, recommend discovery for the highest-priority stable source.
+- If sources have `needs_review` or check errors, keep them blocked until a person reviews their source-specific reports.
+- Actual apply is never executed by `update:plan`. Apply commands should only be considered after a source-specific dry-run passes and a person approves the batch.
+
+Source exhaustion rules:
+
+- `sourceExhausted` means the known discovery reports show that all valid pages for the source have already been fetched.
+- `fetch_required` should be treated as actionable only when valid unfetched pages remain.
+- If `remainingValidPages` is `0`, `update:plan` must not recommend another discovery run for that source.
+- If a source is exhausted and has no safe candidates, the recommended action becomes `exhausted` or `no_action`.
+- If only needs-review items remain, the source should be routed to review instead of discovery.
+- When all existing sources are exhausted, blocked, or below useful batch size, the plan should recommend `review_or_new_source`.
+
+Recommended operating flow:
+
+1. Run `npm.cmd run update:all`.
+2. Run `npm.cmd run update:plan`.
+3. Follow the suggested discovery or dry-run command.
+4. Review the source-specific dry-run report.
+5. If approved, run apply manually with `--confirm`.
+6. Run local QA, validation, build, commit, deploy, and production QA.
