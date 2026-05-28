@@ -124,6 +124,8 @@ const counts = {
   deadline: policyCounts.deadline,
   gov24: policyCounts.bySource["정부24"] ?? 0,
   welfare: policyCounts.bySource["복지로"] ?? 0,
+  bizinfo: policyCounts.bySource["기업마당"] ?? 0,
+  ontongYouth: policyCounts.bySource["온통청년"] ?? 0,
   kstartup: policyCounts.bySource["K-Startup"] ?? 0,
   youth: publicDisplayPolicies.filter((policy) => `${policy.title} ${policy.tags.join(" ")}`.includes("청년")).length,
   smallBusiness: publicDisplayPolicies.filter((policy) => `${policy.title} ${policy.tags.join(" ")}`.includes("소상공인")).length
@@ -211,6 +213,8 @@ const quickTabs = [
   { label: "마감임박", count: counts.deadline, href: supportHref({ status: "마감임박" }), active: selectedStatus === "마감임박" },
   { label: "정부24", count: counts.gov24, href: supportHref({ source: "정부24" }), active: selectedSource === "정부24" },
   { label: "복지로", count: counts.welfare, href: supportHref({ source: "복지로" }), active: selectedSource === "복지로" },
+  { label: "기업마당", count: counts.bizinfo, href: supportHref({ source: "기업마당" }), active: selectedSource === "기업마당" },
+  { label: "온통청년", count: counts.ontongYouth, href: supportHref({ source: "온통청년" }), active: selectedSource === "온통청년" },
   { label: "K-Startup", count: counts.kstartup, href: supportHref({ source: "K-Startup" }), active: selectedSource === "K-Startup" },
   { label: "청년", count: counts.youth, href: supportHref({ q: "청년" }), active: selectedQ === "청년" },
   { label: "소상공인", count: counts.smallBusiness, href: supportHref({ q: "소상공인" }), active: selectedQ === "소상공인" }
@@ -287,12 +291,12 @@ const intentCards = [
   </section>
 
   <section class="section tight support-summary-band">
-    <div class="wrap support-summary-grid">
-      <div><strong>{counts.gov24.toLocaleString("ko-KR")}</strong><span>정부24 혜택</span></div>
-      <div><strong>{counts.welfare.toLocaleString("ko-KR")}</strong><span>복지로 정책</span></div>
-      <div><strong>{counts.kstartup.toLocaleString("ko-KR")}</strong><span>창업공고</span></div>
-      <div><strong>공식</strong><span>신청처 이동</span></div>
-    </div>
+      <div class="wrap support-summary-grid">
+        <div><strong>{counts.gov24.toLocaleString("ko-KR")}</strong><span>정부24 혜택</span></div>
+        <div><strong>{counts.welfare.toLocaleString("ko-KR")}</strong><span>복지로 정책</span></div>
+        <div><strong>{counts.bizinfo.toLocaleString("ko-KR")}</strong><span>기업마당 공고</span></div>
+        <div><strong>{counts.ontongYouth.toLocaleString("ko-KR")}</strong><span>온통청년 정책</span></div>
+      </div>
   </section>
 
   <section class="section">

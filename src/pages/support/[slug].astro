@@ -142,9 +142,12 @@ const seoDescription = truncateMeta(
         </div>
         <h1>{policy.title}</h1>
         <p class="doc-meta">업데이트 {policy.updatedAt} · {policy.agency}</p>
-        <a class="button doc-primary" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
-          <ExternalLink size={18} />공식 신청처 보기
-        </a>
+        <div class="doc-primary-actions">
+          <a class="button doc-primary" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
+            <ExternalLink size={18} />공식 신청처 보기
+          </a>
+          <a class="button secondary" href="/support/">목록으로 돌아가기</a>
+        </div>
       </div>
 
       {showOfficialConfirmationBlock ? (
