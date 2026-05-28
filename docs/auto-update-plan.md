@@ -448,3 +448,101 @@ npm.cmd run promote:bokjiro-central:apply -- --limit=<selectedCount> --batch=<ne
 ```
 
 These commands are suggestions only. They must not be run until a person reviews `data/staging/automation/update-apply-dry-run-report.json` and explicitly approves the source-specific apply. After any real apply, the required sequence is local QA, validation, build, production deploy, and production QA.
+
+## Step 55 All-Source Update Status
+
+`update:all` is the operator entry point for checking every connected source in one run.
+
+Command:
+
+```bash
+npm.cmd run update:all
+```
+
+Output:
+
+```text
+data/staging/automation/update-all-report.json
+```
+
+Default behavior:
+
+- Cache-only. It does not call Gov24, Bokjiro, Ontong Youth, Bizinfo, K-Startup, or any other external API.
+- It runs integrated cache-only check commands where they exist.
+- It records sources that are not yet integrated into the update check flow as `not_integrated_into_update_check`.
+- It continues when one source fails and records the failure in `sourceErrors`.
+- It never writes to `src/data/policies.ts` and never runs apply.
+
+Current sources shown in the report:
+
+- `gov24`
+- `bokjiro-central`
+- `bokjiro-local`
+- `ontong-youth`
+- `bizinfo`
+- `kstartup`
+
+Report interpretation:
+
+- `readyForDryRunSources`: sources with safe cache candidates that can proceed to source-specific dry-run.
+- `fetchRequiredSources`: sources that need explicit discovery or are not yet integrated into automatic cache checks.
+- `blockedSources`: sources with check errors, mapping review, or other blockers.
+- `recommendedNextAction: ready_for_large_batch_dry_run`: at least 300 safe candidates are available.
+- `recommendedNextAction: ready_for_medium_batch_dry_run`: 50 to 299 safe candidates are available.
+- `recommendedNextAction: fetch_required`: no safe candidates are available, but discovery or manual source dry-run is needed.
+- `recommendedNextAction: needs_review`: at least one source check failed or needs human review.
+- `recommendedNextAction: no_action`: no useful candidate or action is present.
+
+The intended weekly flow is:
+
+1. Run `npm.cmd run update:all`.
+2. Review `data/staging/automation/update-all-report.json`.
+3. Run the suggested source-specific discovery or large dry-run command.
+4. If dry-run passes, run the source-specific apply command only after human approval.
+5. Run local QA, `validate:policies`, `test`, and `legacy:build`.
+6. Commit, deploy, and run production QA.
+
+`update:all` may list apply dry-run commands, but any command containing `--confirm` must be run manually only after reviewing the source-specific dry-run report.
+
+## Step 56 Full Source Check Integration
+
+`update:all` now calls cache-only update checks for all connected data sources:
+
+```bash
+npm.cmd run update:gov24:check
+npm.cmd run update:bokjiro-central:check
+npm.cmd run update:bokjiro-local:check
+npm.cmd run update:ontong-youth:check
+npm.cmd run update:bizinfo:check
+npm.cmd run update:kstartup:check
+npm.cmd run update:all
+```
+
+Each source check writes the same report shape under `data/staging/automation/`:
+
+- `update-gov24-check-report.json`
+- `update-bokjiro-central-check-report.json`
+- `update-bokjiro-local-check-report.json`
+- `update-ontong-youth-check-report.json`
+- `update-bizinfo-check-report.json`
+- `update-kstartup-check-report.json`
+
+All update checks are cache-only. They read existing staging/cache artifacts, compare against the current public policy dataset, and classify candidates as safe, duplicate, needs review, incomplete, blocked, or fetch required. They do not call APIs and do not modify source-of-truth policy data.
+
+The shared selection rules are:
+
+- exclude already applied `sourceItemId`, slug, and official URL conflicts,
+- exclude duplicate, incomplete, and needs-review items,
+- exclude category mapping gaps and unsupported categories,
+- allow only `ready` or `publishable_with_warning`,
+- require `publishPolicy.canPublish === true`,
+- require title, slug, source name, source item ID, organization, official/application URL, and summary/description.
+
+After `update:all`, choose the next source by reading:
+
+- `readyForDryRunSources`: run the suggested source-specific dry-run next.
+- `fetchRequiredSources`: run explicit discovery only after approval.
+- `blockedSources`: review mapping or needs-review reports before discovery/apply.
+- `recommendedNextAction`: the overall routing decision.
+
+API calls remain outside the default update flow. Use explicit discovery commands such as `discover:bizinfo`, `discover:kstartup`, or source-specific `--fetch` support only when a person approves that source.
