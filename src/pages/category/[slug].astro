@@ -12,8 +12,41 @@ const { category } = Astro.props;
 const displayPolicies = getPublicPolicies(policies);
 const categoryPolicies = displayPolicies.filter((policy) => policy.category === category.label);
 const urgent = categoryPolicies.filter((policy) => isDeadlineSoonPolicy(policy) || (policy.status === "모집중" && hasKnownStatus(policy)));
+const categoryPageSize = 30;
+const categoryTotalResults = categoryPolicies.length;
+const categoryTotalPages = Math.max(1, Math.ceil(categoryTotalResults / categoryPageSize));
+const categoryRequestedPage = Number.parseInt(Astro.url.searchParams.get("page") ?? "1", 10);
+const categoryCurrentPage = Math.min(Math.max(Number.isFinite(categoryRequestedPage) ? categoryRequestedPage : 1, 1), categoryTotalPages);
+const categoryStartIndex = categoryTotalResults === 0 ? 0 : (categoryCurrentPage - 1) * categoryPageSize + 1;
+const categoryEndIndex = Math.min(categoryCurrentPage * categoryPageSize, categoryTotalResults);
 const categorySeoTitle = `${category.label} 지원사업 | GovFind`;
 const categorySeoDescription = `${category.label} 관련 정부지원사업과 복지서비스를 공식 출처 기준으로 확인하세요.`;
+
+function categoryPageHref(page: number) {
+  const query = new URLSearchParams(Astro.url.searchParams);
+  if (page <= 1) query.delete("page");
+  else query.set("page", String(page));
+  const value = query.toString();
+  return value ? `/category/${category.slug}/?${value}` : `/category/${category.slug}/`;
+}
+
+function paginationItems(current: number, total: number) {
+  if (total <= 7) return Array.from({ length: total }, (_, index) => index + 1);
+  const pages = new Set([1, total]);
+  for (let page = current - 2; page <= current + 2; page += 1) {
+    if (page > 1 && page < total) pages.add(page);
+  }
+  const sorted = [...pages].sort((a, b) => a - b);
+  const items: (number | "ellipsis")[] = [];
+  for (const page of sorted) {
+    const previous = items[items.length - 1];
+    if (typeof previous === "number" && page - previous > 1) items.push("ellipsis");
+    items.push(page);
+  }
+  return items;
+}
+
+const categoryPaginationPages = paginationItems(categoryCurrentPage, categoryTotalPages);
 ---
 
 <BaseLayout title={categorySeoTitle} description={categorySeoDescription} canonical={`/category/${category.slug}/`}>
@@ -46,9 +79,117 @@ const categorySeoDescription = `${category.label} 관련 정부지원사업과 �
         </div>
         <a class="button secondary" href="/support/">전체 목록</a>
       </div>
-      <div class="grid cols-2">
-        {categoryPolicies.map((policy) => <PolicyCard policy={policy} />)}
+      <div class="support-result-progress category-result-progress" aria-live="polite" data-category-progress data-page-size={categoryPageSize}>
+        <strong>{categoryTotalResults === 0 ? "0\uAC1C \uD45C\uC2DC" : `${categoryStartIndex.toLocaleString("ko-KR")}-${categoryEndIndex.toLocaleString("ko-KR")}\uAC1C \uD45C\uC2DC`}</strong>
+        <span>/</span>
+        <span>{"\uCD1D"} {categoryTotalResults.toLocaleString("ko-KR")}{"\uAC1C"}</span>
       </div>
+      <div class="grid cols-2 category-result-list" data-category-result-list>
+        {categoryPolicies.map((policy, index) => (
+          <div
+            class="category-page-item"
+            data-category-page-item
+            data-index={index}
+            hidden={index < categoryStartIndex - 1 || index >= categoryEndIndex}
+          >
+            <PolicyCard policy={policy} />
+          </div>
+        ))}
+      </div>
+      {categoryTotalResults > categoryPageSize && (
+        <nav class="support-pagination" aria-label="category pagination" data-category-pagination>
+          <a
+            class={`page-control ${categoryCurrentPage === 1 ? "disabled" : ""}`}
+            href={categoryCurrentPage === 1 ? categoryPageHref(1) : categoryPageHref(categoryCurrentPage - 1)}
+            aria-disabled={categoryCurrentPage === 1 ? "true" : "false"}
+          >{"\uC774\uC804"}</a>
+          {categoryPaginationPages.map((item) => item === "ellipsis"
+            ? <span class="page-ellipsis" aria-hidden="true">...</span>
+            : (
+              <a
+                class={`page-number ${item === categoryCurrentPage ? "active" : ""}`}
+                href={categoryPageHref(item)}
+                aria-current={item === categoryCurrentPage ? "page" : undefined}
+              >
+                {item}
+              </a>
+            )
+          )}
+          <a
+            class={`page-control ${categoryCurrentPage === categoryTotalPages ? "disabled" : ""}`}
+            href={categoryCurrentPage === categoryTotalPages ? categoryPageHref(categoryTotalPages) : categoryPageHref(categoryCurrentPage + 1)}
+            aria-disabled={categoryCurrentPage === categoryTotalPages ? "true" : "false"}
+          >{"\uB2E4\uC74C"}</a>
+        </nav>
+      )}
     </div>
   </section>
+
+  <script>
+    const pageSize = 30;
+    const items = Array.from(document.querySelectorAll<HTMLElement>("[data-category-page-item]"));
+    const progress = document.querySelector<HTMLElement>("[data-category-progress]");
+    const pagination = document.querySelector<HTMLElement>("[data-category-pagination]");
+
+    function formatCount(value: number) {
+      return value.toLocaleString("ko-KR");
+    }
+
+    function paginationItems(current: number, total: number) {
+      if (total <= 7) return Array.from({ length: total }, (_, index) => index + 1);
+      const pages = new Set([1, total]);
+      for (let page = current - 2; page <= current + 2; page += 1) {
+        if (page > 1 && page < total) pages.add(page);
+      }
+      const sorted = [...pages].sort((a, b) => a - b);
+      const entries: (number | "ellipsis")[] = [];
+      for (const page of sorted) {
+        const previous = entries[entries.length - 1];
+        if (typeof previous === "number" && page - previous > 1) entries.push("ellipsis");
+        entries.push(page);
+      }
+      return entries;
+    }
+
+    function pageHref(page: number) {
+      const url = new URL(window.location.href);
+      if (page <= 1) url.searchParams.delete("page");
+      else url.searchParams.set("page", String(page));
+      return `${url.pathname}${url.search}`;
+    }
+
+    function renderCategoryPage() {
+      const params = new URLSearchParams(window.location.search);
+      const total = items.length;
+      const totalPages = Math.max(1, Math.ceil(total / pageSize));
+      const requested = Number.parseInt(params.get("page") || "1", 10);
+      const currentPage = Math.min(Math.max(Number.isFinite(requested) ? requested : 1, 1), totalPages);
+      const startIndex = total === 0 ? 0 : (currentPage - 1) * pageSize + 1;
+      const endIndex = Math.min(currentPage * pageSize, total);
+
+      items.forEach((item, index) => {
+        item.hidden = index < startIndex - 1 || index >= endIndex;
+      });
+
+      if (progress) {
+        progress.innerHTML = `<strong>${total === 0 ? "0\uAC1C \uD45C\uC2DC" : `${formatCount(startIndex)}-${formatCount(endIndex)}\uAC1C \uD45C\uC2DC`}</strong><span>/</span><span>\uCD1D ${formatCount(total)}\uAC1C</span>`;
+      }
+
+      if (!pagination) return;
+      if (total <= pageSize) {
+        pagination.hidden = true;
+        return;
+      }
+      pagination.hidden = false;
+      const previous = `<a class="page-control ${currentPage === 1 ? "disabled" : ""}" href="${currentPage === 1 ? pageHref(1) : pageHref(currentPage - 1)}" aria-disabled="${currentPage === 1 ? "true" : "false"}">\uC774\uC804</a>`;
+      const next = `<a class="page-control ${currentPage === totalPages ? "disabled" : ""}" href="${currentPage === totalPages ? pageHref(totalPages) : pageHref(currentPage + 1)}" aria-disabled="${currentPage === totalPages ? "true" : "false"}">\uB2E4\uC74C</a>`;
+      const pages = paginationItems(currentPage, totalPages).map((item) => item === "ellipsis"
+        ? '<span class="page-ellipsis" aria-hidden="true">...</span>'
+        : `<a class="page-number ${item === currentPage ? "active" : ""}" href="${pageHref(item)}" ${item === currentPage ? 'aria-current="page"' : ""}>${item}</a>`
+      ).join("");
+      pagination.innerHTML = previous + pages + next;
+    }
+
+    renderCategoryPage();
+  </script>
 </BaseLayout>
