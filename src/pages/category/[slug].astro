@@ -5,10 +5,19 @@ import { categoryGroups, policies } from "../../data/policies";
 import { getPublicPolicies, hasKnownStatus, isDeadlineSoonPolicy } from "../../utils/policyUtils";
 
 export function getStaticPaths() {
-  return categoryGroups.map((category) => ({ params: { slug: category.slug }, props: { category } }));
+  const aliases = new Map([
+    ["employment", "job"],
+  ]);
+  const paths = categoryGroups.map((category) => ({ params: { slug: category.slug }, props: { category } }));
+  for (const [alias, canonicalSlug] of aliases) {
+    const category = categoryGroups.find((item) => item.slug === canonicalSlug);
+    if (category) paths.push({ params: { slug: alias }, props: { category } });
+  }
+  return paths;
 }
 
 const { category } = Astro.props;
+const currentCategorySlug = Astro.params.slug ?? category.slug;
 const displayPolicies = getPublicPolicies(policies);
 const categoryPolicies = displayPolicies.filter((policy) => policy.category === category.label);
 const urgent = categoryPolicies.filter((policy) => isDeadlineSoonPolicy(policy) || (policy.status === "모집중" && hasKnownStatus(policy)));
@@ -28,7 +37,7 @@ function categoryPageHref(page: number) {
   if (page <= 1) query.delete("page");
   else query.set("page", String(page));
   const value = query.toString();
-  return value ? `/category/${category.slug}/?${value}` : `/category/${category.slug}/`;
+  return value ? `/category/${currentCategorySlug}/?${value}` : `/category/${currentCategorySlug}/`;
 }
 
 function paginationItems(current: number, total: number) {
