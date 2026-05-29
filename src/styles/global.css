@@ -1918,6 +1918,33 @@ dd {
   margin-top: -6px;
 }
 
+.support-suggested-tags,
+.category-related-tags {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+
+.category-related-tags {
+  margin: 16px 0 0;
+}
+
+.support-suggested-tags[hidden] {
+  display: none;
+}
+
+.support-suggested-tags > span,
+.category-related-tags > span {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 850;
+}
+
+.support-suggested-tags .support-keyword-row,
+.category-related-tags .quick-tags {
+  margin: 0;
+}
+
 .policy-derived-tags,
 .policy-tag-row {
   display: flex;

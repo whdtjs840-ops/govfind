@@ -187,6 +187,22 @@ const tagCounts = Object.fromEntries(
     publicDisplayPolicies.filter((policy) => derivePolicyTags(policy).includes(tag)).length
   ])
 ) as Record<string, number>;
+const suggestedTagsByQuery = [
+  { terms: ["\uCC3D\uC5C5", "\uC2A4\uD0C0\uD2B8\uC5C5", "\uC608\uBE44\uCC3D\uC5C5", "\uCD08\uAE30\uCC3D\uC5C5"], tags: ["\uC608\uBE44\uCC3D\uC5C5", "\uCD08\uAE30\uCC3D\uC5C5", "\uC0AC\uC5C5\uD654", "\uD22C\uC790", "\uACBD\uC601"] },
+  { terms: ["\uC18C\uC0C1\uACF5\uC778", "\uC911\uC18C\uAE30\uC5C5", "\uAE30\uC5C5"], tags: ["\uC815\uCC45\uC790\uAE08", "\uACBD\uC601", "\uD310\uB85C", "\uAE30\uC220\uC9C0\uC6D0", "\uC778\uC99D"] },
+  { terms: ["\uCCAD\uB144"], tags: ["\uCCAD\uB144\uCDE8\uC5C5", "\uCCAD\uB144\uC8FC\uAC70", "\uCCAD\uB144\uCC3D\uC5C5", "\uCCAD\uB144\uAD50\uC721"] },
+  { terms: ["\uBCF5\uC9C0", "\uAE34\uAE09\uBCF5\uC9C0"], tags: ["\uAE34\uAE09\uBCF5\uC9C0", "\uC0DD\uACC4", "\uC758\uB8CC", "\uC8FC\uAC70\uAE09\uC5EC"] },
+  { terms: ["\uB18D\uC5C5", "\uB18D\uAE30\uACC4", "\uB18D\uB9BC\uC5B4\uC5C5"], tags: ["\uB18D\uAE30\uACC4", "\uC601\uB18D", "\uADC0\uB18D", "\uCD95\uC0B0"] },
+  { terms: ["\uC218\uCD9C", "\uD574\uC678"], tags: ["\uC218\uCD9C", "\uD310\uB85C", "\uB9C8\uCF00\uD305"] },
+  { terms: ["\uAE30\uC220\uC9C0\uC6D0", "\uAE30\uC220", "r&d", "rd"], tags: ["\uAE30\uC220\uC9C0\uC6D0", "\uC778\uC99D", "\uC0AC\uC5C5\uD654"] }
+];
+const suggestedSearchTags = totalResults > 0 && selectedQ
+  ? suggestedTagsByQuery
+    .filter((group) => group.terms.some((term) => selectedQ.toLowerCase().includes(term.toLowerCase())))
+    .flatMap((group) => group.tags)
+    .filter((tag, index, list) => list.indexOf(tag) === index && tag !== selectedTag && (tagCounts[tag] ?? 0) > 0)
+    .slice(0, 8)
+  : [];
 const actionKeywords = [
   "근로장려금 신청방법",
   "근로장려금 대상조회",
@@ -338,6 +354,18 @@ const intentCards = [
           {actionKeywords.map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
         </div>
 
+        <div class="support-suggested-tags" data-suggested-tags hidden={suggestedSearchTags.length === 0}>
+          <span>관련 태그</span>
+          <div class="support-keyword-row">
+            {suggestedSearchTags.map((tag) => (
+              <a class="chip" href={supportHref({ tag }, true)}>
+                {tag}
+                <span>{tagCounts[tag].toLocaleString("ko-KR")}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+
         <div class="support-keyword-row support-tag-row" aria-label="세부 태그">
           {primaryTags.filter((tag) => (tagCounts[tag] ?? 0) > 0).map((tag) => (
             <a class={`chip ${selectedTag === tag ? "active" : ""}`} href={supportHref({ tag }, true)}>
@@ -471,6 +499,7 @@ const intentCards = [
     const conditionSubmit = document.querySelector('#conditionSubmit');
     const resultGrid = document.querySelector('.support-result-list');
     const pagination = document.querySelector('.support-pagination');
+    const suggestedTagBox = document.querySelector('[data-suggested-tags]');
     const progress = document.querySelector('.support-result-progress');
     const resultCount = document.querySelector('#result-count');
     const resultSummaryTitle = document.querySelector('#result-summary-title');
@@ -489,6 +518,15 @@ const intentCards = [
       ['\uB18D\uC5C5', '\uB18D\uB9BC\uC5B4\uC5C5', '\uB18D\uAE30\uACC4', '\uC601\uB18D', '\uADC0\uB18D'],
       ['\uC218\uCD9C', '\uD574\uC678\uC9C4\uCD9C', '\uC218\uCD9C\uC9C0\uC6D0', '\uD310\uB85C'],
       ['\uAE30\uC220\uC9C0\uC6D0', 'r&d', 'rd', '\uC5F0\uAD6C\uAC1C\uBC1C', '\uAE30\uC220\uAC1C\uBC1C']
+    ];
+    const suggestedTagsByQuery = [
+      { terms: ['\uCC3D\uC5C5', '\uC2A4\uD0C0\uD2B8\uC5C5', '\uC608\uBE44\uCC3D\uC5C5', '\uCD08\uAE30\uCC3D\uC5C5'], tags: ['\uC608\uBE44\uCC3D\uC5C5', '\uCD08\uAE30\uCC3D\uC5C5', '\uC0AC\uC5C5\uD654', '\uD22C\uC790', '\uACBD\uC601'] },
+      { terms: ['\uC18C\uC0C1\uACF5\uC778', '\uC911\uC18C\uAE30\uC5C5', '\uAE30\uC5C5'], tags: ['\uC815\uCC45\uC790\uAE08', '\uACBD\uC601', '\uD310\uB85C', '\uAE30\uC220\uC9C0\uC6D0', '\uC778\uC99D'] },
+      { terms: ['\uCCAD\uB144'], tags: ['\uCCAD\uB144\uCDE8\uC5C5', '\uCCAD\uB144\uC8FC\uAC70', '\uCCAD\uB144\uCC3D\uC5C5', '\uCCAD\uB144\uAD50\uC721'] },
+      { terms: ['\uBCF5\uC9C0', '\uAE34\uAE09\uBCF5\uC9C0'], tags: ['\uAE34\uAE09\uBCF5\uC9C0', '\uC0DD\uACC4', '\uC758\uB8CC', '\uC8FC\uAC70\uAE09\uC5EC'] },
+      { terms: ['\uB18D\uC5C5', '\uB18D\uAE30\uACC4', '\uB18D\uB9BC\uC5B4\uC5C5'], tags: ['\uB18D\uAE30\uACC4', '\uC601\uB18D', '\uADC0\uB18D', '\uCD95\uC0B0'] },
+      { terms: ['\uC218\uCD9C', '\uD574\uC678'], tags: ['\uC218\uCD9C', '\uD310\uB85C', '\uB9C8\uCF00\uD305'] },
+      { terms: ['\uAE30\uC220\uC9C0\uC6D0', '\uAE30\uC220', 'r&d', 'rd'], tags: ['\uAE30\uC220\uC9C0\uC6D0', '\uC778\uC99D', '\uC0AC\uC5C5\uD654'] }
     ];
     function normalizeSearch(value) { return String(value ?? '').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ''); }
     const normalizedSynonymGroups = synonymGroups.map((group) => group.map(normalizeSearch).filter(Boolean));
@@ -561,10 +599,12 @@ const intentCards = [
     function pageHref(page) { const params = currentParams(); if (page <= 1) params.delete('page'); else params.set('page', String(page)); return supportUrl(params, true); }
     function filterChips(state) { const chips = []; if (state.keyword) chips.push({ label: labels.keyword + ': ' + state.keyword, keys: ['q'] }); if (state.category) chips.push({ label: labels.category + ': ' + state.category, keys: ['category'] }); if (state.tag) chips.push({ label: labels.tag + ': ' + state.tag, keys: ['tag'] }); if (state.region) chips.push({ label: labels.region + ': ' + state.region, keys: ['region'] }); if (state.profile) chips.push({ label: labels.target + ': ' + state.profile, keys: ['profile'] }); if (state.target) chips.push({ label: labels.target + ': ' + state.target, keys: ['target'] }); if (state.purpose) chips.push({ label: labels.purpose + ': ' + state.purpose, keys: ['purpose'] }); if (state.lifeStage) chips.push({ label: labels.lifeStage + ': ' + state.lifeStage, keys: ['lifeStage'] }); if (state.status) chips.push({ label: labels.status + ': ' + state.status, keys: ['status'] }); if (state.source) chips.push({ label: labels.source + ': ' + state.source, keys: ['source'] }); if (state.online) chips.push({ label: labels.onlineAvailable, keys: ['online', 'applyOnline'] }); return chips; }
     function removeHref(keys) { const params = currentParams(); params.delete('page'); for (const key of keys) params.delete(key); return supportUrl(params, true); }
+    function tagHref(tag) { const params = currentParams(); params.delete('page'); params.set('tag', tag); return supportUrl(params, true); }
     function renderSummary(state, total, start, end) { const chips = filterChips(state); const countLabel = formatCount(total) + labels.resultSuffix; const title = state.keyword && state.category ? '\u2018' + state.keyword + '\u2019 ' + labels.searchResult + ' ? ' + state.category + ' ' + labels.filterApplied + ' ? ' + countLabel : state.keyword ? '\u2018' + state.keyword + '\u2019 ' + labels.searchResult + ' ' + countLabel : state.category ? state.category + ' ' + labels.categoryPrograms + ' ' + countLabel : chips.length > 0 ? chips.map((item) => item.label).join(' ? ') + ' ? ' + countLabel : labels.allResults + ' ' + countLabel; if (resultCount) resultCount.textContent = formatCount(total); if (resultSummaryTitle) resultSummaryTitle.textContent = title; if (resultSummaryDetail) resultSummaryDetail.textContent = chips.length > 0 ? labels.appliedConditions + ': ' + chips.map((item) => item.label).join(' ? ') : labels.defaultDetail; if (progress) progress.innerHTML = '<strong>' + (total === 0 ? labels.emptyDisplay : formatCount(start) + '-' + formatCount(end) + labels.display) + '</strong><span>/</span><span>' + labels.total + ' ' + formatCount(total) + labels.resultSuffix + '</span>'; if (noResultContext) noResultContext.textContent = chips.length > 0 ? chips.map((item) => item.label).join(' ? ') : labels.currentCondition; if (!activeFilterChips) return; activeFilterChips.hidden = chips.length === 0; activeFilterChips.innerHTML = chips.map((chip) => '<a class="active-filter-chip" href="' + escapeHtml(removeHref(chip.keys)) + '" aria-label="' + escapeHtml(chip.label) + ' ' + labels.conditionRemoved + '">' + escapeHtml(chip.label) + ' ?</a>').join(''); }
     function renderPagination(totalPages, currentPage, total) { if (!pagination) return; if (total <= pageSize) { pagination.hidden = true; pagination.innerHTML = ''; return; } pagination.hidden = false; const previous = '<a class="page-control ' + (currentPage === 1 ? 'disabled' : '') + '" href="' + escapeHtml(currentPage === 1 ? pageHref(1) : pageHref(currentPage - 1)) + '" aria-disabled="' + (currentPage === 1 ? 'true' : 'false') + '">' + labels.previous + '</a>'; const next = '<a class="page-control ' + (currentPage === totalPages ? 'disabled' : '') + '" href="' + escapeHtml(currentPage === totalPages ? pageHref(totalPages) : pageHref(currentPage + 1)) + '" aria-disabled="' + (currentPage === totalPages ? 'true' : 'false') + '">' + labels.next + '</a>'; const pages = paginationItems(currentPage, totalPages).map((item) => item === 'ellipsis' ? '<span class="page-ellipsis" aria-hidden="true">...</span>' : '<a class="page-number ' + (item === currentPage ? 'active' : '') + '" href="' + escapeHtml(pageHref(item)) + '" ' + (item === currentPage ? 'aria-current="page"' : '') + '>' + item + '</a>').join(''); pagination.innerHTML = previous + pages + next; }
     function syncTagChips(state) { document.querySelectorAll('.support-tag-row .chip').forEach((chip) => { const tag = new URL(chip.href, window.location.href).searchParams.get('tag') || ''; chip.classList.toggle('active', Boolean(state.tag && tag === state.tag)); }); }
-    async function renderSupportResultsFromIndex() { const response = await fetch('/search-index.json'); if (!response.ok) throw new Error('search-index fetch failed'); const index = await response.json(); const state = readState(); const matched = filterAndSortPolicies(index.items || [], state); const total = matched.length; const totalPages = Math.max(1, Math.ceil(total / pageSize)); const currentPage = Math.min(state.page, totalPages); const startIndex = total === 0 ? 0 : (currentPage - 1) * pageSize + 1; const endIndex = Math.min(currentPage * pageSize, total); const pageItems = matched.slice((currentPage - 1) * pageSize, currentPage * pageSize); if (resultGrid) resultGrid.innerHTML = pageItems.map(renderCard).join(''); if (noResults) noResults.hidden = total > 0; syncTagChips(state); renderSummary(state, total, startIndex, endIndex); renderPagination(totalPages, currentPage, total); }
+    function renderSuggestedTags(state, total, items) { if (!suggestedTagBox) return; if (!state.keyword || total === 0) { suggestedTagBox.hidden = true; suggestedTagBox.innerHTML = ''; return; } const query = normalizeSearch(state.keyword); const tagCounts = new Map(); for (const policy of items) for (const tag of policy.tags || []) tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1); const tags = suggestedTagsByQuery.filter((group) => group.terms.some((term) => query.includes(normalizeSearch(term)))).flatMap((group) => group.tags).filter((tag, index, list) => list.indexOf(tag) === index && tag !== state.tag && (tagCounts.get(tag) || 0) > 0).slice(0, 8); if (tags.length === 0) { suggestedTagBox.hidden = true; suggestedTagBox.innerHTML = ''; return; } suggestedTagBox.hidden = false; suggestedTagBox.innerHTML = '<span>\uAD00\uB828 \uD0DC\uADF8</span><div class="support-keyword-row">' + tags.map((tag) => '<a class="chip" href="' + escapeHtml(tagHref(tag)) + '">' + escapeHtml(tag) + '<span>' + formatCount(tagCounts.get(tag) || 0) + '</span></a>').join('') + '</div>'; }
+    async function renderSupportResultsFromIndex() { const response = await fetch('/search-index.json'); if (!response.ok) throw new Error('search-index fetch failed'); const index = await response.json(); const state = readState(); const matched = filterAndSortPolicies(index.items || [], state); const total = matched.length; const totalPages = Math.max(1, Math.ceil(total / pageSize)); const currentPage = Math.min(state.page, totalPages); const startIndex = total === 0 ? 0 : (currentPage - 1) * pageSize + 1; const endIndex = Math.min(currentPage * pageSize, total); const pageItems = matched.slice((currentPage - 1) * pageSize, currentPage * pageSize); if (resultGrid) resultGrid.innerHTML = pageItems.map(renderCard).join(''); if (noResults) noResults.hidden = total > 0; syncTagChips(state); renderSuggestedTags(state, total, matched); renderSummary(state, total, startIndex, endIndex); renderPagination(totalPages, currentPage, total); }
     function setParamAndNavigate(key, value) { const next = currentParams(); next.delete('page'); if (value === true) next.set(key, 'true'); else if (value) next.set(key, String(value)); else next.delete(key); window.location.href = supportUrl(next, true); }
     searchForms.forEach((form) => { form.addEventListener('submit', (event) => { event.preventDefault(); const next = new URLSearchParams(new FormData(form)); for (const [key, value] of Array.from(next.entries())) if (!String(value).trim()) next.delete(key); window.location.href = supportUrl(next, true); }); });
     filterControls.forEach((control) => { control.addEventListener('change', () => { const key = control.dataset.filter || (control.hasAttribute('data-sort') ? 'sort' : ''); if (!key) return; if (control instanceof HTMLInputElement && control.type === 'checkbox') { setParamAndNavigate(key, control.checked); return; } setParamAndNavigate(key, control.value); }); });

@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PolicyCard from "../../components/PolicyCard.astro";
 import { categoryGroups, policies } from "../../data/policies";
+import { derivePolicyTags } from "../../utils/derivedTags";
 import { getPublicPolicies, hasKnownStatus, isDeadlineSoonPolicy } from "../../utils/policyUtils";
 
 export function getStaticPaths() {
@@ -57,6 +58,33 @@ function paginationItems(current: number, total: number) {
 }
 
 const categoryPaginationPages = paginationItems(categoryCurrentPage, categoryTotalPages);
+const relatedTagsBySlug: Record<string, string[]> = {
+  startup: ["\uCC3D\uC5C5", "\uC608\uBE44\uCC3D\uC5C5", "\uC0AC\uC5C5\uD654", "\uD22C\uC790", "\uACBD\uC601"],
+  "small-business": ["\uC18C\uC0C1\uACF5\uC778", "\uC815\uCC45\uC790\uAE08", "\uD310\uB85C", "\uACBD\uC601", "\uAE30\uC220\uC9C0\uC6D0"],
+  job: ["\uCCAD\uB144\uCDE8\uC5C5", "\uCCAD\uB144\uAD50\uC721", "\uACBD\uC601"],
+  employment: ["\uCCAD\uB144\uCDE8\uC5C5", "\uCCAD\uB144\uAD50\uC721", "\uACBD\uC601"],
+  welfare: ["\uAE34\uAE09\uBCF5\uC9C0", "\uC0DD\uACC4", "\uC758\uB8CC", "\uC8FC\uAC70\uAE09\uC5EC", "\uC7A5\uC560\uC778", "\uB178\uC778"],
+  health: ["\uC758\uB8CC", "\uC7A5\uC560\uC778", "\uB178\uC778"],
+  farming: ["\uB18D\uAE30\uACC4", "\uC601\uB18D", "\uADC0\uB18D", "\uCD95\uC0B0", "\uC5B4\uC5C5"],
+  youth: ["\uCCAD\uB144\uCDE8\uC5C5", "\uCCAD\uB144\uC8FC\uAC70", "\uCCAD\uB144\uCC3D\uC5C5", "\uCCAD\uB144\uAD50\uC721"],
+  housing: ["\uCCAD\uB144\uC8FC\uAC70", "\uC8FC\uAC70\uAE09\uC5EC"]
+};
+const categoryTagCounts = new Map<string, number>();
+for (const policy of categoryPolicies) {
+  for (const tag of derivePolicyTags(policy)) {
+    categoryTagCounts.set(tag, (categoryTagCounts.get(tag) ?? 0) + 1);
+  }
+}
+const categoryRelatedTags = (relatedTagsBySlug[currentCategorySlug] ?? relatedTagsBySlug[category.slug] ?? [])
+  .filter((tag) => (categoryTagCounts.get(tag) ?? 0) > 0)
+  .slice(0, 7);
+
+function categoryTagHref(tag: string) {
+  const query = new URLSearchParams();
+  query.set("category", category.label);
+  query.set("tag", tag);
+  return `/support/?${query.toString()}`;
+}
 ---
 
 <BaseLayout title={categorySeoTitle} description={categorySeoDescription} canonical={`/category/${category.slug}/`}>
@@ -68,6 +96,19 @@ const categoryPaginationPages = paginationItems(categoryCurrentPage, categoryTot
       <div class="quick-tags">
         {category.keywords.map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
       </div>
+      {categoryRelatedTags.length > 0 && (
+        <div class="category-related-tags" aria-label="관련 세부 태그">
+          <span>관련 주제</span>
+          <div class="quick-tags">
+            {categoryRelatedTags.map((tag) => (
+              <a class="chip" href={categoryTagHref(tag)}>
+                {tag}
+                <span>{categoryTagCounts.get(tag)?.toLocaleString("ko-KR")}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   </section>
 
