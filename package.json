@@ -27,6 +27,8 @@
     "discover:bizinfo": "tsx scripts/discover-bizinfo.mjs",
     "import:kstartup:dry-run": "tsx scripts/import-kstartup-dry-run.mjs",
     "discover:kstartup": "tsx scripts/discover-kstartup.mjs",
+    "import:national-subsidy:dry-run": "tsx scripts/import-national-subsidy-dry-run.mjs",
+    "discover:national-subsidy": "tsx scripts/discover-national-subsidy.mjs",
     "promote:kstartup:dry-run": "tsx scripts/promote-kstartup-dry-run.mjs",
     "promote:kstartup:generate": "tsx scripts/promote-kstartup-generate.mjs",
     "promote:kstartup:apply:dry-run": "tsx scripts/promote-kstartup-apply-dry-run.mjs",

@@ -935,3 +935,67 @@ Bizinfo mapping cautions:
 - Ambiguous status stays `확인필요`; it is not rewritten to `모집중` or `상시`.
 - Official announcement URLs are preserved. Generic list or homepage URLs are weak duplicate evidence only.
 - The Bizinfo importer does not apply data. Promotion must go through candidate dry-run, generator dry-run, apply dry-run, human approval, QA, and deployment.
+
+## National Subsidy / e나라도움 Dry-Run
+
+The national subsidy importer is a staging-only draft importer for 국고보조금/e나라도움 계열 data. The goal is to evaluate whether national subsidy, grant, and public call data can become GovFind policies before any source-of-truth change.
+
+Candidate source names:
+
+- `national-subsidy`
+- e나라도움 / 보조금통합포털 public call data
+- 기획재정부/공공데이터포털 국고보조금 공모사업 상세
+- 기획재정부/공공데이터포털 국고보조금 정보
+
+Environment variables:
+
+```powershell
+GOVFIND_NATIONAL_SUBSIDY_API_KEY=...
+# or
+GOVFIND_ENARADOUM_API_KEY=...
+# or
+GOVFIND_MOEF_SUBSIDY_API_KEY=...
+```
+
+If the approved OpenAPI endpoint differs by service application, set:
+
+```powershell
+GOVFIND_NATIONAL_SUBSIDY_API_URL=...
+```
+
+Do not commit `.env` files and do not write API key values to reports or logs. Reports must only record whether a key was detected.
+
+Dry-run commands:
+
+```powershell
+npm.cmd run import:national-subsidy:dry-run -- --limit=20 --save
+npm.cmd run discover:national-subsidy -- --pages=1 --limit=50 --save --resume
+```
+
+Mapping cautions:
+
+- Distinguish actual application-ready public calls or support programs from budget status, statistics, subsidy disclosure, or administrative disclosure data.
+- Public calls and support programs may map to `소상공인`, `창업`, `고용`, `교육`, `농림어업`, `복지`, or `보건의료` depending on target and support content.
+- If the record is only budget, settlement, or disclosure data, it should stay out of publishable candidates.
+- If category mapping is unclear, keep the item in `needsReview`; do not publish as `기타`.
+- If date or status is unclear, use `dateConfidence: "unknown"` and `status: "확인필요"` semantics.
+- If region is unclear, keep `region` null rather than assuming `전국`.
+- Preserve official/application URLs. If both are missing, the item is not publishable.
+
+The national subsidy importer does not apply data. Promotion must go through discovery, candidate dry-run, generator dry-run, apply dry-run, human approval, QA, and deployment after the API shape is confirmed.
+
+Current blocked status (2026-05-29):
+
+- The `national-subsidy` importer draft and dry-run commands exist, but the source is not ready for promotion.
+- A service key environment variable and an approved operation endpoint are both required before any discovery can run.
+- The latest diagnostics detected the configured key and endpoint, but the HTTP 200 body was an authorization or service-key error payload rather than normal XML/JSON data.
+- Status: `blocked_api_approval`.
+- Recommended action: `wait_for_api_approval`.
+- Apply allowed: `false`.
+
+Retry checklist:
+
+1. Confirm the exact data.go.kr detailed function has approved usage for the current account and key.
+2. Confirm whether the API expects the Encoding key or Decoding key for the `serviceKey` parameter.
+3. Confirm the configured endpoint returns a normal XML or JSON data payload, not an auth/error body.
+4. Resume `import:national-subsidy:dry-run` only after the response shape and item path are confirmed.

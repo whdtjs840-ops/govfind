@@ -597,6 +597,15 @@ Source exhaustion rules:
 - If only needs-review items remain, the source should be routed to review instead of discovery.
 - When all existing sources are exhausted, blocked, or below useful batch size, the plan should recommend `review_or_new_source`.
 
+Blocked external sources:
+
+- `national-subsidy`
+  - status: `blocked_api_approval`
+  - recommendedAction: `wait_for_api_approval`
+  - applyAllowed: `false`
+  - reason: the configured key and endpoint were detected, but diagnostics returned an authorization or service-key error body instead of data.
+  - `update:plan` should not recommend discovery, dry-run, or apply for this source until the detailed function approval, Encoding/Decoding key type, endpoint, and normal XML/JSON response shape are confirmed.
+
 Recommended operating flow:
 
 1. Run `npm.cmd run update:all`.
