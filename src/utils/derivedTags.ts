@@ -82,15 +82,15 @@ function tagText(policy: Policy) {
     policy.audience,
     policy.amount,
     policy.apply,
-    policy.benefits.join(" "),
-    policy.documents.join(" "),
-    policy.tags.join(" "),
+    ...policy.benefits,
+    ...policy.documents,
+    ...policy.tags,
     policy.apiDetails?.target,
     policy.apiDetails?.criteria,
     policy.apiDetails?.benefit,
     policy.apiDetails?.application
   ]
-    .filter(Boolean)
+    .filter((value) => value && !["null", "undefined"].includes(String(value).toLowerCase()))
     .join(" ")
     .toLowerCase();
 }

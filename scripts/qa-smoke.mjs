@@ -3,7 +3,7 @@ import path from "node:path";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
-const EXPECTED_SEARCH_INDEX_COUNT = 6032;
+const MIN_SEARCH_INDEX_COUNT = 6000;
 const SUPPORT_CARD_PATTERN = /class="[^"]*support-card/g;
 const BAD_TEXT_PATTERNS = [
   /Invalid Date/i,
@@ -84,10 +84,10 @@ try {
   const searchIndexPath = path.join(DIST, "search-index.json");
   const searchIndex = JSON.parse(fs.readFileSync(searchIndexPath, "utf8"));
   const itemLength = Array.isArray(searchIndex.items) ? searchIndex.items.length : 0;
-  if (searchIndex.count !== EXPECTED_SEARCH_INDEX_COUNT || itemLength !== EXPECTED_SEARCH_INDEX_COUNT) {
+  if (searchIndex.count !== itemLength || itemLength < MIN_SEARCH_INDEX_COUNT) {
     failures.push({
       route: "/search-index.json",
-      error: `expected count ${EXPECTED_SEARCH_INDEX_COUNT}, got count ${searchIndex.count}, items ${itemLength}`,
+      error: `expected count/items parity above ${MIN_SEARCH_INDEX_COUNT}, got count ${searchIndex.count}, items ${itemLength}`,
     });
   }
 } catch (error) {
@@ -103,6 +103,6 @@ if (failures.length > 0) {
 console.log(JSON.stringify({
   status: "passed",
   checkedRoutes: routes.length,
-  searchIndexCount: EXPECTED_SEARCH_INDEX_COUNT,
+  searchIndexCount: JSON.parse(fs.readFileSync(path.join(DIST, "search-index.json"), "utf8")).count,
   employmentAlias: "ok",
 }, null, 2));

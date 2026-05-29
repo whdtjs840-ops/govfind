@@ -53,9 +53,9 @@ const cardStatusLabel = showOfficialConfirmation || displayStatus === "공식 �
   data-views={String(policy.views)}
   data-search-only={String(searchOnly)}
   data-title={policy.title}
-  data-tags={policy.tags.join(" ")}
-  data-purpose={`${policy.category} ${policy.amount} ${policy.benefits.join(" ")}`}
-  data-documents={policy.documents.join(" ")}
+  data-tags={policy.tags.filter((value) => value && !["null", "undefined"].includes(String(value).toLowerCase())).join(" ")}
+  data-purpose={[policy.category, policy.amount, ...policy.benefits].filter((value) => value && !["null", "undefined"].includes(String(value).toLowerCase())).join(" ")}
+  data-documents={policy.documents.filter((value) => value && !["null", "undefined"].includes(String(value).toLowerCase())).join(" ")}
   data-search={searchText}
   hidden={searchOnly}
 >

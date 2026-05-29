@@ -49,10 +49,12 @@ export function policySearchText(policy: Policy) {
     policy.audience,
     policy.apply,
     policy.amount,
-    policy.documents.join(" "),
-    policy.benefits.join(" "),
-    policy.tags.join(" ")
-  ].join(" ");
+    ...policy.documents,
+    ...policy.benefits,
+    ...policy.tags
+  ]
+    .filter((value) => value && !["null", "undefined"].includes(String(value).toLowerCase()))
+    .join(" ");
 }
 
 export type PolicyFilters = {
