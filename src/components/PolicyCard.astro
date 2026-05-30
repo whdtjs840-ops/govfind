@@ -88,7 +88,7 @@ const visibleTags = policy.tags
     <div><dt>지원</dt><dd>{amount || "공식 확인 필요"}</dd></div>
   </dl>
   <div class="card-actions">
-    <a class="button" href={`/support/${policy.slug}/`} data-event="policy_click" data-policy={policy.slug}>자세히 보기 <ArrowRight size={15} /></a>
-    <a class="button secondary official-link" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}><ExternalLink size={15} />신청처 바로가기</a>
+    <a class="button official-link" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}><ExternalLink size={15} />신청처 바로가기</a>
+    <a class="button secondary" href={`/support/${policy.slug}/`} data-event="policy_click" data-policy={policy.slug}>자세히 보기 <ArrowRight size={15} /></a>
   </div>
 </article>

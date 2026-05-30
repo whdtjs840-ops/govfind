@@ -75,6 +75,11 @@ const publicCategoryCount = categoryCards.filter((category) => category.label !=
         <div class="home-trust-line" aria-label="신뢰 기준">
           공식 출처 기반, 현재 공개 중인 지원사업을 한 번에 찾아보세요.
         </div>
+        <div class="home-portal-stats" aria-label="서비스 현황">
+          <span><strong>{publicPolicyCountLabel}</strong> 현재 공개</span>
+          <span><strong>{officialSourceCount.toLocaleString("ko-KR")}</strong> 공식 출처</span>
+          <span><strong>{publicCategoryCount.toLocaleString("ko-KR")}</strong> 탐색 분야</span>
+        </div>
       </div>
     </div>
   </section>
