@@ -1,9 +1,14 @@
-import { existsSync } from "node:fs";
+import { existsSync, statSync } from "node:fs";
 import { spawnSync } from "node:child_process";
+import { readFile } from "node:fs/promises";
+import { policies } from "../src/data/policies.ts";
+import { getPublicPolicies } from "../src/utils/policyUtils.ts";
 import { readJson, writeJson } from "./importers/update-check-utils.mjs";
 
 const UPDATE_ALL_REPORT_PATH = "data/staging/automation/update-all-report.json";
 const REPORT_PATH = "data/staging/automation/update-plan-report.json";
+const SEARCH_INDEX_PATH = "dist/search-index.json";
+const STALE_REPORT_MAX_AGE_MS = 6 * 60 * 60 * 1000;
 
 const sourcePriority = ["bizinfo", "kstartup", "ontong-youth", "bokjiro-local", "bokjiro-central", "gov24"];
 
@@ -111,6 +116,116 @@ function runUpdateAllIfMissing() {
   }
 
   return true;
+}
+
+function runUpdateAll(reason = "refresh") {
+  const result = spawnSync("npm.cmd run update:all", {
+    cwd: process.cwd(),
+    env: process.env,
+    encoding: "utf8",
+    shell: true
+  });
+
+  if (result.status !== 0) {
+    const output = [result.stdout, result.stderr].filter(Boolean).join("\n").split(/\r?\n/).slice(-12).join("\n");
+    throw new Error(`update:all failed while preparing update:plan (${reason})\n${output}`);
+  }
+
+  return true;
+}
+
+async function readSearchIndexCounts() {
+  try {
+    const payload = JSON.parse(await readFile(SEARCH_INDEX_PATH, "utf8"));
+    const itemLength = Array.isArray(payload.items) ? payload.items.length : null;
+    return {
+      count: numberOrNull(payload.count ?? itemLength),
+      itemLength,
+      path: SEARCH_INDEX_PATH,
+      bytes: Buffer.byteLength(JSON.stringify(payload)),
+      available: true
+    };
+  } catch {
+    return {
+      count: null,
+      itemLength: null,
+      path: SEARCH_INDEX_PATH,
+      bytes: null,
+      available: false
+    };
+  }
+}
+
+function sourceOfTruthCount() {
+  return getPublicPolicies(policies).length;
+}
+
+function reportFreshness(path, report) {
+  const runAtMs = Date.parse(report?.runAt ?? report?.generatedAt ?? "") || null;
+  const fileMtimeMs = existsSync(path) ? statSync(path).mtimeMs : null;
+  const now = Date.now();
+  const newestKnownMs = Math.max(runAtMs ?? 0, fileMtimeMs ?? 0) || null;
+  const ageMs = newestKnownMs === null ? null : now - newestKnownMs;
+  return {
+    runAt: report?.runAt ?? null,
+    generatedAt: report?.generatedAt ?? null,
+    fileModifiedAt: fileMtimeMs ? new Date(fileMtimeMs).toISOString() : null,
+    ageMs,
+    isStaleByAge: ageMs === null ? true : ageMs > STALE_REPORT_MAX_AGE_MS
+  };
+}
+
+async function prepareUpdateAllReport() {
+  let updateAllWasRun = runUpdateAllIfMissing();
+  let updateAllReport = await readJson(UPDATE_ALL_REPORT_PATH);
+  const searchIndexCounts = await readSearchIndexCounts();
+  const policyCount = sourceOfTruthCount();
+  let freshness = reportFreshness(UPDATE_ALL_REPORT_PATH, updateAllReport);
+  let staleReportDetected =
+    freshness.isStaleByAge ||
+    (searchIndexCounts.count !== null && Number(updateAllReport.searchIndexCount) !== searchIndexCounts.count) ||
+    (searchIndexCounts.itemLength !== null && Number(updateAllReport.currentPolicyCount) !== searchIndexCounts.itemLength);
+
+  if (staleReportDetected) {
+    updateAllWasRun = runUpdateAll("stale-or-count-mismatch") || updateAllWasRun;
+    updateAllReport = await readJson(UPDATE_ALL_REPORT_PATH);
+    freshness = reportFreshness(UPDATE_ALL_REPORT_PATH, updateAllReport);
+    staleReportDetected =
+      freshness.isStaleByAge ||
+      (searchIndexCounts.count !== null && Number(updateAllReport.searchIndexCount) !== searchIndexCounts.count) ||
+      (searchIndexCounts.itemLength !== null && Number(updateAllReport.currentPolicyCount) !== searchIndexCounts.itemLength);
+  }
+
+  const resolvedCurrentPolicyCount = Number(updateAllReport.currentPolicyCount ?? searchIndexCounts.itemLength ?? policyCount);
+  const resolvedSearchIndexCount = Number(updateAllReport.searchIndexCount ?? searchIndexCounts.count ?? searchIndexCounts.itemLength ?? policyCount);
+  const countMismatchDetected =
+    resolvedCurrentPolicyCount !== resolvedSearchIndexCount ||
+    (searchIndexCounts.count !== null && resolvedSearchIndexCount !== searchIndexCounts.count) ||
+    (searchIndexCounts.itemLength !== null && resolvedCurrentPolicyCount !== searchIndexCounts.itemLength);
+  const countSource = !countMismatchDetected && updateAllReport.currentPolicyCount != null && updateAllReport.searchIndexCount != null
+    ? "update-all-report"
+    : searchIndexCounts.available
+      ? "dist-search-index"
+      : "source-of-truth-policies";
+
+  return {
+    updateAllWasRun,
+    updateAllReport: {
+      ...updateAllReport,
+      currentPolicyCount: countSource === "update-all-report" ? resolvedCurrentPolicyCount : searchIndexCounts.itemLength ?? policyCount,
+      searchIndexCount: countSource === "update-all-report" ? resolvedSearchIndexCount : searchIndexCounts.count ?? searchIndexCounts.itemLength ?? policyCount
+    },
+    countMetadata: {
+      countSource,
+      reportFreshness: freshness,
+      staleReportDetected,
+      countMismatchDetected,
+      sourceOfTruthPolicyCount: policyCount,
+      searchIndexCount: searchIndexCounts.count,
+      searchIndexItemLength: searchIndexCounts.itemLength,
+      searchIndexPath: searchIndexCounts.path
+    }
+  };
 }
 
 function numberOrNull(value) {
@@ -356,8 +471,7 @@ function choosePlan({ sourceSummaries, sourceErrors }) {
 }
 
 async function main() {
-  const updateAllWasRun = runUpdateAllIfMissing();
-  const updateAllReport = await readJson(UPDATE_ALL_REPORT_PATH);
+  const { updateAllWasRun, updateAllReport, countMetadata } = await prepareUpdateAllReport();
   const baseSourceSummaries = (updateAllReport.sources ?? []).map((source) => toSourceSummary(source));
   const sourceExhaustionSummary = [];
   const exhaustionBySource = new Map();
@@ -372,10 +486,17 @@ async function main() {
 
   const report = {
     runAt: new Date().toISOString(),
+    generatedAt: new Date().toISOString(),
     mode: "cache-report-only",
     apiFetchEnabled: false,
     updateAllReportPath: UPDATE_ALL_REPORT_PATH,
     updateAllWasRun,
+    countSource: countMetadata.countSource,
+    reportFreshness: countMetadata.reportFreshness,
+    staleReportDetected: countMetadata.staleReportDetected,
+    countMismatchDetected: countMetadata.countMismatchDetected,
+    sourceOfTruthPolicyCount: countMetadata.sourceOfTruthPolicyCount,
+    searchIndexItemLength: countMetadata.searchIndexItemLength,
     currentPolicyCount: updateAllReport.currentPolicyCount ?? null,
     searchIndexCount: updateAllReport.searchIndexCount ?? null,
     totalSafeToApplyCount: updateAllReport.totalSafeToApplyCount ?? sourceSummaries.reduce((sum, source) => sum + source.safeToApplyCount, 0),

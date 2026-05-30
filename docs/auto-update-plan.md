@@ -614,3 +614,35 @@ Recommended operating flow:
 4. Review the source-specific dry-run report.
 5. If approved, run apply manually with `--confirm`.
 6. Run local QA, validation, build, commit, deploy, and production QA.
+
+## Step 77 Count Consistency Guard
+
+`update:all`, `update:plan`, and `qa:smoke` must agree with the built `dist/search-index.json` count before a new batch is planned.
+
+Count source priority:
+
+1. `data/staging/automation/update-all-report.json` when it is fresh and matches the built search index.
+2. `dist/search-index.json` when an existing update report is missing or stale.
+3. the public source-of-truth policy list as a last fallback.
+
+`update:plan` now checks the latest `update-all` report against `dist/search-index.json`. If the report is stale or the counts disagree, it refreshes `update:all` first and records:
+
+- `countSource`
+- `reportFreshness`
+- `staleReportDetected`
+- `countMismatchDetected`
+- `generatedAt`
+- `searchIndexItemLength`
+
+`qa:smoke` also checks count parity across:
+
+- `dist/search-index.json` `count`
+- `dist/search-index.json` `items.length`
+- `update-all-report.json` `currentPolicyCount`
+- `update-all-report.json` `searchIndexCount`
+- `update-plan-report.json` `currentPolicyCount`
+- `update-plan-report.json` `searchIndexCount`
+
+If these values diverge, smoke QA fails before a batch can be treated as automation-ready. This prevents stale update planning, for example a plan report showing an old 5,224 count while the production-ready search index contains 6,853 policies.
+
+Search-index payload size is audited separately. Do not shrink the payload in count-consistency changes; record large fields and plan a dedicated payload optimization step.

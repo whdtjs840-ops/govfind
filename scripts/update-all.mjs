@@ -1,10 +1,12 @@
 import { spawnSync } from "node:child_process";
 import { readFile } from "node:fs/promises";
+import { statSync, existsSync } from "node:fs";
 import { policies } from "../src/data/policies.ts";
 import { getPublicPolicies } from "../src/utils/policyUtils.ts";
 import { readJson, writeJson } from "./importers/update-check-utils.mjs";
 
 const REPORT_PATH = "data/staging/automation/update-all-report.json";
+const SEARCH_INDEX_PATH = "dist/search-index.json";
 
 const sourceConfigs = [
   {
@@ -116,6 +118,28 @@ async function searchIndexCount(publicPolicies) {
   }
 }
 
+async function searchIndexMetadata(publicPolicies) {
+  try {
+    const payload = JSON.parse(await readFile(SEARCH_INDEX_PATH, "utf8"));
+    const itemLength = Array.isArray(payload.items) ? payload.items.length : null;
+    return {
+      count: payload.count ?? itemLength ?? publicPolicies.length,
+      itemLength,
+      bytes: existsSync(SEARCH_INDEX_PATH) ? statSync(SEARCH_INDEX_PATH).size : null,
+      path: SEARCH_INDEX_PATH,
+      available: true
+    };
+  } catch {
+    return {
+      count: publicPolicies.length,
+      itemLength: publicPolicies.length,
+      bytes: null,
+      path: SEARCH_INDEX_PATH,
+      available: false
+    };
+  }
+}
+
 function candidateStatusFromReport(report) {
   const summary = report.summary ?? {};
   if ((report.sourceErrors ?? []).length || (report.quotaErrors ?? []).length) return "error";
@@ -180,7 +204,9 @@ async function main() {
   const fetchRequested = hasFlag("fetch");
   const publicPolicies = getPublicPolicies(policies);
   const currentPolicyCount = publicPolicies.length;
-  const currentSearchIndexCount = await searchIndexCount(publicPolicies);
+  const searchIndex = await searchIndexMetadata(publicPolicies);
+  const currentSearchIndexCount = searchIndex.count;
+  const countMismatchDetected = currentPolicyCount !== currentSearchIndexCount || searchIndex.itemLength !== currentSearchIndexCount;
   const sourceErrors = [];
   const sources = [];
 
@@ -262,10 +288,22 @@ async function main() {
 
   const report = {
     runAt: new Date().toISOString(),
+    generatedAt: new Date().toISOString(),
     mode: fetchRequested ? "fetch-requested-no-api-call" : "cache-only",
     apiFetchEnabled: false,
+    countSource: searchIndex.available ? "source-of-truth-policies-and-dist-search-index" : "source-of-truth-policies",
+    reportFreshness: {
+      generatedAt: new Date().toISOString(),
+      maxAgeMs: null,
+      isStaleByAge: false
+    },
+    staleReportDetected: false,
+    countMismatchDetected,
     currentPolicyCount,
     searchIndexCount: currentSearchIndexCount,
+    searchIndexItemLength: searchIndex.itemLength,
+    searchIndexSizeBytes: searchIndex.bytes,
+    searchIndexPath: searchIndex.path,
     sources,
     totalNewCandidateCount,
     totalSafeToApplyCount,
