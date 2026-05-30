@@ -4,6 +4,7 @@ import { policies, categories, regions } from "../../src/data/policies.ts";
 import {
   getDisplayRegion,
   getDisplayStatus,
+  getAppliedPoliciesForConflictCheck,
   getPublicPolicies,
   isDeadlineSoonPolicy,
   policySearchText,
@@ -175,7 +176,7 @@ export function selectBokjiroCandidates({ limit = 98 } = {}) {
   throw new Error("selectBokjiroCandidates must be called with loaded items via selectBokjiroCandidatesFromItems.");
 }
 
-export function selectBokjiroCandidatesFromItems({ items, limit = 98, publicPolicies = getPublicPolicies(policies) }) {
+export function selectBokjiroCandidatesFromItems({ items, limit = 98, publicPolicies = getAppliedPoliciesForConflictCheck(policies) }) {
   const existingIndex = buildExistingPolicyIndex(publicPolicies);
   const selected = [];
   const selectedSlugs = new Set();
@@ -556,4 +557,3 @@ export function validateApplyDryRun({ existingPolicies, selectedPolicies }) {
     mergedPolicies
   };
 }
-

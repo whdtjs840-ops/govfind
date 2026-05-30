@@ -1,7 +1,7 @@
 import { readdir } from "node:fs/promises";
 import { resolve } from "node:path";
 import { policies, categories, regions } from "../../src/data/policies.ts";
-import { getPublicPolicies } from "../../src/utils/policyUtils.ts";
+import { getAppliedPoliciesForConflictCheck } from "../../src/utils/policyUtils.ts";
 import {
   argValue,
   normalizeText,
@@ -134,7 +134,7 @@ function existingConflictReasons(item, existingIndex) {
   return reasons;
 }
 
-export function selectBokjiroLocalCandidatesFromItems({ items, limit = 70, publicPolicies = getPublicPolicies(policies) }) {
+export function selectBokjiroLocalCandidatesFromItems({ items, limit = 70, publicPolicies = getAppliedPoliciesForConflictCheck(policies) }) {
   const existingIndex = buildExistingPolicyIndex(publicPolicies);
   const selected = [];
   const selectedSlugs = new Set();

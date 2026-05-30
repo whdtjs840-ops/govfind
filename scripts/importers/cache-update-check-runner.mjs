@@ -1,5 +1,5 @@
 import { policies } from "../../src/data/policies.ts";
-import { getPublicPolicies } from "../../src/utils/policyUtils.ts";
+import { getAppliedPoliciesForConflictCheck, getPublicPolicies } from "../../src/utils/policyUtils.ts";
 import {
   buildUpdateCheckReport,
   printUpdateCheckReport,
@@ -40,11 +40,12 @@ export async function runCacheUpdateCheck({
   dryRunCommand
 }) {
   const publicPolicies = getPublicPolicies(policies);
+  const appliedPolicies = getAppliedPoliciesForConflictCheck(policies);
   const items = await loadItems();
   const { selected, skipped } = selectCandidates({
     items,
     limit: Number.MAX_SAFE_INTEGER,
-    publicPolicies
+    publicPolicies: appliedPolicies
   });
 
   const safeToApply = selected.map(summarizeItem);

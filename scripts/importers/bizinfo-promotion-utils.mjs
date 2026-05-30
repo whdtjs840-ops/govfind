@@ -1,7 +1,7 @@
 import { readdir } from "node:fs/promises";
 import { resolve } from "node:path";
 import { policies, categories } from "../../src/data/policies.ts";
-import { getPublicPolicies } from "../../src/utils/policyUtils.ts";
+import { getAppliedPoliciesForConflictCheck } from "../../src/utils/policyUtils.ts";
 import {
   argValue,
   normalizeText,
@@ -126,7 +126,7 @@ function existingConflictReasons(item, existingIndex) {
   return reasons;
 }
 
-export function selectBizinfoCandidatesFromItems({ items, limit = 500, publicPolicies = getPublicPolicies(policies) }) {
+export function selectBizinfoCandidatesFromItems({ items, limit = 500, publicPolicies = getAppliedPoliciesForConflictCheck(policies) }) {
   const existingIndex = buildExistingPolicyIndex(publicPolicies);
   const selected = [];
   const selectedSlugs = new Set();

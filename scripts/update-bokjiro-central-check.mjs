@@ -1,5 +1,5 @@
 import { policies } from "../src/data/policies.ts";
-import { getPublicPolicies } from "../src/utils/policyUtils.ts";
+import { getAppliedPoliciesForConflictCheck, getPublicPolicies } from "../src/utils/policyUtils.ts";
 import {
   classificationOf as bokjiroClassificationOf,
   loadBokjiroStagingItems,
@@ -33,11 +33,12 @@ async function main() {
   }
 
   const publicPolicies = getPublicPolicies(policies);
+  const appliedPolicies = getAppliedPoliciesForConflictCheck(policies);
   const items = await loadBokjiroStagingItems();
   const { selected, skipped } = selectBokjiroCandidatesFromItems({
     items,
     limit: Number.MAX_SAFE_INTEGER,
-    publicPolicies
+    publicPolicies: appliedPolicies
   });
 
   const safeToApply = selected.map(summarizeStagingItem);

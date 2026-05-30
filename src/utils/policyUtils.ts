@@ -16,6 +16,42 @@ export function isSearchOnlyPolicy(policy: Pick<Policy, "slug">) {
   return searchOnlySlugs.has(policy.slug);
 }
 
+export function getPolicyToday(reference = new Date()) {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Seoul",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).formatToParts(reference);
+  const byType = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return new Date(`${byType.year}-${byType.month}-${byType.day}T00:00:00+09:00`);
+}
+
+function parsePolicyDate(value?: string | null) {
+  if (!value) return null;
+  const parsed = new Date(`${value}T00:00:00+09:00`);
+  return Number.isNaN(parsed.getTime()) ? null : parsed;
+}
+
+export function isPolicyExpired(
+  policy: Pick<Policy, "endDate" | "status" | "dateConfidence" | "requiresOfficialConfirmation">,
+  today = getPolicyToday()
+) {
+  if (policy.status === "\uB9C8\uAC10") return true;
+  const endDate = parsePolicyDate(policy.endDate);
+  if (!endDate) return false;
+  return endDate < today;
+}
+
+export function shouldShowInPublicListing(policy: Policy, today = getPolicyToday()) {
+  if (isSearchOnlyPolicy(policy)) return false;
+  return !isPolicyExpired(policy, today);
+}
+
+export const shouldShowInLatest = shouldShowInPublicListing;
+export const shouldIncludeInSearch = shouldShowInPublicListing;
+export const shouldIncludeInCategoryPage = shouldShowInPublicListing;
+
 export function normalizeText(value = "") {
   return value
     .toLowerCase()
@@ -69,6 +105,12 @@ export type PolicyFilters = {
 export type PolicySort = "recommended" | "deadline" | "popular" | "online" | "updated";
 
 export function getPublicPolicies(items: Policy[]) {
+  const { canonical } = dedupePolicies(items);
+  const today = getPolicyToday();
+  return canonical.filter((policy) => shouldShowInPublicListing(policy, today));
+}
+
+export function getAppliedPoliciesForConflictCheck(items: Policy[]) {
   const { canonical } = dedupePolicies(items);
   return canonical.filter((policy) => !isSearchOnlyPolicy(policy));
 }

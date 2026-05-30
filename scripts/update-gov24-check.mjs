@@ -1,5 +1,5 @@
 import { policies } from "../src/data/policies.ts";
-import { getPublicPolicies } from "../src/utils/policyUtils.ts";
+import { getAppliedPoliciesForConflictCheck, getPublicPolicies } from "../src/utils/policyUtils.ts";
 import { buildStagingPayloadFromRaw, readJson } from "./importers/staging-artifacts.mjs";
 import {
   buildCurrentPolicyIndex,
@@ -156,8 +156,9 @@ async function main() {
   }
 
   const publicPolicies = getPublicPolicies(policies);
+  const appliedPolicies = getAppliedPoliciesForConflictCheck(policies);
   const { items, artifactCount } = await loadGov24StagingItems();
-  const buckets = bucketGov24Items(items, publicPolicies);
+  const buckets = bucketGov24Items(items, appliedPolicies);
   const report = buildUpdateCheckReport({
     sourceName: SOURCE_NAME,
     mode: "cache-only",

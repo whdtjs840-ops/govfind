@@ -3,7 +3,7 @@ import path from "node:path";
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, "dist");
-const MIN_SEARCH_INDEX_COUNT = 6000;
+const MIN_SEARCH_INDEX_COUNT = 3000;
 const UPDATE_ALL_REPORT_PATH = path.join(ROOT, "data/staging/automation/update-all-report.json");
 const UPDATE_PLAN_REPORT_PATH = path.join(ROOT, "data/staging/automation/update-plan-report.json");
 const SUPPORT_CARD_PATTERN = /class="[^"]*support-card/g;
