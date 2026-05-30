@@ -92,7 +92,7 @@ function categoryTagHref(tag: string) {
     <div class="wrap">
       <p class="eyebrow">카테고리</p>
       <h1>{category.label} 정부지원금</h1>
-      <p class="lead">{category.label} 분야의 지원사업 {categoryPolicies.length.toLocaleString("ko-KR")}개를 공식 출처 기준으로 정리했습니다. 목록에서 조건을 비교하고 상세 페이지에서 신청 방법과 공식 신청처를 확인하세요.</p>
+      <p class="lead">{category.label} 분야에서 현재 공개 중인 지원사업 {categoryPolicies.length.toLocaleString("ko-KR")}개를 만료 공고 제외 기준으로 정리했습니다. 목록에서 조건을 비교하고 상세 페이지에서 신청 방법과 공식 신청처를 확인하세요.</p>
       <div class="quick-tags">
         {category.keywords.map((keyword) => <a class="chip" href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>)}
       </div>
@@ -114,7 +114,7 @@ function categoryTagHref(tag: string) {
 
   <section class="section tight benchmark-dashboard category-metrics">
     <div class="wrap metric-grid">
-      <div><strong>{categoryPolicies.length}</strong><span>대표 정책</span></div>
+      <div><strong>{categoryPolicies.length.toLocaleString("ko-KR")}</strong><span>공개 중인 정책</span></div>
       <div><strong>{urgent.length}</strong><span>모집·마감 확인</span></div>
       <div><strong>{categoryPolicies.filter((policy) => policy.applyOnline).length}</strong><span>온라인 신청 가능</span></div>
       <div><strong>공식</strong><span>원문 확인 필요</span></div>

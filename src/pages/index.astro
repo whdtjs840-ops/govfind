@@ -7,6 +7,7 @@ import { deadlineDisplay, getPolicyCounts, getPublicPolicies, urgentPolicies } f
 
 const publicPolicies = getPublicPolicies(policies);
 const counts = getPolicyCounts(policies);
+const publicPolicyCountLabel = counts.all.toLocaleString("ko-KR");
 const latestPrograms = [...publicPolicies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 9);
 const urgentSlugs = new Set<string>();
 const urgentBase = [
@@ -74,14 +75,15 @@ const trustSteps = [
       <div class="home-portal-hero-inner">
         <p class="home-hero-kicker">공식 출처 기반 지원사업 포털</p>
         <h1>나에게 맞는 정부지원사업을 한 번에 찾으세요</h1>
-        <p>복지, 청년, 창업, 소상공인, 고용 지원사업 {counts.all.toLocaleString("ko-KR")}개를 공식 출처 기준으로 정리했습니다.</p>
+        <p>현재 공개 중인 지원사업 {publicPolicyCountLabel}개를 만료 공고 제외 기준으로 정리했습니다. 복지, 청년, 창업, 소상공인, 고용 지원사업을 공식 출처 기반으로 확인하세요.</p>
         <form class="home-portal-search" action="/support/" method="get" aria-label="지원사업 검색">
           <Search size={24} aria-hidden="true" />
           <input name="q" type="search" placeholder="예: 청년, 창업, 소상공인, 주거, 정책자금" autocomplete="off" />
           <button type="submit">검색</button>
         </form>
         <div class="home-portal-stats" aria-label="서비스 요약">
-          <span>공식 출처 기반 {counts.all.toLocaleString("ko-KR")}개</span>
+          <span>현재 공개 중인 지원사업 {publicPolicyCountLabel}개</span>
+          <span>만료 공고 제외 최신 기준</span>
           <span>검색·필터·카테고리 탐색</span>
           <span>상세 페이지 공식 신청처 연결</span>
         </div>
