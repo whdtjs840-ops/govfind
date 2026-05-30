@@ -4942,6 +4942,179 @@ body {
   font-weight: 950;
 }
 
+/* GovHelp benchmark pass: calmer portal navigation and stronger list hierarchy. */
+.home-category-strip-section {
+  position: relative;
+  z-index: 1;
+  margin-top: -18px;
+  padding: 0 0 18px;
+}
+
+.home-category-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid rgba(226, 232, 240, 0.96);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.08);
+}
+
+.home-category-pill-row a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  color: #334155;
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-decoration: none;
+  transition: background 0.16s ease, color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.home-category-pill-row a:hover,
+.home-category-pill-row a:focus-visible {
+  background: #eef4ff;
+  color: var(--portal-blue-dark);
+  box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.14);
+}
+
+.home-category-pill-row strong {
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 950;
+}
+
+.home-impact-section {
+  padding-top: 18px;
+}
+
+.support-search-head {
+  padding-top: 34px;
+}
+
+.support-search-head .lead {
+  max-width: 680px;
+}
+
+.support-search-form {
+  max-width: 780px;
+}
+
+.support-summary-band {
+  padding: 12px 0;
+}
+
+.support-summary-grid {
+  gap: 8px;
+}
+
+.support-summary-grid article {
+  min-height: auto;
+  padding: 12px 14px;
+  border-radius: 12px;
+}
+
+.support-summary-grid article span {
+  font-size: 0.76rem;
+}
+
+.support-summary-grid article strong {
+  font-size: 1rem;
+}
+
+.support-result-list .policy-card {
+  border-left: 0;
+}
+
+.policy-card::before {
+  width: 5px;
+  border-radius: 0 999px 999px 0;
+  background: #4f7cff;
+}
+
+.policy-card-topline .badge {
+  min-height: 26px;
+  padding-inline: 10px;
+  border: 0;
+}
+
+.policy-card-topline .badge.warn {
+  background: #12b76a;
+  color: #ffffff;
+}
+
+.policy-card-topline .badge.deadline {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.policy-card-topline .badge.soft {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.policy-card h3 {
+  font-weight: 950;
+}
+
+.policy-card-summary {
+  max-width: 78ch;
+}
+
+.card-facts {
+  padding-top: 2px;
+}
+
+.card-actions .official-link {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.18);
+}
+
+.card-actions .official-link:hover,
+.card-actions .official-link:focus-visible {
+  border-color: #1d4ed8;
+  background: #1d4ed8;
+  color: #ffffff;
+}
+
+.mobile-tabbar {
+  border-top: 1px solid rgba(226, 232, 240, 0.95);
+}
+
+@media (max-width: 840px) {
+  .home-category-strip-section {
+    margin-top: -12px;
+    padding-bottom: 12px;
+  }
+
+  .home-category-pill-row {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    border-radius: 18px;
+    padding: 10px;
+  }
+
+  .home-category-pill-row a {
+    flex: 0 0 auto;
+  }
+
+  .support-summary-band {
+    display: none;
+  }
+
+  .policy-card-summary {
+    max-width: none;
+  }
+}
+
 .doc-official-direct {
   display: flex;
   align-items: center;

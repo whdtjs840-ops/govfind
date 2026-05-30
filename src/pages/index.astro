@@ -40,6 +40,7 @@ const categoryCards = [
     count: categoryCount(category.label)
   }))
 ].filter((category) => category.count > 0);
+const primaryCategoryCards = categoryCards.slice(0, 12);
 
 const popularKeywords = ["청년", "창업", "주거", "채용", "복지", "소상공인", "교육", "의료"];
 const sourceStats = ["정부24", "복지로", "기업마당", "온통청년", "K-Startup"].map((label) => ({
@@ -48,11 +49,6 @@ const sourceStats = ["정부24", "복지로", "기업마당", "온통청년", "K
 })).filter((item) => item.count > 0);
 const officialSourceCount = sourceStats.length;
 const publicCategoryCount = categoryCards.filter((category) => category.label !== "전체").length;
-const trustSteps = [
-  { title: "공식 출처 수집", desc: "정부24, 복지로, 기업마당, 온통청년, K-Startup 데이터를 기준으로 정리합니다." },
-  { title: "조건별 탐색", desc: "대상, 지역, 카테고리, 출처를 조합해 필요한 지원사업만 빠르게 좁힙니다." },
-  { title: "공식 신청처 확인", desc: "상세 페이지에서 요약을 확인한 뒤 최종 신청은 공식 기관에서 진행합니다." }
-];
 ---
 
 <BaseLayout
@@ -64,7 +60,7 @@ const trustSteps = [
       <div class="home-portal-hero-inner">
         <p class="home-hero-kicker">공식 출처 기반 지원사업 포털</p>
         <h1>나에게 맞는 정부지원사업을 한 번에 찾으세요</h1>
-        <p>현재 공개 중인 지원사업 {publicPolicyCountLabel}개를 만료 공고 제외 기준으로 정리했습니다. 필요한 조건을 입력하면 공식 출처와 신청처를 함께 확인할 수 있습니다.</p>
+        <p>만료 공고를 제외한 현재 공개 지원사업 {publicPolicyCountLabel}개를 공식 출처 기준으로 정리했습니다.</p>
         <form class="home-portal-search" action="/support/" method="get" aria-label="지원사업 검색">
           <Search size={24} aria-hidden="true" />
           <input name="q" type="search" placeholder="예: 청년, 창업, 소상공인, 주거, 정책자금" autocomplete="off" />
@@ -80,6 +76,17 @@ const trustSteps = [
           공식 출처 기반, 현재 공개 중인 지원사업을 한 번에 찾아보세요.
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="home-category-strip-section" aria-label="주요 카테고리">
+    <div class="wrap home-category-pill-row">
+      {primaryCategoryCards.map((category) => (
+        <a href={categoryRoute(category.label)}>
+          <span>{category.label}</span>
+          <strong>{category.count.toLocaleString("ko-KR")}</strong>
+        </a>
+      ))}
     </div>
   </section>
 
@@ -106,36 +113,6 @@ const trustSteps = [
           <small>{source.count.toLocaleString("ko-KR")}건</small>
         </a>
       ))}
-    </div>
-  </section>
-
-  <section class="home-portal-section home-trust-section">
-    <div class="wrap home-trust-panel">
-      {trustSteps.map((step, index) => (
-        <div>
-          <span>{index + 1}</span>
-          <strong>{step.title}</strong>
-          <p>{step.desc}</p>
-        </div>
-      ))}
-    </div>
-  </section>
-
-  <section class="home-portal-section">
-    <div class="wrap">
-      <div class="home-portal-section-head">
-        <h2>카테고리별 지원사업</h2>
-        <p>결과가 있는 분야만 보여주며, 각 카테고리에서 30개씩 나누어 탐색할 수 있습니다.</p>
-      </div>
-      <div class="home-category-grid">
-        {categoryCards.map((category) => (
-          <a class="home-category-card" href={categoryRoute(category.label)}>
-            <span class="home-category-icon" aria-hidden="true">{category.icon}</span>
-            <strong>{category.label}</strong>
-            <small>{category.count.toLocaleString("ko-KR")}건</small>
-          </a>
-        ))}
-      </div>
     </div>
   </section>
 
