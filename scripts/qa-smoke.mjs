@@ -24,12 +24,18 @@ const routes = [
   "/category/small-business/",
   "/category/employment/",
   "/category/employment/?page=2",
+  "/category-index/startup.json",
+  "/category-index/employment.json",
   "/search-index.json",
 ];
 
 function htmlPathForRoute(route) {
   const pathname = route.split("?")[0];
   if (pathname === "/search-index.json") return path.join(DIST, "search-index.json");
+  if (pathname.startsWith("/category-index/")) {
+    const clean = pathname.replace(/^\/+/, "");
+    return path.join(DIST, clean);
+  }
   const clean = pathname.replace(/^\/+|\/+$/g, "");
   return path.join(DIST, clean, "index.html");
 }
@@ -67,6 +73,19 @@ function assertHtmlRoute(route, html) {
     if (visible.includes("GovFind - 정부지원금 맞춤 검색")) {
       throw new Error(`${route} appears to be the home page fallback`);
     }
+  }
+}
+
+function assertCategoryIndexRoute(route, content) {
+  const payload = JSON.parse(content);
+  if (payload.count !== payload.items?.length) {
+    throw new Error(`${route} category index count/items mismatch`);
+  }
+  if (!payload.category || !payload.slug || !Array.isArray(payload.items)) {
+    throw new Error(`${route} is missing category index metadata`);
+  }
+  if (payload.items.some((item) => item.category !== payload.category)) {
+    throw new Error(`${route} includes an item outside its category`);
   }
 }
 
@@ -116,7 +135,8 @@ for (const route of routes) {
     if (!fs.existsSync(filePath)) throw new Error(`missing file ${filePath}`);
     const content = fs.readFileSync(filePath, "utf8");
     assertNoBadText(route, content);
-    if (!route.endsWith(".json")) assertHtmlRoute(route, content);
+    if (route.startsWith("/category-index/")) assertCategoryIndexRoute(route, content);
+    else if (!route.endsWith(".json")) assertHtmlRoute(route, content);
   } catch (error) {
     failures.push({ route, error: error.message });
   }

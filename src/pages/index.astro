@@ -32,23 +32,10 @@ const categoryRoute = (label: string) => {
   return `/support/?q=${encodeURIComponent(label)}`;
 };
 
-const categoryIcons: Record<string, string> = {
-  "청년": "👨‍🎓",
-  "복지": "🤝",
-  "주거": "🏠",
-  "고용": "💼",
-  "창업": "🚀",
-  "교육": "📚",
-  "보건의료": "🏥",
-  "문화생활": "🎨",
-  "농림어업": "🌾",
-  "소상공인": "🏪"
-};
-
 const categoryCards = [
-  { icon: "📋", label: "전체", count: counts.all },
+  { icon: "전체", label: "전체", count: counts.all },
   ...categoryGroups.map((category) => ({
-    icon: categoryIcons[category.label] ?? "📌",
+    icon: category.label.slice(0, 2),
     label: category.label,
     count: categoryCount(category.label)
   }))
@@ -77,7 +64,7 @@ const trustSteps = [
       <div class="home-portal-hero-inner">
         <p class="home-hero-kicker">공식 출처 기반 지원사업 포털</p>
         <h1>나에게 맞는 정부지원사업을 한 번에 찾으세요</h1>
-        <p>현재 공개 중인 지원사업 {publicPolicyCountLabel}개를 만료 공고 제외 기준으로 정리했습니다. 복지, 청년, 창업, 소상공인, 고용 지원사업을 공식 출처 기반으로 확인하세요.</p>
+        <p>현재 공개 중인 지원사업 {publicPolicyCountLabel}개를 만료 공고 제외 기준으로 정리했습니다. 필요한 조건을 입력하면 공식 출처와 신청처를 함께 확인할 수 있습니다.</p>
         <form class="home-portal-search" action="/support/" method="get" aria-label="지원사업 검색">
           <Search size={24} aria-hidden="true" />
           <input name="q" type="search" placeholder="예: 청년, 창업, 소상공인, 주거, 정책자금" autocomplete="off" />
@@ -110,6 +97,15 @@ const trustSteps = [
         <strong>{publicCategoryCount.toLocaleString("ko-KR")}</strong>
         <span>탐색 가능한 카테고리</span>
       </div>
+    </div>
+    <div class="wrap home-source-strip" aria-label="출처별 공개 현황">
+      <span>공식 출처</span>
+      {sourceStats.map((source) => (
+        <a href={`/support/?source=${encodeURIComponent(source.label)}`}>
+          <strong>{source.label}</strong>
+          <small>{source.count.toLocaleString("ko-KR")}건</small>
+        </a>
+      ))}
     </div>
   </section>
 
