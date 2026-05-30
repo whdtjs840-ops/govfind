@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import { Home, List, Search, UserRound } from "@lucide/astro";
+import { Grid2X2, Home, List, Search } from "@lucide/astro";
 
 type Props = {
   title?: string;
@@ -61,13 +61,10 @@ const canonicalUrl = new URL(canonical, siteUrl).toString();
         </a>
         <div class="nav-links">
           <a href="/">홈</a>
-          <a href="/popular/">인기</a>
-          <a href="/support/">전체 목록</a>
-          <a href="/category/youth/">청년</a>
-          <a href="/category/welfare/">복지</a>
-          <a href="/category/housing/">주거</a>
-          <a href="/category/job/">고용</a>
+          <a href="/support/">탐색</a>
+          <a href="/deadline/">마감임박</a>
           <a href="/guide/">가이드</a>
+          <a href="/support/?q=">검색</a>
         </div>
         <a class="nav-cta icon-only" href="/support/" aria-label="검색">
           <Search size={20} aria-hidden="true" />
@@ -119,9 +116,9 @@ const canonicalUrl = new URL(canonical, siteUrl).toString();
         <Search size={19} aria-hidden="true" />
         <span>검색</span>
       </a>
-      <a href="/category/youth/">
-        <UserRound size={19} aria-hidden="true" />
-        <span>청년</span>
+      <a href="/category/startup/">
+        <Grid2X2 size={19} aria-hidden="true" />
+        <span>카테고리</span>
       </a>
     </nav>
     <script is:inline>

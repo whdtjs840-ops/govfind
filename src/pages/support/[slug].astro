@@ -157,6 +157,20 @@ const seoDescription = truncateMeta(
           </a>
           <a class="button secondary" href="/support/">목록으로 돌아가기</a>
         </div>
+        <div class="doc-cta-summary" aria-label="핵심 신청 정보">
+          <div>
+            <span>신청 상태</span>
+            <strong>{displayStatus}</strong>
+          </div>
+          <div>
+            <span>신청 기간</span>
+            <strong>{deadlineLabel}</strong>
+          </div>
+          <div>
+            <span>공식 출처</span>
+            <strong>{sourceLabel(policy.source)}</strong>
+          </div>
+        </div>
       </div>
 
       {showOfficialConfirmationBlock ? (

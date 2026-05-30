@@ -30,6 +30,9 @@ const displayStatus = getDisplayStatus(policy);
 const displayRegion = getDisplayRegion(policy);
 const showOfficialConfirmation = shouldRequireOfficialConfirmation(policy);
 const cardStatusLabel = showOfficialConfirmation || displayStatus === "공식 공고 확인" ? "공식확인" : displayStatus;
+const visibleTags = policy.tags
+  .filter((value) => value && !["null", "undefined"].includes(String(value).toLowerCase()))
+  .slice(0, 3);
 ---
 
 <article
@@ -67,6 +70,11 @@ const cardStatusLabel = showOfficialConfirmation || displayStatus === "공식 �
   <div class="policy-card-main">
     <h3><a href={`/support/${policy.slug}/`}>{policy.title}</a></h3>
     <p class="policy-card-summary">{summary}</p>
+    {visibleTags.length > 0 && (
+      <div class="policy-tag-row" aria-label="관련 태그">
+        {visibleTags.map((tag) => <span class="policy-tag-pill">{tag}</span>)}
+      </div>
+    )}
     <p class="policy-quick-line">
       <strong>대상</strong> {target || "공식 확인 필요"}
       <span>·</span>
