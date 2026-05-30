@@ -545,7 +545,7 @@ const intentCards = [
       if (query) terms.add(query);
       return Array.from(terms);
     }
-    function compactSummary(policy) { const text = String(policy.searchText || policy.title || '').replace(/\s+/g, ' ').trim(); const withoutTitle = text.startsWith(policy.title) ? text.slice(policy.title.length).trim() : text; const source = withoutTitle || text; return source.length > 120 ? source.slice(0, 120) + '...' : source; }
+    function compactSummary(policy) { const text = String(policy.summary || policy.searchText || policy.title || '').replace(/\s+/g, ' ').trim(); const withoutTitle = text.startsWith(policy.title) ? text.slice(policy.title.length).trim() : text; const source = withoutTitle || text; return source.length > 120 ? source.slice(0, 120) + '...' : source; }
     function cardQueryScore(policy, keyword) {
       if (!keyword) return 1;
       const query = normalizeSearch(keyword);
