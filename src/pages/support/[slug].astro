@@ -73,6 +73,12 @@ const contentHighlights = [
   { label: "신청 방법", value: applyLines[0] || policy.apply },
   { label: "공식 출처", value: `${sourceLabel(policy.source)} · ${policy.agency}` }
 ].filter((item) => item.value);
+const officialCtaLabel = showOfficialConfirmation ? "공식 공고 확인하기" : "공식 신청처 바로가기";
+const applicationChecklist = [
+  { label: "1. 대상 확인", value: policy.targetGroup || targetLines[0] || "공식 신청처에서 확인" },
+  { label: "2. 기간 확인", value: `${policy.deadline} · ${deadlineLabel}` },
+  { label: "3. 공식 접수", value: `${sourceLabel(policy.source)}에서 최종 신청` }
+];
 const anchorItems = [
   { href: "#summary", label: "요약" },
   { href: "#target", label: "지원대상" },
@@ -153,7 +159,7 @@ const seoDescription = truncateMeta(
         )}
         <div class="doc-primary-actions">
           <a class="button doc-primary" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
-            <ExternalLink size={18} />공식 신청처 보기
+            <ExternalLink size={18} />{officialCtaLabel}
           </a>
           <a class="button secondary" href="/support/">목록으로 돌아가기</a>
         </div>
@@ -177,7 +183,7 @@ const seoDescription = truncateMeta(
             <strong>GovFind에서 조건을 확인한 뒤 공식 신청처로 바로 이동하세요.</strong>
           </div>
           <a class="button doc-primary" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
-            <ExternalLink size={18} />공식 신청처 바로가기
+            <ExternalLink size={18} />{officialCtaLabel}
           </a>
         </div>
       </div>
@@ -193,6 +199,25 @@ const seoDescription = truncateMeta(
           <span>GovFind는 자격을 단정하지 않습니다. 대상, 기간, 서류를 빠르게 확인한 뒤 최종 신청은 공식 기관에서 진행하세요.</span>
         </div>
       )}
+
+      <section class="doc-application-panel" aria-label="신청 진행 순서">
+        <div class="doc-application-copy">
+          <span>신청 동선</span>
+          <h2>조건만 확인하고 공식 신청처로 바로 이동하세요</h2>
+          <p>GovFind는 핵심 정보를 정리하고, 실제 접수와 자격 판정은 공식 기관 페이지에서 진행됩니다.</p>
+        </div>
+        <div class="doc-application-steps">
+          {applicationChecklist.map((item) => (
+            <div>
+              <strong>{item.label}</strong>
+              <span>{item.value}</span>
+            </div>
+          ))}
+        </div>
+        <a class="button doc-primary" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
+          <ExternalLink size={18} />{officialCtaLabel}
+        </a>
+      </section>
 
       <section class="quick-check-box" aria-label="신청 전 빠른 확인">
         <div class="quick-check-head">
@@ -317,6 +342,12 @@ const seoDescription = truncateMeta(
           <h3>신청 방법</h3>
           {applyLines.length ? applyLines.map((item) => <p>{item}</p>) : <p>복지로 또는 소관 기관의 공식 신청 안내를 확인합니다.</p>}
           <p class="notice">GovFind는 자격을 단정하지 않고 조건 확인을 돕습니다. 신청 전 기관명, 제출 서류, 접수 기간을 공식 페이지에서 다시 확인하세요.</p>
+          <div class="doc-inline-cta">
+            <span>신청 준비가 끝났다면</span>
+            <a class="button doc-primary" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
+              <ExternalLink size={17} />{officialCtaLabel}
+            </a>
+          </div>
         </section>
 
         {documentLines.length > 0 && (
@@ -440,7 +471,7 @@ const seoDescription = truncateMeta(
   <div class="sticky-detail-cta" aria-label="상세 페이지 빠른 실행">
     <span>{policy.title}</span>
     <a class="button" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
-      <ExternalLink size={17} />공식 신청처 보기
+      <ExternalLink size={17} />{officialCtaLabel}
     </a>
     <a class="button secondary" href="/support/">목록으로</a>
   </div>
