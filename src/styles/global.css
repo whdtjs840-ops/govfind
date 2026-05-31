@@ -7557,3 +7557,632 @@ body {
     width: 100%;
   }
 }
+
+/* 85: Detail page application flow polish. */
+.policy-doc-head {
+  background:
+    radial-gradient(circle at 12% 8%, rgba(59, 130, 246, 0.16), transparent 30%),
+    linear-gradient(180deg, #f8fbff 0%, #ffffff 72%);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.policy-doc-title {
+  border: 1px solid #dbeafe;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+}
+
+.policy-doc-title h1 {
+  max-width: 880px;
+  letter-spacing: 0;
+}
+
+.doc-primary-actions {
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.doc-primary-actions .button {
+  border-radius: 13px;
+  font-weight: 950;
+}
+
+.doc-primary-actions .doc-primary,
+.doc-official-direct .doc-primary,
+.doc-application-panel .doc-primary {
+  min-height: 52px;
+  padding-inline: 24px;
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #ffffff;
+  box-shadow: 0 18px 36px rgba(37, 99, 235, 0.24);
+}
+
+.doc-cta-helper {
+  padding-left: 12px;
+  border-left: 4px solid #2563eb;
+}
+
+.doc-cta-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.doc-cta-summary div {
+  min-width: 0;
+  border-color: #dbeafe;
+  background: #f8fbff;
+}
+
+.doc-official-direct {
+  align-items: center;
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid #bfdbfe;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
+}
+
+.doc-official-direct .button {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.doc-action-brief {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.doc-action-brief span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 11px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid #dbeafe;
+  color: #1e3a8a;
+  font-size: 0.82rem;
+  font-weight: 950;
+}
+
+.doc-application-panel {
+  align-items: center;
+  border-color: #bfdbfe;
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.08);
+}
+
+.doc-application-steps div {
+  border-color: #e0ecff;
+  background: #ffffff;
+}
+
+.quick-check-box {
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.07);
+}
+
+.quick-check-box dl div {
+  background: #ffffff;
+}
+
+.policy-doc-section .doc-wrap {
+  align-items: start;
+}
+
+.doc-block {
+  border-color: #e2e8f0;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.055);
+}
+
+.doc-block h2,
+.doc-block h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.doc-block h2::before,
+.doc-block h3::before {
+  content: "";
+  width: 8px;
+  height: 20px;
+  border-radius: 999px;
+  background: #2563eb;
+}
+
+.sticky-detail-cta {
+  border-color: #bfdbfe;
+  box-shadow: 0 -18px 44px rgba(15, 23, 42, 0.12);
+}
+
+@media (max-width: 900px) {
+  .doc-cta-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .doc-official-direct {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .doc-official-direct .button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .policy-doc-head {
+    background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  }
+
+  .policy-doc-title {
+    border-radius: 18px;
+  }
+
+  .doc-primary-actions .button,
+  .doc-application-panel .button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .doc-action-brief span {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+
+  .sticky-detail-cta {
+    gap: 8px;
+  }
+}
+
+/* 86: UX/UI completion pass - portal clarity, CTA hierarchy, mobile polish. */
+:root {
+  --portal-blue: #2563eb;
+  --portal-blue-strong: #1d4ed8;
+  --portal-blue-soft: #eff6ff;
+  --portal-ink: #111827;
+  --portal-muted: #64748b;
+  --portal-line: #e5e7eb;
+  --portal-card-shadow: 0 12px 30px rgba(15, 23, 42, 0.07);
+  --portal-card-shadow-hover: 0 18px 42px rgba(15, 23, 42, 0.1);
+}
+
+.site-header {
+  border-bottom: 1px solid rgba(226, 232, 240, 0.9);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(14px);
+}
+
+.nav {
+  min-height: 62px;
+}
+
+.nav-links a {
+  color: #475569;
+  font-weight: 800;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: var(--portal-blue-strong);
+  background: #eef4ff;
+}
+
+.home-portal-hero {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.2), transparent 30%),
+    linear-gradient(180deg, #2f7df4 0%, #2463df 100%);
+  color: #ffffff;
+}
+
+.home-portal-hero-inner {
+  max-width: 860px;
+}
+
+.home-portal-hero h1 {
+  max-width: 760px;
+  margin-inline: auto;
+  color: #ffffff;
+}
+
+.home-portal-hero-inner > p:not(.home-hero-kicker) {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.home-portal-search {
+  max-width: 660px;
+  margin-inline: auto;
+  border: 0;
+  border-radius: 18px;
+  box-shadow: 0 22px 52px rgba(15, 23, 42, 0.22);
+}
+
+.home-portal-search input {
+  font-weight: 800;
+}
+
+.home-portal-search button,
+.support-search-form .button,
+.doc-primary,
+.official-link {
+  min-height: 48px;
+}
+
+.home-hero-keywords,
+.home-trust-line,
+.home-hero-path {
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+.home-hero-keywords {
+  justify-content: center;
+  row-gap: 8px;
+}
+
+.home-hero-keywords a,
+.support-intent-strip a,
+.category-related-tags .chip,
+.support-tag-row .chip {
+  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+}
+
+.home-hero-keywords a:hover,
+.support-intent-strip a:hover,
+.category-related-tags .chip:hover,
+.support-tag-row .chip:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.1);
+}
+
+.home-portal-stats {
+  justify-content: center;
+}
+
+.home-portal-stats span {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #ffffff;
+}
+
+.home-portal-stats strong {
+  color: #ffffff;
+}
+
+.home-category-pill-row a,
+.home-deadline-card,
+.home-program-card,
+.policy-card,
+.category-metrics .metric-grid div,
+.doc-block,
+.quick-check-box,
+.doc-application-panel {
+  box-shadow: var(--portal-card-shadow);
+}
+
+.home-category-pill-row a:hover,
+.home-deadline-card:hover,
+.home-program-card:hover,
+.policy-card:hover,
+.policy-card:focus-within {
+  border-color: #bfdbfe;
+  box-shadow: var(--portal-card-shadow-hover);
+}
+
+.support-search-head {
+  background:
+    radial-gradient(circle at 14% 10%, rgba(59, 130, 246, 0.14), transparent 28%),
+    linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+}
+
+.support-search-head .wrap {
+  max-width: 1120px;
+}
+
+.support-search-head h1 {
+  color: var(--portal-ink);
+}
+
+.support-search-head .lead {
+  color: var(--portal-muted);
+}
+
+.support-search-form {
+  border: 1px solid #dbeafe;
+  box-shadow: 0 18px 42px rgba(37, 99, 235, 0.11);
+}
+
+.support-search-main {
+  align-items: center;
+}
+
+.support-search-main input {
+  font-weight: 800;
+}
+
+.support-result-head {
+  border: 1px solid var(--portal-line);
+  border-radius: 18px;
+  background: #ffffff;
+  padding: 18px;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.04);
+}
+
+.support-result-brief span,
+.category-apply-guide span {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.policy-card.support-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.policy-card.support-card::before {
+  width: 5px;
+  background: linear-gradient(180deg, var(--portal-blue) 0%, #60a5fa 100%);
+}
+
+.policy-card-topline {
+  gap: 7px;
+  margin-bottom: 10px;
+}
+
+.policy-card-topline .badge {
+  min-height: 27px;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 950;
+}
+
+.policy-card-topline .badge:first-child {
+  color: #047857;
+  background: #dcfce7;
+  border-color: #bbf7d0;
+}
+
+.policy-card-topline .badge.deadline:first-child {
+  color: #b91c1c;
+  background: #fee2e2;
+  border-color: #fecaca;
+}
+
+.policy-card h3 {
+  line-height: 1.38;
+}
+
+.policy-card h3 a {
+  color: #111827;
+}
+
+.policy-card-summary {
+  color: #475569;
+  line-height: 1.65;
+}
+
+.policy-quick-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  color: #64748b;
+}
+
+.card-facts {
+  border-top: 1px dashed #e2e8f0;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.card-facts dt {
+  color: #64748b;
+}
+
+.card-facts dd {
+  color: #0f172a;
+  font-weight: 850;
+}
+
+.card-actions {
+  align-items: center;
+}
+
+.card-actions .official-link,
+.home-apply-link,
+.doc-primary-actions .doc-primary,
+.doc-official-direct .doc-primary,
+.doc-application-panel .doc-primary,
+.sticky-detail-cta .button:not(.secondary) {
+  background: var(--portal-blue-strong);
+  border-color: var(--portal-blue-strong);
+  color: #ffffff;
+}
+
+.card-actions .official-link:hover,
+.home-apply-link:hover,
+.doc-primary-actions .doc-primary:hover,
+.doc-official-direct .doc-primary:hover,
+.doc-application-panel .doc-primary:hover,
+.sticky-detail-cta .button:not(.secondary):hover {
+  background: #1e40af;
+  border-color: #1e40af;
+}
+
+.category-hero {
+  background:
+    radial-gradient(circle at 12% 12%, rgba(37, 99, 235, 0.12), transparent 30%),
+    linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+}
+
+.category-hero .wrap {
+  border: 1px solid #dbeafe;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 18px 44px rgba(15, 23, 42, 0.08);
+}
+
+.category-hero h1,
+.category-list-head h2 {
+  color: #111827;
+}
+
+.category-related-tags {
+  border-color: #dbeafe;
+  background: #f8fbff;
+}
+
+.policy-doc-head {
+  background:
+    radial-gradient(circle at 12% 10%, rgba(37, 99, 235, 0.16), transparent 28%),
+    linear-gradient(180deg, #f8fbff 0%, #ffffff 74%);
+}
+
+.policy-doc-title {
+  border-radius: 24px;
+}
+
+.policy-status-row .badge {
+  font-weight: 950;
+}
+
+.doc-primary-actions {
+  align-items: center;
+}
+
+.doc-primary-actions .doc-primary,
+.doc-official-direct .doc-primary,
+.doc-application-panel .doc-primary {
+  min-width: 210px;
+  justify-content: center;
+}
+
+.doc-next-action,
+.doc-official-direct,
+.doc-application-panel {
+  border-radius: 18px;
+}
+
+.doc-cta-summary div,
+.quick-check-box dl div,
+.doc-highlight-card {
+  border-radius: 14px;
+}
+
+.doc-block {
+  border-radius: 18px;
+}
+
+.doc-block p,
+.doc-list li,
+.doc-info-table dd {
+  line-height: 1.75;
+}
+
+.sticky-detail-cta {
+  padding-bottom: calc(12px + env(safe-area-inset-bottom));
+}
+
+.mobile-tabbar {
+  box-shadow: 0 -14px 34px rgba(15, 23, 42, 0.16);
+}
+
+.mobile-tabbar a {
+  min-height: 52px;
+}
+
+@media (min-width: 901px) {
+  .support-result-list .policy-card {
+    grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.65fr);
+  }
+
+  .support-result-list .policy-card-main {
+    min-width: 0;
+  }
+
+  .card-actions {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 900px) {
+  .support-result-head {
+    padding: 15px;
+  }
+
+  .policy-card.support-card {
+    border-radius: 16px;
+  }
+
+  .card-actions .button {
+    flex: 1 1 180px;
+  }
+
+  .category-hero .wrap {
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    padding-bottom: calc(72px + env(safe-area-inset-bottom));
+  }
+
+  .home-portal-hero {
+    padding-top: 34px;
+  }
+
+  .home-portal-hero h1,
+  .support-search-head h1,
+  .category-hero h1,
+  .policy-doc-title h1 {
+    font-size: clamp(1.82rem, 8vw, 2.45rem);
+  }
+
+  .home-portal-search,
+  .support-search-form {
+    border-radius: 16px;
+  }
+
+  .support-search-selects {
+    gap: 8px;
+  }
+
+  .policy-card.support-card {
+    padding: 17px;
+  }
+
+  .policy-card-topline {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 2px;
+  }
+
+  .policy-card-topline .badge {
+    flex: 0 0 auto;
+  }
+
+  .card-actions {
+    gap: 9px;
+  }
+
+  .card-actions .button,
+  .doc-primary-actions .button,
+  .doc-official-direct .button,
+  .doc-application-panel .button {
+    width: 100%;
+  }
+
+  .card-action-note {
+    text-align: center;
+  }
+
+  .sticky-detail-cta span {
+    display: none;
+  }
+}
