@@ -255,6 +255,12 @@ const actionKeywords = [
         <a href="/support/?category=소상공인">소상공인</a>
       </div>
 
+      <div class="support-flow-strip" aria-label="목록 이용 흐름">
+        <span>검색 결과는 30개씩 비교</span>
+        <span>상태와 마감일 먼저 확인</span>
+        <span>신청은 공식 신청처에서 진행</span>
+      </div>
+
       <QuickConditionSearch />
 
       <nav class="support-tabs" aria-label="빠른 결과 필터">
@@ -328,6 +334,11 @@ const actionKeywords = [
             <p class="eyebrow"><span id="result-count">{totalResults.toLocaleString("ko-KR")}</span>개 결과</p>
             <h2 id="result-summary-title">{resultSummaryTitle}</h2>
             <p class="notice" id="result-summary-detail">{resultSummaryDetail}</p>
+            <div class="support-result-brief" aria-label="결과 확인 기준">
+              <span>30개씩 표시</span>
+              <span>만료 공고 제외</span>
+              <span>공식 신청처 연결</span>
+            </div>
             <div class="active-filter-chips" id="activeFilterChips" aria-label="적용된 검색 조건" hidden={activeFilters.length === 0}>
               {activeFilters.map((filter) => (
                 <a class="active-filter-chip" href={filter.href} aria-label={`${filter.label} 조건 제거`}>
@@ -601,7 +612,7 @@ const actionKeywords = [
       const tagMarkup = (policy.tags || []).slice(0, 3).map((tag) => '<span class="policy-tag-pill">' + escapeHtml(tag) + '</span>').join('');
       const externalIcon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>';
       const arrowIcon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>';
-      return '<article class="card policy-card support-card"><div class="meta policy-card-topline"><span class="' + statusClass + '">' + escapeHtml(policy.status || labels.officialBadge) + '</span><span class="badge">' + escapeHtml(policy.category) + '</span><span class="badge soft">' + escapeHtml(policy.source) + '</span></div><div class="policy-card-main"><h3><a href="' + escapeHtml(url) + '">' + escapeHtml(policy.title) + '</a></h3><p class="policy-card-summary">' + escapeHtml(compactSummary(policy)) + '</p>' + (tagMarkup ? '<div class="policy-tag-row">' + tagMarkup + '</div>' : '') + '<p class="policy-quick-line"><strong>' + labels.target + '</strong> ' + labels.officialCheck + ' <span>?</span> <strong>' + labels.region + '</strong> ' + escapeHtml(policy.region || labels.officialCheck) + '</p></div><dl class="card-facts"><div><dt>' + labels.apply + '</dt><dd>' + escapeHtml(applyLabel) + '</dd></div><div><dt>' + labels.deadline + '</dt><dd>' + escapeHtml(deadline) + '</dd></div><div><dt>' + labels.agency + '</dt><dd>' + escapeHtml(policy.agency || labels.officialCheck) + '</dd></div><div><dt>' + labels.support + '</dt><dd>' + labels.officialCheck + '</dd></div></dl><div class="card-actions"><a class="button official-link" href="' + escapeHtml(officialUrl) + '" target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy="' + escapeHtml(policy.id) + '">' + externalIcon + labels.officialApply + '</a><a class="button secondary" href="' + escapeHtml(url) + '" data-event="policy_click" data-policy="' + escapeHtml(policy.id) + '">' + labels.detail + ' ' + arrowIcon + '</a></div></article>';
+      return '<article class="card policy-card support-card"><div class="meta policy-card-topline"><span class="' + statusClass + '">' + escapeHtml(policy.status || labels.officialBadge) + '</span><span class="badge">' + escapeHtml(policy.category) + '</span><span class="badge soft">' + escapeHtml(policy.source) + '</span></div><div class="policy-card-main"><h3><a href="' + escapeHtml(url) + '">' + escapeHtml(policy.title) + '</a></h3><p class="policy-card-summary">' + escapeHtml(compactSummary(policy)) + '</p>' + (tagMarkup ? '<div class="policy-tag-row">' + tagMarkup + '</div>' : '') + '<p class="policy-quick-line"><strong>' + labels.target + '</strong> ' + labels.officialCheck + ' <span>?</span> <strong>' + labels.region + '</strong> ' + escapeHtml(policy.region || labels.officialCheck) + '</p></div><dl class="card-facts"><div><dt>' + labels.apply + '</dt><dd>' + escapeHtml(applyLabel) + '</dd></div><div><dt>' + labels.deadline + '</dt><dd>' + escapeHtml(deadline) + '</dd></div><div><dt>' + labels.agency + '</dt><dd>' + escapeHtml(policy.agency || labels.officialCheck) + '</dd></div><div><dt>' + labels.support + '</dt><dd>' + labels.officialCheck + '</dd></div></dl><div class="card-actions"><a class="button official-link" href="' + escapeHtml(officialUrl) + '" target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy="' + escapeHtml(policy.id) + '">' + externalIcon + labels.officialApply + '</a><a class="button secondary" href="' + escapeHtml(url) + '" data-event="policy_click" data-policy="' + escapeHtml(policy.id) + '">' + labels.detail + ' ' + arrowIcon + '</a><span class="card-action-note">신청은 공식 기관 페이지에서 진행됩니다</span></div></article>';
     }
     function formatCount(value) { return Number(value).toLocaleString('ko-KR'); }
     function paginationItems(current, total) { if (total <= 7) return Array.from({ length: total }, (_, index) => index + 1); const pages = new Set([1, total]); for (let page = current - 2; page <= current + 2; page += 1) if (page > 1 && page < total) pages.add(page); const sorted = [...pages].sort((a, b) => a - b); const entries = []; for (const page of sorted) { const previous = entries[entries.length - 1]; if (typeof previous === 'number' && page - previous > 1) entries.push('ellipsis'); entries.push(page); } return entries; }

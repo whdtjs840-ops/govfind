@@ -70,6 +70,11 @@ const publicCategoryCount = categoryCards.filter((category) => category.label !=
           <a class="button home-hero-primary" href="/support/">전체 지원사업 보기</a>
           <a class="button home-hero-secondary" href="/deadline/">마감임박 먼저 보기</a>
         </div>
+        <div class="home-hero-path" aria-label="이용 흐름">
+          <span><strong>1</strong> 검색</span>
+          <span><strong>2</strong> 조건 비교</span>
+          <span><strong>3</strong> 공식 신청처 이동</span>
+        </div>
         <div class="home-hero-keywords" aria-label="인기 검색어">
           <strong>인기 검색</strong>
           {popularKeywords.slice(0, 6).map((keyword) => (
@@ -148,7 +153,10 @@ const publicCategoryCount = categoryCards.filter((category) => category.label !=
   <section class="home-portal-section home-latest-portal-section">
     <div class="wrap">
       <div class="home-portal-section-head">
-        <h2>최신 지원사업</h2>
+        <div>
+          <span class="section-kicker">만료 공고 제외 기준</span>
+          <h2>최신 지원사업</h2>
+        </div>
         <a href="/support/">전체 목록</a>
       </div>
       <div class="home-program-grid">
