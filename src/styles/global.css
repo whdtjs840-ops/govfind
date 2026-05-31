@@ -7384,3 +7384,176 @@ body {
     font-size: 0.92rem;
   }
 }
+
+/* 84: Make the application path unmistakable without changing data or routes. */
+.home-fast-lanes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  max-width: 850px;
+  margin: 18px auto 0;
+}
+
+.home-fast-lanes a {
+  display: grid;
+  gap: 4px;
+  min-height: 74px;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  text-align: left;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.13);
+}
+
+.home-fast-lanes span {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.home-fast-lanes strong {
+  font-size: 0.98rem;
+  line-height: 1.35;
+}
+
+.home-fast-lanes a:hover,
+.home-fast-lanes a:focus-visible {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.23);
+}
+
+.support-decision-panel {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 12px 0 16px;
+}
+
+.support-decision-panel div {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 3px 9px;
+  align-items: center;
+  min-width: 0;
+  padding: 12px 13px;
+  border: 1px solid #dbeafe;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.support-decision-panel span {
+  grid-row: span 2;
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 950;
+}
+
+.support-decision-panel strong {
+  color: #0f172a;
+  font-size: 0.92rem;
+  line-height: 1.2;
+}
+
+.support-decision-panel small {
+  color: #64748b;
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.card-actions .official-link {
+  gap: 7px;
+}
+
+.card-actions .official-link small {
+  display: inline-flex;
+  align-items: center;
+  min-height: 20px;
+  padding: 0 7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22);
+  color: inherit;
+  font-size: 0.7rem;
+  font-weight: 950;
+}
+
+.doc-next-action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 12px;
+  padding: 11px 13px;
+  border: 1px solid #bfdbfe;
+  border-radius: 14px;
+  background: #eff6ff;
+  color: #1e3a8a;
+}
+
+.doc-next-action strong {
+  flex: 0 0 auto;
+  color: #1d4ed8;
+  font-size: 0.82rem;
+}
+
+.doc-next-action span {
+  color: #334155;
+  font-size: 0.9rem;
+  font-weight: 850;
+}
+
+.category-apply-guide {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 10px;
+}
+
+.category-apply-guide span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: #eef6ff;
+  color: #1d4ed8;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.sticky-detail-cta .button:not(.secondary) {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 12px 26px rgba(37, 99, 235, 0.22);
+}
+
+@media (max-width: 840px) {
+  .home-fast-lanes,
+  .support-decision-panel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .home-fast-lanes {
+    margin-top: 14px;
+  }
+
+  .home-fast-lanes a {
+    min-height: 60px;
+  }
+
+  .doc-next-action {
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+}
