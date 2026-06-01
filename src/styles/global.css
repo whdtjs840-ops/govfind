@@ -8186,3 +8186,274 @@ body {
     display: none;
   }
 }
+
+/* 83: portal finish pass - tighten scan flow and make CTA path unmistakable. */
+.site-header {
+  backdrop-filter: blur(14px);
+}
+
+.nav a {
+  font-weight: 850;
+}
+
+.home-portal-hero {
+  padding: 70px 0 46px;
+}
+
+.home-portal-hero-inner {
+  max-width: 930px;
+}
+
+.home-portal-search {
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.18);
+}
+
+.home-fast-lanes a,
+.home-deadline-card,
+.home-program-card,
+.policy-card.support-card,
+.category-hero .wrap,
+.policy-doc-title {
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.home-fast-lanes a:hover,
+.home-deadline-card:hover,
+.home-program-card:hover,
+.policy-card.support-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 52px rgba(15, 23, 42, 0.12);
+  border-color: rgba(37, 99, 235, 0.28);
+}
+
+.support-search-head {
+  padding: 58px 0 36px;
+}
+
+.support-search-head h1 {
+  letter-spacing: 0;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.support-search-head .lead {
+  max-width: 690px;
+}
+
+.support-search-form {
+  max-width: 760px;
+  box-shadow: 0 16px 42px rgba(37, 99, 235, 0.13);
+}
+
+.support-search-selects {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.support-status-strip {
+  margin-top: 16px;
+}
+
+.support-result-main {
+  margin-top: -10px;
+}
+
+.support-result-head {
+  border-color: rgba(37, 99, 235, 0.18);
+  box-shadow: 0 16px 42px rgba(15, 23, 42, 0.06);
+}
+
+.support-result-head h2 {
+  max-width: 720px;
+}
+
+.support-result-progress {
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.support-helper-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.support-helper-grid > * {
+  min-height: 72px;
+}
+
+.policy-card.support-card {
+  border-radius: 20px;
+  padding: 22px;
+  background: #ffffff;
+}
+
+.policy-card-main h3 {
+  font-size: clamp(1.05rem, 1.35vw, 1.28rem);
+  letter-spacing: 0;
+}
+
+.policy-card-summary {
+  max-width: 760px;
+}
+
+.card-facts {
+  background: #f8fafc;
+  border: 1px solid #edf2f7;
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.card-facts div {
+  min-width: 0;
+}
+
+.card-facts dd {
+  overflow-wrap: anywhere;
+}
+
+.card-actions {
+  border-top: 1px solid #eef2f7;
+  padding-top: 14px;
+}
+
+.card-actions .button.official-link {
+  box-shadow: 0 12px 26px rgba(37, 99, 235, 0.2);
+}
+
+.card-actions .button.official-link small {
+  opacity: 0.82;
+}
+
+.category-hero {
+  padding: 42px 0 28px;
+}
+
+.category-hero .wrap {
+  max-width: 1060px;
+}
+
+.category-metrics {
+  padding-top: 26px;
+}
+
+.category-result-list .policy-card.support-card:first-child {
+  border-left-width: 5px;
+}
+
+.policy-doc-title {
+  box-shadow: 0 22px 60px rgba(15, 23, 42, 0.08);
+}
+
+.doc-primary-actions {
+  gap: 12px;
+}
+
+.doc-primary-actions .doc-primary,
+.doc-official-direct .doc-primary,
+.doc-application-panel .doc-primary,
+.sticky-detail-cta .button:not(.secondary) {
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.22);
+}
+
+.doc-cta-helper {
+  font-weight: 800;
+}
+
+.doc-anchor-nav {
+  position: sticky;
+  top: 68px;
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+}
+
+.doc-block h2,
+.quick-check-head h2 {
+  letter-spacing: 0;
+}
+
+.mobile-tabbar {
+  border-top: 1px solid rgba(226, 232, 240, 0.95);
+}
+
+@media (min-width: 901px) {
+  .support-result-list .policy-card {
+    grid-template-columns: minmax(0, 1.42fr) minmax(230px, 0.58fr);
+  }
+
+  .policy-card.support-card {
+    align-items: stretch;
+  }
+
+  .card-actions {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 900px) {
+  .support-search-head {
+    padding: 44px 0 28px;
+  }
+
+  .support-helper-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .support-result-main {
+    margin-top: 0;
+  }
+
+  .doc-anchor-nav {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-portal-hero {
+    padding: 40px 0 30px;
+  }
+
+  .support-search-head {
+    padding: 34px 0 22px;
+  }
+
+  .support-search-head h1 {
+    font-size: clamp(1.85rem, 9vw, 2.35rem);
+  }
+
+  .support-status-strip,
+  .support-source-row,
+  .support-suggested-tags,
+  .support-tag-row {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 4px;
+  }
+
+  .support-status-strip > *,
+  .support-source-row > *,
+  .support-suggested-tags a,
+  .support-tag-row .chip {
+    flex: 0 0 auto;
+  }
+
+  .policy-card.support-card {
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .card-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .category-hero {
+    padding: 30px 0 18px;
+  }
+
+  .doc-primary-actions,
+  .doc-official-direct {
+    align-items: stretch;
+  }
+}
