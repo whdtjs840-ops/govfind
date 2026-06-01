@@ -57,6 +57,8 @@
     "update:kstartup:check": "tsx scripts/update-kstartup-check.mjs",
     "update:all": "tsx scripts/update-all.mjs",
     "update:plan": "tsx scripts/update-plan.mjs",
+    "automation:cycle": "tsx scripts/automation-cycle.mjs",
+    "ops:check": "tsx scripts/ops-check.mjs",
     "qa:smoke": "node scripts/qa-smoke.mjs",
     "update:report": "tsx scripts/update-report.mjs",
     "update:apply:dry-run": "tsx scripts/update-apply-dry-run.mjs",

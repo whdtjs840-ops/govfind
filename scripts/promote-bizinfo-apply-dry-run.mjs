@@ -74,6 +74,7 @@ async function main() {
     skippedDuplicateCount: candidateReport?.skippedDuplicateCount ?? null,
     skippedAlreadyAppliedCount: candidateReport?.skippedAlreadyAppliedCount ?? null,
     skippedCategoryMappingGapCount: candidateReport?.skippedCategoryMappingGapCount ?? null,
+    skippedExpiredCount: candidateReport?.skippedExpiredCount ?? null,
     compatibilityIssues,
     searchIndexPreview,
     pageGenerationPreview,

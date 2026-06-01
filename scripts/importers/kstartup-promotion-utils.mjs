@@ -1,7 +1,7 @@
 import { readdir } from "node:fs/promises";
 import { resolve } from "node:path";
 import { policies, categories } from "../../src/data/policies.ts";
-import { getAppliedPoliciesForConflictCheck } from "../../src/utils/policyUtils.ts";
+import { getAppliedPoliciesForConflictCheck, getPolicyToday } from "../../src/utils/policyUtils.ts";
 import {
   argValue,
   normalizeText,
@@ -111,6 +111,20 @@ function hasRequiredCandidateFields(item) {
   );
 }
 
+function parseKoreaDate(value) {
+  if (!value) return null;
+  const parsed = new Date(`${value}T00:00:00+09:00`);
+  return Number.isNaN(parsed.getTime()) ? null : parsed;
+}
+
+export function isExpiredKstartupCandidate(item, today = getPolicyToday()) {
+  const normalized = item.normalized ?? {};
+  if (normalized.status === "\uB9C8\uAC10") return true;
+  const endDate = parseKoreaDate(normalized.endDate);
+  if (!endDate) return false;
+  return endDate < today;
+}
+
 function existingConflictReasons(item, existingIndex) {
   const normalized = item.normalized ?? {};
   const reasons = [];
@@ -138,6 +152,7 @@ export function selectKstartupCandidatesFromItems({ items, limit = 500, publicPo
     categoryMappingGap: [],
     needsReview: [],
     incomplete: [],
+    expired: [],
     other: [],
     slugConflict: []
   };
@@ -149,6 +164,10 @@ export function selectKstartupCandidatesFromItems({ items, limit = 500, publicPo
     const sourceKey = `${normalized.sourceName}::${normalized.sourceItemId}`;
     const conflicts = existingConflictReasons(item, existingIndex);
 
+    if (isExpiredKstartupCandidate(item)) {
+      skipped.expired.push({ item, reasons: ["expired candidate is excluded from promotion"] });
+      continue;
+    }
     if (conflicts.some((reason) => reason.type === "sourceName+sourceItemId")) {
       skipped.alreadyApplied.push({ item, reasons: conflicts });
       continue;
@@ -282,6 +301,7 @@ export function mapKstartupCandidateToPublicPolicy(item) {
   if (!publicStatuses.has(normalized.status)) issues.push(`unsupported status: ${normalized.status}`);
   if (!normalized.officialUrl && !normalized.applicationUrl) issues.push("missing officialUrl/applicationUrl");
   if (!normalized.summary && !normalized.description) issues.push("missing summary/description");
+  if (isExpiredKstartupCandidate(item)) issues.push("expired candidate");
 
   if (issues.length) {
     return {

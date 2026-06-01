@@ -27,6 +27,7 @@ async function main() {
     finalPolicyCountPreview: publicPolicies.length + selected.length,
     skippedAlreadyAppliedCount: skipped.alreadyApplied.length,
     skippedDuplicateCount: skipped.duplicate.length,
+    skippedExpiredCount: skipped.expired.length,
     skippedCategoryMappingGapCount: skipped.categoryMappingGap.length,
     skippedNeedsReviewCount: skipped.needsReview.length,
     skippedIncompleteCount: skipped.incomplete.length,

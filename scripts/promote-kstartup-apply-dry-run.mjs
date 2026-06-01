@@ -72,6 +72,7 @@ async function main() {
     finalPolicyCountPreview: publicPolicies.length + selectedPolicies.length,
     expectedPolicyIncrease: selectedPolicies.length,
     skippedDuplicateCount: candidateReport?.skippedDuplicateCount ?? null,
+    skippedExpiredCount: candidateReport?.skippedExpiredCount ?? null,
     skippedAlreadyAppliedCount: candidateReport?.skippedAlreadyAppliedCount ?? null,
     skippedCategoryMappingGapCount: candidateReport?.skippedCategoryMappingGapCount ?? null,
     compatibilityIssues,

@@ -1,45 +1,88 @@
-# GovFind 운영, 배포, 보안, 성능 기준
+# GovFind Operations Runbook
 
-## 배포 분리
+## Operating Baseline
 
-- 프론트엔드: CDN 앞단의 Next.js 배포 대상으로 운영한다.
-- API 서버: Fastify 서비스를 별도 런타임으로 운영한다.
-- 수집 워커: `apps/api/src/jobs/sync.ts`를 별도 스케줄러에서 실행한다.
-- DB/Search: PostgreSQL과 Meilisearch는 프론트 배포와 분리한다.
+- Public count is based on `dist/search-index.json`, not the internal source-of-truth policy count.
+- Expired policies remain in source data for detail URL preservation, but must not appear in public lists, search, category pages, tag filters, or the public search index.
+- Source API calls are never part of the default operational check. Discovery or fetch commands require explicit operator approval.
+- Apply, commit, and production deploy require explicit operator approval and must be preceded by local QA.
 
-## 데이터 운영
+## Pre-Deploy Gate
 
-- 전체 동기화: 하루 1회.
-- 증분 갱신: 시간 단위로 가능한 소스부터 적용.
-- 링크 체크: 공식 신청처 URL을 주기적으로 확인하고 `lastCheckedAt`을 갱신한다.
-- 백업: PostgreSQL 일별 백업, 주간 복구 리허설.
-- 검색 인덱스: Meilisearch 스냅샷 또는 DB 기반 재생성 절차를 유지한다.
+Run these commands before any production deploy:
 
-## 보안 기본값
+```powershell
+npm.cmd run legacy:build
+npm.cmd run update:all
+npm.cmd run update:plan
+npm.cmd run qa:smoke
+npm.cmd run ops:check
+npm.cmd run validate:policies
+npm.cmd test
+```
 
-- 관리자 API는 `x-admin-token` 기반 보호를 기본값으로 둔다. 운영에서는 SSO/RBAC로 교체한다.
-- 공개 쓰기 API는 rate limit과 Origin 검사를 적용한다.
-- 보안 헤더는 HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy, CSP를 기본 적용한다.
-- API 키는 `.env` 또는 플랫폼 시크릿 저장소에서만 관리하고 저장소에 커밋하지 않는다.
-- 정책 수정, 제보 생성, 관리자 작업은 `AuditLog`에 남긴다.
+The deploy is blocked if any command fails.
 
-## 성능 목표
+`legacy:build` must run before `update:all`, `update:plan`, `qa:smoke`, and `ops:check` because those commands validate the generated `dist/search-index.json`. A stale `dist/` folder is treated as an operational failure.
 
-- LCP: 2.5초 이하
-- INP: 200ms 이하
-- CLS: 0.1 이하
+## `ops:check`
 
-홈, 목록, 상세는 Server Components와 revalidate를 우선 사용한다. 검색은 공공 API 실시간 호출이 아니라 내부 DB/검색 인덱스 기준으로 처리한다.
+`npm.cmd run ops:check` is the single operational stability gate. It is cache-only and does not call external APIs.
 
-## 접근성 목표
+It verifies:
 
-- WCAG 2.2 AA를 목표로 한다.
-- 키보드 포커스 표시, 폼 레이블, FAQ/details 접근성, 충분한 색 대비를 기본값으로 둔다.
-- 모바일 하단 CTA는 본문 내용을 가리지 않도록 하단 여백을 함께 둔다.
+- `dist/search-index.json` count equals `items.length`.
+- Public search-index count equals public policy count after expired filtering.
+- Search-index payload stays under the operating budget.
+- Long detail-only fields are not reintroduced into the search-index payload.
+- Critical public route artifacts exist.
+- `/support/` and `/category/*` initial render remains 30 cards per page.
+- Visible text does not include `Invalid Date`, `NaN`, `undefined`, or visible `null`.
+- `update:all` and `update:plan` counts match the public search-index count.
+- Real `.env` files are not tracked by git.
+- Required operating scripts are present.
 
-## SEO 운영
+The command writes:
 
-- 정책 상세: FAQPage, BreadcrumbList JSON-LD.
-- 목록/홈: ItemList JSON-LD.
-- sitemap, robots, canonical, Open Graph를 유지한다.
-- Search Console에서 색인, sitemap, Core Web Vitals, 리치 결과 오류를 점검한다.
+```text
+data/staging/operations/operational-stability-100-report.json
+```
+
+`data/staging/` is intentionally ignored by git.
+
+## Stop Conditions
+
+Stop immediately and report if any of these occur:
+
+- Public search-index count changes unexpectedly.
+- `src/data/policies.ts` would need to be modified for an operations-only task.
+- `qa:smoke`, `ops:check`, `validate:policies`, tests, or build fail.
+- API quota, rate-limit, auth, or approval errors appear.
+- A secret, API key, or `.env` value may be printed.
+- `update:all` or `update:plan` reports count mismatch.
+- A deploy would be made from an unintended dirty worktree.
+
+## Production QA
+
+After a manual Cloudflare Pages production deploy, verify:
+
+- `https://govfind.kr/search-index.json`
+- `https://govfind.kr/`
+- `https://govfind.kr/support/`
+- Search URLs for key queries such as `창업`, `청년`, `소상공인`, and `정책자금`
+- Tag URLs such as `/support/?tag=창업`
+- Category URLs such as `/category/startup/`, `/category/small-business/`, `/category/employment/`, and `/category/welfare/`
+- Representative detail pages with official CTA links
+
+The production QA report should include deployment URL, public search-index count, failed URLs, pagination status, tag/filter status, and final production QA decision.
+
+## Current Completion Definition
+
+Operational stability is considered 100% for the current static GovFind scope when:
+
+- The pre-deploy gate above passes.
+- `ops:check` reports `operational_stability_100_ready`.
+- Public count is consistent across search-index, update reports, smoke QA, and visible UI copy.
+- Expired items stay hidden from public discovery surfaces.
+- No real secret files are tracked.
+- Deploy and rollback decisions are documented and manual approval remains required.

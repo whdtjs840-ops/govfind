@@ -30,6 +30,7 @@ async function main() {
     skippedCategoryMappingGapCount: skipped.categoryMappingGap.length,
     skippedNeedsReviewCount: skipped.needsReview.length,
     skippedIncompleteCount: skipped.incomplete.length,
+    skippedExpiredCount: skipped.expired.length,
     skippedSlugConflictCount: skipped.slugConflict.length,
     skippedOtherCount: skipped.other.length,
     selectedReadyCount: selected.filter((item) => item.classification === "ready").length,

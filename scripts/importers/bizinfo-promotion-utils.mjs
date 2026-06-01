@@ -1,7 +1,7 @@
 import { readdir } from "node:fs/promises";
 import { resolve } from "node:path";
 import { policies, categories } from "../../src/data/policies.ts";
-import { getAppliedPoliciesForConflictCheck } from "../../src/utils/policyUtils.ts";
+import { getAppliedPoliciesForConflictCheck, getPolicyToday } from "../../src/utils/policyUtils.ts";
 import {
   argValue,
   normalizeText,
@@ -98,6 +98,20 @@ function hasStrongDuplicate(item) {
   return (item.duplicateCandidates ?? []).some((candidate) => candidate.strength === "high");
 }
 
+function parseKoreaDate(value) {
+  if (!value) return null;
+  const date = new Date(`${value}T00:00:00+09:00`);
+  return Number.isNaN(date.getTime()) ? null : date;
+}
+
+export function isExpiredBizinfoCandidate(item, today = getPolicyToday()) {
+  const normalized = item.normalized ?? {};
+  if (normalized.status === "\uB9C8\uAC10") return true;
+  const endDate = parseKoreaDate(normalized.endDate);
+  if (!endDate) return false;
+  return endDate < today;
+}
+
 function hasRequiredCandidateFields(item) {
   const normalized = item.normalized ?? {};
   return Boolean(
@@ -138,6 +152,7 @@ export function selectBizinfoCandidatesFromItems({ items, limit = 500, publicPol
     categoryMappingGap: [],
     needsReview: [],
     incomplete: [],
+    expired: [],
     other: [],
     slugConflict: []
   };
@@ -163,6 +178,10 @@ export function selectBizinfoCandidatesFromItems({ items, limit = 500, publicPol
     }
     if (classification === "needsReview") {
       skipped.needsReview.push({ item, reasons: item.reasons ?? item.reviewReasons ?? [] });
+      continue;
+    }
+    if (isExpiredBizinfoCandidate(item)) {
+      skipped.expired.push({ item, reasons: ["expired candidate is excluded from promotion"] });
       continue;
     }
     if (!["ready", "publishable_with_warning"].includes(classification)) {
@@ -280,6 +299,7 @@ export function mapBizinfoCandidateToPublicPolicy(item) {
   if (hasCategoryMappingGap(item)) issues.push("category mapping gap");
   if (!publicCategories.has(normalized.category)) issues.push(`unsupported category: ${normalized.category}`);
   if (!publicStatuses.has(normalized.status)) issues.push(`unsupported status: ${normalized.status}`);
+  if (isExpiredBizinfoCandidate(item)) issues.push("expired candidate");
   if (!normalized.officialUrl && !normalized.applicationUrl) issues.push("missing officialUrl/applicationUrl");
   if (!normalized.summary && !normalized.description) issues.push("missing summary/description");
 
