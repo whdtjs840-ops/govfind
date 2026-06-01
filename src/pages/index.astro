@@ -2,53 +2,50 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { Search } from "@lucide/astro";
 import { policies, categoryGroups } from "../data/policies";
-import { sourceLabel } from "../utils/sourceNames";
-import { deadlineDisplay, getPolicyCounts, getPublicPolicies, urgentPolicies } from "../utils/policyUtils";
+import {
+  cleanSummary,
+  deadlineDisplay,
+  getPolicyCounts,
+  getPublicPolicies,
+  urgentPolicies
+} from "../utils/policyUtils";
 
 const publicPolicies = getPublicPolicies(policies);
 const counts = getPolicyCounts(policies);
 const publicPolicyCountLabel = counts.all.toLocaleString("ko-KR");
-const latestPrograms = [...publicPolicies].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 9);
+const latestPrograms = [...publicPolicies]
+  .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))
+  .slice(0, 16);
+
 const urgentSlugs = new Set<string>();
-const urgentBase = [
+const deadlinePrograms = [
   ...urgentPolicies(publicPolicies),
   ...publicPolicies.filter((policy) => policy.status === "모집중")
 ].filter((policy) => {
   if (urgentSlugs.has(policy.slug)) return false;
   urgentSlugs.add(policy.slug);
   return true;
-}).slice(0, 6);
-const deadlinePrograms = urgentBase.map((policy) => ({
+}).slice(0, 10).map((policy) => ({
   ...policy,
   displayDday: deadlineDisplay(policy)
 }));
 
 const categoryCount = (label: string) => counts.byCategory[label] ?? 0;
-
 const categoryRoute = (label: string) => {
   const matched = categoryGroups.find((category) => category.label === label);
   if (matched) return `/category/${matched.slug}/`;
-  if (label === "전체") return "/support/";
-  return `/support/?q=${encodeURIComponent(label)}`;
+  return "/support/";
 };
-
 const categoryCards = [
-  { icon: "전체", label: "전체", count: counts.all },
+  { label: "전체", count: counts.all, href: "/support/" },
   ...categoryGroups.map((category) => ({
-    icon: category.label.slice(0, 2),
     label: category.label,
-    count: categoryCount(category.label)
+    count: categoryCount(category.label),
+    href: categoryRoute(category.label)
   }))
-].filter((category) => category.count > 0);
-const primaryCategoryCards = categoryCards.slice(0, 12);
+].filter((category) => category.count > 0).slice(0, 12);
 
-const popularKeywords = ["청년", "창업", "주거", "채용", "복지", "소상공인", "교육", "의료"];
-const sourceStats = ["정부24", "복지로", "기업마당", "온통청년", "K-Startup"].map((label) => ({
-  label,
-  count: publicPolicies.filter((policy) => sourceLabel(policy.source) === label).length
-})).filter((item) => item.count > 0);
-const officialSourceCount = sourceStats.length;
-const publicCategoryCount = categoryCards.filter((category) => category.label !== "전체").length;
+const popularKeywords = ["청년", "지원", "채용", "정부", "복지", "창업", "사업", "지원금", "소상공인"];
 
 function isGenericOfficialUrl(value: string) {
   try {
@@ -67,68 +64,40 @@ function isGenericOfficialUrl(value: string) {
     return false;
   }
 }
+
+function compactSummary(value?: string) {
+  const summary = cleanSummary(value ?? "");
+  return summary.length > 130 ? `${summary.slice(0, 129)}…` : summary;
+}
 ---
 
 <BaseLayout
   title="GovFind - 정부지원금 맞춤 검색"
   description="청년, 소상공인, 주거, 복지, 고용 지원사업을 한 곳에서 검색하세요."
 >
-  <section class="home-portal-hero">
-    <div class="wrap">
-      <div class="home-portal-hero-inner">
-        <p class="home-hero-kicker">공식 출처 기반 지원사업 포털</p>
-        <h1>나에게 맞는 정부지원사업을 한 번에 찾으세요</h1>
-        <p>만료 공고를 제외한 현재 공개 지원사업 <span data-public-count>{publicPolicyCountLabel}</span>개를 공식 출처 기준으로 정리했습니다.</p>
-        <form class="home-portal-search" action="/support/" method="get" aria-label="지원사업 검색">
-          <Search size={24} aria-hidden="true" />
-          <input name="q" type="search" placeholder="예: 청년, 창업, 소상공인, 주거, 정책자금" autocomplete="off" />
-          <button type="submit">검색</button>
-        </form>
-        <div class="home-hero-actions" aria-label="빠른 탐색">
-          <a class="button home-hero-primary" href="/support/">전체 지원사업 보기</a>
-          <a class="button home-hero-secondary" href="/deadline/">마감임박 먼저 보기</a>
-        </div>
-        <div class="home-hero-path" aria-label="이용 흐름">
-          <span><strong>1</strong> 검색</span>
-          <span><strong>2</strong> 조건 비교</span>
-          <span><strong>3</strong> 공식 신청처 이동</span>
-        </div>
-        <div class="home-hero-keywords" aria-label="인기 검색어">
-          <strong>인기 검색</strong>
-          {popularKeywords.slice(0, 6).map((keyword) => (
-            <a href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>
-          ))}
-        </div>
-        <div class="home-trust-line" aria-label="신뢰 기준">
-          공식 출처 기반, 현재 공개 중인 지원사업을 한 번에 찾아보세요.
-        </div>
-        <div class="home-portal-stats" aria-label="서비스 현황">
-          <span><strong data-public-count>{publicPolicyCountLabel}</strong> 현재 공개</span>
-          <span><strong>{officialSourceCount.toLocaleString("ko-KR")}</strong> 공식 출처</span>
-          <span><strong>{publicCategoryCount.toLocaleString("ko-KR")}</strong> 탐색 분야</span>
-        </div>
-        <div class="home-fast-lanes" aria-label="빠른 신청 동선">
-          <a href="/support/?sort=deadline">
-            <span>마감 먼저</span>
-            <strong>곧 끝나는 공고부터 확인</strong>
-          </a>
-          <a href="/support/?category=창업&tag=사업화">
-            <span>창업·사업화</span>
-            <strong>사업화 지원만 빠르게 비교</strong>
-          </a>
-          <a href="/support/?category=소상공인&tag=정책자금">
-            <span>정책자금</span>
-            <strong>소상공인 자금 공고 찾기</strong>
-          </a>
-        </div>
+  <section class="govhelp-home-hero" aria-label="지원사업 검색">
+    <div class="wrap govhelp-home-wrap">
+      <p class="govhelp-kicker">공식 출처 기반 지원사업 포털</p>
+      <h1>나에게 맞는 정부지원금 찾기</h1>
+      <p class="govhelp-count-line"><strong data-public-count>{publicPolicyCountLabel}</strong>건의 지원사업 모집중</p>
+      <form class="govhelp-search" action="/support/" method="get" aria-label="지원사업 검색">
+        <Search size={24} aria-hidden="true" />
+        <input name="q" type="search" placeholder="예: 청년 월세, 육아 수당, 소상공인 대출" autocomplete="off" />
+        <button type="submit">검색</button>
+      </form>
+      <div class="govhelp-keywords" aria-label="인기 검색어">
+        <strong>인기</strong>
+        {popularKeywords.map((keyword) => (
+          <a href={`/support/?q=${encodeURIComponent(keyword)}`}>{keyword}</a>
+        ))}
       </div>
     </div>
   </section>
 
-  <section class="home-category-strip-section" aria-label="주요 카테고리">
-    <div class="wrap home-category-pill-row">
-      {primaryCategoryCards.map((category) => (
-        <a href={categoryRoute(category.label)}>
+  <section class="govhelp-category-section" aria-label="주요 카테고리">
+    <div class="wrap govhelp-category-grid">
+      {categoryCards.map((category) => (
+        <a href={category.href} class="govhelp-category-card">
           <span>{category.label}</span>
           <strong>{category.count.toLocaleString("ko-KR")}</strong>
         </a>
@@ -136,85 +105,65 @@ function isGenericOfficialUrl(value: string) {
     </div>
   </section>
 
-  <section class="home-portal-section home-impact-section" aria-label="서비스 현황">
-    <div class="wrap home-impact-grid">
-      <div>
-        <strong data-public-count>{publicPolicyCountLabel}</strong>
-        <span>현재 공개 중인 지원사업</span>
-      </div>
-      <div>
-        <strong>{officialSourceCount.toLocaleString("ko-KR")}</strong>
-        <span>주요 공식 출처</span>
-      </div>
-      <div>
-        <strong>{publicCategoryCount.toLocaleString("ko-KR")}</strong>
-        <span>탐색 가능한 카테고리</span>
-      </div>
-    </div>
-    <div class="wrap home-source-strip" aria-label="출처별 공개 현황">
-      <span>공식 출처</span>
-      {sourceStats.map((source) => (
-        <a href={`/support/?source=${encodeURIComponent(source.label)}`}>
-          <strong>{source.label}</strong>
-          <small>{source.count.toLocaleString("ko-KR")}건</small>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <section class="home-portal-section">
+  <section class="govhelp-home-section" aria-label="마감 임박 지원사업">
     <div class="wrap">
-      <div class="home-portal-section-head">
+      <div class="govhelp-section-head">
         <h2>마감 임박</h2>
-        <a href="/deadline/">전체 보기</a>
+        <a href="/deadline/">더보기 →</a>
       </div>
-      <div class="home-deadline-grid">
+      <div class="govhelp-deadline-list">
         {deadlinePrograms.map((policy) => (
-          <a class="home-deadline-card" href={`/support/${policy.slug}/`}>
-            <span class:list={["home-dday-badge", policy.displayDday === "D-Day" ? "is-danger" : "is-warning"]}>{policy.displayDday}</span>
+          <a class="govhelp-deadline-item" href={`/support/${policy.slug}/`}>
+            <span class:list={["govhelp-dday", policy.displayDday === "D-Day" ? "is-day" : ""]}>{policy.displayDday}</span>
             <strong>{policy.title}</strong>
-            <span class="home-program-category">{policy.category}</span>
-            <small>{policy.agency}</small>
-            <time>{policy.deadline}</time>
+            <em>{policy.category}</em>
           </a>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="home-portal-section home-latest-portal-section">
+  <section class="govhelp-home-section govhelp-latest-section" aria-label="최신 지원사업">
     <div class="wrap">
-      <div class="home-portal-section-head">
-        <div>
-          <span class="section-kicker">만료 공고 제외 기준</span>
-          <h2>최신 지원사업</h2>
-        </div>
-        <a href="/support/">전체 목록</a>
+      <div class="govhelp-section-head">
+        <h2>최신 지원사업</h2>
+        <a href="/support/">전체 보기 →</a>
       </div>
-      <div class="home-program-grid">
-        {latestPrograms.map((policy, index) => (
-          <article class="home-program-card">
-            <div class="home-card-badges">
-              <span class="home-status-badge">모집중</span>
-              <span class="home-program-category">{policy.category}</span>
-              <span class:list={["home-dday-badge", deadlineDisplay(policy) === "D-Day" ? "is-danger" : "is-warning"]}>
-                {deadlineDisplay(policy)}
-              </span>
-            </div>
-            <h3><a href={`/support/${policy.slug}/`}>{policy.title}</a></h3>
-            <p>{policy.summary}</p>
-            <div class="home-program-meta">
-              <span>{policy.agency}</span>
-              <time>{policy.deadline}</time>
-            </div>
-            <div class="home-program-actions">
-              <a class="home-detail-link" href={`/support/${policy.slug}/`}>상세 보기</a>
-              <a class="home-apply-link" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-official-link-kind={isGenericOfficialUrl(policy.officialUrl) ? "generic" : "direct"}>
-                {isGenericOfficialUrl(policy.officialUrl) ? "공식 사이트 확인" : "신청처 바로가기"}
-              </a>
-            </div>
-          </article>
-        ))}
+      <div class="govhelp-program-list">
+        {latestPrograms.map((policy) => {
+          const dday = deadlineDisplay(policy);
+          const officialLinkIsGeneric = isGenericOfficialUrl(policy.officialUrl);
+          return (
+            <article class="govhelp-program-card">
+              <div class="govhelp-program-badges">
+                <span>모집중</span>
+                <span>{policy.category}</span>
+                <span>{dday}</span>
+              </div>
+              <h3><a href={`/support/${policy.slug}/`}>{policy.title}</a></h3>
+              <p>{compactSummary(policy.summary)}</p>
+              <div class="govhelp-program-meta">
+                <span>{policy.agency}</span>
+                <span>{policy.deadline}</span>
+              </div>
+              <div class="govhelp-program-actions">
+                <a href={`/support/${policy.slug}/`}>상세 보기</a>
+                <a
+                  class="govhelp-apply"
+                  href={policy.officialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-official-link-kind={officialLinkIsGeneric ? "generic" : "direct"}
+                >
+                  {officialLinkIsGeneric ? "공식 사이트 확인" : "신청처 바로가기"}
+                </a>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+      <div class="govhelp-all-link">
+        <a class="button" href="/support/">전체 지원사업 보기</a>
       </div>
     </div>
   </section>

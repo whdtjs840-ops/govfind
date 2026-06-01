@@ -8457,3 +8457,522 @@ body {
     align-items: stretch;
   }
 }
+
+/* GovHelp streamlined portal overrides */
+.govhelp-home-hero {
+  padding: 58px 0 36px;
+  background:
+    linear-gradient(180deg, #f8fbff 0%, #ffffff 82%),
+    #ffffff;
+  border-bottom: 1px solid #e6edf5;
+}
+
+.govhelp-home-wrap {
+  max-width: 920px;
+}
+
+.govhelp-kicker,
+.govhelp-count-line {
+  margin: 0 0 12px;
+  color: #475569;
+  font-weight: 800;
+}
+
+.govhelp-kicker {
+  color: #0f766e;
+}
+
+.govhelp-home-hero h1 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 3rem;
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.govhelp-count-line {
+  margin-top: 16px;
+  font-size: 1.05rem;
+}
+
+.govhelp-count-line strong {
+  color: #1d4ed8;
+  font-size: 1.45rem;
+}
+
+.govhelp-search {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  min-height: 68px;
+  margin-top: 24px;
+  padding: 10px 10px 10px 18px;
+  border: 2px solid #2563eb;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.12);
+}
+
+.govhelp-search svg {
+  color: #2563eb;
+}
+
+.govhelp-search input {
+  min-width: 0;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  color: #0f172a;
+  font-size: 1.08rem;
+  font-weight: 700;
+  background: transparent;
+}
+
+.govhelp-search input::placeholder {
+  color: #94a3b8;
+}
+
+.govhelp-search button {
+  min-width: 92px;
+  height: 48px;
+  border: 0;
+  border-radius: 6px;
+  color: #ffffff;
+  background: #2563eb;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.govhelp-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.govhelp-keywords strong,
+.govhelp-keywords a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.govhelp-keywords strong {
+  color: #0f766e;
+}
+
+.govhelp-keywords a {
+  padding: 0 12px;
+  border: 1px solid #dbe5f0;
+  color: #334155;
+  background: #ffffff;
+  font-weight: 800;
+}
+
+.govhelp-category-section {
+  padding: 22px 0 18px;
+  background: #ffffff;
+}
+
+.govhelp-category-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.govhelp-category-card {
+  display: flex;
+  min-height: 72px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 14px;
+  border: 1px solid #dbe5f0;
+  border-radius: 8px;
+  color: #0f172a;
+  background: #ffffff;
+}
+
+.govhelp-category-card:hover,
+.govhelp-category-card:focus-visible {
+  border-color: #2563eb;
+  box-shadow: 0 12px 26px rgba(37, 99, 235, 0.11);
+}
+
+.govhelp-category-card span {
+  font-weight: 900;
+}
+
+.govhelp-category-card strong {
+  color: #0f766e;
+  font-size: 0.92rem;
+}
+
+.govhelp-home-section {
+  padding: 34px 0;
+  background: #ffffff;
+}
+
+.govhelp-latest-section {
+  background: #f8fafc;
+  border-top: 1px solid #e6edf5;
+}
+
+.govhelp-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.govhelp-section-head h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1.45rem;
+  letter-spacing: 0;
+}
+
+.govhelp-section-head a {
+  color: #2563eb;
+  font-weight: 900;
+}
+
+.govhelp-deadline-list {
+  display: grid;
+  gap: 8px;
+}
+
+.govhelp-deadline-item {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  min-height: 58px;
+  padding: 12px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: #0f172a;
+  background: #ffffff;
+}
+
+.govhelp-deadline-item strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.98rem;
+}
+
+.govhelp-deadline-item em {
+  color: #64748b;
+  font-style: normal;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.govhelp-dday {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  border-radius: 999px;
+  color: #92400e;
+  background: #fef3c7;
+  font-size: 0.83rem;
+  font-weight: 900;
+}
+
+.govhelp-dday.is-day {
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+.govhelp-program-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.govhelp-program-card {
+  display: grid;
+  min-height: 248px;
+  align-content: start;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #dde7f2;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.govhelp-program-card h3 {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.38;
+  letter-spacing: 0;
+}
+
+.govhelp-program-card h3 a {
+  color: #0f172a;
+}
+
+.govhelp-program-card p {
+  display: -webkit-box;
+  min-height: 3.9em;
+  margin: 0;
+  overflow: hidden;
+  color: #475569;
+  line-height: 1.55;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.govhelp-program-badges,
+.govhelp-program-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.govhelp-program-badges span {
+  padding: 5px 8px;
+  border-radius: 999px;
+  color: #334155;
+  background: #eef6ff;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.govhelp-program-meta {
+  color: #64748b;
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.govhelp-program-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.govhelp-program-actions a,
+.govhelp-all-link .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  border-radius: 6px;
+  font-weight: 900;
+}
+
+.govhelp-program-actions a {
+  border: 1px solid #dbe5f0;
+  color: #334155;
+  background: #ffffff;
+}
+
+.govhelp-program-actions .govhelp-apply,
+.govhelp-all-link .button {
+  border-color: #2563eb;
+  color: #ffffff;
+  background: #2563eb;
+}
+
+.govhelp-all-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.govhelp-support-head {
+  padding: 44px 0 28px;
+  background: #f8fbff;
+  border-bottom: 1px solid #e5edf7;
+}
+
+.govhelp-support-head h1 {
+  max-width: none;
+  margin: 0;
+  color: #0f172a;
+  font-size: 2.2rem;
+  letter-spacing: 0;
+}
+
+.govhelp-support-head .lead {
+  max-width: 760px;
+  margin-left: 0;
+  margin-right: 0;
+  color: #475569;
+}
+
+.govhelp-support-search {
+  max-width: none;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.govhelp-support-shortcuts,
+.govhelp-support-tabs {
+  justify-content: flex-start;
+}
+
+.govhelp-policy-card {
+  display: grid;
+  gap: 16px;
+  border-radius: 8px;
+}
+
+.govhelp-card-badges {
+  margin-bottom: 6px;
+}
+
+.govhelp-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  color: #64748b;
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.govhelp-card-meta span {
+  overflow-wrap: anywhere;
+}
+
+.govhelp-card-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  border-radius: 8px;
+}
+
+.govhelp-card-facts div {
+  min-height: 58px;
+  padding: 9px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.govhelp-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  border-top: 1px solid #e7eef6;
+}
+
+.govhelp-card-actions .button {
+  min-height: 44px;
+  border-radius: 6px;
+}
+
+@media (min-width: 901px) {
+  .support-result-list .govhelp-policy-card {
+    grid-template-columns: minmax(0, 1.36fr) minmax(270px, 0.64fr);
+  }
+
+  .support-result-list .govhelp-card-main,
+  .support-result-list .govhelp-card-facts {
+    grid-column: auto;
+  }
+
+  .support-result-list .govhelp-card-actions {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 1100px) {
+  .govhelp-category-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .govhelp-program-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .govhelp-home-hero {
+    padding: 38px 0 26px;
+  }
+
+  .govhelp-home-hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .govhelp-search {
+    grid-template-columns: auto minmax(0, 1fr);
+    min-height: auto;
+  }
+
+  .govhelp-search button {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .govhelp-category-grid,
+  .govhelp-program-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .govhelp-section-head,
+  .govhelp-card-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .govhelp-card-actions .button {
+    flex: 0 0 auto;
+    width: 100%;
+    min-height: 46px;
+    padding: 0 14px;
+  }
+
+  .govhelp-deadline-item {
+    grid-template-columns: 70px minmax(0, 1fr);
+  }
+
+  .govhelp-deadline-item em {
+    grid-column: 2;
+  }
+
+  .govhelp-program-actions,
+  .govhelp-card-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .govhelp-support-shortcuts,
+  .govhelp-support-tabs,
+  .support-keyword-row,
+  .support-tag-row {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+  }
+
+  .govhelp-support-shortcuts > *,
+  .govhelp-support-tabs > *,
+  .support-keyword-row > *,
+  .support-tag-row > * {
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .govhelp-home-hero h1,
+  .govhelp-support-head h1 {
+    font-size: 1.9rem;
+  }
+
+  .govhelp-category-grid,
+  .govhelp-program-list {
+    grid-template-columns: 1fr;
+  }
+}

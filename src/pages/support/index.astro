@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PolicyCard from "../../components/PolicyCard.astro";
-import QuickConditionSearch from "../../components/QuickConditionSearch.astro";
 import { CheckCircle2, Search, SlidersHorizontal } from "@lucide/astro";
 import { categories, categoryGroups, lifeStages, policies, regions } from "../../data/policies";
 import { derivePolicyTags, supportedPolicyTags } from "../../utils/derivedTags";
@@ -218,17 +217,17 @@ const actionKeywords = [
   title="정부지원금 검색 결과 - GovFind"
   description="공식 출처 기준으로 정리된 정부지원금 검색 결과입니다. 자격을 단정하지 않고 조건 확인과 공식 신청처 이동을 돕습니다."
 >
-  <section class="support-search-head">
+  <section class="support-search-head govhelp-support-head">
     <div class="wrap">
-      <p class="eyebrow">지원사업 탐색</p>
-      <h1>지원금, 환급금, 정책자금을 조건별로 빠르게 비교하세요</h1>
-      <p class="lead">현재 공개 중인 지원사업 <span data-public-count>{publicPolicyCountLabel}</span>개를 만료 공고 제외 기준으로 검색합니다. 검색어를 먼저 입력하고, 필요한 경우 카테고리와 출처만 좁혀보세요.</p>
+      <p class="eyebrow">전체 목록</p>
+      <h1>지원사업 전체 목록</h1>
+      <p class="lead"><span data-public-count>{publicPolicyCountLabel}</span>건의 현재 공개 지원사업을 검색하고, 상태·카테고리·마감일을 한 번에 비교하세요.</p>
 
-      <form class="support-search-form" action="/support/" method="get">
+      <form class="support-search-form govhelp-support-search" action="/support/" method="get">
         {selectedTag && <input type="hidden" name="tag" value={selectedTag} />}
         <div class="support-search-main">
           <Search size={21} aria-hidden="true" />
-          <input name="q" type="search" value={selectedQ} placeholder="근로장려금, 청년월세, 환급금, 소상공인 정책자금 검색" />
+          <input name="q" type="search" value={selectedQ} placeholder="예: 청년 월세, 창업, 소상공인 정책자금" />
           <button class="button" type="submit">검색</button>
         </div>
         <div class="support-search-selects">
@@ -247,7 +246,7 @@ const actionKeywords = [
         </div>
       </form>
 
-      <div class="support-intent-strip" aria-label="추천 탐색 동선">
+      <div class="support-intent-strip govhelp-support-shortcuts" aria-label="빠른 탐색">
         <a href="/support/?sort=deadline">마감임박</a>
         <a href="/support/?applyOnline=true">온라인 신청</a>
         <a href="/support/?tag=정책자금">정책자금</a>
@@ -255,15 +254,7 @@ const actionKeywords = [
         <a href="/support/?category=소상공인">소상공인</a>
       </div>
 
-      <div class="support-flow-strip" aria-label="목록 이용 흐름">
-        <span>검색 결과는 30개씩 비교</span>
-        <span>상태와 마감일 먼저 확인</span>
-        <span>신청은 공식 신청처에서 진행</span>
-      </div>
-
-      <QuickConditionSearch />
-
-      <nav class="support-tabs" aria-label="빠른 결과 필터">
+      <nav class="support-tabs govhelp-support-tabs" aria-label="빠른 결과 필터">
         {quickTabs.map((tab) => (
           <a class={tab.active ? "active" : ""} href={tab.href}>
             <span>{tab.label}</span>
@@ -272,15 +263,6 @@ const actionKeywords = [
         ))}
       </nav>
     </div>
-  </section>
-
-  <section class="section tight support-summary-band">
-      <div class="wrap support-summary-grid">
-        <div><strong>{counts.gov24.toLocaleString("ko-KR")}</strong><span>정부24 혜택</span></div>
-        <div><strong>{counts.welfare.toLocaleString("ko-KR")}</strong><span>복지로 정책</span></div>
-        <div><strong>{counts.bizinfo.toLocaleString("ko-KR")}</strong><span>기업마당 공고</span></div>
-        <div><strong>{counts.ontongYouth.toLocaleString("ko-KR")}</strong><span>온통청년 정책</span></div>
-      </div>
   </section>
 
   <section class="section">
@@ -645,7 +627,7 @@ const actionKeywords = [
       const tagMarkup = (policy.tags || []).slice(0, 3).map((tag) => '<span class="policy-tag-pill">' + escapeHtml(tag) + '</span>').join('');
       const externalIcon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>';
       const arrowIcon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>';
-      return '<article class="card policy-card support-card"><div class="meta policy-card-topline"><span class="' + statusClass + '">' + escapeHtml(policy.status || labels.officialBadge) + '</span><span class="badge">' + escapeHtml(policy.category) + '</span><span class="badge soft">' + escapeHtml(policy.source) + '</span></div><div class="policy-card-main"><h3><a href="' + escapeHtml(url) + '">' + escapeHtml(policy.title) + '</a></h3><p class="policy-card-summary">' + escapeHtml(compactSummary(policy)) + '</p>' + (tagMarkup ? '<div class="policy-tag-row">' + tagMarkup + '</div>' : '') + '<p class="policy-quick-line"><strong>' + labels.target + '</strong> ' + labels.officialCheck + ' <span>·</span> <strong>' + labels.region + '</strong> ' + escapeHtml(policy.region || labels.officialCheck) + '</p></div><dl class="card-facts"><div><dt>' + labels.apply + '</dt><dd>' + escapeHtml(applyLabel) + '</dd></div><div><dt>' + labels.deadline + '</dt><dd>' + escapeHtml(deadline) + '</dd></div><div><dt>' + labels.agency + '</dt><dd>' + escapeHtml(policy.agency || labels.officialCheck) + '</dd></div><div><dt>' + labels.support + '</dt><dd>' + labels.officialCheck + '</dd></div></dl><div class="card-actions"><a class="button official-link" href="' + escapeHtml(officialUrl) + '" target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy="' + escapeHtml(policy.id) + '" data-official-link-kind="' + (officialLinkIsGeneric ? 'generic' : 'direct') + '" aria-label="' + escapeHtml(policy.title) + ' ' + escapeHtml(officialLabel) + '">' + externalIcon + '<span>' + escapeHtml(officialLabel) + '</span><small>' + escapeHtml(officialHint) + '</small></a><a class="button secondary" href="' + escapeHtml(url) + '" data-event="policy_click" data-policy="' + escapeHtml(policy.id) + '">' + labels.detail + ' ' + arrowIcon + '</a><span class="card-action-note">신청은 공식 기관 페이지에서 진행됩니다</span></div></article>';
+      return '<article class="card policy-card support-card govhelp-policy-card"><div class="policy-card-main govhelp-card-main"><div class="meta policy-card-topline govhelp-card-badges"><span class="' + statusClass + '">' + escapeHtml(policy.status || labels.officialBadge) + '</span><span class="badge">' + escapeHtml(policy.category) + '</span><span class="badge soft">' + escapeHtml(deadline) + '</span></div><h3><a href="' + escapeHtml(url) + '">' + escapeHtml(policy.title) + '</a></h3><p class="policy-card-summary">' + escapeHtml(compactSummary(policy)) + '</p><div class="govhelp-card-meta"><span>' + escapeHtml(policy.agency || labels.officialCheck) + '</span><span>' + escapeHtml(deadline) + '</span><span>' + escapeHtml(policy.source || labels.officialCheck) + '</span></div>' + (tagMarkup ? '<div class="policy-tag-row">' + tagMarkup + '</div>' : '') + '</div><dl class="card-facts govhelp-card-facts"><div><dt>' + labels.target + '</dt><dd>' + labels.officialCheck + '</dd></div><div><dt>' + labels.region + '</dt><dd>' + escapeHtml(policy.region || labels.officialCheck) + '</dd></div><div><dt>' + labels.support + '</dt><dd>' + labels.officialCheck + '</dd></div><div><dt>' + labels.apply + '</dt><dd>' + escapeHtml(applyLabel) + '</dd></div></dl><div class="card-actions govhelp-card-actions"><a class="button secondary" href="' + escapeHtml(url) + '" data-event="policy_click" data-policy="' + escapeHtml(policy.id) + '">' + labels.detail + ' ' + arrowIcon + '</a><a class="button official-link" href="' + escapeHtml(officialUrl) + '" target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy="' + escapeHtml(policy.id) + '" data-official-link-kind="' + (officialLinkIsGeneric ? 'generic' : 'direct') + '" aria-label="' + escapeHtml(policy.title) + ' ' + escapeHtml(officialLabel) + '">' + externalIcon + '<span>' + escapeHtml(officialLabel) + '</span><small>' + escapeHtml(officialHint) + '</small></a></div></article>';
     }
     function formatCount(value) { return Number(value).toLocaleString('ko-KR'); }
     function paginationItems(current, total) { if (total <= 7) return Array.from({ length: total }, (_, index) => index + 1); const pages = new Set([1, total]); for (let page = current - 2; page <= current + 2; page += 1) if (page > 1 && page < total) pages.add(page); const sorted = [...pages].sort((a, b) => a - b); const entries = []; for (const page of sorted) { const previous = entries[entries.length - 1]; if (typeof previous === 'number' && page - previous > 1) entries.push('ellipsis'); entries.push(page); } return entries; }
