@@ -73,7 +73,27 @@ const contentHighlights = [
   { label: "신청 방법", value: applyLines[0] || policy.apply },
   { label: "공식 출처", value: `${sourceLabel(policy.source)} · ${policy.agency}` }
 ].filter((item) => item.value);
-const officialCtaLabel = showOfficialConfirmation ? "공식 공고 확인하기" : "공식 신청처 바로가기";
+
+function isGenericOfficialUrl(value: string) {
+  try {
+    const url = new URL(value);
+    const genericHosts = new Set([
+      "www.gov.kr",
+      "www.bokjiro.go.kr",
+      "www.k-startup.go.kr",
+      "www.bizinfo.go.kr",
+      "www.work24.go.kr",
+      "www.hometax.go.kr",
+      "www.nhis.or.kr"
+    ]);
+    return genericHosts.has(url.hostname) && ["", "/", "/web/index.do", "/index.do"].includes(url.pathname);
+  } catch {
+    return false;
+  }
+}
+
+const officialLinkIsGeneric = isGenericOfficialUrl(policy.officialUrl);
+const officialCtaLabel = officialLinkIsGeneric ? "공식 사이트에서 확인" : showOfficialConfirmation ? "공식 공고 확인하기" : "공식 신청처 바로가기";
 const applicationChecklist = [
   { label: "1. 대상 확인", value: policy.targetGroup || targetLines[0] || "공식 신청처에서 확인" },
   { label: "2. 기간 확인", value: `${policy.deadline} · ${deadlineLabel}` },
@@ -158,7 +178,7 @@ const seoDescription = truncateMeta(
           </div>
         )}
         <div class="doc-primary-actions">
-          <a class="button doc-primary" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
+          <a class="button doc-primary" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug} data-official-link-kind={officialLinkIsGeneric ? "generic" : "direct"}>
             <ExternalLink size={18} />{officialCtaLabel}
           </a>
           <a class="button secondary" href="/support/">목록으로 돌아가기</a>
@@ -187,7 +207,7 @@ const seoDescription = truncateMeta(
             <span>신청은 공식 기관에서 진행됩니다</span>
             <strong>GovFind에서 조건을 확인한 뒤 공식 신청처로 바로 이동하세요.</strong>
           </div>
-          <a class="button doc-primary" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
+          <a class="button doc-primary" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug} data-official-link-kind={officialLinkIsGeneric ? "generic" : "direct"}>
             <ExternalLink size={18} />{officialCtaLabel}
           </a>
         </div>
@@ -224,7 +244,7 @@ const seoDescription = truncateMeta(
             </div>
           ))}
         </div>
-        <a class="button doc-primary" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
+        <a class="button doc-primary" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug} data-official-link-kind={officialLinkIsGeneric ? "generic" : "direct"}>
           <ExternalLink size={18} />{officialCtaLabel}
         </a>
       </section>
@@ -354,7 +374,7 @@ const seoDescription = truncateMeta(
           <p class="notice">GovFind는 자격을 단정하지 않고 조건 확인을 돕습니다. 신청 전 기관명, 제출 서류, 접수 기간을 공식 페이지에서 다시 확인하세요.</p>
           <div class="doc-inline-cta">
             <span>신청 준비가 끝났다면</span>
-            <a class="button doc-primary" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
+            <a class="button doc-primary" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug} data-official-link-kind={officialLinkIsGeneric ? "generic" : "direct"}>
               <ExternalLink size={17} />{officialCtaLabel}
             </a>
           </div>
@@ -480,7 +500,7 @@ const seoDescription = truncateMeta(
 
   <div class="sticky-detail-cta" aria-label="상세 페이지 빠른 실행">
     <span>{policy.title}</span>
-    <a class="button" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug}>
+    <a class="button" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy={policy.slug} data-official-link-kind={officialLinkIsGeneric ? "generic" : "direct"}>
       <ExternalLink size={17} />{officialCtaLabel}
     </a>
     <a class="button secondary" href="/support/">목록으로</a>

@@ -49,6 +49,24 @@ const sourceStats = ["정부24", "복지로", "기업마당", "온통청년", "K
 })).filter((item) => item.count > 0);
 const officialSourceCount = sourceStats.length;
 const publicCategoryCount = categoryCards.filter((category) => category.label !== "전체").length;
+
+function isGenericOfficialUrl(value: string) {
+  try {
+    const url = new URL(value);
+    const genericHosts = new Set([
+      "www.gov.kr",
+      "www.bokjiro.go.kr",
+      "www.k-startup.go.kr",
+      "www.bizinfo.go.kr",
+      "www.work24.go.kr",
+      "www.hometax.go.kr",
+      "www.nhis.or.kr"
+    ]);
+    return genericHosts.has(url.hostname) && ["", "/", "/web/index.do", "/index.do"].includes(url.pathname);
+  } catch {
+    return false;
+  }
+}
 ---
 
 <BaseLayout
@@ -191,7 +209,9 @@ const publicCategoryCount = categoryCards.filter((category) => category.label !=
             </div>
             <div class="home-program-actions">
               <a class="home-detail-link" href={`/support/${policy.slug}/`}>상세 보기</a>
-              <a class="home-apply-link" href={policy.officialUrl} target="_blank" rel="noopener noreferrer">신청처 바로가기</a>
+              <a class="home-apply-link" href={policy.officialUrl} target="_blank" rel="noopener noreferrer" data-official-link-kind={isGenericOfficialUrl(policy.officialUrl) ? "generic" : "direct"}>
+                {isGenericOfficialUrl(policy.officialUrl) ? "공식 사이트 확인" : "신청처 바로가기"}
+              </a>
             </div>
           </article>
         ))}

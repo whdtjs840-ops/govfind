@@ -493,6 +493,9 @@ const actionKeywords = [
       support: '\uC9C0\uC6D0',
       detail: '\uC0C1\uC138 \uBE44\uAD50',
       officialApply: '\uC2E0\uCCAD\uCC98 \uBC14\uB85C\uAC00\uAE30',
+      officialSite: '\uACF5\uC2DD \uC0AC\uC774\uD2B8 \uD655\uC778',
+      officialDirectHint: '\uACF5\uC2DD \uACF5\uACE0',
+      officialGenericHint: '\uAE30\uAD00 \uD648',
       keyword: '\uAC80\uC0C9\uC5B4',
       category: '\uCE74\uD14C\uACE0\uB9AC',
       lifeStage: '\uC0DD\uC560\uC8FC\uAE30',
@@ -542,6 +545,15 @@ const actionKeywords = [
     function currentParams() { return new URLSearchParams(window.location.search); }
     function supportUrl(params, keepPage) { if (!keepPage) params.delete('page'); const query = params.toString(); return query ? '/support/?' + query : '/support/'; }
     function escapeHtml(value) { return String(value ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;'); }
+    function isGenericOfficialUrl(value) {
+      try {
+        const url = new URL(value);
+        const genericHosts = new Set(['www.gov.kr', 'www.bokjiro.go.kr', 'www.k-startup.go.kr', 'www.bizinfo.go.kr', 'www.work24.go.kr', 'www.hometax.go.kr', 'www.nhis.or.kr']);
+        return genericHosts.has(url.hostname) && ['', '/', '/web/index.do', '/index.do'].includes(url.pathname);
+      } catch {
+        return false;
+      }
+    }
     const synonymGroups = [
       ['\uCC3D\uC5C5', '\uC2A4\uD0C0\uD2B8\uC5C5', '\uC608\uBE44\uCC3D\uC5C5', '\uCD08\uAE30\uCC3D\uC5C5', '\uC0AC\uC5C5\uD654', '\uCC3D\uC5C5\uC9C0\uC6D0'],
       ['\uC18C\uC0C1\uACF5\uC778', '\uC911\uC18C\uAE30\uC5C5', '\uAE30\uC5C5\uC9C0\uC6D0', '\uC815\uCC45\uC790\uAE08', '\uACBD\uC601', '\uD310\uB85C'],
@@ -625,12 +637,15 @@ const actionKeywords = [
       const statusClass = isDeadlineSoonDday(policy.dday) ? 'badge deadline' : 'badge warn';
       const url = policy.url || '/support/' + encodeURIComponent(policy.id) + '/';
       const officialUrl = policy.officialUrl || url;
+      const officialLinkIsGeneric = isGenericOfficialUrl(officialUrl);
+      const officialLabel = officialLinkIsGeneric ? labels.officialSite : labels.officialApply;
+      const officialHint = officialLinkIsGeneric ? labels.officialGenericHint : labels.officialDirectHint;
       const deadline = policy.dday || policy.status || labels.officialCheck;
       const applyLabel = policy.applyOnline ? labels.onlineAvailable : labels.agencyCheck;
       const tagMarkup = (policy.tags || []).slice(0, 3).map((tag) => '<span class="policy-tag-pill">' + escapeHtml(tag) + '</span>').join('');
       const externalIcon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>';
       const arrowIcon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>';
-      return '<article class="card policy-card support-card"><div class="meta policy-card-topline"><span class="' + statusClass + '">' + escapeHtml(policy.status || labels.officialBadge) + '</span><span class="badge">' + escapeHtml(policy.category) + '</span><span class="badge soft">' + escapeHtml(policy.source) + '</span></div><div class="policy-card-main"><h3><a href="' + escapeHtml(url) + '">' + escapeHtml(policy.title) + '</a></h3><p class="policy-card-summary">' + escapeHtml(compactSummary(policy)) + '</p>' + (tagMarkup ? '<div class="policy-tag-row">' + tagMarkup + '</div>' : '') + '<p class="policy-quick-line"><strong>' + labels.target + '</strong> ' + labels.officialCheck + ' <span>·</span> <strong>' + labels.region + '</strong> ' + escapeHtml(policy.region || labels.officialCheck) + '</p></div><dl class="card-facts"><div><dt>' + labels.apply + '</dt><dd>' + escapeHtml(applyLabel) + '</dd></div><div><dt>' + labels.deadline + '</dt><dd>' + escapeHtml(deadline) + '</dd></div><div><dt>' + labels.agency + '</dt><dd>' + escapeHtml(policy.agency || labels.officialCheck) + '</dd></div><div><dt>' + labels.support + '</dt><dd>' + labels.officialCheck + '</dd></div></dl><div class="card-actions"><a class="button official-link" href="' + escapeHtml(officialUrl) + '" target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy="' + escapeHtml(policy.id) + '" aria-label="' + escapeHtml(policy.title) + ' 공식 신청처 바로가기">' + externalIcon + '<span>' + labels.officialApply + '</span><small>공식 기관</small></a><a class="button secondary" href="' + escapeHtml(url) + '" data-event="policy_click" data-policy="' + escapeHtml(policy.id) + '">' + labels.detail + ' ' + arrowIcon + '</a><span class="card-action-note">신청은 공식 기관 페이지에서 진행됩니다</span></div></article>';
+      return '<article class="card policy-card support-card"><div class="meta policy-card-topline"><span class="' + statusClass + '">' + escapeHtml(policy.status || labels.officialBadge) + '</span><span class="badge">' + escapeHtml(policy.category) + '</span><span class="badge soft">' + escapeHtml(policy.source) + '</span></div><div class="policy-card-main"><h3><a href="' + escapeHtml(url) + '">' + escapeHtml(policy.title) + '</a></h3><p class="policy-card-summary">' + escapeHtml(compactSummary(policy)) + '</p>' + (tagMarkup ? '<div class="policy-tag-row">' + tagMarkup + '</div>' : '') + '<p class="policy-quick-line"><strong>' + labels.target + '</strong> ' + labels.officialCheck + ' <span>·</span> <strong>' + labels.region + '</strong> ' + escapeHtml(policy.region || labels.officialCheck) + '</p></div><dl class="card-facts"><div><dt>' + labels.apply + '</dt><dd>' + escapeHtml(applyLabel) + '</dd></div><div><dt>' + labels.deadline + '</dt><dd>' + escapeHtml(deadline) + '</dd></div><div><dt>' + labels.agency + '</dt><dd>' + escapeHtml(policy.agency || labels.officialCheck) + '</dd></div><div><dt>' + labels.support + '</dt><dd>' + labels.officialCheck + '</dd></div></dl><div class="card-actions"><a class="button official-link" href="' + escapeHtml(officialUrl) + '" target="_blank" rel="noopener noreferrer" data-event="official_apply_click" data-policy="' + escapeHtml(policy.id) + '" data-official-link-kind="' + (officialLinkIsGeneric ? 'generic' : 'direct') + '" aria-label="' + escapeHtml(policy.title) + ' ' + escapeHtml(officialLabel) + '">' + externalIcon + '<span>' + escapeHtml(officialLabel) + '</span><small>' + escapeHtml(officialHint) + '</small></a><a class="button secondary" href="' + escapeHtml(url) + '" data-event="policy_click" data-policy="' + escapeHtml(policy.id) + '">' + labels.detail + ' ' + arrowIcon + '</a><span class="card-action-note">신청은 공식 기관 페이지에서 진행됩니다</span></div></article>';
     }
     function formatCount(value) { return Number(value).toLocaleString('ko-KR'); }
     function paginationItems(current, total) { if (total <= 7) return Array.from({ length: total }, (_, index) => index + 1); const pages = new Set([1, total]); for (let page = current - 2; page <= current + 2; page += 1) if (page > 1 && page < total) pages.add(page); const sorted = [...pages].sort((a, b) => a - b); const entries = []; for (const page of sorted) { const previous = entries[entries.length - 1]; if (typeof previous === 'number' && page - previous > 1) entries.push('ellipsis'); entries.push(page); } return entries; }
